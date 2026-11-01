@@ -8,7 +8,7 @@
    cena começa no mesmo ponto. */
 {
 const FRASE = 'Faz um vídeo que <span class="destaque">surpreenda</span>';
-const T = { cursor: 0.0, digita: 0.24, suga: 2.6, sugaDur: 0.3 };
+const T = { cursor: 0.0, digita: 0.5, suga: 5.0, sugaDur: 0.3, pulsos: [0.22, 2.829] };
 
 Motion.cena('pedido', {
   render: () => `
@@ -25,9 +25,9 @@ Motion.cena('pedido', {
     // ritmo de digitação humano: pausa maior na troca de palavra, variação por semente
     let tt = T.digita;
     el.tempos = el.letras.map((p, i) => {
-      if (i > 0 && p.palavra !== el.letras[i - 1].palavra) tt += 0.07;
+      if (i > 0 && p.palavra !== el.letras[i - 1].palavra) tt += 0.09;
       const t0 = tt;
-      tt += 0.042 + 0.022 * api.rand(i + 7);
+      tt += 0.056 + 0.03 * api.rand(i + 7);
       return t0;
     });
     el.fimDigita = el.tempos[el.tempos.length - 1];
@@ -82,10 +82,10 @@ Motion.cena('pedido', {
     set(el.brasa, {
       x: lerp(cx * 0.6, 0, q), y: el.cy,
       s: 0.55 + 0.1 * digitando + 0.35 * cresce,
-      o: 0.22 + 0.2 * suave(prog(t, T.digita, T.digita + 0.6)) + 0.35 * cresce,
+      o: 0.22 + 0.2 * suave(prog(t, T.digita, T.digita + 0.6)) + 0.35 * cresce + T.pulsos.reduce((a, p) => a + 0.25 * api.fisica.impacto(t, p, { decaimento: 1.2 }), 0),
     });
     api.fx.respirar(t, el.luz, { periodo: 3.4, amp: 0.07 });
-    el.cam.pose({ zoom: lerp(1.1, 1, ease.outCubic(prog(t, 0, 2.2))) * api.viva(t) });
+    el.cam.pose({ zoom: lerp(1.12, 1, ease.inOutSine(prog(t, 0, 4.6))) * (1 + 0.01 * Math.max(0, t - 4.6)) });
   },
 });
 }

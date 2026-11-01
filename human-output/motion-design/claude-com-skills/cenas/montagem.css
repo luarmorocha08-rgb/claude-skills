@@ -1,0 +1,16 @@
+/* montagem — o CSS natural de cada tomada: o nome de um lado, o artefato grande do outro. */
+.cena-montagem { --luz-a-x: 66%; --luz-a-y: 50%; --luz-b-x: 30%; --luz-b-y: 70%; }
+.cena-montagem .tomada { position: absolute; inset: 0; }
+.cena-montagem .lado-palavra { position: absolute; top: 50%; left: 5cqw; width: 42cqw; transform: translateY(-50%); text-align: right; }
+.cena-montagem .lado-obj { position: absolute; top: 50%; left: 52cqw; width: 42cqw; height: 26.25cqw; margin-top: -13.125cqw; }
+.cena-montagem .invertida .lado-palavra { left: 53cqw; text-align: left; }
+.cena-montagem .invertida .lado-obj { left: 6cqw; }
+.cena-montagem .palavra { font-size: 17cqmin; white-space: nowrap; line-height: 1; }
+.cena-montagem .cartao.grande {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  box-shadow: inset 0 0 0 0.35cqi color-mix(in srgb, var(--texto) 14%, transparent), 0 3cqmin 8cqmin color-mix(in srgb, #000 60%, transparent), 0 0 12cqmin color-mix(in srgb, var(--luz-3) 18%, transparent);
+}
+.cena-montagem .cartao.grande .ct-nome { display: none; }
+.cena-montagem .cartao.grande .ct-arte { top: 9cqi; bottom: 9cqi; height: auto; left: 9cqi; right: 9cqi; }

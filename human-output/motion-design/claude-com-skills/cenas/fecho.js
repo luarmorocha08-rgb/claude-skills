@@ -6,7 +6,7 @@
    último quadro já é a cor de fundo.
    Os primeiros ~0,25 s acontecem por baixo da travessia da cena anterior. */
 {
-const T = { ponto: 0.22, nasce: 0.34, gesto: 0.86, desliza: [1.06, 1.62], marca: 1.14, convite: 1.8, varre: 2.15, brilho: 2.95, suga: 3.6, centro: [3.72, 4.0], some: [3.98, 4.3], traco: [4.2, 4.6] };
+const T = { ponto: -1, nasce: 0.06, gesto: 0.62, desliza: [0.84, 1.4], marca: 0.92, convite: 1.6, golpe: 1.66, varre: 1.92, brilho: 2.9, suga: 4.3, centro: [4.42, 4.7], some: [4.68, 5.0], traco: [4.9, 5.42] };
 
 Motion.cena('fecho', {
   render: () => `
@@ -58,16 +58,16 @@ Motion.cena('fecho', {
       bright: 1 + 1.3 * quente + 0.7 * absorve,
     });
     // ponto de luz: acende no escuro, a faísca nasce dele; no fim volta a ser ponto e apaga
-    const pIn = suave(prog(t, T.ponto, T.ponto + 0.14)) * (1 - suave(prog(t, T.nasce + 0.04, T.nasce + 0.3)));
+    const pIn = 1 - suave(prog(t, T.nasce + 0.04, T.nasce + 0.3));
     const pOut = suave(prog(some, 0.4, 0.9)) * (1 - suave(prog(t, T.traco[0] + 0.05, T.traco[1] - 0.05)));
-    set(el.ponto, { s: 0.3 + 0.7 * ease.outCubic(prog(t, T.ponto, T.ponto + 0.25)) + 0.4 * pOut, o: Math.max(pIn, pOut) });
+    set(el.ponto, { s: 1 + 0.4 * ease.outCubic(prog(t, 0, 0.3)) * pIn + 0.4 * pOut, o: Math.max(pIn, pOut) });
     // o traço horizontal: nasce do ponto, corre para as pontas e apaga desacelerando
     const tr = prog(t, T.traco[0], T.traco[1]);
     set(el.traco, { sx: Math.max(0.0005, ease.outExpo(tr)), o: suave(prog(tr, 0, 0.08)) * (1 - ease.inOutSine(prog(tr, 0.25, 1))) });
     set(el.halo, {
       x: P.x + sx, y: P.y + sy,
       s: (0.45 + 0.25 * ease.outCubic(nasce)) * lerp(1, 0.6, ease.inCubic(some)),
-      o: (0.25 + 0.45 * ease.outCubic(nasce) - 0.15 * d * (1 - c) + 0.05 * Math.sin((2 * Math.PI * (t - 1)) / 3.1)) * (1 - ease.inOutSine(prog(t, T.some[0], T.traco[1] - 0.05))) * suave(prog(t, T.ponto, T.ponto + 0.3)),
+      o: (0.25 + 0.45 * ease.outCubic(nasce) - 0.15 * d * (1 - c) + 0.05 * Math.sin((2 * Math.PI * (t - 1)) / 3.1)) * (1 - ease.inOutSine(prog(t, T.some[0], T.traco[1] - 0.05))) * 1 + 0.45 * api.fisica.impacto(t, T.golpe, { decaimento: 0.7 }),
     });
 
     const pf = [P.x, P.y];
@@ -77,14 +77,14 @@ Motion.cena('fecho', {
       tipo.exalar(t, el.letras, { inicio: 1.7, velocidade: 0.012, ref: 2.9, aplicar: false }));
     tipo.brilho(t, el.letras, { inicio: T.brilho, dur: 0.75, forca: 0.45 });
     tipo.aplicar(el.palavras,
-      tipo.focar(t, el.palavras, { inicio: T.convite, cascata: 0.05, aplicar: false }),
+      tipo.focar(t, el.palavras, { inicio: T.convite, cascata: 0.03, dur: 0.45, aplicar: false }),
       tipo.sugar(t, el.palavras, { inicio: T.suga, dur: 0.3, ponto: pf, aplicar: false }));
     tipo.varrerDestaque(t, el.destaque, { inicio: T.varre, dur: 0.5 });
 
     // a luz de fundo respira e se apaga junto com a faísca: o último quadro é a cor de fundo
     api.fx.respirar(t, el.luz, { periodo: 3.8, amp: 0.07 });
-    el.luz.style.opacity = ((1 - ease.inOutSine(prog(t, T.some[0] - 0.2, T.traco[1] - 0.02))) * suave(prog(t, 0, 0.5))).toFixed(4);
-    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
+    el.luz.style.opacity = ((1 - ease.inOutSine(prog(t, T.some[0] - 0.2, T.traco[1] - 0.02))) * (0.4 + 0.6 * suave(prog(t, 0, 0.6)))).toFixed(4);
+    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)) * (1 + 0.025 * api.fisica.impacto(t, T.golpe, { decaimento: 0.6 })), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
   },
 });
 }

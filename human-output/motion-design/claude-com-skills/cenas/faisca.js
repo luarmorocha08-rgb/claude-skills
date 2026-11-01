@@ -7,7 +7,7 @@
    Batidas: 0 nasce · 0,52 gesto · 0,78 desliza · 0,86 "Claude" · b(3) "com skills" · 1,78 destaque ·
    2,55 brilho · 3,2 tragadas · 3,38–3,98 centro. */
 {
-const T = { gesto: 0.52, desliza: [0.74, 1.32], marca: 0.84, sub: 1.5, varre: 1.78, brilho: 2.55, suga: 3.18, centro: [3.36, 3.98] };
+const T = { gesto: 0.6, desliza: [0.86, 1.46], marca: 0.96, sub: 2.608, varre: 2.86, brilho: 3.45, suga: 4.3, centro: [4.46, 5.03], prende: [4.95, 5.217] };
 const LADO = 16; // cqmin: a faísca do lockup
 const SOL = 20; // cqmin: a faísca do sol (cena "oficios")
 
@@ -44,10 +44,10 @@ Motion.cena('faisca', {
     const sx = -P.x * fora, sy = -P.y * fora;
     const nasce = prog(t, 0.0, 0.5);
     const sNasce = 0.1 + 0.9 * ease.outBack(1.5)(nasce);
-    const sFim = lerp(1, SOL / LADO, c);
+    const sFim = lerp(1, SOL / LADO, c) * (1 - 0.06 * ease.inOutSine(prog(t, T.prende[0], T.prende[1])));
     const giro = lerp(-70, 0, ease.outExpo(prog(t, 0, 0.7)))
       + 90 * ease.inOutExpo(prog(t, T.gesto, T.gesto + 0.24)) + fisica.tique(t, T.gesto + 0.24, { passa: 6 })
-      + 10 * (t - T.centro[1]) + 45 * ease.inOutCubic(prog(t, T.centro[0], T.centro[1]));
+      + 10 * (t - 5.217) + 45 * ease.inOutCubic(prog(t, T.centro[0], T.centro[1]));
     const vGiro = Math.abs(ease.inOutExpo(prog(t + 0.01, T.gesto, T.gesto + 0.24)) - ease.inOutExpo(prog(t - 0.01, T.gesto, T.gesto + 0.24))) * 90 / 0.02;
     const quente = 1 - ease.outCubic(prog(t, 0, 0.8));
     const absorve = suave(prog(t, T.suga + 0.05, T.suga + 0.3)) * (1 - suave(prog(t, T.centro[0] + 0.1, T.centro[1])));
@@ -56,7 +56,7 @@ Motion.cena('faisca', {
       x: sx, y: sy, r: giro, s: sNasce * sFim * respira,
       o: suave(prog(t, 0.0, 0.12)),
       blur: Math.min(0.5, vGiro * 0.00045),
-      bright: 1 + 1.3 * quente + 0.5 * absorve,
+      bright: 1 + 1.3 * quente + 0.5 * absorve + 0.3 * ease.inCubic(prog(t, T.prende[0], T.prende[1])) + 0.35 * api.fisica.impacto(t, T.sub, { decaimento: 0.9 }),
     });
     // ponto de luz (herdado da cena anterior) se desfaz dentro da faísca que nasce
     set(el.ponto, { s: 1 + 0.6 * ease.outCubic(prog(t, 0, 0.3)), o: 1 - suave(prog(t, 0.04, 0.32)) });
@@ -71,7 +71,7 @@ Motion.cena('faisca', {
     const pf = [P.x, P.y];
     const ma = tipo.nascerDaLuz(t, el.letras, { inicio: T.marca, cascata: 0.038, aplicar: false });
     const ms = tipo.sugar(t, el.letras, { inicio: T.suga + 0.04, dur: 0.26, ponto: pf, aplicar: false });
-    tipo.aplicar(el.letras, ma, ms, tipo.exalar(t, el.letras, { inicio: 1.4, velocidade: 0.012, ref: 2.45, aplicar: false }));
+    tipo.aplicar(el.letras, ma, ms, tipo.exalar(t, el.letras, { inicio: 1.4, velocidade: 0.012, ref: 3.6, aplicar: false }));
     tipo.brilho(t, el.letras, { inicio: T.brilho, dur: 0.75, forca: 0.45 });
     // ── "com skills"
     const sa = tipo.focar(t, el.sub, { inicio: T.sub, cascata: 0.022, aplicar: false });

@@ -8,7 +8,8 @@
 {
 const W = 17; // cqw: largura de cada cartão na pilha e na órbita
 const HEROI = 26; // cqw: a largura do cartão de Motion na miniatura 5 (26 % do quadro)
-const T = { assenta: [0.55, 1.15], cai: 0.98, prende: [1.82, 2.0], explode: 2.0, frase: 2.45, varre: 2.85, brilho: 3.7 };
+const P = 0.3261; // uma batida; t = 0,755 é o início da frase musical (fim do mergulho)
+const T = { assenta: [0.7, 1.2], prende: [0.755 + 7 * P, 0.755 + 8 * P], explode: 0.755 + 8 * P, frase: 0.755 + 9 * P, varre: 0.755 + 10 * P, brilho: 0.755 + 12 * P };
 const RX = 37, RY = 16.4; // a órbita, em cqw
 const PILHA = [[0, 0, 0], [-1.6, -0.9, -8], [1.4, -1.2, 7], [-0.8, 0.9, -4], [1.9, 0.6, 10], [-2.1, 0.2, 5], [0.7, -0.5, -10], [-0.4, 0.4, 3]];
 
@@ -31,7 +32,7 @@ Motion.cena('entregas', {
         fi0: Math.PI / 2 + (k * Math.PI) / 4,
       };
     });
-    el.chegadas = [0, ...api.fx.accelerando(7, { de: 0.085, ate: 0.032 }).map((x) => T.cai + x)];
+    el.chegadas = [0, 1, 2, 3, 4, 5, 6, 7].map((k) => 0.755 + k * P); // um cartão por batida
     el.palavras = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
     el.letrasDestaque = api.tipo.dividir(el.$('.frase .destaque'), { por: 'letra' });
     el.fzs = el.$$('.cartoes .faisca');
@@ -43,7 +44,7 @@ Motion.cena('entregas', {
   quadro(t, el, api) {
     const { prog, ease, lerp, suave, set, fisica, tipo } = api;
     const impactos = el.chegadas.slice(1);
-    const afunda = fisica.afundar(t, impactos, { forca: 0.012 });
+    const afunda = fisica.afundar(t, impactos, { forca: 0.016 });
     const prende = ease.inOutSine(prog(t, T.prende[0], T.prende[1])) * (1 - suave(prog(t, T.explode, T.explode + 0.05)));
     const sPilha = 1 + afunda - 0.035 * prende;
     // a órbita nunca para: um piso constante e um embalo que vem da explosão e se desfaz
@@ -58,11 +59,11 @@ Motion.cena('entregas', {
         x = 0; y = 0; r = 0; s = lerp(HEROI / W, 1, a); o = 1;
       } else {
         const tl = el.chegadas[c.k];
-        const q = prog(t, tl - 0.3, tl);
+        const q = prog(t, tl - 0.26, tl);
         const e = ease.inQuad(q);
         x = lerp(c.ax, c.px, e); y = lerp(c.ay, c.py, e); r = lerp(c.pr + c.ar, c.pr, ease.outCubic(q));
         s = lerp(1.3, 1, e);
-        o = suave(prog(t, tl - 0.3, tl - 0.24));
+        o = suave(prog(t, tl - 0.26, tl - 0.2));
       }
       x *= sPilha; y *= sPilha; s *= sPilha;
       // ── explosão em espiral até a órbita (o herói decola 70 ms depois)

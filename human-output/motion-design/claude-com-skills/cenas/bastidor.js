@@ -6,7 +6,8 @@
    o primeiro quadro da cena seguinte (transição do motor).
    Os primeiros 0,75 s acontecem por baixo do mergulho da cena anterior: a entrada começa em 0,4. */
 {
-const T = { frase: 0.4, quadros: 0.78, regua: [1.0, 1.6], varre: [1.55, 3.65], brilho: 3.05, foco: 4.3 };
+const P = 0.3261; // uma batida da música; t = 0,755 é o início da frase musical (fim do mergulho)
+const T = { frase: 0.62, quadros: 0.92, varre: [0.755 + 5 * P, 0.755 + 11 * P], brilho: 0.755 + 11 * P, foco: 0.755 + 12 * P };
 const BATIDAS = 52; // o filme tem ~26 s a 120 BPM
 
 Motion.cena('bastidor', {
@@ -34,7 +35,7 @@ Motion.cena('bastidor', {
       el: q, i, aceso: q.querySelector('.aceso'), num: q.querySelector('.num'), mini: q.querySelector('.mini'),
       trilho: q.querySelector('.trilho'), enche: q.querySelector('.enche'), ticks: [...q.querySelectorAll('.tk')],
     }));
-    el.tempos = api.fx.accelerando(6, { de: 0.11, ate: 0.05 }).map((x) => T.quadros + x);
+    el.tempos = [0, 1, 2, 3, 4, 5].map((i) => T.quadros + i * (P / 2)); // em colcheias
     el.fzMini = el.$$('.mini .faisca');
     el.luz = el.$('.luz');
     el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.5 }, { el: el.$('.c-meio'), z: 0 }] });
@@ -54,8 +55,8 @@ Motion.cena('bastidor', {
       const eleito = q.i === 4;
       // a barra de tempo do quadrinho se preenche; quando chega ao fim, o quadrinho está aceso
       const a = T.varre[0] + q.i * passo;
-      const f = ease.inOutSine(prog(t, a, a + passo * 1.08));
-      const tocando = suave(prog(t, a - 0.04, a + 0.06)) * (1 - suave(prog(t, a + passo, a + passo + 0.25)));
+      const f = ease.forte(prog(t, a, a + passo * 1.6));
+      const tocando = api.fisica.impacto(t, a, { decaimento: 0.5 });
       set(q.el, {
         y: 3 * (1 - ease.outExpo(p)),
         s: 0.95 + 0.05 * Math.min(1.035, ease.outBack(2.2)(p)),
