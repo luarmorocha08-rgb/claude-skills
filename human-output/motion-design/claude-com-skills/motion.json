@@ -113,7 +113,7 @@
     {
       "id": "faisca",
       "tipo": "marca-em-etapas",
-      "papel": "resposta",
+      "papel": "desenvolvimento",
       "titulo": "A resposta",
       "dur": 4,
       "ideia": "Do ponto nasce a faísca, gira meia chave e desliza para abrir espaço: 'Claude' nasce da luz dela e 'com skills' sobe embaixo; no fim tudo é tragado de volta para a faísca, que vai ao centro e cresce.",
@@ -179,7 +179,7 @@
     {
       "id": "oficios",
       "tipo": "palavra-gigante",
-      "papel": "o que ela sabe",
+      "papel": "desenvolvimento",
       "titulo": "Os ofícios",
       "dur": 5,
       "ideia": "A faísca vira um sol: cada raio dispara um feixe de luz e, na ponta dele, nasce um ofício; no fim 'Motion design' esquenta, os outros se apagam e a câmera mergulha dentro do 'o'.",
@@ -227,6 +227,16 @@
           "texto": "Hold: uma onda de luz corre pelos feixes uma vez, a faísca gira devagar, a câmera chega."
         },
         {
+          "t": 2.1,
+          "tipo": "luz",
+          "texto": "A onda de luz corre pelos feixes no sentido do relógio, 110 ms entre eles, e acende cada ofício ao passar."
+        },
+        {
+          "t": 3,
+          "tipo": "vida",
+          "texto": "O sol se expande um fio e a faísca gira; a câmera inclina devagar."
+        },
+        {
           "t": 3.5,
           "tipo": "luz",
           "texto": "A escolha: 'Motion design' esquenta até a terracota, o feixe dele acende, os outros apagam e desfocam."
@@ -246,7 +256,7 @@
     {
       "id": "bastidor",
       "tipo": "montagem",
-      "papel": "a virada",
+      "papel": "climax",
       "titulo": "A virada",
       "dur": 5.5,
       "ideia": "De dentro da letra surge a prancha do storyboard deste próprio filme: os seis quadrinhos caem em accelerando, uma linha de luz percorre a régua de batidas acendendo cada um, e a câmera mergulha no quadrinho 5, que vira a próxima cena.",
@@ -257,6 +267,12 @@
           "rotulo": "Início",
           "legenda": "A frase e os quadrinhos caindo, ainda apagados",
           "t": 0.95
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "As barras de tempo se preenchem e acendem os quadrinhos, um a um",
+          "t": 2.5
         },
         {
           "id": "fim",
@@ -288,6 +304,21 @@
           "texto": "A linha de luz percorre a régua e acende cada quadrinho quando passa; o quadrinho 4 é este, com a prancha dentro dele."
         },
         {
+          "t": 2.25,
+          "tipo": "luz",
+          "texto": "Cada barra de tempo se preenche em 350 ms e o quadrinho dela acende: 01, 02, 03 na primeira fileira…"
+        },
+        {
+          "t": 3.05,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa 'este vídeo' enquanto a fileira de baixo acende (04 é esta própria cena)."
+        },
+        {
+          "t": 3.65,
+          "tipo": "vida",
+          "texto": "Hold: a prancha inteira acesa, as faíscas das miniaturas giram, a câmera continua chegando."
+        },
+        {
           "t": 4.4,
           "tipo": "transicao",
           "texto": "Os outros recuam e escurecem; a câmera mergulha no quadrinho 5 até ele virar a cena seguinte."
@@ -302,7 +333,7 @@
     {
       "id": "entregas",
       "tipo": "montagem",
-      "papel": "a prova",
+      "papel": "prova",
       "titulo": "As entregas",
       "dur": 5.5,
       "ideia": "O cartão de Motion chega sozinho; os outros sete ofícios caem por cima em accelerando, a pilha prende o ar e explode numa órbita que nunca para, em volta de 'Do pedido à entrega'.",
@@ -311,14 +342,20 @@
         {
           "id": "inicio",
           "rotulo": "Início",
-          "legenda": "A pilha dos oito artefatos",
-          "t": 1.3
+          "legenda": "O cartão de Motion sozinho, no tamanho do quadrinho 5",
+          "t": 0.3
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "A pilha dos oito artefatos, prendendo o ar",
+          "t": 1.9
         },
         {
           "id": "fim",
           "rotulo": "Fim",
-          "legenda": "A órbita dos artefatos em volta da frase",
-          "t": 3.2,
+          "legenda": "A órbita dos artefatos em volta de 'Do pedido à entrega'",
+          "t": 3.6,
           "aprovado": true
         }
       ],
@@ -344,6 +381,11 @@
           "texto": "'Do pedido à entrega' sobe palavra a palavra no vazio do centro; o destaque acende."
         },
         {
+          "t": 2.85,
+          "tipo": "luz",
+          "texto": "O véu varre 'entrega' e acende a terracota."
+        },
+        {
           "t": 3.4,
           "tipo": "vida",
           "texto": "Hold: a órbita gira, um brilho atravessa 'entrega'."
@@ -361,7 +403,7 @@
     {
       "id": "fecho",
       "tipo": "marca-em-etapas",
-      "papel": "a marca",
+      "papel": "marca",
       "titulo": "A marca",
       "dur": 4.6,
       "ideia": "Rima com a resposta: a faísca renasce de um ponto com o mesmo gesto, 'Claude' nasce da luz dela e o convite sobe; no fim tudo é tragado para a faísca, que vira um ponto, solta um traço de luz e apaga.",
@@ -409,9 +451,19 @@
           "texto": "Hold: brilho em 'Claude', a faísca gira um fio."
         },
         {
-          "t": 3.4,
+          "t": 3.6,
           "tipo": "transicao",
-          "texto": "Tudo é tragado para a faísca; ela vai ao centro, gira cada vez mais rápido, vira um ponto, solta um traço horizontal de luz e apaga."
+          "texto": "Tudo é tragado para a faísca."
+        },
+        {
+          "t": 3.98,
+          "tipo": "objeto",
+          "texto": "A faísca no centro torce cada vez mais rápido e encolhe até virar um ponto."
+        },
+        {
+          "t": 4.2,
+          "tipo": "luz",
+          "texto": "O ponto solta um traço horizontal de luz que corre para as pontas e apaga; o último quadro já é a cor de fundo."
         }
       ]
     }
@@ -433,6 +485,15 @@
       ],
       "fps": 60,
       "nota": "primeira versão completa"
+    },
+    {
+      "v": 2,
+      "data": "2026-11-01",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 60,
+      "nota": "mais vida nos holds: faísca girando, sol que se expande, câmera mais presente"
     }
   ]
 }
