@@ -336,6 +336,11 @@
           "texto": "Os outros sete caem na pilha, um por batida; cada impacto afunda a pilha."
         },
         {
+          "t": 1.755,
+          "tipo": "objeto",
+          "texto": "Intencional: cada cartão bate na pilha e para seco, como um objeto com peso; a pilha inteira afunda e devolve."
+        },
+        {
           "t": 3.3638,
           "tipo": "objeto",
           "texto": "Batida 8: a pilha explode em espiral numa órbita que nunca para."
@@ -405,6 +410,11 @@
           "t": 1.64,
           "tipo": "transicao",
           "texto": "Nos últimos 160 ms tudo sai pela esquerda acelerando e o próximo já entra pela direita."
+        },
+        {
+          "t": 4.5,
+          "tipo": "transicao",
+          "texto": "Intencional: o cartão branco de Documentos sai pela borda esquerda no chicote, rápido e contrastado."
         },
         {
           "t": 5.7,
@@ -566,6 +576,15 @@
       ],
       "fps": 60,
       "nota": "sincronizado com a trilha: 47,5 s, montagem por compasso e mosaico novos"
+    },
+    {
+      "v": 4,
+      "data": "2026-11-01",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 60,
+      "nota": "pulsos de batida sem tranco, panorâmica contínua na montagem"
     }
   ]
 }

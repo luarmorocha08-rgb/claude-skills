@@ -42,20 +42,20 @@ Motion.cena('montagem', {
 
   quadro(t, el, api) {
     const { prog, ease, lerp, suave, set, tipo } = api;
-    const pulso = PulsoGrade(t, T0, P, { decai: 0.12 });
+    const pulso = PulsoGrade(t, T0, P, { ataque: 0.08, decai: 0.16 });
     el.tomadas.forEach((tm) => {
       const u = t - tm.s;
       // panorâmica contínua: o próximo entra pela direita enquanto este sai pela esquerda, sem
       // nada sumir na tela (cada um só desaparece quando já está fora do quadro)
       const ativo = u > -0.2 && u < BAR + 0.2;
-      const ent = ease.outExpo(prog(u, -0.12, 0.42));
+      const ent = ease.forte(prog(u, -0.12, 0.5));
       const sai = ease.inCubic(prog(u, BAR - 0.2, BAR + 0.12));
       const vel = 90 * (1 - ent) * (u < 0.42 ? 1 : 0) + 110 * sai;
       const lado = tm.inv ? -1 : 1; // onde o objeto mora (1 = direita)
       set(tm.obj, {
-        x: 80 * (1 - ent) - 112 * sai,
+        x: (tm.inv ? 125 : 82) * (1 - ent) - 112 * sai,
         ry: -16 * lado * (1 - 0.4 * ent) + 10 * (1 - ent), persp: 1400,
-        s: lerp(0.92, 1, ent) * (1 + 0.012 * pulso) * (1 + 0.012 * Math.max(0, u)),
+        s: lerp(0.92, 1, ent) * (1 + 0.005 * pulso) * (1 + 0.012 * Math.max(0, u)),
         o: ativo ? 1 : 0,
         blur: 0.012 * vel,
       });
@@ -84,8 +84,10 @@ Motion.cena('montagem', {
       if (tm.fz) tm.fz.style.transform = `rotate(${(30 * u).toFixed(3)}deg)`;
     });
     // a luz troca de lado a cada compasso, sempre por trás do objeto
-    const i = Math.max(0, Math.min(7, Math.floor((t - T0) / BAR)));
-    const lado = i % 2 ? -1 : 1;
+    // (desliza na passagem de um compasso para o outro, junto com a panorâmica)
+    const k = Math.round((t - T0) / BAR);
+    const fase = (k - 1) + suave(prog(t, T0 + k * BAR - 0.18, T0 + k * BAR + 0.18));
+    const lado = Math.cos(Math.PI * Math.max(0, fase));
     el.luz.style.setProperty('--luz-a-x', `${(50 + 16 * lado).toFixed(2)}%`);
     api.fx.respirar(t, el.luz, { periodo: 2.6, amp: 0.06, base: 1 + 0.1 * pulso });
     el.cam.pose({ zoom: 1 + 0.006 * pulso + 0.004 * (t - 5), giro: 0.8 * Math.sin((2 * Math.PI * t) / 5.2) });

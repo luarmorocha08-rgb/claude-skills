@@ -60,12 +60,12 @@ Motion.cena('oficios', {
     const tw = (k) => (ordem(k) + 1) * P; // os ofícios: um por batida
     const sel = ease.inOutSine(prog(t, T.escolhe, T.escolhe + 0.4));
     // pulso de cada batida (ataque de um quadro, decai rápido)
-    const pulso = PulsoGrade(t, P, P, { decai: 0.12 });
+    const pulso = PulsoGrade(t, P, P, { ataque: 0.08, decai: 0.16 });
 
     // ── a faísca: solta no drop com mola curta (objeto), depois pulsa na batida
     const solta = api.spring(t, { freq: 1.7, damp: 6 });
-    const s = lerp(0.94, 1, solta) * (1 + 0.035 * pulso) * (1 + 0.03 * api.vida(t, { inicio: 1.0, periodo: 2.4 }));
-    set(el.sol, { r: 10 * t * (1 - 0.6 * ease.inOutSine(prog(t, 0, 0.6))) + 6 * api.vida(t, { inicio: 1.0, periodo: 3.6 }), s, bright: 1 + 0.6 * bell(t, 0.06, 0.12) + 0.18 * pulso + 0.25 * sel });
+    const s = lerp(0.94, 1, solta) * (1 + 0.022 * pulso) * (1 + 0.03 * api.vida(t, { inicio: 1.0, periodo: 2.4 }));
+    set(el.sol, { r: 10 * t * (1 - 0.6 * ease.inOutSine(prog(t, 0, 0.6))) + 6 * api.vida(t, { inicio: 1.0, periodo: 3.6 }), s, bright: 1 + 0.6 * bell(t, 0.06, 0.12) + 0.1 * pulso + 0.25 * sel });
     el.raios.forEach((r, k) => {
       const flick = bell(t, tb(k) + 0.03, 0.06) + 0.35 * bell(t, tw(k), 0.06);
       r.style.transform = `rotate(${k * 45}deg) scale(${(1 - 0.08 * flick).toFixed(4)}, ${(1 + 0.22 * flick).toFixed(4)})`;
