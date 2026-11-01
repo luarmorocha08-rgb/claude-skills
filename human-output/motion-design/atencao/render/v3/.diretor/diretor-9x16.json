@@ -1,0 +1,13 @@
+{
+ "metricas": {
+  "energia": {
+   "media": 1.9,
+   "mediana": 1.75,
+   "quaseParados": 9
+  },
+  "paradoAosOlhos": 0,
+  "cortesPorSegundo": 0.22,
+  "duracao": 18
+ },
+ "notas": []
+}

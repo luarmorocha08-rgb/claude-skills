@@ -1,0 +1,49 @@
+{
+ "versao": 3,
+ "data": "2026-11-01",
+ "fps": 60,
+ "qualidade": "final",
+ "montagem": "principal",
+ "formatos": {
+  "9x16": {
+   "arquivo": "atencao-9x16-60fps.mp4",
+   "quadros": 1080,
+   "de": 0,
+   "ate": 18,
+   "segundosRender": 202,
+   "renderizados": 1080,
+   "capa": "capa-9x16.png",
+   "fluidez": {
+    "resumo": "1 ponto(s) para olhar: 1 degrau",
+    "alertas": [
+     {
+      "tipo": "degrau",
+      "i": 619,
+      "t": 10.333,
+      "d": 1.49,
+      "viz": 9.57,
+      "cena": "dados",
+      "tituloCena": "A prova",
+      "tLocal": 0.333,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     }
+    ]
+   },
+   "diretor": {
+    "metricas": {
+     "energia": {
+      "media": 1.9,
+      "mediana": 1.75,
+      "quaseParados": 9
+     },
+     "paradoAosOlhos": 0,
+     "cortesPorSegundo": 0.22,
+     "duracao": 18
+    },
+    "notas": []
+   }
+  }
+ },
+ "erros": [],
+ "segundos": 249
+}

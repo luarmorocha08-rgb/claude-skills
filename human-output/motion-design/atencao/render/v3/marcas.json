@@ -1,0 +1,552 @@
+{
+ "titulo": "Atenção",
+ "fps": 60,
+ "bpm": 120,
+ "total": 18,
+ "inicio": 0,
+ "cenas": [
+  {
+   "id": "tensao",
+   "titulo": "O gancho",
+   "inicio": 0,
+   "fim": 4.5
+  },
+  {
+   "id": "virada",
+   "titulo": "A virada",
+   "inicio": 4.5,
+   "fim": 7
+  },
+  {
+   "id": "promessa",
+   "titulo": "A promessa",
+   "inicio": 7,
+   "fim": 10
+  },
+  {
+   "id": "dados",
+   "titulo": "A prova",
+   "inicio": 10,
+   "fim": 14.5
+  },
+  {
+   "id": "convite",
+   "titulo": "O convite",
+   "inicio": 14.5,
+   "fim": 18
+  }
+ ],
+ "cortes": [
+  4.5,
+  7,
+  10,
+  14.5
+ ],
+ "transicoes": [
+  {
+   "de": "tensao",
+   "para": "virada",
+   "tipo": "corte",
+   "inicio": 4.5,
+   "fim": 4.5,
+   "corte": 4.5
+  },
+  {
+   "de": "virada",
+   "para": "promessa",
+   "tipo": "corte",
+   "inicio": 7,
+   "fim": 7,
+   "corte": 7
+  },
+  {
+   "de": "promessa",
+   "para": "dados",
+   "tipo": "corte",
+   "inicio": 10,
+   "fim": 10,
+   "corte": 10
+  },
+  {
+   "de": "dados",
+   "para": "convite",
+   "tipo": "corte",
+   "inicio": 14.5,
+   "fim": 14.5,
+   "corte": 14.5
+  }
+ ],
+ "batidas": [
+  {
+   "cena": "tensao",
+   "tipo": "objeto",
+   "t": 0,
+   "texto": "As metades entram voando de fora do quadro, com rastro de movimento, e batem a 17 cqw uma da outra em 420 ms."
+  },
+  {
+   "cena": "tensao",
+   "tipo": "camera",
+   "t": 0.42,
+   "texto": "BUM: a câmera recebe o peso (3 %) com um tremor curto; a fenda pisca."
+  },
+  {
+   "cena": "tensao",
+   "tipo": "tipo",
+   "t": 1,
+   "texto": "O relógio sai do desfoque: “você está aqui há 1 segundo”; cada segundo vira na hora certa."
+  },
+  {
+   "cena": "tensao",
+   "tipo": "luz",
+   "t": 1,
+   "texto": "Batimento: a brasa pulsa em batidas cada vez mais próximas (750 → 200 ms), cada uma mais quente."
+  },
+  {
+   "cena": "tensao",
+   "tipo": "camera",
+   "t": 3,
+   "texto": "A um fio: tremor mínimo na câmera e nas metades."
+  },
+  {
+   "cena": "tensao",
+   "tipo": "transicao",
+   "t": 4.25,
+   "texto": "O relógio sobe e se desfaz; corte no mesmo eixo."
+  },
+  {
+   "cena": "virada",
+   "tipo": "tipo",
+   "t": 4.55,
+   "texto": "“Você ficou 4 segundos” sai do desfoque palavra a palavra."
+  },
+  {
+   "cena": "virada",
+   "tipo": "tipo",
+   "t": 4.9,
+   "texto": "“esperando isso encostar” sobe por baixo, mais apagada."
+  },
+  {
+   "cena": "virada",
+   "tipo": "luz",
+   "t": 5.4,
+   "texto": "A brasa pulsa em cada batida, cada vez mais forte."
+  },
+  {
+   "cena": "virada",
+   "tipo": "transicao",
+   "t": 6.7,
+   "texto": "As frases recuam para o desfoque e a fenda começa a abrir."
+  },
+  {
+   "cena": "promessa",
+   "tipo": "objeto",
+   "t": 7,
+   "texto": "As metades se separam e saem pelas bordas em 750 ms, acelerando."
+  },
+  {
+   "cena": "promessa",
+   "tipo": "luz",
+   "t": 7.05,
+   "texto": "A brasa abre na vertical e vira um campo de luz quente."
+  },
+  {
+   "cena": "promessa",
+   "tipo": "tipo",
+   "t": 7.4,
+   "texto": "A frase sai do desfoque palavra a palavra."
+  },
+  {
+   "cena": "promessa",
+   "tipo": "luz",
+   "t": 7.9,
+   "texto": "“atenção” é varrida da cor do texto para a brasa."
+  },
+  {
+   "cena": "promessa",
+   "tipo": "transicao",
+   "t": 9.72,
+   "texto": "A frase é sugada para uma linha de luz, que vira a fenda dos números."
+  },
+  {
+   "cena": "dados",
+   "tipo": "tipo",
+   "t": 10,
+   "texto": "“A atenção decide” fica no alto a cena toda."
+  },
+  {
+   "cena": "dados",
+   "tipo": "objeto",
+   "t": 10.32,
+   "texto": "As metades de 0,05s batem e encostam; estalo de luz na emenda; a legenda sobe palavra a palavra e a fonte aparece."
+  },
+  {
+   "cena": "dados",
+   "tipo": "transicao",
+   "t": 11.25,
+   "texto": "O número se parte para cima e para baixo, acelerando."
+  },
+  {
+   "cena": "dados",
+   "tipo": "objeto",
+   "t": 11.82,
+   "texto": "46% encosta na batida, mesmo estalo."
+  },
+  {
+   "cena": "dados",
+   "tipo": "objeto",
+   "t": 13.32,
+   "texto": "53% encosta; a emenda esfria devagar."
+  },
+  {
+   "cena": "dados",
+   "tipo": "transicao",
+   "t": 14.22,
+   "texto": "Tudo se parte e sai; corte para o convite."
+  },
+  {
+   "cena": "convite",
+   "tipo": "tipo",
+   "t": 14.5,
+   "texto": "“Quer um site assim?” sai do desfoque palavra a palavra."
+  },
+  {
+   "cena": "convite",
+   "tipo": "objeto",
+   "t": 14.6,
+   "texto": "As metades de SITES chegam de lados opostos e fecham acelerando."
+  },
+  {
+   "cena": "convite",
+   "tipo": "objeto",
+   "t": 15.5,
+   "texto": "Na batida: ENCOSTAM, estalo de luz na emenda e empurrão de 2 % na câmera."
+  },
+  {
+   "cena": "convite",
+   "tipo": "tipo",
+   "t": 15.75,
+   "texto": "“me chama no direct ou comenta” sobe palavra a palavra."
+  },
+  {
+   "cena": "convite",
+   "tipo": "luz",
+   "t": 17.5,
+   "texto": "Na última batida a brasa pulsa uma vez; o filme termina vivo."
+  }
+ ],
+ "linhas": {
+  "9x16": {
+   "fps": 60,
+   "bpm": 120,
+   "total": 18,
+   "formato": "9x16",
+   "montagem": "principal",
+   "titulo": "Atenção",
+   "cenas": [
+    {
+     "id": "tensao",
+     "titulo": "O gancho",
+     "indice": 0,
+     "inicio": 0,
+     "dur": 4.5,
+     "fim": 4.5,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "As metades acabaram de bater na tela, a câmera ainda perto",
+       "t": 0.5
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "O relógio conta; as metades rastejam; a fenda acende",
+       "t": 2.2
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A um fio de encostar, a brasa no máximo; relógio em 4",
+       "t": 4,
+       "aprovado": true
+      }
+     ],
+     "tipo": "palavra-gigante",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": null,
+     "hash": "f6a2caff748b2f5b"
+    },
+    {
+     "id": "virada",
+     "titulo": "A virada",
+     "indice": 1,
+     "inicio": 4.5,
+     "dur": 2.5,
+     "fim": 7,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A frase de cima chega do desfoque",
+       "t": 0.2
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A frase emoldura a palavra cortada",
+       "t": 1.6,
+       "aprovado": true
+      }
+     ],
+     "tipo": "frase",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "84a311f28d9c3917"
+    },
+    {
+     "id": "promessa",
+     "titulo": "A promessa",
+     "indice": 2,
+     "inicio": 7,
+     "dur": 3,
+     "fim": 10,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "As metades se separam, a luz abre de dentro",
+       "t": 0.3
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A frase no centro, “atenção” em brasa",
+       "t": 2,
+       "aprovado": true
+      }
+     ],
+     "tipo": "frase-que-vira",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "44bfadd07dd20f47"
+    },
+    {
+     "id": "dados",
+     "titulo": "A prova",
+     "indice": 3,
+     "inicio": 10,
+     "dur": 4.5,
+     "fim": 14.5,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Dado 1",
+       "legenda": "0,05 s para julgar um site (Carleton University, 2006)",
+       "t": 0.95
+      },
+      {
+       "id": "meio",
+       "rotulo": "Dado 2",
+       "legenda": "46 % julgam a credibilidade pelo visual (Stanford, 2002)",
+       "t": 2.45
+      },
+      {
+       "id": "fim",
+       "rotulo": "Dado 3",
+       "legenda": "53 % abandonam se demora mais de 3 s (Google, 2016)",
+       "t": 3.95,
+       "aprovado": true
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "86edf0c9f6496a36"
+    },
+    {
+     "id": "convite",
+     "titulo": "O convite",
+     "indice": 4,
+     "inicio": 14.5,
+     "dur": 3.5,
+     "fim": 18,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A pergunta no alto; as metades de SITES chegando",
+       "t": 0.5
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "SITES inteira, o convite completo",
+       "t": 2.6,
+       "aprovado": true
+      }
+     ],
+     "tipo": "palavra-gigante",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "8dcab875e1746f54"
+    }
+   ],
+   "transicoes": [
+    {
+     "de": "tensao",
+     "para": "virada",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": "Corte no mesmo eixo: a palavra fica exatamente onde está.",
+     "textoEntrada": null,
+     "corte": 4.5,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 4.5,
+     "fim": 4.5,
+     "dur": 0
+    },
+    {
+     "de": "virada",
+     "para": "promessa",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 7,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 7,
+     "fim": 7,
+     "dur": 0
+    },
+    {
+     "de": "promessa",
+     "para": "dados",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 10,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 10,
+     "fim": 10,
+     "dur": 0
+    },
+    {
+     "de": "dados",
+     "para": "convite",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 14.5,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 14.5,
+     "fim": 14.5,
+     "dur": 0
+    }
+   ],
+   "cortes": [
+    4.5,
+    7,
+    10,
+    14.5
+   ],
+   "estilo": {
+    "curvaEntrada": [
+     0.16,
+     1,
+     0.3,
+     1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+   }
+  }
+ }
+}

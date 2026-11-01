@@ -1,0 +1,22 @@
+/* dados — o quadro aprovado: o terceiro dado encostado, a emenda ainda quente. */
+.cena-dados { --luz-a-x: 50%; --luz-a-y: 48%; --luz-b-x: 50%; --luz-b-y: 48%; }
+.cena-dados .luz { opacity: 0.28; }
+.cena-dados .kicker {
+  position: absolute; left: 0; right: 0; top: 19%; text-align: center; margin: 0;
+  font-size: 7cqmin; font-weight: 300; color: var(--texto-suave); letter-spacing: 0;
+}
+.cena-dados .dado { position: absolute; inset: 0; }
+.cena-dados .d0, .cena-dados .d1 { opacity: 0; }
+.cena-dados .corte { top: 46%; }
+.cena-dados .palavra { font-size: 40cqmin; letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }
+.cena-dados .d0 .palavra { font-size: 33cqmin; }
+.cena-dados .fenda { opacity: 0.2; }
+.cena-dados .brasa { opacity: 0.6; }
+.cena-dados .legenda {
+  position: absolute; left: 0; right: 0; top: 60%; text-align: center; margin: 0;
+  font-size: 7.2cqmin; line-height: 1.12;
+}
+.cena-dados .fonte {
+  position: absolute; left: 0; right: 0; top: 73%; text-align: center; margin: 0;
+  font-size: 3.8cqmin; font-weight: 300; letter-spacing: 0.04em; text-transform: uppercase;
+}

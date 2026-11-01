@@ -62,27 +62,27 @@
       "tipo": "palavra-gigante",
       "papel": "gancho",
       "titulo": "O gancho",
-      "dur": 6,
-      "ideia": "ATENÇÃO, cortada ao meio, se reencontra devagar: as metades vêm das bordas e chegam a um fio uma da outra, sem nunca encostar.",
-      "camera": "Push-in lento e contínuo na fenda (1,0 → 1,06), um tremor de 0,1 % nos últimos 1,5 s.",
+      "dur": 4.5,
+      "ideia": "ATENÇÃO, cortada ao meio, bate na tela com peso e depois rasteja: as metades chegam a um fio uma da outra, sem nunca encostar, enquanto a brasa pulsa como um coração acelerando.",
+      "camera": "Nasce perto (1,16×) e recebe o peso da batida (3 %, com tremor); depois push-in lento na fenda, passando por 1,0 no aprovado.",
       "quadros": [
         {
           "id": "inicio",
           "rotulo": "Início",
-          "legenda": "As metades nas bordas do quadro, o preto no meio",
-          "t": 0.1
+          "legenda": "As metades acabaram de bater na tela, a câmera ainda perto",
+          "t": 0.5
         },
         {
           "id": "meio",
           "rotulo": "Passo 2",
-          "legenda": "Elas se aproximam; a fenda começa a acender; o relógio em 2",
-          "t": 2.4
+          "legenda": "O relógio conta; as metades rastejam; a fenda acende",
+          "t": 2.2
         },
         {
           "id": "fim",
           "rotulo": "Fim",
-          "legenda": "A um fio de encostar, a fenda em brasa; o relógio em 5",
-          "t": 5.4,
+          "legenda": "A um fio de encostar, a brasa no máximo; relógio em 4",
+          "t": 4,
           "aprovado": true
         }
       ],
@@ -90,27 +90,32 @@
         {
           "t": 0,
           "tipo": "objeto",
-          "texto": "As metades entram pelas bordas, de cima e de baixo, rápidas no começo e cada vez mais devagar (como se nunca fossem chegar)."
+          "texto": "As metades entram voando de fora do quadro, com rastro de movimento, e batem a 17 cqw uma da outra em 420 ms."
+        },
+        {
+          "t": 0.42,
+          "tipo": "camera",
+          "texto": "BUM: a câmera recebe o peso (3 %) com um tremor curto; a fenda pisca."
         },
         {
           "t": 1,
           "tipo": "tipo",
-          "texto": "O relógio sai do desfoque: “você está aqui há 1 segundo”. Cada segundo vira na hora certa, o número sobe de pertinho."
+          "texto": "O relógio sai do desfoque: “você está aqui há 1 segundo”; cada segundo vira na hora certa."
+        },
+        {
+          "t": 1,
+          "tipo": "luz",
+          "texto": "Batimento: a brasa pulsa em batidas cada vez mais próximas (750 → 200 ms), cada uma mais quente."
         },
         {
           "t": 3,
-          "tipo": "luz",
-          "texto": "A fenda entre elas acende do centro para as pontas e esquenta a cada centímetro que falta."
-        },
-        {
-          "t": 4.5,
           "tipo": "camera",
-          "texto": "A um fio: a câmera treme 0,1 %, as metades dão dois micro-avanços e param (quase)."
+          "texto": "A um fio: tremor mínimo na câmera e nas metades."
         },
         {
-          "t": 5.5,
-          "tipo": "vida",
-          "texto": "Hold: a brasa respira, a câmera continua chegando; nada encosta."
+          "t": 4.25,
+          "tipo": "transicao",
+          "texto": "O relógio sobe e se desfaz; corte no mesmo eixo."
         }
       ],
       "saida": {
@@ -123,54 +128,44 @@
       "tipo": "frase",
       "papel": "desenvolvimento",
       "titulo": "A virada",
-      "dur": 3,
-      "ideia": "O relógio some e a frase abraça a palavra: em cima “Você ficou 6 segundos”, embaixo “esperando isso encostar”.",
+      "dur": 2.5,
+      "ideia": "O relógio some e a frase abraça a palavra: em cima “Você ficou 4 segundos”, embaixo “esperando isso encostar”.",
       "camera": "Herda o push-in e segue devagar; recua 1 % no fim, como quem respira antes de abrir.",
       "quadros": [
         {
           "id": "inicio",
           "rotulo": "Início",
-          "legenda": "O relógio sai, a frase de cima chega do desfoque",
+          "legenda": "A frase de cima chega do desfoque",
           "t": 0.2
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "A frase emoldura a palavra cortada",
-          "t": 1.8,
+          "t": 1.6,
           "aprovado": true
         }
       ],
       "batidas": [
         {
-          "t": 0,
+          "t": 0.05,
           "tipo": "tipo",
-          "texto": "O relógio sobe e se desfaz em 250 ms."
+          "texto": "“Você ficou 4 segundos” sai do desfoque palavra a palavra."
         },
         {
-          "t": 0.1,
+          "t": 0.4,
           "tipo": "tipo",
-          "texto": "“Você ficou 6 segundos” sai do desfoque, palavra a palavra, 45 ms entre elas."
+          "texto": "“esperando isso encostar” sobe por baixo, mais apagada."
         },
         {
-          "t": 0.6,
-          "tipo": "tipo",
-          "texto": "Na batida, “esperando isso encostar” sobe por baixo, mais apagada."
-        },
-        {
-          "t": 1.5,
-          "tipo": "vida",
-          "texto": "Hold: a brasa respira, as metades tremem a um fio."
-        },
-        {
-          "t": 2,
+          "t": 0.9,
           "tipo": "luz",
-          "texto": "Na batida, a brasa da fenda dá um pulso de calor, como se fosse encostar agora."
+          "texto": "A brasa pulsa em cada batida, cada vez mais forte."
         },
         {
-          "t": 2.6,
+          "t": 2.2,
           "tipo": "transicao",
-          "texto": "As duas frases recuam para o desfoque e a fenda começa a abrir."
+          "texto": "As frases recuam para o desfoque e a fenda começa a abrir."
         }
       ],
       "saida": {
@@ -182,7 +177,7 @@
       "tipo": "frase-que-vira",
       "papel": "climax",
       "titulo": "A promessa",
-      "dur": 3.5,
+      "dur": 3,
       "ideia": "A fenda vira janela: as metades se afastam para fora do quadro, a brasa abre e de dentro dela sai a frase.",
       "camera": "Mergulho curto de 4 % na fenda enquanto ela abre; depois push-in vivo.",
       "quadros": [
@@ -190,13 +185,13 @@
           "id": "inicio",
           "rotulo": "Início",
           "legenda": "As metades se separam, a luz abre de dentro",
-          "t": 0.25
+          "t": 0.3
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "A frase no centro, “atenção” em brasa",
-          "t": 2.3,
+          "t": 2,
           "aprovado": true
         }
       ],
@@ -204,37 +199,92 @@
         {
           "t": 0,
           "tipo": "objeto",
-          "texto": "As metades se separam com arranque macio e saem pelas bordas em 600 ms, acelerando."
+          "texto": "As metades se separam e saem pelas bordas em 750 ms, acelerando."
         },
         {
-          "t": 0.1,
+          "t": 0.05,
           "tipo": "luz",
-          "texto": "A brasa da fenda abre na vertical e vira um campo de luz quente."
+          "texto": "A brasa abre na vertical e vira um campo de luz quente."
         },
         {
-          "t": 0.5,
+          "t": 0.4,
           "tipo": "tipo",
-          "texto": "A frase sai do desfoque linha a linha; “atenção” acende por último, na brasa."
+          "texto": "A frase sai do desfoque palavra a palavra."
         },
         {
-          "t": 1,
+          "t": 0.9,
           "tipo": "luz",
-          "texto": "Na batida, “atenção” é varrida da cor do texto para a brasa."
+          "texto": "“atenção” é varrida da cor do texto para a brasa."
         },
         {
-          "t": 1.5,
-          "tipo": "camera",
-          "texto": "A câmera assenta e a luz de trás respira uma vez."
-        },
-        {
-          "t": 2,
-          "tipo": "vida",
-          "texto": "Hold: o degradê de “atenção” deriva e um brilho atravessa a palavra uma vez."
-        },
-        {
-          "t": 3.2,
+          "t": 2.72,
           "tipo": "transicao",
-          "texto": "A frase é sugada para uma linha horizontal de luz, que vira a fenda da próxima."
+          "texto": "A frase é sugada para uma linha de luz, que vira a fenda dos números."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "dados",
+      "tipo": "montagem",
+      "papel": "prova",
+      "titulo": "A prova",
+      "dur": 4.5,
+      "ideia": "Os números chegam do jeito do filme: cada um cortado ao meio, as metades batem e encostam na batida, um a cada 1,5 s, e se partem para dar lugar ao próximo.",
+      "camera": "Viva, com um empurrão de 2 % e um tremor curto a cada número que encosta.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Dado 1",
+          "legenda": "0,05 s para julgar um site (Carleton University, 2006)",
+          "t": 0.95
+        },
+        {
+          "id": "meio",
+          "rotulo": "Dado 2",
+          "legenda": "46 % julgam a credibilidade pelo visual (Stanford, 2002)",
+          "t": 2.45
+        },
+        {
+          "id": "fim",
+          "rotulo": "Dado 3",
+          "legenda": "53 % abandonam se demora mais de 3 s (Google, 2016)",
+          "t": 3.95,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "“A atenção decide” fica no alto a cena toda."
+        },
+        {
+          "t": 0.32,
+          "tipo": "objeto",
+          "texto": "As metades de 0,05s batem e encostam; estalo de luz na emenda; a legenda sobe palavra a palavra e a fonte aparece."
+        },
+        {
+          "t": 1.25,
+          "tipo": "transicao",
+          "texto": "O número se parte para cima e para baixo, acelerando."
+        },
+        {
+          "t": 1.82,
+          "tipo": "objeto",
+          "texto": "46% encosta na batida, mesmo estalo."
+        },
+        {
+          "t": 3.32,
+          "tipo": "objeto",
+          "texto": "53% encosta; a emenda esfria devagar."
+        },
+        {
+          "t": 4.22,
+          "tipo": "transicao",
+          "texto": "Tudo se parte e sai; corte para o convite."
         }
       ],
       "saida": {
@@ -246,21 +296,21 @@
       "tipo": "palavra-gigante",
       "papel": "convite",
       "titulo": "O convite",
-      "dur": 4,
+      "dur": 3.5,
       "ideia": "A colisão que o filme prometeu: as metades de SITES vêm das bordas e encostam na batida, com um estalo de luz na emenda.",
       "camera": "Viva; um empurrão seco de 2 % na colisão, devolvido devagar.",
       "quadros": [
         {
           "id": "inicio",
           "rotulo": "Início",
-          "legenda": "A pergunta no alto; as metades de SITES ainda longe",
-          "t": 0.6
+          "legenda": "A pergunta no alto; as metades de SITES chegando",
+          "t": 0.5
         },
         {
           "id": "fim",
           "rotulo": "Fim",
-          "legenda": "SITES inteira, a emenda ainda quente; o convite completo",
-          "t": 3,
+          "legenda": "SITES inteira, o convite completo",
+          "t": 2.6,
           "aprovado": true
         }
       ],
@@ -271,29 +321,24 @@
           "texto": "“Quer um site assim?” sai do desfoque palavra a palavra."
         },
         {
-          "t": 0.5,
+          "t": 0.1,
           "tipo": "objeto",
-          "texto": "As metades de SITES entram pelas bordas, desta vez rápidas e decididas."
+          "texto": "As metades de SITES chegam de lados opostos e fecham acelerando."
         },
         {
-          "t": 1.5,
+          "t": 1,
           "tipo": "objeto",
-          "texto": "Batida 3: ENCOSTAM. Um estalo de luz corre pela emenda do centro para as pontas e a câmera recebe o peso (2 %)."
+          "texto": "Na batida: ENCOSTAM, estalo de luz na emenda e empurrão de 2 % na câmera."
         },
         {
-          "t": 2,
+          "t": 1.25,
           "tipo": "tipo",
-          "texto": "“me chama no direct ou comenta” sobe palavra a palavra, apontando para SITES."
+          "texto": "“me chama no direct ou comenta” sobe palavra a palavra."
         },
         {
-          "t": 2.8,
-          "tipo": "vida",
-          "texto": "Hold até o fim: a emenda esfria devagar, o degradê de SITES deriva."
-        },
-        {
-          "t": 3.5,
+          "t": 3,
           "tipo": "luz",
-          "texto": "Na última batida, um brilho atravessa SITES uma vez e o filme termina vivo, pronto para recomeçar."
+          "texto": "Na última batida a brasa pulsa uma vez; o filme termina vivo."
         }
       ]
     }
@@ -303,7 +348,7 @@
     "quadro": "fim"
   },
   "storyboard": {
-    "revisao": 2,
+    "revisao": 3,
     "aprovadoEm": "2026-11-01",
     "revisaoAprovada": 2
   },
@@ -325,8 +370,17 @@
       ],
       "fps": 60,
       "nota": "relógio vira sem salto; brasa pulsa na batida na virada"
+    },
+    {
+      "v": 3,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "abertura com impacto, cenas mais curtas, cena nova com dados"
     }
   ],
   "criadoEm": "2026-11-01",
-  "cartaz": "Você ficou 6 segundos esperando isso encostar"
+  "cartaz": "Você ficou 4 segundos esperando isso encostar"
 }

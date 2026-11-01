@@ -570,6 +570,30 @@ body.m-com-player {
   text-align: center; font-size: 13cqmin; line-height: 1.0;
 }
 
+/* ── cenas/dados.css ── */
+/* dados — o quadro aprovado: o terceiro dado encostado, a emenda ainda quente. */
+.cena-dados { --luz-a-x: 50%; --luz-a-y: 48%; --luz-b-x: 50%; --luz-b-y: 48%; }
+.cena-dados .luz { opacity: 0.28; }
+.cena-dados .kicker {
+  position: absolute; left: 0; right: 0; top: 19%; text-align: center; margin: 0;
+  font-size: 7cqmin; font-weight: 300; color: var(--texto-suave); letter-spacing: 0;
+}
+.cena-dados .dado { position: absolute; inset: 0; }
+.cena-dados .d0, .cena-dados .d1 { opacity: 0; }
+.cena-dados .corte { top: 46%; }
+.cena-dados .palavra { font-size: 40cqmin; letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }
+.cena-dados .d0 .palavra { font-size: 33cqmin; }
+.cena-dados .fenda { opacity: 0.2; }
+.cena-dados .brasa { opacity: 0.6; }
+.cena-dados .legenda {
+  position: absolute; left: 0; right: 0; top: 60%; text-align: center; margin: 0;
+  font-size: 7.2cqmin; line-height: 1.12;
+}
+.cena-dados .fonte {
+  position: absolute; left: 0; right: 0; top: 73%; text-align: center; margin: 0;
+  font-size: 3.8cqmin; font-weight: 300; letter-spacing: 0.04em; text-transform: uppercase;
+}
+
 /* ── cenas/convite.css ── */
 .cena-convite { --luz-a-x: 50%; --luz-a-y: 66%; --luz-b-x: 50%; --luz-b-y: 66%; }
 .cena-convite .luz { opacity: 0.35; }
@@ -590,7 +614,7 @@ body.m-com-player {
 </head>
 <body>
 <div id="palco" data-formato="9x16"></div>
-<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":16.5,"formato":"9x16","montagem":"principal","titulo":"Atenção","cenas":[{"id":"tensao","titulo":"O gancho","indice":0,"inicio":0,"dur":6,"fim":6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As metades nas bordas do quadro, o preto no meio","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Elas se aproximam; a fenda começa a acender; o relógio em 2","t":2.4},{"id":"fim","rotulo":"Fim","legenda":"A um fio de encostar, a fenda em brasa; o relógio em 5","t":5.4,"aprovado":true}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":null,"hash":"2c7943e5d5533b9f"},{"id":"virada","titulo":"A virada","indice":1,"inicio":6,"dur":3,"fim":9,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O relógio sai, a frase de cima chega do desfoque","t":0.2},{"id":"fim","rotulo":"Fim","legenda":"A frase emoldura a palavra cortada","t":1.8,"aprovado":true}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"de4786b3cca6c8ce"},{"id":"promessa","titulo":"A promessa","indice":2,"inicio":9,"dur":3.5,"fim":12.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As metades se separam, a luz abre de dentro","t":0.25},{"id":"fim","rotulo":"Fim","legenda":"A frase no centro, “atenção” em brasa","t":2.3,"aprovado":true}],"tipo":"frase-que-vira","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"7fb8d2a01822be81"},{"id":"convite","titulo":"O convite","indice":3,"inicio":12.5,"dur":4,"fim":16.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A pergunta no alto; as metades de SITES ainda longe","t":0.6},{"id":"fim","rotulo":"Fim","legenda":"SITES inteira, a emenda ainda quente; o convite completo","t":3,"aprovado":true}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"33f37b480ac9edb2"}],"transicoes":[{"de":"tensao","para":"virada","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte no mesmo eixo: a palavra fica exatamente onde está.","textoEntrada":null,"corte":6,"antes":0,"depois":0,"inicio":6,"fim":6,"dur":0},{"de":"virada","para":"promessa","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"corte":9,"antes":0,"depois":0,"inicio":9,"fim":9,"dur":0},{"de":"promessa","para":"convite","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"corte":12.5,"antes":0,"depois":0,"inicio":12.5,"fim":12.5,"dur":0}],"cortes":[6,9,12.5],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
+<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":18,"formato":"9x16","montagem":"principal","titulo":"Atenção","cenas":[{"id":"tensao","titulo":"O gancho","indice":0,"inicio":0,"dur":4.5,"fim":4.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As metades acabaram de bater na tela, a câmera ainda perto","t":0.5},{"id":"meio","rotulo":"Passo 2","legenda":"O relógio conta; as metades rastejam; a fenda acende","t":2.2},{"id":"fim","rotulo":"Fim","legenda":"A um fio de encostar, a brasa no máximo; relógio em 4","t":4,"aprovado":true}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":null,"hash":"f6a2caff748b2f5b"},{"id":"virada","titulo":"A virada","indice":1,"inicio":4.5,"dur":2.5,"fim":7,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A frase de cima chega do desfoque","t":0.2},{"id":"fim","rotulo":"Fim","legenda":"A frase emoldura a palavra cortada","t":1.6,"aprovado":true}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"84a311f28d9c3917"},{"id":"promessa","titulo":"A promessa","indice":2,"inicio":7,"dur":3,"fim":10,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As metades se separam, a luz abre de dentro","t":0.3},{"id":"fim","rotulo":"Fim","legenda":"A frase no centro, “atenção” em brasa","t":2,"aprovado":true}],"tipo":"frase-que-vira","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"44bfadd07dd20f47"},{"id":"dados","titulo":"A prova","indice":3,"inicio":10,"dur":4.5,"fim":14.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Dado 1","legenda":"0,05 s para julgar um site (Carleton University, 2006)","t":0.95},{"id":"meio","rotulo":"Dado 2","legenda":"46 % julgam a credibilidade pelo visual (Stanford, 2002)","t":2.45},{"id":"fim","rotulo":"Dado 3","legenda":"53 % abandonam se demora mais de 3 s (Google, 2016)","t":3.95,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"86edf0c9f6496a36"},{"id":"convite","titulo":"O convite","indice":4,"inicio":14.5,"dur":3.5,"fim":18,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A pergunta no alto; as metades de SITES chegando","t":0.5},{"id":"fim","rotulo":"Fim","legenda":"SITES inteira, o convite completo","t":2.6,"aprovado":true}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"8dcab875e1746f54"}],"transicoes":[{"de":"tensao","para":"virada","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte no mesmo eixo: a palavra fica exatamente onde está.","textoEntrada":null,"corte":4.5,"antes":0,"depois":0,"inicio":4.5,"fim":4.5,"dur":0},{"de":"virada","para":"promessa","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"corte":7,"antes":0,"depois":0,"inicio":7,"fim":7,"dur":0},{"de":"promessa","para":"dados","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"corte":10,"antes":0,"depois":0,"inicio":10,"fim":10,"dur":0},{"de":"dados","para":"convite","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"corte":14.5,"antes":0,"depois":0,"inicio":14.5,"fim":14.5,"dur":0}],"cortes":[4.5,7,10,14.5],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
 window.MOTION_FONTES=[{"familia":"Inter Display","peso":"300","estilo":"normal"},{"familia":"Inter Display","peso":"400","estilo":"normal"},{"familia":"Inter Display","peso":"500","estilo":"normal"},{"familia":"Marca Sans","peso":"400","estilo":"normal"}];
 window.MOTION_MIDIA={};
 window.MOTION_SVG={};
@@ -3879,7 +3903,7 @@ window.MOTION_CATALOGO={"corte":{"modo":"encadeada","antes":0,"depois":0,"opcoes
 //# sourceURL=motor/player.js</script>
 
 
-<script>/* tensao — "O gancho" (6 s)
+<script>/* tensao — "O gancho" (4,5 s)
    Ideia: a palavra ATENÇÃO, cortada ao meio, se reencontra devagar: as metades vêm das bordas e
    chegam a um fio uma da outra, sem nunca encostar. Um relógio honesto conta os segundos. */
 {
@@ -3921,52 +3945,61 @@ Motion.cena('tensao', {
     el.cam = api.camera({ origem: [50, 54] });
   },
 
-  // as metades: entram rápidas e vão freando como se nunca fossem chegar (meio-gap em cqw)
+  // as metades: batem na tela com peso (0,45 s) e depois rastejam, cada vez mais devagar, sem nunca encostar
   quadro(t, el, api) {
     const { prog, ease, lerp, suave, clamp } = api;
-    let d = 104 - 82 * ease.forte(prog(t, 0, 1.2)) - 21.7 * ease.outQuad(prog(t, 0.6, 5.3)) - 0.06 * prog(t, 5.3, 6);
-    // a um fio: dois micro-avanços e um tremor mínimo
-    const fio = suave(prog(t, 4.3, 5.0));
-    const tr = 0.05 * fio * (api.ruido(t, 3, { freq: 7 }));
-    api.set(el.cima, { y: -(d - 0.28) + tr });
-    api.set(el.baixo, { y: d - 0.28 - tr });
+    const dist = (u) => 150 - 133 * ease.outExpo(prog(u, -0.07, 0.45)) - 16.7 * ease.outQuad(prog(u, 0.3, 4.1)) - 0.05 * prog(u, 4.1, 4.5);
+    const d = dist(t);
+    const v = (dist(t + 1 / 120) - dist(t - 1 / 120)) * 60; // cqw/s
+    const BATE = 0.42;
+    const tr = api.tremor(t, BATE, { forca: 0.5, freq: 10 });
+    const fio = suave(prog(t, 3.0, 3.8));
+    const mi = 0.05 * fio * api.ruido(t, 3, { freq: 7 });
+    api.set(el.cima, { y: -(d - 0.28) + tr.y + mi });
+    api.set(el.baixo, { y: d - 0.28 - tr.y - mi });
+    api.fx.obturador(el.cima, 0, v);
+    api.fx.obturador(el.baixo, 0, v);
 
-    // a fenda acende do centro para as pontas; a brasa esquenta conforme falta menos
-    const acende = suave(prog(t, 2.6, 4.6));
-    api.set(el.fenda, { o: acende * (0.9 + 0.1 * Math.sin(t * 5.3)), sx: lerp(0.15, 1, ease.forte(prog(t, 2.6, 4.4))) });
-    const calor = Math.pow(clamp(prog(t, 1.2, 5.4)), 1.6);
-    api.set(el.brasa, { o: calor * (1 + 0.06 * api.vida(t, { periodo: 2.3, inicio: 4.8 })), sx: lerp(0.6, 1, calor) });
-    api.fx.respirar(t, el.luz, { periodo: 4.1, amp: 0.08, base: 0.22 });
+    // batimento: a brasa pulsa em batidas cada vez mais próximas, cada uma mais quente
+    const bat = [1.0, 1.75, 2.35, 2.85, 3.25, 3.58, 3.85, 4.08, 4.28];
+    let pulso = 0;
+    bat.forEach((tb, i) => { pulso += api.pulsoSemQuique(t - tb, 0.07) * (0.25 + 0.06 * i); });
+    const acende = suave(prog(t, 0.9, 3.4));
+    api.set(el.fenda, { o: Math.min(1, acende * (0.85 + 0.4 * pulso)) + 0.9 * api.pulsoSemQuique(t - BATE, 0.04) * (1 - acende), sx: lerp(0.2, 1, ease.forte(prog(t, 0.35, 3.2))), bright: 1 + 0.8 * pulso });
+    const calor = Math.pow(clamp(prog(t, 0.4, 4.0)), 1.3);
+    api.set(el.brasa, { o: Math.min(1.2, calor * (1 + 0.5 * pulso) + 0.5 * api.pulsoSemQuique(t - BATE, 0.05)), sx: lerp(0.6, 1, calor) * (1 + 0.05 * pulso) });
+    api.fx.respirar(t, el.luz, { periodo: 3.1, amp: 0.1, base: 0.22 });
 
     // o relógio: entra em 1 s, cada segundo vira na hora certa, sai antes do corte
-    const n = clamp(Math.floor(t), 1, 5);
+    const n = clamp(Math.floor(t), 1, 4);
     el.n.textContent = String(n);
     el.un.textContent = n === 1 ? 'segundo' : 'segundos';
-    const entra = ease.forte(prog(t, 0.95, 1.5));
-    const sai = ease.inCubic(prog(t, 5.72, 6.0));
-    api.set(el.relogio, { o: suave(prog(t, 0.95, 1.15)) * (1 - sai), blur: 0.9 * (1 - entra) + 0.8 * sai, y: 2.2 * (1 - entra) - 2 * sai });
+    const entra = ease.forte(prog(t, 0.9, 1.4));
+    const sai = ease.inCubic(prog(t, 4.25, 4.5));
+    api.set(el.relogio, { o: suave(prog(t, 0.9, 1.08)) * (1 - sai), blur: 0.9 * (1 - entra) + 0.8 * sai, y: 2.2 * (1 - entra) - 2 * sai });
     const f = t - Math.floor(t);
     const vira = t < 2 ? 1 : ease.forte(prog(f, 0, 0.4));
-    // o número velho sobe e se desfaz um fio antes de virar; o novo sobe de pertinho
-    const vai = t < 5 ? ease.inCubic(prog(f, 0.86, 1)) : 0;
+    const vai = t < 4 ? ease.inCubic(prog(f, 0.86, 1)) : 0;
     api.set(el.num, { y: 1.6 * (1 - vira) - 1.2 * vai, blur: 0.5 * (1 - vira) + 0.5 * vai, o: (t < 2 ? 1 : suave(prog(f, 0, 0.16))) * (1 - vai) });
 
-    // câmera: push-in lento na fenda, um tremor mínimo a um fio
-    const z = 1 + 0.05 * (ease.inOutSine(prog(t, 0, 6)) - ease.inOutSine(prog(5.4, 0, 6)));
-    el.cam.pose({ zoom: z, x: 0.06 * fio * api.ruido(t, 9, { freq: 6 }), y: 0.06 * fio * api.ruido(t, 11, { freq: 6 }) });
+    // câmera: nasce perto e recebe o peso da batida; depois empurra devagar na fenda
+    const perto = 1 + 0.16 * (1 - ease.forte(prog(t, 0, 0.8)));
+    const kick = 1 + 0.03 * api.pulsoSemQuique(t - BATE, 0.06);
+    const push = 1 + 0.06 * (ease.inOutSine(prog(t, 0.6, 4.5)) - ease.inOutSine(prog(4.0, 0.6, 4.5)));
+    el.cam.pose({ zoom: perto * kick * push, x: tr.x * 0.4 + 0.06 * fio * api.ruido(t, 9, { freq: 6 }), y: 0.06 * fio * api.ruido(t, 11, { freq: 6 }), giro: tr.giro * 0.5 });
   },
 });
 }
 
 //# sourceURL=cenas/tensao.js</script>
 <script>/* virada — "A virada" (3 s)
-   Ideia: o relógio para e a frase abraça a palavra: em cima "Você ficou 6 segundos",
+   Ideia: o relógio para e a frase abraça a palavra: em cima "Você ficou 4 segundos",
    embaixo "esperando isso encostar". As metades seguem a um fio, sem encostar. */
 {
 Motion.cena('virada', {
   render: () => `
     <div class="camada c-luz"><div class="luz"></div></div>
-    <h2 class="titulo frase f-cima">Você ficou<br>6 segundos</h2>
+    <h2 class="titulo frase f-cima">Você ficou<br>4 segundos</h2>
     <div class="corte" data-ponte="corte">
       <div class="brasa"></div>
       <div class="metade cima"><span class="palavra">ATENÇÃO</span></div>
@@ -3991,22 +4024,22 @@ Motion.cena('virada', {
   quadro(t, el, api) {
     const { tipo, prog, ease, suave } = api;
     const a1 = tipo.focar(t, el.p1, { inicio: 0.05, aplicar: false });
-    const a2 = tipo.focar(t, el.p2, { inicio: 0.5, aplicar: false });
-    tipo.aplicar(el.p1, a1, tipo.sair(t, el.p1, { inicio: 2.62, dur: 0.3, aplicar: false }));
-    tipo.aplicar(el.p2, a2, tipo.sair(t, el.p2, { inicio: 2.62, dur: 0.3, aplicar: false }));
+    const a2 = tipo.focar(t, el.p2, { inicio: 0.4, aplicar: false });
+    tipo.aplicar(el.p1, a1, tipo.sair(t, el.p1, { inicio: 2.22, dur: 0.28, aplicar: false }));
+    tipo.aplicar(el.p2, a2, tipo.sair(t, el.p2, { inicio: 2.22, dur: 0.28, aplicar: false }));
     // as metades seguem a um fio, tremendo de leve
     const tr = 0.05 * api.ruido(t, 3, { freq: 7 });
     api.set(el.cima, { y: 0.04 + tr });
     api.set(el.baixo, { y: -0.04 - tr });
     // na batida 4, a brasa dá um pulso de calor (como se fosse encostar agora)
     // a cada batida a brasa esquenta um pouco mais, como se fosse encostar agora
-    const nb = api.naBatida(t, { de: 1.0, cada: 1, ataque: 0.12 });
-    const p = t < 2.6 ? nb.v * (0.6 + 0.2 * Math.max(0, nb.k)) : 0;
+    const nb = api.naBatida(t, { de: 0.9, cada: 1, ataque: 0.12 });
+    const p = t < 2.2 ? nb.v * (0.6 + 0.2 * Math.max(0, nb.k)) : 0;
     api.set(el.brasa, { o: 1 + 0.35 * p + 0.05 * api.vida(t, { periodo: 2.3 }), sx: 1 + 0.06 * p });
     api.set(el.fenda, { o: 0.95 + 0.05 * Math.sin(t * 5.3), bright: 1 + 0.6 * p });
     api.fx.respirar(t, el.luz, { periodo: 4.1, amp: 0.08, base: 0.22 });
     // câmera: herda o push, recua 1 % no fim como quem respira antes de abrir
-    const z = 1.0072 + 0.012 * t - 0.016 * ease.inOutSine(prog(t, 2.2, 3.0));
+    const z = 1.002 + 0.016 * t - 0.016 * ease.inOutSine(prog(t, 1.8, 2.5));
     el.cam.pose({ zoom: z });
   },
 });
@@ -4042,7 +4075,7 @@ Motion.cena('promessa', {
     el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
     el.K = 62 * api.altura / api.largura; // 62 cqh em cqw
     el.cam = api.camera({ origem: [50, 54] });
-    el.yLinha = (64 - 50) * api.altura / api.largura; // a fenda da próxima cena
+    el.yLinha = (48 - 50) * api.altura / api.largura; // a fenda da próxima cena
   },
   quadro(t, el, api) {
     const { tipo, prog, ease, lerp, suave } = api;
@@ -4051,23 +4084,105 @@ Motion.cena('promessa', {
     api.set(el.cima, { y: (el.K - 0.28) * (1 - e) - 0.5 * suave(prog(t, 0, 0.08)) });
     api.set(el.baixo, { y: -(el.K - 0.28) * (1 - e) + 0.5 * suave(prog(t, 0, 0.08)) });
     const abre = ease.forte(prog(t, 0.05, 1.1));
-    api.set(el.brasa, { sx: lerp(1 / 1.3, 1, abre), sy: lerp(1 / 4.2, 1, abre), o: lerp(1, 0.55, abre) * (1 + 0.08 * api.vida(t, { periodo: 2.7, inicio: 1.2 })) * (1 - suave(prog(t, 3.2, 3.5))) });
+    api.set(el.brasa, { sx: lerp(1 / 1.3, 1, abre), sy: lerp(1 / 4.2, 1, abre), o: lerp(1, 0.55, abre) * (1 + 0.08 * api.vida(t, { periodo: 2.7, inicio: 1.2 })) * (1 - suave(prog(t, 2.7, 3.0))) });
     api.set(el.fenda, { o: 1 - suave(prog(t, 0.05, 0.5)), sx: lerp(1, 1.5, abre) });
     api.fx.respirar(t, el.luz, { periodo: 3.7, amp: 0.1, base: 0.4 });
     // a frase sai da luz, palavra a palavra; "atenção" acende na batida 2
-    const a = tipo.focar(t, el.pal, { inicio: 0.55, cascata: 0.06, aplicar: false });
-    const s = tipo.sugar(t, el.pal, { inicio: 3.2, dur: 0.3, ponto: [0, el.yLinha], aplicar: false });
+    const a = tipo.focar(t, el.pal, { inicio: 0.4, cascata: 0.05, aplicar: false });
+    const s = tipo.sugar(t, el.pal, { inicio: 2.72, dur: 0.28, ponto: [0, el.yLinha], aplicar: false });
     tipo.aplicar(el.pal, a, s);
-    tipo.varrerDestaque(t, el.pal, { inicio: 1.0, dur: 0.5 });
-    tipo.derivaDestaque(t, el.pal, { inicio: 1.6 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.9, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.4 });
     // câmera: mergulho curto na fenda enquanto ela abre, depois viva
-    const z = 1.009 + 0.035 * ease.forte(prog(t, 0, 1.2)) + 0.008 * (t - 2.3) * suave(prog(t, 1.0, 1.6)) - 0.0;
+    const z = 1.009 + 0.035 * ease.forte(prog(t, 0, 1.2)) + 0.012 * (t - 2.0) * suave(prog(t, 0.9, 1.5)) - 0.0;
     el.cam.pose({ zoom: z });
   },
 });
 }
 
 //# sourceURL=cenas/promessa.js</script>
+<script>/* dados — "A prova" (4,5 s)
+   Ideia: os números da prova chegam do jeito do filme: cada um cortado ao meio, as metades batem
+   e encostam na batida (uma a cada 1,5 s), e saem se partindo para o próximo.
+   Dados verificados (fonte na tela): Carleton University 2006 (julgamento visual em 50 ms);
+   Stanford Web Credibility 2002 (46,1 % dos comentários sobre credibilidade citam o visual);
+   Google "The Need for Mobile Speed" 2016 (53 % abandonam acima de 3 s). */
+{
+const DADOS = [
+  { n: '0,05s', legenda: 'é o tempo que uma pessoa leva<br>para julgar o seu site', fonte: 'Carleton University, 2006' },
+  { n: '46%', legenda: 'julgam a credibilidade<br>de um site pelo visual', fonte: 'Stanford, 2002' },
+  { n: '53%', legenda: 'abandonam um site no celular<br>que demora mais de 3 segundos', fonte: 'Google, 2016' },
+];
+const PASSO = 1.5;
+Motion.cena('dados', {
+  render: () => `
+    <div class="camada c-luz"><div class="luz"></div></div>
+    <p class="titulo kicker">A atenção decide</p>
+    ${DADOS.map((d, i) => `
+    <div class="dado d${i}">
+      <div class="corte">
+        <div class="brasa"></div>
+        <div class="metade cima"><span class="palavra">${d.n}</span></div>
+        <div class="metade baixo"><span class="palavra">${d.n}</span></div>
+        <div class="fenda"></div>
+      </div>
+      <p class="titulo legenda">${d.legenda}</p>
+      <p class="apoio fonte">${d.fonte}</p>
+    </div>`).join('')}`,
+
+  montar(el, api) {
+    el.luz = el.$('.luz');
+    el.kick = api.tipo.dividir(el.$('.kicker'), { por: 'palavra' });
+    el.d = el.$$('.dado').map((raiz) => ({
+      raiz,
+      cima: raiz.querySelector('.cima'), baixo: raiz.querySelector('.baixo'),
+      fenda: raiz.querySelector('.fenda'), brasa: raiz.querySelector('.brasa'),
+      leg: api.tipo.dividir(raiz.querySelector('.legenda'), { por: 'palavra' }),
+      fonte: raiz.querySelector('.fonte'),
+    }));
+    el.cam = api.camera({ origem: [50, 48] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, ease, lerp, suave } = api;
+    const a = tipo.focar(t, el.kick, { inicio: -0.05, aplicar: false });
+    tipo.aplicar(el.kick, a, tipo.sair(t, el.kick, { inicio: 4.22, dur: 0.28, aplicar: false }));
+    let kickCam = 0;
+    let tremX = 0;
+    el.d.forEach((d, i) => {
+      const t0 = i * PASSO;
+      const bate = t0 + 0.32;
+      const ultimo = i === el.d.length - 1;
+      const fimSai = t0 + PASSO;           // a saída termina quando o próximo entra
+      const saida = ease.inCubic(prog(t, fimSai - 0.28, fimSai));
+      // as metades chegam rápidas, aceleram e encostam na batida
+      const dd = lerp(22, 0, ease.inCubic(prog(t, t0 - 0.02, bate)));
+      const tr = api.tremor(t, bate, { forca: 0.4, freq: 11, semente: i + 1 });
+      const vem = ease.forte(prog(t, t0 - 0.02, t0 + 0.2));
+      const abre = 30 * saida;
+      const vis = t >= t0 - 0.04 && t < fimSai ? 1 : 0;
+      api.set(d.raiz, { o: vis });
+      api.set(d.cima, { y: -dd - abre + tr.y, o: vem, blur: 0.5 * (1 - vem) + 0.6 * saida });
+      api.set(d.baixo, { y: dd + abre - tr.y, o: vem, blur: 0.5 * (1 - vem) + 0.6 * saida });
+      // o estalo: a emenda acende do centro para as pontas e esfria
+      const estalo = api.pulsoSemQuique(t - bate, 0.05);
+      const corre = ease.forte(prog(t, bate, bate + 0.45));
+      api.set(d.fenda, { o: (t < bate ? 0 : lerp(1, 0.2, ease.outCubic(prog(t, bate + 0.08, bate + 1.0)))) * (1 - saida), sx: lerp(0.15, 1, corre), bright: 1 + 1.2 * estalo });
+      api.set(d.brasa, { o: (0.25 + 0.6 * estalo + 0.35 * suave(prog(t, bate, bate + 0.5))) * (1 - saida), sx: 1 + 0.12 * estalo });
+      const l = tipo.focar(t, d.leg, { inicio: bate + 0.02, cascata: 0.035, aplicar: false });
+      tipo.aplicar(d.leg, l, tipo.sair(t, d.leg, { inicio: fimSai - 0.26, dur: 0.24, aplicar: false }));
+      const fo = ease.forte(prog(t, bate + 0.2, bate + 0.6));
+      api.set(d.fonte, { o: suave(prog(t, bate + 0.2, bate + 0.35)) * (1 - saida), y: 1.2 * (1 - fo), blur: 0.3 * (1 - fo) });
+      kickCam += api.pulsoSemQuique(t - bate, 0.06);
+      tremX += tr.x;
+    });
+    api.fx.respirar(t, el.luz, { periodo: 2.9, amp: 0.1, base: 0.28 });
+    el.cam.pose({ zoom: api.viva(t, { v: 0.01 }) * (1 + 0.022 * kickCam), x: tremX * 0.3 });
+  },
+});
+}
+
+//# sourceURL=cenas/dados.js</script>
 <script>/* convite — "O convite" (4 s)
    Ideia: a pergunta, o caminho e, enfim, a colisão que o filme inteiro prometeu: as metades de
    SITES vêm das bordas e encostam na batida, com um estalo de luz na emenda. */
@@ -4101,27 +4216,27 @@ Motion.cena('convite', {
   },
   quadro(t, el, api) {
     const { tipo, prog, ease, lerp, suave } = api;
-    const BATE = 1.5;
+    const BATE = 1.0;
     tipo.focar(t, el.perg, { inicio: 0.0 });
     // as metades de SITES entram decididas e aceleram até encostar na batida 3
     // chegam de lados opostos, já perto, e fecham acelerando até encostar
-    const d = lerp(13, 0, ease.inCubic(prog(t, 0.35, BATE)));
-    const lado = 34 * (1 - ease.forte(prog(t, 0.3, 1.25)));
+    const d = lerp(13, 0, ease.inCubic(prog(t, 0.15, BATE)));
+    const lado = 34 * (1 - ease.forte(prog(t, 0.1, 0.85)));
     const tr = api.tremor(t, BATE, { forca: 0.35, freq: 11 });
-    const vem = ease.forte(prog(t, 0.3, 0.8));
-    api.set(el.cima, { y: -d + tr.y, x: -lado, o: suave(prog(t, 0.3, 0.45)), blur: 0.6 * (1 - vem) });
-    api.set(el.baixo, { y: d - tr.y, x: lado, o: suave(prog(t, 0.3, 0.45)), blur: 0.6 * (1 - vem) });
+    const vem = ease.forte(prog(t, 0.1, 0.5));
+    api.set(el.cima, { y: -d + tr.y, x: -lado, o: suave(prog(t, 0.1, 0.25)), blur: 0.6 * (1 - vem) });
+    api.set(el.baixo, { y: d - tr.y, x: lado, o: suave(prog(t, 0.1, 0.25)), blur: 0.6 * (1 - vem) });
     // o estalo: a emenda acende do centro para as pontas e esfria devagar
     const estalo = api.pulsoSemQuique(t - BATE, 0.05);
     const corre = ease.forte(prog(t, BATE, BATE + 0.5));
     const antes = (1 - suave(prog(t, 0, 0.35))) * 0.9; // a linha que veio da frase sugada
     const depois = t < BATE ? 0 : lerp(1, 0.25, ease.outCubic(prog(t, BATE + 0.1, BATE + 1.4)));
     api.set(el.fenda, { o: Math.max(antes, depois), sx: t < BATE ? lerp(0.25, 0.6, prog(t, 0, 0.35)) : lerp(0.2, 1, corre), bright: 1 + 1.2 * estalo });
-    const nb = api.naBatida(t, { de: 3.5, cada: 1, ataque: 0.12 });
-    const brasa = lerp(0.15, 0.45, suave(prog(t, 0.4, BATE))) + 0.9 * estalo * 1 + (t > BATE ? 0.25 * ease.outCubic(prog(t, BATE, BATE + 0.6)) : 0);
-    api.set(el.brasa, { o: Math.min(1.2, brasa) * (1 + 0.07 * api.vida(t, { periodo: 2.6, inicio: 2.4 }) + 0.15 * (nb.k === 0 ? nb.v : 0)), sx: 1 + 0.15 * estalo });
+    const nb = api.naBatida(t, { de: 3.0, cada: 1, ataque: 0.12 });
+    const brasa = lerp(0.15, 0.45, suave(prog(t, 0.2, BATE))) + 0.9 * estalo * 1 + (t > BATE ? 0.25 * ease.outCubic(prog(t, BATE, BATE + 0.6)) : 0);
+    api.set(el.brasa, { o: Math.min(1.2, brasa) * (1 + 0.07 * api.vida(t, { periodo: 2.6, inicio: 1.8 }) + 0.15 * (nb.k === 0 ? nb.v : 0)), sx: 1 + 0.15 * estalo });
     api.fx.respirar(t, el.luz, { periodo: 3.9, amp: 0.08, base: 0.35 });
-    tipo.focar(t, el.cam_, { inicio: 2.0 });
+    tipo.focar(t, el.cam_, { inicio: 1.25 });
     // câmera viva; um empurrão seco de 2 % na colisão, devolvido devagar
     const z = api.viva(t, { v: 0.008 }) * (1 + 0.02 * api.pulsoSemQuique(t - BATE, 0.07));
     el.cam.pose({ zoom: z, x: tr.x * 0.3 });

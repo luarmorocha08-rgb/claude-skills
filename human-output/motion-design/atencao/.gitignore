@@ -1,3 +1,4 @@
 .cache/
 *.zip
 render/v1/
+render/v2/
