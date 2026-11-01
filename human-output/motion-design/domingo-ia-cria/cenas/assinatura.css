@@ -1,9 +1,12 @@
 .cena-assinatura .topo { top: 13cqh; }
 .cena-assinatura .rotulo { margin-bottom: 3.4cqmin; }
-.cena-assinatura .frase { font-size: 17cqmin; }
+.cena-assinatura .frase { font-size: 16cqmin; white-space: nowrap; }
 .cena-assinatura .heroi-direita { height: 52cqh; right: 3cqw; bottom: 3cqh; }
-.cena-assinatura .base { top: 62cqh; right: 44cqw; display: flex; flex-direction: column; gap: 4cqmin; }
+.cena-assinatura .base { top: 61cqh; right: 40cqw; display: flex; flex-direction: column; gap: 4cqmin; }
 .cena-assinatura .chamada { display: flex; align-items: center; gap: 2cqmin; padding: 2.6cqmin 3.2cqmin; border-radius: 3cqmin;
   background: color-mix(in srgb, var(--luz-1) 22%, var(--cartao)); box-shadow: inset 0 0 0 0.16cqmin var(--linha);
   font: 600 3.6cqmin/1.2 var(--fonte-texto); color: var(--texto); }
 .cena-assinatura .mini { width: 5cqmin; height: 5cqmin; object-fit: contain; flex: none; }
+.cena-assinatura .rodape { flex-wrap: wrap; row-gap: 2.4cqmin; }
+.cena-assinatura .seguir { flex-basis: 100%; font: 600 4.2cqmin var(--fonte-texto); color: var(--texto); }
+.cena-assinatura .seguir b { color: var(--destaque); font-weight: 700; margin-left: 0.6cqmin; }

@@ -16,7 +16,7 @@
 .cena-app .barras { margin-top: 2cqmin; height: 15cqmin; display: flex; gap: 1.4cqmin; align-items: stretch; }
 .cena-app .col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 1cqmin; }
 .cena-app .col i { width: 100%; border-radius: 1cqmin; background: color-mix(in srgb, var(--texto) 16%, transparent); }
-.cena-app .col span { font: 700 2cqmin var(--fonte-texto); color: var(--texto-suave); }
+.cena-app .col span { font: 700 2cqmin var(--fonte-texto); color: var(--texto-suave); min-height: 2.4cqmin; white-space: nowrap; }
 .cena-app .col.hoje i { background: var(--destaque-grad); box-shadow: 0 0 2cqmin color-mix(in srgb, var(--luz-3) 50%, transparent); }
 .cena-app .col.hoje span { color: var(--destaque); }
 .cena-app .dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2cqmin; }

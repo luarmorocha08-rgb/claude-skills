@@ -342,7 +342,7 @@
       "id": "app",
       "titulo": "03 · O app",
       "dur": 3,
-      "ideia": "O celular sobe de pé, a tela se monta card a card e a barra do domingo cresce por último e acende em dourado: o dia de hoje fecha a semana.",
+      "ideia": "O celular sobe de pé, a tela se monta card a card e a barra de hoje cresce por último e acende em dourado: o treino do dia fecha a semana.",
       "camera": "Push-in vivo; o celular gira um fio em Y (±3°) no hold, como se estivesse na mão.",
       "quadros": [
         {
@@ -360,7 +360,7 @@
         {
           "id": "fim",
           "rotulo": "Fim",
-          "legenda": "O app pronto, com a barra do domingo acesa em dourado",
+          "legenda": "O app pronto, com a barra de hoje acesa em dourado",
           "t": 1.9
         }
       ],
@@ -373,7 +373,7 @@
         {
           "t": 0.25,
           "tipo": "objeto",
-          "texto": "'Bom domingo, Raul', o card do treino e a semana caem na tela num rufar (90 → 40 ms)."
+          "texto": "'Bom dia, Raul', o card do treino e a semana caem na tela num rufar (90 → 40 ms)."
         },
         {
           "t": 0.5,
@@ -383,17 +383,17 @@
         {
           "t": 0.75,
           "tipo": "objeto",
-          "texto": "As barras crescem da esquerda para a direita, 50 ms entre elas; a do domingo cresce por último, passa um pouco e acende dourada na batida 2."
+          "texto": "As barras crescem da esquerda para a direita, 50 ms entre elas; a de hoje cresce por último, passa um pouco e acende dourada na batida 2."
         },
         {
           "t": 1.6,
           "tipo": "vida",
-          "texto": "Hold: a barra do domingo brilha macio, o celular respira em Y."
+          "texto": "Hold: a barra de hoje brilha macio, o celular respira em Y."
         },
         {
           "t": 2.1,
           "tipo": "luz",
-          "texto": "Um brilho atravessa a barra do domingo e o número de treinos uma vez."
+          "texto": "Um brilho atravessa a barra de hoje e o número de treinos uma vez."
         },
         {
           "t": 2.6,
@@ -410,7 +410,7 @@
       "id": "assinatura",
       "titulo": "A assinatura",
       "dur": 3.5,
-      "ideia": "As facetas douradas voltam e remontam o personagem; o cursor escreve 'Domingo é dia de criar.' e assina com o monograma.",
+      "ideia": "As facetas douradas voltam e remontam o personagem; o cursor pergunta 'Qual é a próxima criação?' e o convite para comentar e seguir assina com o monograma.",
       "camera": "Push-in vivo bem lento (0,8 %/s); no fim, tudo escurece até o fundo nos últimos 0,5 s.",
       "quadros": [
         {
@@ -422,13 +422,13 @@
         {
           "id": "meio",
           "rotulo": "Passo 2",
-          "legenda": "O personagem quase montado; o cursor escrevendo 'criar'",
+          "legenda": "O personagem quase montado; o cursor escrevendo 'criação'",
           "t": 0.9
         },
         {
           "id": "fim",
           "rotulo": "Fim",
-          "legenda": "A frase final grande, o personagem à direita, chamada e rodapé da marca",
+          "legenda": "A pergunta grande, o personagem à direita, o convite para comentar e seguir, o rodapé da marca",
           "t": 2.3
         }
       ],
@@ -441,22 +441,27 @@
         {
           "t": 0.5,
           "tipo": "tipo",
-          "texto": "'Domingo é dia de' sobe palavra a palavra; 'criar' é escrito pelo cursor letra a letra e varrido para o dourado na batida 3."
+          "texto": "'Qual é a próxima' sobe palavra a palavra; 'criação' é escrita pelo cursor letra a letra e varrida para o dourado na batida 3."
         },
         {
           "t": 1.5,
           "tipo": "objeto",
-          "texto": "A chamada chega da profundidade com um estalo pequeno; o monograma RR e @ramosraul.ia sobem na meia batida seguinte."
+          "texto": "O convite 'Comenta a sua ideia e segue pra ver ela nascer aqui.' chega da profundidade com um estalo pequeno."
         },
         {
           "t": 2,
+          "tipo": "objeto",
+          "texto": "RR @ramosraul.ia sobe; embaixo, 'Seguir +' entra e o '+' dourado pulsa uma vez, como um convite."
+        },
+        {
+          "t": 2.5,
           "tipo": "luz",
-          "texto": "Um brilho atravessa 'criar' uma vez; a contraluz âmbar respira atrás do personagem."
+          "texto": "Um brilho atravessa 'criação' uma vez; a contraluz âmbar respira atrás do personagem; o cursor pisca esperando a resposta."
         },
         {
           "t": 3,
           "tipo": "transicao",
-          "texto": "O cursor pisca uma última vez e tudo esmaece até o fundo: o loop do Reels recomeça no cursor do gancho."
+          "texto": "Tudo esmaece até o fundo: o loop do Reels recomeça no cursor da abertura."
         }
       ],
       "saida": {
@@ -470,7 +475,7 @@
     "quadro": "fim"
   },
   "storyboard": {
-    "revisao": 3,
+    "revisao": 4,
     "aprovadoEm": null
   },
   "versoes": [],

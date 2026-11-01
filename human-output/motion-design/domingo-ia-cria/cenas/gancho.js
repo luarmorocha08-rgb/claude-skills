@@ -15,7 +15,7 @@ Motion.cena('gancho', {
     </div>
     <div class="camada c-perto">
       <div class="coluna topo">
-        <p class="rotulo">Domingo · modo criar</p>
+        <p class="rotulo">IA na prática</p>
         <h1 class="titulo frase"><span class="l1">Um prompt.</span><br><span class="l2">Três <span class="destaque">criações</span>.</span><span class="cursor"></span></h1>
       </div>
       <div class="coluna base rodape"><div class="monograma">RR</div><span class="arroba">@ramosraul.ia</span></div>

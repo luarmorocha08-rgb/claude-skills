@@ -10,7 +10,7 @@ Motion.cena('prompt', {
       <div class="coluna topo">
         <p class="rotulo">O prompt</p>
         <div class="card-prompt">
-          <div class="cabeca">${c.foto('sparkles', { classe: 'mini' })}<span>Domingo, 10h</span></div>
+          <div class="cabeca">${c.foto('sparkles', { classe: 'mini' })}<span>Novo prompt</span></div>
           <p class="pedido">Cria pra mim uma plataforma de cursos, um jogo e um app de treino.<span class="cursor"></span></p>
         </div>
       </div>

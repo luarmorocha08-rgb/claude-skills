@@ -1,14 +1,14 @@
 /* app — "03 · O app" (3 s)
-   Ideia: o celular sobe de pé, a tela se monta card a card num rufar e a barra do domingo
-   cresce por último e acende em dourado: o dia de hoje fecha a semana. */
+   Ideia: o celular sobe de pé, a tela se monta card a card num rufar e a barra de hoje
+   cresce por último e acende em dourado: o treino do dia fecha a semana. */
 {
-const DIAS = [['S', 46], ['T', 70], ['Q', 38], ['Q', 82], ['S', 58], ['S', 30], ['D', 96]];
+const DIAS = [['', 46], ['', 70], ['', 38], ['', 82], ['', 58], ['', 30], ['hoje', 96]];
 Motion.cena('app', {
   render: (c) => `
     <div class="camada c-longe"><div class="luz"></div><div class="chao"></div></div>
     <div class="camada c-meio"><div class="aparelho">${c.mockup('celular', { classe: 'fone', tela: `
       <div class="ui">
-        <p class="ola">Bom domingo,</p><p class="nome">Raul</p>
+        <p class="ola">Bom dia,</p><p class="nome">Raul</p>
         <div class="card treino"><div class="t-ic">${c.foto('rocket')}</div><div><p class="t1">Treino de hoje</p><p class="t2">25 min · corpo todo</p></div></div>
         <div class="card semana"><p class="t1">Sua semana</p>
           <div class="barras">${DIAS.map(([d, h], i) => `<div class="col${i === 6 ? ' hoje' : ''}"><i style="height:${h}%"></i><span>${d}</span></div>`).join('')}</div>

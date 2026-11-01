@@ -673,7 +673,7 @@ body.m-com-player {
 .cena-app .barras { margin-top: 2cqmin; height: 15cqmin; display: flex; gap: 1.4cqmin; align-items: stretch; }
 .cena-app .col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 1cqmin; }
 .cena-app .col i { width: 100%; border-radius: 1cqmin; background: color-mix(in srgb, var(--texto) 16%, transparent); }
-.cena-app .col span { font: 700 2cqmin var(--fonte-texto); color: var(--texto-suave); }
+.cena-app .col span { font: 700 2cqmin var(--fonte-texto); color: var(--texto-suave); min-height: 2.4cqmin; white-space: nowrap; }
 .cena-app .col.hoje i { background: var(--destaque-grad); box-shadow: 0 0 2cqmin color-mix(in srgb, var(--luz-3) 50%, transparent); }
 .cena-app .col.hoje span { color: var(--destaque); }
 .cena-app .dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2cqmin; }
@@ -682,19 +682,22 @@ body.m-com-player {
 /* ── cenas/assinatura.css ── */
 .cena-assinatura .topo { top: 13cqh; }
 .cena-assinatura .rotulo { margin-bottom: 3.4cqmin; }
-.cena-assinatura .frase { font-size: 17cqmin; }
+.cena-assinatura .frase { font-size: 16cqmin; white-space: nowrap; }
 .cena-assinatura .heroi-direita { height: 52cqh; right: 3cqw; bottom: 3cqh; }
-.cena-assinatura .base { top: 62cqh; right: 44cqw; display: flex; flex-direction: column; gap: 4cqmin; }
+.cena-assinatura .base { top: 61cqh; right: 40cqw; display: flex; flex-direction: column; gap: 4cqmin; }
 .cena-assinatura .chamada { display: flex; align-items: center; gap: 2cqmin; padding: 2.6cqmin 3.2cqmin; border-radius: 3cqmin;
   background: color-mix(in srgb, var(--luz-1) 22%, var(--cartao)); box-shadow: inset 0 0 0 0.16cqmin var(--linha);
   font: 600 3.6cqmin/1.2 var(--fonte-texto); color: var(--texto); }
 .cena-assinatura .mini { width: 5cqmin; height: 5cqmin; object-fit: contain; flex: none; }
+.cena-assinatura .rodape { flex-wrap: wrap; row-gap: 2.4cqmin; }
+.cena-assinatura .seguir { flex-basis: 100%; font: 600 4.2cqmin var(--fonte-texto); color: var(--texto); }
+.cena-assinatura .seguir b { color: var(--destaque); font-weight: 700; margin-left: 0.6cqmin; }
 
 </style>
 </head>
 <body>
 <div id="palco" data-formato="9x16"></div>
-<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":16.75,"formato":"9x16","montagem":"principal","titulo":"Um prompt, três criações","cenas":[{"id":"gancho","titulo":"O gancho","indice":0,"inicio":0,"dur":2.5,"fim":2.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"\"Um prompt.\" sendo escrito pelo cursor dourado","t":0.05},{"id":"meio","rotulo":"Passo 2","legenda":"O título escrito; a IA (faísca) nasce no centro, ainda sem as criações","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"Título, a IA no aro dourado e as criações em órbita; rodapé da marca","t":1.8}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":null,"hash":"498e25a2e9084a6d"},{"id":"prompt","titulo":"O pedido","indice":1,"inicio":2.5,"dur":3.5,"fim":6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas espalhadas no ar, ainda sem forma","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"As facetas encaixando dos pés para a cabeça; o card digitando","t":1},{"id":"fim","rotulo":"Fim","legenda":"O pedido inteiro no card, o personagem montado à direita, a frase à esquerda","t":2.6}],"tipo":"foto-objeto","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"6cf3f29f5ced3ef6"},{"id":"plataforma","titulo":"01 · A plataforma","indice":2,"inicio":5.25,"dur":3,"fim":8.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A janela chegando inclinada, só o menu do site desenhado","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"Menu e título da página prontos; o primeiro curso caindo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A plataforma inteira: título com cursor, botão e três cursos com progresso","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"867fc83be295f954"},{"id":"jogo","titulo":"02 · O jogo","indice":3,"inicio":7.75,"dur":3,"fim":10.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular em pé, menor, com o céu do jogo","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Girando para o lado; as montanhas se erguendo em camadas","t":0.6},{"id":"fim","rotulo":"Fim","legenda":"O jogo pronto: o personagem na pista, moedas, obstáculos e placar","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"0cb59774defdca04"},{"id":"app","titulo":"03 · O app","indice":4,"inicio":10.25,"dur":3,"fim":13.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular chegando girado; só a saudação na tela","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Saudação e treino prontos; as barras da semana crescendo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"O app pronto, com a barra do domingo acesa em dourado","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"ccef211ca91454e2"},{"id":"assinatura","titulo":"A assinatura","indice":5,"inicio":13.25,"dur":3.5,"fim":16.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas voando de volta","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"O personagem quase montado; o cursor escrevendo 'criar'","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A frase final grande, o personagem à direita, chamada e rodapé da marca","t":2.3}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"ed1f1b76a0447220"}],"transicoes":[{"de":"gancho","para":"prompt","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":"O título avança e desfoca pela câmera; o card do pedido nasce no mesmo lugar, ainda dentro da luz.","textoEntrada":null,"corte":2.5,"antes":0.24,"depois":0.3,"inicio":2.26,"fim":2.8,"dur":0.54},{"de":"prompt","para":"plataforma","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".card-prompt","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no card do pedido","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":5.25,"fim":6,"corte":null,"dur":0.75},{"de":"plataforma","para":"jogo","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":7.75,"fim":8.25,"corte":null,"dur":0.5},{"de":"jogo","para":"app","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":10.25,"fim":10.75,"corte":null,"dur":0.5},{"de":"app","para":"assinatura","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":13.25,"antes":0.24,"depois":0.3,"inicio":13.01,"fim":13.55,"dur":0.54},{"de":"assinatura","para":null,"tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":16.35,"fim":16.75,"corte":null,"dur":0.3999999999999986}],"cortes":[2.5,13.25],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
+<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":16.75,"formato":"9x16","montagem":"principal","titulo":"Um prompt, três criações","cenas":[{"id":"gancho","titulo":"O gancho","indice":0,"inicio":0,"dur":2.5,"fim":2.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"\"Um prompt.\" sendo escrito pelo cursor dourado","t":0.05},{"id":"meio","rotulo":"Passo 2","legenda":"O título escrito; a IA (faísca) nasce no centro, ainda sem as criações","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"Título, a IA no aro dourado e as criações em órbita; rodapé da marca","t":1.8}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":null,"hash":"879d901f0ffefe57"},{"id":"prompt","titulo":"O pedido","indice":1,"inicio":2.5,"dur":3.5,"fim":6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas espalhadas no ar, ainda sem forma","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"As facetas encaixando dos pés para a cabeça; o card digitando","t":1},{"id":"fim","rotulo":"Fim","legenda":"O pedido inteiro no card, o personagem montado à direita, a frase à esquerda","t":2.6}],"tipo":"foto-objeto","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"168b9debfdaf8a0c"},{"id":"plataforma","titulo":"01 · A plataforma","indice":2,"inicio":5.25,"dur":3,"fim":8.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A janela chegando inclinada, só o menu do site desenhado","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"Menu e título da página prontos; o primeiro curso caindo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A plataforma inteira: título com cursor, botão e três cursos com progresso","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"867fc83be295f954"},{"id":"jogo","titulo":"02 · O jogo","indice":3,"inicio":7.75,"dur":3,"fim":10.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular em pé, menor, com o céu do jogo","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Girando para o lado; as montanhas se erguendo em camadas","t":0.6},{"id":"fim","rotulo":"Fim","legenda":"O jogo pronto: o personagem na pista, moedas, obstáculos e placar","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"0cb59774defdca04"},{"id":"app","titulo":"03 · O app","indice":4,"inicio":10.25,"dur":3,"fim":13.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular chegando girado; só a saudação na tela","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Saudação e treino prontos; as barras da semana crescendo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"O app pronto, com a barra de hoje acesa em dourado","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"d07da11f6aa42b7b"},{"id":"assinatura","titulo":"A assinatura","indice":5,"inicio":13.25,"dur":3.5,"fim":16.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas voando de volta","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"O personagem quase montado; o cursor escrevendo 'criação'","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A pergunta grande, o personagem à direita, o convite para comentar e seguir, o rodapé da marca","t":2.3}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"f4fa4fe18ae2440e"}],"transicoes":[{"de":"gancho","para":"prompt","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":"O título avança e desfoca pela câmera; o card do pedido nasce no mesmo lugar, ainda dentro da luz.","textoEntrada":null,"corte":2.5,"antes":0.24,"depois":0.3,"inicio":2.26,"fim":2.8,"dur":0.54},{"de":"prompt","para":"plataforma","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".card-prompt","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no card do pedido","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":5.25,"fim":6,"corte":null,"dur":0.75},{"de":"plataforma","para":"jogo","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":7.75,"fim":8.25,"corte":null,"dur":0.5},{"de":"jogo","para":"app","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":10.25,"fim":10.75,"corte":null,"dur":0.5},{"de":"app","para":"assinatura","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":13.25,"antes":0.24,"depois":0.3,"inicio":13.01,"fim":13.55,"dur":0.54},{"de":"assinatura","para":null,"tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":16.35,"fim":16.75,"corte":null,"dur":0.3999999999999986}],"cortes":[2.5,13.25],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
 window.MOTION_FONTES=[{"familia":"Newsreader","peso":"200","estilo":"normal"},{"familia":"Newsreader","peso":"200","estilo":"italic"},{"familia":"Manrope","peso":"200","estilo":"normal"}];
 window.MOTION_MIDIA={"joystick":{"chave":"joystick","url":"../midia/joystick.png","tipo":"imagem"},"joystick.png":{"chave":"joystick","url":"../midia/joystick.png","tipo":"imagem"},"laptop":{"chave":"laptop","url":"../midia/laptop.png","tipo":"imagem"},"laptop.png":{"chave":"laptop","url":"../midia/laptop.png","tipo":"imagem"},"mobile_phone":{"chave":"mobile_phone","url":"../midia/mobile_phone.png","tipo":"imagem"},"mobile_phone.png":{"chave":"mobile_phone","url":"../midia/mobile_phone.png","tipo":"imagem"},"personagem":{"chave":"personagem","url":"../midia/personagem.png","tipo":"imagem"},"personagem.png":{"chave":"personagem","url":"../midia/personagem.png","tipo":"imagem"},"robot":{"chave":"robot","url":"../midia/robot.png","tipo":"imagem"},"robot.png":{"chave":"robot","url":"../midia/robot.png","tipo":"imagem"},"rocket":{"chave":"rocket","url":"../midia/rocket.png","tipo":"imagem"},"rocket.png":{"chave":"rocket","url":"../midia/rocket.png","tipo":"imagem"},"sparkles":{"chave":"sparkles","url":"../midia/sparkles.png","tipo":"imagem"},"sparkles.png":{"chave":"sparkles","url":"../midia/sparkles.png","tipo":"imagem"},"video_game":{"chave":"video_game","url":"../midia/video_game.png","tipo":"imagem"},"video_game.png":{"chave":"video_game","url":"../midia/video_game.png","tipo":"imagem"}};
 window.MOTION_SVG={};
@@ -4028,7 +4031,7 @@ Motion.cena('gancho', {
     </div>
     <div class="camada c-perto">
       <div class="coluna topo">
-        <p class="rotulo">Domingo · modo criar</p>
+        <p class="rotulo">IA na prática</p>
         <h1 class="titulo frase"><span class="l1">Um prompt.</span><br><span class="l2">Três <span class="destaque">criações</span>.</span><span class="cursor"></span></h1>
       </div>
       <div class="coluna base rodape"><div class="monograma">RR</div><span class="arroba">@ramosraul.ia</span></div>
@@ -4061,7 +4064,7 @@ Motion.cena('prompt', {
       <div class="coluna topo">
         <p class="rotulo">O prompt</p>
         <div class="card-prompt">
-          <div class="cabeca">${c.foto('sparkles', { classe: 'mini' })}<span>Domingo, 10h</span></div>
+          <div class="cabeca">${c.foto('sparkles', { classe: 'mini' })}<span>Novo prompt</span></div>
           <p class="pedido">Cria pra mim uma plataforma de cursos, um jogo e um app de treino.<span class="cursor"></span></p>
         </div>
       </div>
@@ -4164,16 +4167,16 @@ Motion.cena('jogo', {
 
 //# sourceURL=cenas/jogo.js</script>
 <script>/* app — "03 · O app" (3 s)
-   Ideia: o celular sobe de pé, a tela se monta card a card num rufar e a barra do domingo
-   cresce por último e acende em dourado: o dia de hoje fecha a semana. */
+   Ideia: o celular sobe de pé, a tela se monta card a card num rufar e a barra de hoje
+   cresce por último e acende em dourado: o treino do dia fecha a semana. */
 {
-const DIAS = [['S', 46], ['T', 70], ['Q', 38], ['Q', 82], ['S', 58], ['S', 30], ['D', 96]];
+const DIAS = [['', 46], ['', 70], ['', 38], ['', 82], ['', 58], ['', 30], ['hoje', 96]];
 Motion.cena('app', {
   render: (c) => `
     <div class="camada c-longe"><div class="luz"></div><div class="chao"></div></div>
     <div class="camada c-meio"><div class="aparelho">${c.mockup('celular', { classe: 'fone', tela: `
       <div class="ui">
-        <p class="ola">Bom domingo,</p><p class="nome">Raul</p>
+        <p class="ola">Bom dia,</p><p class="nome">Raul</p>
         <div class="card treino"><div class="t-ic">${c.foto('rocket')}</div><div><p class="t1">Treino de hoje</p><p class="t2">25 min · corpo todo</p></div></div>
         <div class="card semana"><p class="t1">Sua semana</p>
           <div class="barras">${DIAS.map(([d, h], i) => `<div class="col${i === 6 ? ' hoje' : ''}"><i style="height:${h}%"></i><span>${d}</span></div>`).join('')}</div>
@@ -4202,7 +4205,7 @@ Motion.cena('app', {
 //# sourceURL=cenas/app.js</script>
 <script>/* assinatura — "A assinatura" (3,5 s)
    Ideia: as três criações recuam e viram facetas douradas que voam de volta para o personagem;
-   o cursor escreve a frase final e assina com o monograma. */
+   o cursor faz a pergunta final e o convite para seguir assina com o monograma. */
 {
 Motion.cena('assinatura', {
   render: (c) => `
@@ -4210,12 +4213,12 @@ Motion.cena('assinatura', {
     <div class="camada c-meio">${window.Personagem(c, 'heroi-direita')}</div>
     <div class="camada c-perto">
       <div class="coluna topo">
-        <p class="rotulo">Seu turno</p>
-        <h2 class="titulo frase">Domingo<br>é dia de<br><span class="destaque criar">criar</span>.<span class="cursor"></span></h2>
+        <p class="rotulo">Você escolhe</p>
+        <h2 class="titulo frase">Qual é a<br>próxima<br><span class="destaque criar">criação</span>?<span class="cursor"></span></h2>
       </div>
       <div class="coluna base">
-        <div class="chamada">${c.foto('sparkles', { classe: 'mini' })}<span>Salva e testa no seu domingo.</span></div>
-        <div class="rodape"><div class="monograma">RR</div><span class="arroba">@ramosraul.ia</span></div>
+        <div class="chamada">${c.foto('sparkles', { classe: 'mini' })}<span>Comenta a sua ideia e segue pra ver ela nascer aqui.</span></div>
+        <div class="rodape"><div class="monograma">RR</div><span class="arroba">@ramosraul.ia</span><span class="seguir">Seguir <b>+</b></span></div>
       </div>
     </div>`,
   poses: {
@@ -4227,7 +4230,7 @@ Motion.cena('assinatura', {
     meio: (el, api) => {
       api.set(el.$('.corpo'), { o: 0 }); api.set(el.$('.facetas'), { o: 1 });
       window.posarFacetas(el, api, 0.7, { de: [-45, -25], espalhar: 1.2 });
-      api.set(el.$('.criar'), { clip: 'inset(0 62% 0 0)' });
+      api.set(el.$('.criar'), { clip: 'inset(0 45% 0 0)' });
       api.set(el.$$('.chamada, .rodape'), { o: 0 });
     },
   },
