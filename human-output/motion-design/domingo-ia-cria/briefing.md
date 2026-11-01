@@ -37,3 +37,6 @@ da marca, mostrando como a IA cria plataformas, jogos etc.
 - Rev. 04 aprovada (storyboard congelado em storyboard/aprovado/9x16).
 - v3 — animação completa em 9:16 a 60 qps (16,75 s com as passagens sobrepostas). Fluidez sem trancos;
   quadros finais iguais aos aprovados. O fim apaga sozinho até o fundo para o loop do Reels.
+- Dublagem (ElevenLabs, voz "Fernando Nowvaro", modelo eleven_v4, tomada B): cada frase encaixada no
+  momento em que o texto dela aparece; mix a −15 LUFS. Arquivos: audio/narracao.wav,
+  render/v3/domingo-ia-cria-9x16-60fps-dublado.mp4, render/v3/legenda.srt.
