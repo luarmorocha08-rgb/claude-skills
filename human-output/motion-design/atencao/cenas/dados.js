@@ -10,7 +10,7 @@ const DADOS = [
   { n: '46%', legenda: 'julgam a credibilidade<br>de um site pelo visual', fonte: 'Stanford, 2002' },
   { n: '53%', legenda: 'abandonam um site no celular<br>que demora mais de 3 segundos', fonte: 'Google, 2016' },
 ];
-const PASSO = 1.5;
+const PASSO = 1.6;
 Motion.cena('dados', {
   render: () => `
     <div class="camada c-luz"><div class="luz"></div></div>
@@ -43,14 +43,14 @@ Motion.cena('dados', {
   quadro(t, el, api) {
     const { tipo, prog, ease, lerp, suave } = api;
     const a = tipo.focar(t, el.kick, { inicio: -0.05, aplicar: false });
-    tipo.aplicar(el.kick, a, tipo.sair(t, el.kick, { inicio: 4.22, dur: 0.28, aplicar: false }));
+    tipo.aplicar(el.kick, a, tipo.sair(t, el.kick, { inicio: 4.72, dur: 0.28, aplicar: false }));
     let kickCam = 0;
     let tremX = 0;
     el.d.forEach((d, i) => {
       const t0 = i * PASSO;
       const bate = t0 + 0.32;
       const ultimo = i === el.d.length - 1;
-      const fimSai = t0 + PASSO;           // a saída termina quando o próximo entra
+      const fimSai = ultimo ? api.dur : t0 + PASSO;           // a saída termina quando o próximo entra
       const saida = ease.inCubic(prog(t, fimSai - 0.28, fimSai));
       // as metades chegam rápidas, aceleram e encostam na batida
       const dd = lerp(22, 0, ease.inCubic(prog(t, t0 - 0.02, bate)));

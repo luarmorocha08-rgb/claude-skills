@@ -1,0 +1,71 @@
+{
+ "versao": 4,
+ "data": "2026-11-01",
+ "fps": 60,
+ "qualidade": "final",
+ "montagem": "principal",
+ "formatos": {
+  "9x16": {
+   "arquivo": "atencao-9x16-60fps.mp4",
+   "quadros": 1230,
+   "de": 0,
+   "ate": 20.5,
+   "segundosRender": 199,
+   "renderizados": 960,
+   "capa": "capa-9x16.png",
+   "fluidez": {
+    "resumo": "3 ponto(s) para olhar: 3 degrau",
+    "alertas": [
+     {
+      "tipo": "degrau",
+      "i": 679,
+      "t": 11.333,
+      "d": 1.62,
+      "viz": 9.4,
+      "cena": "dados",
+      "tituloCena": "A prova",
+      "tLocal": 0.333,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "degrau",
+      "i": 757,
+      "t": 12.633,
+      "d": 1.22,
+      "viz": 7.67,
+      "cena": "dados",
+      "tituloCena": "A prova",
+      "tLocal": 1.633,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "degrau",
+      "i": 853,
+      "t": 14.233,
+      "d": 1.26,
+      "viz": 9.23,
+      "cena": "dados",
+      "tituloCena": "A prova",
+      "tLocal": 3.233,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     }
+    ]
+   },
+   "diretor": {
+    "metricas": {
+     "energia": {
+      "media": 1.73,
+      "mediana": 0.74,
+      "quaseParados": 12
+     },
+     "paradoAosOlhos": 0,
+     "cortesPorSegundo": 0.2,
+     "duracao": 20.5
+    },
+    "notas": []
+   }
+  }
+ },
+ "erros": [],
+ "segundos": 252
+}

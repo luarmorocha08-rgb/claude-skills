@@ -2,7 +2,7 @@
  "titulo": "Atenção",
  "fps": 60,
  "bpm": 120,
- "total": 18,
+ "total": 20.5,
  "inicio": 0,
  "cenas": [
   {
@@ -15,32 +15,32 @@
    "id": "virada",
    "titulo": "A virada",
    "inicio": 4.5,
-   "fim": 7
+   "fim": 7.5
   },
   {
    "id": "promessa",
    "titulo": "A promessa",
-   "inicio": 7,
-   "fim": 10
+   "inicio": 7.5,
+   "fim": 11
   },
   {
    "id": "dados",
    "titulo": "A prova",
-   "inicio": 10,
-   "fim": 14.5
+   "inicio": 11,
+   "fim": 16
   },
   {
    "id": "convite",
    "titulo": "O convite",
-   "inicio": 14.5,
-   "fim": 18
+   "inicio": 16,
+   "fim": 20.5
   }
  ],
  "cortes": [
   4.5,
-  7,
-  10,
-  14.5
+  7.5,
+  11,
+  16
  ],
  "transicoes": [
   {
@@ -55,25 +55,25 @@
    "de": "virada",
    "para": "promessa",
    "tipo": "corte",
-   "inicio": 7,
-   "fim": 7,
-   "corte": 7
+   "inicio": 7.5,
+   "fim": 7.5,
+   "corte": 7.5
   },
   {
    "de": "promessa",
    "para": "dados",
    "tipo": "corte",
-   "inicio": 10,
-   "fim": 10,
-   "corte": 10
+   "inicio": 11,
+   "fim": 11,
+   "corte": 11
   },
   {
    "de": "dados",
    "para": "convite",
    "tipo": "corte",
-   "inicio": 14.5,
-   "fim": 14.5,
-   "corte": 14.5
+   "inicio": 16,
+   "fim": 16,
+   "corte": 16
   }
  ],
  "batidas": [
@@ -140,97 +140,97 @@
   {
    "cena": "promessa",
    "tipo": "objeto",
-   "t": 7,
+   "t": 7.5,
    "texto": "As metades se separam e saem pelas bordas em 750 ms, acelerando."
   },
   {
    "cena": "promessa",
    "tipo": "luz",
-   "t": 7.05,
+   "t": 7.55,
    "texto": "A brasa abre na vertical e vira um campo de luz quente."
   },
   {
    "cena": "promessa",
    "tipo": "tipo",
-   "t": 7.4,
+   "t": 7.9,
    "texto": "A frase sai do desfoque palavra a palavra."
   },
   {
    "cena": "promessa",
    "tipo": "luz",
-   "t": 7.9,
+   "t": 8.4,
    "texto": "“atenção” é varrida da cor do texto para a brasa."
   },
   {
    "cena": "promessa",
    "tipo": "transicao",
-   "t": 9.72,
+   "t": 10.22,
    "texto": "A frase é sugada para uma linha de luz, que vira a fenda dos números."
   },
   {
    "cena": "dados",
    "tipo": "tipo",
-   "t": 10,
+   "t": 11,
    "texto": "“A atenção decide” fica no alto a cena toda."
   },
   {
    "cena": "dados",
    "tipo": "objeto",
-   "t": 10.32,
+   "t": 11.32,
    "texto": "As metades de 0,05s batem e encostam; estalo de luz na emenda; a legenda sobe palavra a palavra e a fonte aparece."
   },
   {
    "cena": "dados",
    "tipo": "transicao",
-   "t": 11.25,
+   "t": 12.25,
    "texto": "O número se parte para cima e para baixo, acelerando."
   },
   {
    "cena": "dados",
    "tipo": "objeto",
-   "t": 11.82,
+   "t": 12.82,
    "texto": "46% encosta na batida, mesmo estalo."
   },
   {
    "cena": "dados",
    "tipo": "objeto",
-   "t": 13.32,
+   "t": 14.32,
    "texto": "53% encosta; a emenda esfria devagar."
   },
   {
    "cena": "dados",
    "tipo": "transicao",
-   "t": 14.22,
+   "t": 15.22,
    "texto": "Tudo se parte e sai; corte para o convite."
   },
   {
    "cena": "convite",
    "tipo": "tipo",
-   "t": 14.5,
+   "t": 16,
    "texto": "“Quer um site assim?” sai do desfoque palavra a palavra."
   },
   {
    "cena": "convite",
    "tipo": "objeto",
-   "t": 14.6,
+   "t": 16.1,
    "texto": "As metades de SITES chegam de lados opostos e fecham acelerando."
   },
   {
    "cena": "convite",
    "tipo": "objeto",
-   "t": 15.5,
+   "t": 17,
    "texto": "Na batida: ENCOSTAM, estalo de luz na emenda e empurrão de 2 % na câmera."
   },
   {
    "cena": "convite",
    "tipo": "tipo",
-   "t": 15.75,
+   "t": 17.25,
    "texto": "“me chama no direct ou comenta” sobe palavra a palavra."
   },
   {
    "cena": "convite",
    "tipo": "luz",
-   "t": 17.5,
+   "t": 19,
    "texto": "Na última batida a brasa pulsa uma vez; o filme termina vivo."
   }
  ],
@@ -238,7 +238,7 @@
   "9x16": {
    "fps": 60,
    "bpm": 120,
-   "total": 18,
+   "total": 20.5,
    "formato": "9x16",
    "montagem": "principal",
    "titulo": "Atenção",
@@ -289,8 +289,8 @@
      "titulo": "A virada",
      "indice": 1,
      "inicio": 4.5,
-     "dur": 2.5,
-     "fim": 7,
+     "dur": 3,
+     "fim": 7.5,
      "variante": null,
      "fundoPuro": false,
      "quadros": [
@@ -304,7 +304,7 @@
        "id": "fim",
        "rotulo": "Fim",
        "legenda": "A frase emoldura a palavra cortada",
-       "t": 1.6,
+       "t": 1.9,
        "aprovado": true
       }
      ],
@@ -321,15 +321,15 @@
       "modo": "encadeada",
       "dur": 0
      },
-     "hash": "84a311f28d9c3917"
+     "hash": "b002abf2b6158554"
     },
     {
      "id": "promessa",
      "titulo": "A promessa",
      "indice": 2,
-     "inicio": 7,
-     "dur": 3,
-     "fim": 10,
+     "inicio": 7.5,
+     "dur": 3.5,
+     "fim": 11,
      "variante": null,
      "fundoPuro": false,
      "quadros": [
@@ -343,7 +343,7 @@
        "id": "fim",
        "rotulo": "Fim",
        "legenda": "A frase no centro, “atenção” em brasa",
-       "t": 2,
+       "t": 2.4,
        "aprovado": true
       }
      ],
@@ -360,15 +360,15 @@
       "modo": "encadeada",
       "dur": 0
      },
-     "hash": "44bfadd07dd20f47"
+     "hash": "595cef7c2147b0ec"
     },
     {
      "id": "dados",
      "titulo": "A prova",
      "indice": 3,
-     "inicio": 10,
-     "dur": 4.5,
-     "fim": 14.5,
+     "inicio": 11,
+     "dur": 5,
+     "fim": 16,
      "variante": null,
      "fundoPuro": false,
      "quadros": [
@@ -382,13 +382,13 @@
        "id": "meio",
        "rotulo": "Dado 2",
        "legenda": "46 % julgam a credibilidade pelo visual (Stanford, 2002)",
-       "t": 2.45
+       "t": 2.55
       },
       {
        "id": "fim",
        "rotulo": "Dado 3",
        "legenda": "53 % abandonam se demora mais de 3 s (Google, 2016)",
-       "t": 3.95,
+       "t": 4.15,
        "aprovado": true
       }
      ],
@@ -405,15 +405,15 @@
       "modo": "encadeada",
       "dur": 0
      },
-     "hash": "86edf0c9f6496a36"
+     "hash": "df6d6100a747d389"
     },
     {
      "id": "convite",
      "titulo": "O convite",
      "indice": 4,
-     "inicio": 14.5,
-     "dur": 3.5,
-     "fim": 18,
+     "inicio": 16,
+     "dur": 4.5,
+     "fim": 20.5,
      "variante": null,
      "fundoPuro": false,
      "quadros": [
@@ -427,7 +427,7 @@
        "id": "fim",
        "rotulo": "Fim",
        "legenda": "SITES inteira, o convite completo",
-       "t": 2.6,
+       "t": 2.8,
        "aprovado": true
       }
      ],
@@ -479,11 +479,11 @@
      },
      "texto": null,
      "textoEntrada": null,
-     "corte": 7,
+     "corte": 7.5,
      "antes": 0,
      "depois": 0,
-     "inicio": 7,
-     "fim": 7,
+     "inicio": 7.5,
+     "fim": 7.5,
      "dur": 0
     },
     {
@@ -498,11 +498,11 @@
      },
      "texto": null,
      "textoEntrada": null,
-     "corte": 10,
+     "corte": 11,
      "antes": 0,
      "depois": 0,
-     "inicio": 10,
-     "fim": 10,
+     "inicio": 11,
+     "fim": 11,
      "dur": 0
     },
     {
@@ -517,19 +517,19 @@
      },
      "texto": null,
      "textoEntrada": null,
-     "corte": 14.5,
+     "corte": 16,
      "antes": 0,
      "depois": 0,
-     "inicio": 14.5,
-     "fim": 14.5,
+     "inicio": 16,
+     "fim": 16,
      "dur": 0
     }
    ],
    "cortes": [
     4.5,
-    7,
-    10,
-    14.5
+    7.5,
+    11,
+    16
    ],
    "estilo": {
     "curvaEntrada": [

@@ -128,7 +128,7 @@
       "tipo": "frase",
       "papel": "desenvolvimento",
       "titulo": "A virada",
-      "dur": 2.5,
+      "dur": 3,
       "ideia": "O relógio some e a frase abraça a palavra: em cima “Você ficou 4 segundos”, embaixo “esperando isso encostar”.",
       "camera": "Herda o push-in e segue devagar; recua 1 % no fim, como quem respira antes de abrir.",
       "quadros": [
@@ -142,7 +142,7 @@
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "A frase emoldura a palavra cortada",
-          "t": 1.6,
+          "t": 1.9,
           "aprovado": true
         }
       ],
@@ -177,7 +177,7 @@
       "tipo": "frase-que-vira",
       "papel": "climax",
       "titulo": "A promessa",
-      "dur": 3,
+      "dur": 3.5,
       "ideia": "A fenda vira janela: as metades se afastam para fora do quadro, a brasa abre e de dentro dela sai a frase.",
       "camera": "Mergulho curto de 4 % na fenda enquanto ela abre; depois push-in vivo.",
       "quadros": [
@@ -191,7 +191,7 @@
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "A frase no centro, “atenção” em brasa",
-          "t": 2,
+          "t": 2.4,
           "aprovado": true
         }
       ],
@@ -231,7 +231,7 @@
       "tipo": "montagem",
       "papel": "prova",
       "titulo": "A prova",
-      "dur": 4.5,
+      "dur": 5,
       "ideia": "Os números chegam do jeito do filme: cada um cortado ao meio, as metades batem e encostam na batida, um a cada 1,5 s, e se partem para dar lugar ao próximo.",
       "camera": "Viva, com um empurrão de 2 % e um tremor curto a cada número que encosta.",
       "quadros": [
@@ -245,13 +245,13 @@
           "id": "meio",
           "rotulo": "Dado 2",
           "legenda": "46 % julgam a credibilidade pelo visual (Stanford, 2002)",
-          "t": 2.45
+          "t": 2.55
         },
         {
           "id": "fim",
           "rotulo": "Dado 3",
           "legenda": "53 % abandonam se demora mais de 3 s (Google, 2016)",
-          "t": 3.95,
+          "t": 4.15,
           "aprovado": true
         }
       ],
@@ -296,7 +296,7 @@
       "tipo": "palavra-gigante",
       "papel": "convite",
       "titulo": "O convite",
-      "dur": 3.5,
+      "dur": 4.5,
       "ideia": "A colisão que o filme prometeu: as metades de SITES vêm das bordas e encostam na batida, com um estalo de luz na emenda.",
       "camera": "Viva; um empurrão seco de 2 % na colisão, devolvido devagar.",
       "quadros": [
@@ -310,7 +310,7 @@
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "SITES inteira, o convite completo",
-          "t": 2.6,
+          "t": 2.8,
           "aprovado": true
         }
       ],
@@ -379,8 +379,21 @@
       ],
       "fps": 60,
       "nota": "abertura com impacto, cenas mais curtas, cena nova com dados"
+    },
+    {
+      "v": 4,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "tempos ajustados para a narração"
     }
   ],
   "criadoEm": "2026-11-01",
-  "cartaz": "Você ficou 4 segundos esperando isso encostar"
+  "cartaz": "Você ficou 4 segundos esperando isso encostar",
+  "som": {
+    "voz": "ElevenLabs · voz Cortez (pt-BR) · eleven_v4",
+    "efeitos": "ElevenLabs · eleven_text_to_sound_v2"
+  }
 }
