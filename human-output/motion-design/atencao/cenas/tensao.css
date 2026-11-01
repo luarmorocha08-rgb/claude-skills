@@ -1,0 +1,13 @@
+/* tensao — o quadro aprovado: as metades a um fio, a fenda acesa, o relógio em 5. */
+.cena-tensao { --luz-a-x: 50%; --luz-a-y: 50%; --luz-b-x: 50%; --luz-b-y: 50%; }
+.cena-tensao .luz { opacity: 0.22; }
+.cena-tensao .corte { top: 54%; }
+.cena-tensao .palavra { font-size: 21cqmin; }
+.cena-tensao .cima  { transform: translateY(-0.28cqmin); }
+.cena-tensao .baixo { transform: translateY(0.28cqmin); }
+.cena-tensao .relogio {
+  position: absolute; left: 0; right: 0; top: 17%;
+  display: flex; flex-direction: column; align-items: center; gap: 0.6cqmin;
+}
+.cena-tensao .rotulo, .cena-tensao .un { font-size: 5.6cqmin; font-weight: 300; letter-spacing: 0.01em; margin: 0; }
+.cena-tensao .num { font-size: 26cqmin; font-weight: 300; line-height: 0.9; letter-spacing: -0.05em; font-variant-numeric: tabular-nums; }

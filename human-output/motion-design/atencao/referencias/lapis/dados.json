@@ -1,0 +1,747 @@
+{
+ "gerado": "2026-11-01T09:17:13.772Z",
+ "ficha": {
+  "arquivo": "/root/.claude/uploads/0019f62e-aa7f-5581-8066-9a6e5ba0f8a6/68391b3a-Screen_Recording_20261101_055833_Instagram.mp4",
+  "nome": "68391b3a-Screen_Recording_20261101_055833_Instagram.mp4",
+  "duracao": 12.8342,
+  "largura": 1080,
+  "altura": 2340,
+  "proporcao": "0,46:1",
+  "orientacao": "vertical",
+  "fps": 61.6941,
+  "fpsTexto": "71190000/1153919",
+  "fpsVariavel": true,
+  "quadros": 791,
+  "codec": "h264",
+  "cor": "yuv420p · bt709 · bt709",
+  "bitrate": 10578741,
+  "rotacao": 0,
+  "audio": {
+   "codec": "aac",
+   "canais": 2,
+   "taxa": 48000
+  }
+ },
+ "trecho": {
+  "inicio": 0,
+  "fim": 12.8167,
+  "quadros": 769,
+  "fpsAnalise": 60
+ },
+ "resumo": {
+  "planos": 1,
+  "transicoes": 0,
+  "batidas": 5,
+  "ritmo": "poucos planos para ler uma tendência."
+ },
+ "planos": [
+  {
+   "n": 1,
+   "t0": 0,
+   "t1": 12.8167,
+   "dur": 12.8167,
+   "quadros": [
+    0,
+    768
+   ],
+   "chave": {
+    "a": 4.5833,
+    "b": null,
+    "c": 8.2167
+   },
+   "entrada": {
+    "t0": 0.0333,
+    "dur": 4.55,
+    "curva": "in"
+   },
+   "saida": {
+    "t0": 12.05,
+    "dur": 0.7667,
+    "curva": "in-out"
+   },
+   "hold": {
+    "t0": 6.6,
+    "t1": 9.8333,
+    "dur": 3.25,
+    "vida": "vivo (algo continua se mexendo de leve)",
+    "energiaMediana": 0.0914
+   },
+   "camera": {
+    "escala": 1,
+    "dx": 0,
+    "dy": 0,
+    "erro0": 2.0053,
+    "erro": 2.0053,
+    "ganho": 0,
+    "noLimite": false,
+    "de": 6.6167,
+    "ate": 9.8167,
+    "confiavel": false,
+    "rotulo": "o conteúdo muda demais para medir a câmera por comparação"
+   },
+   "fluxo": {
+    "zoomPct": -1.4592,
+    "dxPct": -0.8548,
+    "dyPct": 0.2595,
+    "amostras": 384,
+    "cobertura": 0.5667
+   },
+   "fundo": {
+    "cor": "#0B0C0E",
+    "rgb": [
+     11.3651,
+     12.2474,
+     13.7891
+    ],
+    "tipo": "imagem, textura ou filmagem",
+    "desvio": 26.3284
+   },
+   "paleta": [
+    {
+     "hex": "#030405",
+     "rgb": [
+      3,
+      4,
+      5
+     ],
+     "parte": 0.7079,
+     "L": 1.0582,
+     "croma": 0.4866,
+     "nome": "preto"
+    },
+    {
+     "hex": "#D2C3BE",
+     "rgb": [
+      210,
+      195,
+      190
+     ],
+     "parte": 0.1114,
+     "L": 79.869,
+     "croma": 6.2214,
+     "nome": "laranja pastel"
+    },
+    {
+     "hex": "#333032",
+     "rgb": [
+      51,
+      48,
+      50
+     ],
+     "parte": 0.0767,
+     "L": 20.2351,
+     "croma": 1.9628,
+     "nome": "cinza escuro"
+    },
+    {
+     "hex": "#A36146",
+     "rgb": [
+      163,
+      97,
+      70
+     ],
+     "parte": 0.0555,
+     "L": 47.9792,
+     "croma": 35.9084,
+     "nome": "laranja"
+    },
+    {
+     "hex": "#7D7778",
+     "rgb": [
+      125,
+      119,
+      120
+     ],
+     "parte": 0.0485,
+     "L": 50.5814,
+     "croma": 2.5012,
+     "nome": "cinza"
+    }
+   ],
+   "limiares": {
+    "base": 0.1069,
+    "hi": 0.6,
+    "lo": 0.3
+   },
+   "energia": "▅▅▅▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▃▃▄▄▄▃▄▃▃▃▃▄▃▂▃▂▃▄▄▄▅▄▅▅▅▄▃▅▆▆",
+   "batidas": [
+    {
+     "i0": 2,
+     "i1": 274,
+     "pico": 273,
+     "t0": 0.0333,
+     "t1": 4.5667,
+     "tPico": 4.55,
+     "dur": 4.55,
+     "energiaPico": 2.6914,
+     "curva": {
+      "t50": 0.694,
+      "tPico": 0.9945,
+      "rotulo": "acelera para o fim (ease-in)",
+      "codigo": "in"
+     },
+     "regiao": {
+      "x0": 0.2034,
+      "x1": 0.6949,
+      "y0": 0.0586,
+      "y1": 0.8555,
+      "nome": "centro"
+     },
+     "area": 0.0075,
+     "varredura": null,
+     "mov": {
+      "dxPct": -0.0151,
+      "dyPct": 0.0036,
+      "zoomPct": -1.8784,
+      "amostras": 137,
+      "rotulo": "sem deslocamento medido (mudança de opacidade, foco, máscara ou rápida demais para medir)"
+     },
+     "foco": {
+      "rotulo": "nitidez estável",
+      "antes": 0.1895,
+      "inicio": 0.1862,
+      "fim": 0.1717,
+      "depois": 0.1871,
+      "min": 0.1581
+     },
+     "comp": {
+      "conteudoAntes": 0.2329,
+      "conteudoDepois": 0.3611,
+      "ficou": 0.909,
+      "novo": 0.3319,
+      "rotulo": "acrescenta elemento"
+     },
+     "velocidade": "▅▅▅▅▄▄▄▄▄▄▄▄▄▅▅▅▅▅▅▅▆▆▆▆"
+    },
+    {
+     "i0": 390,
+     "i1": 395,
+     "pico": 391,
+     "t0": 6.5,
+     "t1": 6.5833,
+     "tPico": 6.5167,
+     "dur": 0.1,
+     "energiaPico": 0.6964,
+     "curva": {
+      "t50": 0.4559,
+      "tPico": 0.25,
+      "rotulo": "acelera e desacelera (ease-in-out)",
+      "codigo": "in-out"
+     },
+     "regiao": {
+      "x0": 0.161,
+      "x1": 0.8898,
+      "y0": 0.3555,
+      "y1": 0.7891,
+      "nome": "centro"
+     },
+     "area": 0.0067,
+     "varredura": null,
+     "mov": {
+      "dxPct": -0.0087,
+      "dyPct": 0.0005,
+      "zoomPct": 0.0119,
+      "amostras": 3,
+      "rotulo": "sem deslocamento medido (mudança de opacidade, foco, máscara ou rápida demais para medir)"
+     },
+     "foco": {
+      "rotulo": "nitidez estável",
+      "antes": 0.1996,
+      "inicio": 0.1956,
+      "fim": 0.1803,
+      "depois": 0.1806,
+      "min": 0.1801
+     },
+     "comp": {
+      "conteudoAntes": 0.3607,
+      "conteudoDepois": 0.3602,
+      "ficou": 0.982,
+      "novo": 0.0051,
+      "rotulo": "move/ajusta o que já estava"
+     },
+     "velocidade": "▂▄▄▄▄▄"
+    },
+    {
+     "i0": 591,
+     "i1": 634,
+     "pico": 615,
+     "t0": 9.85,
+     "t1": 10.5667,
+     "tPico": 10.25,
+     "dur": 0.7333,
+     "energiaPico": 1.0651,
+     "curva": {
+      "t50": 0.5518,
+      "tPico": 0.5568,
+      "rotulo": "acelera e desacelera (ease-in-out)",
+      "codigo": "in-out"
+     },
+     "regiao": {
+      "x0": 0.2034,
+      "x1": 0.5254,
+      "y0": 0.5102,
+      "y1": 0.793,
+      "nome": "embaixo, no centro"
+     },
+     "area": 0.002,
+     "varredura": null,
+     "mov": {
+      "dxPct": -0.0791,
+      "dyPct": 0.0295,
+      "zoomPct": 0.177,
+      "amostras": 22,
+      "rotulo": "sem deslocamento medido (mudança de opacidade, foco, máscara ou rápida demais para medir)"
+     },
+     "foco": {
+      "rotulo": "nitidez estável",
+      "antes": 0.1962,
+      "inicio": 0.1986,
+      "fim": 0.221,
+      "depois": 0.2262,
+      "min": 0.1969
+     },
+     "comp": {
+      "conteudoAntes": 0.3622,
+      "conteudoDepois": 0.3612,
+      "ficou": 0.7459,
+      "novo": 0.1078,
+      "rotulo": "move/ajusta o que já estava"
+     },
+     "velocidade": "▄▄▄▄▄▄▃▄▄▄▄▄▃▅▅▄▄▄▄▄▄▃▄▄"
+    },
+    {
+     "i0": 645,
+     "i1": 682,
+     "pico": 663,
+     "t0": 10.75,
+     "t1": 11.3667,
+     "tPico": 11.05,
+     "dur": 0.6333,
+     "energiaPico": 1.129,
+     "curva": {
+      "t50": 0.5166,
+      "tPico": 0.4868,
+      "rotulo": "acelera e desacelera (ease-in-out)",
+      "codigo": "in-out"
+     },
+     "regiao": {
+      "x0": 0.1271,
+      "x1": 0.6763,
+      "y0": 0.1789,
+      "y1": 0.793,
+      "nome": "centro"
+     },
+     "area": 0.0056,
+     "varredura": null,
+     "mov": {
+      "dxPct": -0.0296,
+      "dyPct": 0.017,
+      "zoomPct": -0.0235,
+      "amostras": 19,
+      "rotulo": "sem deslocamento medido (mudança de opacidade, foco, máscara ou rápida demais para medir)"
+     },
+     "foco": {
+      "rotulo": "nitidez estável",
+      "antes": 0.2122,
+      "inicio": 0.2332,
+      "fim": 0.2398,
+      "depois": 0.2392,
+      "min": 0.2177
+     },
+     "comp": {
+      "conteudoAntes": 0.3616,
+      "conteudoDepois": 0.3693,
+      "ficou": 0.8103,
+      "novo": 0.1603,
+      "rotulo": "move/ajusta o que já estava"
+     },
+     "velocidade": "▄▅▄▄▄▄▄▄▅▅▅▅▅▅▅▅▅▅▅▅▄▄▄▄"
+    },
+    {
+     "i0": 723,
+     "i1": 768,
+     "pico": 755,
+     "t0": 12.05,
+     "t1": 12.8,
+     "tPico": 12.5833,
+     "dur": 0.7667,
+     "energiaPico": 3.2725,
+     "curva": {
+      "t50": 0.5844,
+      "tPico": 0.7065,
+      "rotulo": "acelera e desacelera (ease-in-out)",
+      "codigo": "in-out"
+     },
+     "regiao": {
+      "x0": 0.2203,
+      "x1": 0.7712,
+      "y0": 0.0586,
+      "y1": 0.8516,
+      "nome": "centro"
+     },
+     "area": 0.0066,
+     "varredura": "varre da esquerda para a direita",
+     "mov": {
+      "dxPct": -0.2143,
+      "dyPct": 0.0936,
+      "zoomPct": -0.0525,
+      "amostras": 23,
+      "rotulo": "sem deslocamento medido (mudança de opacidade, foco, máscara ou rápida demais para medir)"
+     },
+     "foco": {
+      "rotulo": "some sem desfoque",
+      "antes": 0.2224,
+      "inicio": 0.2277,
+      "fim": 0.3529,
+      "depois": 0.3558,
+      "min": 0.2221
+     },
+     "comp": {
+      "conteudoAntes": 0.3645,
+      "conteudoDepois": 0.2859,
+      "ficou": 0.6201,
+      "novo": 0.2983,
+      "rotulo": "acrescenta elemento"
+     },
+     "velocidade": "▄▄▄▄▅▅▅▅▅▅▅▅▅▆▆▆▆▆▅▅▅▅▅▅"
+    }
+   ]
+  }
+ ],
+ "transicoes": [],
+ "abertura": null,
+ "fechamento": null,
+ "pulsoVisual": null,
+ "som": {
+  "mudo": false,
+  "volume": 0.1111,
+  "silencio": 0,
+  "batidaClara": false,
+  "clareza": 0.1704,
+  "bpm": 124.0862,
+  "periodo": 0.4835,
+  "batidas": [
+   0.2692,
+   0.7527,
+   1.2363,
+   1.7198,
+   2.2033,
+   2.6869,
+   3.1704,
+   3.654,
+   4.1375,
+   4.621,
+   5.1046,
+   5.5881,
+   6.0716,
+   6.5552,
+   7.0387,
+   7.5222,
+   8.0058,
+   8.4893,
+   8.9728,
+   9.4564,
+   9.9399,
+   10.4234,
+   10.907,
+   11.3905,
+   11.874,
+   12.3576
+  ],
+  "impactos": [
+   {
+    "t": 0.1295,
+    "forca": 1.015
+   },
+   {
+    "t": 0.3091,
+    "forca": 1.1825
+   },
+   {
+    "t": 3.1028,
+    "forca": 1.0606
+   },
+   {
+    "t": 3.6216,
+    "forca": 1.5079
+   },
+   {
+    "t": 3.891,
+    "forca": 1.3565
+   },
+   {
+    "t": 4.1005,
+    "forca": 1.0969
+   },
+   {
+    "t": 4.9386,
+    "forca": 1.2478
+   },
+   {
+    "t": 5.1082,
+    "forca": 1.0805
+   },
+   {
+    "t": 5.2279,
+    "forca": 1.4893
+   },
+   {
+    "t": 5.627,
+    "forca": 1.3262
+   },
+   {
+    "t": 5.8864,
+    "forca": 2.0815
+   },
+   {
+    "t": 6.066,
+    "forca": 1.4453
+   },
+   {
+    "t": 6.3254,
+    "forca": 1.8297
+   },
+   {
+    "t": 6.6746,
+    "forca": 1.0179
+   },
+   {
+    "t": 6.8842,
+    "forca": 1.6244
+   },
+   {
+    "t": 7.0239,
+    "forca": 2.21
+   },
+   {
+    "t": 7.4229,
+    "forca": 1.0268
+   },
+   {
+    "t": 7.832,
+    "forca": 2.1479
+   },
+   {
+    "t": 8.0016,
+    "forca": 4.071
+   },
+   {
+    "t": 8.1114,
+    "forca": 1.1956
+   },
+   {
+    "t": 8.4107,
+    "forca": 1.0562
+   },
+   {
+    "t": 8.5005,
+    "forca": 1.1288
+   },
+   {
+    "t": 8.8497,
+    "forca": 1.4922
+   },
+   {
+    "t": 9.149,
+    "forca": 1.6711
+   },
+   {
+    "t": 9.3386,
+    "forca": 1.0871
+   },
+   {
+    "t": 9.4583,
+    "forca": 1.5817
+   },
+   {
+    "t": 9.7776,
+    "forca": 1.1779
+   },
+   {
+    "t": 10.1966,
+    "forca": 1.7434
+   },
+   {
+    "t": 10.3064,
+    "forca": 1.9934
+   },
+   {
+    "t": 10.4561,
+    "forca": 1.3136
+   },
+   {
+    "t": 10.9449,
+    "forca": 1.0551
+   },
+   {
+    "t": 11.2742,
+    "forca": 1.2251
+   },
+   {
+    "t": 11.7531,
+    "forca": 2.5286
+   },
+   {
+    "t": 12.0624,
+    "forca": 2.0505
+   }
+  ]
+ },
+ "sincronia": {
+  "impactosCobertos": 1,
+  "cortesNoImpacto": 0,
+  "linhas": [
+   "Sem batida regular clara (provável fala, efeitos ou ambiente). O corte não segue um andamento de música.",
+   "Dos 34 impactos mais fortes do som, 1 têm um corte ou início de movimento a ±2 quadros."
+  ],
+  "resumo": "sem batida regular: a trilha parece fala, efeitos ou ambiente."
+ },
+ "paleta": [
+  {
+   "hex": "#020304",
+   "rgb": [
+    2,
+    3,
+    4
+   ],
+   "parte": 0.6882,
+   "L": 0.784,
+   "croma": 0.4865,
+   "nome": "preto"
+  },
+  {
+   "hex": "#D5C6C0",
+   "rgb": [
+    213,
+    198,
+    192
+   ],
+   "parte": 0.1035,
+   "L": 80.9275,
+   "croma": 6.4541,
+   "nome": "laranja pastel"
+  },
+  {
+   "hex": "#25272B",
+   "rgb": [
+    37,
+    39,
+    43
+   ],
+   "parte": 0.0742,
+   "L": 15.5854,
+   "croma": 2.9436,
+   "nome": "cinza escuro"
+  },
+  {
+   "hex": "#8F8787",
+   "rgb": [
+    143,
+    135,
+    135
+   ],
+   "parte": 0.0408,
+   "L": 56.9943,
+   "croma": 3.1762,
+   "nome": "cinza"
+  },
+  {
+   "hex": "#AE6A4C",
+   "rgb": [
+    174,
+    106,
+    76
+   ],
+   "parte": 0.0408,
+   "L": 51.6428,
+   "croma": 37.1016,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#565254",
+   "rgb": [
+    86,
+    82,
+    84
+   ],
+   "parte": 0.0326,
+   "L": 35.3076,
+   "croma": 2.1329,
+   "nome": "cinza"
+  },
+  {
+   "hex": "#73422E",
+   "rgb": [
+    115,
+    66,
+    46
+   ],
+   "parte": 0.0178,
+   "L": 33.4323,
+   "croma": 28.4916,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#B6444B",
+   "rgb": [
+    182,
+    68,
+    75
+   ],
+   "parte": 0.0021,
+   "L": 45.0637,
+   "croma": 51.0085,
+   "nome": "vermelho"
+  }
+ ],
+ "acentos": [
+  {
+   "hex": "#A76345",
+   "rgb": [
+    167,
+    99,
+    69
+   ],
+   "parte": 0.0407,
+   "L": 48.9689,
+   "croma": 37.6746,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#713F2A",
+   "rgb": [
+    113,
+    63,
+    42
+   ],
+   "parte": 0.0081,
+   "L": 32.3313,
+   "croma": 29.6122,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#C68F75",
+   "rgb": [
+    198,
+    143,
+    117
+   ],
+   "parte": 0.0074,
+   "L": 64.1083,
+   "croma": 28.1915,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#C62029",
+   "rgb": [
+    198,
+    32,
+    41
+   ],
+   "parte": 0.0021,
+   "L": 43.0614,
+   "croma": 73.5658,
+   "nome": "vermelho"
+  }
+ ]
+}

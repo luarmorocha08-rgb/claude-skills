@@ -1,0 +1,14 @@
+.cena-convite { --luz-a-x: 50%; --luz-a-y: 66%; --luz-b-x: 50%; --luz-b-y: 66%; }
+.cena-convite .luz { opacity: 0.35; }
+.cena-convite .pergunta {
+  position: absolute; left: 0; right: 0; top: 17%; text-align: center;
+  font-size: 13cqmin; line-height: 1.0;
+}
+.cena-convite .caminho {
+  position: absolute; left: 0; right: 0; top: 40%; text-align: center;
+  font-size: 7.4cqmin; font-weight: 300; line-height: 1.15; margin: 0;
+}
+.cena-convite .corte { top: 64%; }
+.cena-convite .palavra { font-size: 34cqmin; letter-spacing: -0.045em; padding-block: 0; margin-block: 0; }
+.cena-convite .fenda { opacity: 0.25; }
+.cena-convite .brasa { opacity: 0.7; }

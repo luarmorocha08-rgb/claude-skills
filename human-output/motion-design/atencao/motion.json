@@ -1,0 +1,312 @@
+{
+  "versao": 1,
+  "titulo": "Atenção",
+  "slug": "atencao",
+  "fps": 60,
+  "bpm": 120,
+  "formatoBase": "9x16",
+  "formatos": [
+    "9x16"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Ritmo",
+      "texto": "120 BPM: uma batida = 0,5 s. O gancho é lento de propósito (a espera é a ideia); da virada em diante, tudo cai na batida."
+    },
+    {
+      "titulo": "Fio condutor",
+      "texto": "A palavra cortada ao meio. As metades quase se tocam no gancho, a fenda vira janela na promessa e, no convite, finalmente encostam: SITES."
+    },
+    {
+      "titulo": "Texto",
+      "texto": "Do desfoque para o foco, subida curta, palavra a palavra (45 ms). Tipografia nunca quica; só as metades, que são objeto, têm peso."
+    },
+    {
+      "titulo": "Câmera",
+      "texto": "Push-in lento e contínuo na fenda durante a espera (até 6 %), um tremor mínimo quando as metades ficam a um fio; um empurrão seco de 2 % na colisão final."
+    },
+    {
+      "titulo": "Luz",
+      "texto": "Uma só: a brasa da fenda, sem borda, que esquenta conforme as metades se aproximam e abre como janela na promessa."
+    },
+    {
+      "titulo": "Saída",
+      "texto": "Cortes no mesmo eixo: as quatro cenas dividem a mesma fenda, no mesmo lugar."
+    }
+  ],
+  "referencias": [
+    {
+      "nome": "lapis",
+      "leitura": "Leva-se o princípio: a tensão de duas pontas que quase se tocam segura o olhar, um relógio honesto expõe a espera e a virada revela o truque. Cria-se novo: a própria palavra ATENÇÃO, cortada ao meio, no lugar dos lápis; e a colisão acontece no final, como recompensa."
+    }
+  ],
+  "cenas": [
+    {
+      "id": "tensao",
+      "tipo": "palavra-gigante",
+      "papel": "gancho",
+      "titulo": "O gancho",
+      "dur": 6,
+      "ideia": "ATENÇÃO, cortada ao meio, se reencontra devagar: as metades vêm das bordas e chegam a um fio uma da outra, sem nunca encostar.",
+      "camera": "Push-in lento e contínuo na fenda (1,0 → 1,06), um tremor de 0,1 % nos últimos 1,5 s.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "As metades nas bordas do quadro, o preto no meio",
+          "t": 0.1
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Elas se aproximam; a fenda começa a acender; o relógio em 2",
+          "t": 2.4
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A um fio de encostar, a fenda em brasa; o relógio em 5",
+          "t": 5.4,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "As metades entram pelas bordas, de cima e de baixo, rápidas no começo e cada vez mais devagar (como se nunca fossem chegar)."
+        },
+        {
+          "t": 1,
+          "tipo": "tipo",
+          "texto": "O relógio sai do desfoque: “você está aqui há 1 segundo”. Cada segundo vira na hora certa, o número sobe de pertinho."
+        },
+        {
+          "t": 3,
+          "tipo": "luz",
+          "texto": "A fenda entre elas acende do centro para as pontas e esquenta a cada centímetro que falta."
+        },
+        {
+          "t": 4.5,
+          "tipo": "camera",
+          "texto": "A um fio: a câmera treme 0,1 %, as metades dão dois micro-avanços e param (quase)."
+        },
+        {
+          "t": 5.5,
+          "tipo": "vida",
+          "texto": "Hold: a brasa respira, a câmera continua chegando; nada encosta."
+        }
+      ],
+      "saida": {
+        "tipo": "corte",
+        "texto": "Corte no mesmo eixo: a palavra fica exatamente onde está."
+      }
+    },
+    {
+      "id": "virada",
+      "tipo": "frase",
+      "papel": "desenvolvimento",
+      "titulo": "A virada",
+      "dur": 3,
+      "ideia": "O relógio some e a frase abraça a palavra: em cima “Você ficou 6 segundos”, embaixo “esperando isso encostar”.",
+      "camera": "Herda o push-in e segue devagar; recua 1 % no fim, como quem respira antes de abrir.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "O relógio sai, a frase de cima chega do desfoque",
+          "t": 0.2
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A frase emoldura a palavra cortada",
+          "t": 1.8,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "O relógio sobe e se desfaz em 250 ms."
+        },
+        {
+          "t": 0.1,
+          "tipo": "tipo",
+          "texto": "“Você ficou 6 segundos” sai do desfoque, palavra a palavra, 45 ms entre elas."
+        },
+        {
+          "t": 0.6,
+          "tipo": "tipo",
+          "texto": "Na batida, “esperando isso encostar” sobe por baixo, mais apagada."
+        },
+        {
+          "t": 1.5,
+          "tipo": "vida",
+          "texto": "Hold: a brasa respira, as metades tremem a um fio."
+        },
+        {
+          "t": 2,
+          "tipo": "luz",
+          "texto": "Na batida, a brasa da fenda dá um pulso de calor, como se fosse encostar agora."
+        },
+        {
+          "t": 2.6,
+          "tipo": "transicao",
+          "texto": "As duas frases recuam para o desfoque e a fenda começa a abrir."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "promessa",
+      "tipo": "frase-que-vira",
+      "papel": "climax",
+      "titulo": "A promessa",
+      "dur": 3.5,
+      "ideia": "A fenda vira janela: as metades se afastam para fora do quadro, a brasa abre e de dentro dela sai a frase.",
+      "camera": "Mergulho curto de 4 % na fenda enquanto ela abre; depois push-in vivo.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "As metades se separam, a luz abre de dentro",
+          "t": 0.25
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A frase no centro, “atenção” em brasa",
+          "t": 2.3,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "As metades se separam com arranque macio e saem pelas bordas em 600 ms, acelerando."
+        },
+        {
+          "t": 0.1,
+          "tipo": "luz",
+          "texto": "A brasa da fenda abre na vertical e vira um campo de luz quente."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "A frase sai do desfoque linha a linha; “atenção” acende por último, na brasa."
+        },
+        {
+          "t": 1,
+          "tipo": "luz",
+          "texto": "Na batida, “atenção” é varrida da cor do texto para a brasa."
+        },
+        {
+          "t": 1.5,
+          "tipo": "camera",
+          "texto": "A câmera assenta e a luz de trás respira uma vez."
+        },
+        {
+          "t": 2,
+          "tipo": "vida",
+          "texto": "Hold: o degradê de “atenção” deriva e um brilho atravessa a palavra uma vez."
+        },
+        {
+          "t": 3.2,
+          "tipo": "transicao",
+          "texto": "A frase é sugada para uma linha horizontal de luz, que vira a fenda da próxima."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "convite",
+      "tipo": "palavra-gigante",
+      "papel": "convite",
+      "titulo": "O convite",
+      "dur": 4,
+      "ideia": "A colisão que o filme prometeu: as metades de SITES vêm das bordas e encostam na batida, com um estalo de luz na emenda.",
+      "camera": "Viva; um empurrão seco de 2 % na colisão, devolvido devagar.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A pergunta no alto; as metades de SITES ainda longe",
+          "t": 0.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "SITES inteira, a emenda ainda quente; o convite completo",
+          "t": 3,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "“Quer um site assim?” sai do desfoque palavra a palavra."
+        },
+        {
+          "t": 0.5,
+          "tipo": "objeto",
+          "texto": "As metades de SITES entram pelas bordas, desta vez rápidas e decididas."
+        },
+        {
+          "t": 1.5,
+          "tipo": "objeto",
+          "texto": "Batida 3: ENCOSTAM. Um estalo de luz corre pela emenda do centro para as pontas e a câmera recebe o peso (2 %)."
+        },
+        {
+          "t": 2,
+          "tipo": "tipo",
+          "texto": "“me chama no direct ou comenta” sobe palavra a palavra, apontando para SITES."
+        },
+        {
+          "t": 2.8,
+          "tipo": "vida",
+          "texto": "Hold até o fim: a emenda esfria devagar, o degradê de SITES deriva."
+        },
+        {
+          "t": 3.5,
+          "tipo": "luz",
+          "texto": "Na última batida, um brilho atravessa SITES uma vez e o filme termina vivo, pronto para recomeçar."
+        }
+      ]
+    }
+  ],
+  "capa": {
+    "cena": "convite",
+    "quadro": "fim"
+  },
+  "storyboard": {
+    "revisao": 2,
+    "aprovadoEm": null
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-01",
+  "cartaz": "Você ficou 6 segundos esperando isso encostar"
+}

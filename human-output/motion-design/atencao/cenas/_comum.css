@@ -1,0 +1,42 @@
+/* A palavra cortada ao meio (o fio condutor do filme): duas cópias da mesma palavra, uma mostrando
+   só a metade de cima, outra só a de baixo. A caixa da linha tem a altura exata da maiúscula, então
+   50 % é o meio da letra. Entre as metades, a fenda de luz. */
+.corte { position: absolute; left: 0; right: 0; height: 0; }
+.corte .metade {
+  position: absolute; left: 50%; top: 0;
+  translate: -50% -50%;
+  white-space: nowrap;
+}
+.corte .palavra {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.727;            /* altura da maiúscula da Inter: a caixa é a letra */
+  color: var(--texto);
+  padding-inline: 0.04em;
+}
+.corte .cima  { clip-path: inset(-40% -4% 50% -4%); }
+.corte .baixo { clip-path: inset(50% -4% -40% -4%); }
+/* a fenda: um fio de luz sem borda (as pontas morrem no preto) */
+.corte .fenda, .corte .brasa {
+  position: absolute; left: 50%; top: 0; translate: -50% -50%;
+  pointer-events: none;
+}
+.corte .fenda {
+  width: 96cqw; height: 0.32cqmin;
+  background: linear-gradient(90deg, transparent 0%,
+    color-mix(in srgb, var(--destaque) 30%, transparent) 14%,
+    color-mix(in srgb, var(--brilho) 92%, transparent) 50%,
+    color-mix(in srgb, var(--destaque) 30%, transparent) 86%, transparent 100%);
+  filter: blur(0.12cqmin);
+}
+.corte .brasa {
+  width: 110cqw; height: 26cqmin;
+  background: radial-gradient(closest-side,
+    color-mix(in srgb, var(--destaque) 34%, transparent) 0%,
+    color-mix(in srgb, var(--destaque) 20%, transparent) 25%,
+    color-mix(in srgb, var(--destaque) 9%, transparent) 50%,
+    color-mix(in srgb, var(--destaque) 2.5%, transparent) 75%, transparent 100%);
+  filter: blur(2cqmin);
+}

@@ -1,0 +1,12 @@
+.cena-promessa { --luz-a-x: 50%; --luz-a-y: 52%; --luz-b-x: 50%; --luz-b-y: 52%; }
+.cena-promessa .luz { opacity: 0.4; }
+.cena-promessa .corte { top: 54%; }
+.cena-promessa .palavra { font-size: 21cqmin; }
+.cena-promessa .cima  { transform: translateY(-62cqh); }
+.cena-promessa .baixo { transform: translateY(62cqh); }
+.cena-promessa .fenda { opacity: 0; }
+.cena-promessa .brasa { transform: scale(1.3, 4.2); opacity: 0.55; }
+.cena-promessa .frase {
+  position: absolute; left: 0; right: 0; top: 50%; translate: 0 -50%;
+  text-align: center; font-size: 13cqmin; line-height: 1.0;
+}

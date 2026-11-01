@@ -1,0 +1,12 @@
+.cena-virada { --luz-a-x: 50%; --luz-a-y: 50%; --luz-b-x: 50%; --luz-b-y: 50%; }
+.cena-virada .luz { opacity: 0.22; }
+.cena-virada .corte { top: 54%; }
+.cena-virada .palavra { font-size: 21cqmin; }
+.cena-virada .cima  { transform: translateY(-0.28cqmin); }
+.cena-virada .baixo { transform: translateY(0.28cqmin); }
+.cena-virada .frase {
+  position: absolute; left: 0; right: 0; text-align: center;
+  font-size: 10.5cqmin; line-height: 1.04;
+}
+.cena-virada .f-cima { bottom: calc(46% + 17cqmin); }
+.cena-virada .f-baixo { top: calc(54% + 17cqmin); color: var(--texto-suave); }
