@@ -19,17 +19,37 @@ Motion.cena('app', {
       <p class="rotulo">03 · App</p>
       <h2 class="titulo frase">Um <span class="destaque">app</span><br>de treino.</h2>
     </div></div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.midia.mockup(el.$('.fone'), { ry: -30, rx: 10, s: 0.84, y: 6 });
-      api.set(el.$$('.ui > *:not(.ola):not(.nome)'), { o: 0 });
-      api.set(el.$('.frase'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.midia.mockup(el.$('.fone'), { ry: -8, rx: 3, s: 0.96 });
-      api.set(el.$$('.dupla'), { o: 0, y: 3 });
-      el.$$('.barras i').forEach((b, i) => api.set(b, { sy: i < 3 ? 1 : 0.05, origem: '50% 100%' }));
-    },
+  montar(el, api) {
+    el.fone = el.$('.fone');
+    el.topo = [el.$('.ola'), el.$('.nome')];
+    el.cards = [el.$('.treino'), el.$('.semana'), el.$('.dupla')];
+    el.barras = el.$$('.barras i');
+    el.hoje = el.$('.col.hoje');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: 0 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease, spring, vida } = api;
+    const m = spring(t, { freq: 1.4, damp: 6.4 });
+    api.midia.mockup(el.fone, { ry: -30 * (1 - m) + 3 * vida(t, { inicio: 1.2, periodo: 4.2 }), rx: 10 * (1 - m), s: 0.84 + 0.16 * m, y: 6 * (1 - m) });
+    el.topo.forEach((p, i) => window.subir(t, api, p, 0.1 + 0.06 * i, { y: 1.2, blur: 0.2 }));
+    [0.25, 0.34, 0.42].forEach((t0, i) => window.subir(t, api, el.cards[i], t0, { y: 2.6, blur: 0.3 }));
+    // as barras crescem uma a uma; a de hoje por último, passa um fio e acende dourada na batida 2
+    el.barras.forEach((b, i) => {
+      const t0 = 0.6 + 0.05 * i;
+      const ultimo = i === el.barras.length - 1;
+      const k = ultimo ? spring(t - t0, { freq: 1.6, damp: 6 }) : ease.forte(prog(t, t0, t0 + 0.45));
+      api.set(b, { sy: Math.max(0.02, k), origem: '50% 100%', o: suave(prog(t, t0, t0 + 0.06)), sat: ultimo ? 0.15 + 0.85 * suave(prog(t, 0.95, 1.2)) : 1, bright: ultimo ? 1 + 0.12 * vida(t, { inicio: 1.3, periodo: 1.6 }) : 1 });
+    });
+    tipo.focar(t, el.rot, { inicio: 0.12 });
+    tipo.focar(t, el.pal, { inicio: 0.22 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.6, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.2 });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: api.viva(t) });
   },
 });
 }

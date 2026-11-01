@@ -32,3 +32,8 @@ da marca, mostrando como a IA cria plataformas, jogos etc.
 ## A confirmar com a pessoa
 - O @ da marca na peça é **@ramosraul.ia** (com "s"); o pedido escreveu "ramoraul.ia". Usei o da peça.
 - "Raul" na saudação do app, os nomes dos cursos e o placar 0450 são conteúdo de exemplo das telas.
+
+## Rodadas
+- Rev. 04 aprovada (storyboard congelado em storyboard/aprovado/9x16).
+- v3 — animação completa em 9:16 a 60 qps (16,75 s com as passagens sobrepostas). Fluidez sem trancos;
+  quadros finais iguais aos aprovados. O fim apaga sozinho até o fundo para o loop do Reels.

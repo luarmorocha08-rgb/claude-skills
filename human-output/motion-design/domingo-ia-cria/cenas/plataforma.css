@@ -12,7 +12,7 @@
 .cena-plataforma .hero { padding-top: 2cqmin; }
 .cena-plataforma .kicker { margin: 0 0 1.8cqmin; font: 700 2.4cqmin var(--fonte-texto); letter-spacing: 0.26em; text-transform: uppercase; color: var(--destaque); }
 .cena-plataforma .hero h3 { margin: 0; font: 400 9cqmin/0.98 var(--fonte-titulo); letter-spacing: -0.025em; color: var(--texto); }
-.cena-plataforma .hero h3 span:not(.cursor) { font-style: italic; color: var(--destaque); }
+.cena-plataforma .hero h3 .ital { font-style: italic; color: var(--destaque); }
 .cena-plataforma .cta { margin-top: 3.4cqmin; width: 26cqmin; height: 6.4cqmin; border-radius: 4cqmin; background: var(--destaque-grad); }
 .cena-plataforma .cursos { margin-top: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4cqmin; }
 .cena-plataforma .curso { border-radius: 2.6cqmin; padding: 1.6cqmin; background: var(--cartao-claro); box-shadow: inset 0 0 0 0.14cqmin var(--cartao-borda); }

@@ -21,7 +21,60 @@ window.posarFacetas = (el, api, p, { de = [0, 0], espalhar = 1 } = {}) => {
     const r = (n) => api.rand(i * 13 + n);
     const dx = de[0] + (r(1) - 0.5) * 70 * espalhar - (cx - 50) * 0.2;
     const dy = de[1] + (r(2) - 0.5) * 50 * espalhar - (cy - 50) * 0.3;
-    api.set(f, { x: dx * (1 - e), y: dy * (1 - e), r: (r(3) - 0.5) * 160 * (1 - e), s: 0.7 + 0.3 * e, o: api.clamp(0.35 + k * 2, 0, 1) });
+    api.set(f, { x: dx * (1 - e), y: dy * (1 - e), r: (r(3) - 0.5) * 160 * (1 - e), s: 0.7 + 0.3 * e, o: api.clamp(0.75 + k * 2, 0, 1) });
     api.set(f.firstChild, { o: 0.55 * (1 - api.ease.outCubic(api.clamp((k - 0.5) / 0.5, 0, 1))) });
   });
+};
+
+/* ── Animação compartilhada ── */
+
+/* O cursor dourado que voa: mede o cursor do texto (o do quadro aprovado), esconde-o e usa um
+   cursor solto, do mesmo tamanho, que a cena leva para onde a escrita está. */
+window.prepCursor = (el, api, seletor) => {
+  const real = el.$(seletor);
+  const voo = el.$('.cursor-voo');
+  if (!real || !voo) return null;
+  const c = api.caixa(real);
+  voo.style.width = `${c.l}cqw`;
+  voo.style.height = `${c.a}cqw`;
+  return { real, voo, fim: [c.x, c.y], l: c.l, a: c.a };
+};
+/* pisca macio (2 batidas por ciclo), em 1 no quadro aprovado */
+window.piscar = (t, api) => 0.62 + 0.38 * Math.cos((2 * Math.PI * (t - api.ref)) / 1.0);
+window.posCursor = (cur, api, t, pos, o) => {
+  api.set(cur.real, { o: 0 });
+  api.set(cur.voo, { x: pos[0], y: pos[1], o });
+};
+
+/* As facetas do personagem: p de 0 (espalhadas) a 1 (encaixadas), depois a foto inteira assume. */
+window.animarFacetas = (t, el, api, { inicio = 0, dur = 1.2, de = [0, 0], espalhar = 1, troca = 0.2 } = {}) => {
+  const { prog, suave } = api;
+  const p = prog(t, inicio, inicio + dur);
+  window.posarFacetas(el, api, p, { de, espalhar });
+  const fim = inicio + dur;
+  api.set(el.$('.facetas'), { o: 1 - suave(prog(t, fim + 0.02, fim + 0.02 + troca)) });
+  api.set(el.$('.corpo'), { o: suave(prog(t, fim - 0.06, fim - 0.06 + troca)) });
+  api.set(el.$('.sombra-chao'), { o: suave(prog(t, inicio + dur * 0.3, fim)) });
+  api.set(el.$('.contraluz'), { o: suave(prog(t, fim - 0.1, fim + 0.6)) });
+  // respira um fio, a partir dos pés
+  api.set(el.$('.personagem'), { s: 1 + api.vida(t, { inicio: fim, periodo: 3.4, amp: 0.004 }), origem: '50% 100%', subpixel: true });
+};
+
+/* Objeto que chega da profundidade com mola curta (nunca em texto). */
+window.chegar = (t, api, el, { inicio = 0, de = {}, freq = 1.4, damp = 6.4, fade = 0.12 } = {}) => {
+  const m = api.spring(t - inicio, { freq, damp });
+  const e = api.ease.outCubic(api.prog(t, inicio, inicio + 0.5));
+  const v = (k, b) => (de[k] ?? b);
+  api.set(el, {
+    x: v('x', 0) * (1 - m), y: v('y', 0) * (1 - m), r: v('r', 0) * (1 - m),
+    s: 1 - (1 - v('s', 1)) * (1 - m),
+    o: api.suave(api.prog(t, inicio, inicio + fade)),
+    blur: v('blur', 0.3) * (1 - e),
+  });
+};
+
+/* Peça que sobe do desfoque (para blocos de interface e rodapé). */
+window.subir = (t, api, el, inicio, { y = 2.4, blur = 0.35, dur = 0.55 } = {}) => {
+  const e = api.ease.forte(api.prog(t, inicio, inicio + dur));
+  api.set(el, { y: y * (1 - e), blur: blur * (1 - e), o: api.suave(api.prog(t, inicio, inicio + 0.16)) });
 };

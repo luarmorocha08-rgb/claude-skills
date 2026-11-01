@@ -1,0 +1,735 @@
+{
+ "titulo": "Um prompt, três criações",
+ "fps": 60,
+ "bpm": 120,
+ "total": 16.75,
+ "inicio": 0,
+ "cenas": [
+  {
+   "id": "gancho",
+   "titulo": "O gancho",
+   "inicio": 0,
+   "fim": 2.5
+  },
+  {
+   "id": "prompt",
+   "titulo": "O pedido",
+   "inicio": 2.5,
+   "fim": 6
+  },
+  {
+   "id": "plataforma",
+   "titulo": "01 · A plataforma",
+   "inicio": 5.25,
+   "fim": 8.25
+  },
+  {
+   "id": "jogo",
+   "titulo": "02 · O jogo",
+   "inicio": 7.75,
+   "fim": 10.75
+  },
+  {
+   "id": "app",
+   "titulo": "03 · O app",
+   "inicio": 10.25,
+   "fim": 13.25
+  },
+  {
+   "id": "assinatura",
+   "titulo": "A assinatura",
+   "inicio": 13.25,
+   "fim": 16.75
+  }
+ ],
+ "cortes": [
+  2.5,
+  13.25
+ ],
+ "transicoes": [
+  {
+   "de": "gancho",
+   "para": "prompt",
+   "tipo": "avancar-desfocar",
+   "inicio": 2.26,
+   "fim": 2.8,
+   "corte": 2.5
+  },
+  {
+   "de": "prompt",
+   "para": "plataforma",
+   "tipo": "mergulho",
+   "inicio": 5.25,
+   "fim": 6,
+   "corte": null
+  },
+  {
+   "de": "plataforma",
+   "para": "jogo",
+   "tipo": "empurrar",
+   "inicio": 7.75,
+   "fim": 8.25,
+   "corte": null
+  },
+  {
+   "de": "jogo",
+   "para": "app",
+   "tipo": "empurrar",
+   "inicio": 10.25,
+   "fim": 10.75,
+   "corte": null
+  },
+  {
+   "de": "app",
+   "para": "assinatura",
+   "tipo": "avancar-desfocar",
+   "inicio": 13.01,
+   "fim": 13.55,
+   "corte": 13.25
+  }
+ ],
+ "batidas": [
+  {
+   "cena": "gancho",
+   "tipo": "tipo",
+   "t": 0,
+   "texto": "O cursor pisca duas vezes (macio, 250 ms) e escreve 'Um prompt.' palavra a palavra, cada uma saindo do desfoque."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "tipo",
+   "t": 0.5,
+   "texto": "'Três criações.' entra na batida; o itálico dourado é varrido da cor do texto para o dourado em 450 ms."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "objeto",
+   "t": 0.75,
+   "texto": "A faísca da IA nasce quente no centro, cresce de 70 % com mola curta e o aro dourado se desenha em volta."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "objeto",
+   "t": 1,
+   "texto": "Notebook, controle, celular, robô e foguete saltam do aro para a órbita em accelerando (90 → 40 ms), com um estalo pequeno cada; a linha tracejada corre atrás."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "vida",
+   "t": 1.5,
+   "texto": "Hold: os ícones flutuam devagar na órbita, cada um no seu período; a luz âmbar respira; o rodapé RR @ramosraul.ia sobe."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "transicao",
+   "t": 2.25,
+   "texto": "Corte no eixo: o título sai acelerando pela câmera e o cursor fica — ele é o primeiro quadro da próxima."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "objeto",
+   "t": 2.5,
+   "texto": "191 facetas do personagem voam de onde o cursor estava e encaixam dos pés para a cabeça, em cascata de 1,1 s, cada uma com um giro curto; chegam douradas e esfriam até a cor real."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "objeto",
+   "t": 2.75,
+   "texto": "O card escuro chega da profundidade (92 → 100 %) e o cursor começa a digitar o pedido, 26 caracteres por segundo."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "objeto",
+   "t": 3.25,
+   "texto": "Metade do personagem montada (das pernas ao peito); o pedido já na segunda linha."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "luz",
+   "t": 3.75,
+   "texto": "A cabeça encaixa por último e a última faceta esfria; o pedido termina com o cursor piscando."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "luz",
+   "t": 4,
+   "texto": "Montado: as facetas se fundem na foto inteira num cruzamento de 200 ms; a contraluz âmbar acende atrás dele."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "tipo",
+   "t": 4.25,
+   "texto": "'Eu só descrevo.' sobe palavra a palavra; o itálico é varrido para o dourado na batida 4."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "vida",
+   "t": 4.9,
+   "texto": "Hold: o personagem respira um fio (0,4 %), o cursor pisca macio no fim do pedido."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "objeto",
+   "t": 5.25,
+   "texto": "A janela herda o mergulho e endireita de 18° para 0° com mola curta (1,4 Hz)."
+  },
+  {
+   "cena": "prompt",
+   "tipo": "transicao",
+   "t": 5.4,
+   "texto": "A câmera mergulha no card do pedido; ele vira a janela do navegador da próxima."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "tipo",
+   "t": 5.5,
+   "texto": "Menu, chamada e título da página se escrevem de cima para baixo, 70 ms entre peças; o cursor corre no fim do título."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "tipo",
+   "t": 5.75,
+   "texto": "Em cima, '01 · Plataforma' e 'Uma plataforma de cursos.' saem do desfoque palavra a palavra."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "objeto",
+   "t": 6,
+   "texto": "Os três cursos caem em accelerando (90 → 40 ms) e as barras de progresso enchem até 72, 38 e 15 %."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "vida",
+   "t": 6.85,
+   "texto": "Hold: a luz âmbar do site respira, o cursor pisca, um brilho passa uma vez pelo itálico."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "luz",
+   "t": 7.35,
+   "texto": "O cursor do título do site pisca na batida; o botão dourado ganha um brilho que passa uma vez."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "objeto",
+   "t": 7.75,
+   "texto": "O celular gira 90° em 500 ms (curva simétrica) e trava deitado na batida 1 com um quique pequeno."
+  },
+  {
+   "cena": "plataforma",
+   "tipo": "transicao",
+   "t": 8,
+   "texto": "Empurrão para cima no mesmo eixo: a plataforma sobe e sai, o celular do jogo chega por baixo."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "objeto",
+   "t": 8.15,
+   "texto": "As três camadas de montanha sobem de baixo, da mais longe para a mais perto, 80 ms entre elas; o sol acende sem borda."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "objeto",
+   "t": 8.65,
+   "texto": "O personagem cai na pista com um quique ('pof'); moedas acendem uma a uma; os obstáculos rosa brotam do chão."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "tipo",
+   "t": 8.85,
+   "texto": "O placar aparece e conta até 0450 enquanto as moedas são pegas; '02 · Jogo' e o título entram em cima."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "vida",
+   "t": 9.35,
+   "texto": "Hold: as montanhas correm em paralaxe (a de trás mais devagar), o personagem pula de leve no ritmo, o controle 3D flutua."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "objeto",
+   "t": 9.85,
+   "texto": "O personagem pega a última moeda com um pulinho e o placar trava em 0450 na batida."
+  },
+  {
+   "cena": "app",
+   "tipo": "objeto",
+   "t": 10.25,
+   "texto": "O celular chega da profundidade girado 30° e assenta de frente com mola curta."
+  },
+  {
+   "cena": "jogo",
+   "tipo": "transicao",
+   "t": 10.5,
+   "texto": "Empurrão para cima: o jogo sobe e sai, o celular do app chega por baixo."
+  },
+  {
+   "cena": "app",
+   "tipo": "objeto",
+   "t": 10.5,
+   "texto": "'Bom dia, Raul', o card do treino e a semana caem na tela num rufar (90 → 40 ms)."
+  },
+  {
+   "cena": "app",
+   "tipo": "tipo",
+   "t": 10.75,
+   "texto": "'03 · App' e 'Um app de treino.' saem do desfoque palavra a palavra."
+  },
+  {
+   "cena": "app",
+   "tipo": "objeto",
+   "t": 11,
+   "texto": "As barras crescem da esquerda para a direita, 50 ms entre elas; a de hoje cresce por último, passa um pouco e acende dourada na batida 2."
+  },
+  {
+   "cena": "app",
+   "tipo": "vida",
+   "t": 11.85,
+   "texto": "Hold: a barra de hoje brilha macio, o celular respira em Y."
+  },
+  {
+   "cena": "app",
+   "tipo": "luz",
+   "t": 12.35,
+   "texto": "Um brilho atravessa a barra de hoje e o número de treinos uma vez."
+  },
+  {
+   "cena": "app",
+   "tipo": "transicao",
+   "t": 12.85,
+   "texto": "O celular se desfaz em facetas douradas que voam para a direita: lá o personagem vai se remontar."
+  },
+  {
+   "cena": "assinatura",
+   "tipo": "objeto",
+   "t": 13.25,
+   "texto": "As facetas cruzam o quadro em arco e encaixam no personagem em 1 s, quentes, e esfriam até a cor real."
+  },
+  {
+   "cena": "assinatura",
+   "tipo": "tipo",
+   "t": 13.75,
+   "texto": "'Qual é a próxima' sobe palavra a palavra; 'criação' é escrita pelo cursor letra a letra e varrida para o dourado na batida 3."
+  },
+  {
+   "cena": "assinatura",
+   "tipo": "objeto",
+   "t": 14.75,
+   "texto": "O convite 'Comenta a sua ideia e segue pra ver ela nascer aqui.' chega da profundidade com um estalo pequeno."
+  },
+  {
+   "cena": "assinatura",
+   "tipo": "objeto",
+   "t": 15.25,
+   "texto": "RR @ramosraul.ia sobe; embaixo, 'Seguir +' entra e o '+' dourado pulsa uma vez, como um convite."
+  },
+  {
+   "cena": "assinatura",
+   "tipo": "luz",
+   "t": 15.75,
+   "texto": "Um brilho atravessa 'criação' uma vez; a contraluz âmbar respira atrás do personagem; o cursor pisca esperando a resposta."
+  },
+  {
+   "cena": "assinatura",
+   "tipo": "transicao",
+   "t": 16.25,
+   "texto": "Tudo esmaece até o fundo: o loop do Reels recomeça no cursor da abertura."
+  }
+ ],
+ "linhas": {
+  "9x16": {
+   "fps": 60,
+   "bpm": 120,
+   "total": 16.75,
+   "formato": "9x16",
+   "montagem": "principal",
+   "titulo": "Um prompt, três criações",
+   "cenas": [
+    {
+     "id": "gancho",
+     "titulo": "O gancho",
+     "indice": 0,
+     "inicio": 0,
+     "dur": 2.5,
+     "fim": 2.5,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "\"Um prompt.\" sendo escrito pelo cursor dourado",
+       "t": 0.05
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "O título escrito; a IA (faísca) nasce no centro, ainda sem as criações",
+       "t": 0.9
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "Título, a IA no aro dourado e as criações em órbita; rodapé da marca",
+       "t": 1.8
+      }
+     ],
+     "tipo": "frase",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "entrada": null,
+     "hash": "08ad8907740d0baf"
+    },
+    {
+     "id": "prompt",
+     "titulo": "O pedido",
+     "indice": 1,
+     "inicio": 2.5,
+     "dur": 3.5,
+     "fim": 6,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "As facetas douradas espalhadas no ar, ainda sem forma",
+       "t": 0.2
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "As facetas encaixando dos pés para a cabeça; o card digitando",
+       "t": 1
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "O pedido inteiro no card, o personagem montado à direita, a frase à esquerda",
+       "t": 2.6
+      }
+     ],
+     "tipo": "foto-objeto",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "mergulho",
+      "modo": "sobreposta",
+      "dur": 0.75
+     },
+     "entrada": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "hash": "9c520469fecc512a"
+    },
+    {
+     "id": "plataforma",
+     "titulo": "01 · A plataforma",
+     "indice": 2,
+     "inicio": 5.25,
+     "dur": 3,
+     "fim": 8.25,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A janela chegando inclinada, só o menu do site desenhado",
+       "t": 0.15
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Menu e título da página prontos; o primeiro curso caindo",
+       "t": 0.9
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A plataforma inteira: título com cursor, botão e três cursos com progresso",
+       "t": 1.9
+      }
+     ],
+     "tipo": "aparelho",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "entrada": {
+      "tipo": "mergulho",
+      "modo": "sobreposta",
+      "dur": 0.75
+     },
+     "hash": "5fb1aa80f00f863d"
+    },
+    {
+     "id": "jogo",
+     "titulo": "02 · O jogo",
+     "indice": 3,
+     "inicio": 7.75,
+     "dur": 3,
+     "fim": 10.75,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "O celular em pé, menor, com o céu do jogo",
+       "t": 0.1
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Girando para o lado; as montanhas se erguendo em camadas",
+       "t": 0.6
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "O jogo pronto: o personagem na pista, moedas, obstáculos e placar",
+       "t": 1.9
+      }
+     ],
+     "tipo": "aparelho",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "entrada": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "hash": "25acfa4de609eb68"
+    },
+    {
+     "id": "app",
+     "titulo": "03 · O app",
+     "indice": 4,
+     "inicio": 10.25,
+     "dur": 3,
+     "fim": 13.25,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "O celular chegando girado; só a saudação na tela",
+       "t": 0.1
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Saudação e treino prontos; as barras da semana crescendo",
+       "t": 0.9
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "O app pronto, com a barra de hoje acesa em dourado",
+       "t": 1.9
+      }
+     ],
+     "tipo": "aparelho",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "entrada": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "hash": "6d9ad660b5ed033b"
+    },
+    {
+     "id": "assinatura",
+     "titulo": "A assinatura",
+     "indice": 5,
+     "inicio": 13.25,
+     "dur": 3.5,
+     "fim": 16.75,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "As facetas douradas voando de volta",
+       "t": 0.15
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "O personagem quase montado; o cursor escrevendo 'criação'",
+       "t": 0.9
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A pergunta grande, o personagem à direita, o convite para comentar e seguir, o rodapé da marca",
+       "t": 2.3
+      }
+     ],
+     "tipo": "marca-em-etapas",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "hash": "7b9794891e500de0"
+    }
+   ],
+   "transicoes": [
+    {
+     "de": "gancho",
+     "para": "prompt",
+     "tipo": "avancar-desfocar",
+     "modo": "encadeada",
+     "opcoes": {
+      "avanco": 0.07,
+      "desfoque": 0.8,
+      "__dur": 0,
+      "__antes": 0.24,
+      "__depois": 0.3
+     },
+     "texto": "O título avança e desfoca pela câmera; o card do pedido nasce no mesmo lugar, ainda dentro da luz.",
+     "textoEntrada": null,
+     "corte": 2.5,
+     "antes": 0.24,
+     "depois": 0.3,
+     "inicio": 2.26,
+     "fim": 2.8,
+     "dur": 0.54
+    },
+    {
+     "de": "prompt",
+     "para": "plataforma",
+     "tipo": "mergulho",
+     "modo": "sobreposta",
+     "opcoes": {
+      "alvo": ".card-prompt",
+      "ponte": null,
+      "antecipacao": 0.2,
+      "recuo": 0.025,
+      "escurecer": 0.4,
+      "cobrir": 1.15,
+      "alvoTexto": "no card do pedido",
+      "__dur": 0.75,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 5.25,
+     "fim": 6,
+     "corte": null,
+     "dur": 0.75
+    },
+    {
+     "de": "plataforma",
+     "para": "jogo",
+     "tipo": "empurrar",
+     "modo": "sobreposta",
+     "opcoes": {
+      "direcao": "cima",
+      "__dur": 0.5,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 7.75,
+     "fim": 8.25,
+     "corte": null,
+     "dur": 0.5
+    },
+    {
+     "de": "jogo",
+     "para": "app",
+     "tipo": "empurrar",
+     "modo": "sobreposta",
+     "opcoes": {
+      "direcao": "cima",
+      "__dur": 0.5,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 10.25,
+     "fim": 10.75,
+     "corte": null,
+     "dur": 0.5
+    },
+    {
+     "de": "app",
+     "para": "assinatura",
+     "tipo": "avancar-desfocar",
+     "modo": "encadeada",
+     "opcoes": {
+      "avanco": 0.07,
+      "desfoque": 0.8,
+      "__dur": 0,
+      "__antes": 0.24,
+      "__depois": 0.3
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 13.25,
+     "antes": 0.24,
+     "depois": 0.3,
+     "inicio": 13.01,
+     "fim": 13.55,
+     "dur": 0.54
+    }
+   ],
+   "cortes": [
+    2.5,
+    13.25
+   ],
+   "estilo": {
+    "curvaEntrada": [
+     0.16,
+     1,
+     0.3,
+     1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+   }
+  }
+ }
+}

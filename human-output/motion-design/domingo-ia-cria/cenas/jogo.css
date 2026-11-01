@@ -8,7 +8,7 @@
 .cena-jogo .ceu { position: absolute; inset: 0; background: linear-gradient(180deg, #120f17 0%, #3a2618 62%, #c27a45 100%); }
 .cena-jogo .sol { position: absolute; left: 62%; top: 30%; width: 22%; aspect-ratio: 1; translate: -50% -50%;
   background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 90%, transparent), color-mix(in srgb, var(--luz-3) 30%, transparent) 45%, transparent); }
-.cena-jogo .montes { position: absolute; left: -2%; right: -2%; bottom: 0; }
+.cena-jogo .montes { position: absolute; left: -8%; right: -8%; bottom: 0; }
 .cena-jogo .m1 { height: 62%; background: #4a2f22; clip-path: polygon(0 60%, 12% 30%, 22% 52%, 35% 18%, 48% 48%, 60% 26%, 74% 55%, 86% 22%, 100% 46%, 100% 100%, 0 100%); }
 .cena-jogo .m2 { height: 46%; background: #2b1d18; clip-path: polygon(0 40%, 10% 62%, 24% 28%, 38% 58%, 52% 34%, 66% 64%, 80% 30%, 92% 56%, 100% 38%, 100% 100%, 0 100%); }
 .cena-jogo .m3 { height: 26%; background: #17110f; clip-path: polygon(0 30%, 18% 46%, 30% 20%, 46% 44%, 62% 16%, 78% 42%, 100% 24%, 100% 100%, 0 100%); }

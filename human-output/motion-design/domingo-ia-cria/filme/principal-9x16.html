@@ -555,6 +555,7 @@ body.m-com-player {
   position: absolute; left: -60%; right: -60%; top: -8%; height: 70%;
   background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 22%, transparent), color-mix(in srgb, var(--luz-3) 8%, transparent) 50%, transparent);
 }
+.cursor-voo { position: absolute; left: 50cqw; top: 50cqh; margin: 0; vertical-align: baseline; opacity: 0; }
 
 
 /* ── cenas/gancho.css ── */
@@ -593,7 +594,7 @@ body.m-com-player {
 .cena-prompt .mini { width: 5cqmin; height: 5cqmin; object-fit: contain; }
 .cena-prompt .pedido { margin: 0; font-family: var(--fonte-texto); font-weight: 500; font-size: 6.4cqmin; line-height: 1.22; letter-spacing: -0.015em; color: var(--texto); }
 .cena-prompt .meio-esq { top: 58cqh; right: 50cqw; }
-.cena-prompt .frase { font-size: 13cqmin; }
+.cena-prompt .frase { font-size: 13cqmin; white-space: nowrap; }
 .cena-prompt .heroi-direita { height: 50cqh; right: 4cqw; bottom: 3cqh; }
 
 /* ── cenas/plataforma.css ── */
@@ -611,7 +612,7 @@ body.m-com-player {
 .cena-plataforma .hero { padding-top: 2cqmin; }
 .cena-plataforma .kicker { margin: 0 0 1.8cqmin; font: 700 2.4cqmin var(--fonte-texto); letter-spacing: 0.26em; text-transform: uppercase; color: var(--destaque); }
 .cena-plataforma .hero h3 { margin: 0; font: 400 9cqmin/0.98 var(--fonte-titulo); letter-spacing: -0.025em; color: var(--texto); }
-.cena-plataforma .hero h3 span:not(.cursor) { font-style: italic; color: var(--destaque); }
+.cena-plataforma .hero h3 .ital { font-style: italic; color: var(--destaque); }
 .cena-plataforma .cta { margin-top: 3.4cqmin; width: 26cqmin; height: 6.4cqmin; border-radius: 4cqmin; background: var(--destaque-grad); }
 .cena-plataforma .cursos { margin-top: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4cqmin; }
 .cena-plataforma .curso { border-radius: 2.6cqmin; padding: 1.6cqmin; background: var(--cartao-claro); box-shadow: inset 0 0 0 0.14cqmin var(--cartao-borda); }
@@ -635,7 +636,7 @@ body.m-com-player {
 .cena-jogo .ceu { position: absolute; inset: 0; background: linear-gradient(180deg, #120f17 0%, #3a2618 62%, #c27a45 100%); }
 .cena-jogo .sol { position: absolute; left: 62%; top: 30%; width: 22%; aspect-ratio: 1; translate: -50% -50%;
   background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 90%, transparent), color-mix(in srgb, var(--luz-3) 30%, transparent) 45%, transparent); }
-.cena-jogo .montes { position: absolute; left: -2%; right: -2%; bottom: 0; }
+.cena-jogo .montes { position: absolute; left: -8%; right: -8%; bottom: 0; }
 .cena-jogo .m1 { height: 62%; background: #4a2f22; clip-path: polygon(0 60%, 12% 30%, 22% 52%, 35% 18%, 48% 48%, 60% 26%, 74% 55%, 86% 22%, 100% 46%, 100% 100%, 0 100%); }
 .cena-jogo .m2 { height: 46%; background: #2b1d18; clip-path: polygon(0 40%, 10% 62%, 24% 28%, 38% 58%, 52% 34%, 66% 64%, 80% 30%, 92% 56%, 100% 38%, 100% 100%, 0 100%); }
 .cena-jogo .m3 { height: 26%; background: #17110f; clip-path: polygon(0 30%, 18% 46%, 30% 20%, 46% 44%, 62% 16%, 78% 42%, 100% 24%, 100% 100%, 0 100%); }
@@ -697,7 +698,7 @@ body.m-com-player {
 </head>
 <body>
 <div id="palco" data-formato="9x16"></div>
-<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":16.75,"formato":"9x16","montagem":"principal","titulo":"Um prompt, três criações","cenas":[{"id":"gancho","titulo":"O gancho","indice":0,"inicio":0,"dur":2.5,"fim":2.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"\"Um prompt.\" sendo escrito pelo cursor dourado","t":0.05},{"id":"meio","rotulo":"Passo 2","legenda":"O título escrito; a IA (faísca) nasce no centro, ainda sem as criações","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"Título, a IA no aro dourado e as criações em órbita; rodapé da marca","t":1.8}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":null,"hash":"879d901f0ffefe57"},{"id":"prompt","titulo":"O pedido","indice":1,"inicio":2.5,"dur":3.5,"fim":6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas espalhadas no ar, ainda sem forma","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"As facetas encaixando dos pés para a cabeça; o card digitando","t":1},{"id":"fim","rotulo":"Fim","legenda":"O pedido inteiro no card, o personagem montado à direita, a frase à esquerda","t":2.6}],"tipo":"foto-objeto","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"168b9debfdaf8a0c"},{"id":"plataforma","titulo":"01 · A plataforma","indice":2,"inicio":5.25,"dur":3,"fim":8.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A janela chegando inclinada, só o menu do site desenhado","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"Menu e título da página prontos; o primeiro curso caindo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A plataforma inteira: título com cursor, botão e três cursos com progresso","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"867fc83be295f954"},{"id":"jogo","titulo":"02 · O jogo","indice":3,"inicio":7.75,"dur":3,"fim":10.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular em pé, menor, com o céu do jogo","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Girando para o lado; as montanhas se erguendo em camadas","t":0.6},{"id":"fim","rotulo":"Fim","legenda":"O jogo pronto: o personagem na pista, moedas, obstáculos e placar","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"0cb59774defdca04"},{"id":"app","titulo":"03 · O app","indice":4,"inicio":10.25,"dur":3,"fim":13.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular chegando girado; só a saudação na tela","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Saudação e treino prontos; as barras da semana crescendo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"O app pronto, com a barra de hoje acesa em dourado","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"d07da11f6aa42b7b"},{"id":"assinatura","titulo":"A assinatura","indice":5,"inicio":13.25,"dur":3.5,"fim":16.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas voando de volta","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"O personagem quase montado; o cursor escrevendo 'criação'","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A pergunta grande, o personagem à direita, o convite para comentar e seguir, o rodapé da marca","t":2.3}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"f4fa4fe18ae2440e"}],"transicoes":[{"de":"gancho","para":"prompt","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":"O título avança e desfoca pela câmera; o card do pedido nasce no mesmo lugar, ainda dentro da luz.","textoEntrada":null,"corte":2.5,"antes":0.24,"depois":0.3,"inicio":2.26,"fim":2.8,"dur":0.54},{"de":"prompt","para":"plataforma","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".card-prompt","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no card do pedido","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":5.25,"fim":6,"corte":null,"dur":0.75},{"de":"plataforma","para":"jogo","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":7.75,"fim":8.25,"corte":null,"dur":0.5},{"de":"jogo","para":"app","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":10.25,"fim":10.75,"corte":null,"dur":0.5},{"de":"app","para":"assinatura","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":13.25,"antes":0.24,"depois":0.3,"inicio":13.01,"fim":13.55,"dur":0.54},{"de":"assinatura","para":null,"tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":16.35,"fim":16.75,"corte":null,"dur":0.3999999999999986}],"cortes":[2.5,13.25],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
+<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":16.75,"formato":"9x16","montagem":"principal","titulo":"Um prompt, três criações","cenas":[{"id":"gancho","titulo":"O gancho","indice":0,"inicio":0,"dur":2.5,"fim":2.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"\"Um prompt.\" sendo escrito pelo cursor dourado","t":0.05},{"id":"meio","rotulo":"Passo 2","legenda":"O título escrito; a IA (faísca) nasce no centro, ainda sem as criações","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"Título, a IA no aro dourado e as criações em órbita; rodapé da marca","t":1.8}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":null,"hash":"08ad8907740d0baf"},{"id":"prompt","titulo":"O pedido","indice":1,"inicio":2.5,"dur":3.5,"fim":6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas espalhadas no ar, ainda sem forma","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"As facetas encaixando dos pés para a cabeça; o card digitando","t":1},{"id":"fim","rotulo":"Fim","legenda":"O pedido inteiro no card, o personagem montado à direita, a frase à esquerda","t":2.6}],"tipo":"foto-objeto","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"9c520469fecc512a"},{"id":"plataforma","titulo":"01 · A plataforma","indice":2,"inicio":5.25,"dur":3,"fim":8.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A janela chegando inclinada, só o menu do site desenhado","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"Menu e título da página prontos; o primeiro curso caindo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A plataforma inteira: título com cursor, botão e três cursos com progresso","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"5fb1aa80f00f863d"},{"id":"jogo","titulo":"02 · O jogo","indice":3,"inicio":7.75,"dur":3,"fim":10.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular em pé, menor, com o céu do jogo","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Girando para o lado; as montanhas se erguendo em camadas","t":0.6},{"id":"fim","rotulo":"Fim","legenda":"O jogo pronto: o personagem na pista, moedas, obstáculos e placar","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"25acfa4de609eb68"},{"id":"app","titulo":"03 · O app","indice":4,"inicio":10.25,"dur":3,"fim":13.25,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O celular chegando girado; só a saudação na tela","t":0.1},{"id":"meio","rotulo":"Passo 2","legenda":"Saudação e treino prontos; as barras da semana crescendo","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"O app pronto, com a barra de hoje acesa em dourado","t":1.9}],"tipo":"aparelho","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"6d9ad660b5ed033b"},{"id":"assinatura","titulo":"A assinatura","indice":5,"inicio":13.25,"dur":3.5,"fim":16.75,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"As facetas douradas voando de volta","t":0.15},{"id":"meio","rotulo":"Passo 2","legenda":"O personagem quase montado; o cursor escrevendo 'criação'","t":0.9},{"id":"fim","rotulo":"Fim","legenda":"A pergunta grande, o personagem à direita, o convite para comentar e seguir, o rodapé da marca","t":2.3}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"7b9794891e500de0"}],"transicoes":[{"de":"gancho","para":"prompt","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":"O título avança e desfoca pela câmera; o card do pedido nasce no mesmo lugar, ainda dentro da luz.","textoEntrada":null,"corte":2.5,"antes":0.24,"depois":0.3,"inicio":2.26,"fim":2.8,"dur":0.54},{"de":"prompt","para":"plataforma","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".card-prompt","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no card do pedido","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":5.25,"fim":6,"corte":null,"dur":0.75},{"de":"plataforma","para":"jogo","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":7.75,"fim":8.25,"corte":null,"dur":0.5},{"de":"jogo","para":"app","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":10.25,"fim":10.75,"corte":null,"dur":0.5},{"de":"app","para":"assinatura","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":13.25,"antes":0.24,"depois":0.3,"inicio":13.01,"fim":13.55,"dur":0.54}],"cortes":[2.5,13.25],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
 window.MOTION_FONTES=[{"familia":"Newsreader","peso":"200","estilo":"normal"},{"familia":"Newsreader","peso":"200","estilo":"italic"},{"familia":"Manrope","peso":"200","estilo":"normal"}];
 window.MOTION_MIDIA={"joystick":{"chave":"joystick","url":"../midia/joystick.png","tipo":"imagem"},"joystick.png":{"chave":"joystick","url":"../midia/joystick.png","tipo":"imagem"},"laptop":{"chave":"laptop","url":"../midia/laptop.png","tipo":"imagem"},"laptop.png":{"chave":"laptop","url":"../midia/laptop.png","tipo":"imagem"},"mobile_phone":{"chave":"mobile_phone","url":"../midia/mobile_phone.png","tipo":"imagem"},"mobile_phone.png":{"chave":"mobile_phone","url":"../midia/mobile_phone.png","tipo":"imagem"},"personagem":{"chave":"personagem","url":"../midia/personagem.png","tipo":"imagem"},"personagem.png":{"chave":"personagem","url":"../midia/personagem.png","tipo":"imagem"},"robot":{"chave":"robot","url":"../midia/robot.png","tipo":"imagem"},"robot.png":{"chave":"robot","url":"../midia/robot.png","tipo":"imagem"},"rocket":{"chave":"rocket","url":"../midia/rocket.png","tipo":"imagem"},"rocket.png":{"chave":"rocket","url":"../midia/rocket.png","tipo":"imagem"},"sparkles":{"chave":"sparkles","url":"../midia/sparkles.png","tipo":"imagem"},"sparkles.png":{"chave":"sparkles","url":"../midia/sparkles.png","tipo":"imagem"},"video_game":{"chave":"video_game","url":"../midia/video_game.png","tipo":"imagem"},"video_game.png":{"chave":"video_game","url":"../midia/video_game.png","tipo":"imagem"}};
 window.MOTION_SVG={};
@@ -4007,9 +4008,62 @@ window.posarFacetas = (el, api, p, { de = [0, 0], espalhar = 1 } = {}) => {
     const r = (n) => api.rand(i * 13 + n);
     const dx = de[0] + (r(1) - 0.5) * 70 * espalhar - (cx - 50) * 0.2;
     const dy = de[1] + (r(2) - 0.5) * 50 * espalhar - (cy - 50) * 0.3;
-    api.set(f, { x: dx * (1 - e), y: dy * (1 - e), r: (r(3) - 0.5) * 160 * (1 - e), s: 0.7 + 0.3 * e, o: api.clamp(0.35 + k * 2, 0, 1) });
+    api.set(f, { x: dx * (1 - e), y: dy * (1 - e), r: (r(3) - 0.5) * 160 * (1 - e), s: 0.7 + 0.3 * e, o: api.clamp(0.75 + k * 2, 0, 1) });
     api.set(f.firstChild, { o: 0.55 * (1 - api.ease.outCubic(api.clamp((k - 0.5) / 0.5, 0, 1))) });
   });
+};
+
+/* ── Animação compartilhada ── */
+
+/* O cursor dourado que voa: mede o cursor do texto (o do quadro aprovado), esconde-o e usa um
+   cursor solto, do mesmo tamanho, que a cena leva para onde a escrita está. */
+window.prepCursor = (el, api, seletor) => {
+  const real = el.$(seletor);
+  const voo = el.$('.cursor-voo');
+  if (!real || !voo) return null;
+  const c = api.caixa(real);
+  voo.style.width = `${c.l}cqw`;
+  voo.style.height = `${c.a}cqw`;
+  return { real, voo, fim: [c.x, c.y], l: c.l, a: c.a };
+};
+/* pisca macio (2 batidas por ciclo), em 1 no quadro aprovado */
+window.piscar = (t, api) => 0.62 + 0.38 * Math.cos((2 * Math.PI * (t - api.ref)) / 1.0);
+window.posCursor = (cur, api, t, pos, o) => {
+  api.set(cur.real, { o: 0 });
+  api.set(cur.voo, { x: pos[0], y: pos[1], o });
+};
+
+/* As facetas do personagem: p de 0 (espalhadas) a 1 (encaixadas), depois a foto inteira assume. */
+window.animarFacetas = (t, el, api, { inicio = 0, dur = 1.2, de = [0, 0], espalhar = 1, troca = 0.2 } = {}) => {
+  const { prog, suave } = api;
+  const p = prog(t, inicio, inicio + dur);
+  window.posarFacetas(el, api, p, { de, espalhar });
+  const fim = inicio + dur;
+  api.set(el.$('.facetas'), { o: 1 - suave(prog(t, fim + 0.02, fim + 0.02 + troca)) });
+  api.set(el.$('.corpo'), { o: suave(prog(t, fim - 0.06, fim - 0.06 + troca)) });
+  api.set(el.$('.sombra-chao'), { o: suave(prog(t, inicio + dur * 0.3, fim)) });
+  api.set(el.$('.contraluz'), { o: suave(prog(t, fim - 0.1, fim + 0.6)) });
+  // respira um fio, a partir dos pés
+  api.set(el.$('.personagem'), { s: 1 + api.vida(t, { inicio: fim, periodo: 3.4, amp: 0.004 }), origem: '50% 100%', subpixel: true });
+};
+
+/* Objeto que chega da profundidade com mola curta (nunca em texto). */
+window.chegar = (t, api, el, { inicio = 0, de = {}, freq = 1.4, damp = 6.4, fade = 0.12 } = {}) => {
+  const m = api.spring(t - inicio, { freq, damp });
+  const e = api.ease.outCubic(api.prog(t, inicio, inicio + 0.5));
+  const v = (k, b) => (de[k] ?? b);
+  api.set(el, {
+    x: v('x', 0) * (1 - m), y: v('y', 0) * (1 - m), r: v('r', 0) * (1 - m),
+    s: 1 - (1 - v('s', 1)) * (1 - m),
+    o: api.suave(api.prog(t, inicio, inicio + fade)),
+    blur: v('blur', 0.3) * (1 - e),
+  });
+};
+
+/* Peça que sobe do desfoque (para blocos de interface e rodapé). */
+window.subir = (t, api, el, inicio, { y = 2.4, blur = 0.35, dur = 0.55 } = {}) => {
+  const e = api.ease.forte(api.prog(t, inicio, inicio + dur));
+  api.set(el, { y: y * (1 - e), blur: blur * (1 - e), o: api.suave(api.prog(t, inicio, inicio + 0.16)) });
 };
 
 //# sourceURL=cenas/_comum.js</script>
@@ -4034,19 +4088,72 @@ Motion.cena('gancho', {
         <p class="rotulo">IA na prática</p>
         <h1 class="titulo frase"><span class="l1">Um prompt.</span><br><span class="l2">Três <span class="destaque">criações</span>.</span><span class="cursor"></span></h1>
       </div>
+      <span class="cursor cursor-voo"></span>
       <div class="coluna base rodape"><div class="monograma">RR</div><span class="arroba">@ramosraul.ia</span></div>
     </div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.set(el.$$('.l2, .icone, .heroi, .orbita, .rodape'), { o: 0 });
-      api.set(el.$('.l1'), { clip: 'inset(0 52% 0 0)' });
-    },
-    meio: (el, api) => {
-      api.set(el.$$('.icone'), { o: 0, s: 0.6 });
-      api.set(el.$('.orbita'), { o: 0 });
-      api.set(el.$('.heroi'), { s: 0.7, o: 0.7 });
-      api.set(el.$('.rodape'), { o: 0 });
-    },
+  montar(el, api) {
+    el.cur = window.prepCursor(el, api, '.frase .cursor');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.l1 = el.pal.filter((p) => p.linha === 0);
+    el.l2 = el.pal.filter((p) => p.linha !== 0);
+    el.T1 = 0.12; el.T2 = 0.5; el.C = 0.12;
+    // por onde o cursor passa: começo da linha 1, fim de cada palavra
+    const ini = el.l1[0];
+    el.marcos = [{ t: 0, x: ini.x0 - el.cur.l * 1.6, y: ini.cy - el.cur.a / 2 }];
+    el.l1.forEach((p, i) => el.marcos.push({ t: el.T1 + el.C * i, x: p.x0 + p.l + el.cur.l * 0.6, y: p.cy - el.cur.a / 2 }));
+    el.l2.forEach((p, i) => el.marcos.push({ t: el.T2 + el.C * i, x: p.x0 + p.l + el.cur.l * 0.6, y: p.cy - el.cur.a / 2 }));
+    el.marcos[el.marcos.length - 1].x = el.cur.fim[0];
+    el.marcos[el.marcos.length - 1].y = el.cur.fim[1];
+    el.heroi = el.$('.heroi'); el.aro = el.$('.aro'); el.faisca = el.$('.faisca');
+    el.orbita = el.$('.orbita'); el.rodape = el.$('.rodape'); el.luz = el.$('.luz');
+    const hc = api.caixa(el.heroi);
+    el.icones = el.$$('.icone').map((ic, i) => {
+      const c = api.caixa(ic);
+      return { el: ic, dx: hc.cx - c.cx, dy: hc.cy - c.cy, t0: 1.0 + [0, 0.09, 0.16, 0.22, 0.27][i] };
+    });
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: 0 }, { el: el.$('.c-perto'), z: 0.25 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, ease, lerp, suave, spring, vida } = api;
+    tipo.focar(t, el.rot, { inicio: 0.0 });
+    const a = tipo.focar(t, el.l1, { inicio: el.T1 - el.C * el.l1[0].i, cascata: el.C, cascataMax: 0, aplicar: false });
+    const b = tipo.focar(t, el.l2, { inicio: el.T2 - el.C * el.l2[0].i, cascata: el.C, cascataMax: 0, aplicar: false });
+    tipo.aplicar(el.l1, a); tipo.aplicar(el.l2, b);
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.78, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.3 });
+
+    // o cursor corre atrás da escrita (cada passo em ~80 ms, com curva forte)
+    let x = el.marcos[0].x, y = el.marcos[0].y;
+    for (let i = 1; i < el.marcos.length; i++) {
+      const m = el.marcos[i], e = ease.forte(prog(t, m.t, m.t + 0.09));
+      x = lerp(x, m.x, e); y = lerp(y, m.y, e);
+    }
+    window.posCursor(el.cur, api, t, [x, y], suave(prog(t, 0, 0.06)) * window.piscar(t, api));
+
+    // a IA nasce quente do centro, com mola curta; o aro se abre em volta
+    const h0 = 0.75;
+    const mh = spring(t - h0, { freq: 1.4, damp: 6.2 });
+    api.set(el.heroi, { s: 0.7 + 0.3 * mh, o: suave(prog(t, h0, h0 + 0.12)), bright: 1 + 0.5 * (1 - ease.outCubic(prog(t, h0, h0 + 0.7))) });
+    api.set(el.faisca, { r: -40 * (1 - ease.forte(prog(t, h0, h0 + 0.8))) + 3 * vida(t, { inicio: 1.6, periodo: 3.8 }), s: 1 + 0.03 * vida(t, { inicio: 1.6, periodo: 2.3, fase: 0.25 }) });
+    api.set(el.aro, { s: 0.86 + 0.14 * ease.forte(prog(t, h0 + 0.05, h0 + 0.7)), o: suave(prog(t, h0 + 0.05, h0 + 0.35)) });
+
+    // a órbita se desenha do centro para as pontas; os ícones saltam do aro
+    const ob = ease.forte(prog(t, 0.95, 1.6));
+    api.set(el.orbita, { clip: `inset(0 ${(50 * (1 - ob)).toFixed(2)}% 0 ${(50 * (1 - ob)).toFixed(2)}%)`, o: suave(prog(t, 0.95, 1.1)) });
+    el.icones.forEach((ic, i) => {
+      const m = spring(t - ic.t0, { freq: 1.5, damp: 6.4 });
+      const flut = vida(t, { inicio: ic.t0 + 0.5, periodo: 2.6 + i * 0.37, amp: 0.7, fase: i * 0.21 });
+      api.set(ic.el, {
+        x: ic.dx * (1 - m), y: ic.dy * (1 - m) + flut,
+        s: 0.4 + 0.6 * m, r: 14 * (1 - m) * (i % 2 ? 1 : -1) + 2 * vida(t, { inicio: ic.t0 + 0.5, periodo: 3.1 + i * 0.29, fase: 0.1 * i }),
+        o: suave(prog(t, ic.t0, ic.t0 + 0.08)),
+      });
+    });
+    window.subir(t, api, el.rodape, 1.45);
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: lerp(1.06, 1, ease.forte(prog(t, 0, 1.1))) * api.viva(t) });
   },
 });
 }
@@ -4068,21 +4175,43 @@ Motion.cena('prompt', {
           <p class="pedido">Cria pra mim uma plataforma de cursos, um jogo e um app de treino.<span class="cursor"></span></p>
         </div>
       </div>
+      <span class="cursor cursor-voo"></span>
       <div class="coluna meio-esq"><h2 class="titulo frase">Eu só<br><span class="destaque">descrevo</span>.</h2></div>
     </div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.set(el.$('.corpo'), { o: 0 }); api.set(el.$('.facetas'), { o: 1 });
-      window.posarFacetas(el, api, 0.08, { de: [-30, -10] });
-      api.set(el.$('.pedido'), { clip: 'inset(0 0 100% 0)' });
-      api.set(el.$('.frase'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.set(el.$('.corpo'), { o: 0 }); api.set(el.$('.facetas'), { o: 1 });
-      window.posarFacetas(el, api, 0.62, { de: [-30, -10] });
-      api.set(el.$('.pedido'), { clip: 'inset(0 0 52% 0)' });
-      api.set(el.$('.frase'), { o: 0 });
-    },
+  montar(el, api) {
+    const ped = el.$('.pedido');
+    el.cur = window.prepCursor(el, api, '.pedido .cursor');
+    // cada caractere do pedido vira um span (a quebra de linha não muda); mede onde o cursor passa
+    const txt = ped.firstChild.textContent;
+    ped.firstChild.replaceWith(...[...txt].map((ch) => { const sp = document.createElement('span'); sp.className = 'ch'; sp.textContent = ch; return sp; }));
+    el.chs = el.$$('.pedido .ch').map((c) => { const k = api.caixa(c); return { el: c, x: k.x + k.l, y: k.cy - el.cur.a / 2 }; });
+    el.T0 = 0.38; el.CPS = 40;
+    el.card = el.$('.card-prompt'); el.cabeca = el.$('.cabeca');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: -0.1 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease } = api;
+    window.animarFacetas(t, el, api, { inicio: 0.0, dur: 1.3, de: [-38, -52] });
+    tipo.focar(t, el.rot, { inicio: api.inicioEntrada(0.02, -0.12) });
+    window.chegar(t, api, el.card, { inicio: api.inicioEntrada(0.1, -0.08), de: { s: 0.92, y: 3 } });
+    window.subir(t, api, el.cabeca, 0.24, { y: 1 });
+    // digitação: um caractere a cada 25 ms, cada um entra em 3 quadros
+    const n = el.chs.length;
+    el.chs.forEach((c, i) => api.set(c.el, { o: suave(prog(t, el.T0 + i / el.CPS, el.T0 + i / el.CPS + 0.05)) }));
+    const k = Math.max(-1, Math.min(n - 1, Math.floor((t - el.T0) * el.CPS)));
+    const ultimo = k === n - 1;
+    const pos = k < 0 ? [el.chs[0].x - el.chs[0].el.offsetWidth / (api.largura / 100), el.chs[0].y] : (ultimo ? el.cur.fim : [el.chs[k].x + el.cur.l * 0.4, el.chs[k].y]);
+    const digitando = t < el.T0 + n / el.CPS + 0.1;
+    window.posCursor(el.cur, api, t, pos, suave(prog(t, 0.3, 0.36)) * (digitando ? 1 : window.piscar(t, api)));
+    tipo.focar(t, el.pal, { inicio: 1.75 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 2.0, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 2.4 });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: api.viva(t) });
   },
 });
 }
@@ -4101,7 +4230,7 @@ Motion.cena('plataforma', {
         <div class="nav"><i class="marca"></i><b></b><b></b><b></b><em></em></div>
         <div class="hero">
           <p class="kicker">Plataforma de cursos</p>
-          <h3>Aprenda IA no<br><span>seu ritmo</span><span class="cursor"></span></h3>
+          <h3>Aprenda IA no<br><span class="ital">seu ritmo</span><span class="cursor"></span></h3>
           <div class="cta"></div>
         </div>
         <div class="cursos">${CURSOS.map(([ic, t], i) => `
@@ -4112,16 +4241,36 @@ Motion.cena('plataforma', {
       <p class="rotulo">01 · Plataforma</p>
       <h2 class="titulo frase">Uma <span class="destaque">plataforma</span><br>de cursos.</h2>
     </div></div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.midia.mockup(el.$('.janela'), { rx: 18, ry: -8, s: 0.8 });
-      api.set(el.$$('.hero, .curso'), { o: 0 });
-      api.set(el.$('.frase'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.midia.mockup(el.$('.janela'), { rx: 6, ry: -4, s: 0.94 });
-      el.$$('.curso').forEach((c, i) => api.set(c, i ? { o: 0, y: 3 } : {}));
-    },
+  montar(el, api) {
+    el.janela = el.$('.janela');
+    el.pecas = [el.$('.nav'), el.$('.kicker'), ...api.tipo.dividir(el.$('.hero h3'), { por: 'linha' }).map((p) => p.el), el.$('.cta')];
+    el.cursos = el.$$('.curso');
+    el.barras = el.$$('.barra i');
+    el.cursor = el.$('.hero .cursor');
+    el.site = el.$('.site');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: 0 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease, spring, vida } = api;
+    // a janela herda o mergulho e endireita com mola curta
+    const m = spring(t, { freq: 1.4, damp: 6.4 });
+    api.midia.mockup(el.janela, { rx: 18 * (1 - m), ry: -8 * (1 - m) + 1.2 * vida(t, { inicio: 1.2, periodo: 4.4 }), s: 0.86 + 0.14 * m });
+    // a página se escreve de cima para baixo
+    el.pecas.forEach((p, i) => window.subir(t, api, p, 0.15 + 0.07 * i, { y: 1.6, blur: 0.25 }));
+    const tc = [0.75, 0.84, 0.91];
+    el.cursos.forEach((c, i) => window.chegar(t, api, c, { inicio: tc[i], de: { y: 4, s: 0.94 }, freq: 1.6, damp: 7 }));
+    el.barras.forEach((b, i) => api.set(b, { sx: ease.forte(prog(t, tc[i] + 0.25, tc[i] + 0.95)), origem: '0% 50%' }));
+    api.set(el.cursor, { o: suave(prog(t, 0.36, 0.42)) * window.piscar(t, api) });
+    tipo.focar(t, el.rot, { inicio: 0.12 });
+    tipo.focar(t, el.pal, { inicio: 0.22 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.6, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.2 });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: api.viva(t) });
   },
 });
 }
@@ -4150,17 +4299,46 @@ Motion.cena('jogo', {
       <p class="rotulo">02 · Jogo</p>
       <h2 class="titulo frase">Um <span class="destaque">jogo</span><br>pro celular.</h2>
     </div></div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.set(el.$('.aparelho'), { r: 90, s: 0.62 });
-      api.set(el.$$('.montes, .pista, .heroi-jogo, .moedas, .bloco, .hud, .sol, .i-controle'), { o: 0 });
-      api.set(el.$('.frase'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.set(el.$('.aparelho'), { r: 18, s: 0.86 });
-      api.set(el.$$('.heroi-jogo, .moedas, .bloco, .hud, .i-controle'), { o: 0 });
-      api.set(el.$('.m3'), { y: 4 });
-    },
+  montar(el, api) {
+    el.ap = el.$('.aparelho');
+    el.montes = el.$$('.montes'); el.sol = el.$('.sol'); el.pista = el.$('.pista');
+    el.heroi = el.$('.heroi-jogo'); el.moedas = el.$$('.moedas i'); el.blocos = el.$$('.bloco');
+    el.hud = el.$('.hud'); el.pontos = el.$('.pontos'); el.ctrl = el.$('.i-controle');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: 0 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease, spring, vida, mola, pulso, ref } = api;
+    // o celular gira para o lado e trava na batida 1, com um quique pequeno
+    const g = ease.simetrica(prog(t, 0, 0.5));
+    api.set(el.ap, { r: 90 * (1 - g) + mola(t - 0.5, -55, { freq: 2.2, amort: 7 }), s: 0.62 + 0.38 * ease.forte(prog(t, 0, 0.6)) });
+    // o mundo se ergue em camadas e corre em paralaxe
+    el.montes.forEach((m, i) => {
+      const t0 = 0.4 + 0.08 * i;
+      api.set(m, { y: 10 * (1 - ease.forte(prog(t, t0, t0 + 0.6))), x: -[0.5, 0.9, 1.5][i] * (t - ref), o: suave(prog(t, t0, t0 + 0.12)) });
+    });
+    api.set(el.sol, { o: suave(prog(t, 0.45, 0.9)), s: 0.85 + 0.15 * ease.forte(prog(t, 0.45, 1.1)) + 0.03 * vida(t, { inicio: 1.2, periodo: 3.3 }) });
+    api.set(el.pista, { o: suave(prog(t, 0.35, 0.5)) });
+    // o personagem cai na pista ('pof') e depois pula de leve a cada batida
+    const f = prog(t, 0.9, 1.12);
+    const queda = -16 * (1 - f * f) * (t < 1.12 ? 1 : 0) + mola(t - 1.12, 40, { freq: 3, amort: 9 });
+    const pulo = t > 1.4 ? -1.1 * pulso(((t - 1.4) % 0.5) / 0.5) : 0;
+    api.set(el.heroi, { y: queda + pulo, o: suave(prog(t, 0.88, 0.95)) });
+    el.moedas.forEach((m, i) => { const t0 = 1.0 + 0.08 * i; api.set(m, { s: 0.6 + 0.4 * spring(t - t0, { freq: 1.8, damp: 7 }), o: suave(prog(t, t0, t0 + 0.08)), y: 0.4 * vida(t, { inicio: 1.5, periodo: 1.0, fase: i * 0.25 }) }); });
+    el.blocos.forEach((b, i) => { const t0 = 1.0 + 0.12 * i; api.set(b, { sy: Math.max(0.02, spring(t - t0, { freq: 1.7, damp: 6.5 })), origem: '50% 100%', o: suave(prog(t, t0, t0 + 0.06)) }); });
+    window.subir(t, api, el.hud, 1.1, { y: -1.2, blur: 0.2 });
+    el.pontos.textContent = String(Math.round(45 * ease.outCubic(prog(t, 1.1, 1.95))) * 10).padStart(4, '0');
+    window.chegar(t, api, el.ctrl, { inicio: 0.95, de: { y: 8, r: 20, s: 0.8 } });
+    api.set(el.ctrl, { y: 0.8 * vida(t, { inicio: 1.6, periodo: 2.7 }) + 8 * (1 - spring(t - 0.95, { freq: 1.4, damp: 6.4 })) });
+    tipo.focar(t, el.rot, { inicio: 0.12 });
+    tipo.focar(t, el.pal, { inicio: 0.22 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.6, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.2 });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: (1 - 0.03 * pulso(prog(t, 0, 0.7))) * api.viva(t) });
   },
 });
 }
@@ -4187,17 +4365,37 @@ Motion.cena('app', {
       <p class="rotulo">03 · App</p>
       <h2 class="titulo frase">Um <span class="destaque">app</span><br>de treino.</h2>
     </div></div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.midia.mockup(el.$('.fone'), { ry: -30, rx: 10, s: 0.84, y: 6 });
-      api.set(el.$$('.ui > *:not(.ola):not(.nome)'), { o: 0 });
-      api.set(el.$('.frase'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.midia.mockup(el.$('.fone'), { ry: -8, rx: 3, s: 0.96 });
-      api.set(el.$$('.dupla'), { o: 0, y: 3 });
-      el.$$('.barras i').forEach((b, i) => api.set(b, { sy: i < 3 ? 1 : 0.05, origem: '50% 100%' }));
-    },
+  montar(el, api) {
+    el.fone = el.$('.fone');
+    el.topo = [el.$('.ola'), el.$('.nome')];
+    el.cards = [el.$('.treino'), el.$('.semana'), el.$('.dupla')];
+    el.barras = el.$$('.barras i');
+    el.hoje = el.$('.col.hoje');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: 0 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease, spring, vida } = api;
+    const m = spring(t, { freq: 1.4, damp: 6.4 });
+    api.midia.mockup(el.fone, { ry: -30 * (1 - m) + 3 * vida(t, { inicio: 1.2, periodo: 4.2 }), rx: 10 * (1 - m), s: 0.84 + 0.16 * m, y: 6 * (1 - m) });
+    el.topo.forEach((p, i) => window.subir(t, api, p, 0.1 + 0.06 * i, { y: 1.2, blur: 0.2 }));
+    [0.25, 0.34, 0.42].forEach((t0, i) => window.subir(t, api, el.cards[i], t0, { y: 2.6, blur: 0.3 }));
+    // as barras crescem uma a uma; a de hoje por último, passa um fio e acende dourada na batida 2
+    el.barras.forEach((b, i) => {
+      const t0 = 0.6 + 0.05 * i;
+      const ultimo = i === el.barras.length - 1;
+      const k = ultimo ? spring(t - t0, { freq: 1.6, damp: 6 }) : ease.forte(prog(t, t0, t0 + 0.45));
+      api.set(b, { sy: Math.max(0.02, k), origem: '50% 100%', o: suave(prog(t, t0, t0 + 0.06)), sat: ultimo ? 0.15 + 0.85 * suave(prog(t, 0.95, 1.2)) : 1, bright: ultimo ? 1 + 0.12 * vida(t, { inicio: 1.3, periodo: 1.6 }) : 1 });
+    });
+    tipo.focar(t, el.rot, { inicio: 0.12 });
+    tipo.focar(t, el.pal, { inicio: 0.22 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.6, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.2 });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: api.viva(t) });
   },
 });
 }
@@ -4216,23 +4414,50 @@ Motion.cena('assinatura', {
         <p class="rotulo">Você escolhe</p>
         <h2 class="titulo frase">Qual é a<br>próxima<br><span class="destaque criar">criação</span>?<span class="cursor"></span></h2>
       </div>
+      <span class="cursor cursor-voo"></span>
       <div class="coluna base">
         <div class="chamada">${c.foto('sparkles', { classe: 'mini' })}<span>Comenta a sua ideia e segue pra ver ela nascer aqui.</span></div>
         <div class="rodape"><div class="monograma">RR</div><span class="arroba">@ramosraul.ia</span><span class="seguir">Seguir <b>+</b></span></div>
       </div>
     </div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.set(el.$('.corpo'), { o: 0 }); api.set(el.$('.facetas'), { o: 1 });
-      window.posarFacetas(el, api, 0.1, { de: [-45, -25], espalhar: 1.2 });
-      api.set(el.$$('.frase, .chamada, .rodape'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.set(el.$('.corpo'), { o: 0 }); api.set(el.$('.facetas'), { o: 1 });
-      window.posarFacetas(el, api, 0.7, { de: [-45, -25], espalhar: 1.2 });
-      api.set(el.$('.criar'), { clip: 'inset(0 45% 0 0)' });
-      api.set(el.$$('.chamada, .rodape'), { o: 0 });
-    },
+  montar(el, api) {
+    el.cur = window.prepCursor(el, api, '.frase .cursor');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.let = api.tipo.dividir(el.$('.frase'), { por: 'letra' });
+    const nl = Math.max(...el.let.map((p) => p.linha));
+    el.l12 = el.let.filter((p) => p.linha < nl);
+    el.l3 = el.let.filter((p) => p.linha === nl);
+    el.T3 = 1.05; el.C3 = 0.065;
+    el.chamada = el.$('.chamada');
+    el.rodape = el.$('.rodape'); el.mono = el.$('.monograma'); el.arroba = el.$('.arroba'); el.seguir = el.$('.seguir'); el.mais = el.$('.seguir b');
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: -0.1 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease, lerp, pulsoSemQuique } = api;
+    window.animarFacetas(t, el, api, { inicio: 0.0, dur: 1.05, de: [-45, -25], espalhar: 1.2 });
+    tipo.focar(t, el.rot, { inicio: api.inicioEntrada(0.25, -0.1) });
+    tipo.focar(t, el.l12, { inicio: 0.45, cascata: 0.022 });
+    tipo.focar(t, el.l3, { inicio: el.T3 - el.C3 * el.l3[0].i, cascata: el.C3, cascataMax: 0, dur: 0.35 });
+    tipo.varrerDestaque(t, el.let, { inicio: 1.55, dur: 0.45 });
+    tipo.brilho(t, el.l3, { inicio: 2.45, dur: 0.75, forca: 0.45 });
+    // o cursor escreve a última linha, letra a letra
+    const n = el.l3.length;
+    const k = Math.floor((t - el.T3) / el.C3);
+    const alvo = k < 0 ? el.l3[0] : el.l3[Math.min(n - 1, k)];
+    let pos = k < 0 ? [alvo.x0 - el.cur.l * 1.2, alvo.cy - el.cur.a / 2] : [alvo.x0 + alvo.l + el.cur.l * 0.5, alvo.cy - el.cur.a / 2];
+    if (k >= n - 1) pos = el.cur.fim;
+    const escrevendo = t < el.T3 + n * el.C3 + 0.1;
+    window.posCursor(el.cur, api, t, pos, suave(prog(t, 0.95, 1.02)) * (escrevendo ? 1 : window.piscar(t, api)));
+    window.chegar(t, api, el.chamada, { inicio: 1.5, de: { s: 0.9, y: 2 }, freq: 1.6, damp: 7 });
+    window.subir(t, api, el.mono, 1.75); window.subir(t, api, el.arroba, 1.8);
+    window.subir(t, api, el.seguir, 2.0);
+    api.set(el.mais, { s: 1 + 0.45 * pulsoSemQuique(prog(t, 2.55, 3.05), 0.3), bright: 1 + 0.4 * pulsoSemQuique(prog(t, 2.55, 3.05), 0.3) });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: api.viva(t, { v: 0.008 }) });
+    // o fim apaga sozinho até o fundo, com curva macia (o loop recomeça no cursor da abertura)
+    api.set(el.raiz, { o: 1 - suave(prog(t, 2.95, 3.5)) });
   },
 });
 }

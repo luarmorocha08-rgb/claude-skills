@@ -465,7 +465,8 @@
         }
       ],
       "saida": {
-        "tipo": "esmaecer"
+        "tipo": "corte",
+        "texto": "A cena apaga sozinha até o fundo nos últimos 0,55 s; o loop recomeça no cursor da abertura."
       },
       "tipo": "marca-em-etapas"
     }
@@ -476,9 +477,38 @@
   },
   "storyboard": {
     "revisao": 4,
-    "aprovadoEm": null
+    "aprovadoEm": "2026-11-01",
+    "revisaoAprovada": 4
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 1,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "primeira animação"
+    },
+    {
+      "v": 2,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "fim que apaga macio; rótulo final antes do corte"
+    },
+    {
+      "v": 3,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "nenhum quadro vazio depois dos cortes; títulos das criações entram antes"
+    }
+  ],
   "criadoEm": "2026-11-01",
   "cartaz": "Um prompt. Três criações."
 }

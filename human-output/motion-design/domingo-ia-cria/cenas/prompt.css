@@ -10,5 +10,5 @@
 .cena-prompt .mini { width: 5cqmin; height: 5cqmin; object-fit: contain; }
 .cena-prompt .pedido { margin: 0; font-family: var(--fonte-texto); font-weight: 500; font-size: 6.4cqmin; line-height: 1.22; letter-spacing: -0.015em; color: var(--texto); }
 .cena-prompt .meio-esq { top: 58cqh; right: 50cqw; }
-.cena-prompt .frase { font-size: 13cqmin; }
+.cena-prompt .frase { font-size: 13cqmin; white-space: nowrap; }
 .cena-prompt .heroi-direita { height: 50cqh; right: 4cqw; bottom: 3cqh; }

@@ -1,2 +1,8 @@
 node_modules/
 human-output/**/.cache/
+human-output/**/render/*/*.zip
+human-output/**/render/*/.fluidez/
+human-output/**/render/*/.diretor/
+human-output/**/render/trechos/
+human-output/motion-design/domingo-ia-cria/render/v1/
+human-output/motion-design/domingo-ia-cria/render/v2/

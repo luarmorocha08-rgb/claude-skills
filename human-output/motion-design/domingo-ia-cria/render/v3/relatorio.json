@@ -1,0 +1,46 @@
+{
+ "versao": 3,
+ "data": "2026-11-01",
+ "fps": 60,
+ "qualidade": "final",
+ "montagem": "principal",
+ "formatos": {
+  "9x16": {
+   "arquivo": "domingo-ia-cria-9x16-60fps.mp4",
+   "quadros": 1005,
+   "de": 0,
+   "ate": 16.75,
+   "segundosRender": 199,
+   "renderizados": 1005,
+   "capa": "capa-9x16.png",
+   "fluidez": {
+    "resumo": "ok, sem trancos (1005 quadros a 60 qps)",
+    "alertas": []
+   },
+   "diretor": {
+    "metricas": {
+     "energia": {
+      "media": 1.91,
+      "mediana": 0.9,
+      "quaseParados": 1
+     },
+     "paradoAosOlhos": 0,
+     "cortesPorSegundo": 0.3,
+     "duracao": 16.8
+    },
+    "notas": [
+     {
+      "gravidade": "media",
+      "tipo": "corte-vazio",
+      "cena": "assinatura",
+      "t": 13.25,
+      "tLocal": 0,
+      "frase": "o corte para \"assinatura\" cai num quadro quase vazio (a frase ainda não entrou): comece a entrada antes do corte (api.inicioEntrada, ou inicio −0,1 a −0,15 s)"
+     }
+    ]
+   }
+  }
+ },
+ "erros": [],
+ "segundos": 249
+}

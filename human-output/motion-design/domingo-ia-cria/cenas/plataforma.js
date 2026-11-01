@@ -11,7 +11,7 @@ Motion.cena('plataforma', {
         <div class="nav"><i class="marca"></i><b></b><b></b><b></b><em></em></div>
         <div class="hero">
           <p class="kicker">Plataforma de cursos</p>
-          <h3>Aprenda IA no<br><span>seu ritmo</span><span class="cursor"></span></h3>
+          <h3>Aprenda IA no<br><span class="ital">seu ritmo</span><span class="cursor"></span></h3>
           <div class="cta"></div>
         </div>
         <div class="cursos">${CURSOS.map(([ic, t], i) => `
@@ -22,16 +22,36 @@ Motion.cena('plataforma', {
       <p class="rotulo">01 · Plataforma</p>
       <h2 class="titulo frase">Uma <span class="destaque">plataforma</span><br>de cursos.</h2>
     </div></div>`,
-  poses: {
-    inicio: (el, api) => {
-      api.midia.mockup(el.$('.janela'), { rx: 18, ry: -8, s: 0.8 });
-      api.set(el.$$('.hero, .curso'), { o: 0 });
-      api.set(el.$('.frase'), { o: 0 });
-    },
-    meio: (el, api) => {
-      api.midia.mockup(el.$('.janela'), { rx: 6, ry: -4, s: 0.94 });
-      el.$$('.curso').forEach((c, i) => api.set(c, i ? { o: 0, y: 3 } : {}));
-    },
+  montar(el, api) {
+    el.janela = el.$('.janela');
+    el.pecas = [el.$('.nav'), el.$('.kicker'), ...api.tipo.dividir(el.$('.hero h3'), { por: 'linha' }).map((p) => p.el), el.$('.cta')];
+    el.cursos = el.$$('.curso');
+    el.barras = el.$$('.barra i');
+    el.cursor = el.$('.hero .cursor');
+    el.site = el.$('.site');
+    el.rot = api.tipo.dividir(el.$('.rotulo'), { por: 'palavra' });
+    el.pal = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.6 }, { el: el.$('.c-meio'), z: 0 }, { el: el.$('.c-perto'), z: 0.2 }] });
+  },
+
+  quadro(t, el, api) {
+    const { tipo, prog, suave, ease, spring, vida } = api;
+    // a janela herda o mergulho e endireita com mola curta
+    const m = spring(t, { freq: 1.4, damp: 6.4 });
+    api.midia.mockup(el.janela, { rx: 18 * (1 - m), ry: -8 * (1 - m) + 1.2 * vida(t, { inicio: 1.2, periodo: 4.4 }), s: 0.86 + 0.14 * m });
+    // a página se escreve de cima para baixo
+    el.pecas.forEach((p, i) => window.subir(t, api, p, 0.15 + 0.07 * i, { y: 1.6, blur: 0.25 }));
+    const tc = [0.75, 0.84, 0.91];
+    el.cursos.forEach((c, i) => window.chegar(t, api, c, { inicio: tc[i], de: { y: 4, s: 0.94 }, freq: 1.6, damp: 7 }));
+    el.barras.forEach((b, i) => api.set(b, { sx: ease.forte(prog(t, tc[i] + 0.25, tc[i] + 0.95)), origem: '0% 50%' }));
+    api.set(el.cursor, { o: suave(prog(t, 0.36, 0.42)) * window.piscar(t, api) });
+    tipo.focar(t, el.rot, { inicio: 0.12 });
+    tipo.focar(t, el.pal, { inicio: 0.22 });
+    tipo.varrerDestaque(t, el.pal, { inicio: 0.6, dur: 0.45 });
+    tipo.derivaDestaque(t, el.pal, { inicio: 1.2 });
+    api.fx.respirar(t, el.luz, { periodo: 4.6, amp: 0.08 });
+    el.cam.pose({ zoom: api.viva(t) });
   },
 });
 }

@@ -78,3 +78,4 @@
   position: absolute; left: -60%; right: -60%; top: -8%; height: 70%;
   background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 22%, transparent), color-mix(in srgb, var(--luz-3) 8%, transparent) 50%, transparent);
 }
+.cursor-voo { position: absolute; left: 50cqw; top: 50cqh; margin: 0; vertical-align: baseline; opacity: 0; }
