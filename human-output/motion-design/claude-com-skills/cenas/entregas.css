@@ -1,0 +1,7 @@
+/* entregas — o CSS natural é o quadro aprovado: a frase no centro (a órbita é posta pelo quadro). */
+.cena-entregas { --luz-a-x: 50%; --luz-a-y: 50%; --luz-b-x: 75%; --luz-b-y: 30%; }
+.cena-entregas .halo { width: 80cqw; height: 80cqw; margin: -40cqw 0 0 -40cqw; }
+.cena-entregas .pilha { z-index: 100; }
+.cena-entregas .frase { font-size: 10.5cqmin; line-height: 0.98; }
+.cena-entregas .cartoes { position: absolute; inset: 0; }
+.cena-entregas .cartao { width: 17cqw; left: 50%; top: 50%; box-shadow: inset 0 0 0 0.35cqi color-mix(in srgb, var(--texto) 12%, transparent), 0 2cqmin 5cqmin color-mix(in srgb, #000 55%, transparent); }

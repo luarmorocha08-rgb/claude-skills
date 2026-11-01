@@ -1,0 +1,427 @@
+{
+  "versao": 1,
+  "titulo": "Claude com skills",
+  "cartaz": "Faz um vídeo que surpreenda",
+  "slug": "claude-com-skills",
+  "fps": 60,
+  "bpm": 120,
+  "formatoBase": "16x9",
+  "formatos": [
+    "16x9"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Fio condutor",
+      "texto": "Uma faísca terracota de oito raios atravessa o filme: nasce do cursor que digitou o pedido, vira o sol dos ofícios, mora dentro dos cartões e fecha o filme virando um ponto."
+    },
+    {
+      "titulo": "Ritmo",
+      "texto": "120 BPM: uma batida = 0,5 s. Entradas e trocas na batida ou na meia batida; a digitação tem ritmo humano, o resto tem ritmo de relógio."
+    },
+    {
+      "titulo": "Texto",
+      "texto": "Serifa editorial grande, peso regular. Entra do desfoque para o foco, subindo de pertinho; o que nasce da faísca nasce quente e esfria. Nunca quica."
+    },
+    {
+      "titulo": "Câmera",
+      "texto": "Nunca parada: push-in de 1 a 4 %. Dois mergulhos fazem as viradas de assunto: dentro da letra o de 'Motion' e dentro do quadrinho 5 do storyboard."
+    },
+    {
+      "titulo": "Luz",
+      "texto": "Preto quente, luz de brasa sem borda que respira; um único destaque terracota por bloco."
+    },
+    {
+      "titulo": "Passagens",
+      "texto": "Corte invisível no ponto de luz e na faísca; mergulho quando a próxima cena é sobre um elemento desta; a câmera atravessa a órbita para o fecho."
+    }
+  ],
+  "referencias": [],
+  "cenas": [
+    {
+      "id": "pedido",
+      "tipo": "frase",
+      "papel": "gancho",
+      "titulo": "O pedido",
+      "dur": 3.05,
+      "ideia": "O pedido é digitado grande por um cursor terracota que esquenta cada letra; quando termina, a frase é sugada para o centro e vira o ponto de onde a faísca nasce.",
+      "camera": "Nasce num close de 1,1× e recua em 2,2 s com curva forte; depois push-in vivo, passando por 1,0 no quadro aprovado.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "O cursor terracota e as primeiras letras nascendo quentes",
+          "t": 0.45
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O pedido inteiro, grande, com o cursor depois da última letra",
+          "t": 2.2,
+          "aprovado": true
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "A frase sugada para o centro, virando luz",
+          "t": 2.8
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "luz",
+          "texto": "O cursor acende e respira devagar, como quem espera."
+        },
+        {
+          "t": 0.24,
+          "tipo": "tipo",
+          "texto": "A digitação começa com ritmo humano (42 a 64 ms por letra, pausa curta na troca de palavra) e a câmera recua de um close de 1,1×; cada letra nasce quente, do desfoque, e esfria."
+        },
+        {
+          "t": 1.6,
+          "tipo": "vida",
+          "texto": "Hold: a brasa atrás do cursor respira e a câmera segue chegando."
+        },
+        {
+          "t": 2.6,
+          "tipo": "transicao",
+          "texto": "Na batida, as pontas da frase partem primeiro e tudo converge num ponto de luz no centro em 300 ms; o ponto floresce e a cena corta nele."
+        }
+      ],
+      "saida": {
+        "tipo": "corte",
+        "texto": "Corte invisível: a próxima cena começa no mesmo ponto de luz"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "faisca",
+      "tipo": "marca-em-etapas",
+      "papel": "resposta",
+      "titulo": "A resposta",
+      "dur": 4,
+      "ideia": "Do ponto nasce a faísca, gira meia chave e desliza para abrir espaço: 'Claude' nasce da luz dela e 'com skills' sobe embaixo; no fim tudo é tragado de volta para a faísca, que vai ao centro e cresce.",
+      "camera": "Push-in lento que desacelera até parar exatamente na escala da próxima cena.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A faísca nasce do ponto, quente, girando",
+          "t": 0.42
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "A faísca desliza e 'Claude' nasce da luz dela",
+          "t": 1.12
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O lockup: a faísca, 'Claude' e 'com skills' com o destaque terracota",
+          "t": 2.45,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "luz",
+          "texto": "O ponto cresce e vira a faísca com uma mola curta, girando de −70° e esfriando de quase branco até terracota."
+        },
+        {
+          "t": 0.52,
+          "tipo": "objeto",
+          "texto": "O gesto-assinatura: meia chave em 240 ms (os raios viram risco) e passa 6° do ponto, voltando."
+        },
+        {
+          "t": 0.78,
+          "tipo": "tipo",
+          "texto": "A faísca desliza para a esquerda e 'Claude' nasce da luz, letra a letra, quente."
+        },
+        {
+          "t": 1.5,
+          "tipo": "tipo",
+          "texto": "'com skills' sobe do desfoque; na meia batida o véu varre e acende 'skills' em terracota."
+        },
+        {
+          "t": 2.55,
+          "tipo": "vida",
+          "texto": "Hold: um brilho atravessa 'Claude', a faísca gira um fio e a luz respira."
+        },
+        {
+          "t": 3.2,
+          "tipo": "transicao",
+          "texto": "As letras são tragadas para a faísca; ela vai ao centro e cresce até o tamanho do sol da próxima cena. Corte invisível."
+        }
+      ],
+      "saida": {
+        "tipo": "corte",
+        "texto": "Corte invisível na faísca, que continua no centro"
+      }
+    },
+    {
+      "id": "oficios",
+      "tipo": "palavra-gigante",
+      "papel": "o que ela sabe",
+      "titulo": "Os ofícios",
+      "dur": 5,
+      "ideia": "A faísca vira um sol: cada raio dispara um feixe de luz e, na ponta dele, nasce um ofício; no fim 'Motion design' esquenta, os outros se apagam e a câmera mergulha dentro do 'o'.",
+      "camera": "Push-in contínuo de 1 %/s com um giro mínimo; mergulho em escala logarítmica no 'o' de 'Motion'.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Os feixes disparam da faísca, um a um, no sentido do relógio",
+          "t": 0.78
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O sol dos oito ofícios em volta da faísca",
+          "t": 2.6,
+          "aprovado": true
+        },
+        {
+          "id": "escolha",
+          "rotulo": "Passo 3",
+          "legenda": "'Motion design' esquenta e os outros se apagam",
+          "t": 4.05
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.38,
+          "tipo": "objeto",
+          "texto": "A faísca prende o ar (encolhe 6 %)."
+        },
+        {
+          "t": 0.5,
+          "tipo": "luz",
+          "texto": "Na batida, os oito feixes disparam no sentido do relógio, 45 ms entre eles, cada um com uma cabeça de luz."
+        },
+        {
+          "t": 0.8,
+          "tipo": "tipo",
+          "texto": "Na ponta de cada feixe nasce um ofício, do desfoque, quando a luz chega."
+        },
+        {
+          "t": 2,
+          "tipo": "vida",
+          "texto": "Hold: uma onda de luz corre pelos feixes uma vez, a faísca gira devagar, a câmera chega."
+        },
+        {
+          "t": 3.5,
+          "tipo": "luz",
+          "texto": "A escolha: 'Motion design' esquenta até a terracota, o feixe dele acende, os outros apagam e desfocam."
+        },
+        {
+          "t": 4.25,
+          "tipo": "transicao",
+          "texto": "A câmera mergulha dentro do 'o' de 'Motion' até o escuro de dentro da letra virar a próxima cena."
+        }
+      ],
+      "saida": {
+        "tipo": "mergulho",
+        "alvo": ".alvo",
+        "alvoTexto": "no 'o' de Motion"
+      }
+    },
+    {
+      "id": "bastidor",
+      "tipo": "montagem",
+      "papel": "a virada",
+      "titulo": "A virada",
+      "dur": 5.5,
+      "ideia": "De dentro da letra surge a prancha do storyboard deste próprio filme: os seis quadrinhos caem em accelerando, uma linha de luz percorre a régua de batidas acendendo cada um, e a câmera mergulha no quadrinho 5, que vira a próxima cena.",
+      "camera": "Push-in de 2 % na prancha; antecipação de 2,5 % e mergulho no quadrinho 5.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A frase e os quadrinhos caindo, ainda apagados",
+          "t": 0.95
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "'Inclusive este vídeo' sobre a prancha do próprio filme, acesa",
+          "t": 3.85,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "'Inclusive este vídeo' sai do desfoque letra a letra."
+        },
+        {
+          "t": 0.6,
+          "tipo": "objeto",
+          "texto": "Os seis quadrinhos caem em accelerando (110 → 50 ms), cada um com um estalo pequeno."
+        },
+        {
+          "t": 1,
+          "tipo": "luz",
+          "texto": "A régua de batidas se desenha da esquerda para a direita."
+        },
+        {
+          "t": 1.5,
+          "tipo": "luz",
+          "texto": "A linha de luz percorre a régua e acende cada quadrinho quando passa; o quadrinho 4 é este, com a prancha dentro dele."
+        },
+        {
+          "t": 4.4,
+          "tipo": "transicao",
+          "texto": "Os outros recuam e escurecem; a câmera mergulha no quadrinho 5 até ele virar a cena seguinte."
+        }
+      ],
+      "saida": {
+        "tipo": "mergulho",
+        "alvo": ".q5 .mini",
+        "alvoTexto": "no quadrinho 5"
+      }
+    },
+    {
+      "id": "entregas",
+      "tipo": "montagem",
+      "papel": "a prova",
+      "titulo": "As entregas",
+      "dur": 5.5,
+      "ideia": "O cartão de Motion chega sozinho; os outros sete ofícios caem por cima em accelerando, a pilha prende o ar e explode numa órbita que nunca para, em volta de 'Do pedido à entrega'.",
+      "camera": "Push-in mínimo na pilha; depois a câmera atravessa a órbita.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A pilha dos oito artefatos",
+          "t": 1.3
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A órbita dos artefatos em volta da frase",
+          "t": 3.2,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "O cartão de Motion assenta no embalo do mergulho."
+        },
+        {
+          "t": 0.55,
+          "tipo": "objeto",
+          "texto": "Os outros caem na pilha em accelerando (80 → 30 ms); cada impacto afunda a pilha, que devolve."
+        },
+        {
+          "t": 1.5,
+          "tipo": "objeto",
+          "texto": "Na batida 3, a pilha que prendeu o ar explode em espiral e vira uma órbita que nunca para."
+        },
+        {
+          "t": 2,
+          "tipo": "tipo",
+          "texto": "'Do pedido à entrega' sobe palavra a palavra no vazio do centro; o destaque acende."
+        },
+        {
+          "t": 3.4,
+          "tipo": "vida",
+          "texto": "Hold: a órbita gira, um brilho atravessa 'entrega'."
+        },
+        {
+          "t": 4.5,
+          "tipo": "transicao",
+          "texto": "A câmera atravessa a órbita: os cartões passam rente e saem desfocados."
+        }
+      ],
+      "saida": {
+        "tipo": "atravessar"
+      }
+    },
+    {
+      "id": "fecho",
+      "tipo": "marca-em-etapas",
+      "papel": "a marca",
+      "titulo": "A marca",
+      "dur": 4.6,
+      "ideia": "Rima com a resposta: a faísca renasce de um ponto com o mesmo gesto, 'Claude' nasce da luz dela e o convite sobe; no fim tudo é tragado para a faísca, que vira um ponto, solta um traço de luz e apaga.",
+      "camera": "Push-in de 0,8 %/s.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A faísca renasce de um ponto no escuro",
+          "t": 0.75
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O lockup e o convite com 'especialista' em terracota",
+          "t": 2.9,
+          "aprovado": true
+        },
+        {
+          "id": "ponto",
+          "rotulo": "Saída",
+          "legenda": "A faísca vira um ponto e solta um traço horizontal de luz",
+          "t": 4.24
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "luz",
+          "texto": "Um ponto acende no escuro e vira a faísca, com o mesmo gesto da resposta (rima)."
+        },
+        {
+          "t": 0.85,
+          "tipo": "tipo",
+          "texto": "A faísca desliza e 'Claude' nasce da luz dela."
+        },
+        {
+          "t": 1.5,
+          "tipo": "tipo",
+          "texto": "O convite sobe palavra a palavra; 'especialista' acende em terracota."
+        },
+        {
+          "t": 2.6,
+          "tipo": "vida",
+          "texto": "Hold: brilho em 'Claude', a faísca gira um fio."
+        },
+        {
+          "t": 3.4,
+          "tipo": "transicao",
+          "texto": "Tudo é tragado para a faísca; ela vai ao centro, gira cada vez mais rápido, vira um ponto, solta um traço horizontal de luz e apaga."
+        }
+      ]
+    }
+  ],
+  "capa": {
+    "cena": "faisca",
+    "quadro": "fim"
+  },
+  "storyboard": {
+    "revisao": 1,
+    "aprovadoEm": null
+  }
+}

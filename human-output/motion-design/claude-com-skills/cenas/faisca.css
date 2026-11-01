@@ -1,0 +1,9 @@
+/* faisca — o CSS natural é o quadro aprovado: o lockup centrado. */
+.cena-faisca { --luz-a-x: 50%; --luz-a-y: 52%; --luz-b-x: 30%; --luz-b-y: 70%; }
+.cena-faisca .pilha { gap: 3.4cqmin; }
+.cena-faisca .lockup { display: flex; align-items: center; gap: 3.6cqmin; margin-left: -1cqmin; }
+.cena-faisca .simb { display: block; width: 16cqmin; height: 16cqmin; }
+.cena-faisca .marca { font-size: 24cqmin; line-height: 0.9; padding-bottom: 1.2cqmin; }
+.cena-faisca .sub { font-size: 9.4cqmin; color: var(--texto-suave); }
+.cena-faisca .halo { width: 60cqw; height: 60cqw; margin: -30cqw 0 0 -30cqw; }
+.cena-faisca .ponto { width: 9cqmin; height: 9cqmin; margin: -4.5cqmin 0 0 -4.5cqmin; }

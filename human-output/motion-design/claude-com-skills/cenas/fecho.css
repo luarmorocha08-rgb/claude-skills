@@ -1,0 +1,18 @@
+/* fecho — o CSS natural é o quadro aprovado: o lockup e o convite. */
+.cena-fecho { --luz-a-x: 50%; --luz-a-y: 50%; --luz-b-x: 66%; --luz-b-y: 72%; }
+.cena-fecho .pilha { gap: 4cqmin; }
+.cena-fecho .lockup { display: flex; align-items: center; gap: 3.6cqmin; margin-left: -1cqmin; }
+.cena-fecho .simb { display: block; width: 16cqmin; height: 16cqmin; }
+.cena-fecho .marca { font-size: 24cqmin; line-height: 0.9; padding-bottom: 1.2cqmin; }
+.cena-fecho .convite { font-size: 7.4cqmin; color: var(--texto-suave); white-space: nowrap; }
+.cena-fecho .halo { width: 60cqw; height: 60cqw; margin: -30cqw 0 0 -30cqw; }
+.cena-fecho .ponto { width: 9cqmin; height: 9cqmin; margin: -4.5cqmin 0 0 -4.5cqmin; }
+.cena-fecho .traco {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70cqw;
+  height: 0.3cqmin;
+  margin: -0.15cqmin 0 0 -35cqw;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--destaque) 40%, transparent) 25%, var(--brilho) 50%, color-mix(in srgb, var(--destaque) 40%, transparent) 75%, transparent);
+}

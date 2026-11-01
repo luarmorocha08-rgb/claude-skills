@@ -1,1 +1,3 @@
 node_modules/
+human-output/**/.cache/
+human-output/**/render/

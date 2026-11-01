@@ -1,0 +1,46 @@
+/* marca/tokens.css — "Claude com skills".
+   Direção lida da identidade pública do Claude: preto quente, creme de papel e um único destaque
+   terracota. Título numa serifa editorial (Instrument Serif, OFL), texto em Inter, o pedido em mono.
+   O símbolo é uma faísca de oito raios desenhada para este filme (não é a logo oficial): é o fio
+   condutor, nasce do cursor, vira o sol dos ofícios e fecha o filme. */
+@font-face { font-family: "Instrument Serif"; src: url("fontes/InstrumentSerif-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Instrument Serif"; src: url("fontes/InstrumentSerif-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fontes/Inter-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fontes/Inter-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: block; }
+@font-face { font-family: "JetBrains Mono"; src: url("fontes/JetBrainsMono-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: block; }
+
+:root {
+  /* cores de base */
+  --fundo: #0f0e0c;            /* preto quente */
+  --texto: #f0eee6;            /* creme de papel */
+  --texto-suave: #a39e92;      /* apoio */
+  --destaque: #d97757;         /* terracota: o único destaque do filme */
+  --destaque-grad: linear-gradient(100deg, #f7dccb 0%, #f0ab8b 30%, #d97757 62%, #b9573b 100%);
+  --brilho: #ffe8da;           /* a luz mais clara: núcleo, reflexos */
+
+  /* luzes (sempre em degradê sem borda) */
+  --luz-1: #6a321f;            /* brasa */
+  --luz-2: #261812;            /* funda e quente */
+  --luz-3: #c2643f;            /* viva: a faísca, a frente de luz */
+  --luz-4: #4a3b31;            /* neutra */
+
+  /* materiais */
+  --vidro: linear-gradient(color-mix(in srgb, #1a1714 70%, transparent), color-mix(in srgb, #0d0c0a 80%, transparent));
+  --vidro-reflexo: linear-gradient(158deg, color-mix(in srgb, #ffffff 8%, transparent) 0%, color-mix(in srgb, #ffffff 2%, transparent) 28%, transparent 46%);
+  --vidro-borda: linear-gradient(145deg, color-mix(in srgb, var(--brilho) 34%, transparent), color-mix(in srgb, var(--brilho) 7%, transparent) 36%, color-mix(in srgb, var(--brilho) 4%, transparent) 64%, color-mix(in srgb, var(--destaque) 32%, transparent));
+  --cartao: #1b1915;           /* a superfície dos artefatos (papel escuro) */
+  --cartao-claro: #ebe7dc;     /* o papel claro (documento, deck) */
+  --linha: color-mix(in srgb, var(--texto) 16%, transparent);
+
+  /* tipografia */
+  --fonte-titulo: "Instrument Serif", Georgia, serif;
+  --fonte-texto: "Inter", system-ui, sans-serif;
+  --fonte-mono: "JetBrains Mono", ui-monospace, monospace;
+  --titulo-peso: 400;
+  --titulo-tracking: -0.012em;
+  --titulo-entrelinha: 1.0;
+
+  /* forma */
+  --raio: 1.1cqw;
+  --raio-capa: 0.7cqw;
+}

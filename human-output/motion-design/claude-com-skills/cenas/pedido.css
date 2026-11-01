@@ -1,0 +1,15 @@
+/* pedido — o CSS natural é o quadro aprovado (a frase inteira, o cursor depois dela). */
+.cena-pedido { --luz-a-x: 50%; --luz-a-y: 58%; --luz-b-x: 70%; --luz-b-y: 30%; }
+.cena-pedido .frase { font-size: 14cqmin; white-space: nowrap; }
+.cena-pedido .cursor {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.72cqmin;
+  height: 12.6cqmin;
+  margin: -6.7cqmin 0 0 -0.36cqmin;
+  border-radius: 0.3cqmin;
+  background: var(--destaque);
+  box-shadow: 0 0 2.4cqmin color-mix(in srgb, var(--destaque) 45%, transparent);
+}
+.cena-pedido .ponto { width: 9cqmin; height: 9cqmin; margin: -4.5cqmin 0 0 -4.5cqmin; }
