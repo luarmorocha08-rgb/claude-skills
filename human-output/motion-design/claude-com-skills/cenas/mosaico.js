@@ -37,16 +37,16 @@ Motion.cena('mosaico', {
     const suga = ease.inCubic(prog(t, T.suga, T.suga + 0.36));
     let choque = 0;
     el.vagas.forEach((v) => {
-      const q = prog(t, v.t0 - 0.2, v.t0);
-      const chega = ease.inQuad(q); // acelera até bater
-      choque += fisica.impacto(t, v.t0, { decaimento: 0.3 });
-      const mola = t > v.t0 ? 1 - 0.05 * Math.exp(-(t - v.t0) * 9) * Math.cos((t - v.t0) * 40) : 1;
+      const q = prog(t, v.t0 - 0.24, v.t0);
+      const chega = ease.inOutSine(q) * 0.35 + ease.inQuad(q) * 0.65; // acelera até bater
+      choque += Pulso(t, v.t0, { decai: 0.15 });
+      const mola = t > v.t0 ? 1 - 0.035 * Math.sin(Math.min(1, (t - v.t0) / 0.04) * Math.PI / 2) * Math.exp(-(t - v.t0) * 8) * Math.cos((t - v.t0) * 24) : 1;
       set(v.el, {
         s: lerp(1.9, 1, chega) * mola * lerp(1, 0.15, suga),
         x: -v.p.x * suga * 0.98,
         y: -v.p.y * suga * 0.98,
         r: lerp(v.k % 2 ? 8 : -8, 0, chega),
-        o: suave(prog(t, v.t0 - 0.2, v.t0 - 0.14)) * (1 - suave(prog(suga, 0.6, 1))),
+        o: suave(prog(t, v.t0 - 0.24, v.t0 - 0.15)) * (1 - suave(prog(suga, 0.6, 1))),
         blur: 0.7 * (1 - chega) + 0.18 * recua + 0.3 * suga,
         bright: (1 - 0.6 * recua) * (1 + 1.5 * suga),
       });
@@ -62,11 +62,11 @@ Motion.cena('mosaico', {
     tipo.varrerDestaque(t, el.letras, { inicio: T.varre, dur: 0.45 });
 
     const cresce = ease.inCubic(prog(t, T.suga + 0.1, T.suga + 0.36));
-    set(el.ponto, { s: 0.15 + 0.55 * cresce + 0.3 * ease.outCubic(prog(t, T.suga + 0.32, api.dur)), o: cresce });
+    set(el.ponto, { s: 0.15 + 0.55 * cresce + 0.3 * ease.outCubic(prog(t, T.suga + 0.32, api.dur)), o: cresce, bright: 1 + 0.6 * cresce * Math.sin(Math.PI * prog(t, T.suga + 0.3, api.dur)) });
+    el.luz.style.setProperty('--luz-a-y', `${(50 - 6 * ease.inOutSine(prog(t, T.suga, api.dur))).toFixed(2)}%`);
     api.fx.respirar(t, el.luz, { periodo: 3, amp: 0.07, base: 1 + 0.1 * Math.min(1, choque) });
     el.luz.style.opacity = (1 - 0.6 * suga).toFixed(4);
-    const tremor = api.tremor(t, Math.floor(t / P) * P, { forca: t < 8 * P ? 0.12 : 0 });
-    el.cam.pose({ zoom: (1 + 0.012 * t) * (1 + 0.006 * Math.min(1, choque)), x: tremor.x, y: tremor.y });
+    el.cam.pose({ zoom: (1 + 0.012 * t) * (1 + 0.006 * Math.min(1, choque)), giro: 0.8 * Math.sin((2 * Math.PI * t) / 6) });
   },
 });
 }

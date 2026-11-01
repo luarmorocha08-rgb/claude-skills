@@ -82,7 +82,7 @@ Motion.cena('pedido', {
     set(el.brasa, {
       x: lerp(cx * 0.6, 0, q), y: el.cy,
       s: 0.55 + 0.1 * digitando + 0.35 * cresce,
-      o: 0.22 + 0.2 * suave(prog(t, T.digita, T.digita + 0.6)) + 0.35 * cresce + T.pulsos.reduce((a, p) => a + 0.25 * api.fisica.impacto(t, p, { decaimento: 1.2 }), 0),
+      o: 0.22 + 0.2 * suave(prog(t, T.digita, T.digita + 0.6)) + 0.35 * cresce + T.pulsos.reduce((a, p) => a + 0.25 * Pulso(t, p, { ataque: 0.12, decai: 0.8 }), 0),
     });
     api.fx.respirar(t, el.luz, { periodo: 3.4, amp: 0.07 });
     el.cam.pose({ zoom: lerp(1.12, 1, ease.inOutSine(prog(t, 0, 4.6))) * (1 + 0.01 * Math.max(0, t - 4.6)) });

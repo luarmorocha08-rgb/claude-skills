@@ -56,7 +56,7 @@ Motion.cena('faisca', {
       x: sx, y: sy, r: giro, s: sNasce * sFim * respira,
       o: suave(prog(t, 0.0, 0.12)),
       blur: Math.min(0.5, vGiro * 0.00045),
-      bright: 1 + 1.3 * quente + 0.5 * absorve + 0.3 * ease.inCubic(prog(t, T.prende[0], T.prende[1])) + 0.35 * api.fisica.impacto(t, T.sub, { decaimento: 0.9 }),
+      bright: 1 + 1.3 * quente + 0.5 * absorve + 0.3 * ease.inCubic(prog(t, T.prende[0], T.prende[1])) + 0.35 * Pulso(t, T.sub, { ataque: 0.08, decai: 0.6 }),
     });
     // ponto de luz (herdado da cena anterior) se desfaz dentro da faísca que nasce
     set(el.ponto, { s: 1 + 0.6 * ease.outCubic(prog(t, 0, 0.3)), o: 1 - suave(prog(t, 0.04, 0.32)) });

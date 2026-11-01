@@ -60,7 +60,7 @@ Motion.cena('oficios', {
     const tw = (k) => (ordem(k) + 1) * P; // os ofícios: um por batida
     const sel = ease.inOutSine(prog(t, T.escolhe, T.escolhe + 0.4));
     // pulso de cada batida (ataque de um quadro, decai rápido)
-    const nb = Math.floor(t / P), pulso = api.fisica.impacto(t, nb * P, { decaimento: 0.28 });
+    const pulso = PulsoGrade(t, P, P, { decai: 0.12 });
 
     // ── a faísca: solta no drop com mola curta (objeto), depois pulsa na batida
     const solta = api.spring(t, { freq: 1.7, damp: 6 });

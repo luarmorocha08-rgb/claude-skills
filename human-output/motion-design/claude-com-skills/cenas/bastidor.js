@@ -56,7 +56,7 @@ Motion.cena('bastidor', {
       // a barra de tempo do quadrinho se preenche; quando chega ao fim, o quadrinho está aceso
       const a = T.varre[0] + q.i * passo;
       const f = ease.forte(prog(t, a, a + passo * 1.6));
-      const tocando = api.fisica.impacto(t, a, { decaimento: 0.5 });
+      const tocando = Pulso(t, a, { decai: 0.35 });
       set(q.el, {
         y: 3 * (1 - ease.outExpo(p)),
         s: 0.95 + 0.05 * Math.min(1.035, ease.outBack(2.2)(p)),
@@ -79,7 +79,7 @@ Motion.cena('bastidor', {
     el.fzMini.forEach((fz, i) => { fz.style.transform = `rotate(${(8 * t + i * 11).toFixed(3)}deg)`; });
 
     api.fx.respirar(t, el.luz, { periodo: 3.6, amp: 0.08 });
-    el.cam.pose({ zoom: lerp(1.04, 1, ease.outCubic(prog(t, 0.2, 3.8))) * (1 + 0.006 * (t - 3.8)) });
+    el.cam.pose({ zoom: lerp(1.05, 1, ease.inOutSine(prog(t, 0.2, 4.4))) * (1 + 0.006 * Math.max(0, t - 4.4)), x: 0.5 * Math.sin((2 * Math.PI * t) / 5.5), giro: 0.5 * Math.sin((2 * Math.PI * t) / 7) });
   },
 });
 }

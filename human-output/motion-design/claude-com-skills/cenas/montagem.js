@@ -42,27 +42,27 @@ Motion.cena('montagem', {
 
   quadro(t, el, api) {
     const { prog, ease, lerp, suave, set, tipo } = api;
-    const nb = Math.floor((t - T0) / P), pulso = t >= T0 ? api.fisica.impacto(t, T0 + nb * P, { decaimento: 0.25 }) : 0;
+    const pulso = PulsoGrade(t, T0, P, { decai: 0.12 });
     el.tomadas.forEach((tm) => {
       const u = t - tm.s;
-      const ativo = u > -0.02 && u < BAR + 0.02;
-      // entrada: chicote da direita (arranque rápido, pouso longo); saída: acelera para a esquerda
-      const ent = ease.outExpo(prog(u, 0, 0.42));
-      const sai = ease.inExpo(prog(u, BAR - 0.16, BAR));
-      const vel = (1 - ent) * 40 + sai * 40; // para o rastro de movimento
+      // panorâmica contínua: o próximo entra pela direita enquanto este sai pela esquerda, sem
+      // nada sumir na tela (cada um só desaparece quando já está fora do quadro)
+      const ativo = u > -0.2 && u < BAR + 0.2;
+      const ent = ease.outExpo(prog(u, -0.12, 0.42));
+      const sai = ease.inCubic(prog(u, BAR - 0.2, BAR + 0.12));
+      const vel = 90 * (1 - ent) * (u < 0.42 ? 1 : 0) + 110 * sai;
       const lado = tm.inv ? -1 : 1; // onde o objeto mora (1 = direita)
-      const ox = 30 * (1 - ent) - 34 * sai;
       set(tm.obj, {
-        x: ox,
+        x: 80 * (1 - ent) - 112 * sai,
         ry: -16 * lado * (1 - 0.4 * ent) + 10 * (1 - ent), persp: 1400,
-        s: lerp(0.9, 1, ent) * (1 + 0.012 * pulso) * (1 + 0.012 * u),
-        o: ativo ? suave(prog(u, 0, 0.06)) * (1 - suave(prog(u, BAR - 0.04, BAR))) : 0,
-        blur: 0.02 * vel,
+        s: lerp(0.92, 1, ent) * (1 + 0.012 * pulso) * (1 + 0.012 * Math.max(0, u)),
+        o: ativo ? 1 : 0,
+        blur: 0.012 * vel,
       });
       set(tm.palavra, {
-        x: 16 * (1 - ent) - 24 * sai,
-        o: ativo ? 1 - suave(prog(u, BAR - 0.06, BAR)) : 0,
-        blur: 0.012 * vel,
+        x: 84 * (1 - ent) - 108 * sai,
+        o: ativo ? 1 : 0,
+        blur: 0.008 * vel,
       });
       if (!ativo) {
         tipo.focar(-10, tm.letras, { inicio: 0 });
@@ -73,10 +73,10 @@ Motion.cena('montagem', {
       // as peças saltam no lugar ao longo das três primeiras batidas (objeto: mola curta)
       tm.pecas.forEach((pc) => {
         const t0 = 0.12 + pc.f * 2.6 * P;
-        const q = prog(u, t0, t0 + 0.32);
+        const q = prog(u, t0, t0 + 0.36);
         set(pc.el, {
-          o: suave(prog(u, t0, t0 + 0.06)),
-          s: lerp(0.55, 1, Math.min(1.06, ease.outBack(2.4)(q))),
+          o: suave(prog(u, t0, t0 + 0.1)),
+          s: lerp(0.7, 1, Math.min(1.05, ease.outBack(2)(q))),
           y: 1.5 * (1 - ease.outExpo(q)),
           px: false,
         });
@@ -87,7 +87,7 @@ Motion.cena('montagem', {
     const i = Math.max(0, Math.min(7, Math.floor((t - T0) / BAR)));
     const lado = i % 2 ? -1 : 1;
     el.luz.style.setProperty('--luz-a-x', `${(50 + 16 * lado).toFixed(2)}%`);
-    api.fx.respirar(t, el.luz, { periodo: 2.6, amp: 0.06, base: 1 + 0.18 * pulso });
+    api.fx.respirar(t, el.luz, { periodo: 2.6, amp: 0.06, base: 1 + 0.1 * pulso });
     el.cam.pose({ zoom: 1 + 0.006 * pulso + 0.004 * (t - 5), giro: 0.8 * Math.sin((2 * Math.PI * t) / 5.2) });
   },
 });

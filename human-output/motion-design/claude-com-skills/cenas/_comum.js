@@ -24,6 +24,20 @@
     },
   };
 
+  // pulso de batida sem tranco: sobe em `ataque` s (3 quadros a 60 qps) numa rampa suave e decai
+  window.Pulso = function (t, t0, { ataque = 0.05, decai = 0.3 } = {}) {
+    const u = t - t0;
+    if (u <= 0) return 0;
+    if (u < ataque) { const x = u / ataque; return x * x * (3 - 2 * x); }
+    return Math.exp(-(u - ataque) / decai);
+  };
+  // o pulso da batida mais recente numa grade (período P a partir de t0), contínuo entre batidas
+  window.PulsoGrade = function (t, t0, P, op = {}) {
+    if (t < t0) return 0;
+    const n = Math.floor((t - t0) / P);
+    return Math.max(window.Pulso(t, t0 + n * P, op), n > 0 ? window.Pulso(t, t0 + (n - 1) * P, op) : 0);
+  };
+
   window.Pos = function (el) {
     const palco = Motion.palco;
     let x = 0, y = 0;

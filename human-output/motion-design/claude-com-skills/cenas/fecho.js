@@ -67,7 +67,7 @@ Motion.cena('fecho', {
     set(el.halo, {
       x: P.x + sx, y: P.y + sy,
       s: (0.45 + 0.25 * ease.outCubic(nasce)) * lerp(1, 0.6, ease.inCubic(some)),
-      o: (0.25 + 0.45 * ease.outCubic(nasce) - 0.15 * d * (1 - c) + 0.05 * Math.sin((2 * Math.PI * (t - 1)) / 3.1)) * (1 - ease.inOutSine(prog(t, T.some[0], T.traco[1] - 0.05))) * 1 + 0.45 * api.fisica.impacto(t, T.golpe, { decaimento: 0.7 }),
+      o: (0.25 + 0.45 * ease.outCubic(nasce) - 0.15 * d * (1 - c) + 0.05 * Math.sin((2 * Math.PI * (t - 1)) / 3.1)) * (1 - ease.inOutSine(prog(t, T.some[0], T.traco[1] - 0.05))) * 1 + 0.45 * Pulso(t, T.golpe, { decai: 0.5 }),
     });
 
     const pf = [P.x, P.y];
@@ -84,7 +84,7 @@ Motion.cena('fecho', {
     // a luz de fundo respira e se apaga junto com a faísca: o último quadro é a cor de fundo
     api.fx.respirar(t, el.luz, { periodo: 3.8, amp: 0.07 });
     el.luz.style.opacity = ((1 - ease.inOutSine(prog(t, T.some[0] - 0.2, T.traco[1] - 0.02))) * (0.4 + 0.6 * suave(prog(t, 0, 0.6)))).toFixed(4);
-    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)) * (1 + 0.025 * api.fisica.impacto(t, T.golpe, { decaimento: 0.6 })), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
+    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)) * (1 + 0.025 * Pulso(t, T.golpe, { decai: 0.4 })), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
   },
 });
 }

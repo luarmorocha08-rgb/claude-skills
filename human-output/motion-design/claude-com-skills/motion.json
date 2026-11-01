@@ -66,7 +66,7 @@
           "id": "inicio",
           "rotulo": "Início",
           "legenda": "O cursor e as primeiras letras nascendo quentes",
-          "t": 1.0
+          "t": 1
         },
         {
           "id": "fim",
@@ -99,7 +99,7 @@
           "texto": "Segundo pulso: a brasa atrás do cursor incha."
         },
         {
-          "t": 5.0,
+          "t": 5,
           "tipo": "transicao",
           "texto": "As pontas partem primeiro e tudo converge num ponto; corte no pulso de 5,44 s."
         }
@@ -141,7 +141,7 @@
       ],
       "batidas": [
         {
-          "t": 0.0,
+          "t": 0,
           "tipo": "luz",
           "texto": "No pulso, o ponto vira a faísca com uma mola curta, girando e esfriando."
         },
@@ -184,13 +184,13 @@
           "id": "inicio",
           "rotulo": "Início",
           "legenda": "O drop: os feixes disparam e os ofícios começam a pousar",
-          "t": 1.0
+          "t": 1
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "O sol dos oito ofícios",
-          "t": 3.0,
+          "t": 3,
           "aprovado": true
         },
         {
@@ -202,7 +202,7 @@
       ],
       "batidas": [
         {
-          "t": 0.0,
+          "t": 0,
           "tipo": "luz",
           "texto": "Drop: a faísca solta, os oito feixes disparam em 40 ms cada, a câmera dá um empurrão de 3,5 %."
         },
@@ -353,7 +353,8 @@
       ],
       "saida": {
         "tipo": "atravessar"
-      }
+      },
+      "permitirParado": []
     },
     {
       "id": "montagem",
@@ -441,7 +442,7 @@
       ],
       "batidas": [
         {
-          "t": 0.0,
+          "t": 0,
           "tipo": "objeto",
           "texto": "Um artefato bate por batida, vindo de perto da câmera, com mola."
         },
@@ -521,6 +522,12 @@
           "tipo": "transicao",
           "texto": "Tudo é tragado para a faísca, que vira ponto, solta o traço de luz e apaga."
         }
+      ],
+      "permitirParado": [
+        [
+          5.25,
+          5.6
+        ]
       ]
     }
   ],
@@ -550,6 +557,15 @@
       ],
       "fps": 60,
       "nota": "mais vida nos holds: faísca girando, sol que se expande, câmera mais presente"
+    },
+    {
+      "v": 3,
+      "data": "2026-11-01",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 60,
+      "nota": "sincronizado com a trilha: 47,5 s, montagem por compasso e mosaico novos"
     }
   ]
 }
