@@ -1,0 +1,836 @@
+{
+  "versao": 1,
+  "titulo": "Os Que Ficaram — EP1 · A Metade",
+  "slug": "os-que-ficaram-ep1",
+  "fps": 30,
+  "bpm": 120,
+  "formatoBase": "16x9",
+  "formatos": [
+    "16x9"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Ritmo",
+      "texto": "A narração manda: cada plano entra na frase que ele mostra e sai na pausa seguinte. Cortes secos entre planos, como num curta; nenhum plano parado mais de 5 s."
+    },
+    {
+      "titulo": "Câmera",
+      "texto": "Sempre viva: aproximação lenta de 3 a 10 % por plano, tremor de mão nos momentos de tensão, solavanco no impacto (xícara, carro, batidas na porta)."
+    },
+    {
+      "titulo": "Personagens",
+      "texto": "Stickman da folha: cabeça branca grande, contorno preto grosso, olhos de lado. Você de moletom azul, o vizinho de camiseta verde, a irmã só pelo celular e pela voz."
+    },
+    {
+      "titulo": "Luz",
+      "texto": "A cor conta o tempo: manhã quente → sombra azulada da nave → fim de tarde laranja → noite azul-escura com a lanterna quente. O azul alienígena é o único acento frio do filme."
+    },
+    {
+      "titulo": "Telas",
+      "texto": "Celular e TV sempre em close e legíveis por pelo menos 1 s: notificações, a chamada que cai, as tentativas, o plantão, as mensagens dela."
+    },
+    {
+      "titulo": "Fecho",
+      "texto": "A maçaneta gira, clique e corte seco para preto. CONTINUA NO EPISÓDIO 2 sai do desfoque."
+    }
+  ],
+  "referencias": [],
+  "cenas": [
+    {
+      "id": "cozinha",
+      "titulo": "A última manhã normal",
+      "dur": 18.6,
+      "ideia": "Uma manhã comum vira o fim do mundo dentro de um celular: da cafeteira à janela, até a xícara espatifar no chão.",
+      "camera": "Aproximação lenta na cozinha; close de cima do celular na mesa; o vídeo cresce até tomar o quadro; solavanco no impacto da xícara.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Cozinha larga: você espera o café",
+          "t": 2
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "O celular vibra na mesa, depois de novo",
+          "t": 6.8
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Os grupos explodem: todos mandam o mesmo vídeo",
+          "t": 10
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "O vídeo toma o quadro: uma coisa enorme no céu",
+          "t": 13
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você vai até a janela",
+          "t": 14.8
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Pela janela: a nave cobre o céu",
+          "t": 16.6
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "A xícara escorrega",
+          "t": 17.8
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Espatifa no chão, corte seco",
+          "t": 18.45
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.6,
+          "tipo": "vida",
+          "texto": "A narração começa; o vapor sobe da cafeteira, você pisca."
+        },
+        {
+          "t": 5,
+          "tipo": "objeto",
+          "texto": "O celular vibra na mesa e a primeira notificação salta; de novo em 6,5 e 7,0."
+        },
+        {
+          "t": 8.25,
+          "tipo": "objeto",
+          "texto": "As bolhas dos grupos estouram em volta de você, uma a cada 0,4 s."
+        },
+        {
+          "t": 11.9,
+          "tipo": "camera",
+          "texto": "O vídeo cresce do balão até cobrir o celular e o quadro."
+        },
+        {
+          "t": 15.2,
+          "tipo": "luz",
+          "texto": "A sombra da nave cobre as casas do outro lado."
+        },
+        {
+          "t": 17.55,
+          "tipo": "objeto",
+          "texto": "A xícara escorrega da mão e cai girando."
+        },
+        {
+          "t": 18.28,
+          "tipo": "transicao",
+          "texto": "Impacto: cacos e café voam, a câmera treme, corte seco para o título."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Cafeteira borbulhando, vibração do celular (duas vezes), enxurrada de notificações, silêncio na janela, xícara estilhaçando.",
+      "permitirParado": []
+    },
+    {
+      "id": "abertura",
+      "titulo": "Título",
+      "dur": 5,
+      "ideia": "Depois do estilhaço, o silêncio: a nave atravessa o preto e o título sai do desfoque, letra a letra.",
+      "camera": "A nave desliza por cima do quadro; o título aproxima 3 % até sair.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Entrada",
+          "legenda": "As letras saem do desfoque",
+          "t": 1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Título",
+          "legenda": "OS QUE FICARAM · Episódio 1 · A Metade",
+          "t": 3.2
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.45,
+          "tipo": "tipo",
+          "texto": "OS QUE FICARAM sai do desfoque letra a letra, 45 ms entre elas."
+        },
+        {
+          "t": 1.2,
+          "tipo": "tipo",
+          "texto": "A linha abre do centro; o subtítulo entra e fecha o espaçamento devagar."
+        },
+        {
+          "t": 4.35,
+          "tipo": "transicao",
+          "texto": "Tudo apaga acelerando até o preto."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Zumbido grave e longo.",
+      "permitirParado": []
+    },
+    {
+      "id": "invasao",
+      "titulo": "Eles chegaram",
+      "dur": 23.2,
+      "ideia": "A nave engole a rua com sua sombra e fica completamente parada; a única voz que chega é a da irmã, cortada no meio.",
+      "camera": "Inclinação lenta para o céu; contra-plongée na barriga da nave; plano parado e inquietante na gente filmando; close crescente no telefonema.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "A sombra engole a rua",
+          "t": 2.5
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "A barriga da nave; naves menores se soltam",
+          "t": 7
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Gente filmando; a nave completamente parada",
+          "t": 10
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "O celular toca na janela",
+          "t": 11.8
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Irmã chamando",
+          "t": 13
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "\"Não sai de—\"",
+          "t": 17.2
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Chamada encerrada",
+          "t": 19
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "A luz branca atravessa a janela",
+          "t": 22.3
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "camera",
+          "texto": "A nave desce do alto e cobre o céu; a borda da sombra corre do horizonte até a câmera."
+        },
+        {
+          "t": 5,
+          "tipo": "objeto",
+          "texto": "Naves menores se desprendem das bordas, uma a cada 0,55 s."
+        },
+        {
+          "t": 8.6,
+          "tipo": "vida",
+          "texto": "Plano parado: só as pessoas mexem os celulares; a nave não se move."
+        },
+        {
+          "t": 11.3,
+          "tipo": "objeto",
+          "texto": "O celular vibra na mão; você olha a tela."
+        },
+        {
+          "t": 16.6,
+          "tipo": "tipo",
+          "texto": "O balão \"Não sai de—\" se escreve e quebra, piscando até sumir."
+        },
+        {
+          "t": 19.9,
+          "tipo": "luz",
+          "texto": "A janela clareia, o feixe atravessa a cozinha; você ergue o braço contra a luz e tudo vira branco."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Grave subindo com a sombra, silêncio total na nave parada, toque do celular, ligação que chia e cai, luz branca crescendo num zumbido.",
+      "permitirParado": []
+    },
+    {
+      "id": "coleta",
+      "titulo": "A coleta",
+      "dur": 24.2,
+      "ideia": "A luz leva todo mundo para cima, menos você: o vizinho sobe segurando a mangueira, o prédio esvazia, e debaixo da mesa nada acontece.",
+      "camera": "Do branco ao chão; pela moldura da janela; close na mão sumindo na luz; panorâmica descendo do prédio para a calçada; close tremendo debaixo da mesa.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você se joga no chão",
+          "t": 1.2
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "O vizinho sobe com a mangueira",
+          "t": 4
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você estica o braço: longe demais",
+          "t": 8.3
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "A mão dele some na luz",
+          "t": 10.6
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "O prédio da frente",
+          "t": 12.8
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Na calçada também",
+          "t": 15
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Você se arrasta para debaixo da mesa",
+          "t": 17
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Olhos fechados, esperando subir",
+          "t": 20.8
+        },
+        {
+          "id": "q8",
+          "rotulo": "Plano 9",
+          "legenda": "A luz apaga. Nada acontece",
+          "t": 23.5
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.35,
+          "tipo": "objeto",
+          "texto": "Você mergulha no chão num arco curto; a câmera treme no impacto."
+        },
+        {
+          "t": 1.7,
+          "tipo": "luz",
+          "texto": "O feixe acende sobre o vizinho; ele olha para cima, assustado."
+        },
+        {
+          "t": 2.6,
+          "tipo": "objeto",
+          "texto": "Ele sobe acelerando; a mangueira estica do carretel até a mão, a água espirra."
+        },
+        {
+          "t": 9.4,
+          "tipo": "objeto",
+          "texto": "A mão sobe para dentro do branco, desfoca e some."
+        },
+        {
+          "t": 11.9,
+          "tipo": "objeto",
+          "texto": "No prédio, pessoas saem pelas janelas para cima, uma a cada 0,5 s; a câmera desce até a calçada."
+        },
+        {
+          "t": 15.8,
+          "tipo": "objeto",
+          "texto": "Você rasteja até a mesa e se encolhe; os olhos fecham em 18,2."
+        },
+        {
+          "t": 21.9,
+          "tipo": "luz",
+          "texto": "A luz corta de uma vez; a sala escurece. Um olho abre devagar."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Zumbido da luz, água da mangueira, o grito abafado, silêncio seco quando a luz apaga.",
+      "permitirParado": []
+    },
+    {
+      "id": "sobrou",
+      "titulo": "Quem sobrou",
+      "dur": 36,
+      "ideia": "O silêncio depois: a rua sem motoristas, seis ligações sem resposta, e o mundo inteiro igual na TV até o plantão confirmar.",
+      "camera": "Fim de tarde laranja; close no rosto prendendo a respiração; a TV em quadro cheio troca de canal com chiado; recuo lento no final, você pequeno na sala escura.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você sai de debaixo da mesa",
+          "t": 1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "A nave vai embora; o carro sem motorista",
+          "t": 3.2
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "O celular na mão",
+          "t": 6
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Chamando: 1ª, 5ª, 6ª tentativa",
+          "t": 10.8
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Prendendo a respiração",
+          "t": 13.5
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "A TV ainda funciona",
+          "t": 16.5
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Paris",
+          "t": 18.2
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Tóquio",
+          "t": 20.2
+        },
+        {
+          "id": "q8",
+          "rotulo": "Plano 9",
+          "legenda": "Nova York",
+          "t": 22.2
+        },
+        {
+          "id": "q9",
+          "rotulo": "Plano 10",
+          "legenda": "Rio de Janeiro",
+          "t": 24.4
+        },
+        {
+          "id": "q10",
+          "rotulo": "Plano 11",
+          "legenda": "Horas depois: o plantão",
+          "t": 28.5
+        },
+        {
+          "id": "q11",
+          "rotulo": "Plano 12",
+          "legenda": "A manchete",
+          "t": 32.5
+        },
+        {
+          "id": "q12",
+          "rotulo": "Plano 13",
+          "legenda": "E você ficou",
+          "t": 35.5
+        }
+      ],
+      "batidas": [
+        {
+          "t": 2,
+          "tipo": "objeto",
+          "texto": "A nave encolhe no céu laranja; o carro bate no poste em 2,75 e solta fumaça; a roda da bicicleta gira."
+        },
+        {
+          "t": 7.8,
+          "tipo": "tipo",
+          "texto": "O contador de tentativas pula de 1 para 5 e depois 6."
+        },
+        {
+          "t": 15.35,
+          "tipo": "luz",
+          "texto": "A TV liga com chiado; a luz azul dela invade a sala."
+        },
+        {
+          "t": 17.1,
+          "tipo": "transicao",
+          "texto": "Troca de canal a cada ~2 s, com 0,2 s de chiado."
+        },
+        {
+          "t": 26.6,
+          "tipo": "luz",
+          "texto": "A janela vai de laranja a noite; o plantão entra na TV."
+        },
+        {
+          "t": 29.9,
+          "tipo": "tipo",
+          "texto": "A manchete se escreve letra a letra; o letreiro corre embaixo."
+        },
+        {
+          "t": 33.5,
+          "tipo": "camera",
+          "texto": "A câmera recua devagar: você sozinho no sofá, iluminado pela TV."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Carro batendo no poste, raio de bicicleta girando, tom de chamada repetido, chiado de TV entre canais, vinheta de plantão.",
+      "permitirParado": []
+    },
+    {
+      "id": "noite",
+      "titulo": "A primeira noite",
+      "dur": 23.6,
+      "ideia": "A casa vira abrigo: a luz acaba, a água ainda corre, a lanterna acende, e uma mensagem atrasada dá um motivo para esperar.",
+      "camera": "Close no relógio; plano largo quando a luz cai; detalhe na torneira; aproximação na mesa; no celular, a câmera mergulha no horário da mensagem.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Sete da noite",
+          "t": 0.8
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "A luz acaba",
+          "t": 2.8
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "A torneira: ainda sai água",
+          "t": 4.5
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Garrafas, comida, lanterna, carregador",
+          "t": 10.5
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "A mensagem atrasada dela",
+          "t": 13
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Enviada às 09:05",
+          "t": 16.8
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "A mochila perto da porta",
+          "t": 19.6
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Esperando",
+          "t": 22
+        }
+      ],
+      "batidas": [
+        {
+          "t": 2.15,
+          "tipo": "luz",
+          "texto": "A luz pisca duas vezes e cai: abajur e TV apagam, a sala afunda no azul."
+        },
+        {
+          "t": 3.55,
+          "tipo": "objeto",
+          "texto": "A alavanca gira e a água corre."
+        },
+        {
+          "t": 6.2,
+          "tipo": "objeto",
+          "texto": "Os suprimentos aparecem na mesa um a um; a lanterna acende quente em 8,9."
+        },
+        {
+          "t": 11.5,
+          "tipo": "objeto",
+          "texto": "O celular vibra e a mensagem salta."
+        },
+        {
+          "t": 15.9,
+          "tipo": "camera",
+          "texto": "A câmera mergulha no horário \"enviada às 09:05\", que acende em amarelo."
+        },
+        {
+          "t": 19.45,
+          "tipo": "objeto",
+          "texto": "Você abaixa e deixa a mochila no chão, ao lado da porta."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Tique do relógio, estalo da luz caindo, água da torneira, clique da lanterna, vibração.",
+      "permitirParado": []
+    },
+    {
+      "id": "rua",
+      "titulo": "Alguém na rua",
+      "dur": 18.8,
+      "ideia": "Perto da meia-noite, a ameaça chega pelo som: a máquina passa pela rua, varre a casa ao lado e para bem na sua porta.",
+      "camera": "Plano largo inquieto; o olho na fresta; a rua noturna com a máquina chegando; a luz varrendo a sala; close no rosto; a porta com a luz por baixo.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Metal raspando no asfalto",
+          "t": 2.5
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Pela fresta da cortina",
+          "t": 5.5
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "A máquina para na casa ao lado",
+          "t": 8.4
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "A luz azul passa pelas janelas",
+          "t": 10
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você apaga a lanterna e se abaixa",
+          "t": 13
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "O barulho chega mais perto",
+          "t": 14.4
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Então para",
+          "t": 16
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Bem na sua porta",
+          "t": 18
+        }
+      ],
+      "batidas": [
+        {
+          "t": 1.7,
+          "tipo": "vida",
+          "texto": "Sua cabeça vira para a janela; você se levanta em 3,4."
+        },
+        {
+          "t": 6.6,
+          "tipo": "objeto",
+          "texto": "O rastreador caminha pela rua e trava diante da casa ao lado em 8,2."
+        },
+        {
+          "t": 8.9,
+          "tipo": "luz",
+          "texto": "O feixe azul percorre as janelas da casa vizinha."
+        },
+        {
+          "t": 11.9,
+          "tipo": "luz",
+          "texto": "A lanterna apaga; você se agacha sob a janela."
+        },
+        {
+          "t": 13.5,
+          "tipo": "luz",
+          "texto": "A luz azul varre a sala; sombras de pernas passam pela cortina."
+        },
+        {
+          "t": 16.85,
+          "tipo": "luz",
+          "texto": "A luz azul aparece por baixo da porta e fica."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Metal raspando no asfalto, passos pesados, zumbido da luz azul, clique da lanterna, silêncio súbito.",
+      "permitirParado": []
+    },
+    {
+      "id": "voz",
+      "titulo": "A voz",
+      "dur": 24,
+      "ideia": "A voz que você mais quer ouvir está do lado errado da porta: o celular diz a verdade um segundo antes da maçaneta girar.",
+      "camera": "Porta em quadro fechado com solavanco a cada batida; aproximação no balão; close no rosto; detalhe extremo na maçaneta; corte seco para preto.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Três batidas",
+          "t": 0.7
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "\"me deixa entrar…\"",
+          "t": 4.5
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você quase abre",
+          "t": 7.2
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "O celular vibra",
+          "t": 9.5
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "A mensagem dela",
+          "t": 13.5
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Você olha para a porta",
+          "t": 16
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "A maçaneta gira",
+          "t": 18.5
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "CONTINUA NO EPISÓDIO 2.",
+          "t": 21.5
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.25,
+          "tipo": "objeto",
+          "texto": "TOC, TOC, TOC: a porta e a câmera dão um tranco em cada batida."
+        },
+        {
+          "t": 3,
+          "tipo": "tipo",
+          "texto": "O balão \"me deixa entrar…\" surge da porta com o contorno tremendo de leve."
+        },
+        {
+          "t": 6.6,
+          "tipo": "objeto",
+          "texto": "Seu braço se estica até o trinco."
+        },
+        {
+          "t": 7.5,
+          "tipo": "luz",
+          "texto": "O celular vibra e acende seu rosto de azul."
+        },
+        {
+          "t": 10.8,
+          "tipo": "tipo",
+          "texto": "As duas mensagens saltam: \"Estou escondida no mercado.\" / \"Tem uma coisa aqui fora imitando a sua voz.\""
+        },
+        {
+          "t": 16.8,
+          "tipo": "objeto",
+          "texto": "A maçaneta gira devagar; clique em 18,85; corte seco para preto em 19,0."
+        },
+        {
+          "t": 20,
+          "tipo": "tipo",
+          "texto": "CONTINUA NO EPISÓDIO 2. sai do desfoque e apaga no fim."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      },
+      "som": "Três batidas secas, a voz da irmã abafada e levemente distorcida, vibração, a maçaneta rangendo, clique da fechadura.",
+      "permitirParado": []
+    }
+  ],
+  "capa": {
+    "cena": "invasao",
+    "quadro": "q0"
+  },
+  "storyboard": {
+    "revisao": 2,
+    "aprovadoEm": null
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-01",
+  "cartaz": "Você descobre que o mundo está acabando enquanto espera o café ficar pronto",
+  "narracao": {
+    "voz": "Dantas (ElevenLabs, eleven_v4)",
+    "inicio": {
+      "cozinha": 0.6,
+      "invasao": 0.3,
+      "coleta": 0.2,
+      "sobrou": 0.5,
+      "noite": 0.5,
+      "rua": 0.4,
+      "voz": 0.3
+    }
+  }
+}
