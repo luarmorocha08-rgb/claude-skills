@@ -60,7 +60,7 @@
       "titulo": "O pedido",
       "dur": 3.05,
       "ideia": "O pedido é digitado grande por um cursor terracota que esquenta cada letra; quando termina, a frase é sugada para o centro e vira o ponto de onde a faísca nasce.",
-      "camera": "Nasce num close de 1,1× e recua em 2,2 s com curva forte; depois push-in vivo, passando por 1,0 no quadro aprovado.",
+      "camera": "Push-in vivo de 3,5 % até o quadro aprovado.",
       "quadros": [
         {
           "id": "inicio",
@@ -423,5 +423,16 @@
   "storyboard": {
     "revisao": 1,
     "aprovadoEm": null
-  }
+  },
+  "versoes": [
+    {
+      "v": 1,
+      "data": "2026-11-01",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 60,
+      "nota": "primeira versão completa"
+    }
+  ]
 }

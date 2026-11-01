@@ -47,11 +47,11 @@ Motion.cena('faisca', {
     const sFim = lerp(1, SOL / LADO, c);
     const giro = lerp(-70, 0, ease.outExpo(prog(t, 0, 0.7)))
       + 90 * ease.inOutExpo(prog(t, T.gesto, T.gesto + 0.24)) + fisica.tique(t, T.gesto + 0.24, { passa: 6 })
-      + 4 * (t - T.centro[1]) + 45 * ease.inOutCubic(prog(t, T.centro[0], T.centro[1]));
+      + 10 * (t - T.centro[1]) + 45 * ease.inOutCubic(prog(t, T.centro[0], T.centro[1]));
     const vGiro = Math.abs(ease.inOutExpo(prog(t + 0.01, T.gesto, T.gesto + 0.24)) - ease.inOutExpo(prog(t - 0.01, T.gesto, T.gesto + 0.24))) * 90 / 0.02;
     const quente = 1 - ease.outCubic(prog(t, 0, 0.8));
     const absorve = suave(prog(t, T.suga + 0.05, T.suga + 0.3)) * (1 - suave(prog(t, T.centro[0] + 0.1, T.centro[1])));
-    const respira = 1 + 0.025 * api.vida(t, { inicio: 1.6, periodo: 2.6 });
+    const respira = 1 + 0.05 * api.vida(t, { inicio: 1.4, periodo: 2.2 });
     set(el.simb, {
       x: sx, y: sy, r: giro, s: sNasce * sFim * respira,
       o: suave(prog(t, 0.0, 0.12)),
@@ -71,7 +71,7 @@ Motion.cena('faisca', {
     const pf = [P.x, P.y];
     const ma = tipo.nascerDaLuz(t, el.letras, { inicio: T.marca, cascata: 0.038, aplicar: false });
     const ms = tipo.sugar(t, el.letras, { inicio: T.suga + 0.04, dur: 0.26, ponto: pf, aplicar: false });
-    tipo.aplicar(el.letras, ma, ms);
+    tipo.aplicar(el.letras, ma, ms, tipo.exalar(t, el.letras, { inicio: 1.4, velocidade: 0.012, ref: 2.45, aplicar: false }));
     tipo.brilho(t, el.letras, { inicio: T.brilho, dur: 0.75, forca: 0.45 });
     // ── "com skills"
     const sa = tipo.focar(t, el.sub, { inicio: T.sub, cascata: 0.022, aplicar: false });
@@ -82,7 +82,7 @@ Motion.cena('faisca', {
 
     api.fx.respirar(t, el.luz, { periodo: 3.8, amp: 0.07 });
     // câmera: push-in que desacelera e para em 1,0 no último quadro (a próxima começa em 1,0)
-    el.cam.pose({ zoom: lerp(0.97, 1, ease.outQuad(prog(t, 0, T.centro[1]))) });
+    el.cam.pose({ zoom: lerp(0.93, 1, ease.inOutSine(prog(t, 0, T.centro[1]))), x: 0.6 * Math.sin((2 * Math.PI * t) / 6.2) * (1 - c), y: 0.3 * Math.sin((2 * Math.PI * t) / 4.7) * (1 - c) });
   },
 });
 }

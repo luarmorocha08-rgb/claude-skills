@@ -59,11 +59,11 @@ Motion.cena('oficios', {
     const sel = ease.inOutSine(prog(t, T.escolhe, T.escolhe + 0.45));
 
     // ── a faísca: prende o ar, solta na batida (objeto: mola curta), depois respira
-    const prende = ease.inOutSine(prog(t, T.prende - 0.16, T.dispara));
+    const prende = ease.inOutSine(prog(t, 0, T.dispara));
     const solta = api.spring(Math.max(0, t - T.dispara), { freq: 1.7, damp: 6 });
     const s = (1 - 0.06 * prende * (t < T.dispara ? 1 : 0)) * (t < T.dispara ? 1 : lerp(0.94, 1, solta))
       * (1 + 0.02 * api.vida(t, { inicio: 1.4, periodo: 2.8 }));
-    set(el.sol, { r: 1.6 * (1 - Math.exp(-t / 0.4)) + 2.2 * api.vida(t, { inicio: 1.2, periodo: 5.2 }), s, bright: 1 + 0.35 * bell(t, T.dispara + 0.12, 0.14) + 0.25 * sel });
+    set(el.sol, { r: 10 * t * (1 - 0.6 * ease.inOutSine(prog(t, 0, 0.5))) + 6 * api.vida(t, { inicio: 1.0, periodo: 3.6 }), s: s * (1 + 0.05 * api.vida(t, { inicio: 1.0, periodo: 2.4 })), bright: 1 + 0.3 * prende * (t < T.dispara ? 1 : 0) + 0.35 * bell(t, T.dispara + 0.12, 0.14) + 0.25 * sel });
     el.raios.forEach((r, k) => {
       const flick = bell(t, tb(k) + 0.03, 0.07);
       r.style.transform = `rotate(${k * 45}deg) scale(${(1 - 0.08 * flick).toFixed(4)}, ${(1 + 0.22 * flick).toFixed(4)})`;
@@ -76,7 +76,7 @@ Motion.cena('oficios', {
       const onda = bell(t, T.onda + ordem(f.k) * 0.11, 0.1);
       const eleito = f.k === 0 ? sel : 0;
       f.el.style.transform = `rotate(var(--ang)) translateX(var(--r0))`;
-      set(f.fio, { pre: '', sx: Math.max(0.0005, p), o: suave(prog(t, t0, t0 + 0.06)) * (1 - 0.85 * sel * (f.k === 0 ? 0 : 1)), bright: 1 + 0.9 * onda + 0.8 * eleito });
+      set(f.fio, { pre: '', sx: Math.max(0.0005, p * (1 + 0.025 * Math.max(0, t - 1.2))), o: suave(prog(t, t0, t0 + 0.06)) * (1 - 0.85 * sel * (f.k === 0 ? 0 : 1)), bright: 1 + 0.9 * onda + 0.8 * eleito });
       f.cab.style.opacity = (suave(prog(t, t0, t0 + 0.05)) * (1 - suave(prog(t, t0 + 0.28, t0 + 0.55)))).toFixed(4);
       f.cab.style.left = `${(p * 100).toFixed(3)}%`;
     });
@@ -91,8 +91,8 @@ Motion.cena('oficios', {
       const apaga = eleito ? 0 : sel;
       set(w.el, {
         pre: w.pre,
-        x: w.ux * 1.2 * (1 - e) + (eleito ? 0.4 * sel : 0),
-        y: w.uy * 1.2 * (1 - e) + 0.16 * corpo * (1 - e),
+        x: w.ux * (1.2 * (1 - e) + 0.5 * Math.max(0, t - 1.2)) + (eleito ? 0.4 * sel : 0),
+        y: w.uy * (1.2 * (1 - e) + 0.5 * Math.max(0, t - 1.2)) + 0.16 * corpo * (1 - e),
         o: suave(prog(t, t0, t0 + 0.2)) * (1 - 0.74 * apaga),
         blur: 0.1 * corpo * (1 - e) + 0.12 * apaga,
         bright: 1 + 0.35 * onda + 0.15 * (eleito ? sel : 0),
@@ -103,7 +103,7 @@ Motion.cena('oficios', {
 
     set(el.halo, { s: 0.62 + 0.08 * ease.outCubic(prog(t, T.dispara, T.dispara + 0.8)) + 0.02 * api.vida(t, { inicio: 1, periodo: 3.3 }), o: 0.7 + 0.1 * bell(t, T.dispara + 0.1, 0.2) });
     api.fx.respirar(t, el.luz, { periodo: 4.2, amp: 0.07 });
-    el.cam.pose({ zoom: 1 + 0.01 * t, giro: 0.5 * Math.sin((2 * Math.PI * t) / 10) });
+    el.cam.pose({ zoom: 1 + 0.018 * t, giro: 1.6 * Math.sin((2 * Math.PI * t) / 9) });
   },
 });
 }

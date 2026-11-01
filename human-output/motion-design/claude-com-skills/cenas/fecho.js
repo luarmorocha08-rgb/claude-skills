@@ -47,12 +47,12 @@ Motion.cena('fecho', {
     const torce = 220 * ease.inCubic(prog(t, T.centro[0], T.some[1]));
     const giro = lerp(-70, 0, ease.outExpo(prog(t, T.nasce, T.nasce + 0.7)))
       + 90 * ease.inOutExpo(prog(t, T.gesto, T.gesto + 0.24)) + fisica.tique(t, T.gesto + 0.24, { passa: 6 })
-      + 4 * (t - 2.9) + torce;
+      + 10 * (t - 2.9) + torce;
     const quente = 1 - ease.outCubic(prog(t, T.nasce, T.nasce + 0.8));
     const absorve = suave(prog(t, T.suga + 0.05, T.suga + 0.3));
     set(el.simb, {
       x: sx, y: sy, r: giro,
-      s: (0.1 + 0.9 * ease.outBack(1.5)(nasce)) * (1 + 0.025 * api.vida(t, { inicio: 2.0, periodo: 2.6 })) * (1 + 0.08 * Math.sin(Math.PI * prog(t, T.centro[1] - 0.12, T.centro[1] + 0.1))) * sSome,
+      s: (0.1 + 0.9 * ease.outBack(1.5)(nasce)) * (1 + 0.05 * api.vida(t, { inicio: 1.7, periodo: 2.2 })) * (1 + 0.08 * Math.sin(Math.PI * prog(t, T.centro[1] - 0.12, T.centro[1] + 0.1))) * sSome,
       o: suave(prog(t, T.nasce, T.nasce + 0.12)) * (1 - suave(prog(some, 0.7, 1))),
       blur: 0.25 * ease.inCubic(prog(t, T.centro[0], T.some[1])),
       bright: 1 + 1.3 * quente + 0.7 * absorve,
@@ -73,7 +73,8 @@ Motion.cena('fecho', {
     const pf = [P.x, P.y];
     tipo.aplicar(el.letras,
       tipo.nascerDaLuz(t, el.letras, { inicio: T.marca, cascata: 0.038, aplicar: false }),
-      tipo.sugar(t, el.letras, { inicio: T.suga + 0.04, dur: 0.26, ponto: pf, aplicar: false }));
+      tipo.sugar(t, el.letras, { inicio: T.suga + 0.04, dur: 0.26, ponto: pf, aplicar: false }),
+      tipo.exalar(t, el.letras, { inicio: 1.7, velocidade: 0.012, ref: 2.9, aplicar: false }));
     tipo.brilho(t, el.letras, { inicio: T.brilho, dur: 0.75, forca: 0.45 });
     tipo.aplicar(el.palavras,
       tipo.focar(t, el.palavras, { inicio: T.convite, cascata: 0.05, aplicar: false }),
@@ -83,7 +84,7 @@ Motion.cena('fecho', {
     // a luz de fundo respira e se apaga junto com a faísca: o último quadro é a cor de fundo
     api.fx.respirar(t, el.luz, { periodo: 3.8, amp: 0.07 });
     el.luz.style.opacity = ((1 - ease.inOutSine(prog(t, T.some[0] - 0.2, T.traco[1] - 0.02))) * suave(prog(t, 0, 0.5))).toFixed(4);
-    el.cam.pose({ zoom: lerp(0.98, 1, ease.outQuad(prog(t, 0, 2.9))) * (1 + 0.008 * Math.max(0, t - 2.9)) });
+    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
   },
 });
 }
