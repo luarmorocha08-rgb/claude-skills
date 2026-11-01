@@ -749,6 +749,36 @@ body.m-com-player {
 .cena-entregas .cartoes { position: absolute; inset: 0; }
 .cena-entregas .cartao { width: 17cqw; left: 50%; top: 50%; box-shadow: inset 0 0 0 0.35cqi color-mix(in srgb, var(--texto) 12%, transparent), 0 2cqmin 5cqmin color-mix(in srgb, #000 55%, transparent); }
 
+/* ── cenas/montagem.css ── */
+/* montagem — o CSS natural de cada tomada: o nome de um lado, o artefato grande do outro. */
+.cena-montagem { --luz-a-x: 66%; --luz-a-y: 50%; --luz-b-x: 30%; --luz-b-y: 70%; }
+.cena-montagem .tomada { position: absolute; inset: 0; }
+.cena-montagem .lado-palavra { position: absolute; top: 50%; left: 5cqw; width: 42cqw; transform: translateY(-50%); text-align: right; }
+.cena-montagem .lado-obj { position: absolute; top: 50%; left: 52cqw; width: 42cqw; height: 26.25cqw; margin-top: -13.125cqw; }
+.cena-montagem .invertida .lado-palavra { left: 53cqw; text-align: left; }
+.cena-montagem .invertida .lado-obj { left: 6cqw; }
+.cena-montagem .palavra { font-size: 17cqmin; white-space: nowrap; line-height: 1; }
+.cena-montagem .cartao.grande {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  box-shadow: inset 0 0 0 0.35cqi color-mix(in srgb, var(--texto) 14%, transparent), 0 3cqmin 8cqmin color-mix(in srgb, #000 60%, transparent), 0 0 12cqmin color-mix(in srgb, var(--luz-3) 18%, transparent);
+}
+.cena-montagem .cartao.grande .ct-nome { display: none; }
+.cena-montagem .cartao.grande .ct-arte { top: 9cqi; bottom: 9cqi; height: auto; left: 9cqi; right: 9cqi; }
+
+/* ── cenas/mosaico.css ── */
+/* mosaico — o CSS natural: o mosaico 4 × 2 inteiro, o véu e a frase na frente. */
+.cena-mosaico { --luz-a-x: 50%; --luz-a-y: 50%; --luz-b-x: 20%; --luz-b-y: 80%; }
+.cena-mosaico .grade { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: grid; grid-template-columns: repeat(4, 21cqw); gap: 1.6cqw; }
+.cena-mosaico .vaga { position: relative; aspect-ratio: 16 / 10; }
+.cena-mosaico .vaga .cartao { position: absolute; inset: 0; width: 100%;
+  box-shadow: inset 0 0 0 0.35cqi color-mix(in srgb, var(--texto) 12%, transparent), 0 2cqmin 5cqmin color-mix(in srgb, #000 55%, transparent); }
+.cena-mosaico .veu { position: absolute; inset: -10%; pointer-events: none; opacity: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, color-mix(in srgb, var(--fundo) 92%, transparent) 0%, color-mix(in srgb, var(--fundo) 70%, transparent) 50%, color-mix(in srgb, var(--fundo) 30%, transparent) 100%); }
+.cena-mosaico .frase { font-size: 13.5cqmin; line-height: 1; }
+.cena-mosaico .ponto { width: 9cqmin; height: 9cqmin; margin: -4.5cqmin 0 0 -4.5cqmin; }
+
 /* ── cenas/fecho.css ── */
 /* fecho — o CSS natural é o quadro aprovado: o lockup e o convite. */
 .cena-fecho { --luz-a-x: 50%; --luz-a-y: 50%; --luz-b-x: 66%; --luz-b-y: 72%; }
@@ -773,7 +803,7 @@ body.m-com-player {
 </head>
 <body>
 <div id="palco" data-formato="16x9"></div>
-<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":25.65,"formato":"16x9","montagem":"principal","titulo":"Claude com skills","cenas":[{"id":"pedido","titulo":"O pedido","indice":0,"inicio":0,"dur":3.05,"fim":3.05,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O cursor terracota e as primeiras letras nascendo quentes","t":0.45},{"id":"fim","rotulo":"Fim","legenda":"O pedido inteiro, grande, com o cursor depois da última letra","t":2.2,"aprovado":true},{"id":"meio","rotulo":"Passo 2","legenda":"A frase sugada para o centro, virando luz","t":2.8}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":null,"hash":"b4e5fa90a2977338"},{"id":"faisca","titulo":"A resposta","indice":1,"inicio":3.05,"dur":4,"fim":7.05,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A faísca nasce do ponto, quente, girando","t":0.42},{"id":"meio","rotulo":"Passo 2","legenda":"A faísca desliza e 'Claude' nasce da luz dela","t":1.12},{"id":"fim","rotulo":"Fim","legenda":"O lockup: a faísca, 'Claude' e 'com skills' com o destaque terracota","t":2.45,"aprovado":true}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"35bac1dfcd5665d8"},{"id":"oficios","titulo":"Os ofícios","indice":2,"inicio":7.05,"dur":5,"fim":12.05,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Os feixes disparam da faísca, um a um, no sentido do relógio","t":0.78},{"id":"fim","rotulo":"Fim","legenda":"O sol dos oito ofícios em volta da faísca","t":2.6,"aprovado":true},{"id":"escolha","rotulo":"Passo 3","legenda":"'Motion design' esquenta e os outros se apagam","t":4.05}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"c1d0f4e562a3e45e"},{"id":"bastidor","titulo":"A virada","indice":3,"inicio":11.3,"dur":5.5,"fim":16.8,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A frase e os quadrinhos caindo, ainda apagados","t":0.95},{"id":"meio","rotulo":"Passo 2","legenda":"As barras de tempo se preenchem e acendem os quadrinhos, um a um","t":2.5},{"id":"fim","rotulo":"Fim","legenda":"'Inclusive este vídeo' sobre a prancha do próprio filme, acesa","t":3.85,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"4e83cd9479e96143"},{"id":"entregas","titulo":"As entregas","indice":4,"inicio":16.05,"dur":5.5,"fim":21.55,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O cartão de Motion sozinho, no tamanho do quadrinho 5","t":0.3},{"id":"meio","rotulo":"Passo 2","legenda":"A pilha dos oito artefatos, prendendo o ar","t":1.9},{"id":"fim","rotulo":"Fim","legenda":"A órbita dos artefatos em volta de 'Do pedido à entrega'","t":3.6,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"atravessar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"1cdbc0cf3c0dbf16"},{"id":"fecho","titulo":"A marca","indice":5,"inicio":21.05,"dur":4.6,"fim":25.65,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A faísca renasce de um ponto no escuro","t":0.75},{"id":"fim","rotulo":"Fim","legenda":"O lockup e o convite com 'especialista' em terracota","t":2.9,"aprovado":true},{"id":"ponto","rotulo":"Saída","legenda":"A faísca vira um ponto e solta um traço horizontal de luz","t":4.24}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"atravessar","modo":"sobreposta","dur":0.5},"hash":"cde3efa4cb791803"}],"transicoes":[{"de":"pedido","para":"faisca","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte invisível: a próxima cena começa no mesmo ponto de luz","textoEntrada":null,"corte":3.05,"antes":0,"depois":0,"inicio":3.05,"fim":3.05,"dur":0},{"de":"faisca","para":"oficios","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte invisível na faísca, que continua no centro","textoEntrada":null,"corte":7.05,"antes":0,"depois":0,"inicio":7.05,"fim":7.05,"dur":0},{"de":"oficios","para":"bastidor","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".alvo","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no 'o' de Motion","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":11.3,"fim":12.05,"corte":null,"dur":0.75},{"de":"bastidor","para":"entregas","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".q5 .mini","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no quadrinho 5","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":16.05,"fim":16.8,"corte":null,"dur":0.75},{"de":"entregas","para":"fecho","tipo":"atravessar","modo":"sobreposta","opcoes":{"ate":4,"__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":21.05,"fim":21.55,"corte":null,"dur":0.5}],"cortes":[3.05,7.05],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
+<script>window.MOTION_LINHA={"fps":60,"bpm":184,"total":47.571,"formato":"16x9","montagem":"principal","titulo":"Claude com skills","cenas":[{"id":"pedido","titulo":"O pedido","indice":0,"inicio":0,"dur":5.437,"fim":5.437,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O cursor e as primeiras letras nascendo quentes","t":1},{"id":"fim","rotulo":"Fim","legenda":"O pedido inteiro, grande, com o cursor depois da última letra","t":3.6,"aprovado":true},{"id":"meio","rotulo":"Saída","legenda":"A frase sugada para o centro, virando luz","t":5.2}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":null,"hash":"faa77001c62e2b2f"},{"id":"faisca","titulo":"A resposta","indice":1,"inicio":5.437,"dur":5.217,"fim":10.654,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A faísca nasce do ponto, quente, girando","t":0.42},{"id":"meio","rotulo":"Passo 2","legenda":"A faísca desliza e 'Claude' nasce da luz dela","t":1.2},{"id":"fim","rotulo":"Fim","legenda":"O lockup com 'com skills'","t":3.6,"aprovado":true}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"4070518015f0c7ed"},{"id":"oficios","titulo":"Os ofícios","indice":2,"inicio":10.654,"dur":5.218,"fim":15.872,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O drop: os feixes disparam e os ofícios começam a pousar","t":1},{"id":"fim","rotulo":"Fim","legenda":"O sol dos oito ofícios","t":3,"aprovado":true},{"id":"escolha","rotulo":"Passo 3","legenda":"'Motion design' esquenta","t":4.25}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"8d9634faaaf9523f"},{"id":"bastidor","titulo":"A virada","indice":3,"inicio":15.122,"dur":5.973,"fim":21.095,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A frase e os quadrinhos caindo em colcheias","t":1.3},{"id":"meio","rotulo":"Passo 2","legenda":"Um quadrinho acende por batida","t":3.2},{"id":"fim","rotulo":"Fim","legenda":"'Inclusive este vídeo' sobre a prancha acesa","t":4.55,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"aa546ebea6fa24db"},{"id":"entregas","titulo":"As entregas","indice":4,"inicio":20.345,"dur":5.972,"fim":26.317,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O cartão de Motion sozinho","t":0.4},{"id":"meio","rotulo":"Passo 2","legenda":"A pilha, um cartão por batida","t":2.9},{"id":"fim","rotulo":"Fim","legenda":"A órbita em volta de 'Do pedido à entrega'","t":4.9,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"atravessar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"mergulho","modo":"sobreposta","dur":0.75},"hash":"e60763d1121a2db8"},{"id":"montagem","titulo":"Em ação","indice":5,"inicio":25.817,"dur":10.936,"fim":36.753,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Planilhas: a grade se monta nas batidas","t":1.6},{"id":"meio","rotulo":"Passo 2","legenda":"Código, do outro lado","t":5.4},{"id":"fim","rotulo":"Fim","legenda":"Motion design, o último compasso","t":10.6,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"atravessar","modo":"sobreposta","dur":0.5},"hash":"2e57b336b58373e2"},{"id":"mosaico","titulo":"Tudo isso","indice":6,"inicio":36.753,"dur":5.218,"fim":41.971,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Os artefatos batendo na mesa","t":1.4},{"id":"fim","rotulo":"Fim","legenda":"'Tudo isso a partir de uma frase' sobre o mosaico","t":3.9,"aprovado":true}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"c23bda70e0ca04de"},{"id":"fecho","titulo":"A marca","indice":7,"inicio":41.971,"dur":5.6,"fim":47.571,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A faísca renasce do ponto","t":0.5},{"id":"fim","rotulo":"Fim","legenda":"O lockup e o convite, pousado na última pancada","t":3.2,"aprovado":true},{"id":"ponto","rotulo":"Saída","legenda":"O traço de luz","t":5.1}],"tipo":"marca-em-etapas","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"corte","modo":"encadeada","dur":0},"hash":"d291de177bb0a7af"}],"transicoes":[{"de":"pedido","para":"faisca","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte invisível: a próxima cena começa no mesmo ponto de luz","textoEntrada":null,"corte":5.437,"antes":0,"depois":0,"inicio":5.437,"fim":5.437,"dur":0},{"de":"faisca","para":"oficios","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte invisível na faísca, que continua no centro","textoEntrada":null,"corte":10.654,"antes":0,"depois":0,"inicio":10.654,"fim":10.654,"dur":0},{"de":"oficios","para":"bastidor","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".alvo","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no 'o' de Motion","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":15.122,"fim":15.872,"corte":null,"dur":0.75},{"de":"bastidor","para":"entregas","tipo":"mergulho","modo":"sobreposta","opcoes":{"alvo":".q5 .mini","ponte":null,"antecipacao":0.2,"recuo":0.025,"escurecer":0.4,"cobrir":1.15,"alvoTexto":"no quadrinho 5","__dur":0.75,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":20.345,"fim":21.095,"corte":null,"dur":0.75},{"de":"entregas","para":"montagem","tipo":"atravessar","modo":"sobreposta","opcoes":{"ate":4,"__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":25.817,"fim":26.317,"corte":null,"dur":0.5},{"de":"montagem","para":"mosaico","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte seco no tempo forte da frase","textoEntrada":null,"corte":36.753,"antes":0,"depois":0,"inicio":36.753,"fim":36.753,"dur":0},{"de":"mosaico","para":"fecho","tipo":"corte","modo":"encadeada","opcoes":{"__dur":0,"__antes":0,"__depois":0},"texto":"Corte invisível no ponto de luz","textoEntrada":null,"corte":41.971,"antes":0,"depois":0,"inicio":41.971,"fim":41.971,"dur":0}],"cortes":[5.437,10.654,36.753,41.971],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
 window.MOTION_FONTES=[{"familia":"Instrument Serif","peso":"400","estilo":"normal"},{"familia":"Instrument Serif","peso":"400","estilo":"italic"},{"familia":"Inter","peso":"400","estilo":"normal"},{"familia":"Inter","peso":"500","estilo":"normal"},{"familia":"JetBrains Mono","peso":"400","estilo":"normal"}];
 window.MOTION_MIDIA={};
 window.MOTION_SVG={};
@@ -4181,7 +4211,7 @@ window.MOTION_CATALOGO={"corte":{"modo":"encadeada","antes":0,"depois":0,"opcoes
    cena começa no mesmo ponto. */
 {
 const FRASE = 'Faz um vídeo que <span class="destaque">surpreenda</span>';
-const T = { cursor: 0.0, digita: 0.24, suga: 2.6, sugaDur: 0.3 };
+const T = { cursor: 0.0, digita: 0.5, suga: 5.0, sugaDur: 0.3, pulsos: [0.22, 2.829] };
 
 Motion.cena('pedido', {
   render: () => `
@@ -4198,9 +4228,9 @@ Motion.cena('pedido', {
     // ritmo de digitação humano: pausa maior na troca de palavra, variação por semente
     let tt = T.digita;
     el.tempos = el.letras.map((p, i) => {
-      if (i > 0 && p.palavra !== el.letras[i - 1].palavra) tt += 0.07;
+      if (i > 0 && p.palavra !== el.letras[i - 1].palavra) tt += 0.09;
       const t0 = tt;
-      tt += 0.042 + 0.022 * api.rand(i + 7);
+      tt += 0.056 + 0.03 * api.rand(i + 7);
       return t0;
     });
     el.fimDigita = el.tempos[el.tempos.length - 1];
@@ -4255,10 +4285,10 @@ Motion.cena('pedido', {
     set(el.brasa, {
       x: lerp(cx * 0.6, 0, q), y: el.cy,
       s: 0.55 + 0.1 * digitando + 0.35 * cresce,
-      o: 0.22 + 0.2 * suave(prog(t, T.digita, T.digita + 0.6)) + 0.35 * cresce,
+      o: 0.22 + 0.2 * suave(prog(t, T.digita, T.digita + 0.6)) + 0.35 * cresce + T.pulsos.reduce((a, p) => a + 0.25 * api.fisica.impacto(t, p, { decaimento: 1.2 }), 0),
     });
     api.fx.respirar(t, el.luz, { periodo: 3.4, amp: 0.07 });
-    el.cam.pose({ zoom: lerp(1.1, 1, ease.outCubic(prog(t, 0, 2.2))) * api.viva(t) });
+    el.cam.pose({ zoom: lerp(1.12, 1, ease.inOutSine(prog(t, 0, 4.6))) * (1 + 0.01 * Math.max(0, t - 4.6)) });
   },
 });
 }
@@ -4273,7 +4303,7 @@ Motion.cena('pedido', {
    Batidas: 0 nasce · 0,52 gesto · 0,78 desliza · 0,86 "Claude" · b(3) "com skills" · 1,78 destaque ·
    2,55 brilho · 3,2 tragadas · 3,38–3,98 centro. */
 {
-const T = { gesto: 0.52, desliza: [0.74, 1.32], marca: 0.84, sub: 1.5, varre: 1.78, brilho: 2.55, suga: 3.18, centro: [3.36, 3.98] };
+const T = { gesto: 0.6, desliza: [0.86, 1.46], marca: 0.96, sub: 2.608, varre: 2.86, brilho: 3.45, suga: 4.3, centro: [4.46, 5.03], prende: [4.95, 5.217] };
 const LADO = 16; // cqmin: a faísca do lockup
 const SOL = 20; // cqmin: a faísca do sol (cena "oficios")
 
@@ -4310,10 +4340,10 @@ Motion.cena('faisca', {
     const sx = -P.x * fora, sy = -P.y * fora;
     const nasce = prog(t, 0.0, 0.5);
     const sNasce = 0.1 + 0.9 * ease.outBack(1.5)(nasce);
-    const sFim = lerp(1, SOL / LADO, c);
+    const sFim = lerp(1, SOL / LADO, c) * (1 - 0.06 * ease.inOutSine(prog(t, T.prende[0], T.prende[1])));
     const giro = lerp(-70, 0, ease.outExpo(prog(t, 0, 0.7)))
       + 90 * ease.inOutExpo(prog(t, T.gesto, T.gesto + 0.24)) + fisica.tique(t, T.gesto + 0.24, { passa: 6 })
-      + 10 * (t - T.centro[1]) + 45 * ease.inOutCubic(prog(t, T.centro[0], T.centro[1]));
+      + 10 * (t - 5.217) + 45 * ease.inOutCubic(prog(t, T.centro[0], T.centro[1]));
     const vGiro = Math.abs(ease.inOutExpo(prog(t + 0.01, T.gesto, T.gesto + 0.24)) - ease.inOutExpo(prog(t - 0.01, T.gesto, T.gesto + 0.24))) * 90 / 0.02;
     const quente = 1 - ease.outCubic(prog(t, 0, 0.8));
     const absorve = suave(prog(t, T.suga + 0.05, T.suga + 0.3)) * (1 - suave(prog(t, T.centro[0] + 0.1, T.centro[1])));
@@ -4322,7 +4352,7 @@ Motion.cena('faisca', {
       x: sx, y: sy, r: giro, s: sNasce * sFim * respira,
       o: suave(prog(t, 0.0, 0.12)),
       blur: Math.min(0.5, vGiro * 0.00045),
-      bright: 1 + 1.3 * quente + 0.5 * absorve,
+      bright: 1 + 1.3 * quente + 0.5 * absorve + 0.3 * ease.inCubic(prog(t, T.prende[0], T.prende[1])) + 0.35 * api.fisica.impacto(t, T.sub, { decaimento: 0.9 }),
     });
     // ponto de luz (herdado da cena anterior) se desfaz dentro da faísca que nasce
     set(el.ponto, { s: 1 + 0.6 * ease.outCubic(prog(t, 0, 0.3)), o: 1 - suave(prog(t, 0.04, 0.32)) });
@@ -4337,7 +4367,7 @@ Motion.cena('faisca', {
     const pf = [P.x, P.y];
     const ma = tipo.nascerDaLuz(t, el.letras, { inicio: T.marca, cascata: 0.038, aplicar: false });
     const ms = tipo.sugar(t, el.letras, { inicio: T.suga + 0.04, dur: 0.26, ponto: pf, aplicar: false });
-    tipo.aplicar(el.letras, ma, ms, tipo.exalar(t, el.letras, { inicio: 1.4, velocidade: 0.012, ref: 2.45, aplicar: false }));
+    tipo.aplicar(el.letras, ma, ms, tipo.exalar(t, el.letras, { inicio: 1.4, velocidade: 0.012, ref: 3.6, aplicar: false }));
     tipo.brilho(t, el.letras, { inicio: T.brilho, dur: 0.75, forca: 0.45 });
     // ── "com skills"
     const sa = tipo.focar(t, el.sub, { inicio: T.sub, cascata: 0.022, aplicar: false });
@@ -4354,15 +4384,16 @@ Motion.cena('faisca', {
 }
 
 //# sourceURL=cenas/faisca.js</script>
-<script>/* oficios — "Os ofícios" (5 s)
-   Ideia: a faísca vira um sol. Ela prende o ar e, na batida, cada raio dispara um feixe de luz no
-   sentido do relógio; na ponta de cada feixe nasce um ofício. No hold uma onda de luz corre pelos
-   feixes uma vez. Na batida 7 "Motion design" esquenta até a terracota, os outros se apagam, e a
-   câmera mergulha dentro do "o" de "Motion" (transição do motor).
-   Começa exatamente onde a "faisca" terminou: a faísca no centro, 20 cqmin, raios em 0°. */
+<script>/* oficios — "Os ofícios" (5,217 s = uma frase da música, do drop até o primeiro mergulho)
+   Ideia: a faísca vira um sol. No drop (t = 0) ela solta o ar que prendeu no fim da cena anterior
+   e os oito feixes disparam numa rajada; na ponta de cada feixe um ofício pousa, um por batida, no
+   sentido do relógio. A faísca pulsa a cada batida. Na batida 8 uma onda de luz corre pelos
+   feixes; na batida 12 "Motion design" esquenta, os outros se apagam, e a câmera mergulha no "o"
+   (transição do motor, 0,75 s), chegando na cena seguinte exatamente no início da próxima frase. */
 {
 const RX = 25.5, RY = 33; // elipse das âncoras: cqw na horizontal, cqh na vertical
-const T = { prende: 0.36, dispara: 0.5, passo: 0.045, onda: 2.1, escolhe: 3.5 };
+const P = 0.3261; // uma batida da música
+const T = { passo: 0.04, onda: 8 * P, escolhe: 12 * P };
 const ORDEM = [6, 7, 0, 1, 2, 3, 4, 5]; // começa no alto e gira no sentido do relógio
 
 Motion.cena('oficios', {
@@ -4411,38 +4442,39 @@ Motion.cena('oficios', {
     const { prog, ease, lerp, suave, set } = api;
     const bell = (x, c, w) => Math.exp(-(((x - c) / w) ** 2));
     const ordem = (k) => ORDEM.indexOf(k);
-    const tb = (k) => T.dispara + ordem(k) * T.passo;
-    const sel = ease.inOutSine(prog(t, T.escolhe, T.escolhe + 0.45));
+    const tb = (k) => ordem(k) * T.passo; // os feixes: rajada no drop
+    const tw = (k) => (ordem(k) + 1) * P; // os ofícios: um por batida
+    const sel = ease.inOutSine(prog(t, T.escolhe, T.escolhe + 0.4));
+    // pulso de cada batida (ataque de um quadro, decai rápido)
+    const nb = Math.floor(t / P), pulso = api.fisica.impacto(t, nb * P, { decaimento: 0.28 });
 
-    // ── a faísca: prende o ar, solta na batida (objeto: mola curta), depois respira
-    const prende = ease.inOutSine(prog(t, 0, T.dispara));
-    const solta = api.spring(Math.max(0, t - T.dispara), { freq: 1.7, damp: 6 });
-    const s = (1 - 0.06 * prende * (t < T.dispara ? 1 : 0)) * (t < T.dispara ? 1 : lerp(0.94, 1, solta))
-      * (1 + 0.02 * api.vida(t, { inicio: 1.4, periodo: 2.8 }));
-    set(el.sol, { r: 10 * t * (1 - 0.6 * ease.inOutSine(prog(t, 0, 0.5))) + 6 * api.vida(t, { inicio: 1.0, periodo: 3.6 }), s: s * (1 + 0.05 * api.vida(t, { inicio: 1.0, periodo: 2.4 })), bright: 1 + 0.3 * prende * (t < T.dispara ? 1 : 0) + 0.35 * bell(t, T.dispara + 0.12, 0.14) + 0.25 * sel });
+    // ── a faísca: solta no drop com mola curta (objeto), depois pulsa na batida
+    const solta = api.spring(t, { freq: 1.7, damp: 6 });
+    const s = lerp(0.94, 1, solta) * (1 + 0.035 * pulso) * (1 + 0.03 * api.vida(t, { inicio: 1.0, periodo: 2.4 }));
+    set(el.sol, { r: 10 * t * (1 - 0.6 * ease.inOutSine(prog(t, 0, 0.6))) + 6 * api.vida(t, { inicio: 1.0, periodo: 3.6 }), s, bright: 1 + 0.6 * bell(t, 0.06, 0.12) + 0.18 * pulso + 0.25 * sel });
     el.raios.forEach((r, k) => {
-      const flick = bell(t, tb(k) + 0.03, 0.07);
+      const flick = bell(t, tb(k) + 0.03, 0.06) + 0.35 * bell(t, tw(k), 0.06);
       r.style.transform = `rotate(${k * 45}deg) scale(${(1 - 0.08 * flick).toFixed(4)}, ${(1 + 0.22 * flick).toFixed(4)})`;
     });
 
     // ── feixes: disparam do raio para fora, com uma cabeça de luz que corre e se apaga na ponta
     el.feixes.forEach((f) => {
       const t0 = tb(f.k);
-      const p = ease.forte(prog(t, t0, t0 + 0.46));
-      const onda = bell(t, T.onda + ordem(f.k) * 0.11, 0.1);
+      const p = ease.forte(prog(t, t0, t0 + 0.4));
+      const onda = bell(t, T.onda + ordem(f.k) * 0.08, 0.08);
       const eleito = f.k === 0 ? sel : 0;
       f.el.style.transform = `rotate(var(--ang)) translateX(var(--r0))`;
-      set(f.fio, { pre: '', sx: Math.max(0.0005, p * (1 + 0.025 * Math.max(0, t - 1.2))), o: suave(prog(t, t0, t0 + 0.06)) * (1 - 0.85 * sel * (f.k === 0 ? 0 : 1)), bright: 1 + 0.9 * onda + 0.8 * eleito });
-      f.cab.style.opacity = (suave(prog(t, t0, t0 + 0.05)) * (1 - suave(prog(t, t0 + 0.28, t0 + 0.55)))).toFixed(4);
+      set(f.fio, { pre: '', sx: Math.max(0.0005, p * (1 + 0.025 * Math.max(0, t - 1.2))), o: suave(prog(t, t0, t0 + 0.05)) * (1 - 0.85 * sel * (f.k === 0 ? 0 : 1)), bright: 1 + 0.9 * onda + 0.8 * eleito + 0.5 * bell(t, tw(f.k), 0.08) });
+      f.cab.style.opacity = (suave(prog(t, t0, t0 + 0.05)) * (1 - suave(prog(t, t0 + 0.25, t0 + 0.5)))).toFixed(4);
       f.cab.style.left = `${(p * 100).toFixed(3)}%`;
     });
 
     // ── ofícios: nascem quando a luz chega na ponta, empurrados um fio para fora
     const corpo = el.corpo;
     el.palavras.forEach((w) => {
-      const t0 = tb(w.k) + 0.24;
+      const t0 = tw(w.k) - 0.03;
       const e = ease.forte(prog(t, t0, t0 + 0.6));
-      const onda = bell(t, T.onda + ordem(w.k) * 0.11 + 0.08, 0.12);
+      const onda = bell(t, T.onda + ordem(w.k) * 0.08 + 0.06, 0.1);
       const eleito = w.k === 0;
       const apaga = eleito ? 0 : sel;
       set(w.el, {
@@ -4457,9 +4489,9 @@ Motion.cena('oficios', {
       w.el.style.color = eleito && sel > 0 ? `color-mix(in srgb, var(--destaque) ${(sel * 100).toFixed(1)}%, var(--texto))` : '';
     });
 
-    set(el.halo, { s: 0.62 + 0.08 * ease.outCubic(prog(t, T.dispara, T.dispara + 0.8)) + 0.02 * api.vida(t, { inicio: 1, periodo: 3.3 }), o: 0.7 + 0.1 * bell(t, T.dispara + 0.1, 0.2) });
+    set(el.halo, { s: 0.62 + 0.08 * ease.outCubic(prog(t, 0, 0.8)) + 0.02 * api.vida(t, { inicio: 1, periodo: 3.3 }), o: 0.7 + 0.2 * bell(t, 0.1, 0.25) + 0.06 * pulso });
     api.fx.respirar(t, el.luz, { periodo: 4.2, amp: 0.07 });
-    el.cam.pose({ zoom: 1 + 0.018 * t, giro: 1.6 * Math.sin((2 * Math.PI * t) / 9) });
+    el.cam.pose({ zoom: (1 + 0.018 * t) * (1 + 0.035 * bell(t, 0.05, 0.25) + 0.006 * pulso), giro: 1.6 * Math.sin((2 * Math.PI * t) / 9) });
   },
 });
 }
@@ -4473,7 +4505,8 @@ Motion.cena('oficios', {
    o primeiro quadro da cena seguinte (transição do motor).
    Os primeiros 0,75 s acontecem por baixo do mergulho da cena anterior: a entrada começa em 0,4. */
 {
-const T = { frase: 0.4, quadros: 0.78, regua: [1.0, 1.6], varre: [1.55, 3.65], brilho: 3.05, foco: 4.3 };
+const P = 0.3261; // uma batida da música; t = 0,755 é o início da frase musical (fim do mergulho)
+const T = { frase: 0.62, quadros: 0.92, varre: [0.755 + 5 * P, 0.755 + 11 * P], brilho: 0.755 + 11 * P, foco: 0.755 + 12 * P };
 const BATIDAS = 52; // o filme tem ~26 s a 120 BPM
 
 Motion.cena('bastidor', {
@@ -4501,7 +4534,7 @@ Motion.cena('bastidor', {
       el: q, i, aceso: q.querySelector('.aceso'), num: q.querySelector('.num'), mini: q.querySelector('.mini'),
       trilho: q.querySelector('.trilho'), enche: q.querySelector('.enche'), ticks: [...q.querySelectorAll('.tk')],
     }));
-    el.tempos = api.fx.accelerando(6, { de: 0.11, ate: 0.05 }).map((x) => T.quadros + x);
+    el.tempos = [0, 1, 2, 3, 4, 5].map((i) => T.quadros + i * (P / 2)); // em colcheias
     el.fzMini = el.$$('.mini .faisca');
     el.luz = el.$('.luz');
     el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.5 }, { el: el.$('.c-meio'), z: 0 }] });
@@ -4521,8 +4554,8 @@ Motion.cena('bastidor', {
       const eleito = q.i === 4;
       // a barra de tempo do quadrinho se preenche; quando chega ao fim, o quadrinho está aceso
       const a = T.varre[0] + q.i * passo;
-      const f = ease.inOutSine(prog(t, a, a + passo * 1.08));
-      const tocando = suave(prog(t, a - 0.04, a + 0.06)) * (1 - suave(prog(t, a + passo, a + passo + 0.25)));
+      const f = ease.forte(prog(t, a, a + passo * 1.6));
+      const tocando = api.fisica.impacto(t, a, { decaimento: 0.5 });
       set(q.el, {
         y: 3 * (1 - ease.outExpo(p)),
         s: 0.95 + 0.05 * Math.min(1.035, ease.outBack(2.2)(p)),
@@ -4561,7 +4594,8 @@ Motion.cena('bastidor', {
 {
 const W = 17; // cqw: largura de cada cartão na pilha e na órbita
 const HEROI = 26; // cqw: a largura do cartão de Motion na miniatura 5 (26 % do quadro)
-const T = { assenta: [0.55, 1.15], cai: 0.98, prende: [1.82, 2.0], explode: 2.0, frase: 2.45, varre: 2.85, brilho: 3.7 };
+const P = 0.3261; // uma batida; t = 0,755 é o início da frase musical (fim do mergulho)
+const T = { assenta: [0.7, 1.2], prende: [0.755 + 7 * P, 0.755 + 8 * P], explode: 0.755 + 8 * P, frase: 0.755 + 9 * P, varre: 0.755 + 10 * P, brilho: 0.755 + 12 * P };
 const RX = 37, RY = 16.4; // a órbita, em cqw
 const PILHA = [[0, 0, 0], [-1.6, -0.9, -8], [1.4, -1.2, 7], [-0.8, 0.9, -4], [1.9, 0.6, 10], [-2.1, 0.2, 5], [0.7, -0.5, -10], [-0.4, 0.4, 3]];
 
@@ -4584,7 +4618,7 @@ Motion.cena('entregas', {
         fi0: Math.PI / 2 + (k * Math.PI) / 4,
       };
     });
-    el.chegadas = [0, ...api.fx.accelerando(7, { de: 0.085, ate: 0.032 }).map((x) => T.cai + x)];
+    el.chegadas = [0, 1, 2, 3, 4, 5, 6, 7].map((k) => 0.755 + k * P); // um cartão por batida
     el.palavras = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
     el.letrasDestaque = api.tipo.dividir(el.$('.frase .destaque'), { por: 'letra' });
     el.fzs = el.$$('.cartoes .faisca');
@@ -4596,7 +4630,7 @@ Motion.cena('entregas', {
   quadro(t, el, api) {
     const { prog, ease, lerp, suave, set, fisica, tipo } = api;
     const impactos = el.chegadas.slice(1);
-    const afunda = fisica.afundar(t, impactos, { forca: 0.012 });
+    const afunda = fisica.afundar(t, impactos, { forca: 0.016 });
     const prende = ease.inOutSine(prog(t, T.prende[0], T.prende[1])) * (1 - suave(prog(t, T.explode, T.explode + 0.05)));
     const sPilha = 1 + afunda - 0.035 * prende;
     // a órbita nunca para: um piso constante e um embalo que vem da explosão e se desfaz
@@ -4611,11 +4645,11 @@ Motion.cena('entregas', {
         x = 0; y = 0; r = 0; s = lerp(HEROI / W, 1, a); o = 1;
       } else {
         const tl = el.chegadas[c.k];
-        const q = prog(t, tl - 0.3, tl);
+        const q = prog(t, tl - 0.26, tl);
         const e = ease.inQuad(q);
         x = lerp(c.ax, c.px, e); y = lerp(c.ay, c.py, e); r = lerp(c.pr + c.ar, c.pr, ease.outCubic(q));
         s = lerp(1.3, 1, e);
-        o = suave(prog(t, tl - 0.3, tl - 0.24));
+        o = suave(prog(t, tl - 0.26, tl - 0.2));
       }
       x *= sPilha; y *= sPilha; s *= sPilha;
       // ── explosão em espiral até a órbita (o herói decola 70 ms depois)
@@ -4652,6 +4686,176 @@ Motion.cena('entregas', {
 }
 
 //# sourceURL=cenas/entregas.js</script>
+<script>/* montagem — "Em ação" (10,93 s = duas frases da música; o primeiro quadro cheio em t = 0,5)
+   Ideia: um ofício por compasso (4 batidas = 1,304 s), oito no total. Em cada um, o artefato chega
+   grande pela direita num chicote, girado em 3D, e as peças dele (células, barras, linhas, quadros)
+   saltam no lugar acompanhando as batidas; o nome do ofício sai do desfoque do outro lado. No fim
+   do compasso tudo sai pela esquerda acelerando e o próximo já entra pela direita: um movimento
+   contínuo, como uma câmera que corre de mesa em mesa. Os lados alternam a cada compasso.
+   Os primeiros 0,5 s acontecem por baixo da travessia da cena anterior. */
+{
+const P = 0.3261, BAR = 4 * P, T0 = 0.5;
+const SEQ = [1, 2, 3, 4, 5, 6, 7, 0]; // termina em Motion design
+const PECAS = '.cel, .ar-grafico i, .sb-q, .cp-p, .cd-lin, .ar-chave, .sl-tit, .sl-sub, .sl-barras i, .sl-lin i, .pg-tit, .ar-pagina > i, .ar-fz';
+
+Motion.cena('montagem', {
+  render: () => `
+    <div class="camada c-longe"><div class="luz"></div></div>
+    <div class="camada c-meio">
+      ${SEQ.map((k, i) => `
+        <div class="tomada t${i} ${i % 2 ? 'invertida' : ''}">
+          <div class="lado-palavra"><h2 class="titulo palavra">${OFICIOS[k].nome}</h2></div>
+          <div class="lado-obj">${Cartoes.html(k, { classe: 'grande' })}</div>
+        </div>`).join('')}
+    </div>`,
+
+  montar(el, api) {
+    el.tomadas = el.$$('.tomada').map((tm, i) => {
+      const cartao = tm.querySelector('.cartao');
+      const pecas = [...cartao.querySelectorAll(PECAS)];
+      return {
+        el: tm, i, inv: i % 2 === 1,
+        s: T0 + i * BAR,
+        palavra: tm.querySelector('.lado-palavra'),
+        obj: tm.querySelector('.lado-obj'),
+        cartao,
+        letras: (api.tipo.caber(tm.querySelector('.palavra'), { largura: 0.41, max: 17 }), api.tipo.dividir(tm.querySelector('.palavra'), { por: 'letra' })),
+        pecas: pecas.map((e, n) => ({ el: e, n, f: pecas.length > 1 ? n / (pecas.length - 1) : 0 })),
+        fz: cartao.querySelector('.faisca'),
+      };
+    });
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.5 }, { el: el.$('.c-meio'), z: 0 }] });
+  },
+
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, set, tipo } = api;
+    const nb = Math.floor((t - T0) / P), pulso = t >= T0 ? api.fisica.impacto(t, T0 + nb * P, { decaimento: 0.25 }) : 0;
+    el.tomadas.forEach((tm) => {
+      const u = t - tm.s;
+      const ativo = u > -0.02 && u < BAR + 0.02;
+      // entrada: chicote da direita (arranque rápido, pouso longo); saída: acelera para a esquerda
+      const ent = ease.outExpo(prog(u, 0, 0.42));
+      const sai = ease.inExpo(prog(u, BAR - 0.16, BAR));
+      const vel = (1 - ent) * 40 + sai * 40; // para o rastro de movimento
+      const lado = tm.inv ? -1 : 1; // onde o objeto mora (1 = direita)
+      const ox = 30 * (1 - ent) - 34 * sai;
+      set(tm.obj, {
+        x: ox,
+        ry: -16 * lado * (1 - 0.4 * ent) + 10 * (1 - ent), persp: 1400,
+        s: lerp(0.9, 1, ent) * (1 + 0.012 * pulso) * (1 + 0.012 * u),
+        o: ativo ? suave(prog(u, 0, 0.06)) * (1 - suave(prog(u, BAR - 0.04, BAR))) : 0,
+        blur: 0.02 * vel,
+      });
+      set(tm.palavra, {
+        x: 16 * (1 - ent) - 24 * sai,
+        o: ativo ? 1 - suave(prog(u, BAR - 0.06, BAR)) : 0,
+        blur: 0.012 * vel,
+      });
+      if (!ativo) {
+        tipo.focar(-10, tm.letras, { inicio: 0 });
+        tm.pecas.forEach((pc) => set(pc.el, { o: 0 }));
+        return;
+      }
+      tipo.focar(u, tm.letras, { inicio: 0.06, cascata: 0.016, dur: 0.45 });
+      // as peças saltam no lugar ao longo das três primeiras batidas (objeto: mola curta)
+      tm.pecas.forEach((pc) => {
+        const t0 = 0.12 + pc.f * 2.6 * P;
+        const q = prog(u, t0, t0 + 0.32);
+        set(pc.el, {
+          o: suave(prog(u, t0, t0 + 0.06)),
+          s: lerp(0.55, 1, Math.min(1.06, ease.outBack(2.4)(q))),
+          y: 1.5 * (1 - ease.outExpo(q)),
+          px: false,
+        });
+      });
+      if (tm.fz) tm.fz.style.transform = `rotate(${(30 * u).toFixed(3)}deg)`;
+    });
+    // a luz troca de lado a cada compasso, sempre por trás do objeto
+    const i = Math.max(0, Math.min(7, Math.floor((t - T0) / BAR)));
+    const lado = i % 2 ? -1 : 1;
+    el.luz.style.setProperty('--luz-a-x', `${(50 + 16 * lado).toFixed(2)}%`);
+    api.fx.respirar(t, el.luz, { periodo: 2.6, amp: 0.06, base: 1 + 0.18 * pulso });
+    el.cam.pose({ zoom: 1 + 0.006 * pulso + 0.004 * (t - 5), giro: 0.8 * Math.sin((2 * Math.PI * t) / 5.2) });
+  },
+});
+}
+
+//# sourceURL=cenas/montagem.js</script>
+<script>/* mosaico — "Tudo isso" (5,217 s = uma frase da música)
+   Ideia: os oito artefatos voltam e batem na mesa, um por batida, vindos de perto da câmera,
+   montando um mosaico 4 × 2 que ocupa o quadro. Na batida 8 o mosaico recua e escurece e a frase
+   "Tudo isso a partir de uma frase" sai do desfoque na frente (a rima com o pedido do começo). Na
+   batida 14 tudo é tragado para o centro e vira o ponto de luz de onde o fecho nasce. */
+{
+const P = 0.3261;
+const ORDEM = [0, 5, 2, 7, 4, 1, 6, 3]; // a ordem em que os cartões batem (salta pela grade)
+const T = { recua: 8 * P, frase: 8 * P + 0.05, varre: 10 * P, suga: 14 * P, ponto: 14 * P + 0.2 };
+
+Motion.cena('mosaico', {
+  render: () => `
+    <div class="camada c-longe"><div class="luz"></div></div>
+    <div class="camada c-meio">
+      <div class="grade">${OFICIOS.map((o, k) => `<div class="vaga">${Cartoes.html(k)}</div>`).join('')}</div>
+      <span class="veu"></span>
+      <div class="pilha"><h2 class="titulo frase">Tudo isso a partir<br>de <span class="destaque">uma frase</span></h2></div>
+      <span class="ponto ponto-luz"></span>
+    </div>`,
+
+  montar(el, api) {
+    el.grade = el.$('.grade');
+    const g = Pos(el.grade); // a grade é centrada por translate(-50%,-50%), que o layout não vê
+    el.vagas = el.$$('.vaga').map((v, k) => { const q = Pos(v); return { el: v, k, t0: ORDEM.indexOf(k) * P, p: { x: q.x - g.x, y: q.y - g.y } }; });
+    el.letras = api.tipo.dividir(el.$('.frase'), { por: 'letra' });
+    el.destaque = el.letras.filter((p) => p.destaque);
+    el.veu = el.$('.veu');
+    el.ponto = el.$('.ponto');
+    el.fzs = el.$$('.grade .faisca');
+    el.luz = el.$('.luz');
+    el.cam = api.camera({ camadas: [{ el: el.$('.c-longe'), z: -0.5 }, { el: el.$('.c-meio'), z: 0 }] });
+  },
+
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, set, tipo, fisica } = api;
+    const recua = ease.inOutSine(prog(t, T.recua - 0.05, T.recua + 0.5));
+    const suga = ease.inCubic(prog(t, T.suga, T.suga + 0.36));
+    let choque = 0;
+    el.vagas.forEach((v) => {
+      const q = prog(t, v.t0 - 0.2, v.t0);
+      const chega = ease.inQuad(q); // acelera até bater
+      choque += fisica.impacto(t, v.t0, { decaimento: 0.3 });
+      const mola = t > v.t0 ? 1 - 0.05 * Math.exp(-(t - v.t0) * 9) * Math.cos((t - v.t0) * 40) : 1;
+      set(v.el, {
+        s: lerp(1.9, 1, chega) * mola * lerp(1, 0.15, suga),
+        x: -v.p.x * suga * 0.98,
+        y: -v.p.y * suga * 0.98,
+        r: lerp(v.k % 2 ? 8 : -8, 0, chega),
+        o: suave(prog(t, v.t0 - 0.2, v.t0 - 0.14)) * (1 - suave(prog(suga, 0.6, 1))),
+        blur: 0.7 * (1 - chega) + 0.18 * recua + 0.3 * suga,
+        bright: (1 - 0.6 * recua) * (1 + 1.5 * suga),
+      });
+    });
+    el.fzs.forEach((f) => { f.style.transform = `rotate(${(20 * t).toFixed(3)}deg)`; });
+    set(el.grade, { s: lerp(1, 0.92, recua) * (1 + 0.004 * choque) });
+    el.veu.style.opacity = (0.85 * recua * (1 - suga)).toFixed(4);
+
+    // a frase: sai do desfoque na frente; na batida 14 é tragada junto com tudo para o centro
+    tipo.aplicar(el.letras,
+      tipo.focar(t, el.letras, { inicio: T.frase, cascata: 0.02, aplicar: false }),
+      tipo.sugar(t, el.letras, { inicio: T.suga, dur: 0.32, ponto: [0, 0], aplicar: false }));
+    tipo.varrerDestaque(t, el.letras, { inicio: T.varre, dur: 0.45 });
+
+    const cresce = ease.inCubic(prog(t, T.suga + 0.1, T.suga + 0.36));
+    set(el.ponto, { s: 0.15 + 0.55 * cresce + 0.3 * ease.outCubic(prog(t, T.suga + 0.32, api.dur)), o: cresce });
+    api.fx.respirar(t, el.luz, { periodo: 3, amp: 0.07, base: 1 + 0.1 * Math.min(1, choque) });
+    el.luz.style.opacity = (1 - 0.6 * suga).toFixed(4);
+    const tremor = api.tremor(t, Math.floor(t / P) * P, { forca: t < 8 * P ? 0.12 : 0 });
+    el.cam.pose({ zoom: (1 + 0.012 * t) * (1 + 0.006 * Math.min(1, choque)), x: tremor.x, y: tremor.y });
+  },
+});
+}
+
+//# sourceURL=cenas/mosaico.js</script>
 <script>/* fecho — "A marca" (4,6 s)
    Ideia: rima com a resposta. Um ponto acende no escuro e vira a faísca com o mesmo gesto (meia
    chave + tique); ela desliza, "Claude" nasce da luz dela e o convite sobe embaixo, com
@@ -4660,7 +4864,7 @@ Motion.cena('entregas', {
    último quadro já é a cor de fundo.
    Os primeiros ~0,25 s acontecem por baixo da travessia da cena anterior. */
 {
-const T = { ponto: 0.22, nasce: 0.34, gesto: 0.86, desliza: [1.06, 1.62], marca: 1.14, convite: 1.8, varre: 2.15, brilho: 2.95, suga: 3.6, centro: [3.72, 4.0], some: [3.98, 4.3], traco: [4.2, 4.6] };
+const T = { ponto: -1, nasce: 0.06, gesto: 0.62, desliza: [0.84, 1.4], marca: 0.92, convite: 1.6, golpe: 1.66, varre: 1.92, brilho: 2.9, suga: 4.3, centro: [4.42, 4.7], some: [4.68, 5.0], traco: [4.9, 5.42] };
 
 Motion.cena('fecho', {
   render: () => `
@@ -4712,16 +4916,16 @@ Motion.cena('fecho', {
       bright: 1 + 1.3 * quente + 0.7 * absorve,
     });
     // ponto de luz: acende no escuro, a faísca nasce dele; no fim volta a ser ponto e apaga
-    const pIn = suave(prog(t, T.ponto, T.ponto + 0.14)) * (1 - suave(prog(t, T.nasce + 0.04, T.nasce + 0.3)));
+    const pIn = 1 - suave(prog(t, T.nasce + 0.04, T.nasce + 0.3));
     const pOut = suave(prog(some, 0.4, 0.9)) * (1 - suave(prog(t, T.traco[0] + 0.05, T.traco[1] - 0.05)));
-    set(el.ponto, { s: 0.3 + 0.7 * ease.outCubic(prog(t, T.ponto, T.ponto + 0.25)) + 0.4 * pOut, o: Math.max(pIn, pOut) });
+    set(el.ponto, { s: 1 + 0.4 * ease.outCubic(prog(t, 0, 0.3)) * pIn + 0.4 * pOut, o: Math.max(pIn, pOut) });
     // o traço horizontal: nasce do ponto, corre para as pontas e apaga desacelerando
     const tr = prog(t, T.traco[0], T.traco[1]);
     set(el.traco, { sx: Math.max(0.0005, ease.outExpo(tr)), o: suave(prog(tr, 0, 0.08)) * (1 - ease.inOutSine(prog(tr, 0.25, 1))) });
     set(el.halo, {
       x: P.x + sx, y: P.y + sy,
       s: (0.45 + 0.25 * ease.outCubic(nasce)) * lerp(1, 0.6, ease.inCubic(some)),
-      o: (0.25 + 0.45 * ease.outCubic(nasce) - 0.15 * d * (1 - c) + 0.05 * Math.sin((2 * Math.PI * (t - 1)) / 3.1)) * (1 - ease.inOutSine(prog(t, T.some[0], T.traco[1] - 0.05))) * suave(prog(t, T.ponto, T.ponto + 0.3)),
+      o: (0.25 + 0.45 * ease.outCubic(nasce) - 0.15 * d * (1 - c) + 0.05 * Math.sin((2 * Math.PI * (t - 1)) / 3.1)) * (1 - ease.inOutSine(prog(t, T.some[0], T.traco[1] - 0.05))) * 1 + 0.45 * api.fisica.impacto(t, T.golpe, { decaimento: 0.7 }),
     });
 
     const pf = [P.x, P.y];
@@ -4731,14 +4935,14 @@ Motion.cena('fecho', {
       tipo.exalar(t, el.letras, { inicio: 1.7, velocidade: 0.012, ref: 2.9, aplicar: false }));
     tipo.brilho(t, el.letras, { inicio: T.brilho, dur: 0.75, forca: 0.45 });
     tipo.aplicar(el.palavras,
-      tipo.focar(t, el.palavras, { inicio: T.convite, cascata: 0.05, aplicar: false }),
+      tipo.focar(t, el.palavras, { inicio: T.convite, cascata: 0.03, dur: 0.45, aplicar: false }),
       tipo.sugar(t, el.palavras, { inicio: T.suga, dur: 0.3, ponto: pf, aplicar: false }));
     tipo.varrerDestaque(t, el.destaque, { inicio: T.varre, dur: 0.5 });
 
     // a luz de fundo respira e se apaga junto com a faísca: o último quadro é a cor de fundo
     api.fx.respirar(t, el.luz, { periodo: 3.8, amp: 0.07 });
-    el.luz.style.opacity = ((1 - ease.inOutSine(prog(t, T.some[0] - 0.2, T.traco[1] - 0.02))) * suave(prog(t, 0, 0.5))).toFixed(4);
-    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
+    el.luz.style.opacity = ((1 - ease.inOutSine(prog(t, T.some[0] - 0.2, T.traco[1] - 0.02))) * (0.4 + 0.6 * suave(prog(t, 0, 0.6)))).toFixed(4);
+    el.cam.pose({ zoom: lerp(0.94, 1, ease.inOutSine(prog(t, 0, 2.9))) * (1 + 0.015 * Math.max(0, t - 2.9)) * (1 + 0.025 * api.fisica.impacto(t, T.golpe, { decaimento: 0.6 })), x: 0.5 * Math.sin((2 * Math.PI * t) / 6.4), y: 0.25 * Math.sin((2 * Math.PI * t) / 5.1) });
   },
 });
 }
