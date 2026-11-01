@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23151619'/%3E%3Cpath d='M11 9l12 7-12 7z' fill='%23f4f4f2'/%3E%3C/svg%3E">
+<title>Atenção · v2</title>
+<style>
+:root {
+  --pg-fundo: #f4f4f2;
+  --pg-papel: #ffffff;
+  --pg-tinta: #151619;
+  --pg-suave: #676a72;
+  --pg-fraca: #9a9ca3;
+  --pg-fio: #e2e2df;
+  --pg-fio-forte: #cfcfcb;
+  --pg-raio: 14px;
+  --pg-sombra: 0 1px 2px rgba(20, 21, 25, 0.06), 0 8px 28px rgba(20, 21, 25, 0.08);
+  --pg-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --pg-mono: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  --pg-tipo: #4b55a8;
+  --pg-camera: #1f7a73;
+  --pg-transicao: #9a5b13;
+  --pg-luz: #8a7414;
+  --pg-objeto: #a3404f;
+  --pg-vida: #3f7a3a;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--pg-fundo);
+  color: var(--pg-tinta);
+  font: 15px/1.55 var(--pg-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, p, figure, ol, ul { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+h1, h2, h3, h4 { font-weight: 400; }
+a { color: inherit; }
+img, video { display: block; max-width: 100%; }
+main { max-width: 1320px; margin: 0 auto; padding: 0 16px 72px; }
+@media (min-width: 720px) { main { padding: 0 40px 96px; } }
+.sobre { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pg-suave); }
+.num { font-variant-numeric: tabular-nums; }
+.pilula {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 26px; padding: 0 11px; border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--pg-fio-forte);
+  font-size: 12px; color: var(--pg-tinta); white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.etiqueta {
+  display: inline-flex; align-items: center; height: 22px; padding: 0 9px; border-radius: 999px;
+  background: var(--pg-papel); box-shadow: inset 0 0 0 1px var(--pg-fio);
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pg-suave); white-space: nowrap;
+}
+.botao {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 40px; padding: 0 18px; border-radius: 999px; border: 0;
+  background: var(--pg-tinta); color: #fff; text-decoration: none; cursor: pointer;
+  font: 500 13px/1 var(--pg-sans); letter-spacing: 0.01em; white-space: nowrap;
+  transition: transform 140ms cubic-bezier(0.23, 1, 0.32, 1), background-color 140ms;
+}
+.botao:hover { background: #2a2c31; }
+.botao:active { transform: scale(0.97); }
+.botao small { font-weight: 400; opacity: 0.66; }
+.botao.contorno { background: transparent; color: var(--pg-tinta); box-shadow: inset 0 0 0 1px var(--pg-fio-forte); }
+.botao.contorno:hover { background: rgba(20, 21, 25, 0.05); }
+.quadro {
+  position: relative; overflow: hidden; border-radius: 10px; background: #0d0d0e;
+  box-shadow: var(--pg-sombra);
+}
+.quadro img, .quadro video { width: 100%; height: 100%; object-fit: cover; }
+
+.entrega { padding-top: 48px; }
+.cab { display: grid; gap: 14px; padding-bottom: 32px; }
+.cab h1 { font-size: clamp(40px, 6.4vw, 96px); line-height: 0.95; letter-spacing: -0.045em; text-wrap: balance; max-width: 16ch; }
+.cab .meta { color: var(--pg-suave); font-size: 15px; }
+.cab .nota { font-size: 15px; max-width: 60ch; }
+.acoes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.videos { display: grid; gap: 24px; align-items: start; }
+.videos.dois { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 980px) { .videos.dois { grid-template-columns: minmax(0, 2.6fr) minmax(0, 1fr); } }
+.videos.um.f9x16 { max-width: 460px; }
+.video .tela { overflow: hidden; border-radius: 14px; background: #0c0c0d; box-shadow: var(--pg-sombra); }
+.video .tela.f16x9 { aspect-ratio: 16 / 9; }
+.video .tela.f9x16 { aspect-ratio: 9 / 16; max-height: 80vh; margin: 0 auto; }
+.video video { width: 100%; height: 100%; object-fit: contain; background: #0c0c0d; }
+.video figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-top: 12px; font-size: 13.5px; color: var(--pg-suave); }
+.video figcaption b { font-weight: 500; color: var(--pg-tinta); margin-right: 6px; }
+.baixar { display: flex; flex-wrap: wrap; gap: 6px; }
+.baixar .botao { height: 34px; padding: 0 14px; font-size: 12.5px; }
+.sec { padding-top: 52px; }
+.sec > h2 { margin-bottom: 18px; }
+.cenas ol { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px 14px; }
+.cenas button { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.cenas button:hover .mini { box-shadow: 0 0 0 2px var(--pg-tinta), var(--pg-sombra); }
+.cenas p { display: flex; justify-content: space-between; gap: 8px; margin-top: 8px; font-size: 13px; color: var(--pg-suave); }
+.cenas p b { font-weight: 400; color: var(--pg-tinta); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.so-cena { display: inline-block; margin-top: 4px; font-size: 12px; color: var(--pg-suave); }
+.mini { overflow: hidden; border-radius: 8px; background: #0c0c0d; box-shadow: var(--pg-sombra); transition: box-shadow 160ms; }
+.mini.f16x9 { aspect-ratio: 16 / 9; }
+.mini.f9x16 { aspect-ratio: 9 / 16; }
+.mini img { width: 100%; height: 100%; object-fit: cover; }
+.sb-cena { display: grid; gap: 14px; padding: 22px 0; border-top: 1px solid var(--pg-fio); }
+@media (min-width: 980px) { .sb-cena { grid-template-columns: 260px minmax(0, 1fr); column-gap: 32px; } .sb-cena .sb-batidas { grid-column: 2; } }
+.sb-cena header { display: grid; gap: 4px; align-content: start; }
+.sb-cena header .num { font-size: 13px; color: var(--pg-suave); }
+.sb-cena h3 { font-size: 22px; letter-spacing: -0.02em; }
+.sb-cena header p { color: var(--pg-suave); font-size: 14px; text-wrap: pretty; }
+.sb-quadros { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.sb-quadros.f9x16 { grid-template-columns: repeat(auto-fill, minmax(130px, 160px)); }
+.sb-quadros figcaption { margin-top: 6px; font-size: 12.5px; color: var(--pg-suave); text-wrap: pretty; }
+.sb-batidas { display: grid; gap: 6px; font-size: 13.5px; }
+.sb-batidas .num { display: inline-block; min-width: 52px; color: var(--pg-suave); }
+.sb-batidas em { font-style: normal; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--pg-fraca); margin-right: 4px; }
+.versoes li { display: grid; grid-template-columns: 48px 96px 1fr auto; gap: 12px; padding: 10px 0; border-top: 1px solid var(--pg-fio); font-size: 14px; align-items: baseline; }
+.versoes .links a { color: var(--pg-tinta); }
+@media (max-width: 640px) { .versoes li { grid-template-columns: 40px 1fr; } .versoes li > span:nth-child(3), .versoes .links { grid-column: 1 / -1; } }
+.mudar { margin-top: 56px; padding: 28px; border-radius: 18px; background: var(--pg-papel); box-shadow: inset 0 0 0 1px var(--pg-fio); }
+.mudar h2 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.03em; }
+.mudar p { margin-top: 6px; color: var(--pg-suave); }
+.mudar ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 18px; }
+.mudar li { padding: 12px 14px; border-radius: 12px; background: var(--pg-fundo); font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="entrega">
+  <header class="cab">
+    <p class="sobre">Motion · v2 · 01/11/2026</p>
+    <h1>Atenção</h1>
+    <p class="meta num">16,5 s · 60 qps · 9:16 · 4 cenas</p>
+    <p class="nota">Nesta versão: relógio vira sem salto; brasa pulsa na batida na virada</p>
+    <div class="acoes">
+      <a class="botao" href="render/v2/atencao-v2.zip" download>Baixar tudo <small>.zip · 6,9 MB</small></a>
+      <a class="botao contorno" href="storyboard/index.html" target="_blank" rel="noopener">Storyboard</a>
+    </div>
+  </header>
+  <section class="videos um f9x16"><figure class="video f9x16">
+    <div class="tela f9x16"><video id="video-9x16" src="render/v2/atencao-9x16-60fps.mp4" poster="render/v2/capa-9x16.png" controls muted loop playsinline preload="metadata"></video></div>
+    <figcaption>
+      <div><b>9:16</b> <span class="num">1080×1920 · 60 qps · 6,4 MB</span></div>
+      <div class="baixar">
+        <a class="botao" href="render/v2/atencao-9x16-60fps.mp4" download>MP4 <small>9:16</small></a>
+        <a class="botao contorno" href="render/v2/capa-9x16.png" download>Capa <small>PNG</small></a>
+        
+      </div>
+    </figcaption>
+  </figure></section>
+  <section class="sec cenas"><h2 class="sobre">Cenas</h2><ol><li><button type="button" data-t="0" title="Ver a partir daqui"><div class="mini f9x16"><img src="storyboard/quadros/9x16/01-tensao-fim.png" alt="" loading="eager"></div><p><b>01 · O gancho</b><span class="num">00:00,0</span></p></button></li><li><button type="button" data-t="6" title="Ver a partir daqui"><div class="mini f9x16"><img src="storyboard/quadros/9x16/02-virada-fim.png" alt="" loading="eager"></div><p><b>02 · A virada</b><span class="num">00:06,0</span></p></button></li><li><button type="button" data-t="9" title="Ver a partir daqui"><div class="mini f9x16"><img src="storyboard/quadros/9x16/03-promessa-fim.png" alt="" loading="eager"></div><p><b>03 · A promessa</b><span class="num">00:09,0</span></p></button></li><li><button type="button" data-t="12.5" title="Ver a partir daqui"><div class="mini f9x16"><img src="storyboard/quadros/9x16/04-convite-fim.png" alt="" loading="eager"></div><p><b>04 · O convite</b><span class="num">00:12,5</span></p></button></li></ol></section>
+  <section class="sec"><h2 class="sobre">Storyboard</h2><article class="sb-cena"><header><span class="num">01</span><h3>O gancho</h3><p>ATENÇÃO, cortada ao meio, se reencontra devagar: as metades vêm das bordas e chegam a um fio uma da outra, sem nunca encostar.</p></header><div class="sb-quadros f9x16"><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/01-tensao-inicio.png" alt="" loading="eager"></div><figcaption>Início · As metades nas bordas do quadro, o preto no meio</figcaption></figure><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/01-tensao-meio.png" alt="" loading="eager"></div><figcaption>Passo 2 · Elas se aproximam; a fenda começa a acender; o relógio em 2</figcaption></figure><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/01-tensao-fim.png" alt="" loading="eager"></div><figcaption>Fim · A um fio de encostar, a fenda em brasa; o relógio em 5</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Objeto</em> As metades entram pelas bordas, de cima e de baixo, rápidas no começo e cada vez mais devagar (como se nunca fossem chegar).</li><li><span class="num">1,0 s</span> <em>Tipografia</em> O relógio sai do desfoque: “você está aqui há 1 segundo”. Cada segundo vira na hora certa, o número sobe de pertinho.</li><li><span class="num">3,0 s</span> <em>Luz</em> A fenda entre elas acende do centro para as pontas e esquenta a cada centímetro que falta.</li><li><span class="num">4,5 s</span> <em>Câmera</em> A um fio: a câmera treme 0,1 %, as metades dão dois micro-avanços e param (quase).</li><li><span class="num">5,5 s</span> <em>Vida no hold</em> Hold: a brasa respira, a câmera continua chegando; nada encosta.</li></ol></article><article class="sb-cena"><header><span class="num">02</span><h3>A virada</h3><p>O relógio some e a frase abraça a palavra: em cima “Você ficou 6 segundos”, embaixo “esperando isso encostar”.</p></header><div class="sb-quadros f9x16"><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/02-virada-inicio.png" alt="" loading="eager"></div><figcaption>Início · O relógio sai, a frase de cima chega do desfoque</figcaption></figure><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/02-virada-fim.png" alt="" loading="eager"></div><figcaption>Fim · A frase emoldura a palavra cortada</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Tipografia</em> O relógio sobe e se desfaz em 250 ms.</li><li><span class="num">0,1 s</span> <em>Tipografia</em> “Você ficou 6 segundos” sai do desfoque, palavra a palavra, 45 ms entre elas.</li><li><span class="num">0,6 s</span> <em>Tipografia</em> Na batida, “esperando isso encostar” sobe por baixo, mais apagada.</li><li><span class="num">1,5 s</span> <em>Vida no hold</em> Hold: a brasa respira, as metades tremem a um fio.</li><li><span class="num">2,0 s</span> <em>Luz</em> Na batida, a brasa da fenda dá um pulso de calor, como se fosse encostar agora.</li><li><span class="num">2,6 s</span> <em>Transição</em> As duas frases recuam para o desfoque e a fenda começa a abrir.</li></ol></article><article class="sb-cena"><header><span class="num">03</span><h3>A promessa</h3><p>A fenda vira janela: as metades se afastam para fora do quadro, a brasa abre e de dentro dela sai a frase.</p></header><div class="sb-quadros f9x16"><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/03-promessa-inicio.png" alt="" loading="eager"></div><figcaption>Início · As metades se separam, a luz abre de dentro</figcaption></figure><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/03-promessa-fim.png" alt="" loading="eager"></div><figcaption>Fim · A frase no centro, “atenção” em brasa</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Objeto</em> As metades se separam com arranque macio e saem pelas bordas em 600 ms, acelerando.</li><li><span class="num">0,1 s</span> <em>Luz</em> A brasa da fenda abre na vertical e vira um campo de luz quente.</li><li><span class="num">0,5 s</span> <em>Tipografia</em> A frase sai do desfoque linha a linha; “atenção” acende por último, na brasa.</li><li><span class="num">1,0 s</span> <em>Luz</em> Na batida, “atenção” é varrida da cor do texto para a brasa.</li><li><span class="num">1,5 s</span> <em>Câmera</em> A câmera assenta e a luz de trás respira uma vez.</li><li><span class="num">2,0 s</span> <em>Vida no hold</em> Hold: o degradê de “atenção” deriva e um brilho atravessa a palavra uma vez.</li><li><span class="num">3,2 s</span> <em>Transição</em> A frase é sugada para uma linha horizontal de luz, que vira a fenda da próxima.</li></ol></article><article class="sb-cena"><header><span class="num">04</span><h3>O convite</h3><p>A colisão que o filme prometeu: as metades de SITES vêm das bordas e encostam na batida, com um estalo de luz na emenda.</p></header><div class="sb-quadros f9x16"><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/04-convite-inicio.png" alt="" loading="eager"></div><figcaption>Início · A pergunta no alto; as metades de SITES ainda longe</figcaption></figure><figure><div class="mini f9x16"><img src="storyboard/quadros/9x16/04-convite-fim.png" alt="" loading="eager"></div><figcaption>Fim · SITES inteira, a emenda ainda quente; o convite completo</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Tipografia</em> “Quer um site assim?” sai do desfoque palavra a palavra.</li><li><span class="num">0,5 s</span> <em>Objeto</em> As metades de SITES entram pelas bordas, desta vez rápidas e decididas.</li><li><span class="num">1,5 s</span> <em>Objeto</em> Batida 3: ENCOSTAM. Um estalo de luz corre pela emenda do centro para as pontas e a câmera recebe o peso (2 %).</li><li><span class="num">2,0 s</span> <em>Tipografia</em> “me chama no direct ou comenta” sobe palavra a palavra, apontando para SITES.</li><li><span class="num">2,8 s</span> <em>Vida no hold</em> Hold até o fim: a emenda esfria devagar, o degradê de SITES deriva.</li><li><span class="num">3,5 s</span> <em>Luz</em> Na última batida, um brilho atravessa SITES uma vez e o filme termina vivo, pronto para recomeçar.</li></ol></article></section>
+  <section class="sec versoes"><h2 class="sobre">Versões anteriores</h2><ul><li><b>v1</b><span class="num">01/11/2026</span><span>Primeira versão</span><span class="links"><a href="render/v1/atencao-9x16-60fps.mp4" download>9:16</a></span></li></ul></section>
+  <section class="mudar">
+    <h2>Quer mudar alguma coisa?</h2>
+    <p>É só dizer na conversa, do jeito que falaria com quem animou. Por exemplo:</p>
+    <ul>
+      <li>“Na cena 2, a entrada do texto mais lenta”</li>
+      <li>“O mergulho mais longo, com mais embalo”</li>
+      <li>“Segura mais um segundinho no fim, com a marca”</li>
+      <li>“Troca a frase da cena 1 por …”</li>
+    </ul>
+  </section>
+</main>
+<script>
+const principal = document.getElementById('video-9x16');
+document.querySelectorAll('.cenas button[data-t]').forEach((b) => b.addEventListener('click', () => {
+  if (!principal) return;
+  principal.currentTime = parseFloat(b.dataset.t) + 0.001;
+  principal.play().catch(() => {});
+  principal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}));
+const vistos = new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause())), { threshold: 0.35 });
+document.querySelectorAll('.videos video').forEach((v) => vistos.observe(v));
+</script>
+</body>
+</html>

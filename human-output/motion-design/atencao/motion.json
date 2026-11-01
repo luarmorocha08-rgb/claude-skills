@@ -304,9 +304,29 @@
   },
   "storyboard": {
     "revisao": 2,
-    "aprovadoEm": null
+    "aprovadoEm": "2026-11-01",
+    "revisaoAprovada": 2
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 1,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "Primeira versão"
+    },
+    {
+      "v": 2,
+      "data": "2026-11-01",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "relógio vira sem salto; brasa pulsa na batida na virada"
+    }
+  ],
   "criadoEm": "2026-11-01",
   "cartaz": "Você ficou 6 segundos esperando isso encostar"
 }

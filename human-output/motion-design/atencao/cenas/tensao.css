@@ -6,7 +6,7 @@
 .cena-tensao .cima  { transform: translateY(-0.28cqmin); }
 .cena-tensao .baixo { transform: translateY(0.28cqmin); }
 .cena-tensao .relogio {
-  position: absolute; left: 0; right: 0; top: 17%;
+  position: absolute; left: 0; right: 0; top: 12%;
   display: flex; flex-direction: column; align-items: center; gap: 0.6cqmin;
 }
 .cena-tensao .rotulo, .cena-tensao .un { font-size: 5.6cqmin; font-weight: 300; letter-spacing: 0.01em; margin: 0; }
