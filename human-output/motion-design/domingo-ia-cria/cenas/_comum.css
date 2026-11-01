@@ -1,0 +1,80 @@
+/* Peças da marca que todas as cenas usam. */
+#palco { font-variation-settings: "opsz" 72; }
+.titulo { font-variation-settings: "opsz" 72; }
+.titulo .destaque { font-style: italic; letter-spacing: -0.01em; padding-inline-end: 0.06em; }
+
+/* a luz da marca: âmbar no alto à direita, verde fundo embaixo à esquerda */
+.m-cena .luz { --luz-a-x: 78%; --luz-a-y: 24%; --luz-b-x: 22%; --luz-b-y: 80%; }
+
+/* a grade em perspectiva que some no chão (como na peça) */
+.chao {
+  position: absolute; left: -20cqw; right: -20cqw; bottom: -2cqh; height: 26cqh;
+  background:
+    repeating-linear-gradient(90deg, color-mix(in srgb, var(--texto) 5%, transparent) 0 0.12cqw, transparent 0.12cqw 7cqw),
+    repeating-linear-gradient(0deg, color-mix(in srgb, var(--texto) 4%, transparent) 0 0.12cqw, transparent 0.12cqw 4cqh);
+  transform: perspective(60cqw) rotateX(62deg);
+  transform-origin: 50% 100%;
+  -webkit-mask-image: linear-gradient(0deg, #000 0%, transparent 85%);
+  mask-image: linear-gradient(0deg, #000 0%, transparent 85%);
+}
+
+/* o eixo da marca: tudo alinhado à esquerda, margem de 9 % */
+.coluna { position: absolute; left: 9cqw; right: 9cqw; }
+.rotulo {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  font-weight: 700;
+  font-size: 3.1cqmin;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--destaque);
+}
+
+/* card escuro de borda fina, com o ícone 3D dentro */
+.icone {
+  position: absolute;
+  width: 19cqmin; height: 19cqmin;
+  border-radius: 4.4cqmin;
+  background: linear-gradient(160deg, var(--cartao-claro), var(--cartao));
+  box-shadow: inset 0 0 0 0.16cqmin var(--cartao-borda), 0 2cqmin 5cqmin color-mix(in srgb, #000 55%, transparent);
+  display: grid; place-items: center;
+}
+.icone img { width: 64%; height: 64%; object-fit: contain; }
+
+/* rodapé da marca: monograma + @ */
+.rodape { display: flex; align-items: center; gap: 2.6cqmin; }
+.monograma {
+  width: 9.6cqmin; height: 9.6cqmin; border-radius: 50%;
+  border: 0.32cqmin solid var(--destaque);
+  display: grid; place-items: center;
+  font-family: var(--fonte-titulo); font-size: 4.2cqmin; color: var(--texto);
+  letter-spacing: -0.02em;
+  background: var(--cartao);
+}
+.arroba { font-family: var(--fonte-texto); font-weight: 600; font-size: 4.4cqmin; color: var(--destaque); }
+
+/* o cursor dourado: o fio condutor do filme */
+.cursor {
+  display: inline-block; width: 0.09em; height: 0.95em; margin-left: 0.06em;
+  vertical-align: -0.12em; border-radius: 0.04em;
+  background: var(--destaque);
+  box-shadow: 0 0 1.4cqmin color-mix(in srgb, var(--destaque) 60%, transparent);
+}
+
+/* o personagem: a foto inteira (no hold) e as facetas low-poly (na montagem) */
+.personagem { position: absolute; aspect-ratio: 556 / 1575; }
+.personagem .corpo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.personagem .facetas { position: absolute; inset: 0; opacity: 0; }
+.personagem .facetas i {
+  position: absolute; inset: 0; display: block;
+  background-size: 100% 100%;
+}
+.personagem .facetas i b { position: absolute; inset: 0; background: var(--destaque); opacity: 0; }
+.personagem .sombra-chao {
+  position: absolute; left: -30%; right: -30%; bottom: -3.5%; height: 7%;
+  background: radial-gradient(closest-side, color-mix(in srgb, #000 70%, transparent), color-mix(in srgb, #000 30%, transparent) 50%, transparent);
+}
+.personagem .contraluz {
+  position: absolute; left: -60%; right: -60%; top: -8%; height: 70%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 22%, transparent), color-mix(in srgb, var(--luz-3) 8%, transparent) 50%, transparent);
+}

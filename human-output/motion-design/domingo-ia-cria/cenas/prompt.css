@@ -1,0 +1,14 @@
+.cena-prompt .topo { top: 13cqh; }
+.cena-prompt .rotulo { margin-bottom: 3cqmin; }
+.cena-prompt .card-prompt {
+  border-radius: 4.4cqmin; padding: 4.4cqmin 5cqmin 5.2cqmin;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--cartao-claro) 92%, transparent), color-mix(in srgb, var(--cartao) 92%, transparent));
+  box-shadow: inset 0 0 0 0.16cqmin color-mix(in srgb, var(--destaque) 30%, transparent), 0 3cqmin 8cqmin color-mix(in srgb, #000 60%, transparent);
+}
+.cena-prompt .cabeca { display: flex; align-items: center; gap: 1.8cqmin; margin-bottom: 2.6cqmin;
+  font-family: var(--fonte-texto); font-weight: 600; font-size: 3.2cqmin; color: var(--texto-suave); }
+.cena-prompt .mini { width: 5cqmin; height: 5cqmin; object-fit: contain; }
+.cena-prompt .pedido { margin: 0; font-family: var(--fonte-texto); font-weight: 500; font-size: 6.4cqmin; line-height: 1.22; letter-spacing: -0.015em; color: var(--texto); }
+.cena-prompt .meio-esq { top: 58cqh; right: 50cqw; }
+.cena-prompt .frase { font-size: 13cqmin; }
+.cena-prompt .heroi-direita { height: 50cqh; right: 4cqw; bottom: 3cqh; }

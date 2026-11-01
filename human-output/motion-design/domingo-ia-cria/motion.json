@@ -1,0 +1,479 @@
+{
+  "versao": 1,
+  "titulo": "Um prompt, três criações",
+  "slug": "domingo-ia-cria",
+  "fps": 60,
+  "bpm": 120,
+  "formatoBase": "9x16",
+  "formatos": [
+    "9x16"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Ritmo",
+      "texto": "120 BPM: uma batida = 0,5 s. Cada criação entra na batida 0 e trava na batida 2; um acontecimento a cada meia batida."
+    },
+    {
+      "titulo": "Fio condutor",
+      "texto": "O cursor dourado: escreve o gancho, digita o pedido, pisca dentro de cada criação e assina a frase final. Ele é o 'a IA está criando agora'."
+    },
+    {
+      "titulo": "Texto",
+      "texto": "Serifa da marca, do desfoque para o foco, palavra a palavra (45 ms); o destaque em itálico dourado é varrido por último. Tipografia nunca quica."
+    },
+    {
+      "titulo": "Objetos",
+      "texto": "Navegador, celulares e ícones 3D chegam da profundidade com mola curta; a tela se monta peça a peça, de cima para baixo, num rufar (90 → 40 ms)."
+    },
+    {
+      "titulo": "Câmera",
+      "texto": "Nunca parada: push-in vivo de 1,2 %/s com paralaxe (texto mais perto que o aparelho, luz mais longe), passando por 1,0 no quadro aprovado."
+    },
+    {
+      "titulo": "Hold",
+      "texto": "Legível por pelo menos 0,8 s e vivo: a luz âmbar respira, o cursor pisca macio, um brilho atravessa o destaque uma vez."
+    },
+    {
+      "titulo": "Passagens",
+      "texto": "Mergulho no card do pedido para a plataforma; entre as criações, empurrão para cima no mesmo eixo; a última volta em facetas para o personagem."
+    }
+  ],
+  "referencias": [
+    {
+      "nome": "01-slide",
+      "leitura": "A identidade da marca: fundo quase preto com luz âmbar e verde fundo, serifa editorial com destaque em itálico dourado, rótulo dourado espaçado, ícones 3D em cards escuros, rodapé RR + @ramosraul.ia. Dela vêm só a marca e o ar editorial; o movimento é criação nova."
+    }
+  ],
+  "cenas": [
+    {
+      "id": "gancho",
+      "titulo": "O gancho",
+      "dur": 2.5,
+      "ideia": "Um cursor dourado pisca no escuro e escreve a promessa; a palavra 'criações' acende e, dela, os três ícones saltam para a órbita em volta da IA.",
+      "camera": "Começa 6 % mais perto, no cursor, e recua em duas batidas com curva forte; depois push-in vivo.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "\"Um prompt.\" sendo escrito pelo cursor dourado",
+          "t": 0.05
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "O título escrito; a IA (faísca) nasce no centro, ainda sem as criações",
+          "t": 0.9
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "Título, a IA no aro dourado e as criações em órbita; rodapé da marca",
+          "t": 1.8
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "O cursor pisca duas vezes (macio, 250 ms) e escreve 'Um prompt.' palavra a palavra, cada uma saindo do desfoque."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "'Três criações.' entra na batida; o itálico dourado é varrido da cor do texto para o dourado em 450 ms."
+        },
+        {
+          "t": 0.75,
+          "tipo": "objeto",
+          "texto": "A faísca da IA nasce quente no centro, cresce de 70 % com mola curta e o aro dourado se desenha em volta."
+        },
+        {
+          "t": 1,
+          "tipo": "objeto",
+          "texto": "Notebook, controle, celular, robô e foguete saltam do aro para a órbita em accelerando (90 → 40 ms), com um estalo pequeno cada; a linha tracejada corre atrás."
+        },
+        {
+          "t": 1.5,
+          "tipo": "vida",
+          "texto": "Hold: os ícones flutuam devagar na órbita, cada um no seu período; a luz âmbar respira; o rodapé RR @ramosraul.ia sobe."
+        },
+        {
+          "t": 2.25,
+          "tipo": "transicao",
+          "texto": "Corte no eixo: o título sai acelerando pela câmera e o cursor fica — ele é o primeiro quadro da próxima."
+        }
+      ],
+      "saida": {
+        "tipo": "avancar-desfocar",
+        "texto": "O título avança e desfoca pela câmera; o card do pedido nasce no mesmo lugar, ainda dentro da luz."
+      },
+      "tipo": "frase"
+    },
+    {
+      "id": "prompt",
+      "titulo": "O pedido",
+      "dur": 3.5,
+      "ideia": "O personagem do perfil se monta em facetas low-poly ao lado do card escuro, enquanto o cursor digita o pedido; 'Eu só descrevo.' assenta embaixo.",
+      "camera": "Herda o embalo do corte e segue em push-in vivo; o personagem, mais longe, anda menos que o card.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "As facetas douradas espalhadas no ar, ainda sem forma",
+          "t": 0.2
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "As facetas encaixando dos pés para a cabeça; o card digitando",
+          "t": 1
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O pedido inteiro no card, o personagem montado à direita, a frase à esquerda",
+          "t": 2.6
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "191 facetas do personagem voam de onde o cursor estava e encaixam dos pés para a cabeça, em cascata de 1,1 s, cada uma com um giro curto; chegam douradas e esfriam até a cor real."
+        },
+        {
+          "t": 0.25,
+          "tipo": "objeto",
+          "texto": "O card escuro chega da profundidade (92 → 100 %) e o cursor começa a digitar o pedido, 26 caracteres por segundo."
+        },
+        {
+          "t": 0.75,
+          "tipo": "objeto",
+          "texto": "Metade do personagem montada (das pernas ao peito); o pedido já na segunda linha."
+        },
+        {
+          "t": 1.25,
+          "tipo": "luz",
+          "texto": "A cabeça encaixa por último e a última faceta esfria; o pedido termina com o cursor piscando."
+        },
+        {
+          "t": 1.5,
+          "tipo": "luz",
+          "texto": "Montado: as facetas se fundem na foto inteira num cruzamento de 200 ms; a contraluz âmbar acende atrás dele."
+        },
+        {
+          "t": 1.75,
+          "tipo": "tipo",
+          "texto": "'Eu só descrevo.' sobe palavra a palavra; o itálico é varrido para o dourado na batida 4."
+        },
+        {
+          "t": 2.4,
+          "tipo": "vida",
+          "texto": "Hold: o personagem respira um fio (0,4 %), o cursor pisca macio no fim do pedido."
+        },
+        {
+          "t": 2.9,
+          "tipo": "transicao",
+          "texto": "A câmera mergulha no card do pedido; ele vira a janela do navegador da próxima."
+        }
+      ],
+      "saida": {
+        "tipo": "mergulho",
+        "alvo": ".card-prompt",
+        "alvoTexto": "no card do pedido"
+      },
+      "tipo": "foto-objeto"
+    },
+    {
+      "id": "plataforma",
+      "titulo": "01 · A plataforma",
+      "dur": 3,
+      "ideia": "O card do pedido vira a janela do navegador e a plataforma se escreve de cima para baixo, peça por peça, como se a IA montasse a página na nossa frente.",
+      "camera": "A janela chega inclinada (18° em X) e endireita com mola curta; push-in vivo depois.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A janela chegando inclinada, só o menu do site desenhado",
+          "t": 0.15
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Menu e título da página prontos; o primeiro curso caindo",
+          "t": 0.9
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A plataforma inteira: título com cursor, botão e três cursos com progresso",
+          "t": 1.9
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "A janela herda o mergulho e endireita de 18° para 0° com mola curta (1,4 Hz)."
+        },
+        {
+          "t": 0.25,
+          "tipo": "tipo",
+          "texto": "Menu, chamada e título da página se escrevem de cima para baixo, 70 ms entre peças; o cursor corre no fim do título."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "Em cima, '01 · Plataforma' e 'Uma plataforma de cursos.' saem do desfoque palavra a palavra."
+        },
+        {
+          "t": 0.75,
+          "tipo": "objeto",
+          "texto": "Os três cursos caem em accelerando (90 → 40 ms) e as barras de progresso enchem até 72, 38 e 15 %."
+        },
+        {
+          "t": 1.6,
+          "tipo": "vida",
+          "texto": "Hold: a luz âmbar do site respira, o cursor pisca, um brilho passa uma vez pelo itálico."
+        },
+        {
+          "t": 2.1,
+          "tipo": "luz",
+          "texto": "O cursor do título do site pisca na batida; o botão dourado ganha um brilho que passa uma vez."
+        },
+        {
+          "t": 2.75,
+          "tipo": "transicao",
+          "texto": "Empurrão para cima no mesmo eixo: a plataforma sobe e sai, o celular do jogo chega por baixo."
+        }
+      ],
+      "saida": {
+        "tipo": "empurrar",
+        "direcao": "cima"
+      },
+      "tipo": "aparelho"
+    },
+    {
+      "id": "jogo",
+      "titulo": "02 · O jogo",
+      "dur": 3,
+      "ideia": "O celular chega em pé e gira para o lado como quem vira um console; o mundo low-poly do jogo se ergue em camadas e o personagem do perfil vira o herói da fase.",
+      "camera": "Acompanha o giro do celular com um recuo de 3 % e volta ao push-in vivo quando ele trava deitado.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "O celular em pé, menor, com o céu do jogo",
+          "t": 0.1
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Girando para o lado; as montanhas se erguendo em camadas",
+          "t": 0.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O jogo pronto: o personagem na pista, moedas, obstáculos e placar",
+          "t": 1.9
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "O celular gira 90° em 500 ms (curva simétrica) e trava deitado na batida 1 com um quique pequeno."
+        },
+        {
+          "t": 0.4,
+          "tipo": "objeto",
+          "texto": "As três camadas de montanha sobem de baixo, da mais longe para a mais perto, 80 ms entre elas; o sol acende sem borda."
+        },
+        {
+          "t": 0.9,
+          "tipo": "objeto",
+          "texto": "O personagem cai na pista com um quique ('pof'); moedas acendem uma a uma; os obstáculos rosa brotam do chão."
+        },
+        {
+          "t": 1.1,
+          "tipo": "tipo",
+          "texto": "O placar aparece e conta até 0450 enquanto as moedas são pegas; '02 · Jogo' e o título entram em cima."
+        },
+        {
+          "t": 1.6,
+          "tipo": "vida",
+          "texto": "Hold: as montanhas correm em paralaxe (a de trás mais devagar), o personagem pula de leve no ritmo, o controle 3D flutua."
+        },
+        {
+          "t": 2.1,
+          "tipo": "objeto",
+          "texto": "O personagem pega a última moeda com um pulinho e o placar trava em 0450 na batida."
+        },
+        {
+          "t": 2.75,
+          "tipo": "transicao",
+          "texto": "Empurrão para cima: o jogo sobe e sai, o celular do app chega por baixo."
+        }
+      ],
+      "saida": {
+        "tipo": "empurrar",
+        "direcao": "cima"
+      },
+      "tipo": "aparelho"
+    },
+    {
+      "id": "app",
+      "titulo": "03 · O app",
+      "dur": 3,
+      "ideia": "O celular sobe de pé, a tela se monta card a card e a barra do domingo cresce por último e acende em dourado: o dia de hoje fecha a semana.",
+      "camera": "Push-in vivo; o celular gira um fio em Y (±3°) no hold, como se estivesse na mão.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "O celular chegando girado; só a saudação na tela",
+          "t": 0.1
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Saudação e treino prontos; as barras da semana crescendo",
+          "t": 0.9
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O app pronto, com a barra do domingo acesa em dourado",
+          "t": 1.9
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "O celular chega da profundidade girado 30° e assenta de frente com mola curta."
+        },
+        {
+          "t": 0.25,
+          "tipo": "objeto",
+          "texto": "'Bom domingo, Raul', o card do treino e a semana caem na tela num rufar (90 → 40 ms)."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "'03 · App' e 'Um app de treino.' saem do desfoque palavra a palavra."
+        },
+        {
+          "t": 0.75,
+          "tipo": "objeto",
+          "texto": "As barras crescem da esquerda para a direita, 50 ms entre elas; a do domingo cresce por último, passa um pouco e acende dourada na batida 2."
+        },
+        {
+          "t": 1.6,
+          "tipo": "vida",
+          "texto": "Hold: a barra do domingo brilha macio, o celular respira em Y."
+        },
+        {
+          "t": 2.1,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa a barra do domingo e o número de treinos uma vez."
+        },
+        {
+          "t": 2.6,
+          "tipo": "transicao",
+          "texto": "O celular se desfaz em facetas douradas que voam para a direita: lá o personagem vai se remontar."
+        }
+      ],
+      "saida": {
+        "tipo": "avancar-desfocar"
+      },
+      "tipo": "aparelho"
+    },
+    {
+      "id": "assinatura",
+      "titulo": "A assinatura",
+      "dur": 3.5,
+      "ideia": "As facetas douradas voltam e remontam o personagem; o cursor escreve 'Domingo é dia de criar.' e assina com o monograma.",
+      "camera": "Push-in vivo bem lento (0,8 %/s); no fim, tudo escurece até o fundo nos últimos 0,5 s.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "As facetas douradas voando de volta",
+          "t": 0.15
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "O personagem quase montado; o cursor escrevendo 'criar'",
+          "t": 0.9
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A frase final grande, o personagem à direita, chamada e rodapé da marca",
+          "t": 2.3
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "As facetas cruzam o quadro em arco e encaixam no personagem em 1 s, quentes, e esfriam até a cor real."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "'Domingo é dia de' sobe palavra a palavra; 'criar' é escrito pelo cursor letra a letra e varrido para o dourado na batida 3."
+        },
+        {
+          "t": 1.5,
+          "tipo": "objeto",
+          "texto": "A chamada chega da profundidade com um estalo pequeno; o monograma RR e @ramosraul.ia sobem na meia batida seguinte."
+        },
+        {
+          "t": 2,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa 'criar' uma vez; a contraluz âmbar respira atrás do personagem."
+        },
+        {
+          "t": 3,
+          "tipo": "transicao",
+          "texto": "O cursor pisca uma última vez e tudo esmaece até o fundo: o loop do Reels recomeça no cursor do gancho."
+        }
+      ],
+      "saida": {
+        "tipo": "esmaecer"
+      },
+      "tipo": "marca-em-etapas"
+    }
+  ],
+  "capa": {
+    "cena": "gancho",
+    "quadro": "fim"
+  },
+  "storyboard": {
+    "revisao": 3,
+    "aprovadoEm": null
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-01",
+  "cartaz": "Um prompt. Três criações."
+}

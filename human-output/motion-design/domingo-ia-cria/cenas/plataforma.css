@@ -1,0 +1,26 @@
+.cena-plataforma .topo { top: 13cqh; }
+.cena-plataforma .rotulo { margin-bottom: 3cqmin; }
+.cena-plataforma .frase { font-size: 11cqmin; white-space: nowrap; }
+.cena-plataforma .aparelho { position: absolute; left: 50cqw; top: 61cqh; translate: -50% -50%; }
+.cena-plataforma .janela { width: 90cqw; aspect-ratio: 10 / 10.4; --mockup-moldura: #101215; }
+.cena-plataforma .site { position: absolute; inset: 0; padding: 3.4cqmin 4cqmin; display: flex; flex-direction: column; gap: 3.6cqmin;
+  background: radial-gradient(120% 60% at 90% 0%, color-mix(in srgb, var(--luz-1) 55%, transparent), transparent 60%), var(--cartao); }
+.cena-plataforma .nav { display: flex; align-items: center; gap: 2.4cqmin; }
+.cena-plataforma .nav .marca { width: 4.4cqmin; height: 4.4cqmin; border-radius: 1.2cqmin; background: var(--destaque-grad); }
+.cena-plataforma .nav b { width: 9cqmin; height: 1.2cqmin; border-radius: 1cqmin; background: color-mix(in srgb, var(--texto) 22%, transparent); }
+.cena-plataforma .nav em { margin-left: auto; width: 13cqmin; height: 4.6cqmin; border-radius: 3cqmin; box-shadow: inset 0 0 0 0.16cqmin var(--linha); }
+.cena-plataforma .hero { padding-top: 2cqmin; }
+.cena-plataforma .kicker { margin: 0 0 1.8cqmin; font: 700 2.4cqmin var(--fonte-texto); letter-spacing: 0.26em; text-transform: uppercase; color: var(--destaque); }
+.cena-plataforma .hero h3 { margin: 0; font: 400 9cqmin/0.98 var(--fonte-titulo); letter-spacing: -0.025em; color: var(--texto); }
+.cena-plataforma .hero h3 span:not(.cursor) { font-style: italic; color: var(--destaque); }
+.cena-plataforma .cta { margin-top: 3.4cqmin; width: 26cqmin; height: 6.4cqmin; border-radius: 4cqmin; background: var(--destaque-grad); }
+.cena-plataforma .cursos { margin-top: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4cqmin; }
+.cena-plataforma .curso { border-radius: 2.6cqmin; padding: 1.6cqmin; background: var(--cartao-claro); box-shadow: inset 0 0 0 0.14cqmin var(--cartao-borda); }
+.cena-plataforma .capa { aspect-ratio: 1 / 0.8; border-radius: 1.8cqmin; display: grid; place-items: center; }
+.cena-plataforma .capa img { width: 56%; height: 70%; object-fit: contain; }
+.cena-plataforma .capa-0 { background: linear-gradient(150deg, #2a2230, #17141c); }
+.cena-plataforma .capa-1 { background: linear-gradient(150deg, #33241a, #1a1511); }
+.cena-plataforma .capa-2 { background: linear-gradient(150deg, #1b2b24, #121a17); }
+.cena-plataforma .curso p { margin: 1.6cqmin 0 1.4cqmin; font: 600 2.7cqmin/1.15 var(--fonte-texto); color: var(--texto); }
+.cena-plataforma .barra { height: 0.9cqmin; border-radius: 1cqmin; background: color-mix(in srgb, var(--texto) 12%, transparent); overflow: hidden; }
+.cena-plataforma .barra i { display: block; height: 100%; background: var(--destaque-grad); }

@@ -1,0 +1,37 @@
+/* @ramosraul.ia — lida da peça "As 7 ferramentas de IA" (referencias/01-slide).
+   Fundo quase preto com luz âmbar no alto à direita e um verde fundo embaixo à esquerda;
+   título em serifa editorial clara; destaque em itálico dourado; rótulo dourado espaçado;
+   texto de apoio numa grotesca arredondada; ícones 3D em cards escuros de borda fina. */
+@font-face { font-family: "Newsreader"; src: url("fontes/Newsreader[opsz,wght].ttf") format("truetype"); font-weight: 200 800; font-style: normal; font-display: block; }
+@font-face { font-family: "Newsreader"; src: url("fontes/Newsreader-Italic[opsz,wght].ttf") format("truetype"); font-weight: 200 800; font-style: italic; font-display: block; }
+@font-face { font-family: "Manrope"; src: url("fontes/Manrope[wght].ttf") format("truetype"); font-weight: 200 800; font-style: normal; font-display: block; }
+
+:root {
+  --fundo: #0b0c0e;
+  --texto: #f4efe6;
+  --texto-suave: #a39d93;
+  --destaque: #d6a273;
+  --destaque-grad: linear-gradient(100deg, #c98d58 0%, #e4b98c 55%, #d49c69 100%);
+  --luz-1: #6b4f2c;
+  --luz-2: #10301f;
+  --luz-3: #e2ac72;
+  --brilho: #fff6e8;
+  --linha: color-mix(in srgb, var(--destaque) 32%, transparent);
+
+  --cartao: #121417;
+  --cartao-claro: #1a1d21;
+  --cartao-borda: color-mix(in srgb, #ffffff 9%, transparent);
+  --rosa: #eb4470;
+  --verde: #3fbf7f;
+
+  --fonte-titulo: "Newsreader", ui-serif, Georgia, serif;
+  --fonte-texto: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --titulo-peso: 400;
+  --titulo-tracking: -0.025em;
+  --titulo-entrelinha: 0.98;
+
+  --raio: 2.4cqmin;
+  --mockup-moldura: #08090b;
+  --mockup-raio: 4.4cqmin;
+  --mockup-sombra: #000000;
+}

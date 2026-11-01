@@ -1,0 +1,331 @@
+{
+ "gerado": "2026-11-01T01:09:36.317Z",
+ "ficha": {
+  "arquivo": "/home/user/claude-skills/human-output/motion-design/domingo-ramoraul/referencias/01-slide.mp4",
+  "nome": "01-slide.mp4",
+  "duracao": 8,
+  "largura": 1080,
+  "altura": 1350,
+  "proporcao": "4:5",
+  "orientacao": "vertical",
+  "fps": 30,
+  "fpsTexto": "30/1",
+  "fpsVariavel": false,
+  "quadros": 240,
+  "codec": "h264",
+  "cor": "yuv420p · bt470bg",
+  "bitrate": 1158659,
+  "rotacao": 0,
+  "audio": {
+   "codec": "aac",
+   "canais": 2,
+   "taxa": 44100
+  }
+ },
+ "trecho": {
+  "inicio": 0,
+  "fim": 8,
+  "quadros": 240,
+  "fpsAnalise": 30
+ },
+ "resumo": {
+  "planos": 1,
+  "transicoes": 0,
+  "batidas": 0,
+  "ritmo": "poucos planos para ler uma tendência."
+ },
+ "planos": [
+  {
+   "n": 1,
+   "t0": 0,
+   "t1": 8,
+   "dur": 8,
+   "quadros": [
+    0,
+    239
+   ],
+   "chave": {
+    "a": 0,
+    "b": null,
+    "c": 4
+   },
+   "entrada": null,
+   "saida": null,
+   "hold": {
+    "t0": 0,
+    "t1": 7.9667,
+    "dur": 8,
+    "vida": "em movimento contínuo (filmagem, câmera ou fundo animado)",
+    "energiaMediana": 1.123
+   },
+   "camera": {
+    "escala": 1,
+    "dx": 0,
+    "dy": 0,
+    "erro0": 14.9686,
+    "erro": 14.9686,
+    "ganho": 0,
+    "noLimite": false,
+    "de": 0.0333,
+    "ate": 7.9333,
+    "confiavel": false,
+    "rotulo": "o conteúdo muda demais para medir a câmera por comparação"
+   },
+   "fluxo": {
+    "zoomPct": -3.1668,
+    "dxPct": -0.164,
+    "dyPct": 0.0248,
+    "amostras": 239,
+    "cobertura": 0.6061
+   },
+   "fundo": {
+    "cor": "#131414",
+    "rgb": [
+     18.5331,
+     20.4691,
+     20.0493
+    ],
+    "tipo": "gradiente ou luz suave",
+    "desvio": 12.7475
+   },
+   "paleta": [
+    {
+     "hex": "#0E1013",
+     "rgb": [
+      14,
+      16,
+      19
+     ],
+     "parte": 0.7935,
+     "L": 4.6155,
+     "croma": 1.9017,
+     "nome": "quase preto"
+    },
+    {
+     "hex": "#3D362D",
+     "rgb": [
+      61,
+      54,
+      45
+     ],
+     "parte": 0.1458,
+     "L": 23.0669,
+     "croma": 6.9181,
+     "nome": "laranja escuro"
+    },
+    {
+     "hex": "#C2C0C9",
+     "rgb": [
+      194,
+      192,
+      201
+     ],
+     "parte": 0.0364,
+     "L": 78.1021,
+     "croma": 4.8905,
+     "nome": "cinza claro"
+    },
+    {
+     "hex": "#C2926C",
+     "rgb": [
+      194,
+      146,
+      108
+     ],
+     "parte": 0.014,
+     "L": 64.2497,
+     "croma": 30.2205,
+     "nome": "laranja"
+    },
+    {
+     "hex": "#E94772",
+     "rgb": [
+      233,
+      71,
+      114
+     ],
+     "parte": 0.0103,
+     "L": 55.1187,
+     "croma": 65.8078,
+     "nome": "rosa"
+    }
+   ],
+   "limiares": {
+    "base": 1.11,
+    "hi": 3.3299,
+    "lo": 1.998
+   },
+   "energia": "▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅",
+   "batidas": []
+  }
+ ],
+ "transicoes": [],
+ "abertura": null,
+ "fechamento": null,
+ "pulsoVisual": null,
+ "som": {
+  "mudo": true,
+  "volume": 0
+ },
+ "sincronia": null,
+ "paleta": [
+  {
+   "hex": "#0F1113",
+   "rgb": [
+    15,
+    17,
+    19
+   ],
+   "parte": 0.8283,
+   "L": 4.9633,
+   "croma": 1.4152,
+   "nome": "quase preto"
+  },
+  {
+   "hex": "#3C3023",
+   "rgb": [
+    60,
+    48,
+    35
+   ],
+   "parte": 0.083,
+   "L": 20.812,
+   "croma": 10.8508,
+   "nome": "laranja escuro"
+  },
+  {
+   "hex": "#686362",
+   "rgb": [
+    104,
+    99,
+    98
+   ],
+   "parte": 0.0357,
+   "L": 42.3819,
+   "croma": 2.1804,
+   "nome": "cinza"
+  },
+  {
+   "hex": "#D5D7D8",
+   "rgb": [
+    213,
+    215,
+    216
+   ],
+   "parte": 0.0235,
+   "L": 85.8587,
+   "croma": 0.8875,
+   "nome": "cinza claro"
+  },
+  {
+   "hex": "#D59E73",
+   "rgb": [
+    213,
+    158,
+    115
+   ],
+   "parte": 0.0104,
+   "L": 69.3537,
+   "croma": 34.0151,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#E94671",
+   "rgb": [
+    233,
+    70,
+    113
+   ],
+   "parte": 0.0101,
+   "L": 54.9653,
+   "croma": 66.1544,
+   "nome": "rosa"
+  },
+  {
+   "hex": "#AF9EC4",
+   "rgb": [
+    175,
+    158,
+    196
+   ],
+   "parte": 0.0089,
+   "L": 67.69,
+   "croma": 21.9347,
+   "nome": "roxo"
+  }
+ ],
+ "acentos": [
+  {
+   "hex": "#EB4470",
+   "rgb": [
+    235,
+    68,
+    112
+   ],
+   "parte": 0.01,
+   "L": 55.0376,
+   "croma": 67.4815,
+   "nome": "rosa"
+  },
+  {
+   "hex": "#946D9A",
+   "rgb": [
+    148,
+    109,
+    154
+   ],
+   "parte": 0.0055,
+   "L": 51.3432,
+   "croma": 29.9217,
+   "nome": "magenta"
+  },
+  {
+   "hex": "#D8A086",
+   "rgb": [
+    216,
+    160,
+    134
+   ],
+   "parte": 0.0052,
+   "L": 70.4982,
+   "croma": 27.8147,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#765233",
+   "rgb": [
+    118,
+    82,
+    51
+   ],
+   "parte": 0.004,
+   "L": 38.0661,
+   "croma": 26.5602,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#EB9B49",
+   "rgb": [
+    235,
+    155,
+    73
+   ],
+   "parte": 0.0029,
+   "L": 70.5845,
+   "croma": 58.4039,
+   "nome": "laranja"
+  },
+  {
+   "hex": "#52C9F1",
+   "rgb": [
+    82,
+    201,
+    241
+   ],
+   "parte": 0.0023,
+   "L": 76.0189,
+   "croma": 36.3582,
+   "nome": "azul"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+.cena-gancho .topo { top: 14cqh; }
+.cena-gancho .rotulo { margin-bottom: 3.4cqmin; }
+.cena-gancho .frase { font-size: 13cqmin; white-space: nowrap; }
+.cena-gancho .base { top: 77cqh; }
+.cena-gancho .orbita { position: absolute; left: 6cqw; width: 88cqw; top: 45cqh; height: 25cqh; overflow: visible; }
+.cena-gancho .orbita ellipse { fill: none; stroke: var(--linha); stroke-width: 0.25; stroke-dasharray: 1 1.2; vector-effect: non-scaling-stroke; stroke-width: 2; }
+.cena-gancho .heroi {
+  position: absolute; left: 50cqw; top: 57.5cqh; width: 32cqmin; height: 32cqmin; translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, var(--cartao-claro), var(--cartao) 70%);
+  box-shadow: 0 0 10cqmin color-mix(in srgb, var(--luz-3) 18%, transparent);
+  display: grid; place-items: center;
+}
+.cena-gancho .aro { position: absolute; inset: 0; border-radius: 50%; border: 0.3cqmin solid color-mix(in srgb, var(--destaque) 80%, transparent); }
+.cena-gancho .faisca { width: 58%; height: 58%; object-fit: contain; }
+.cena-gancho .icone { translate: -50% -50%; }
+.cena-gancho .i-laptop { left: 15cqw; top: 51cqh; }
+.cena-gancho .i-jogo { left: 84cqw; top: 49cqh; width: 22cqmin; height: 22cqmin; }
+.cena-gancho .i-fone { left: 52cqw; top: 70.5cqh; }
+.cena-gancho .i-robo { left: 20cqw; top: 66.5cqh; width: 15cqmin; height: 15cqmin; }
+.cena-gancho .i-foguete { left: 82cqw; top: 65cqh; width: 15cqmin; height: 15cqmin; }
