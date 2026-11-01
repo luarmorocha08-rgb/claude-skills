@@ -585,6 +585,15 @@
       ],
       "fps": 60,
       "nota": "pulsos de batida sem tranco, panorâmica contínua na montagem"
+    },
+    {
+      "v": 5,
+      "data": "2026-11-01",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 60,
+      "nota": "versão final sincronizada com a trilha"
     }
   ]
 }

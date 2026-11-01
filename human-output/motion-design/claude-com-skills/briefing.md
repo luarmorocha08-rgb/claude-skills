@@ -44,3 +44,11 @@ seguinte; os oito artefatos explodem numa órbita ("Do pedido à entrega"); a fa
 
 ## Rodadas
 - v1: primeira versão completa.
+- v3–v5 (pedido: "mais dinâmico, sincronizado com a música, mais segundos"): 47,6 s no grid da
+  trilha (~184 BPM, frases de 16 batidas). Intro ambiente = pedido + faísca nos pulsos; o drop
+  (10,65 s) dispara o sol; mergulhos terminam no início de cada frase; cenas novas "montagem" (um
+  ofício por compasso, panorâmica contínua) e "mosaico" (um artefato por batida, "Tudo isso a
+  partir de uma frase"); o convite pousa na última pancada (43,6 s). Vídeo final com a música:
+  render/v5/claude-com-skills-16x9-60fps-com-musica.mp4.
+  Mantenha: a sincronia com a trilha; os dois "degraus" intencionais (cartão que bate na pilha,
+  cartão branco que sai no chicote).
