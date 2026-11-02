@@ -828,6 +828,15 @@
       ],
       "fps": 30,
       "nota": "EP1 completo"
+    },
+    {
+      "v": 3,
+      "data": "2026-11-02",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 30,
+      "nota": "cenário mais largo: sem faixa preta nas bordas"
     }
   ],
   "criadoEm": "2026-11-01",
