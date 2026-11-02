@@ -1,0 +1,165 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Anton,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,1,0,1,7,3,2,60,60,400,1
+Style: Title,Anton,96,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,3,0,1,0,4,8,40,40,120,1
+Style: Sub,Inter Medium,30,&H00C8B39F,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,6,0,1,0,2,8,40,40,236,1
+Style: End1,Anton,150,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,1,0,0,5,60,60,0,1
+Style: End2,Inter Medium,40,&H00FFD38F,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,4,0,1,0,0,2,60,60,640,1
+Style: End3,Inter,38,&H00C8B39F,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,60,60,570,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.28,0:00:00.68,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}VOCÊ {\c&HFFFFFF&}DESCOBRE {\c&HFFFFFF&}QUE
+Dialogue: 1,0:00:00.68,0:00:01.08,Cap,,0,0,0,,{\c&HFFFFFF&}VOCÊ {\c&HFFD38F&}DESCOBRE {\c&HFFFFFF&}QUE
+Dialogue: 1,0:00:01.08,0:00:01.16,Cap,,0,0,0,,{\c&HFFFFFF&}VOCÊ {\c&HFFFFFF&}DESCOBRE {\c&HFFD38F&}QUE
+Dialogue: 1,0:00:01.16,0:00:01.24,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}O {\c&HFFFFFF&}MUNDO {\c&HFFFFFF&}ESTÁ
+Dialogue: 1,0:00:01.24,0:00:01.48,Cap,,0,0,0,,{\c&HFFFFFF&}O {\c&HFFD38F&}MUNDO {\c&HFFFFFF&}ESTÁ
+Dialogue: 1,0:00:01.48,0:00:01.68,Cap,,0,0,0,,{\c&HFFFFFF&}O {\c&HFFFFFF&}MUNDO {\c&HFFD38F&}ESTÁ
+Dialogue: 1,0:00:01.68,0:00:02.20,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ACABANDO {\c&HFFFFFF&}ENQUANTO
+Dialogue: 1,0:00:02.20,0:00:02.52,Cap,,0,0,0,,{\c&HFFFFFF&}ACABANDO {\c&HFFD38F&}ENQUANTO
+Dialogue: 1,0:00:02.52,0:00:02.81,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ESPERA {\c&HFFFFFF&}O {\c&HFFFFFF&}CAFÉ
+Dialogue: 1,0:00:02.81,0:00:02.92,Cap,,0,0,0,,{\c&HFFFFFF&}ESPERA {\c&HFFD38F&}O {\c&HFFFFFF&}CAFÉ
+Dialogue: 1,0:00:02.92,0:00:03.24,Cap,,0,0,0,,{\c&HFFFFFF&}ESPERA {\c&HFFFFFF&}O {\c&HFFD38F&}CAFÉ
+Dialogue: 1,0:00:03.24,0:00:03.56,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}FICAR {\c&HFFFFFF&}PRONTO.
+Dialogue: 1,0:00:03.56,0:00:04.35,Cap,,0,0,0,,{\c&HFFFFFF&}FICAR {\c&HFFD38F&}PRONTO.
+Dialogue: 1,0:00:04.49,0:00:04.73,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}UMA {\c&HFFFFFF&}COISA {\c&HFFFFFF&}ENORME
+Dialogue: 1,0:00:04.73,0:00:04.97,Cap,,0,0,0,,{\c&HFFFFFF&}UMA {\c&HFFD38F&}COISA {\c&HFFFFFF&}ENORME
+Dialogue: 1,0:00:04.97,0:00:05.53,Cap,,0,0,0,,{\c&HFFFFFF&}UMA {\c&HFFFFFF&}COISA {\c&HFFD38F&}ENORME
+Dialogue: 1,0:00:05.53,0:00:05.93,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}APARECEU {\c&HFFFFFF&}NO {\c&HFFFFFF&}CÉU.
+Dialogue: 1,0:00:05.93,0:00:06.09,Cap,,0,0,0,,{\c&HFFFFFF&}APARECEU {\c&HFFD38F&}NO {\c&HFFFFFF&}CÉU.
+Dialogue: 1,0:00:06.09,0:00:06.51,Cap,,0,0,0,,{\c&HFFFFFF&}APARECEU {\c&HFFFFFF&}NO {\c&HFFD38F&}CÉU.
+Dialogue: 1,0:00:06.66,0:00:06.76,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}E {\c&HFFFFFF&}DEIXA {\c&HFFFFFF&}A
+Dialogue: 1,0:00:06.76,0:00:07.04,Cap,,0,0,0,,{\c&HFFFFFF&}E {\c&HFFD38F&}DEIXA {\c&HFFFFFF&}A
+Dialogue: 1,0:00:07.04,0:00:07.16,Cap,,0,0,0,,{\c&HFFFFFF&}E {\c&HFFFFFF&}DEIXA {\c&HFFD38F&}A
+Dialogue: 1,0:00:07.16,0:00:07.56,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}XÍCARA {\c&HFFFFFF&}CAIR.
+Dialogue: 1,0:00:07.56,0:00:08.55,Cap,,0,0,0,,{\c&HFFFFFF&}XÍCARA {\c&HFFD38F&}CAIR.
+Dialogue: 1,0:00:10.96,0:00:11.04,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}NAVE {\c&HFFFFFF&}É
+Dialogue: 1,0:00:11.04,0:00:11.36,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}NAVE {\c&HFFFFFF&}É
+Dialogue: 1,0:00:11.36,0:00:11.52,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}NAVE {\c&HFFD38F&}É
+Dialogue: 1,0:00:11.52,0:00:11.76,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}TÃO {\c&HFFFFFF&}GRANDE {\c&HFFFFFF&}QUE
+Dialogue: 1,0:00:11.76,0:00:12.32,Cap,,0,0,0,,{\c&HFFFFFF&}TÃO {\c&HFFD38F&}GRANDE {\c&HFFFFFF&}QUE
+Dialogue: 1,0:00:12.32,0:00:12.44,Cap,,0,0,0,,{\c&HFFFFFF&}TÃO {\c&HFFFFFF&}GRANDE {\c&HFFD38F&}QUE
+Dialogue: 1,0:00:12.44,0:00:12.52,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}SUA {\c&HFFFFFF&}RUA
+Dialogue: 1,0:00:12.52,0:00:12.72,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}SUA {\c&HFFFFFF&}RUA
+Dialogue: 1,0:00:12.72,0:00:12.88,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}SUA {\c&HFFD38F&}RUA
+Dialogue: 1,0:00:12.88,0:00:13.44,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}INTEIRA {\c&HFFFFFF&}FICA {\c&HFFFFFF&}NA
+Dialogue: 1,0:00:13.44,0:00:13.68,Cap,,0,0,0,,{\c&HFFFFFF&}INTEIRA {\c&HFFD38F&}FICA {\c&HFFFFFF&}NA
+Dialogue: 1,0:00:13.68,0:00:13.84,Cap,,0,0,0,,{\c&HFFFFFF&}INTEIRA {\c&HFFFFFF&}FICA {\c&HFFD38F&}NA
+Dialogue: 1,0:00:13.84,0:00:14.68,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}SOMBRA.
+Dialogue: 1,0:00:14.78,0:00:14.94,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}SEU {\c&HFFFFFF&}CELULAR {\c&HFFFFFF&}TOCA.
+Dialogue: 1,0:00:14.94,0:00:15.38,Cap,,0,0,0,,{\c&HFFFFFF&}SEU {\c&HFFD38F&}CELULAR {\c&HFFFFFF&}TOCA.
+Dialogue: 1,0:00:15.38,0:00:16.14,Cap,,0,0,0,,{\c&HFFFFFF&}SEU {\c&HFFFFFF&}CELULAR {\c&HFFD38F&}TOCA.
+Dialogue: 1,0:00:16.14,0:00:16.26,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}É {\c&HFFFFFF&}SUA {\c&HFFFFFF&}IRMÃ.
+Dialogue: 1,0:00:16.26,0:00:16.38,Cap,,0,0,0,,{\c&HFFFFFF&}É {\c&HFFD38F&}SUA {\c&HFFFFFF&}IRMÃ.
+Dialogue: 1,0:00:16.38,0:00:16.87,Cap,,0,0,0,,{\c&HFFFFFF&}É {\c&HFFFFFF&}SUA {\c&HFFD38F&}IRMÃ.
+Dialogue: 1,0:00:16.98,0:00:17.38,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}NÃO {\c&HFFFFFF&}SAI {\c&HFFFFFF&}DE...
+Dialogue: 1,0:00:17.38,0:00:17.70,Cap,,0,0,0,,{\c&HFFFFFF&}NÃO {\c&HFFD38F&}SAI {\c&HFFFFFF&}DE...
+Dialogue: 1,0:00:17.70,0:00:18.65,Cap,,0,0,0,,{\c&HFFFFFF&}NÃO {\c&HFFFFFF&}SAI {\c&HFFD38F&}DE...
+Dialogue: 1,0:00:18.65,0:00:18.74,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}LIGAÇÃO {\c&HFFFFFF&}CAI.
+Dialogue: 1,0:00:18.74,0:00:19.14,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}LIGAÇÃO {\c&HFFFFFF&}CAI.
+Dialogue: 1,0:00:19.14,0:00:19.57,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}LIGAÇÃO {\c&HFFD38F&}CAI.
+Dialogue: 1,0:00:19.72,0:00:20.47,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ENTÃO,
+Dialogue: 1,0:00:20.52,0:00:20.72,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}UMA {\c&HFFFFFF&}LUZ {\c&HFFFFFF&}BRANCA
+Dialogue: 1,0:00:20.72,0:00:21.00,Cap,,0,0,0,,{\c&HFFFFFF&}UMA {\c&HFFD38F&}LUZ {\c&HFFFFFF&}BRANCA
+Dialogue: 1,0:00:21.00,0:00:21.32,Cap,,0,0,0,,{\c&HFFFFFF&}UMA {\c&HFFFFFF&}LUZ {\c&HFFD38F&}BRANCA
+Dialogue: 1,0:00:21.32,0:00:21.76,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ATRAVESSA {\c&HFFFFFF&}A {\c&HFFFFFF&}JANELA.
+Dialogue: 1,0:00:21.76,0:00:21.84,Cap,,0,0,0,,{\c&HFFFFFF&}ATRAVESSA {\c&HFFD38F&}A {\c&HFFFFFF&}JANELA.
+Dialogue: 1,0:00:21.84,0:00:22.70,Cap,,0,0,0,,{\c&HFFFFFF&}ATRAVESSA {\c&HFFFFFF&}A {\c&HFFD38F&}JANELA.
+Dialogue: 1,0:00:22.84,0:00:23.08,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}PELA {\c&HFFFFFF&}JANELA,
+Dialogue: 1,0:00:23.08,0:00:23.80,Cap,,0,0,0,,{\c&HFFFFFF&}PELA {\c&HFFD38F&}JANELA,
+Dialogue: 1,0:00:23.80,0:00:23.92,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}VÊ {\c&HFFFFFF&}SEU {\c&HFFFFFF&}VIZINHO
+Dialogue: 1,0:00:23.92,0:00:24.12,Cap,,0,0,0,,{\c&HFFFFFF&}VÊ {\c&HFFD38F&}SEU {\c&HFFFFFF&}VIZINHO
+Dialogue: 1,0:00:24.12,0:00:24.48,Cap,,0,0,0,,{\c&HFFFFFF&}VÊ {\c&HFFFFFF&}SEU {\c&HFFD38F&}VIZINHO
+Dialogue: 1,0:00:24.48,0:00:24.76,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}SUBIR {\c&HFFFFFF&}NO {\c&HFFFFFF&}AR,
+Dialogue: 1,0:00:24.76,0:00:24.92,Cap,,0,0,0,,{\c&HFFFFFF&}SUBIR {\c&HFFD38F&}NO {\c&HFFFFFF&}AR,
+Dialogue: 1,0:00:24.92,0:00:25.28,Cap,,0,0,0,,{\c&HFFFFFF&}SUBIR {\c&HFFFFFF&}NO {\c&HFFD38F&}AR,
+Dialogue: 1,0:00:25.28,0:00:25.56,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}AINDA {\c&HFFFFFF&}SEGURANDO
+Dialogue: 1,0:00:25.56,0:00:25.92,Cap,,0,0,0,,{\c&HFFFFFF&}AINDA {\c&HFFD38F&}SEGURANDO
+Dialogue: 1,0:00:25.92,0:00:26.00,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}MANGUEIRA {\c&HFFFFFF&}DO
+Dialogue: 1,0:00:26.00,0:00:26.40,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}MANGUEIRA {\c&HFFFFFF&}DO
+Dialogue: 1,0:00:26.40,0:00:26.52,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}MANGUEIRA {\c&HFFD38F&}DO
+Dialogue: 1,0:00:26.52,0:00:27.35,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}JARDIM.
+Dialogue: 1,0:00:27.44,0:00:27.72,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ESPERA {\c&HFFFFFF&}SENTIR {\c&HFFFFFF&}O
+Dialogue: 1,0:00:27.72,0:00:28.12,Cap,,0,0,0,,{\c&HFFFFFF&}ESPERA {\c&HFFD38F&}SENTIR {\c&HFFFFFF&}O
+Dialogue: 1,0:00:28.12,0:00:28.28,Cap,,0,0,0,,{\c&HFFFFFF&}ESPERA {\c&HFFFFFF&}SENTIR {\c&HFFD38F&}O
+Dialogue: 1,0:00:28.28,0:00:28.68,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}PRÓPRIO {\c&HFFFFFF&}CORPO {\c&HFFFFFF&}SUBIR.
+Dialogue: 1,0:00:28.68,0:00:29.04,Cap,,0,0,0,,{\c&HFFFFFF&}PRÓPRIO {\c&HFFD38F&}CORPO {\c&HFFFFFF&}SUBIR.
+Dialogue: 1,0:00:29.04,0:00:30.23,Cap,,0,0,0,,{\c&HFFFFFF&}PRÓPRIO {\c&HFFFFFF&}CORPO {\c&HFFD38F&}SUBIR.
+Dialogue: 1,0:00:30.36,0:00:30.52,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}MAS {\c&HFFFFFF&}NADA {\c&HFFFFFF&}ACONTECE.
+Dialogue: 1,0:00:30.52,0:00:30.76,Cap,,0,0,0,,{\c&HFFFFFF&}MAS {\c&HFFD38F&}NADA {\c&HFFFFFF&}ACONTECE.
+Dialogue: 1,0:00:30.76,0:00:31.99,Cap,,0,0,0,,{\c&HFFFFFF&}MAS {\c&HFFFFFF&}NADA {\c&HFFD38F&}ACONTECE.
+Dialogue: 1,0:00:32.41,0:00:32.57,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}OS {\c&HFFFFFF&}ALIENÍGENAS {\c&HFFFFFF&}LEVARAM
+Dialogue: 1,0:00:32.57,0:00:33.21,Cap,,0,0,0,,{\c&HFFFFFF&}OS {\c&HFFD38F&}ALIENÍGENAS {\c&HFFFFFF&}LEVARAM
+Dialogue: 1,0:00:33.21,0:00:33.69,Cap,,0,0,0,,{\c&HFFFFFF&}OS {\c&HFFFFFF&}ALIENÍGENAS {\c&HFFD38F&}LEVARAM
+Dialogue: 1,0:00:33.69,0:00:34.13,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}METADE {\c&HFFFFFF&}DA {\c&HFFFFFF&}POPULAÇÃO
+Dialogue: 1,0:00:34.13,0:00:34.25,Cap,,0,0,0,,{\c&HFFFFFF&}METADE {\c&HFFD38F&}DA {\c&HFFFFFF&}POPULAÇÃO
+Dialogue: 1,0:00:34.25,0:00:34.77,Cap,,0,0,0,,{\c&HFFFFFF&}METADE {\c&HFFFFFF&}DA {\c&HFFD38F&}POPULAÇÃO
+Dialogue: 1,0:00:34.77,0:00:34.97,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}DA {\c&HFFFFFF&}TERRA.
+Dialogue: 1,0:00:34.97,0:00:35.64,Cap,,0,0,0,,{\c&HFFFFFF&}DA {\c&HFFD38F&}TERRA.
+Dialogue: 1,0:00:36.05,0:00:36.17,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}E {\c&HFFFFFF&}VOCÊ {\c&HFFFFFF&}FICOU.
+Dialogue: 1,0:00:36.17,0:00:36.57,Cap,,0,0,0,,{\c&HFFFFFF&}E {\c&HFFD38F&}VOCÊ {\c&HFFFFFF&}FICOU.
+Dialogue: 1,0:00:36.57,0:00:37.64,Cap,,0,0,0,,{\c&HFFFFFF&}E {\c&HFFFFFF&}VOCÊ {\c&HFFD38F&}FICOU.
+Dialogue: 1,0:00:37.92,0:00:38.17,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}PERTO {\c&HFFFFFF&}DA {\c&HFFFFFF&}MEIA-NOITE,
+Dialogue: 1,0:00:38.17,0:00:38.29,Cap,,0,0,0,,{\c&HFFFFFF&}PERTO {\c&HFFD38F&}DA {\c&HFFFFFF&}MEIA-NOITE,
+Dialogue: 1,0:00:38.29,0:00:39.29,Cap,,0,0,0,,{\c&HFFFFFF&}PERTO {\c&HFFFFFF&}DA {\c&HFFD38F&}MEIA-NOITE,
+Dialogue: 1,0:00:39.29,0:00:39.65,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}VOCÊ {\c&HFFFFFF&}OUVE {\c&HFFFFFF&}METAL
+Dialogue: 1,0:00:39.65,0:00:39.97,Cap,,0,0,0,,{\c&HFFFFFF&}VOCÊ {\c&HFFD38F&}OUVE {\c&HFFFFFF&}METAL
+Dialogue: 1,0:00:39.97,0:00:40.29,Cap,,0,0,0,,{\c&HFFFFFF&}VOCÊ {\c&HFFFFFF&}OUVE {\c&HFFD38F&}METAL
+Dialogue: 1,0:00:40.29,0:00:40.73,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}RASPANDO {\c&HFFFFFF&}NO {\c&HFFFFFF&}ASFALTO.
+Dialogue: 1,0:00:40.73,0:00:40.81,Cap,,0,0,0,,{\c&HFFFFFF&}RASPANDO {\c&HFFD38F&}NO {\c&HFFFFFF&}ASFALTO.
+Dialogue: 1,0:00:40.81,0:00:41.77,Cap,,0,0,0,,{\c&HFFFFFF&}RASPANDO {\c&HFFFFFF&}NO {\c&HFFD38F&}ASFALTO.
+Dialogue: 1,0:00:41.88,0:00:42.40,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ENTÃO {\c&HFFFFFF&}PARA.
+Dialogue: 1,0:00:42.40,0:00:43.08,Cap,,0,0,0,,{\c&HFFFFFF&}ENTÃO {\c&HFFD38F&}PARA.
+Dialogue: 1,0:00:43.08,0:00:43.32,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}BEM {\c&HFFFFFF&}NA {\c&HFFFFFF&}SUA
+Dialogue: 1,0:00:43.32,0:00:43.44,Cap,,0,0,0,,{\c&HFFFFFF&}BEM {\c&HFFD38F&}NA {\c&HFFFFFF&}SUA
+Dialogue: 1,0:00:43.44,0:00:43.72,Cap,,0,0,0,,{\c&HFFFFFF&}BEM {\c&HFFFFFF&}NA {\c&HFFD38F&}SUA
+Dialogue: 1,0:00:43.72,0:00:44.79,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}PORTA.
+Dialogue: 1,0:00:45.28,0:00:45.52,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}VOCÊ {\c&HFFFFFF&}ESCUTA {\c&HFFFFFF&}TRÊS
+Dialogue: 1,0:00:45.52,0:00:46.08,Cap,,0,0,0,,{\c&HFFFFFF&}VOCÊ {\c&HFFD38F&}ESCUTA {\c&HFFFFFF&}TRÊS
+Dialogue: 1,0:00:46.08,0:00:46.40,Cap,,0,0,0,,{\c&HFFFFFF&}VOCÊ {\c&HFFFFFF&}ESCUTA {\c&HFFD38F&}TRÊS
+Dialogue: 1,0:00:46.40,0:00:47.68,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}BATIDAS.
+Dialogue: 1,0:00:47.68,0:00:48.52,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}DEPOIS,
+Dialogue: 1,0:00:48.52,0:00:48.64,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}VOZ {\c&HFFFFFF&}DA
+Dialogue: 1,0:00:48.64,0:00:48.84,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}VOZ {\c&HFFFFFF&}DA
+Dialogue: 1,0:00:48.84,0:00:48.96,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}VOZ {\c&HFFD38F&}DA
+Dialogue: 1,0:00:48.96,0:00:49.16,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}SUA {\c&HFFFFFF&}IRMÃ {\c&HFFFFFF&}PEDINDO
+Dialogue: 1,0:00:49.16,0:00:49.44,Cap,,0,0,0,,{\c&HFFFFFF&}SUA {\c&HFFD38F&}IRMÃ {\c&HFFFFFF&}PEDINDO
+Dialogue: 1,0:00:49.44,0:00:49.84,Cap,,0,0,0,,{\c&HFFFFFF&}SUA {\c&HFFFFFF&}IRMÃ {\c&HFFD38F&}PEDINDO
+Dialogue: 1,0:00:49.84,0:00:50.04,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}PARA {\c&HFFFFFF&}ENTRAR.
+Dialogue: 1,0:00:50.04,0:00:50.65,Cap,,0,0,0,,{\c&HFFFFFF&}PARA {\c&HFFD38F&}ENTRAR.
+Dialogue: 1,0:00:50.78,0:00:50.90,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}É {\c&HFFFFFF&}UMA {\c&HFFFFFF&}MENSAGEM
+Dialogue: 1,0:00:50.90,0:00:51.22,Cap,,0,0,0,,{\c&HFFFFFF&}É {\c&HFFD38F&}UMA {\c&HFFFFFF&}MENSAGEM
+Dialogue: 1,0:00:51.22,0:00:51.57,Cap,,0,0,0,,{\c&HFFFFFF&}É {\c&HFFFFFF&}UMA {\c&HFFD38F&}MENSAGEM
+Dialogue: 1,0:00:51.57,0:00:52.29,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}DELA.
+Dialogue: 1,0:00:52.29,0:00:52.50,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}ESTOU {\c&HFFFFFF&}ESCONDIDA
+Dialogue: 1,0:00:52.50,0:00:52.94,Cap,,0,0,0,,{\c&HFFFFFF&}ESTOU {\c&HFFD38F&}ESCONDIDA
+Dialogue: 1,0:00:52.94,0:00:53.14,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}NO {\c&HFFFFFF&}MERCADO.
+Dialogue: 1,0:00:53.14,0:00:54.02,Cap,,0,0,0,,{\c&HFFFFFF&}NO {\c&HFFD38F&}MERCADO.
+Dialogue: 1,0:00:54.02,0:00:54.18,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}TEM {\c&HFFFFFF&}UMA {\c&HFFFFFF&}COISA
+Dialogue: 1,0:00:54.18,0:00:54.30,Cap,,0,0,0,,{\c&HFFFFFF&}TEM {\c&HFFD38F&}UMA {\c&HFFFFFF&}COISA
+Dialogue: 1,0:00:54.30,0:00:54.50,Cap,,0,0,0,,{\c&HFFFFFF&}TEM {\c&HFFFFFF&}UMA {\c&HFFD38F&}COISA
+Dialogue: 1,0:00:54.50,0:00:54.74,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}AQUI {\c&HFFFFFF&}FORA {\c&HFFFFFF&}IMITANDO
+Dialogue: 1,0:00:54.74,0:00:55.02,Cap,,0,0,0,,{\c&HFFFFFF&}AQUI {\c&HFFD38F&}FORA {\c&HFFFFFF&}IMITANDO
+Dialogue: 1,0:00:55.02,0:00:55.34,Cap,,0,0,0,,{\c&HFFFFFF&}AQUI {\c&HFFFFFF&}FORA {\c&HFFD38F&}IMITANDO
+Dialogue: 1,0:00:55.34,0:00:55.43,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}SUA {\c&HFFFFFF&}VOZ.
+Dialogue: 1,0:00:55.43,0:00:55.62,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}SUA {\c&HFFFFFF&}VOZ.
+Dialogue: 1,0:00:55.62,0:00:56.53,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}SUA {\c&HFFD38F&}VOZ.
+Dialogue: 1,0:00:56.68,0:00:56.76,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}MAÇANETA {\c&HFFFFFF&}COMEÇA
+Dialogue: 1,0:00:56.76,0:00:57.44,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}MAÇANETA {\c&HFFFFFF&}COMEÇA
+Dialogue: 1,0:00:57.44,0:00:57.68,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFFFFF&}MAÇANETA {\c&HFFD38F&}COMEÇA
+Dialogue: 1,0:00:57.68,0:00:57.80,Cap,,0,0,0,,{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&HFFD38F&}A {\c&HFFFFFF&}GIRAR.
+Dialogue: 1,0:00:57.80,0:00:58.87,Cap,,0,0,0,,{\c&HFFFFFF&}A {\c&HFFD38F&}GIRAR.
+Dialogue: 0,0:00:00.00,0:00:08.93,Title,,0,0,0,,{\fad(0,250)}OS QUE FICARAM
+Dialogue: 0,0:00:00.00,0:00:08.93,Sub,,0,0,0,,{\fad(0,250)}RESUMO  ·  EPISÓDIO 1  ·  A METADE
+Dialogue: 0,0:00:10.83,0:00:59.73,Title,,0,0,0,,{\fad(250,300)}OS QUE FICARAM
+Dialogue: 0,0:00:10.83,0:00:59.73,Sub,,0,0,0,,{\fad(250,300)}RESUMO  ·  EPISÓDIO 1  ·  A METADE
+Dialogue: 0,0:00:59.88,0:01:02.93,End1,,0,0,0,,{\fad(400,0)\blur2\t(0,500,\blur0)}QUEM ESTÁ\NNA PORTA?
+Dialogue: 0,0:01:00.63,0:01:02.93,End2,,0,0,0,,{\fad(400,0)}EPISÓDIO 1 COMPLETO NO CANAL
+Dialogue: 0,0:01:01.13,0:01:02.93,End3,,0,0,0,,{\fad(400,0)}Comenta: você abriria a porta?
