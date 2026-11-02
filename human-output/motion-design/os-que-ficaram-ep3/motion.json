@@ -1044,9 +1044,20 @@
   },
   "storyboard": {
     "revisao": 1,
-    "aprovadoEm": null
+    "aprovadoEm": "2026-11-02",
+    "revisaoAprovada": 1
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 1,
+      "data": "2026-11-02",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 30,
+      "nota": "EP3 sem narração (tempos estimados)"
+    }
+  ],
   "criadoEm": "2026-11-02",
   "cartaz": "Você passa a noite esperando o amanhecer"
 }
