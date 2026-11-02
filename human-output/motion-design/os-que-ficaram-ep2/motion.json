@@ -1,0 +1,589 @@
+{
+  "versao": 1,
+  "titulo": "Os Que Ficaram — EP2 · O Mercado",
+  "slug": "os-que-ficaram-ep2",
+  "fps": 30,
+  "bpm": 120,
+  "formatoBase": "16x9",
+  "formatos": [
+    "16x9"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Ritmo",
+      "texto": "A narração manda: cada plano entra na frase que ele mostra e sai na pausa seguinte. Cortes secos entre planos, como num curta; nenhum plano parado mais de 5 s."
+    },
+    {
+      "titulo": "Câmera",
+      "texto": "Sempre viva: aproximação lenta de 3 a 10 % por plano, tremor de mão nos momentos de tensão, solavanco no impacto (xícara, carro, batidas na porta)."
+    },
+    {
+      "titulo": "Personagens",
+      "texto": "Stickman da folha: cabeça branca grande, contorno preto grosso, olhos de lado. Você de moletom azul, o vizinho de camiseta verde, a irmã só pelo celular e pela voz."
+    },
+    {
+      "titulo": "Luz",
+      "texto": "A cor conta o tempo: manhã quente → sombra azulada da nave → fim de tarde laranja → noite azul-escura com a lanterna quente. O azul alienígena é o único acento frio do filme."
+    },
+    {
+      "titulo": "Telas",
+      "texto": "Celular e TV sempre em close e legíveis por pelo menos 1 s: notificações, a chamada que cai, as tentativas, o plantão, as mensagens dela."
+    },
+    {
+      "titulo": "Fecho",
+      "texto": "O mapa marca a avenida da máquina; vocês dois na mesa sob a lanterna; preto. EPISÓDIO 3 — DO OUTRO LADO sai do desfoque."
+    }
+  ],
+  "referencias": [],
+  "cenas": [
+    {
+      "id": "porta",
+      "titulo": "A porta",
+      "dur": 27.4,
+      "ideia": "A voz repete as mesmas palavras, um estrondo distante salva a noite, e a máquina vai embora atrás do barulho.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "As duas mãos na fechadura",
+          "t": 1.5
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "\"me deixa entrar…\" — de novo, igual",
+          "t": 5
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você não responde",
+          "t": 12.5
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "O estrondo na esquina; o alarme dispara",
+          "t": 14
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "A maçaneta para",
+          "t": 18
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Pela fresta: a luz azul se afasta",
+          "t": 21
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "O resto da noite atrás da porta",
+          "t": 26
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "abertura",
+      "titulo": "Título",
+      "dur": 5,
+      "ideia": "OS QUE FICARAM sai do desfoque sob a nave; Episódio 2 • O Mercado.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "As letras saem do desfoque",
+          "t": 1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "OS QUE FICARAM · Episódio 2 · O Mercado",
+          "t": 3.2
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "comida",
+      "titulo": "O que você tem",
+      "dur": 25.7,
+      "ideia": "A luz da manhã mostra quão pouco sobrou, e a torneira seca muda a pergunta: o que beber amanhã.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Amanhecer: a comida da casa na mesa",
+          "t": 2.8
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Duas garrafas, meio pacote de bolacha, arroz",
+          "t": 8.3
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "A banana vira café da manhã",
+          "t": 11.5
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "A torneira engasga… e para",
+          "t": 14
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Sobreviver parecia escapar deles",
+          "t": 19
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "O que vai beber amanhã",
+          "t": 24
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "saida",
+      "titulo": "Sair de casa",
+      "dur": 26.7,
+      "ideia": "A mensagem sem resposta, a mochila nas costas, e a cidade que ficou no caminho.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "\"Estou indo ao mercado.\" Ela não visualiza",
+          "t": 4
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Carregador, lanterna, garrafas na mochila",
+          "t": 8
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "A porta se abre",
+          "t": 13
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Fios caídos na calçada",
+          "t": 15.5
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "O ônibus atravessado na avenida",
+          "t": 17.5
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Portas abertas",
+          "t": 20
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "As ruas menores",
+          "t": 22.5
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Em cada cruzamento, escutar",
+          "t": 25.5
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "mercado",
+      "titulo": "O mercado",
+      "dur": 28.7,
+      "ideia": "Comida para meses virou o que cabe nas costas; o chamado sussurrado não tem resposta.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "A fachada quebrada",
+          "t": 2
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Outras pessoas tiveram a mesma ideia",
+          "t": 5.5
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "A prateleira de água vazia",
+          "t": 8
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "A cesta abandonada",
+          "t": 12.5
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Bolachas, castanhas, latas com anel",
+          "t": 17.5
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Duas cartelas de pilhas",
+          "t": 22.6
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Chama sua irmã, bem baixo",
+          "t": 25
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "deposito",
+      "titulo": "O depósito",
+      "dur": 29.6,
+      "ideia": "Atrás das caixas, a irmã com uma barra de ferro; o abraço, a água esquecida e o próximo passo.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "A porta bloqueada por caixas",
+          "t": 3
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Chama de novo",
+          "t": 5.5
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Escuta seu nome",
+          "t": 7.5
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Ela aparece com a barra de ferro",
+          "t": 10.5
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Reconhece e larga a barra",
+          "t": 12.5
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "O abraço",
+          "t": 15.5
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Onde ela passou a noite",
+          "t": 18
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "A água que ninguém levou",
+          "t": 21
+        },
+        {
+          "id": "q8",
+          "rotulo": "Plano 9",
+          "legenda": "Dividem o peso",
+          "t": 23.5
+        },
+        {
+          "id": "q9",
+          "rotulo": "Plano 10",
+          "legenda": "O próximo passo",
+          "t": 27
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "barulho",
+      "titulo": "O preço do barulho",
+      "dur": 25.8,
+      "ideia": "Uma briga por um carrinho chama a máquina; atrás do balcão, a mochila prende e o tecido começa a rasgar.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "A discussão pelo carrinho",
+          "t": 3
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "A prateleira desaba",
+          "t": 5.4
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você congela",
+          "t": 7.5
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Lá fora, algo responde",
+          "t": 11
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Atrás do balcão",
+          "t": 15.8
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "A luz azul atravessa a vitrine",
+          "t": 18
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "A mochila prende na ponta de metal",
+          "t": 21.5
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "O tecido começa a rasgar",
+          "t": 25
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "tras",
+      "titulo": "O que fica para trás",
+      "dur": 21.8,
+      "ideia": "Você escolhe a irmã em vez da comida: duas alças soltas e a fuga pelos fundos.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "A comida dentro da mochila",
+          "t": 2
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Depois, sua irmã",
+          "t": 4
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Solta uma alça, depois a outra",
+          "t": 6
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Pela porta dos fundos",
+          "t": 9
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Duas ruas depois",
+          "t": 12
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Quase tudo perdido",
+          "t": 14.5
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Ela ainda está com a água",
+          "t": 17
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Voltam para casa juntos",
+          "t": 20
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "noite",
+      "titulo": "Mais uma noite",
+      "dur": 41.9,
+      "ideia": "O pouco que sobrou, as pilhas no bolso e uma voz no rádio: o abrigo fica do outro lado da cidade, depois da avenida da máquina.",
+      "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "As cortinas se fecham",
+          "t": 2
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Água, latas, bolacha amassada",
+          "t": 7
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "O rádio sai da mochila",
+          "t": 11
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "As pilhas no bolso",
+          "t": 13
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Girando o botão no chiado",
+          "t": 16
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Abrigo na escola municipal",
+          "t": 23
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Do outro lado da cidade: a avenida da máquina",
+          "t": 29.6
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "As garrafas sobre a mesa",
+          "t": 32
+        },
+        {
+          "id": "q8",
+          "rotulo": "Plano 9",
+          "legenda": "Ficar em casa também é risco",
+          "t": 35
+        },
+        {
+          "id": "q9",
+          "rotulo": "Plano 10",
+          "legenda": "EPISÓDIO 3 — DO OUTRO LADO.",
+          "t": 40
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    }
+  ],
+  "capa": {
+    "cena": "deposito",
+    "quadro": "q5"
+  },
+  "storyboard": {
+    "revisao": 1,
+    "aprovadoEm": null
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-02",
+  "cartaz": "Você segura a fechadura com as duas mãos"
+}

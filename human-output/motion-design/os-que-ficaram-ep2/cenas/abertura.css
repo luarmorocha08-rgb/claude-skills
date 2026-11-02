@@ -1,0 +1,6 @@
+.cena-abertura { background: #050608; }
+.cena-abertura .ab-ceu { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cena-abertura .ab-pilha { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 10cqh; }
+.cena-abertura .ab-titulo { font-family: var(--fonte-titulo); font-weight: 400; font-size: 15cqmin; line-height: 1; letter-spacing: 0.02em; color: var(--texto); margin: 0; }
+.cena-abertura .ab-linha { width: 52cqmin; height: 0.35cqmin; background: var(--texto); margin: 2.6cqmin 0 2.4cqmin; }
+.cena-abertura .ab-sub { font-family: var(--fonte-texto); font-weight: 600; font-size: 2.9cqmin; letter-spacing: 0.55em; color: var(--texto); padding-left: 0.55em; }
