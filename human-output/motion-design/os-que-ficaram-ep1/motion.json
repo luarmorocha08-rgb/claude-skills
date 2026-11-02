@@ -819,7 +819,17 @@
     "aprovadoEm": "2026-11-02",
     "revisaoAprovada": 2
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 2,
+      "data": "2026-11-02",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 30,
+      "nota": "EP1 completo"
+    }
+  ],
   "criadoEm": "2026-11-01",
   "cartaz": "Você descobre que o mundo está acabando enquanto espera o café ficar pronto",
   "narracao": {

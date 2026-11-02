@@ -390,14 +390,14 @@
     const parede = '#e8d8bb', paredeSala = '#d8cab0', mad = '#cfae82', madEsc = '#a8865c', bancada = '#6b5a4a';
     let s = '';
     // paredes e piso
-    s += `<rect x="-200" y="-200" width="2000" height="1080" fill="${parede}"/>`;
-    s += `<rect x="1780" y="-200" width="1900" height="1080" fill="${paredeSala}"/>`;
-    s += `<rect x="-200" y="880" width="1980" height="400" fill="#e6e0d2"/>`;
-    for (let x = -200; x < 1800; x += 120) s += `<line x1="${x}" y1="880" x2="${f2(960 + (x - 960) * 2.2)}" y2="1280" stroke="#cfc6b3" stroke-width="2"/>`;
-    [920, 975, 1050, 1150].forEach((y) => (s += `<line x1="-200" y1="${y}" x2="1780" y2="${y}" stroke="#cfc6b3" stroke-width="2"/>`));
-    s += `<rect x="1780" y="880" width="1900" height="400" fill="#9b7656"/>`;
-    for (let y = 900; y < 1280; y += 34) s += `<line x1="1780" y1="${y}" x2="3700" y2="${y}" stroke="#86644a" stroke-width="2"/>`;
-    s += `<rect x="-200" y="866" width="3900" height="16" fill="#f1ebdf"/>`;
+    s += `<rect x="-900" y="-400" width="2700" height="1280" fill="${parede}"/>`;
+    s += `<rect x="1780" y="-400" width="2800" height="1280" fill="${paredeSala}"/>`;
+    s += `<rect x="-900" y="880" width="2680" height="700" fill="#e6e0d2"/>`;
+    for (let x = -900; x < 1800; x += 120) s += `<line x1="${x}" y1="880" x2="${f2(960 + (x - 960) * 2.2)}" y2="1280" stroke="#cfc6b3" stroke-width="2"/>`;
+    [920, 975, 1050, 1150].forEach((y) => (s += `<line x1="-900" y1="${y}" x2="1780" y2="${y}" stroke="#cfc6b3" stroke-width="2"/>`));
+    s += `<rect x="1780" y="880" width="2800" height="700" fill="#9b7656"/>`;
+    for (let y = 900; y < 1280; y += 34) s += `<line x1="1780" y1="${y}" x2="4580" y2="${y}" stroke="#86644a" stroke-width="2"/>`;
+    s += `<rect x="-900" y="866" width="5500" height="16" fill="#f1ebdf"/>`;
     // armários superiores
     const armario = (x, y, w, h) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="${mad}" stroke="${madEsc}" stroke-width="4"/><rect x="${x + w - 18}" y="${y + h - 40}" width="6" height="26" rx="3" fill="#7d6243"/>`;
     for (let i = 0; i < 4; i++) s += armario(250 + i * 92, 130, 88, 250);
@@ -499,13 +499,13 @@
     // camadas de personagens
     s += `<g class="int-atores">${o.atores || ''}</g>`;
     // luz: entardecer, noite, flash branco, lanterna, varredura azul
-    s += `<rect class="int-tarde" x="-200" y="-200" width="3900" height="1500" fill="#f0a060" opacity="0" style="mix-blend-mode:multiply"/>`;
-    s += `<rect class="int-noite" x="-200" y="-200" width="3900" height="1500" fill="#1a2747" opacity="0" style="mix-blend-mode:multiply"/>`;
+    s += `<rect class="int-tarde" x="-900" y="-400" width="5500" height="2000" fill="#f0a060" opacity="0" style="mix-blend-mode:multiply"/>`;
+    s += `<rect class="int-noite" x="-900" y="-400" width="5500" height="2000" fill="#1a2747" opacity="0" style="mix-blend-mode:multiply"/>`;
     s += `<rect class="int-frestaPorta" x="3100" y="986" width="230" height="6" fill="${COR.alienForte}" opacity="0"/>`;
     s += `<ellipse class="int-frestaLuz" cx="3215" cy="1000" rx="260" ry="70" fill="url(#${pre}-glowA)" opacity="0" style="mix-blend-mode:screen"/>`;
     s += `<ellipse class="int-lanterna" cx="1440" cy="700" rx="420" ry="300" fill="url(#${pre}-glowQ)" opacity="0" style="mix-blend-mode:screen"/>`;
     s += `<polygon class="int-varre" points="0,0 0,0 0,0" fill="url(#${pre}-feixeA)" opacity="0" style="mix-blend-mode:screen"/>`;
-    s += `<rect class="int-flash" x="-200" y="-200" width="3900" height="1500" fill="#f4fbff" opacity="0"/>`;
+    s += `<rect class="int-flash" x="-900" y="-400" width="5500" height="2000" fill="#f4fbff" opacity="0"/>`;
     return s;
   }
   /** Vista da janela da cozinha (coordenadas da janela: 660..980 × 190..460). */
