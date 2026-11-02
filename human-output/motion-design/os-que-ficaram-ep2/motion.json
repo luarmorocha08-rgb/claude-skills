@@ -584,7 +584,17 @@
     "aprovadoEm": "2026-11-02",
     "revisaoAprovada": 1
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 2,
+      "data": "2026-11-02",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 30,
+      "nota": "EP2 completo"
+    }
+  ],
   "criadoEm": "2026-11-02",
   "cartaz": "Você segura a fechadura com as duas mãos"
 }
