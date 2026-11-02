@@ -114,9 +114,11 @@ K.cena('barulho', { planos: [
     quadro(tl, el, P, t) {
       const k = E.in(prog(t, 23.5, 25.6));
       const len = 40 + k * 900; const x0 = 960 - len / 2;
-      let top = `M${x0},540`, bot = '';
-      for (let i = 1; i <= 12; i++) { const x = x0 + (len * i) / 12; const a = Math.sin(i * 1.7) * 22 * (0.3 + k); top += ` L${x.toFixed(1)},${(540 - Math.abs(a) - k * 90 * Math.sin(Math.PI * i / 12)).toFixed(1)}`; bot = ` L${x.toFixed(1)},${(540 + Math.abs(a) * 0.6 + k * 80 * Math.sin(Math.PI * i / 12)).toFixed(1)}` + bot; }
-      at(P.q('.rasgo'), 'd', top + bot.split(' L').reverse().join(' L').replace(/^ L/, ' L') + ' Z');
+      const sup = [[x0, 540]], inf = [];
+      for (let i = 1; i <= 12; i++) { const x = x0 + (len * i) / 12; const a = Math.sin(i * 1.7) * 22 * (0.3 + k); const env = Math.sin(Math.PI * i / 12);
+        sup.push([x, 540 - Math.abs(a) - k * 90 * env]); inf.push([x, 540 + Math.abs(a) * 0.6 + k * 80 * env]); }
+      const pts = sup.concat(inf.reverse());
+      at(P.q('.rasgo'), 'd', 'M' + pts.map((p) => `${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(' L') + ' Z');
       P.qa('.fio').forEach((f, i) => { const x = x0 + len * (i + 0.5) / 8; at(f, 'x1', x); at(f, 'y1', 540 - 70 * k * Math.sin(Math.PI * (i + 0.5) / 8)); at(f, 'x2', x + 10); at(f, 'y2', 540 + 60 * k * Math.sin(Math.PI * (i + 0.5) / 8)); op(f, k > 0.1 ? 1 : 0); });
       camera(P, 960, 540, lerp(1.0, 1.15, prog(tl, 0, 2.4)), 0, [ruido(t * 30, 2) * 2 * k, 0]);
     } },

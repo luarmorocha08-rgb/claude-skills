@@ -55,7 +55,7 @@
     {
       "id": "porta",
       "titulo": "A porta",
-      "dur": 27.4,
+      "dur": 26.9,
       "ideia": "A voz repete as mesmas palavras, um estrondo distante salva a noite, e a máquina vai embora atrás do barulho.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -137,7 +137,7 @@
     {
       "id": "comida",
       "titulo": "O que você tem",
-      "dur": 25.7,
+      "dur": 24.73,
       "ideia": "A luz da manhã mostra quão pouco sobrou, e a torneira seca muda a pergunta: o que beber amanhã.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -187,7 +187,7 @@
     {
       "id": "saida",
       "titulo": "Sair de casa",
-      "dur": 26.7,
+      "dur": 27.04,
       "ideia": "A mensagem sem resposta, a mochila nas costas, e a cidade que ficou no caminho.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -249,7 +249,7 @@
     {
       "id": "mercado",
       "titulo": "O mercado",
-      "dur": 28.7,
+      "dur": 28.31,
       "ideia": "Comida para meses virou o que cabe nas costas; o chamado sussurrado não tem resposta.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -305,7 +305,7 @@
     {
       "id": "deposito",
       "titulo": "O depósito",
-      "dur": 29.6,
+      "dur": 29.76,
       "ideia": "Atrás das caixas, a irmã com uma barra de ferro; o abraço, a água esquecida e o próximo passo.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -379,7 +379,7 @@
     {
       "id": "barulho",
       "titulo": "O preço do barulho",
-      "dur": 25.8,
+      "dur": 26.43,
       "ideia": "Uma briga por um carrinho chama a máquina; atrás do balcão, a mochila prende e o tecido começa a rasgar.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -441,7 +441,7 @@
     {
       "id": "tras",
       "titulo": "O que fica para trás",
-      "dur": 21.8,
+      "dur": 21.72,
       "ideia": "Você escolhe a irmã em vez da comida: duas alças soltas e a fuga pelos fundos.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -503,7 +503,7 @@
     {
       "id": "noite",
       "titulo": "Mais uma noite",
-      "dur": 41.9,
+      "dur": 42.47,
       "ideia": "O pouco que sobrou, as pilhas no bolso e uma voz no rádio: o abrigo fica do outro lado da cidade, depois da avenida da máquina.",
       "camera": "Câmera viva, aproximações lentas e tremor nos sustos, como no EP1.",
       "quadros": [
@@ -581,7 +581,8 @@
   },
   "storyboard": {
     "revisao": 1,
-    "aprovadoEm": null
+    "aprovadoEm": "2026-11-02",
+    "revisaoAprovada": 1
   },
   "versoes": [],
   "criadoEm": "2026-11-02",
