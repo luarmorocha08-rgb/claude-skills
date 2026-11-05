@@ -1,0 +1,1910 @@
+{
+ "ritmo": {
+  "s_por_char": 0.05314285714285714,
+  "pausa": 0.4257095709570957
+ },
+ "cenas": {
+  "c01": {
+   "frases": [
+    [
+     0.5,
+     5.78,
+     "Você descobre que uma escola cheia de gente pode ficar em silêncio por causa de um copo de água."
+    ],
+    [
+     6.37,
+     8.96,
+     "Helena fecha a torneira antes de encher a caneca."
+    ],
+    [
+     9.39,
+     11.86,
+     "Entrega a uma mulher que segura uma criança no colo."
+    ],
+    [
+     12.27,
+     14.39,
+     "Atrás dela, outras pessoas esperam."
+    ],
+    [
+     14.82,
+     18.52,
+     "Você olha para a porta dos fundos, onde Davi e Léo já estão prontos."
+    ],
+    [
+     18.88,
+     21.5,
+     "Ontem, encontrar água era uma possibilidade."
+    ],
+    [
+     21.85,
+     24.39,
+     "Hoje, tem gente esperando você voltar com ela."
+    ],
+    [
+     24.86,
+     26.73,
+     "Sua irmã entrega o caminho que desenhou."
+    ],
+    [
+     27.08,
+     28.98,
+     "Pede que você volte antes de escurecer."
+    ],
+    [
+     29.38,
+     30.4,
+     "Você diz que vai tentar."
+    ],
+    [
+     30.75,
+     34.16,
+     "Ela continua segurando o papel por mais um segundo antes de soltar."
+    ]
+   ],
+   "dur": 35.36
+  },
+  "c02": {
+   "frases": [
+    [
+     0.5,
+     2.96,
+     "Você confere o que vai levar."
+    ],
+    [
+     3.43,
+     6.26,
+     "Uma garrafa. Dois recipientes vazios. Algumas bolachas."
+    ],
+    [
+     6.71,
+     8.27,
+     "Léo fica com as ferramentas."
+    ],
+    [
+     8.68,
+     11.82,
+     "Davi leva uma mangueira que Joel encontrou na área de serviço."
+    ],
+    [
+     12.25,
+     14.75,
+     "O plano é simples enquanto está desenhado no papel."
+    ],
+    [
+     15.19,
+     18.81,
+     "Chegar ao cruzamento. Verificar o caminhão. Trazer água."
+    ],
+    [
+     19.1,
+     22.72,
+     "Se o veículo não funcionar, voltar com o que conseguirem carregar."
+    ],
+    [
+     23.16,
+     25.66,
+     "Helena aponta para a marca da máquina na avenida."
+    ],
+    [
+     26.06,
+     27.21,
+     "Você confirma que lembra."
+    ],
+    [
+     27.72,
+     30.55,
+     "Só depois vai perceber o que faltou marcar naquele mapa."
+    ],
+    [
+     31.01,
+     32.32,
+     "As outras pessoas."
+    ]
+   ],
+   "dur": 33.52
+  },
+  "c03": {
+   "frases": [
+    [
+     0.5,
+     4.27,
+     "Na volta à avenida, você reconhece o banco onde descansou com sua irmã."
+    ],
+    [
+     4.87,
+     6.44,
+     "Parece ter passado uma semana."
+    ],
+    [
+     6.98,
+     8.18,
+     "Não passou nem um dia."
+    ],
+    [
+     8.71,
+     10.28,
+     "Davi anda um pouco à frente."
+    ],
+    [
+     10.73,
+     13.25,
+     "Você pergunta se Bia estava acordada quando ele saiu."
+    ],
+    [
+     13.66,
+     14.32,
+     "Ele confirma."
+    ],
+    [
+     14.53,
+     17.26,
+     "Ela pediu que trouxesse água e um lápis amarelo."
+    ],
+    [
+     17.59,
+     18.24,
+     "O dela quebrou."
+    ],
+    [
+     18.74,
+     20.7,
+     "Léo olha para uma papelaria fechada."
+    ],
+    [
+     21.07,
+     21.86,
+     "Diz que vai lembrar."
+    ],
+    [
+     22.37,
+     25.81,
+     "A conversa termina quando vocês encontram uma coisa diferente na rua."
+    ],
+    [
+     26.38,
+     30.32,
+     "Um carro que ontem estava encostado na calçada agora bloqueia a passagem."
+    ],
+    [
+     30.87,
+     32.49,
+     "Atrás dele, existe outro."
+    ],
+    [
+     32.94,
+     35.29,
+     "E uma corda atravessando o espaço entre os dois."
+    ]
+   ],
+   "dur": 36.49
+  },
+  "c04": {
+   "frases": [
+    [
+     0.5,
+     2.75,
+     "Você vê a luz antes de ver alguém."
+    ],
+    [
+     3.33,
+     3.73,
+     "Azul."
+    ],
+    [
+     4.19,
+     5.27,
+     "Debaixo do caminhão."
+    ],
+    [
+     5.7,
+     7.47,
+     "Seu corpo se abaixa sozinho."
+    ],
+    [
+     7.96,
+     11.19,
+     "Davi segura o ombro de Léo e puxa os dois para trás do muro."
+    ],
+    [
+     11.63,
+     13.69,
+     "Vocês esperam ouvir metal raspando."
+    ],
+    [
+     14.03,
+     15.44,
+     "Mas escutam uma tosse."
+    ],
+    [
+     15.78,
+     18.73,
+     "Depois, uma voz reclama que a bateria está acabando."
+    ],
+    [
+     19.15,
+     21.07,
+     "Você observa o homem levantar a luz."
+    ],
+    [
+     21.45,
+     22.38,
+     "Não era uma máquina."
+    ],
+    [
+     22.74,
+     23.6,
+     "Era uma lanterna."
+    ],
+    [
+     23.95,
+     27.39,
+     "O homem coloca a lanterna no chão outra vez, virada para a avenida."
+    ],
+    [
+     27.75,
+     28.79,
+     "Léo olha para você."
+    ],
+    [
+     29.13,
+     32.02,
+     "A luz está ali para fazer quem passa manter distância."
+    ],
+    [
+     32.41,
+     34.01,
+     "Você volta a observar o caminhão."
+    ],
+    [
+     34.34,
+     36.97,
+     "Uma mão bate discretamente no vidro da cabine."
+    ],
+    [
+     37.41,
+     38.2,
+     "Duas vezes."
+    ]
+   ],
+   "dur": 39.4
+  },
+  "c05": {
+   "frases": [
+    [
+     0.5,
+     2.45,
+     "Você chama antes de chegar perto."
+    ],
+    [
+     2.78,
+     3.95,
+     "Diz que não quer problema."
+    ],
+    [
+     4.53,
+     8.25,
+     "Breno olha para os recipientes vazios e pergunta de onde vocês vieram."
+    ],
+    [
+     8.89,
+     10.6,
+     "Você responde que estão com um grupo."
+    ],
+    [
+     10.94,
+     11.67,
+     "Não diz onde."
+    ],
+    [
+     11.96,
+     14.06,
+     "Ele pede que deixem as bolsas no chão."
+    ],
+    [
+     14.49,
+     17.18,
+     "Davi pergunta quem está responsável pelo caminhão."
+    ],
+    [
+     17.74,
+     19.26,
+     "Uma voz responde atrás dele."
+    ],
+    [
+     19.73,
+     19.97,
+     "“Eu.”"
+    ],
+    [
+     20.57,
+     22.64,
+     "Mauro parece ter dormido menos que você."
+    ],
+    [
+     22.99,
+     23.99,
+     "Mas a roupa está limpa."
+    ],
+    [
+     24.32,
+     28.62,
+     "Atrás dele, você enxerga caixas de comida empilhadas no balcão da farmácia."
+    ],
+    [
+     28.9,
+     31.24,
+     "Ele pergunta quantos litros vocês querem."
+    ],
+    [
+     31.71,
+     33.06,
+     "Você quase sente alívio."
+    ],
+    [
+     33.6,
+     35.74,
+     "Até ele perguntar o que trouxeram para pagar."
+    ]
+   ],
+   "dur": 36.94
+  },
+  "c06": {
+   "frases": [
+    [
+     0.5,
+     2.01,
+     "Você oferece as latas."
+    ],
+    [
+     2.3,
+     3.1,
+     "As pilhas."
+    ],
+    [
+     3.44,
+     5.25,
+     "Mauro separa as pilhas com um dedo."
+    ],
+    [
+     5.66,
+     8.25,
+     "Pelas duas coisas, oferece cinco litros."
+    ],
+    [
+     8.58,
+     10.66,
+     "Você explica que tem crianças no abrigo."
+    ],
+    [
+     10.99,
+     11.8,
+     "Uma enfermaria."
+    ],
+    [
+     12.11,
+     13.47,
+     "Dezenas de pessoas."
+    ],
+    [
+     13.74,
+     15.79,
+     "Ele pergunta quantas, exatamente."
+    ],
+    [
+     16.1,
+     17.99,
+     "Você percebe Davi olhar para você."
+    ],
+    [
+     18.41,
+     20.05,
+     "Responde apenas que são muitas."
+    ],
+    [
+     20.38,
+     21.76,
+     "Mauro cruza os braços."
+    ],
+    [
+     22.09,
+     28.45,
+     "Diz que água acaba. Que ele também tem gente para alimentar. Que ninguém ficou protegendo aquele caminhão por solidariedade."
+    ],
+    [
+     28.8,
+     31.22,
+     "Você olha para a lanterna azul sob a carroceria."
+    ],
+    [
+     31.6,
+     32.33,
+     "Não responde."
+    ],
+    [
+     32.72,
+     34.44,
+     "Então ele aponta para a bolsa de Léo."
+    ],
+    [
+     34.84,
+     36.92,
+     "Pelas ferramentas, pode oferecer mais."
+    ],
+    [
+     37.22,
+     38.9,
+     "Léo segura a alça com força."
+    ]
+   ],
+   "dur": 40.1
+  },
+  "c07": {
+   "frases": [
+    [
+     0.5,
+     2.93,
+     "O motorista chama sua atenção com os olhos."
+    ],
+    [
+     3.31,
+     4.7,
+     "Primeiro, olha para você."
+    ],
+    [
+     5.14,
+     6.91,
+     "Depois, para a corrente na porta."
+    ],
+    [
+     7.32,
+     8.12,
+     "Você entende."
+    ],
+    [
+     8.43,
+     10.25,
+     "Ele não está descansando ali dentro."
+    ],
+    [
+     10.59,
+     11.29,
+     "Está preso."
+    ],
+    [
+     11.81,
+     13.61,
+     "Você pergunta a Mauro quem é o homem."
+    ],
+    [
+     14.01,
+     15.59,
+     "Mauro responde que o caminhão é dele."
+    ],
+    [
+     15.98,
+     18.3,
+     "Nando trabalha para uma empresa de abastecimento."
+    ],
+    [
+     18.59,
+     20.1,
+     "Tentou sair durante a confusão."
+    ],
+    [
+     20.48,
+     22.17,
+     "Mauro diz que precisou impedir."
+    ],
+    [
+     22.49,
+     25.98,
+     "Na versão dele, o motorista estava fugindo com a água de todo mundo."
+    ],
+    [
+     26.41,
+     27.97,
+     "Você olha de novo para a cabine."
+    ],
+    [
+     28.37,
+     29.58,
+     "Nando balança a cabeça."
+    ],
+    [
+     30.04,
+     30.78,
+     "Bem devagar."
+    ]
+   ],
+   "dur": 31.98
+  },
+  "c08": {
+   "frases": [
+    [
+     0.5,
+     4.08,
+     "Você entra na farmácia esperando encontrar mais homens como Breno."
+    ],
+    [
+     4.7,
+     6.49,
+     "Encontra uma mulher dormindo sentada."
+    ],
+    [
+     7.01,
+     8.63,
+     "Um menino enrolado numa toalha."
+    ],
+    [
+     9.06,
+     11.98,
+     "Um senhor olhando para um aparelho de pressão desligado."
+    ],
+    [
+     12.59,
+     14.35,
+     "O grupo de Mauro também tem medo."
+    ],
+    [
+     14.75,
+     15.6,
+     "Também tem fome."
+    ],
+    [
+     16.06,
+     18.19,
+     "Cíntia coloca um recipiente sobre o balcão."
+    ],
+    [
+     18.68,
+     21.64,
+     "Você percebe que ela mede cada porção antes de entregar."
+    ],
+    [
+     22.11,
+     23.95,
+     "Uma mulher dos fundos pede mais água."
+    ],
+    [
+     24.43,
+     26.14,
+     "Cíntia olha na direção da porta."
+    ],
+    [
+     26.61,
+     27.93,
+     "Mauro ainda está lá fora."
+    ],
+    [
+     28.39,
+     31.57,
+     "Ela completa um pouco o copo e faz um sinal para a mulher guardar."
+    ],
+    [
+     32.04,
+     33.17,
+     "Você acompanha o gesto."
+    ],
+    [
+     33.51,
+     34.39,
+     "Cíntia percebe."
+    ],
+    [
+     34.8,
+     35.99,
+     "Nenhum dos dois comenta."
+    ]
+   ],
+   "dur": 37.19
+  },
+  "c09": {
+   "frases": [
+    [
+     0.5,
+     3.4,
+     "Enquanto espera, você vê o nome da escola num papel."
+    ],
+    [
+     3.97,
+     5.72,
+     "O mesmo endereço ouvido no rádio."
+    ],
+    [
+     6.36,
+     9.36,
+     "Você aproxima a mão, mas Cíntia segura a prancheta primeiro."
+    ],
+    [
+     10.01,
+     12.8,
+     "Pergunta, baixo, se vocês vieram de lá."
+    ],
+    [
+     13.36,
+     14.99,
+     "Você não responde imediatamente."
+    ],
+    [
+     15.52,
+     17.45,
+     "Ela olha para os recipientes vazios."
+    ],
+    [
+     17.75,
+     18.92,
+     "Depois, para você."
+    ],
+    [
+     19.16,
+     22.1,
+     "Diz que Nando estava tentando concluir aquela entrega."
+    ],
+    [
+     22.55,
+     25.78,
+     "O caminhão ficou preso no cruzamento depois que um carro bateu."
+    ],
+    [
+     25.99,
+     28.33,
+     "Mauro e os outros ajudaram a abrir passagem."
+    ],
+    [
+     28.83,
+     31.34,
+     "Quando viram o que ele transportava, mudaram de ideia."
+    ],
+    [
+     31.92,
+     34.02,
+     "Você olha para a cabine através da vitrine."
+    ],
+    [
+     34.46,
+     36.97,
+     "O abastecimento da escola não se perdeu no caminho."
+    ],
+    [
+     37.41,
+     38.99,
+     "Alguém decidiu ficar com ele."
+    ]
+   ],
+   "dur": 40.19
+  },
+  "c10": {
+   "frases": [
+    [
+     0.5,
+     2.96,
+     "Você ouve seu nome sendo chamado da porta."
+    ],
+    [
+     3.45,
+     4.84,
+     "Breno está com o mapa na mão."
+    ],
+    [
+     5.35,
+     7.1,
+     "O caminho até a escola está marcado."
+    ],
+    [
+     7.64,
+     10.62,
+     "Você sente o estômago apertar antes de chegar à calçada."
+    ],
+    [
+     11.11,
+     12.94,
+     "Mauro aponta para o desenho do abrigo."
+    ],
+    [
+     13.41,
+     15.44,
+     "Pergunta por que você não disse de onde veio."
+    ],
+    [
+     15.9,
+     17.97,
+     "Você responde que não conhecia ninguém ali."
+    ],
+    [
+     18.5,
+     19.67,
+     "Ele sorri sem humor."
+    ],
+    [
+     20.08,
+     22.66,
+     "Agora, diz que pode levar o caminhão até a escola."
+    ],
+    [
+     23.11,
+     24.63,
+     "Entregar água diretamente."
+    ],
+    [
+     25.04,
+     26.79,
+     "Em troca, quer ver os estoques."
+    ],
+    [
+     27.1,
+     29.08,
+     "Comida. Remédios. Baterias."
+    ],
+    [
+     29.18,
+     30.27,
+     "O que vocês tiverem."
+    ],
+    [
+     30.73,
+     31.9,
+     "Davi pergunta quanto."
+    ],
+    [
+     32.33,
+     33.37,
+     "Mauro fecha o mapa."
+    ],
+    [
+     33.87,
+     35.13,
+     "“Eu decido quando chegar.”"
+    ]
+   ],
+   "dur": 36.33
+  },
+  "c11": {
+   "frases": [
+    [
+     0.5,
+     1.99,
+     "Léo diz que a troca acabou."
+    ],
+    [
+     2.49,
+     4.77,
+     "Vocês vão levar os cinco litros e ir embora."
+    ],
+    [
+     5.34,
+     6.72,
+     "Breno não devolve a bolsa."
+    ],
+    [
+     7.15,
+     7.69,
+     "Puxa."
+    ],
+    [
+     8.09,
+     8.77,
+     "Léo segura."
+    ],
+    [
+     9.23,
+     10.88,
+     "Tudo acontece rápido demais."
+    ],
+    [
+     11.24,
+     11.81,
+     "Um empurrão."
+    ],
+    [
+     12.19,
+     13.71,
+     "Léo bate no carro estacionado."
+    ],
+    [
+     13.88,
+     15.75,
+     "As ferramentas se espalham no asfalto."
+    ],
+    [
+     16.2,
+     17.7,
+     "Você dá um passo na direção dele."
+    ],
+    [
+     18.03,
+     19.23,
+     "Davi segura seu braço."
+    ],
+    [
+     19.62,
+     20.97,
+     "Mauro manda Breno parar."
+    ],
+    [
+     21.33,
+     22.8,
+     "Mas não pede que devolva nada."
+    ],
+    [
+     23.23,
+     26.33,
+     "Você olha para Léo, sentado no chão, segurando o pulso."
+    ],
+    [
+     26.68,
+     30.98,
+     "É quando entende que aquela conversa nunca teve as mesmas regras para os dois lados."
+    ]
+   ],
+   "dur": 32.18
+  },
+  "c12": {
+   "frases": [
+    [
+     0.5,
+     3.34,
+     "Cíntia diz que precisa limpar o corte na mão de Léo."
+    ],
+    [
+     3.79,
+     4.58,
+     "Mauro permite."
+    ],
+    [
+     4.98,
+     5.77,
+     "Davi vai junto."
+    ],
+    [
+     6.04,
+     9.43,
+     "Você fica entre a porta e o caminhão, sem saber para onde olhar."
+    ],
+    [
+     9.93,
+     12.72,
+     "Antes de entrar, Cíntia fala perto do seu ouvido."
+    ],
+    [
+     13.17,
+     14.87,
+     "A chave da corrente está no balcão."
+    ],
+    [
+     15.21,
+     16.34,
+     "Ao lado da prancheta."
+    ],
+    [
+     16.82,
+     18.08,
+     "Você encara o rosto dela."
+    ],
+    [
+     18.51,
+     19.34,
+     "Ela não repete."
+    ],
+    [
+     19.66,
+     20.73,
+     "Só continua andando."
+    ],
+    [
+     21.22,
+     24.24,
+     "Você espera Mauro se virar para Breno e entra na farmácia."
+    ],
+    [
+     24.58,
+     26.94,
+     "A chave está exatamente onde ela disse."
+    ],
+    [
+     27.34,
+     29.02,
+     "Ao lado, o documento da entrega."
+    ],
+    [
+     29.43,
+     30.35,
+     "Você pega os dois."
+    ]
+   ],
+   "dur": 31.55
+  },
+  "c13": {
+   "frases": [
+    [
+     0.5,
+     3.16,
+     "Você abre a corrente tentando não fazer barulho."
+    ],
+    [
+     3.72,
+     6.38,
+     "Nando empurra a porta só o suficiente para sair."
+    ],
+    [
+     6.92,
+     10.19,
+     "Precisa apoiar a mão na carroceria antes de conseguir ficar em pé."
+    ],
+    [
+     10.66,
+     12.48,
+     "Você pergunta se ele consegue dirigir."
+    ],
+    [
+     12.98,
+     15.91,
+     "Ele olha para a escola marcada no papel que você está segurando."
+    ],
+    [
+     16.19,
+     18.16,
+     "Pergunta se ainda tem gente esperando."
+    ],
+    [
+     18.6,
+     19.32,
+     "Você confirma."
+    ],
+    [
+     19.84,
+     21.6,
+     "Nando fecha os olhos por um segundo."
+    ],
+    [
+     22.0,
+     23.72,
+     "Depois, aponta para o caminhão."
+    ],
+    [
+     24.18,
+     25.14,
+     "O motor funciona."
+    ],
+    [
+     25.39,
+     26.58,
+     "A água está no tanque."
+    ],
+    [
+     26.81,
+     28.91,
+     "Mas a chave da ignição está com Mauro."
+    ],
+    [
+     29.36,
+     31.66,
+     "Antes que você consiga responder, escuta:"
+    ],
+    [
+     32.03,
+     32.84,
+     "“Afasta dele.”"
+    ],
+    [
+     33.37,
+     34.78,
+     "Breno viu a porta aberta."
+    ]
+   ],
+   "dur": 35.98
+  },
+  "c14": {
+   "frases": [
+    [
+     0.5,
+     1.89,
+     "Mauro olha para Nando."
+    ],
+    [
+     2.33,
+     4.17,
+     "Depois, para a corrente na sua mão."
+    ],
+    [
+     4.47,
+     6.88,
+     "Você mantém o documento da entrega visível."
+    ],
+    [
+     7.31,
+     9.11,
+     "Diz que a água estava indo para a escola."
+    ],
+    [
+     9.39,
+     11.0,
+     "Que ele pode acompanhar a entrega."
+    ],
+    [
+     11.14,
+     13.23,
+     "Que ninguém precisa sair dali sem água."
+    ],
+    [
+     13.76,
+     15.37,
+     "Mauro pede a chave da corrente."
+    ],
+    [
+     15.72,
+     16.67,
+     "Você não entrega."
+    ],
+    [
+     17.12,
+     19.8,
+     "Nando fala antes que você consiga pensar no que fazer."
+    ],
+    [
+     20.07,
+     22.24,
+     "Diz que aceitou dividir parte da carga."
+    ],
+    [
+     22.5,
+     23.93,
+     "Que só queria continuar a rota."
+    ],
+    [
+     24.1,
+     26.11,
+     "Que foi trancado quando tentou sair."
+    ],
+    [
+     26.56,
+     29.5,
+     "Você vê duas pessoas aparecerem na porta da farmácia."
+    ],
+    [
+     29.86,
+     30.8,
+     "Elas estão ouvindo."
+    ],
+    [
+     31.15,
+     33.44,
+     "Mauro manda todo mundo voltar para dentro."
+    ],
+    [
+     33.79,
+     36.1,
+     "Dessa vez, ninguém se move de imediato."
+    ]
+   ],
+   "dur": 37.3
+  },
+  "c15": {
+   "frases": [
+    [
+     0.5,
+     2.36,
+     "Cíntia desce o degrau da farmácia."
+    ],
+    [
+     2.71,
+     4.8,
+     "Diz que vão encher os recipientes do grupo."
+    ],
+    [
+     5.33,
+     7.29,
+     "Depois, o caminhão segue para a escola."
+    ],
+    [
+     7.87,
+     9.6,
+     "Mauro pergunta quem deu essa ordem."
+    ],
+    [
+     10.11,
+     12.2,
+     "Ela responde olhando diretamente para ele."
+    ],
+    [
+     12.66,
+     14.89,
+     "“Ninguém. Eu estou dizendo o que vou fazer.”"
+    ],
+    [
+     15.48,
+     17.42,
+     "Você percebe que a mão dela está tremendo."
+    ],
+    [
+     17.95,
+     20.26,
+     "Mesmo assim, ela pega o primeiro recipiente."
+    ],
+    [
+     20.72,
+     21.66,
+     "Um homem vem ajudar."
+    ],
+    [
+     22.02,
+     23.61,
+     "Depois, a mulher com a criança."
+    ],
+    [
+     24.19,
+     26.67,
+     "Breno olha para Mauro, esperando alguma reação."
+    ],
+    [
+     27.24,
+     28.77,
+     "Mauro coloca a mão perto da arma."
+    ],
+    [
+     29.15,
+     30.03,
+     "Davi pede calma."
+    ],
+    [
+     30.49,
+     35.48,
+     "Você sente vontade de se afastar, mas Nando ainda está ao seu lado, mal conseguindo ficar em pé."
+    ],
+    [
+     35.91,
+     37.01,
+     "Cíntia não avança."
+    ],
+    [
+     37.28,
+     38.74,
+     "Só aponta para as famílias."
+    ],
+    [
+     39.15,
+     42.95,
+     "Pergunta se ele realmente vai impedir que encham os próprios recipientes."
+    ]
+   ],
+   "dur": 44.15
+  },
+  "c16": {
+   "frases": [
+    [
+     0.5,
+     2.09,
+     "Mauro demora para responder."
+    ],
+    [
+     2.62,
+     4.21,
+     "Você não sabe o que pesa mais."
+    ],
+    [
+     4.53,
+     5.61,
+     "As pessoas olhando."
+    ],
+    [
+     5.75,
+     7.77,
+     "O caminhão que ele não sabe conduzir."
+    ],
+    [
+     8.23,
+     11.05,
+     "Ou a possibilidade de terminar aquela discussão sozinho."
+    ],
+    [
+     11.58,
+     13.1,
+     "Ele coloca a chave sobre o capô."
+    ],
+    [
+     13.4,
+     16.36,
+     "Diz que os recipientes da farmácia serão cheios primeiro."
+    ],
+    [
+     16.83,
+     20.18,
+     "Depois, vai até a escola negociar pessoalmente o restante."
+    ],
+    [
+     20.65,
+     21.73,
+     "Você olha para Davi."
+    ],
+    [
+     22.19,
+     23.48,
+     "Davi olha para Nando."
+    ],
+    [
+     23.92,
+     25.54,
+     "Não é a solução que você queria."
+    ],
+    [
+     25.96,
+     27.31,
+     "Mas o motorista está solto."
+    ],
+    [
+     27.64,
+     28.59,
+     "Léo está de pé."
+    ],
+    [
+     28.96,
+     30.42,
+     "E a chave está ao alcance."
+    ],
+    [
+     30.86,
+     33.45,
+     "Você concorda que Helena vai conversar com ele na entrada."
+    ],
+    [
+     33.8,
+     35.15,
+     "Não promete os estoques."
+    ],
+    [
+     35.38,
+     36.49,
+     "Não promete mais nada."
+    ],
+    [
+     36.96,
+     37.61,
+     "Pega a chave."
+    ]
+   ],
+   "dur": 38.81
+  },
+  "c17": {
+   "frases": [
+    [
+     0.5,
+     2.66,
+     "Você ajuda a encher os recipientes."
+    ],
+    [
+     3.08,
+     6.36,
+     "A mulher com a criança agradece antes de voltar para a farmácia."
+    ],
+    [
+     6.85,
+     11.99,
+     "Você percebe como é fácil olhar para um lugar cheio de desconhecidos e enxergar um grupo só."
+    ],
+    [
+     12.51,
+     13.65,
+     "Cíntia continua ali."
+    ],
+    [
+     14.01,
+     14.72,
+     "Breno também."
+    ],
+    [
+     15.25,
+     16.71,
+     "Mas não fizeram a mesma escolha."
+    ],
+    [
+     17.22,
+     20.05,
+     "Enquanto a água é distribuída, Davi examina o caminho."
+    ],
+    [
+     20.47,
+     22.32,
+     "Um carro bloqueia a saída do caminhão."
+    ],
+    [
+     22.57,
+     26.18,
+     "Está destrancado, mas ficou numa posição ruim depois da batida."
+    ],
+    [
+     26.57,
+     28.49,
+     "Você ajuda a empurrar com os outros."
+    ],
+    [
+     28.8,
+     30.08,
+     "Léo usa só uma mão."
+    ],
+    [
+     30.38,
+     31.73,
+     "Mesmo assim, não para."
+    ],
+    [
+     32.12,
+     35.06,
+     "Quando o espaço finalmente abre, Davi sobe na cabine."
+    ],
+    [
+     35.54,
+     37.26,
+     "Nando senta ao lado para orientar."
+    ],
+    [
+     37.63,
+     40.04,
+     "Você fica olhando para a chave antes que ela gire."
+    ],
+    [
+     40.55,
+     43.62,
+     "O barulho do motor vai anunciar vocês para o bairro inteiro."
+    ]
+   ],
+   "dur": 44.82
+  },
+  "c18": {
+   "frases": [
+    [
+     0.5,
+     2.46,
+     "Na primeira tentativa, nada."
+    ],
+    [
+     2.89,
+     4.57,
+     "Na segunda, o motor pega."
+    ],
+    [
+     4.85,
+     7.38,
+     "Você espera uma luz azul aparecer na esquina."
+    ],
+    [
+     7.78,
+     8.86,
+     "Espera ouvir metal."
+    ],
+    [
+     9.41,
+     11.0,
+     "Mas a rua continua vazia."
+    ],
+    [
+     11.59,
+     14.26,
+     "Léo prende a bolsa de ferramentas recuperada no ombro."
+    ],
+    [
+     14.7,
+     16.81,
+     "Cíntia se aproxima com uma mochila pequena."
+    ],
+    [
+     17.25,
+     18.75,
+     "Vai acompanhar Nando até a escola."
+    ],
+    [
+     19.23,
+     21.22,
+     "Você pergunta pelo resto das pessoas."
+    ],
+    [
+     21.43,
+     26.39,
+     "Ela explica que primeiro quer saber se existe espaço. Depois, volta para buscá-las."
+    ],
+    [
+     26.8,
+     28.34,
+     "Mauro sobe num carro com Breno."
+    ],
+    [
+     28.63,
+     29.8,
+     "Eles vão seguir o caminhão."
+    ],
+    [
+     30.24,
+     31.66,
+     "Você não gosta da ideia."
+    ],
+    [
+     31.81,
+     35.27,
+     "Mas também não pode passar o dia inteiro parado naquele cruzamento."
+    ]
+   ],
+   "dur": 36.47
+  },
+  "c19": {
+   "frases": [
+    [
+     0.5,
+     4.28,
+     "Quando você vê o muro da escola, sente as pernas ficarem leves."
+    ],
+    [
+     4.76,
+     6.26,
+     "Sua irmã aparece no portão."
+    ],
+    [
+     6.7,
+     7.09,
+     "Sorri."
+    ],
+    [
+     7.45,
+     9.4,
+     "Então vê Léo segurando o pulso."
+    ],
+    [
+     9.85,
+     11.7,
+     "Nando com dificuldade para descer."
+    ],
+    [
+     12.03,
+     14.32,
+     "O carro de Mauro parando atrás do caminhão."
+    ],
+    [
+     14.82,
+     16.06,
+     "O sorriso desaparece."
+    ],
+    [
+     16.6,
+     18.65,
+     "Você chega à grade antes dos outros."
+    ],
+    [
+     19.08,
+     20.65,
+     "Conta a Helena que trouxeram água."
+    ],
+    [
+     21.04,
+     23.1,
+     "Depois, explica quem veio junto."
+    ],
+    [
+     23.6,
+     24.63,
+     "Ela escuta até o fim."
+    ],
+    [
+     25.11,
+     28.09,
+     "Só então chama Joel e abre espaço para o caminhão entrar."
+    ],
+    [
+     28.65,
+     29.74,
+     "Mauro tenta acompanhar."
+    ],
+    [
+     30.24,
+     32.03,
+     "Helena fecha o portão na frente dele."
+    ],
+    [
+     32.38,
+     34.18,
+     "Você fica do lado de fora com ela."
+    ],
+    [
+     34.57,
+     36.08,
+     "A conversa vai acontecer ali."
+    ]
+   ],
+   "dur": 37.28
+  },
+  "c20": {
+   "frases": [
+    [
+     0.5,
+     4.99,
+     "Mauro cobra combustível, proteção e o tempo que ficou cuidando do veículo."
+    ],
+    [
+     5.58,
+     7.89,
+     "Helena pergunta quanto de água já foi vendido."
+    ],
+    [
+     8.35,
+     9.2,
+     "Ele não responde."
+    ],
+    [
+     9.59,
+     11.62,
+     "Nando entrega o documento pela grade."
+    ],
+    [
+     12.03,
+     13.22,
+     "O nome da escola está ali."
+    ],
+    [
+     13.63,
+     15.01,
+     "O destino da carga também."
+    ],
+    [
+     15.69,
+     20.0,
+     "Helena diz que pode dividir uma parte da comida disponível com as famílias da farmácia."
+    ],
+    [
+     20.23,
+     21.87,
+     "Depois de contar os suprimentos."
+    ],
+    [
+     22.2,
+     23.95,
+     "E entregar diretamente a elas."
+    ],
+    [
+     24.47,
+     27.02,
+     "Mauro diz que quem organiza aquele grupo é ele."
+    ],
+    [
+     27.54,
+     28.83,
+     "Helena responde que entendeu."
+    ],
+    [
+     29.04,
+     31.54,
+     "Mas a oferta continua sendo para as pessoas."
+    ],
+    [
+     32.13,
+     33.76,
+     "Você observa o rosto dele mudar."
+    ],
+    [
+     34.34,
+     36.55,
+     "Na avenida, ele podia fechar uma passagem."
+    ],
+    [
+     36.95,
+     40.63,
+     "Ali, tem gente dos dois lados da grade ouvindo cada palavra."
+    ],
+    [
+     41.2,
+     42.49,
+     "Mauro guarda a caderneta."
+    ],
+    [
+     42.84,
+     44.66,
+     "Antes de ir embora, olha para você."
+    ],
+    [
+     45.2,
+     46.75,
+     "“Agora eu sei onde vocês estão.”"
+    ],
+    [
+     47.21,
+     49.94,
+     "Você não consegue responder antes que ele entre no carro."
+    ]
+   ],
+   "dur": 51.14
+  },
+  "c23": {
+   "frases": [
+    [
+     0.5,
+     3.67,
+     "Antes de dormir, você leva as últimas canecas para a cozinha."
+    ],
+    [
+     4.24,
+     6.48,
+     "Mais pessoas chegaram desde o abastecimento."
+    ],
+    [
+     7.06,
+     9.6,
+     "Helena diz que alguém deve ter visto o caminhão entrando."
+    ],
+    [
+     10.17,
+     12.21,
+     "Você olha para os colchonetes ocupados."
+    ],
+    [
+     12.71,
+     14.85,
+     "Mais gente significa menos espaço."
+    ],
+    [
+     15.15,
+     17.37,
+     "Também significa mais mãos para ajudar."
+    ],
+    [
+     17.96,
+     20.62,
+     "Você repete isso para si enquanto passa pelo corredor."
+    ],
+    [
+     21.21,
+     25.08,
+     "Perto da saída, um homem que chegou ao anoitecer segura um rádio pequeno."
+    ],
+    [
+     25.38,
+     27.66,
+     "Você acha que ele está procurando uma transmissão."
+    ],
+    [
+     28.23,
+     29.33,
+     "Até ouvir a voz dele."
+    ],
+    [
+     29.94,
+     30.39,
+     "Baixa."
+    ],
+    [
+     30.85,
+     31.23,
+     "Clara."
+    ],
+    [
+     31.86,
+     33.44,
+     "“Tem água. Comida também.”"
+    ],
+    [
+     34.0,
+     34.62,
+     "Você para."
+    ],
+    [
+     35.12,
+     37.23,
+     "O homem continua, de costas para você."
+    ],
+    [
+     37.68,
+     40.58,
+     "“Nos fundos, o portão fecha só com uma corrente.”"
+    ],
+    [
+     41.02,
+     41.83,
+     "O homem se vira."
+    ],
+    [
+     42.24,
+     44.61,
+     "Você reconhece a faixa branca amarrada no pulso."
+    ],
+    [
+     45.1,
+     47.15,
+     "A mesma que Breno usava no cruzamento."
+    ]
+   ],
+   "dur": 48.35
+  },
+  "c21": {
+   "frases": [
+    [
+     0.5,
+     5.02,
+     "Você entra na escola com a sensação de que ainda deixou alguma coisa do lado de fora."
+    ],
+    [
+     5.44,
+     7.09,
+     "Joel acompanha o abastecimento."
+    ],
+    [
+     7.52,
+     9.59,
+     "O nível do reservatório começa a subir."
+    ],
+    [
+     10.01,
+     14.43,
+     "Na cozinha, alguém solta uma risada curta quando a torneira volta a correr direito."
+    ],
+    [
+     14.85,
+     18.2,
+     "Você não esperava que aquele som fosse quase fazer você chorar."
+    ],
+    [
+     18.62,
+     19.79,
+     "Rosa manda Léo sentar."
+    ],
+    [
+     20.22,
+     21.76,
+     "Ele tenta dizer que está bem."
+    ],
+    [
+     22.19,
+     25.22,
+     "Você aponta para a cadeira antes que ela precise repetir."
+    ],
+    [
+     25.64,
+     26.6,
+     "Davi encontra Bia."
+    ],
+    [
+     27.02,
+     29.68,
+     "Ela abraça a cintura dele e pergunta se deu certo."
+    ],
+    [
+     30.11,
+     31.06,
+     "Ele mostra a água."
+    ],
+    [
+     31.49,
+     33.08,
+     "Ela pergunta do lápis amarelo."
+    ],
+    [
+     33.51,
+     34.57,
+     "Davi fecha os olhos."
+    ],
+    [
+     35.0,
+     35.48,
+     "Esqueceu."
+    ],
+    [
+     35.9,
+     37.34,
+     "Léo tira um lápis do bolso."
+    ],
+    [
+     37.76,
+     40.79,
+     "Encontrou num dos balcões da farmácia, enquanto esperava."
+    ],
+    [
+     41.22,
+     42.81,
+     "Bia segura como se fosse novo."
+    ],
+    [
+     43.24,
+     45.79,
+     "Você vê Davi agradecer sem conseguir dizer nada."
+    ]
+   ],
+   "dur": 46.99,
+   "estimado": true
+  },
+  "c22": {
+   "frases": [
+    [
+     0.5,
+     3.48,
+     "Sua irmã pergunta se a máquina estava perto do caminhão."
+    ],
+    [
+     3.9,
+     5.39,
+     "Você conta sobre a lanterna."
+    ],
+    [
+     5.82,
+     6.4,
+     "A corrente."
+    ],
+    [
+     6.83,
+     8.63,
+     "As ferramentas espalhadas no chão."
+    ],
+    [
+     9.06,
+     10.49,
+     "Ela escuta sem interromper."
+    ],
+    [
+     10.92,
+     12.89,
+     "Depois, pergunta se Mauro vai voltar."
+    ],
+    [
+     13.31,
+     14.59,
+     "Você olha para o portão."
+    ],
+    [
+     15.01,
+     15.92,
+     "Diz que não sabe."
+    ],
+    [
+     16.34,
+     18.95,
+     "É a resposta que mais deu desde que tudo começou."
+    ],
+    [
+     19.37,
+     21.07,
+     "Sua irmã encosta o ombro no seu."
+    ],
+    [
+     21.5,
+     24.47,
+     "Por alguns minutos, vocês observam a escola funcionando."
+    ],
+    [
+     24.9,
+     25.64,
+     "A água voltou."
+    ],
+    [
+     26.07,
+     27.18,
+     "A cozinha está acesa."
+    ],
+    [
+     27.61,
+     28.99,
+     "Nando não está mais preso."
+    ],
+    [
+     29.42,
+     33.08,
+     "Você tenta deixar que essas coisas sejam suficientes por um instante."
+    ]
+   ],
+   "dur": 34.28,
+   "estimado": true
+  }
+ }
+}
