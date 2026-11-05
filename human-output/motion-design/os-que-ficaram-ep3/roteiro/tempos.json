@@ -1,0 +1,1488 @@
+{
+ "ritmo": {
+  "s_por_char": 0.05792592592592596,
+  "pausa": 0.3200000000000003
+ },
+ "cenas": {
+  "c01": {
+   "frases": [
+    [
+     0.5,
+     2.7,
+     "Você passa a noite esperando o amanhecer."
+    ],
+    [
+     3.19,
+     8.46,
+     "Mas, quando a claridade aparece na janela, sair de casa parece uma ideia muito pior."
+    ],
+    [
+     9.04,
+     12.3,
+     "No rádio, a transmissão da escola volta por alguns segundos."
+    ],
+    [
+     12.73,
+     18.84,
+     "Você escuta o endereço. A entrada pela quadra. Um pedido para levar cobertores e recipientes vazios."
+    ],
+    [
+     19.29,
+     20.71,
+     "Depois, só chiado."
+    ],
+    [
+     21.19,
+     24.19,
+     "Sua irmã coloca uma garrafa na sua bolsa e fica com a outra."
+    ],
+    [
+     24.51,
+     31.16,
+     "Desde o mercado, vocês decidiram dividir os suprimentos. Se alguém perder uma mochila, o outro ainda terá alguma coisa."
+    ],
+    [
+     31.61,
+     32.72,
+     "Você confere o celular."
+    ],
+    [
+     33.09,
+     33.72,
+     "Sem sinal."
+    ],
+    [
+     34.04,
+     35.81,
+     "Mesmo assim, guarda no bolso."
+    ],
+    [
+     36.24,
+     41.64,
+     "Antes de sair, sua irmã pega uma fotografia presa na geladeira e coloca entre as páginas de um caderno."
+    ],
+    [
+     42.0,
+     45.56,
+     "Você finge que não percebe o tempo que ela leva para fechar a capa."
+    ]
+   ],
+   "dur": 46.76
+  },
+  "c02": {
+   "frases": [
+    [
+     0.5,
+     1.68,
+     "Você tranca a porta."
+    ],
+    [
+     2.06,
+     4.68,
+     "Depois, testa a maçaneta duas vezes."
+    ],
+    [
+     4.99,
+     9.59,
+     "Ainda existe uma parte de você preocupada com alguém entrando na casa enquanto está fora."
+    ],
+    [
+     10.17,
+     12.98,
+     "Na calçada, sua irmã pergunta se você trouxe o mapa."
+    ],
+    [
+     13.4,
+     14.43,
+     "Você bate no bolso."
+    ],
+    [
+     14.65,
+     16.17,
+     "Ela pergunta das pilhas."
+    ],
+    [
+     16.44,
+     17.47,
+     "Você mostra a bolsa."
+    ],
+    [
+     17.93,
+     20.75,
+     "Quando pergunta se você está pronto, você começa a andar."
+    ],
+    [
+     21.15,
+     22.98,
+     "É a única resposta que consegue dar."
+    ],
+    [
+     23.45,
+     25.18,
+     "A escola fica a seis quilômetros."
+    ],
+    [
+     25.38,
+     27.39,
+     "Você já fez esse caminho muitas vezes."
+    ],
+    [
+     27.53,
+     31.77,
+     "Só nunca precisou prestar atenção em quantos lugares existiam para se esconder."
+    ]
+   ],
+   "dur": 32.97
+  },
+  "c03": {
+   "frases": [
+    [
+     0.5,
+     3.37,
+     "Na avenida, você encontra um ônibus atravessado."
+    ],
+    [
+     3.8,
+     7.56,
+     "A porta está aberta. Uma bolsa continua no banco da frente."
+    ],
+    [
+     8.09,
+     10.74,
+     "O sinal de trânsito apagado balança com o vento."
+    ],
+    [
+     11.09,
+     16.16,
+     "Você procura uma passagem entre os carros e vê um caminhão-pipa parado perto de uma farmácia."
+    ],
+    [
+     16.5,
+     19.49,
+     "Por um instante, pensa em verificar se existe água ali."
+    ],
+    [
+     20.14,
+     21.76,
+     "Então escuta metal raspando."
+    ],
+    [
+     22.13,
+     23.65,
+     "Sua irmã segura seu braço."
+    ],
+    [
+     24.02,
+     26.73,
+     "Entre os veículos, uma máquina se move devagar."
+    ],
+    [
+     27.07,
+     31.9,
+     "Ela para ao lado de um carro, inclina o corpo e passa uma luz azul pelas janelas."
+    ],
+    [
+     32.39,
+     34.26,
+     "Você se abaixa antes que ela termine."
+    ],
+    [
+     34.9,
+     36.92,
+     "A escola está do outro lado da avenida."
+    ],
+    [
+     37.24,
+     40.24,
+     "A rota alternativa passa pela estação e pela passarela."
+    ],
+    [
+     40.6,
+     44.36,
+     "É mais longe. Tem escadas. Vocês não sabem se está livre."
+    ],
+    [
+     44.67,
+     46.57,
+     "Mas você sabe o que está na avenida."
+    ],
+    [
+     46.88,
+     51.37,
+     "Marca o caminhão no mapa, dobra o papel e acompanha sua irmã pela rua lateral."
+    ]
+   ],
+   "dur": 52.57
+  },
+  "c04": {
+   "frases": [
+    [
+     0.5,
+     3.01,
+     "Você quase grita quando alguém aparece na esquina."
+    ],
+    [
+     3.48,
+     5.66,
+     "O rapaz à sua frente quase grita também."
+    ],
+    [
+     6.27,
+     11.6,
+     "Por um segundo, vocês ficam parados, apontando um para o outro como se isso resolvesse alguma coisa."
+    ],
+    [
+     12.29,
+     13.59,
+     "Ele é o primeiro a baixar a mão."
+    ],
+    [
+     14.1,
+     15.15,
+     "O nome dele é Léo."
+    ],
+    [
+     15.43,
+     18.38,
+     "Você reconhece a mochila de entregas amarrada à bicicleta."
+    ],
+    [
+     18.94,
+     21.02,
+     "Ele pergunta se vocês estão indo para a escola."
+    ],
+    [
+     21.46,
+     23.52,
+     "Você confirma, mas mantém distância."
+    ],
+    [
+     24.18,
+     26.25,
+     "Léo olha para o mapa e aponta uma rua."
+    ],
+    [
+     26.73,
+     32.37,
+     "Diz que a entrada principal da estação está bloqueada. Existe uma passagem pelo estacionamento de funcionários."
+    ],
+    [
+     32.82,
+     34.01,
+     "Você pergunta como ele sabe."
+    ],
+    [
+     34.56,
+     36.5,
+     "Ele levanta a bicicleta com dificuldade."
+    ],
+    [
+     36.98,
+     38.64,
+     "\"Porque eu já tentei o caminho errado.\""
+    ],
+    [
+     39.09,
+     40.84,
+     "A roda não vai aguentar o trajeto."
+    ],
+    [
+     41.32,
+     43.82,
+     "Você espera enquanto ele tira o que consegue carregar."
+    ],
+    [
+     44.42,
+     48.34,
+     "Léo deixa a bicicleta encostada no muro, mas leva a luz removível do guidão."
+    ],
+    [
+     48.9,
+     50.82,
+     "Antes de seguir, olha para trás."
+    ],
+    [
+     51.24,
+     52.74,
+     "Você reconhece aquela expressão."
+    ],
+    [
+     53.16,
+     54.8,
+     "Deixou a mesma na porta de casa."
+    ]
+   ],
+   "dur": 56.0
+  },
+  "c05": {
+   "frases": [
+    [
+     0.5,
+     3.78,
+     "Na escada da estação, você encontra mais duas pessoas."
+    ],
+    [
+     4.0,
+     6.11,
+     "O homem tenta subir um carrinho cheio."
+    ],
+    [
+     6.62,
+     8.45,
+     "Cada degrau produz uma pancada."
+    ],
+    [
+     9.03,
+     10.56,
+     "Você olha na direção da avenida."
+    ],
+    [
+     10.92,
+     12.38,
+     "O som está alto demais."
+    ],
+    [
+     12.55,
+     14.05,
+     "Sua irmã pede que ele pare."
+    ],
+    [
+     14.51,
+     16.26,
+     "Ele responde sem soltar o carrinho."
+    ],
+    [
+     16.59,
+     19.75,
+     "Ali estão a comida, a água e as roupas da filha."
+    ],
+    [
+     20.3,
+     21.34,
+     "Você olha para a menina."
+    ],
+    [
+     21.83,
+     26.43,
+     "Ela segura um cobertor dobrado com tanto cuidado que parece estar carregando algo quebrável."
+    ],
+    [
+     26.82,
+     28.26,
+     "O homem se chama Davi."
+    ],
+    [
+     28.58,
+     29.7,
+     "A menina, Bia."
+    ],
+    [
+     30.07,
+     33.81,
+     "Você segura a parte da frente do carrinho. Léo pega o outro lado."
+    ],
+    [
+     34.14,
+     36.44,
+     "Na primeira tentativa, ele sobe um degrau."
+    ],
+    [
+     36.89,
+     38.83,
+     "Na segunda, uma das rodas se dobra."
+    ],
+    [
+     39.23,
+     40.68,
+     "Na terceira, se solta."
+    ],
+    [
+     40.96,
+     42.96,
+     "Você espera ouvir a máquina responder."
+    ],
+    [
+     43.36,
+     44.98,
+     "Só escuta a própria respiração."
+    ],
+    [
+     45.36,
+     49.12,
+     "Bia se agacha e segura a roda antes que ela role escada abaixo."
+    ],
+    [
+     49.63,
+     51.84,
+     "Ninguém precisa pedir silêncio outra vez."
+    ]
+   ],
+   "dur": 53.04
+  },
+  "c06": {
+   "frases": [
+    [
+     0.5,
+     2.65,
+     "Você ajuda Davi a esvaziar o carrinho."
+    ],
+    [
+     3.02,
+     6.58,
+     "Agora, tudo precisa caber nas mochilas ou nas mãos."
+    ],
+    [
+     6.86,
+     8.99,
+     "Um cobertor fica. Uma panela também."
+    ],
+    [
+     9.3,
+     13.66,
+     "Davi pega um álbum de fotografias, abre na primeira página e fecha."
+    ],
+    [
+     14.24,
+     15.76,
+     "Você abre espaço na sua bolsa."
+    ],
+    [
+     16.21,
+     17.68,
+     "Ele demora um pouco para entregar."
+    ],
+    [
+     18.18,
+     19.61,
+     "Bia aponta para o galão."
+    ],
+    [
+     20.07,
+     23.01,
+     "Vocês enchem as garrafas menores, mas ainda sobra água."
+    ],
+    [
+     23.22,
+     25.6,
+     "Você tenta erguer o galão junto com a bolsa."
+    ],
+    [
+     25.96,
+     27.42,
+     "Consegue dar três passos."
+    ],
+    [
+     27.76,
+     28.48,
+     "Devolve ao chão."
+    ],
+    [
+     29.02,
+     33.28,
+     "Léo encontra uma caneta no bolso e escreve num pedaço de papel: \"ÁGUA\"."
+    ],
+    [
+     33.74,
+     36.58,
+     "Vocês deixam o recipiente à sombra, ao lado da escada."
+    ],
+    [
+     36.95,
+     39.06,
+     "Você não sabe quem vai passar por ali depois."
+    ],
+    [
+     39.44,
+     40.98,
+     "Mas torce para que alguém passe."
+    ]
+   ],
+   "dur": 42.18
+  },
+  "c07": {
+   "frases": [
+    [
+     0.5,
+     4.16,
+     "No alto da passarela, você finalmente enxerga o bairro inteiro."
+    ],
+    [
+     4.78,
+     7.71,
+     "Telhados. Antenas. Ruas paradas."
+    ],
+    [
+     8.21,
+     9.61,
+     "Ao longe, a escola."
+    ],
+    [
+     9.91,
+     13.54,
+     "Você está prestes a apontar quando Bia puxa a camisa do pai."
+    ],
+    [
+     13.9,
+     16.2,
+     "Ela viu uma luz se movendo debaixo de vocês."
+    ],
+    [
+     16.75,
+     18.09,
+     "Você acompanha o olhar dela."
+    ],
+    [
+     18.52,
+     20.05,
+     "A máquina saiu da avenida."
+    ],
+    [
+     20.33,
+     23.14,
+     "Agora, está entrando no estacionamento da estação."
+    ],
+    [
+     23.72,
+     25.28,
+     "Você se agacha atrás de uma placa."
+    ],
+    [
+     25.78,
+     27.29,
+     "Davi puxa Bia para perto."
+    ],
+    [
+     27.54,
+     30.6,
+     "Um feixe azul percorre a escada por onde vocês subiram."
+    ],
+    [
+     31.16,
+     32.38,
+     "Para no carrinho abandonado."
+    ],
+    [
+     32.72,
+     34.17,
+     "Depois, sobe um pouco."
+    ],
+    [
+     34.38,
+     37.78,
+     "Você segura a bolsa contra o corpo para impedir que as latas batam."
+    ],
+    [
+     38.3,
+     39.51,
+     "A máquina fica imóvel."
+    ],
+    [
+     39.78,
+     45.23,
+     "Você não sabe se está ouvindo, procurando movimento ou fazendo alguma coisa que nem consegue imaginar."
+    ],
+    [
+     45.75,
+     47.85,
+     "Só sabe que ninguém ali quer descobrir."
+    ],
+    [
+     48.52,
+     51.27,
+     "Quando o som começa a se afastar, você ainda espera."
+    ],
+    [
+     52.02,
+     54.51,
+     "Léo levanta primeiro, só o suficiente para olhar."
+    ],
+    [
+     54.99,
+     55.61,
+     "Faz um sinal."
+    ],
+    [
+     56.16,
+     57.71,
+     "Vocês continuam sem conversar."
+    ]
+   ],
+   "dur": 58.91
+  },
+  "c08": {
+   "frases": [
+    [
+     0.5,
+     3.68,
+     "Você só percebe a dor no ombro quando coloca a bolsa no chão."
+    ],
+    [
+     4.07,
+     6.84,
+     "Sua irmã tira uma pedrinha de dentro do tênis."
+    ],
+    [
+     7.27,
+     9.27,
+     "Léo divide um pacote de bolachas."
+    ],
+    [
+     9.72,
+     13.24,
+     "Bia recebe duas, olha para o pai e devolve uma à mão dele."
+    ],
+    [
+     13.69,
+     16.38,
+     "Você vira o rosto antes que Davi perceba que viu."
+    ],
+    [
+     16.89,
+     21.39,
+     "Enquanto descansam, você pergunta se alguém sabe alguma coisa sobre as pessoas levadas."
+    ],
+    [
+     21.61,
+     23.36,
+     "Ninguém responde de imediato."
+    ],
+    [
+     23.63,
+     27.59,
+     "Depois, Bia pergunta se a mãe também pode estar procurando uma escola."
+    ],
+    [
+     28.0,
+     28.97,
+     "Davi diz que pode."
+    ],
+    [
+     29.18,
+     32.96,
+     "Você percebe que ele escolhe uma resposta que consegue dizer sem mentir."
+    ],
+    [
+     33.43,
+     35.91,
+     "Sua irmã aperta a fotografia dentro do caderno."
+    ],
+    [
+     36.34,
+     37.8,
+     "Você não faz mais perguntas."
+    ]
+   ],
+   "dur": 39.0
+  },
+  "c09": {
+   "frases": [
+    [
+     0.5,
+     3.28,
+     "Quando chega à escola, você encontra o portão trancado."
+    ],
+    [
+     3.81,
+     5.01,
+     "Puxa a grade uma vez."
+    ],
+    [
+     5.41,
+     5.81,
+     "Nada."
+    ],
+    [
+     6.35,
+     12.34,
+     "Por alguns segundos, o rádio, o mapa e todo aquele caminho parecem ter levado vocês a uma porta fechada."
+    ],
+    [
+     12.56,
+     15.46,
+     "Então Léo encontra uma seta pintada num papelão."
+    ],
+    [
+     15.96,
+     17.17,
+     "Entrada pela quadra."
+    ],
+    [
+     17.64,
+     19.87,
+     "Você contorna o muro e escuta vozes."
+    ],
+    [
+     20.18,
+     21.4,
+     "Não saindo de um aparelho."
+    ],
+    [
+     21.76,
+     24.85,
+     "Vozes conversando, discutindo, chamando nomes."
+    ],
+    [
+     25.0,
+     27.0,
+     "Você olha por uma abertura na grade."
+    ],
+    [
+     27.43,
+     29.43,
+     "Há roupas penduradas numa rede de vôlei."
+    ],
+    [
+     29.88,
+     31.27,
+     "Panelas junto a uma mesa."
+    ],
+    [
+     31.64,
+     33.37,
+     "Gente deitada em colchonetes."
+    ],
+    [
+     33.76,
+     37.24,
+     "Uma mulher vem até o portão e pergunta quantas pessoas estão com você."
+    ],
+    [
+     37.72,
+     39.82,
+     "Você conta, mesmo sabendo a resposta."
+    ],
+    [
+     40.24,
+     40.71,
+     "\"Cinco.\""
+    ],
+    [
+     41.1,
+     44.58,
+     "Só quando ela abre é que você percebe que estava esperando algum truque."
+    ]
+   ],
+   "dur": 45.78
+  },
+  "c10": {
+   "frases": [
+    [
+     0.5,
+     2.22,
+     "A mulher se apresenta como Helena."
+    ],
+    [
+     2.53,
+     4.06,
+     "Ela dava aula naquela escola."
+    ],
+    [
+     4.3,
+     11.36,
+     "Agora, anota quem chega, organiza onde cada um dorme e tenta responder perguntas para as quais ninguém preparou uma aula."
+    ],
+    [
+     11.91,
+     12.93,
+     "Você diz seu nome."
+    ],
+    [
+     13.24,
+     14.19,
+     "O nome da sua irmã."
+    ],
+    [
+     14.59,
+     15.36,
+     "De onde vieram."
+    ],
+    [
+     15.81,
+     18.85,
+     "Helena pergunta se vocês viram outras pessoas pelo caminho."
+    ],
+    [
+     19.28,
+     23.11,
+     "Você conta sobre a avenida, a máquina e a água deixada na estação."
+    ],
+    [
+     23.58,
+     24.4,
+     "Ela anota tudo."
+    ],
+    [
+     24.8,
+     27.77,
+     "Atrás dela, você vê uma parede coberta de folhas."
+    ],
+    [
+     28.09,
+     32.28,
+     "Nomes. Descrições. Telefones que talvez nunca voltem a tocar."
+    ],
+    [
+     32.71,
+     34.73,
+     "Sua irmã para diante de uma fotografia."
+    ],
+    [
+     35.13,
+     36.35,
+     "Você espera ao lado dela."
+    ],
+    [
+     36.66,
+     38.39,
+     "Não é quem vocês estão procurando."
+    ],
+    [
+     38.87,
+     40.69,
+     "Mesmo assim, ela lê até o final."
+    ]
+   ],
+   "dur": 41.89
+  },
+  "c11": {
+   "frases": [
+    [
+     0.5,
+     3.55,
+     "Uma enfermeira chamada Rosa verifica o braço de Davi."
+    ],
+    [
+     4.02,
+     5.09,
+     "Ele diz que não é nada."
+    ],
+    [
+     5.61,
+     6.8,
+     "Ela aponta para a cadeira."
+    ],
+    [
+     7.37,
+     10.15,
+     "Você vê que ele obedece antes que ela precise repetir."
+    ],
+    [
+     10.76,
+     15.03,
+     "Sua irmã encontra um espaço entre dois colchonetes e encosta a mochila na parede."
+    ],
+    [
+     15.27,
+     16.63,
+     "Você se senta ao lado."
+    ],
+    [
+     16.95,
+     21.84,
+     "Pela primeira vez desde que saiu de casa, pode apoiar as costas sem olhar para a rua."
+    ],
+    [
+     22.47,
+     25.2,
+     "Léo pergunta onde pode carregar a luz da bicicleta."
+    ],
+    [
+     25.68,
+     27.92,
+     "Helena mostra uma pequena estação de energia."
+    ],
+    [
+     28.11,
+     31.21,
+     "Só está sendo usada para o rádio e equipamentos da enfermaria."
+    ],
+    [
+     31.77,
+     33.42,
+     "Ele guarda a luz sem insistir."
+    ],
+    [
+     34.01,
+     37.05,
+     "Você olha para o celular desligado na sua mão e faz o mesmo."
+    ]
+   ],
+   "dur": 38.25
+  },
+  "c12": {
+   "frases": [
+    [
+     0.5,
+     4.88,
+     "Quando você sente o cheiro da comida, percebe que passou o dia inteiro com fome."
+    ],
+    [
+     5.11,
+     8.58,
+     "Entrega duas latas à cozinha e recebe uma caneca de sopa."
+    ],
+    [
+     9.07,
+     10.37,
+     "Está quente demais."
+    ],
+    [
+     10.51,
+     12.83,
+     "Você segura com as duas mãos mesmo assim."
+    ],
+    [
+     13.31,
+     15.76,
+     "Perto da mesa, um homem reclama da quantidade."
+    ],
+    [
+     16.05,
+     18.05,
+     "Helena escuta e mostra a panela."
+    ],
+    [
+     18.49,
+     19.75,
+     "Ainda tem gente na fila."
+    ],
+    [
+     20.19,
+     21.42,
+     "O homem olha para trás."
+    ],
+    [
+     21.82,
+     25.25,
+     "Você acompanha o olhar dele e vê duas crianças dividindo um banco."
+    ],
+    [
+     25.7,
+     27.52,
+     "Ele volta para o lugar sem discutir."
+    ],
+    [
+     28.0,
+     29.13,
+     "Você come devagar."
+    ],
+    [
+     29.51,
+     31.11,
+     "Não porque quer aproveitar."
+    ],
+    [
+     31.22,
+     36.97,
+     "Seu corpo parece estar reaprendendo a aceitar que, por alguns minutos, ninguém está perseguindo você."
+    ],
+    [
+     37.48,
+     39.22,
+     "Bia adormece antes de terminar."
+    ],
+    [
+     39.65,
+     41.77,
+     "Davi segura a caneca dela para não cair."
+    ]
+   ],
+   "dur": 42.97
+  },
+  "c13": {
+   "frases": [
+    [
+     0.5,
+     3.79,
+     "Depois de comer, você procura alguma coisa para fazer."
+    ],
+    [
+     4.04,
+     6.57,
+     "Ficar sentado dá espaço demais para pensar."
+    ],
+    [
+     7.18,
+     9.59,
+     "Helena apresenta você a Joel, o zelador."
+    ],
+    [
+     9.87,
+     14.47,
+     "Ele conhece cada porta que emperra e cada cano que dá problema naquela escola."
+    ],
+    [
+     15.0,
+     17.5,
+     "Você acompanha os baldes até a área de serviço."
+    ],
+    [
+     17.95,
+     20.48,
+     "No caminho, vê sua irmã separando cobertores."
+    ],
+    [
+     20.95,
+     25.57,
+     "Léo está ajoelhado junto a uma porta, apertando um parafuso com uma ferramenta pequena."
+    ],
+    [
+     25.82,
+     27.76,
+     "Davi ajuda a mover uma mesa."
+    ],
+    [
+     28.28,
+     31.39,
+     "Você percebe que o abrigo não estava pronto esperando vocês."
+    ],
+    [
+     31.55,
+     33.36,
+     "Está sendo montado por quem chega."
+    ],
+    [
+     33.82,
+     35.72,
+     "Joel coloca um balde sob a torneira."
+    ],
+    [
+     36.04,
+     37.61,
+     "A água cai num fio fino."
+    ],
+    [
+     38.09,
+     38.8,
+     "Você espera."
+    ],
+    [
+     39.02,
+     41.08,
+     "Demora muito mais do que deveria."
+    ]
+   ],
+   "dur": 42.28
+  },
+  "c14": {
+   "frases": [
+    [
+     0.5,
+     2.56,
+     "Você pergunta se a pressão está fraca."
+    ],
+    [
+     3.08,
+     6.4,
+     "Joel fecha a torneira e olha para Helena antes de responder."
+    ],
+    [
+     6.86,
+     9.2,
+     "O abastecimento da rua parou no dia anterior."
+    ],
+    [
+     9.54,
+     11.06,
+     "A escola está usando a reserva."
+    ],
+    [
+     11.45,
+     13.33,
+     "Ele mostra uma marca no reservatório."
+    ],
+    [
+     13.66,
+     16.07,
+     "Depois, uma segunda marca, mais alta."
+    ],
+    [
+     16.27,
+     18.88,
+     "A diferença é o que foi gasto desde cedo."
+    ],
+    [
+     19.27,
+     20.63,
+     "Você olha para os baldes."
+    ],
+    [
+     20.92,
+     25.1,
+     "Pensa na cozinha. Na enfermaria. Nas pessoas que ainda estão chegando."
+    ],
+    [
+     25.62,
+     27.11,
+     "Pergunta quanto tempo resta."
+    ],
+    [
+     27.55,
+     31.29,
+     "Helena responde baixo: \"Do jeito que está, não passa de amanhã.\""
+    ],
+    [
+     31.7,
+     32.84,
+     "Você olha para a quadra."
+    ],
+    [
+     33.18,
+     35.83,
+     "Sua irmã está cobrindo Bia com um cobertor amarelo."
+    ],
+    [
+     36.06,
+     38.97,
+     "Você tinha acabado de encontrar um lugar para ela dormir."
+    ],
+    [
+     39.32,
+     42.87,
+     "Ainda nem tinha pensado em como manter aquele lugar funcionando."
+    ]
+   ],
+   "dur": 44.07
+  },
+  "c15": {
+   "frases": [
+    [
+     0.5,
+     2.65,
+     "Você se lembra do caminhão."
+    ],
+    [
+     2.85,
+     4.75,
+     "Branco. Faixa azul. Tanque grande."
+    ],
+    [
+     5.0,
+     5.92,
+     "Perto da farmácia."
+    ],
+    [
+     6.38,
+     8.52,
+     "Abre o mapa antes de terminar a frase."
+    ],
+    [
+     9.02,
+     11.58,
+     "Joel pergunta se você viu alguma identificação."
+    ],
+    [
+     12.01,
+     13.7,
+     "Você lembra de letras na lateral."
+    ],
+    [
+     14.08,
+     14.93,
+     "Água potável."
+    ],
+    [
+     15.07,
+     17.91,
+     "Não chegou perto o suficiente para verificar o resto."
+    ],
+    [
+     18.28,
+     20.54,
+     "Helena pergunta se ele parecia danificado."
+    ],
+    [
+     20.92,
+     21.67,
+     "Você não sabe."
+    ],
+    [
+     21.97,
+     22.86,
+     "Se tinha água."
+    ],
+    [
+     23.15,
+     24.01,
+     "Também não sabe."
+    ],
+    [
+     24.3,
+     25.69,
+     "Se conseguiria sair dali."
+    ],
+    [
+     26.08,
+     27.13,
+     "Você olha para Davi."
+    ],
+    [
+     27.45,
+     29.84,
+     "Ele conta que dirigia o ônibus daquela linha."
+    ],
+    [
+     30.17,
+     33.84,
+     "Conhece o cruzamento. Conhece a rua de serviço atrás da farmácia."
+    ],
+    [
+     34.01,
+     37.79,
+     "Mas deixa claro que dirigir o caminhão é só uma parte do problema."
+    ],
+    [
+     37.95,
+     42.52,
+     "Vocês ainda precisam encontrá-lo funcionando, com água e com uma saída possível."
+    ],
+    [
+     42.94,
+     45.83,
+     "Léo aponta os carros desenhados às pressas no seu mapa."
+    ],
+    [
+     46.25,
+     47.73,
+     "Talvez dê para abrir passagem."
+    ],
+    [
+     48.13,
+     49.49,
+     "Joel cruza os braços."
+    ],
+    [
+     49.8,
+     50.39,
+     "Talvez."
+    ],
+    [
+     50.76,
+     55.06,
+     "Você percebe que a ideia ficou mais difícil depois que começou a parecer possível."
+    ]
+   ],
+   "dur": 56.26
+  },
+  "c16": {
+   "frases": [
+    [
+     0.5,
+     2.75,
+     "Sua irmã entende antes de você explicar."
+    ],
+    [
+     3.18,
+     4.53,
+     "Ela aponta para o cruzamento."
+    ],
+    [
+     4.78,
+     6.75,
+     "\"Foi onde a gente viu aquela coisa.\""
+    ],
+    [
+     7.11,
+     7.9,
+     "Você confirma."
+    ],
+    [
+     8.27,
+     9.28,
+     "Ela olha para Davi."
+    ],
+    [
+     9.67,
+     10.78,
+     "Depois, para Léo."
+    ],
+    [
+     11.05,
+     16.42,
+     "Você diz que, primeiro, precisam observar de longe. Descobrir se o caminhão ainda está lá."
+    ],
+    [
+     16.66,
+     19.0,
+     "Que ninguém vai ligar um motor sem uma saída."
+    ],
+    [
+     19.45,
+     20.79,
+     "Sua irmã fica em silêncio."
+    ],
+    [
+     21.17,
+     23.68,
+     "Então tira o caderno da mochila e arranca uma folha."
+    ],
+    [
+     23.87,
+     28.49,
+     "Desenha as ruas por onde vocês passaram e marca o ponto de ônibus onde descansaram."
+    ],
+    [
+     28.76,
+     30.35,
+     "Um segundo caminho de volta."
+    ],
+    [
+     30.8,
+     32.0,
+     "Entrega o papel a você."
+    ],
+    [
+     32.32,
+     34.53,
+     "Você dobra com mais cuidado que o mapa."
+    ]
+   ],
+   "dur": 35.73
+  },
+  "c17": {
+   "frases": [
+    [
+     0.5,
+     3.78,
+     "Antes de terminar o plano, você escuta alguém chamar no portão."
+    ],
+    [
+     4.32,
+     5.63,
+     "Mais três pessoas."
+    ],
+    [
+     5.86,
+     7.98,
+     "O menino no colo do pai pede água."
+    ],
+    [
+     8.43,
+     10.48,
+     "Helena abre espaço para eles entrarem."
+    ],
+    [
+     10.69,
+     14.06,
+     "Você pega uma caneca e vai até o balde que acabou de carregar."
+    ],
+    [
+     14.57,
+     17.38,
+     "Enquanto serve, olha o nível baixar mais um pouco."
+    ],
+    [
+     17.8,
+     18.61,
+     "Entrega a água."
+    ],
+    [
+     18.83,
+     21.73,
+     "O menino bebe segurando a caneca com as duas mãos."
+    ],
+    [
+     22.11,
+     23.34,
+     "Você volta para a bancada."
+    ],
+    [
+     23.57,
+     25.93,
+     "Marca um horário de saída no canto do papel."
+    ],
+    [
+     26.27,
+     28.36,
+     "Amanhã, ao primeiro sinal de luz."
+    ]
+   ],
+   "dur": 29.56
+  },
+  "c18": {
+   "frases": [
+    [
+     0.5,
+     3.92,
+     "Quando a escola finalmente fica em silêncio, você se deita."
+    ],
+    [
+     4.48,
+     5.55,
+     "Escuta alguém tossir."
+    ],
+    [
+     5.94,
+     7.9,
+     "O rádio chia na sala ao lado."
+    ],
+    [
+     8.29,
+     10.35,
+     "Uma panela bate de leve na cozinha."
+    ],
+    [
+     10.94,
+     16.29,
+     "Pela primeira vez desde a invasão, o barulho de outras pessoas ajuda você a fechar os olhos."
+    ],
+    [
+     16.87,
+     20.57,
+     "Sua irmã pergunta, bem baixo, se você acha que vai dar certo."
+    ],
+    [
+     21.16,
+     22.49,
+     "Você demora para responder."
+    ],
+    [
+     22.97,
+     24.09,
+     "Diz que encontrou ela."
+    ],
+    [
+     24.3,
+     25.89,
+     "Que vocês chegaram até ali."
+    ],
+    [
+     26.4,
+     28.61,
+     "Que amanhã vai precisar descobrir o resto."
+    ],
+    [
+     29.23,
+     31.84,
+     "Antes de dormir, você tenta lembrar de mais algum detalhe do caminhão."
+    ],
+    [
+     33.2,
+     34.42,
+     "A posição das rodas."
+    ],
+    [
+     34.74,
+     36.07,
+     "O espaço entre os carros."
+    ],
+    [
+     36.27,
+     37.46,
+     "A porta do motorista."
+    ],
+    [
+     37.86,
+     38.68,
+     "Ela estava aberta?"
+    ],
+    [
+     39.16,
+     40.37,
+     "Você não consegue lembrar."
+    ]
+   ],
+   "dur": 51.57
+  }
+ }
+}
