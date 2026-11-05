@@ -1,0 +1,1259 @@
+{
+  "versao": 1,
+  "fps": 30,
+  "bpm": 120,
+  "formatoBase": "16x9",
+  "formatos": [
+    "16x9"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "referencias": [],
+  "titulo": "Os Que Ficaram — EP4 · A Última Reserva",
+  "slug": "os-que-ficaram-ep4",
+  "cartaz": "Uma escola cheia de gente pode ficar em silêncio por causa de um copo de água",
+  "linguagem": [
+    {
+      "titulo": "Ritmo",
+      "texto": "A narração manda: cada plano entra na frase que mostra. Cortes secos entre planos; nenhum plano parado mais de 5 s."
+    },
+    {
+      "titulo": "Câmera",
+      "texto": "Viva: aproximação lenta por plano, tremor nos momentos de tensão (empurrão, corrente, motor)."
+    },
+    {
+      "titulo": "Personagens",
+      "texto": "Mesmo stickman dos EPs 1–3. Novos: Breno (moletom preto, faixa branca no pulso, bastão), Mauro (roupa limpa, caderneta, arma só no coldre), Cíntia, Nando (motorista preso), o homem do rádio (faixa branca)."
+    },
+    {
+      "titulo": "Luz",
+      "texto": "Amanhecer frio na escola → dia claro no cruzamento → fim de tarde na quadra → noite azul no corredor. A lanterna azul é o falso \"alienígena\"."
+    },
+    {
+      "titulo": "Objetos",
+      "texto": "Lanterna em plástico azul, corrente e chave, prancheta com a ordem de entrega, lápis amarelo, mapa."
+    },
+    {
+      "titulo": "Fecho",
+      "texto": "A faixa branca no pulso, a voz de Mauro pelo rádio, as luzes da quadra apagando; preto. EPISÓDIO 5 — O INIMIGO JÁ ENTROU."
+    }
+  ],
+  "capa": {
+    "cena": "c04",
+    "quadro": "q3"
+  },
+  "storyboard": {
+    "revisao": 1
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-05",
+  "cenas": [
+    {
+      "id": "c01",
+      "titulo": "O copo",
+      "dur": 35.36,
+      "ideia": "O copo",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você descobre que uma escola cheia de gente pode ficar em silêncio por causa de um copo de água.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Helena fecha a torneira antes de encher a caneca.",
+          "t": 7.97
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Entrega a uma mulher que segura uma criança no colo.",
+          "t": 10.99
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você olha para a porta dos fundos, onde Davi e Léo já estão prontos.",
+          "t": 16.42
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Ontem, encontrar água era uma possibilidade.",
+          "t": 20.48
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Sua irmã entrega o caminho que desenhou.",
+          "t": 26.46
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Ela continua segurando o papel por mais um segundo antes de soltar.",
+          "t": 32.35
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "abertura",
+      "titulo": "Título",
+      "dur": 5,
+      "ideia": "OS QUE FICARAM sai do desfoque; Episódio 4 • A Última Reserva.",
+      "camera": "Título sai do desfoque letra a letra; a nave passa por cima.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Título",
+          "legenda": "OS QUE FICARAM · Episódio 4 · A Última Reserva",
+          "t": 3.2
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "c02",
+      "titulo": "O que levar",
+      "dur": 33.52,
+      "ideia": "O que levar",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você confere o que vai levar.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Davi leva uma mangueira que Joel encontrou na área de serviço.",
+          "t": 10.28
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "O plano é simples enquanto está desenhado no papel.",
+          "t": 13.85
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você confirma que lembra.",
+          "t": 27.21
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Só depois vai perceber o que faltou marcar naquele mapa.",
+          "t": 29.32
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c03",
+      "titulo": "O caminho conhecido",
+      "dur": 36.49,
+      "ideia": "O caminho conhecido",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Na volta à avenida, você reconhece o banco onde descansou com sua irmã.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Parece ter passado uma semana.",
+          "t": 6.44
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Davi anda um pouco à frente.",
+          "t": 10.28
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Ela pediu que trouxesse água e um lápis amarelo.",
+          "t": 16.13
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Léo olha para uma papelaria fechada.",
+          "t": 20.34
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "A conversa termina quando vocês encontram uma coisa diferente na rua.",
+          "t": 23.97
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c04",
+      "titulo": "A luz azul",
+      "dur": 39.4,
+      "ideia": "A luz azul",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você vê a luz antes de ver alguém.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Seu corpo se abaixa sozinho.",
+          "t": 7.3
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Vocês esperam ouvir metal raspando.",
+          "t": 13.23
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você observa o homem levantar a luz.",
+          "t": 20.75
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Léo olha para você.",
+          "t": 28.79
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Você volta a observar o caminhão.",
+          "t": 34.01
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c05",
+      "titulo": "Quem controla a rua",
+      "dur": 36.94,
+      "ideia": "Quem controla a rua",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você chama antes de chegar perto.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Breno olha para os recipientes vazios e pergunta de onde vocês vieram.",
+          "t": 6.13
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Ele pede que deixem as bolsas no chão.",
+          "t": 13.56
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Davi pergunta quem está responsável pelo caminhão.",
+          "t": 16.09
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Mauro parece ter dormido menos que você.",
+          "t": 22.17
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Atrás dele, você enxerga caixas de comida empilhadas no balcão da farmácia.",
+          "t": 25.92
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Ele pergunta quantos litros vocês querem.",
+          "t": 30.5
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c06",
+      "titulo": "O preço",
+      "dur": 40.1,
+      "ideia": "O preço",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você oferece as latas.",
+          "t": 2.01
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Pelas duas coisas, oferece cinco litros.",
+          "t": 7.26
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Ele pergunta quantas, exatamente.",
+          "t": 15.34
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Mauro cruza os braços.",
+          "t": 21.76
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você olha para a lanterna azul sob a carroceria.",
+          "t": 30.4
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Então ele aponta para a bolsa de Léo.",
+          "t": 34.32
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c07",
+      "titulo": "O homem na cabine",
+      "dur": 31.98,
+      "ideia": "O homem na cabine",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "O motorista chama sua atenção com os olhos.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Você entende.",
+          "t": 8.12
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você pergunta a Mauro quem é o homem.",
+          "t": 13.41
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você olha de novo para a cabine.",
+          "t": 27.97
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c08",
+      "titulo": "A farmácia",
+      "dur": 37.19,
+      "ideia": "A farmácia",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você entra na farmácia esperando encontrar mais homens como Breno.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Encontra uma mulher dormindo sentada.",
+          "t": 6.3
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "O grupo de Mauro também tem medo.",
+          "t": 14.19
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Cíntia coloca um recipiente sobre o balcão.",
+          "t": 17.66
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Uma mulher dos fundos pede mais água.",
+          "t": 23.71
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Ela completa um pouco o copo e faz um sinal para a mulher guardar.",
+          "t": 29.99
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c09",
+      "titulo": "A entrega que não chegou",
+      "dur": 40.19,
+      "ideia": "A entrega que não chegou",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Enquanto espera, você vê o nome da escola num papel.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "O mesmo endereço ouvido no rádio.",
+          "t": 5.57
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você aproxima a mão, mas Cíntia segura a prancheta primeiro.",
+          "t": 7.96
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Diz que Nando estava tentando concluir aquela entrega.",
+          "t": 20.76
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "O caminhão ficou preso no cruzamento depois que um carro bateu.",
+          "t": 24.15
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Você olha para a cabine através da vitrine.",
+          "t": 33.52
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c10",
+      "titulo": "O mapa",
+      "dur": 36.33,
+      "ideia": "O mapa",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você ouve seu nome sendo chamado da porta.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Breno está com o mapa na mão.",
+          "t": 4.84
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você sente o estômago apertar antes de chegar à calçada.",
+          "t": 9.24
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Mauro aponta para o desenho do abrigo.",
+          "t": 12.71
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Agora, diz que pode levar o caminhão até a escola.",
+          "t": 21.68
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Davi pergunta quanto.",
+          "t": 31.9
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c11",
+      "titulo": "A bolsa de léo",
+      "dur": 32.18,
+      "ideia": "A bolsa de léo",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Léo diz que a troca acabou.",
+          "t": 1.99
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Tudo acontece rápido demais.",
+          "t": 10.83
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você dá um passo na direção dele.",
+          "t": 17.7
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você olha para Léo, sentado no chão, segurando o pulso.",
+          "t": 24.83
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c12",
+      "titulo": "Uma porta aberta",
+      "dur": 31.55,
+      "ideia": "Uma porta aberta",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Cíntia diz que precisa limpar o corte na mão de Léo.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Você fica entre a porta e o caminhão, sem saber para onde olhar.",
+          "t": 7.64
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você espera Mauro se virar para Breno e entra na farmácia.",
+          "t": 22.82
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "A chave está exatamente onde ela disse.",
+          "t": 26.18
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c13",
+      "titulo": "Nando",
+      "dur": 35.98,
+      "ideia": "Nando",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você abre a corrente tentando não fazer barulho.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Nando empurra a porta só o suficiente para sair.",
+          "t": 5.32
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você pergunta se ele consegue dirigir.",
+          "t": 12.26
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Nando fecha os olhos por um segundo.",
+          "t": 21.44
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Mas a chave da ignição está com Mauro.",
+          "t": 28.41
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Antes que você consiga responder, escuta:",
+          "t": 30.96
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c14",
+      "titulo": "No meio da rua",
+      "dur": 37.3,
+      "ideia": "No meio da rua",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Mauro olha para Nando.",
+          "t": 1.89
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Você mantém o documento da entrega visível.",
+          "t": 6.07
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Mauro pede a chave da corrente.",
+          "t": 15.36
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Nando fala antes que você consiga pensar no que fazer.",
+          "t": 18.72
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você vê duas pessoas aparecerem na porta da farmácia.",
+          "t": 28.16
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c15",
+      "titulo": "Cíntia escolhe",
+      "dur": 44.15,
+      "ideia": "Cíntia escolhe",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Cíntia desce o degrau da farmácia.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Mauro pergunta quem deu essa ordem.",
+          "t": 9.47
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você percebe que a mão dela está tremendo.",
+          "t": 17.08
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Um homem vem ajudar.",
+          "t": 21.66
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Breno olha para Mauro, esperando alguma reação.",
+          "t": 25.79
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Davi pede calma.",
+          "t": 30.03
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Cíntia não avança.",
+          "t": 37.01
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c16",
+      "titulo": "O acordo possível",
+      "dur": 38.81,
+      "ideia": "O acordo possível",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Mauro demora para responder.",
+          "t": 2.09
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "As pessoas olhando.",
+          "t": 5.61
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Ele coloca a chave sobre o capô.",
+          "t": 13.1
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Diz que os recipientes da farmácia serão cheios primeiro.",
+          "t": 15
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você olha para Davi.",
+          "t": 21.73
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Não é a solução que você queria.",
+          "t": 25.52
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Você concorda que Helena vai conversar com ele na entrada.",
+          "t": 32.46
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Pega a chave.",
+          "t": 37.61
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c17",
+      "titulo": "Abrir caminho",
+      "dur": 44.82,
+      "ideia": "Abrir caminho",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você ajuda a encher os recipientes.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Você percebe como é fácil olhar para um lugar cheio de desconhecidos e enxergar um grupo só.",
+          "t": 8.45
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Enquanto a água é distribuída, Davi examina o caminho.",
+          "t": 18.82
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você ajuda a empurrar com os outros.",
+          "t": 28.17
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Quando o espaço finalmente abre, Davi sobe na cabine.",
+          "t": 33.72
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Você fica olhando para a chave antes que ela gire.",
+          "t": 39.23
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c18",
+      "titulo": "O motor",
+      "dur": 36.47,
+      "ideia": "O motor",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Na primeira tentativa, nada.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Você espera uma luz azul aparecer na esquina.",
+          "t": 6.45
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Léo prende a bolsa de ferramentas recuperada no ombro.",
+          "t": 13.19
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Mauro sobe num carro com Breno.",
+          "t": 28.34
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você não gosta da ideia.",
+          "t": 31.66
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c19",
+      "titulo": "O portão da escola",
+      "dur": 37.28,
+      "ideia": "O portão da escola",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Quando você vê o muro da escola, sente as pernas ficarem leves.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Sua irmã aparece no portão.",
+          "t": 6.26
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Então vê Léo segurando o pulso.",
+          "t": 9.05
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "O sorriso desaparece.",
+          "t": 16.06
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Você chega à grade antes dos outros.",
+          "t": 18.2
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Só então chama Joel e abre espaço para o caminhão entrar.",
+          "t": 26.71
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Você fica do lado de fora com ela.",
+          "t": 33.98
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c20",
+      "titulo": "A negociação",
+      "dur": 51.14,
+      "ideia": "A negociação",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Mauro cobra combustível, proteção e o tempo que ficou cuidando do veículo.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Ele não responde.",
+          "t": 9.2
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Nando entrega o documento pela grade.",
+          "t": 11.19
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "O nome da escola está ali.",
+          "t": 13.22
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Helena diz que pode dividir uma parte da comida disponível com as famílias da farmácia.",
+          "t": 17.29
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Você observa o rosto dele mudar.",
+          "t": 33.73
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Mauro guarda a caderneta.",
+          "t": 42.49
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "Você não consegue responder antes que ele entre no carro.",
+          "t": 48.81
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c21",
+      "titulo": "A água chega",
+      "dur": 46.99,
+      "ideia": "A água chega",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Você entra na escola com a sensação de que ainda deixou alguma coisa do lado de fora.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Joel acompanha o abastecimento.",
+          "t": 7.04
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Na cozinha, alguém solta uma risada curta quando a torneira volta a correr direito.",
+          "t": 11.61
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Rosa manda Léo sentar.",
+          "t": 19.79
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Davi encontra Bia.",
+          "t": 26.6
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "Léo tira um lápis do bolso.",
+          "t": 37.34
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Você vê Davi agradecer sem conseguir dizer nada.",
+          "t": 44.84
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c22",
+      "titulo": "O que veio junto",
+      "dur": 34.28,
+      "ideia": "O que veio junto",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Sua irmã pergunta se a máquina estava perto do caminhão.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Você conta sobre a lanterna.",
+          "t": 5.39
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Ela escuta sem interromper.",
+          "t": 10.49
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Sua irmã encosta o ombro no seu.",
+          "t": 20.97
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Por alguns minutos, vocês observam a escola funcionando.",
+          "t": 23.1
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    },
+    {
+      "id": "c23",
+      "titulo": "A lista",
+      "dur": 61.15,
+      "ideia": "A lista",
+      "camera": "Câmera viva, como nos EPs anteriores.",
+      "quadros": [
+        {
+          "id": "q0",
+          "rotulo": "Plano 1",
+          "legenda": "Antes de dormir, você leva as últimas canecas para a cozinha.",
+          "t": 2.1
+        },
+        {
+          "id": "q1",
+          "rotulo": "Plano 2",
+          "legenda": "Mais pessoas chegaram desde o abastecimento.",
+          "t": 5.84
+        },
+        {
+          "id": "q2",
+          "rotulo": "Plano 3",
+          "legenda": "Você olha para os colchonetes ocupados.",
+          "t": 11.77
+        },
+        {
+          "id": "q3",
+          "rotulo": "Plano 4",
+          "legenda": "Você repete isso para si enquanto passa pelo corredor.",
+          "t": 19.56
+        },
+        {
+          "id": "q4",
+          "rotulo": "Plano 5",
+          "legenda": "Até ouvir a voz dele.",
+          "t": 29.33
+        },
+        {
+          "id": "q5",
+          "rotulo": "Plano 6",
+          "legenda": "O homem se vira.",
+          "t": 41.83
+        },
+        {
+          "id": "q6",
+          "rotulo": "Plano 7",
+          "legenda": "Você reconhece a faixa branca amarrada no pulso.",
+          "t": 44.44
+        },
+        {
+          "id": "q7",
+          "rotulo": "Plano 8",
+          "legenda": "A mesma que Breno usava no cruzamento.",
+          "t": 46.7
+        },
+        {
+          "id": "q8",
+          "rotulo": "Plano 9",
+          "legenda": "A mesma que Breno usava no cruzamento.",
+          "t": 48.3
+        },
+        {
+          "id": "q9",
+          "rotulo": "Plano 10",
+          "legenda": "A mesma que Breno usava no cruzamento.",
+          "t": 53.1
+        },
+        {
+          "id": "q10",
+          "rotulo": "Fim",
+          "legenda": "EPISÓDIO 5 — O INIMIGO JÁ ENTROU.",
+          "t": 59.15
+        }
+      ],
+      "batidas": [],
+      "saida": {
+        "tipo": "corte"
+      },
+      "permitirParado": []
+    }
+  ]
+}
