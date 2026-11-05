@@ -224,7 +224,7 @@
     {
       "id": "c04",
       "titulo": "O rapaz da bicicleta",
-      "dur": 56.0,
+      "dur": 56,
       "ideia": "O rapaz da bicicleta",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -484,7 +484,7 @@
     {
       "id": "c08",
       "titulo": "O ponto de ônibus",
-      "dur": 39.0,
+      "dur": 39,
       "ideia": "O ponto de ônibus",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -940,7 +940,7 @@
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "Entrega o papel a você.",
-          "t": 32.0
+          "t": 32
         }
       ],
       "batidas": [],
@@ -1050,12 +1050,12 @@
   "versoes": [
     {
       "v": 1,
-      "data": "2026-11-02",
+      "data": "2026-11-05",
       "formatos": [
         "16x9"
       ],
       "fps": 30,
-      "nota": "EP3 sem narração (tempos estimados)"
+      "nota": "EP3 com narração"
     },
     {
       "v": 2,
