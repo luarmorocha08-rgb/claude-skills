@@ -61,7 +61,17 @@
     "aprovadoEm": "2026-11-05",
     "revisaoAprovada": 1
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 1,
+      "data": "2026-11-05",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 30,
+      "nota": "EP4 primeira animação"
+    }
+  ],
   "criadoEm": "2026-11-05",
   "cenas": [
     {
