@@ -1,6 +1,7 @@
-# Mixagem do EP3 (sem narração por enquanto): só efeitos e ambientes.
-# Tempos marcados por frase (roteiro/tempos.json). Quando a narração real chegar,
-# troque os tempos e adicione as faixas de voz; os efeitos acompanham sozinhos.
+# Mixagem do EP3: narração (narr/cXX.mp3, entra 0,5 s após o início de cada cena) + efeitos e ambientes.
+# Tempos marcados por frase (roteiro/tempos.json, medidos na voz real); os efeitos acompanham sozinhos.
+# Uso: python3 mixar.py            -> trilha-youtube.m4a (voz + efeitos, efeitos abaixam sob a voz)
+#      python3 mixar.py --sem-voz  -> trilha-sfx.m4a (só efeitos)
 import json, subprocess, sys
 m = json.load(open('../motion.json')); T = json.load(open('../roteiro/tempos.json'))['cenas']
 ordem = [c['id'] for c in m['cenas']]; dur = {c['id']: c['dur'] for c in m['cenas']}
@@ -78,7 +79,21 @@ for i, (k, c, fr, off, ss, d, db, fi, fo) in enumerate(E):
     if fo: ch += f',afade=t=out:st={max(0, d - fo):.3f}:d={fo}'
     fil.append(ch + f',adelay={int(t0 * 1000)}|{int(t0 * 1000)}[s{i}]')
 n = len(E)
-fil.append(''.join(f'[s{i}]' for i in range(n)) + f'amix=inputs={n}:normalize=0,apad=whole_dur={TOTAL},atrim=0:{TOTAL},alimiter=limit=0.89,loudnorm=I=-14:TP=-1.5:LRA=11[o]')
-saida = sys.argv[1] if len(sys.argv) > 1 else 'trilha-sfx.m4a'
+args = [a for a in sys.argv[1:] if not a.startswith('--')]
+sem_voz = '--sem-voz' in sys.argv
+fx = ''.join(f'[s{i}]' for i in range(n)) + f'amix=inputs={n}:normalize=0,apad=whole_dur={TOTAL},atrim=0:{TOTAL}'
+if sem_voz:
+    fil.append(fx + ',alimiter=limit=0.89,loudnorm=I=-14:TP=-1.5:LRA=11[o]')
+else:
+    vozes = [c for c in ordem if c.startswith('c')]
+    for j, c in enumerate(vozes):
+        inp += ['-i', f'narr/{c}.mp3']; d = int((ini[c] + 0.5) * 1000)
+        fil.append(f'[{n + j}]aformat=sample_rates=48000:channel_layouts=stereo,adelay={d}|{d}[v{j}]')
+    fil.append(''.join(f'[v{j}]' for j in range(len(vozes))) + f'amix=inputs={len(vozes)}:normalize=0,apad=whole_dur={TOTAL},atrim=0:{TOTAL},asplit=2[narr][chave]')
+    fil.append(fx + '[fx]')
+    # efeitos por baixo da voz: abaixam ~6 dB enquanto o narrador fala
+    fil.append('[fx][chave]sidechaincompress=threshold=0.03:ratio=4:attack=30:release=400:makeup=1[fxd]')
+    fil.append('[narr][fxd]amix=inputs=2:normalize=0,alimiter=limit=0.89,loudnorm=I=-14:TP=-1.5:LRA=11[o]')
+saida = args[0] if args else ('trilha-sfx.m4a' if sem_voz else 'trilha-youtube.m4a')
 subprocess.run(['ffmpeg', '-hide_banner', '-loglevel', 'error', '-y', *inp, '-filter_complex', ';'.join(fil), '-map', '[o]', '-ar', '48000', '-b:a', '256k', saida], check=True)
-print('ok', TOTAL, n, 'eventos')
+print('ok', TOTAL, n, 'eventos', saida)

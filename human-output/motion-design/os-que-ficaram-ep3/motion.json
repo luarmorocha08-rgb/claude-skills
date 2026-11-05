@@ -55,7 +55,7 @@
     {
       "id": "c01",
       "titulo": "Antes de abrir a porta",
-      "dur": 50.14,
+      "dur": 46.76,
       "ideia": "Antes de abrir a porta",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -69,25 +69,25 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "No rádio, a transmissão da escola volta por alguns segundos.",
-          "t": 10.52
+          "t": 10.64
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Sua irmã coloca uma garrafa na sua bolsa e fica com a outra.",
-          "t": 22.6
+          "t": 22.79
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você confere o celular.",
-          "t": 34.15
+          "t": 32.72
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Antes de sair, sua irmã pega uma fotografia presa na geladeira e coloca entre as páginas de um caderno.",
-          "t": 39.51
+          "t": 37.84
         }
       ],
       "batidas": [],
@@ -118,7 +118,7 @@
     {
       "id": "c02",
       "titulo": "A casa fica para trás",
-      "dur": 37.92,
+      "dur": 32.97,
       "ideia": "A casa fica para trás",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -126,25 +126,25 @@
           "id": "q0",
           "rotulo": "Plano 1",
           "legenda": "Você tranca a porta.",
-          "t": 2.1
+          "t": 1.68
         },
         {
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Na calçada, sua irmã pergunta se você trouxe o mapa.",
-          "t": 12.27
+          "t": 11.77
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "É a única resposta que consegue dar.",
-          "t": 25.18
+          "t": 22.75
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você já fez esse caminho muitas vezes.",
-          "t": 30.36
+          "t": 26.98
         }
       ],
       "batidas": [],
@@ -156,7 +156,7 @@
     {
       "id": "c03",
       "titulo": "A avenida parada",
-      "dur": 56.14,
+      "dur": 52.57,
       "ideia": "A avenida parada",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -170,49 +170,49 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "A porta está aberta. Uma bolsa continua no banco da frente.",
-          "t": 5.47
+          "t": 5.4
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "O sinal de trânsito apagado balança com o vento.",
-          "t": 9.48
+          "t": 9.69
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você procura uma passagem entre os carros e vê um caminhão-pipa parado perto de uma farmácia.",
-          "t": 12.85
+          "t": 12.69
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Então escuta metal raspando.",
-          "t": 22.6
+          "t": 21.74
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Entre os veículos, uma máquina se move devagar.",
-          "t": 26.91
+          "t": 25.62
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Você se abaixa antes que ela termine.",
-          "t": 35.27
+          "t": 33.76
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "A escola está do outro lado da avenida.",
-          "t": 38.24
+          "t": 36.5
         },
         {
           "id": "q8",
           "rotulo": "Plano 9",
           "legenda": "Marca o caminhão no mapa, dobra o papel e acompanha sua irmã pela rua lateral.",
-          "t": 54.53
+          "t": 51.37
         }
       ],
       "batidas": [],
@@ -224,7 +224,7 @@
     {
       "id": "c04",
       "titulo": "O rapaz da bicicleta",
-      "dur": 64.87,
+      "dur": 56.0,
       "ideia": "O rapaz da bicicleta",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -238,55 +238,55 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Por um segundo, vocês ficam parados, apontando um para o outro como se isso resolvesse alguma coisa.",
-          "t": 8.49
+          "t": 7.87
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "O nome dele é Léo.",
-          "t": 17.32
+          "t": 15.15
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Ele pergunta se vocês estão indo para a escola.",
-          "t": 22.9
+          "t": 20.54
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Léo olha para o mapa e aponta uma rua.",
-          "t": 28.89
+          "t": 25.78
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Você pergunta como ele sabe.",
-          "t": 38.7
+          "t": 34.01
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "A roda não vai aguentar o trajeto.",
-          "t": 46.67
+          "t": 40.69
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "Léo deixa a bicicleta encostada no muro, mas leva a luz removível do guidão.",
-          "t": 52.95
+          "t": 46.02
         },
         {
           "id": "q8",
           "rotulo": "Plano 9",
           "legenda": "Você reconhece aquela expressão.",
-          "t": 60
+          "t": 52.46
         },
         {
           "id": "q9",
           "rotulo": "Plano 10",
           "legenda": "Deixou a mesma na porta de casa.",
-          "t": 62.83
+          "t": 54.76
         }
       ],
       "batidas": [],
@@ -298,7 +298,7 @@
     {
       "id": "c05",
       "titulo": "O carrinho na escada",
-      "dur": 58.51,
+      "dur": 53.04,
       "ideia": "O carrinho na escada",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -312,43 +312,43 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Você olha na direção da avenida.",
-          "t": 10.99
+          "t": 10.56
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Sua irmã pede que ele pare.",
-          "t": 15.36
+          "t": 14.05
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você olha para a menina.",
-          "t": 23.5
+          "t": 21.34
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "O homem se chama Davi.",
-          "t": 31.4
+          "t": 28.26
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Você segura a parte da frente do carrinho. Léo pega o outro lado.",
-          "t": 34.67
+          "t": 31.67
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Você espera ouvir a máquina responder.",
-          "t": 46.53
+          "t": 42.56
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "Ninguém precisa pedir silêncio outra vez.",
-          "t": 55.94
+          "t": 51.23
         }
       ],
       "batidas": [],
@@ -360,7 +360,7 @@
     {
       "id": "c06",
       "titulo": "Escolher o que fica",
-      "dur": 46.58,
+      "dur": 42.18,
       "ideia": "Escolher o que fica",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -374,37 +374,37 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Davi pega um álbum de fotografias, abre na primeira página e fecha.",
-          "t": 11.11
+          "t": 10.9
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Você abre espaço na sua bolsa.",
-          "t": 15.58
+          "t": 15.76
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Bia aponta para o galão.",
-          "t": 20.47
+          "t": 19.61
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você tenta erguer o galão junto com a bolsa.",
-          "t": 26.23
+          "t": 24.82
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Léo encontra uma caneta no bolso e escreve num pedaço de papel: \"ÁGUA\".",
-          "t": 32.92
+          "t": 30.62
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Vocês deixam o recipiente à sombra, ao lado da escada.",
-          "t": 37.62
+          "t": 35.34
         }
       ],
       "batidas": [],
@@ -416,7 +416,7 @@
     {
       "id": "c07",
       "titulo": "A travessia",
-      "dur": 63.91,
+      "dur": 58.91,
       "ideia": "A travessia",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -430,49 +430,49 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Telhados. Antenas. Ruas paradas.",
-          "t": 6.34
+          "t": 6.38
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Você está prestes a apontar quando Bia puxa a camisa do pai.",
-          "t": 10.47
+          "t": 11.51
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você acompanha o olhar dela.",
-          "t": 17.68
+          "t": 18.09
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você se agacha atrás de uma placa.",
-          "t": 25.47
+          "t": 25.28
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Um feixe azul percorre a escada por onde vocês subiram.",
-          "t": 30.07
+          "t": 29.14
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Você segura a bolsa contra o corpo para impedir que as latas batam.",
-          "t": 37.92
+          "t": 35.98
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "A máquina fica imóvel.",
-          "t": 42.39
+          "t": 39.51
         },
         {
           "id": "q8",
           "rotulo": "Plano 9",
           "legenda": "Quando o som começa a se afastar, você ainda espera.",
-          "t": 53.6
+          "t": 50.12
         }
       ],
       "batidas": [],
@@ -484,7 +484,7 @@
     {
       "id": "c08",
       "titulo": "O ponto de ônibus",
-      "dur": 43.42,
+      "dur": 39.0,
       "ideia": "O ponto de ônibus",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -498,43 +498,43 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Sua irmã tira uma pedrinha de dentro do tênis.",
-          "t": 6.22
+          "t": 5.67
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Léo divide um pacote de bolachas.",
-          "t": 9.48
+          "t": 8.87
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você vira o rosto antes que Davi perceba que viu.",
-          "t": 15.93
+          "t": 15.29
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Enquanto descansam, você pergunta se alguém sabe alguma coisa sobre as pessoas levadas.",
-          "t": 19.36
+          "t": 18.49
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Depois, Bia pergunta se a mãe também pode estar procurando uma escola.",
-          "t": 27.26
+          "t": 25.23
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Sua irmã aperta a fotografia dentro do caderno.",
-          "t": 38.3
+          "t": 35.03
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "Você não faz mais perguntas.",
-          "t": 41.61
+          "t": 37.8
         }
       ],
       "batidas": [],
@@ -546,7 +546,7 @@
     {
       "id": "c09",
       "titulo": "O muro da escola",
-      "dur": 51,
+      "dur": 45.78,
       "ideia": "O muro da escola",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -560,37 +560,37 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Por alguns segundos, o rádio, o mapa e todo aquele caminho parecem ter levado vocês a uma porta fechada.",
-          "t": 8.56
+          "t": 7.95
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Então Léo encontra uma seta pintada num papelão.",
-          "t": 15.18
+          "t": 14.16
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você contorna o muro e escuta vozes.",
-          "t": 20.3
+          "t": 19.24
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você olha por uma abertura na grade.",
-          "t": 28.32
+          "t": 26.6
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Uma mulher vem até o portão e pergunta quantas pessoas estão com você.",
-          "t": 38.21
+          "t": 35.36
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Só quando ela abre é que você percebe que estava esperando algum truque.",
-          "t": 46.64
+          "t": 42.7
         }
       ],
       "batidas": [],
@@ -602,7 +602,7 @@
     {
       "id": "c10",
       "titulo": "Helena e a lista",
-      "dur": 46.23,
+      "dur": 41.89,
       "ideia": "Helena e a lista",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -616,25 +616,25 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Você diz seu nome.",
-          "t": 14.53
+          "t": 12.93
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Helena pergunta se vocês viram outras pessoas pelo caminho.",
-          "t": 19.31
+          "t": 17.41
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Atrás dela, você vê uma parede coberta de folhas.",
-          "t": 29.19
+          "t": 26.4
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Sua irmã para diante de uma fotografia.",
-          "t": 36.74
+          "t": 34.31
         }
       ],
       "batidas": [],
@@ -646,7 +646,7 @@
     {
       "id": "c11",
       "titulo": "Um lugar para sentar",
-      "dur": 43.07,
+      "dur": 38.25,
       "ideia": "Um lugar para sentar",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -660,19 +660,19 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Sua irmã encontra um espaço entre dois colchonetes e encosta a mochila na parede.",
-          "t": 13.5
+          "t": 12.36
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Léo pergunta onde pode carregar a luz da bicicleta.",
-          "t": 26.16
+          "t": 24.07
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você olha para o celular desligado na sua mão e faz o mesmo.",
-          "t": 39.41
+          "t": 35.61
         }
       ],
       "batidas": [],
@@ -684,7 +684,7 @@
     {
       "id": "c12",
       "titulo": "A primeira refeição",
-      "dur": 47.68,
+      "dur": 42.97,
       "ideia": "A primeira refeição",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -698,31 +698,31 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Entrega duas latas à cozinha e recebe uma caneca de sopa.",
-          "t": 7.32
+          "t": 6.71
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Está quente demais.",
-          "t": 11.22
+          "t": 10.37
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Perto da mesa, um homem reclama da quantidade.",
-          "t": 15.87
+          "t": 14.91
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você come devagar.",
-          "t": 32.56
+          "t": 29.13
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Bia adormece antes de terminar.",
-          "t": 42.79
+          "t": 39.08
         }
       ],
       "batidas": [],
@@ -734,7 +734,7 @@
     {
       "id": "c13",
       "titulo": "A escola em funcionamento",
-      "dur": 45.93,
+      "dur": 42.28,
       "ideia": "A escola em funcionamento",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -748,25 +748,25 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Helena apresenta você a Joel, o zelador.",
-          "t": 8.9
+          "t": 8.78
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Você acompanha os baldes até a área de serviço.",
-          "t": 16.91
+          "t": 16.6
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você percebe que o abrigo não estava pronto esperando vocês.",
-          "t": 31.26
+          "t": 29.88
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Joel coloca um balde sob a torneira.",
-          "t": 37.89
+          "t": 35.42
         }
       ],
       "batidas": [],
@@ -778,7 +778,7 @@
     {
       "id": "c14",
       "titulo": "A conta que não fecha",
-      "dur": 49.48,
+      "dur": 44.07,
       "ideia": "A conta que não fecha",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -792,31 +792,31 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "O abastecimento da rua parou no dia anterior.",
-          "t": 8.96
+          "t": 8.46
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Você olha para os baldes.",
-          "t": 22.97
+          "t": 20.63
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Pergunta quanto tempo resta.",
-          "t": 29.65
+          "t": 27.11
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você olha para a quadra.",
-          "t": 36.16
+          "t": 32.84
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Você tinha acabado de encontrar um lugar para ela dormir.",
-          "t": 41.69
+          "t": 37.66
         }
       ],
       "batidas": [],
@@ -828,7 +828,7 @@
     {
       "id": "c15",
       "titulo": "O caminhão no mapa",
-      "dur": 64.22,
+      "dur": 56.26,
       "ideia": "O caminhão no mapa",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -842,43 +842,43 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Abre o mapa antes de terminar a frase.",
-          "t": 8.45
+          "t": 7.98
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Você lembra de letras na lateral.",
-          "t": 14.55
+          "t": 13.61
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Helena pergunta se ele parecia danificado.",
-          "t": 22.05
+          "t": 19.88
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você olha para Davi.",
-          "t": 31.43
+          "t": 27.13
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Léo aponta os carros desenhados às pressas no seu mapa.",
-          "t": 50.37
+          "t": 44.54
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Joel cruza os braços.",
-          "t": 56.28
+          "t": 49.49
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "Você percebe que a ideia ficou mais difícil depois que começou a parecer possível.",
-          "t": 59.28
+          "t": 52.36
         }
       ],
       "batidas": [],
@@ -890,7 +890,7 @@
     {
       "id": "c16",
       "titulo": "Quem volta",
-      "dur": 41.3,
+      "dur": 35.73,
       "ideia": "Quem volta",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -904,43 +904,43 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Ela aponta para o cruzamento.",
-          "t": 4.54
+          "t": 4.31
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "\"Foi onde a gente viu aquela coisa.\"",
-          "t": 7.28
+          "t": 6.38
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Ela olha para Davi.",
-          "t": 11.35
+          "t": 9.28
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você diz que, primeiro, precisam observar de longe. Descobrir se o caminhão ainda está lá.",
-          "t": 14.62
+          "t": 12.65
         },
         {
           "id": "q5",
           "rotulo": "Plano 6",
           "legenda": "Sua irmã fica em silêncio.",
-          "t": 23.06
+          "t": 20.49
         },
         {
           "id": "q6",
           "rotulo": "Plano 7",
           "legenda": "Então tira o caderno da mochila e arranca uma folha.",
-          "t": 25.71
+          "t": 22.77
         },
         {
           "id": "q7",
           "rotulo": "Plano 8",
           "legenda": "Entrega o papel a você.",
-          "t": 36.93
+          "t": 32.0
         }
       ],
       "batidas": [],
@@ -952,7 +952,7 @@
     {
       "id": "c17",
       "titulo": "Mais uma pessoa",
-      "dur": 33.27,
+      "dur": 29.56,
       "ideia": "Mais uma pessoa",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -966,25 +966,25 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "O menino no colo do pai pede água.",
-          "t": 7.97
+          "t": 7.46
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Você pega uma caneca e vai até o balde que acabou de carregar.",
-          "t": 13.32
+          "t": 12.29
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "O menino bebe segurando a caneca com as duas mãos.",
-          "t": 20.99
+          "t": 18.97
         },
         {
           "id": "q4",
           "rotulo": "Plano 5",
           "legenda": "Você volta para a bancada.",
-          "t": 25.94
+          "t": 23.34
         }
       ],
       "batidas": [],
@@ -996,7 +996,7 @@
     {
       "id": "c18",
       "titulo": "Do outro lado da grade",
-      "dur": 55.61,
+      "dur": 51.57,
       "ideia": "Do outro lado da grade",
       "camera": "Câmera viva, como nos EPs 1 e 2.",
       "quadros": [
@@ -1010,25 +1010,25 @@
           "id": "q1",
           "rotulo": "Plano 2",
           "legenda": "Sua irmã pergunta, bem baixo, se você acha que vai dar certo.",
-          "t": 18.72
+          "t": 18.47
         },
         {
           "id": "q2",
           "rotulo": "Plano 3",
           "legenda": "Antes de dormir, você tenta lembrar de mais algum detalhe do caminhão.",
-          "t": 32.04
+          "t": 30.83
         },
         {
           "id": "q3",
           "rotulo": "Plano 4",
           "legenda": "Você não consegue lembrar.",
-          "t": 45.91
+          "t": 40.37
         },
         {
           "id": "q4",
           "rotulo": "Fim",
           "legenda": "EPISÓDIO 4 — A ÚLTIMA RESERVA.",
-          "t": 53.11
+          "t": 40.37
         }
       ],
       "batidas": [],
@@ -1056,6 +1056,15 @@
       ],
       "fps": 30,
       "nota": "EP3 sem narração (tempos estimados)"
+    },
+    {
+      "v": 2,
+      "data": "2026-11-04",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 30,
+      "nota": "EP3 com narração"
     }
   ],
   "criadoEm": "2026-11-02",
