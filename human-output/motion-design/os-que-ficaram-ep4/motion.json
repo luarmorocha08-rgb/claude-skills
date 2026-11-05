@@ -57,7 +57,9 @@
     "quadro": "q3"
   },
   "storyboard": {
-    "revisao": 1
+    "revisao": 1,
+    "aprovadoEm": "2026-11-05",
+    "revisaoAprovada": 1
   },
   "versoes": [],
   "criadoEm": "2026-11-05",
