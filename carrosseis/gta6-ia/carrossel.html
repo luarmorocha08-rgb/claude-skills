@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>GTA VI e a IA</title>
+<style>
+@font-face{font-family:"Serif";src:url(fontes/instrument-serif-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal}
+@font-face{font-family:"Serif";src:url(fontes/instrument-serif-latin-400-italic.woff2) format("woff2");font-weight:400;font-style:italic}
+@font-face{font-family:"Sans";src:url(fontes/inter-tight-latin-400-normal.woff2) format("woff2");font-weight:400}
+@font-face{font-family:"Sans";src:url(fontes/inter-tight-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:"Sans";src:url(fontes/inter-tight-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:"Sans";src:url(fontes/inter-tight-latin-800-normal.woff2) format("woff2");font-weight:800}
+@font-face{font-family:"Mono";src:url(fontes/jetbrains-mono-latin-400-normal.woff2) format("woff2");font-weight:400}
+@font-face{font-family:"Mono";src:url(fontes/jetbrains-mono-latin-500-normal.woff2) format("woff2");font-weight:500}
+
+:root{
+  --fundo:#09090a;
+  --texto:#f3eee4;
+  --suave:#8c877e;
+  --linha:#2a2824;
+  --ouro:#eaa53c;
+  --ouro-grad:linear-gradient(95deg,#f8d98a 0%,#eeb04a 45%,#d9772a 100%);
+  --verde:#3ddc84;
+  --risco:#e5484d;
+  --card:#141312;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;display:flex;flex-wrap:wrap;gap:40px;padding:40px;font-family:"Sans",system-ui,sans-serif;color:var(--texto)}
+
+.card{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--fundo);padding:84px 84px 0}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 45% at 88% 4%,rgba(234,165,60,.16),transparent 70%),
+             radial-gradient(ellipse 60% 40% at 0% 100%,rgba(217,119,42,.08),transparent 70%)}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+.card > *{position:relative;z-index:1}
+
+/* topo */
+.topo{position:absolute;top:56px;left:84px;right:84px;display:flex;justify-content:space-between;align-items:center;font-family:"Mono";font-size:22px;color:var(--suave);letter-spacing:.02em}
+.perfil{display:flex;align-items:center;gap:12px}
+.ponto{width:18px;height:18px;border-radius:50%;border:2px solid var(--verde);display:grid;place-items:center}
+.ponto::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--verde)}
+
+.conteudo{position:absolute;top:150px;left:84px;right:84px;bottom:190px;display:flex;flex-direction:column}
+
+.pilula{align-self:flex-start;font-family:"Mono";font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--ouro);border:1.5px solid rgba(234,165,60,.55);border-radius:999px;padding:12px 24px;margin-bottom:44px}
+.eyebrow{font-family:"Mono";font-size:22px;letter-spacing:.18em;text-transform:uppercase;color:var(--suave);margin-bottom:28px}
+
+.serif{font-family:"Serif";font-weight:400;letter-spacing:-.015em;line-height:1.02}
+.serif em,.ouro{font-style:italic;background:var(--ouro-grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
+.sans-ouro{background:var(--ouro-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.h1{font-size:116px}
+.h2{font-size:84px}
+.h3{font-size:66px}
+.corpo{font-size:36px;line-height:1.35;color:#cfc9be;font-weight:400;max-width:860px}
+.corpo b{color:var(--texto);font-weight:600}
+.ano{font-family:"Sans";font-weight:800;font-size:250px;letter-spacing:-.06em;line-height:.8;margin-left:-8px}
+
+/* rodapé: linha do tempo */
+.rodape{position:absolute;left:84px;right:84px;bottom:64px}
+.trilho{position:relative;height:2px;background:var(--linha);margin:0 10px 26px}
+.trilho .cheio{position:absolute;left:0;top:0;bottom:0;background:var(--ouro-grad);box-shadow:0 0 18px rgba(234,165,60,.6)}
+.trilho .marco{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;transform:translate(-50%,-50%);background:var(--fundo);border:2px solid #4a463f}
+.trilho .marco.on{border-color:var(--ouro);background:var(--ouro)}
+.trilho .marco.atual{width:24px;height:24px;background:var(--fundo);border:3px solid var(--ouro);box-shadow:0 0 0 8px rgba(234,165,60,.15)}
+.legenda{display:flex;justify-content:space-between;align-items:center;font-family:"Mono";font-size:20px;color:var(--suave);letter-spacing:.06em}
+.legenda .arrasta{color:var(--texto)}
+
+/* componentes */
+.janela{background:linear-gradient(180deg,#171614,#100f0e);border:1.5px solid #2c2a26;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.5)}
+.janela .barra{display:flex;align-items:center;gap:10px;padding:20px 26px;border-bottom:1.5px solid #24221f;font-family:"Mono";font-size:19px;color:var(--suave)}
+.janela .barra i{width:13px;height:13px;border-radius:50%;background:#3a3732;display:inline-block}
+.janela .barra span{margin-left:14px}
+
+.carregando{margin-top:auto}
+.carregando .linha1{display:flex;justify-content:space-between;font-family:"Mono";font-size:22px;color:var(--suave);margin-bottom:18px;letter-spacing:.06em}
+.carregando .linha1 b{color:var(--ouro);font-weight:500}
+.barra-load{height:18px;border-radius:999px;background:#1b1a18;border:1.5px solid #2c2a26;overflow:hidden}
+.barra-load div{height:100%;width:99%;background:var(--ouro-grad);border-radius:999px;box-shadow:0 0 30px rgba(234,165,60,.55)}
+
+.mono-box{font-family:"Mono";font-size:30px;line-height:1.75;padding:34px 38px;color:#cfc9be}
+.mono-box .c{color:#5c5850}
+.mono-box .k{color:var(--ouro)}
+
+.chat{padding:34px;display:flex;flex-direction:column;gap:20px}
+.bolha{max-width:78%;padding:22px 28px;border-radius:26px;font-size:30px;line-height:1.35}
+.bolha.eu{align-self:flex-end;background:#26241f;border-bottom-right-radius:8px}
+.bolha.ia{align-self:flex-start;background:#171614;border:1.5px solid #2c2a26;border-bottom-left-radius:8px;color:#d9d3c7}
+.digitando{display:inline-flex;gap:8px;align-items:center}
+.digitando i{width:10px;height:10px;border-radius:50%;background:var(--ouro);display:inline-block;opacity:.9}
+.digitando i:nth-child(2){opacity:.6}.digitando i:nth-child(3){opacity:.3}
+
+.bento{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.bento .b{background:linear-gradient(180deg,#161513,#0f0e0d);border:1.5px solid #2a2824;border-radius:26px;padding:34px 34px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}
+.bento .b .n{font-family:"Mono";font-size:20px;color:var(--suave);letter-spacing:.1em}
+.bento .b .t{font-size:60px;font-weight:700;letter-spacing:-.03em}
+.bento .b .d{font-size:24px;color:var(--suave);margin-top:6px}
+.bento .b.forte{background:radial-gradient(ellipse 90% 90% at 85% 0%,rgba(248,217,138,.35),rgba(217,119,42,.18) 45%,#120f0b 100%);border-color:rgba(234,165,60,.5)}
+
+.stat{display:flex;align-items:baseline;gap:22px}
+.stat .num{font-weight:800;font-size:150px;letter-spacing:-.05em;line-height:1}
+.stat .lbl{font-size:32px;color:var(--suave);line-height:1.25}
+
+.risco{color:#77726a;text-decoration:line-through;text-decoration-color:var(--risco);text-decoration-thickness:9px}
+
+.acoes{display:flex;gap:18px;flex-wrap:wrap}
+.acoes div{font-family:"Mono";font-size:24px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid #3a3732;border-radius:999px;padding:18px 30px;color:var(--texto)}
+.acoes div.forte{background:var(--ouro-grad);color:#140d05;border-color:transparent;font-weight:500}
+</style>
+</head>
+<body>
+
+<!-- 01 · CAPA -->
+<section class="card" data-p="0">
+  <div class="conteudo">
+    <div class="pilula">GTA VI · 19/11</div>
+    <h1 class="serif h1">Quando GTA V saiu, a IA não sabia <em>escrever uma frase.</em></h1>
+    <p class="corpo" style="margin-top:44px">13 anos depois, o próximo GTA chega. Olha tudo o que aconteceu <b>no meio do caminho.</b></p>
+    <div class="carregando">
+      <div class="linha1"><span>CARREGANDO 2013 → 2026</span><b>99%</b></div>
+      <div class="barra-load"><div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · 2013 -->
+<section class="card" data-p="1">
+  <div class="conteudo">
+    <div class="ano sans-ouro">2013</div>
+    <h2 class="serif h3" style="margin-top:56px">GTA V chega às lojas em <em>17 de setembro.</em></h2>
+    <p class="corpo" style="margin-top:28px">No mesmo ano, o máximo que a IA fazia era reconhecer objetos em fotos e agrupar palavras parecidas.</p>
+    <div class="janela" style="margin-top:auto">
+      <div class="barra"><i></i><i></i><i></i><span>word2vec.py — o “estado da arte”</span></div>
+      <div class="mono-box">
+        <div><span class="c"># 2013: a IA aprende que palavras têm vizinhas</span></div>
+        <div>rei <span class="k">-</span> homem <span class="k">+</span> mulher <span class="k">=</span> <span class="k">rainha</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · 2016 -->
+<section class="card" data-p="2">
+  <div class="conteudo">
+    <div class="eyebrow">2016 · Seul</div>
+    <h2 class="serif h2">Uma máquina vence o campeão de Go <em>por 4 a 1.</em></h2>
+    <p class="corpo" style="margin-top:32px">O AlphaGo derrota Lee Sedol num jogo que parecia <b>intuitivo demais</b> para ser calculado.</p>
+    <div style="margin-top:auto;display:flex;justify-content:center">
+      <svg width="560" height="560" viewBox="0 0 560 560" id="go"></svg>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · 2017 -->
+<section class="card" data-p="3">
+  <div class="conteudo">
+    <div class="eyebrow">2017 · Google</div>
+    <h2 class="serif h2">Oito pesquisadores publicam um artigo de 15 páginas.</h2>
+    <p class="corpo" style="margin-top:32px">Ele apresenta o <b>Transformer</b>. É o “T” do GPT, e a base de quase toda IA que você usa hoje.</p>
+    <div class="janela" style="margin-top:auto;padding:58px 64px 54px;background:#f3eee4;border-color:#f3eee4;color:#16130f">
+      <div style="font-family:Mono;font-size:19px;letter-spacing:.14em;color:#7a7266;margin-bottom:22px">ARXIV:1706.03762</div>
+      <div class="serif" style="font-size:104px;line-height:.98">Attention Is<br>All You Need</div>
+      <div style="font-size:24px;color:#6a6358;margin-top:24px">Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin</div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · 2022 -->
+<section class="card" data-p="4">
+  <div class="conteudo">
+    <div class="eyebrow">2022 · 30 de novembro</div>
+    <h2 class="serif h2">O ChatGPT abre para o público. <em>O mundo começa a conversar com IA.</em></h2>
+    <div class="stat" style="margin-top:40px">
+      <div class="num sans-ouro">100 mi</div>
+      <div class="lbl">de usuários em<br>cerca de 2 meses</div>
+    </div>
+    <div class="janela" style="margin-top:auto">
+      <div class="barra"><i></i><i></i><i></i><span>chat — nova conversa</span></div>
+      <div class="chat">
+        <div class="bolha eu">quanto falta pro GTA 6?</div>
+        <div class="bolha ia">Ainda não há data confirmada. <span class="digitando"><i></i><i></i><i></i></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · 2023–2025 -->
+<section class="card" data-p="5">
+  <div class="conteudo">
+    <div class="eyebrow">2023 → 2025</div>
+    <h2 class="serif h2">A IA para de só responder e <em>começa a agir.</em></h2>
+    <div class="bento" style="margin-top:auto">
+      <div class="b"><div class="n">01</div><div><div class="t">Vê</div><div class="d">Entende imagens e vídeos</div></div></div>
+      <div class="b"><div class="n">02</div><div><div class="t">Fala</div><div class="d">Conversa por voz, em tempo real</div></div></div>
+      <div class="b"><div class="n">03</div><div><div class="t">Programa</div><div class="d">Escreve e corrige código</div></div></div>
+      <div class="b forte"><div class="n" style="color:#f8d98a">04</div><div><div class="t">Age</div><div class="d" style="color:#e6cfa6">Agentes que executam tarefas sozinhos</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · 2026 -->
+<section class="card" data-p="6">
+  <div class="conteudo">
+    <div class="pilula">Lançamento · 19.11.2026</div>
+    <div class="ano sans-ouro" style="font-size:300px">13 anos</div>
+    <h2 class="serif h2" style="margin-top:64px">Toda a era moderna da IA coube <em>entre um GTA e outro.</em></h2>
+    <p class="corpo" style="margin-top:auto">Da IA que agrupava palavras à IA que trabalha sozinha. Tudo isso enquanto um único jogo era feito.</p>
+  </div>
+</section>
+
+<!-- 08 · REFLEXÃO -->
+<section class="card" data-p="7">
+  <div class="conteudo" style="justify-content:center">
+    <div class="eyebrow">A pergunta certa</div>
+    <h2 style="font-weight:800;font-size:96px;letter-spacing:-.045em;line-height:1.02">
+      A pergunta não é <span class="risco">se a IA vai criar jogos.</span>
+    </h2>
+    <h2 style="font-weight:800;font-size:96px;letter-spacing:-.045em;line-height:1.02;margin-top:40px">
+      É o que ela vai ter mudado até o <span class="sans-ouro">próximo GTA.</span>
+    </h2>
+  </div>
+</section>
+
+<!-- 09 · CTA -->
+<section class="card" data-p="7">
+  <div class="conteudo">
+    <div class="pilula">Faltam 3 dias</div>
+    <h2 class="serif h1">Salva esse post e manda pra quem tá <em>contando os dias.</em></h2>
+    <div style="margin-top:auto">
+      <div class="acoes" style="margin-bottom:56px">
+        <div class="forte">Salvar</div><div>Compartilhar</div><div>Seguir</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:22px;border-top:1.5px solid var(--linha);padding-top:44px">
+        <div class="ponto" style="width:56px;height:56px;border-width:3px"></div>
+        <div>
+          <div style="font-size:38px;font-weight:700;letter-spacing:-.02em">@ramosraul.ia</div>
+          <div style="font-size:26px;color:var(--suave);margin-top:4px">Sites premium &amp; Inteligência Artificial</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const MARCOS=[2013,2016,2017,2022,2025,2026];
+const pos=a=>((a-2013)/(2026-2013))*100;
+const cards=[...document.querySelectorAll('.card')];
+cards.forEach((c,i)=>{
+  const p=+c.dataset.p; // índice do marco atual
+  const ultimo=i===cards.length-1;
+  const topo=document.createElement('div');topo.className='topo';
+  topo.innerHTML=`<div class="perfil"><div class="ponto"></div>@ramosraul.ia</div><div>${String(i+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}${ultimo?'':'<span style="color:var(--texto);margin-left:22px">Arrasta →</span>'}</div>`;
+  c.prepend(topo);
+  const r=document.createElement('div');r.className='rodape';
+  const fim=p>=6?100:pos(MARCOS[Math.min(p,5)]);
+  const marcos=MARCOS.map((a,k)=>{
+    const cls=k===p&&p<6&&i>0?'atual':(k<=p&&i>0?'on':'');
+    return `<div class="marco ${cls}" style="left:${pos(a)}%"></div>`}).join('');
+  r.innerHTML=`<div class="trilho"><div class="cheio" style="width:${i===0?0:fim}%"></div>${marcos}</div>
+  <div class="legenda"><span>2013 · GTA V</span><span>GTA VI · 2026</span></div>`;
+  c.append(r);
+});
+// cartas 7 e 8: tudo aceso
+cards.slice(6).forEach(c=>c.querySelectorAll('.marco').forEach(m=>{m.className='marco on'}));
+
+// tabuleiro de Go
+const svg=document.getElementById('go');const N=9,m=40,s=(560-2*m)/(N-1);
+let h=`<rect x="0" y="0" width="560" height="560" rx="28" fill="#141312" stroke="#2c2a26" stroke-width="1.5"/>`;
+for(let k=0;k<N;k++){h+=`<line x1="${m}" y1="${m+k*s}" x2="${560-m}" y2="${m+k*s}" stroke="#3a3732" stroke-width="1.5"/><line x1="${m+k*s}" y1="${m}" x2="${m+k*s}" y2="${560-m}" stroke="#3a3732" stroke-width="1.5"/>`}
+const pedras=[[2,2,'b'],[3,2,'w'],[3,3,'b'],[4,3,'w'],[2,4,'w'],[4,4,'b'],[5,4,'w'],[5,5,'b'],[6,3,'w'],[3,5,'b'],[6,6,'w'],[4,6,'b']];
+pedras.forEach(([x,y,c])=>{h+= c==='b'
+  ? `<circle cx="${m+x*s}" cy="${m+y*s}" r="${s*.44}" fill="#0b0a09" stroke="#5c5850" stroke-width="2"/>`
+  : `<circle cx="${m+x*s}" cy="${m+y*s}" r="${s*.44}" fill="#f3eee4"/>`});
+// a jogada 37
+h+=`<circle cx="${m+5*s}" cy="${m+2*s}" r="${s*.44}" fill="url(#g)"/><circle cx="${m+5*s}" cy="${m+2*s}" r="${s*.78}" fill="none" stroke="#eaa53c" stroke-width="2" opacity=".55"/>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#f8d98a"/><stop offset="1" stop-color="#d9772a"/></linearGradient></defs>
+<text x="${m+5*s+s*.95}" y="${m+2*s+8}" font-family="Mono" font-size="20" fill="#eaa53c">jogada 37</text>`;
+svg.innerHTML=h;
+</script>
+</body>
+</html>
