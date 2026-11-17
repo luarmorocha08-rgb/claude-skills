@@ -536,7 +536,7 @@ body.m-com-player {
 .vice .palmas { position: absolute; bottom: -4cqh; height: 92cqh; width: 40cqw; display: flex; align-items: flex-end; }
 .vice .palmas-esq { left: -12cqw; }
 .vice .palmas-dir { right: -12cqw; flex-direction: row-reverse; }
-.vice .palma-svg { height: 100%; width: auto; flex: none; overflow: visible; }
+.vice .palma-svg { height: 100%; width: auto; flex: none; overflow: visible; transform-origin: 50% 100%; }
 .vice .palma-svg + .palma-svg { height: 72%; margin-left: -12cqw; margin-right: -12cqw; }
 .vice .palma-svg path { fill: var(--silhueta); }
 .vice .palma-svg path.nervura { fill: none; stroke: var(--silhueta); stroke-width: 7; stroke-linecap: round; }
@@ -654,7 +654,7 @@ body.m-com-player {
 </head>
 <body>
 <div id="palco" data-formato="16x9"></div>
-<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":31.2,"formato":"16x9","montagem":"principal","titulo":"Quanto custou GTA VI","cenas":[{"id":"abertura","titulo":"O gancho","indice":0,"inicio":0,"dur":4,"fim":4,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Preto: só a linha do horizonte acendendo no centro","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"O céu queimou, o sol nasce no mar, palmeiras subindo; a pergunta chega","t":1.2},{"id":"fim","rotulo":"Fim","legenda":"\"QUANTO CUSTOU / GTA VI?\" gigante sobre o pôr do sol","t":2.6}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":null,"hash":"46f72bbd4084b998"},{"id":"gta5","titulo":"O antes · GTA V","indice":1,"inicio":4,"dur":5.5,"fim":9.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"\"2013\" gigante e vazado no céu; a torre ainda rente ao mar","t":0.3},{"id":"meio","rotulo":"Subindo","legenda":"A torre na metade, girando; o rótulo GTA V e o número contando","t":1.6},{"id":"fim","rotulo":"Fim","legenda":"A torre de GTA V com US$ 265 mi no topo","t":3.4}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"c854449e01cb5c36"},{"id":"recorde","titulo":"O recorde","indice":2,"inicio":9,"dur":3,"fim":12,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Só céu e palmeiras; a frase ainda desfocada","t":0.15},{"id":"fim","rotulo":"Fim","legenda":"\"Na época, foi / O JOGO MAIS CARO JÁ FEITO\"","t":1.6}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"94920f92b56ea6a3"},{"id":"gta6","titulo":"O agora · GTA VI","indice":3,"inicio":11.5,"dur":6.5,"fim":18,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A torre de GTA VI nascendo do mar, à direita","t":0.4},{"id":"meio","rotulo":"Subindo","legenda":"A torre já furou o topo do quadro; \"GTA VI\" à esquerda","t":1.8},{"id":"fim","rotulo":"Fim","legenda":"\"ATÉ US$ 2 BI\" gigante; a torre sem fim à direita; a nota das estimativas","t":4.2}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"706b887fee2d1379"},{"id":"comparacao","titulo":"A comparação","indice":4,"inicio":18,"dur":6,"fim":24,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A torre de GTA V sozinha, pequena no horizonte","t":0.3},{"id":"meio","rotulo":"Passo 2","legenda":"A torre de GTA VI subiu ao lado, 7,5 vezes maior; \"ATÉ\" chega","t":2},{"id":"fim","rotulo":"Fim","legenda":"\"ATÉ 7X MAIS CARO\" à esquerda; as duas torres na proporção real","t":3.6}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"b0cad58356c1195f"},{"id":"ressalva","titulo":"A verdade","indice":5,"inicio":23.6,"dur":3,"fim":26.6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Noite em Vice City; só \"DETALHE\"","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"A frase acesa, a nota ainda por vir","t":0.8},{"id":"fim","rotulo":"Fim","legenda":"\"A ROCKSTAR NUNCA REVELOU O VALOR\" + estimativas de mercado","t":1.6}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"hash":"91d4645d0edbde09"},{"id":"fecho","titulo":"A pergunta final","indice":6,"inicio":26.2,"dur":5,"fim":31.2,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O pôr do sol de volta; \"VAI VALER\" chegando","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"\"CADA CENTAVO?\" chegando da profundidade, ainda desfocado","t":0.75},{"id":"fim","rotulo":"Fim","legenda":"\"VAI VALER / CADA CENTAVO?\" sobre o pôr do sol (depois o sol afunda e tudo apaga num ponto)","t":2}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"hash":"9f7e0c95dade539c"}],"transicoes":[{"de":"abertura","para":"gta5","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":4,"antes":0.24,"depois":0.3,"inicio":3.76,"fim":4.3,"dur":0.54},{"de":"gta5","para":"recorde","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":9,"fim":9.5,"corte":null,"dur":0.5},{"de":"recorde","para":"gta6","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"baixo","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":11.5,"fim":12,"corte":null,"dur":0.5},{"de":"gta6","para":"comparacao","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":18,"antes":0.24,"depois":0.3,"inicio":17.76,"fim":18.3,"dur":0.54},{"de":"comparacao","para":"ressalva","tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":23.6,"fim":24,"corte":null,"dur":0.3999999999999986},{"de":"ressalva","para":"fecho","tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":26.2,"fim":26.6,"corte":null,"dur":0.40000000000000213}],"cortes":[4,18],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
+<script>window.MOTION_LINHA={"fps":60,"bpm":120,"total":31.2,"formato":"16x9","montagem":"principal","titulo":"Quanto custou GTA VI","cenas":[{"id":"abertura","titulo":"O gancho","indice":0,"inicio":0,"dur":4,"fim":4,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Preto: só a linha do horizonte acendendo no centro","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"O céu queimou, o sol nasce no mar, palmeiras subindo; a pergunta chega","t":1.2},{"id":"fim","rotulo":"Fim","legenda":"\"QUANTO CUSTOU / GTA VI?\" gigante sobre o pôr do sol","t":2.6}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":null,"hash":"eded7307057918f6"},{"id":"gta5","titulo":"O antes · GTA V","indice":1,"inicio":4,"dur":5.5,"fim":9.5,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"\"2013\" gigante e vazado no céu; a torre ainda rente ao mar","t":0.3},{"id":"meio","rotulo":"Subindo","legenda":"A torre na metade, girando; o rótulo GTA V e o número contando","t":1.6},{"id":"fim","rotulo":"Fim","legenda":"A torre de GTA V com US$ 265 mi no topo","t":3.4}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"a9b7a335af026ea9"},{"id":"recorde","titulo":"O recorde","indice":2,"inicio":9,"dur":3,"fim":12,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Só céu e palmeiras; a frase ainda desfocada","t":0.15},{"id":"fim","rotulo":"Fim","legenda":"\"Na época, foi / O JOGO MAIS CARO JÁ FEITO\"","t":1.6}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"bba899c15cedb086"},{"id":"gta6","titulo":"O agora · GTA VI","indice":3,"inicio":11.5,"dur":6.5,"fim":18,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A torre de GTA VI nascendo do mar, à direita","t":0.4},{"id":"meio","rotulo":"Subindo","legenda":"A torre já furou o topo do quadro; \"GTA VI\" à esquerda","t":1.8},{"id":"fim","rotulo":"Fim","legenda":"\"ATÉ US$ 2 BI\" gigante; a torre sem fim à direita; a nota das estimativas","t":4.2}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"entrada":{"tipo":"empurrar","modo":"sobreposta","dur":0.5},"hash":"fa69d651cdbfb84f"},{"id":"comparacao","titulo":"A comparação","indice":4,"inicio":18,"dur":6,"fim":24,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"A torre de GTA V sozinha, pequena no horizonte","t":0.3},{"id":"meio","rotulo":"Passo 2","legenda":"A torre de GTA VI subiu ao lado, 7,5 vezes maior; \"ATÉ\" chega","t":2},{"id":"fim","rotulo":"Fim","legenda":"\"ATÉ 7X MAIS CARO\" à esquerda; as duas torres na proporção real","t":3.6}],"tipo":"montagem","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"avancar-desfocar","modo":"encadeada","dur":0.54},"hash":"96394b3e11740ac7"},{"id":"ressalva","titulo":"A verdade","indice":5,"inicio":23.6,"dur":3,"fim":26.6,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"Noite em Vice City; só \"DETALHE\"","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"A frase acesa, a nota ainda por vir","t":0.8},{"id":"fim","rotulo":"Fim","legenda":"\"A ROCKSTAR NUNCA REVELOU O VALOR\" + estimativas de mercado","t":1.6}],"tipo":"frase","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"entrada":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"hash":"52e4203bba0efb50"},{"id":"fecho","titulo":"A pergunta final","indice":6,"inicio":26.2,"dur":5,"fim":31.2,"variante":null,"fundoPuro":false,"quadros":[{"id":"inicio","rotulo":"Início","legenda":"O pôr do sol de volta; \"VAI VALER\" chegando","t":0.2},{"id":"meio","rotulo":"Passo 2","legenda":"\"CADA CENTAVO?\" chegando da profundidade, ainda desfocado","t":0.75},{"id":"fim","rotulo":"Fim","legenda":"\"VAI VALER / CADA CENTAVO?\" sobre o pôr do sol (depois o sol afunda e tudo apaga num ponto)","t":2}],"tipo":"palavra-gigante","permitirParado":[],"cortesInternos":[],"saida":{"tipo":"corte","modo":"encadeada","dur":0},"entrada":{"tipo":"esmaecer","modo":"sobreposta","dur":0.4},"hash":"a42993ab165e7129"}],"transicoes":[{"de":"abertura","para":"gta5","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":4,"antes":0.24,"depois":0.3,"inicio":3.76,"fim":4.3,"dur":0.54},{"de":"gta5","para":"recorde","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"cima","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":9,"fim":9.5,"corte":null,"dur":0.5},{"de":"recorde","para":"gta6","tipo":"empurrar","modo":"sobreposta","opcoes":{"direcao":"baixo","__dur":0.5,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":11.5,"fim":12,"corte":null,"dur":0.5},{"de":"gta6","para":"comparacao","tipo":"avancar-desfocar","modo":"encadeada","opcoes":{"avanco":0.07,"desfoque":0.8,"__dur":0,"__antes":0.24,"__depois":0.3},"texto":null,"textoEntrada":null,"corte":18,"antes":0.24,"depois":0.3,"inicio":17.76,"fim":18.3,"dur":0.54},{"de":"comparacao","para":"ressalva","tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":23.6,"fim":24,"corte":null,"dur":0.3999999999999986},{"de":"ressalva","para":"fecho","tipo":"esmaecer","modo":"sobreposta","opcoes":{"cor":"var(--fundo)","__dur":0.4,"__antes":0,"__depois":0},"texto":null,"textoEntrada":null,"inicio":26.2,"fim":26.6,"corte":null,"dur":0.40000000000000213}],"cortes":[4,18],"estilo":{"curvaEntrada":[0.16,1,0.3,1],"cascataLetra":0.026,"cascataPalavra":0.045,"entrada":0.6,"opacidade":0.18,"subida":0.18,"desfoque":0.14,"saida":0.25,"camera":0.012}};
 window.MOTION_FONTES=[{"familia":"Anton","peso":"400","estilo":"normal"},{"familia":"Inter","peso":"700","estilo":"normal"}];
 window.MOTION_MIDIA={};
 window.MOTION_SVG={};
@@ -4041,6 +4041,22 @@ window.MOTION_CATALOGO={"corte":{"modo":"encadeada","antes":0,"depois":0,"opcoes
         <div class="torre-rotulo"><span class="t-nome">${rotulo}</span><span class="t-valor destaque">${valor}</span>${nota ? `<span class="t-nota">${nota}</span>` : ''}</div>
       </div>`;
     },
+    /** Pega as peças do cenário (no montar). */
+    pecas(el) {
+      return {
+        vice: el.$('.vice'), ceu: el.$('.ceu'), sol: el.$('.sol'), brilho: el.$('.sol-brilho'), mar: el.$('.mar'),
+        reflexo: el.$('.reflexo'), ondas: el.$('.ondas'), linha: el.$('.horizonte-luz'),
+        sky: el.$$('.skyline'), palmas: el.$$('.palmas'), palmeiras: el.$$('.palma-svg'),
+      };
+    },
+    /** Vida do cenário: o sol respira, o mar cintila e corre, as palmeiras balançam. Função pura de t. */
+    vida(t, V, api, { k = 1, sol = 1 } = {}) {
+      const S = Math.sin, PI2 = Math.PI * 2;
+      if (V.brilho) api.set(V.brilho, { o: sol * (0.9 + 0.1 * k * S(PI2 * t / 4.3)), s: 1 + 0.025 * k * S(PI2 * t / 5.1 + 1) });
+      if (V.reflexo) api.set(V.reflexo, { o: sol * (0.82 + 0.18 * S(PI2 * t / 1.9)), sx: 1 + 0.12 * S(PI2 * t / 2.7) });
+      if (V.ondas) V.ondas.style.backgroundPosition = `0 ${(t * 0.9).toFixed(4)}cqh`;
+      V.palmeiras.forEach((p, i) => api.set(p, { r: (i % 2 ? -1 : 1) * 0.9 * k * S(PI2 * (t + i * 0.83) / (3.6 + i * 0.4)) }));
+    },
   };
 })();
 
@@ -4048,7 +4064,9 @@ window.MOTION_CATALOGO={"corte":{"modo":"encadeada","antes":0,"depois":0,"opcoes
 
 <script>/* abertura — "O gancho" (4 s)
    Ideia: o horizonte acende do preto, o céu de Vice City queima de baixo para cima e a pergunta
-   sobe gigante sobre o pôr do sol. */
+   sobe gigante sobre o pôr do sol.
+   Batidas: 0 linha do horizonte · 0,4 céu e sol · 0,75 palmeiras e cidade · b(2) "QUANTO CUSTOU" ·
+   b(3) "GTA VI?" pela lente · 2,8 brilho · saída avancar-desfocar. */
 Motion.cena('abertura', {
   render: () => `
     ${Vice.cenario()}
@@ -4068,12 +4086,48 @@ Motion.cena('abertura', {
       api.set(el.$$('.palmas'), { y: 12 });
     },
   },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.pal = api.tipo.dividir(el.$('.pergunta'), { por: 'palavra' });
+    el.gta = api.tipo.dividir(el.$('.gta'), { por: 'letra' });
+    el.cam = api.camera();
+  },
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, tipo, b } = api;
+    const V = el.V;
+    // 0 → 0,6: a linha do horizonte nasce como ponto e corre para as pontas
+    api.set(V.linha, { sx: lerp(0.015, 1, ease.forte(prog(t, 0, 0.75))), o: suave(prog(t, 0, 0.12)) });
+    // o céu queima de baixo para cima (máscara que sobe) e ganha força
+    const c = ease.inOutSine(prog(t, 0.25, 1.5));
+    const borda = lerp(-30, 110, c);
+    api.set(V.ceu, { o: suave(prog(t, 0.2, 0.5)), style: { webkitMaskImage: `linear-gradient(0deg, #000 ${borda}%, transparent ${borda + 30}%)`, maskImage: `linear-gradient(0deg, #000 ${borda}%, transparent ${borda + 30}%)` } });
+    api.set(V.mar, { o: suave(prog(t, 0.15, 0.7)) });
+    // o sol sobe meia altura do mar
+    const s = ease.forte(prog(t, 0.4, 1.7));
+    api.set(V.sol, { y: lerp(5.5, 0, s), o: suave(prog(t, 0.4, 0.75)) });
+    const kSol = suave(prog(t, 0.45, 1.4));
+    // a cidade e as palmeiras sobem com paralaxe
+    V.sky.forEach((k, i) => api.set(k, { y: lerp(1.2 + i, 0, ease.forte(prog(t, 0.7 + 0.1 * i, 1.6))), o: suave(prog(t, 0.7 + 0.1 * i, 1.1)) }));
+    V.palmas.forEach((p, i) => api.set(p, { y: lerp(26, 0, ease.forte(prog(t, 0.75 + 0.08 * i, 2.0))), o: suave(prog(t, 0.75, 0.95)) }));
+    Vice.vida(t, V, api, { sol: kSol });
+    // a pergunta
+    api.set(el.$('.bloco'), { o: 1 });
+    tipo.focar(t, el.pal, { inicio: b(2) });
+    tipo.lente(t, el.gta, { inicio: b(3), eixo: 'quadro' });
+    tipo.brilho(t, el.gta, { inicio: 2.8, dur: 0.8, forca: 0.45 });
+    tipo.derivaDestaque(t, el.gta, { inicio: 2.0 });
+    // câmera: nasce baixa, rente ao mar, e sobe; depois push-in vivo
+    const tilt = ease.forte(prog(t, 0, 2.2));
+    el.cam.pose({ zoom: api.viva(t) * lerp(1.06, 1, tilt), y: lerp(7, 0, tilt) });
+  },
 });
 
 //# sourceURL=cenas/abertura.js</script>
-<script>/* gta5 — "O antes" (5,5 s)
+<script>/* gta5 — "O antes · GTA V" (5,5 s)
    Ideia: em 2013, a torre de dinheiro de GTA V sobe da linha do mar, maço por maço, girando,
-   e o valor viaja no topo dela. */
+   e o valor viaja no topo dela.
+   Batidas: 0 "2013" assenta · b(1) a torre rompe o mar · b(2) rótulo + contagem (trava em b(4)) ·
+   b(5) nota · hold girando · saída empurrar para cima. */
 Motion.cena('gta5', {
   render: () => `
     ${Vice.cenario({ classe: 'baixo' })}
@@ -4090,11 +4144,38 @@ Motion.cena('gta5', {
       api.set(el.$('.t-nota'), { o: 0 });
     },
   },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.torre = el.$('.t5');
+    el.cam = api.camera();
+  },
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, b } = api;
+    const ini = api.inicioEntrada(0);
+    Vice.vida(t, el.V, api);
+    // "2013" vazado assenta devagar no céu
+    const a = ease.forte(prog(t, ini, 1.6));
+    api.set(el.$('.ano'), { s: lerp(1.12, 1, a) * (1 + 0.004 * (t - api.ref)), o: suave(prog(t, ini, ini + 0.4)) });
+    // a torre rompe o mar e sobe, com uma mola curta de objeto
+    const h = 36 * api.spring(t - b(1), { freq: 0.9, damp: 5.6 });
+    const ry = lerp(-70, -32, ease.forte(prog(t, 0.2, 2.6))) + 2 * (t - api.ref);
+    api.set(el.torre, { vars: { '--h': `${Math.max(0.3, h).toFixed(3)}cqmin`, '--ry': `${ry.toFixed(3)}deg` } });
+    // o rótulo nasce no topo; o valor conta e trava na batida
+    const r = ease.forte(prog(t, b(2), b(2) + 0.6));
+    api.set(el.$('.torre-rotulo'), { o: suave(prog(t, b(2), b(2) + 0.2)) });
+    api.set(el.$('.t-nome'), { y: 1.2 * (1 - r), blur: 0.3 * (1 - r) });
+    api.tipo.contar(t, el.$('.t-valor'), { de: 0, ate: 265, inicio: b(2), travar: b(4), prefixo: 'US$ ', sufixo: ' mi' });
+    const n = ease.forte(prog(t, b(5), b(5) + 0.6));
+    api.set(el.$('.t-nota'), { o: suave(prog(t, b(5), b(5) + 0.2)), y: 0.8 * (1 - n), blur: 0.25 * (1 - n) });
+    // câmera: push-in contínuo de ~4 %
+    el.cam.pose({ zoom: 1 + 0.008 * (t - api.ref) });
+  },
 });
 
 //# sourceURL=cenas/gta5.js</script>
 <script>/* recorde — "O recorde" (3 s)
-   Ideia: a câmera sobe da torre para o céu e a frase do recorde chega palavra a palavra. */
+   Ideia: a câmera chega ao céu e a frase do recorde chega letra a letra; "mais caro" acende no degradê.
+   Batidas: 0 etiqueta · b(0,5) frase · b(1,5) varredura do destaque · b(4) brilho · saída empurrar para baixo. */
 Motion.cena('recorde', {
   render: () => `
     ${Vice.cenario({ classe: 'ceu-alto' })}
@@ -4105,12 +4186,32 @@ Motion.cena('recorde', {
   poses: {
     inicio: (el, api) => { api.set(el.$('.frase'), { o: 0.2, blur: 1, y: 2 }); api.set(el.$('.etiqueta'), { o: 0 }); },
   },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.et = api.tipo.dividir(el.$('.etiqueta'), { por: 'palavra' });
+    el.letras = api.tipo.dividir(el.$('.frase'), { por: 'letra' });
+    el.dest = el.letras.filter((p) => p.destaque);
+    el.cam = api.camera();
+  },
+  quadro(t, el, api) {
+    const { tipo, b } = api;
+    const ini = api.inicioEntrada(0.02);
+    Vice.vida(t, el.V, api);
+    tipo.focar(t, el.et, { inicio: ini });
+    tipo.focar(t, el.letras, { inicio: b(0.5), cascata: 0.022 });
+    tipo.varrerDestaque(t, el.letras, { inicio: b(1.5), dur: 0.5 });
+    tipo.brilho(t, el.dest, { inicio: b(4), dur: 0.7, forca: 0.45 });
+    tipo.derivaDestaque(t, el.letras, { inicio: b(3) });
+    el.cam.pose({ zoom: 1 + 0.01 * (t - api.ref) });
+  },
 });
 
 //# sourceURL=cenas/recorde.js</script>
-<script>/* gta6 — "O agora" (6,5 s)
-   Ideia: a torre de GTA VI rompe a linha do mar e não para de subir: a câmera inclina para cima,
-   ela fura o topo do quadro, e o número rola como odômetro até travar. */
+<script>/* gta6 — "O agora · GTA VI" (6,5 s)
+   Ideia: a torre de GTA VI rompe a linha do mar e não para de subir: fura o topo do quadro, e o
+   número sai de onde GTA V parou (265 mi) e rola até 2.000 mi, virando "2 bi".
+   Batidas: 0 a torre rompe · 1,0 fura o quadro (tremor) · b(2,5) etiqueta · b(3,5) contagem (trava em b(6))
+   · b(6,5) "até" + nota · hold: a torre segue subindo · saída avancar-desfocar. */
 Motion.cena('gta6', {
   render: () => `
     ${Vice.cenario({ classe: 'baixo' })}
@@ -4131,12 +4232,49 @@ Motion.cena('gta6', {
       api.set([el.$('.valor'), el.$('.nota'), el.$('.apoio-n')], { o: 0 });
     },
   },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.torre = el.$('.t6');
+    el.valor = el.$('.valor .destaque');
+    el.cam = api.camera();
+  },
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, b } = api;
+    Vice.vida(t, el.V, api);
+    // a torre: rompe o mar acelerando, fura o topo e segue subindo devagar
+    const sobe = ease.inOutCubic(prog(t, 0, 1.6));
+    const h = 4 + 136 * sobe + 3 * Math.max(0, t - 1.6);
+    const ry = lerp(-44, -26, ease.forte(prog(t, 0, 2.4))) + 1.5 * (t - api.ref);
+    api.set(el.torre, { vars: { '--h': `${h.toFixed(3)}cqmin`, '--ry': `${ry.toFixed(3)}deg` } });
+    // texto
+    const surge = (sel, t0, dy = 1.2) => {
+      const e = ease.forte(prog(t, t0, t0 + 0.6));
+      api.set(el.$(sel), { o: suave(prog(t, t0, t0 + 0.2)), y: dy * (1 - e), blur: 0.4 * (1 - e) });
+    };
+    api.set(el.$('.texto'), { o: 1 });
+    surge('.etiqueta', b(2.5));
+    surge('.apoio-n', b(6.5));
+    surge('.nota', b(6.5) + 0.1);
+    // contagem: de onde GTA V parou até 2.000 mi; na batida b(6) vira "2 bi" com um respiro de foco
+    const troca = b(6) + 0.08;
+    if (t < troca) api.tipo.contar(t, el.valor, { de: 265, ate: 2000, inicio: b(3.5), travar: b(6), prefixo: 'US$ ', sufixo: ' mi' });
+    else el.valor.textContent = 'US$ 2 bi';
+    const pulso = Math.sin(Math.PI * prog(t, b(6) - 0.04, b(6) + 0.2));
+    const foco = 1 - ease.forte(prog(t, b(3.5), b(3.5) + 0.6));
+    const ev = ease.forte(prog(t, b(3.5), b(3.5) + 0.6));
+    api.set(el.$('.valor'), { o: suave(prog(t, b(3.5), b(3.5) + 0.2)), y: 1.6 * (1 - ev), blur: 0.25 * pulso + 0.4 * foco, bright: 1 + 0.5 * pulso });
+    // câmera: contra-plongée viva; tremor curto quando a torre fura o quadro
+    const tr = api.tremor(t, 1.0, { forca: 0.25 });
+    el.cam.pose({ zoom: 1 + 0.008 * (t - api.ref), x: tr.x, y: tr.y, giro: tr.giro });
+  },
 });
 
 //# sourceURL=cenas/gta6.js</script>
 <script>/* comparacao — "A comparação" (6 s)
    Ideia: a câmera recua e as duas torres aparecem lado a lado na proporção real
-   (265 milhões contra até 2 bilhões): a pequena some ao pé da gigante, e o "7x" crava. */
+   (265 milhões contra até 2 bilhões): a pequena some ao pé da gigante, e o "7x" crava.
+   Batidas: 0 recuo da câmera · b(1) GTA VI sobe 7,5× · b(3,5) "até" · b(4) "7x" pela lente + peso ·
+   b(5) "mais caro" · b(8) brilho · b(10) o sol começa a afundar · saída esmaecer. */
 Motion.cena('comparacao', {
   render: () => `
     ${Vice.cenario({ classe: 'baixo' })}
@@ -4160,11 +4298,51 @@ Motion.cena('comparacao', {
       api.set(el.$('.mais'), { o: 0 });
     },
   },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.c5 = el.$('.c5');
+    el.c6 = el.$('.c6');
+    el.ate = api.tipo.dividir(el.$('.ate'), { por: 'palavra' });
+    el.vezes = api.tipo.dividir(el.$('.vezes'), { por: 'letra' });
+    el.mais = api.tipo.dividir(el.$('.mais'), { por: 'palavra' });
+    el.cam = api.camera();
+    el.P = el.cam.centro(el.$('.c5'));
+  },
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, tipo, b } = api;
+    const V = el.V;
+    Vice.vida(t, V, api);
+    // as duas torres giram juntas
+    const ry = -30 + 1.6 * (t - api.ref);
+    api.set(el.c5, { vars: { '--ry': `${ry.toFixed(3)}deg` } });
+    // GTA VI sobe até 7,5× a outra, com mola curta
+    const h6 = 67.5 * api.spring(t - b(1), { freq: 0.95, damp: 5.8 });
+    api.set(el.c6, { vars: { '--h': `${Math.max(0.3, h6).toFixed(3)}cqmin`, '--ry': `${ry.toFixed(3)}deg` }, style: { visibility: t < b(1) ? 'hidden' : 'visible' } });
+    const r6 = ease.forte(prog(t, 1.4, 2.0));
+    api.set(el.$('.c6 .torre-rotulo'), { o: suave(prog(t, 1.4, 1.6)), y: 1 * (1 - r6) });
+    // texto
+    api.set(el.$('.texto'), { o: 1 });
+    tipo.focar(t, el.ate, { inicio: b(3.5) });
+    tipo.lente(t, el.vezes, { inicio: b(4) });
+    tipo.focar(t, el.mais, { inicio: b(5) });
+    tipo.brilho(t, el.vezes, { inicio: b(8), dur: 0.7, forca: 0.45 });
+    tipo.derivaDestaque(t, el.vezes, { inicio: b(5) });
+    // o sol começa a afundar e a luz cai
+    const pz = ease.inOutSine(prog(t, b(10), 6.0));
+    const d = 9 * pz;
+    api.set(V.sol, { y: (d * 30) / 30 * 0.5625, style: { webkitMaskImage: `linear-gradient(180deg, #000 ${50 - (d / 30) * 100}%, transparent ${50.5 - (d / 30) * 100}%)`, maskImage: `linear-gradient(180deg, #000 ${50 - (d / 30) * 100}%, transparent ${50.5 - (d / 30) * 100}%)` } });
+    // câmera: recua de perto da torre pequena até o plano aberto; peso quando o 7x trava
+    const rec = ease.forte(prog(t, api.inicioEntrada(0), 2.0));
+    const peso = 0.012 * api.pulsoSemQuique(prog(t, b(4) + 0.3, b(4) + 1.2), 0.3);
+    el.cam.pose({ zoom: lerp(1.6, 1, rec) * (1 + peso) * (1 + 0.004 * (t - api.ref)), x: el.P[0] * (1 - rec), y: el.P[1] * (1 - rec) });
+  },
 });
 
 //# sourceURL=cenas/comparacao.js</script>
-<script>/* ressalva — "A verdade" (3,5 s)
-   Ideia: o pôr do sol vira noite e a frase da ressalva acende como um letreiro que liga. */
+<script>/* ressalva — "A verdade" (3 s)
+   Ideia: a noite cai sobre Vice City e a frase da ressalva acende como um letreiro que liga:
+   cada letra nasce quente e esfria, sem piscar.
+   Batidas: 0 etiqueta · b(0,5) frase · b(2) nota · b(3) brilho em "nunca" · saída esmaecer. */
 Motion.cena('ressalva', {
   render: () => `
     ${Vice.cenario({ classe: 'noite', sol: false })}
@@ -4177,12 +4355,38 @@ Motion.cena('ressalva', {
     inicio: (el, api) => { api.set([el.$('.frase'), el.$('.nota')], { o: 0 }); },
     meio: (el, api) => { api.set(el.$('.nota'), { o: 0 }); },
   },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.et = api.tipo.dividir(el.$('.etiqueta'), { por: 'palavra' });
+    el.letras = api.tipo.dividir(el.$('.frase'), { por: 'letra' });
+    el.dest = el.letras.filter((p) => p.destaque);
+    el.nota = api.tipo.dividir(el.$('.nota'), { por: 'palavra' });
+    el.cam = api.camera();
+  },
+  quadro(t, el, api) {
+    const { tipo, b, prog, suave } = api;
+    Vice.vida(t, el.V, api, { sol: 0 });
+    tipo.focar(t, el.et, { inicio: api.inicioEntrada(0.02) });
+    // neon que liga: cada letra nasce quente (brilho alto) e esfria até a cor final
+    const ent = tipo.focar(t, el.letras, { inicio: b(0.5), cascata: 0.024, aplicar: false });
+    el.letras.forEach((p, i) => {
+      const t0 = b(0.5) + 0.024 * i;
+      ent[i].bright = 1 + 0.9 * (1 - suave(prog(t, t0 + 0.05, t0 + 0.55)));
+    });
+    tipo.aplicar(el.letras, ent);
+    tipo.focar(t, el.nota, { inicio: b(2) });
+    tipo.brilho(t, el.dest, { inicio: b(3), dur: 0.6, forca: 0.45 });
+    tipo.derivaDestaque(t, el.letras, { inicio: b(3.5) });
+    el.cam.pose({ zoom: 1 + 0.01 * (t - api.ref) });
+  },
 });
 
 //# sourceURL=cenas/ressalva.js</script>
 <script>/* fecho — "A pergunta final" (5 s)
-   Ideia: de volta ao pôr do sol da abertura; a pergunta sobe gigante, o sol afunda no mar,
-   o horizonte encolhe até um ponto e apaga. */
+   Ideia: de volta ao pôr do sol da abertura (a rima): a pergunta sobe gigante, o sol afunda no mar,
+   o horizonte encolhe até um ponto e apaga.
+   Batidas: 0 "vai valer" · b(1) "cada centavo?" pela lente · b(3) brilho · b(7) o sol afunda ·
+   4,4 tudo sai e o horizonte vira um ponto · último quadro: o fundo. */
 Motion.cena('fecho', {
   render: () => `
     ${Vice.cenario()}
@@ -4193,6 +4397,37 @@ Motion.cena('fecho', {
   poses: {
     inicio: (el, api) => { api.set(el.$('.l2'), { o: 0 }); api.set(el.$('.l1'), { o: 0.4, blur: 0.6 }); },
     meio: (el, api) => { api.set(el.$('.l2'), { o: 0.55, blur: 0.8, s: 1.25 }); },
+  },
+  montar(el, api) {
+    el.V = Vice.pecas(el);
+    el.l1 = api.tipo.dividir(el.$('.l1'), { por: 'palavra' });
+    el.l2 = api.tipo.dividir(el.$('.l2'), { por: 'letra' });
+    el.cam = api.camera();
+  },
+  quadro(t, el, api) {
+    const { prog, ease, lerp, suave, tipo, b } = api;
+    const V = el.V;
+    // o sol afunda no mar e o céu escurece
+    const pz = ease.inOutSine(prog(t, b(7), 4.6));
+    Vice.vida(t, V, api, { sol: 1 - pz });
+    const d = 15 * pz;
+    const corte = 50 - (d / 30) * 100;
+    api.set(V.sol, { y: d * 0.5625, style: { webkitMaskImage: `linear-gradient(180deg, #000 ${corte}%, transparent ${corte + 0.5}%)`, maskImage: `linear-gradient(180deg, #000 ${corte}%, transparent ${corte + 0.5}%)` } });
+    // o mundo apaga; a linha do horizonte encolhe até um ponto e some por último
+    const apaga = ease.inCubic(prog(t, 4.2, 4.85));
+    api.set([V.ceu, V.mar, ...V.sky, ...V.palmas], { o: 1 - apaga, bright: 1 - 0.45 * pz });
+    const enc = ease.inExpo(prog(t, 4.35, 4.85));
+    api.set(V.linha, { sx: lerp(1, 0.01, enc), o: 1 - suave(prog(t, 4.8, 4.98)) });
+    // a pergunta
+    const s1 = tipo.focar(t, el.l1, { inicio: api.inicioEntrada(0.02), aplicar: false });
+    const s2 = tipo.lente(t, el.l2, { inicio: b(1), eixo: 'quadro', aplicar: false });
+    const x1 = tipo.sair(t, el.l1, { inicio: 4.2, dur: 0.3, aplicar: false });
+    const x2 = tipo.sair(t, el.l2, { inicio: 4.25, dur: 0.3, aplicar: false });
+    tipo.aplicar(el.l1, s1, x1);
+    tipo.aplicar(el.l2, s2, x2);
+    tipo.brilho(t, el.l2, { inicio: b(3), dur: 0.8, forca: 0.45 });
+    tipo.derivaDestaque(t, el.l2, { inicio: b(3.5) });
+    el.cam.pose({ zoom: 1 + 0.009 * (t - api.ref), y: -3 * pz });
   },
 });
 

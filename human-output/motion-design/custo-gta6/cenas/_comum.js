@@ -98,5 +98,21 @@
         <div class="torre-rotulo"><span class="t-nome">${rotulo}</span><span class="t-valor destaque">${valor}</span>${nota ? `<span class="t-nota">${nota}</span>` : ''}</div>
       </div>`;
     },
+    /** Pega as peças do cenário (no montar). */
+    pecas(el) {
+      return {
+        vice: el.$('.vice'), ceu: el.$('.ceu'), sol: el.$('.sol'), brilho: el.$('.sol-brilho'), mar: el.$('.mar'),
+        reflexo: el.$('.reflexo'), ondas: el.$('.ondas'), linha: el.$('.horizonte-luz'),
+        sky: el.$$('.skyline'), palmas: el.$$('.palmas'), palmeiras: el.$$('.palma-svg'),
+      };
+    },
+    /** Vida do cenário: o sol respira, o mar cintila e corre, as palmeiras balançam. Função pura de t. */
+    vida(t, V, api, { k = 1, sol = 1 } = {}) {
+      const S = Math.sin, PI2 = Math.PI * 2;
+      if (V.brilho) api.set(V.brilho, { o: sol * (0.9 + 0.1 * k * S(PI2 * t / 4.3)), s: 1 + 0.025 * k * S(PI2 * t / 5.1 + 1) });
+      if (V.reflexo) api.set(V.reflexo, { o: sol * (0.82 + 0.18 * S(PI2 * t / 1.9)), sx: 1 + 0.12 * S(PI2 * t / 2.7) });
+      if (V.ondas) V.ondas.style.backgroundPosition = `0 ${(t * 0.9).toFixed(4)}cqh`;
+      V.palmeiras.forEach((p, i) => api.set(p, { r: (i % 2 ? -1 : 1) * 0.9 * k * S(PI2 * (t + i * 0.83) / (3.6 + i * 0.4)) }));
+    },
   };
 })();
