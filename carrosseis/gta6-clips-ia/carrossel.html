@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clips de GTA 6 com IA</title>
+<style>
+/* ── Marca: mesmos tokens do repo (human-motion-design/exemplos-de-nivel/marca/tokens.css).
+      Para trocar a identidade, troque só este bloco. ── */
+@font-face { font-family: "Inter Display"; src: url("marca/fontes/InterDisplay-ExtraLight.otf"); font-weight: 200; }
+@font-face { font-family: "Inter Display"; src: url("marca/fontes/InterDisplay-Light.otf"); font-weight: 300; }
+@font-face { font-family: "Inter Display"; src: url("marca/fontes/InterDisplay-Regular.otf"); font-weight: 400; }
+@font-face { font-family: "Inter Display"; src: url("marca/fontes/InterDisplay-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "Inter"; src: url("marca/fontes/Inter-Regular.otf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("marca/fontes/Inter-Medium.otf"); font-weight: 500; }
+:root {
+  --fundo: #020504;
+  --texto: #edf5f1;
+  --texto-suave: #8fa39c;
+  --destaque: #7fd6b6;
+  --destaque-grad: linear-gradient(100deg, #f3faf6 6%, #c9f0df 28%, #86d9bb 54%, #43b39f 76%, #2c8f97 100%);
+  --brilho: #dff6ec;
+  --luz-1: #1d6858; --luz-2: #0f3440; --luz-3: #3a9e86; --luz-4: #5c7f74;
+  --vidro: linear-gradient(color-mix(in srgb, #08100e 62%, transparent), color-mix(in srgb, #040807 74%, transparent));
+  --linha: color-mix(in srgb, var(--texto) 16%, transparent);
+  --cartao-forte: radial-gradient(ellipse 95% 85% at 85% 0%, #bff0dc 0%, #4fb59c 32%, #1d5f5a 68%, #0a2426 100%);
+  --cartao-claro: linear-gradient(135deg, #f3faf6 0%, #c9f0df 30%, #86d9bb 65%, #43b39f 100%);
+  --fonte-titulo: "Inter Display", "Inter", system-ui, sans-serif;
+  --fonte-texto: "Inter", system-ui, sans-serif;
+  --raio: 28px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0b0f0e; font-family: var(--fonte-texto); color: var(--texto); display: flex; flex-direction: column; align-items: center; gap: 48px; padding: 48px 0; }
+body.render { padding: 0; gap: 0; background: var(--fundo); }
+
+.slide {
+  position: relative; width: 1080px; height: 1350px; overflow: hidden;
+  background: var(--fundo); padding: 96px 88px 120px; display: flex; flex-direction: column;
+}
+/* luz sem borda: degradês de queda macia */
+.slide::before, .slide::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none; filter: blur(10px); }
+.slide::before { width: 1300px; height: 1000px; left: -380px; bottom: -620px; background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-1) 75%, transparent), transparent); }
+.slide::after  { width: 900px; height: 800px; right: -420px; top: -360px; background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-2) 90%, transparent), transparent); }
+.slide > * { position: relative; z-index: 1; }
+.grao { position: absolute; inset: 0; z-index: 0; opacity: .05; background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 4px 4px; }
+
+/* topo e rodapé */
+.topo { margin-bottom: 36px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.topo .marca-gta { height: 64px; display: flex; align-items: center; }
+.topo .marca-gta img { height: 64px; width: auto; }
+.contador { font-family: var(--fonte-titulo); font-weight: 300; font-size: 26px; letter-spacing: .08em; color: var(--texto-suave); }
+.contador b { color: var(--texto); font-weight: 600; }
+.rodape { position: absolute; left: 88px; right: 88px; bottom: 56px; display: flex; justify-content: space-between; align-items: center; font-size: 24px; color: var(--texto-suave); }
+.rodape .handle { color: var(--texto); font-weight: 500; letter-spacing: .01em; }
+.rodape .seta { display: flex; align-items: center; gap: 14px; }
+.rodape .seta i { display: block; width: 56px; height: 1.5px; background: var(--destaque); position: relative; }
+.rodape .seta i::after { content: ""; position: absolute; right: -1px; top: -6px; width: 12px; height: 12px; border-top: 1.5px solid var(--destaque); border-right: 1.5px solid var(--destaque); transform: rotate(45deg); }
+
+/* logo GTA VI — usa ativos/gta6-logo.png; sem o arquivo, cai no selo tipográfico */
+.logo-fallback { display: none; font-family: var(--fonte-titulo); line-height: 1; align-items: baseline; gap: .12em; }
+.logo-fallback .a { font-weight: 200; letter-spacing: -.02em; }
+.logo-fallback .b { font-weight: 600; letter-spacing: -.04em; background: var(--destaque-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sem-logo img { display: none; }
+.sem-logo .logo-fallback { display: inline-flex; }
+.topo .logo-fallback { font-size: 44px; }
+
+/* tipografia */
+.rotulo { font-size: 24px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--destaque); margin-bottom: 36px; display: flex; align-items: center; gap: 16px; }
+.rotulo::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--destaque); box-shadow: 0 0 18px var(--destaque); }
+h1, h2 { font-family: var(--fonte-titulo); font-weight: 200; letter-spacing: -.045em; line-height: 1.02; }
+h1 { font-size: 112px; }
+h2 { font-size: 86px; }
+h1 b, h2 b { font-weight: 600; }
+.grad { background: var(--destaque-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+p.lead { font-size: 34px; line-height: 1.38; color: var(--texto-suave); margin-top: 32px; max-width: 860px; }
+p.lead b { color: var(--texto); font-weight: 500; }
+.miolo { flex: 1; display: flex; flex-direction: column; justify-content: safe center; padding-bottom: 40px; }
+
+/* vidro */
+.vidro { background: var(--vidro); border: 1px solid var(--linha); border-radius: var(--raio); position: relative; overflow: hidden; }
+.vidro::before { content: ""; position: absolute; inset: 0; background: linear-gradient(158deg, rgba(255,255,255,.08), rgba(255,255,255,.015) 30%, transparent 50%); pointer-events: none; }
+
+/* lista numerada */
+.lista { list-style: none; display: flex; flex-direction: column; gap: 18px; margin-top: 48px; }
+.lista li { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; padding: 26px 32px; }
+.lista .n { font-family: var(--fonte-titulo); font-weight: 600; font-size: 30px; color: var(--destaque); padding-top: 4px; }
+.lista strong { display: block; font-family: var(--fonte-titulo); font-weight: 400; font-size: 38px; letter-spacing: -.02em; margin-bottom: 8px; }
+.lista span { font-size: 28px; line-height: 1.4; color: var(--texto-suave); }
+
+/* ferramentas */
+.chips { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 44px; }
+.chip { font-size: 26px; padding: 14px 26px; border-radius: 999px; border: 1px solid var(--linha); background: color-mix(in srgb, var(--luz-1) 22%, transparent); color: var(--texto); }
+.chip.forte { background: var(--cartao-claro); border-color: transparent; color: #04120e; font-weight: 500; }
+
+/* ── slide 1: capa ── */
+.capa .miolo { justify-content: flex-start; padding-top: 40px; }
+.capa .logo-grande { margin-bottom: 56px; height: 260px; display: flex; align-items: center; }
+.capa .logo-grande img { height: 260px; width: auto; filter: drop-shadow(0 20px 60px rgba(0,0,0,.6)); }
+.capa .logo-grande .logo-fallback { font-size: 210px; }
+.capa h1 { font-size: 108px; }
+.capa .data { margin-top: 48px; display: inline-flex; align-items: center; gap: 22px; padding: 22px 32px; font-size: 28px; align-self: flex-start; }
+.capa .data b { font-family: var(--fonte-titulo); font-weight: 600; font-size: 34px; letter-spacing: -.01em; }
+.capa .data .ponto { width: 12px; height: 12px; border-radius: 50%; background: var(--destaque); box-shadow: 0 0 20px var(--destaque); }
+.capa::before { width: 1500px; height: 1300px; left: -300px; bottom: -760px; background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 80%, transparent), color-mix(in srgb, var(--luz-1) 40%, transparent) 55%, transparent); }
+
+/* ── slide 2: número ── */
+.numero { font-family: var(--fonte-titulo); font-weight: 200; font-size: 330px; letter-spacing: -.07em; line-height: .9; }
+.numero b { font-weight: 600; }
+.legenda-num { font-size: 40px; line-height: 1.3; font-family: var(--fonte-titulo); font-weight: 300; letter-spacing: -.02em; margin-top: 24px; max-width: 800px; }
+
+/* ── slide 3: fluxo ── */
+.fluxo { margin-top: 72px; display: flex; flex-direction: column; gap: 0; }
+.etapa { display: grid; grid-template-columns: 92px 1fr auto; align-items: center; gap: 28px; padding: 30px 36px; }
+.etapa + .etapa { margin-top: -1px; }
+.etapa .bola { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; font-family: var(--fonte-titulo); font-weight: 600; font-size: 30px; border: 1px solid var(--linha); }
+.etapa.ia .bola { background: var(--cartao-claro); color: #04120e; border-color: transparent; }
+.etapa strong { font-family: var(--fonte-titulo); font-weight: 400; font-size: 42px; letter-spacing: -.02em; }
+.etapa em { font-style: normal; font-size: 22px; letter-spacing: .14em; text-transform: uppercase; color: var(--texto-suave); }
+.etapa.ia em { color: var(--destaque); }
+.fluxo .vidro { border-radius: 0; }
+.fluxo .vidro:first-child { border-radius: var(--raio) var(--raio) 0 0; }
+.fluxo .vidro:last-child { border-radius: 0 0 var(--raio) var(--raio); }
+
+/* ── passo grande ── */
+.passo-num { font-family: var(--fonte-titulo); font-weight: 200; font-size: 200px; line-height: .8; letter-spacing: -.06em; color: transparent; -webkit-text-stroke: 1.5px color-mix(in srgb, var(--destaque) 70%, transparent); position: absolute; right: 80px; top: 170px; z-index: 0; }
+
+/* prompt card */
+.prompt { margin-top: 44px; padding: 36px 40px; }
+.prompt .tag { font-size: 20px; letter-spacing: .16em; text-transform: uppercase; color: var(--destaque); margin-bottom: 16px; }
+.prompt p { font-family: "Inter", monospace; font-size: 29px; line-height: 1.45; color: var(--texto); }
+.prompt p i { font-style: normal; color: var(--destaque); }
+
+/* grade de monetização */
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 56px; }
+.grade .vidro { padding: 36px 34px 38px; min-height: 330px; display: flex; flex-direction: column; }
+.grade .vidro.heroi { background: var(--cartao-claro); color: #04120e; border-color: transparent; }
+.grade .vidro.heroi span { color: color-mix(in srgb, #04120e 72%, transparent); }
+.grade .vidro.heroi .k { color: #04120e; }
+.grade .k { font-size: 20px; letter-spacing: .16em; text-transform: uppercase; color: var(--destaque); margin-bottom: auto; }
+.grade strong { font-family: var(--fonte-titulo); font-weight: 400; font-size: 40px; letter-spacing: -.025em; line-height: 1.08; margin: 40px 0 14px; display: block; }
+.grade span { font-size: 25px; line-height: 1.4; color: var(--texto-suave); }
+
+/* cuidados */
+.nao li .n { color: #f2a08a; }
+.nota { margin-top: 36px; font-size: 26px; color: var(--texto-suave); line-height: 1.4; }
+.nota b { color: var(--texto); font-weight: 500; }
+
+/* CTA */
+.cta .miolo { justify-content: center; }
+.cta .comenta { margin-top: 72px; padding: 44px 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.cta .comenta p { font-size: 34px; line-height: 1.35; }
+.cta .comenta .palavra { font-family: var(--fonte-titulo); font-weight: 600; font-size: 72px; letter-spacing: -.04em; padding: 10px 34px; border-radius: 20px; background: var(--cartao-claro); color: #04120e; }
+.cta .salva { margin-top: 28px; font-size: 28px; color: var(--texto-suave); }
+.cta::before { width: 1600px; height: 1300px; left: -260px; bottom: -700px; background: radial-gradient(closest-side, color-mix(in srgb, var(--luz-3) 85%, transparent), color-mix(in srgb, var(--luz-1) 40%, transparent) 55%, transparent); }
+</style>
+</head>
+<body>
+
+<!-- 01 · CAPA -->
+<section class="slide capa" data-n="1">
+  <div class="grao"></div>
+  <div class="topo"><span></span><span class="contador"><b>01</b> / 10</span></div>
+  <div class="miolo">
+    <div class="logo-grande js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></div>
+    <h1>Clips de GTA 6 viram <b class="grad">dinheiro.</b><br>A IA faz a parte chata.</h1>
+    <p class="lead">O passo a passo completo: do gameplay cru ao clip monetizado, <b>sem editar nada na mão.</b></p>
+    <div class="data vidro"><span class="ponto"></span><b>19.11.2026</b> o jogo chega ao PS5 e Xbox Series</div>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 02 · POR QUE AGORA -->
+<section class="slide" data-n="2">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>02</b> / 10</span></div>
+  <div class="miolo">
+    <div class="rotulo">Por que agora</div>
+    <div class="numero">+<b class="grad">90</b>mi</div>
+    <div class="legenda-num">de views em 24 horas. Só o primeiro trailer, só no YouTube.</div>
+    <p class="lead">No dia 19, milhões de pessoas vão procurar a mesma coisa ao mesmo tempo: <b>segredos do mapa, easter eggs, momentos absurdos.</b> A demanda já existe. Falta quem entregue o conteúdo, rápido e todo dia.</p>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 03 · O MÉTODO -->
+<section class="slide" data-n="3">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>03</b> / 10</span></div>
+  <div class="miolo">
+    <div class="rotulo">O método</div>
+    <h2>Você joga.<br><b class="grad">A IA edita.</b></h2>
+    <div class="fluxo">
+      <div class="etapa vidro"><span class="bola">1</span><strong>Gravar o gameplay</strong><em>Você</em></div>
+      <div class="etapa vidro ia"><span class="bola">2</span><strong>Achar os melhores cortes</strong><em>IA</em></div>
+      <div class="etapa vidro ia"><span class="bola">3</span><strong>Legendar e narrar</strong><em>IA</em></div>
+      <div class="etapa vidro ia"><span class="bola">4</span><strong>Postar em escala</strong><em>IA + agenda</em></div>
+      <div class="etapa vidro"><span class="bola">5</span><strong>Monetizar</strong><em>4 fontes</em></div>
+    </div>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 04 · PASSO 1 -->
+<section class="slide" data-n="4">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>04</b> / 10</span></div>
+  <span class="passo-num">01</span>
+  <div class="miolo">
+    <div class="rotulo">Passo 1 · Gravar</div>
+    <h2>Grave sessões<br><b class="grad">longas.</b> Sem parar.</h2>
+    <p class="lead">Não tente caçar o momento certo. Grave tudo. <b>Quem encontra o momento é a IA.</b></p>
+    <ul class="lista">
+      <li class="vidro"><span class="n">a</span><div><strong>Como gravar</strong><span>Captura nativa do PS5 ou Xbox Series, ou placa de captura + OBS no computador.</span></div></li>
+      <li class="vidro"><span class="n">b</span><div><strong>Qualidade mínima</strong><span>1080p a 60 fps. Clip borrado não segura ninguém.</span></div></li>
+      <li class="vidro"><span class="n">c</span><div><strong>O que jogar</strong><span>Perseguições, caos no mapa, missões, física maluca e reações suas.</span></div></li>
+    </ul>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 05 · PASSO 2 -->
+<section class="slide" data-n="5">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>05</b> / 10</span></div>
+  <span class="passo-num">02</span>
+  <div class="miolo">
+    <div class="rotulo">Passo 2 · Cortar com IA</div>
+    <h2>1 hora de jogo,<br><b class="grad">dezenas de clips.</b></h2>
+    <p class="lead">Você sobe o vídeo longo. A IA encontra os picos de ação, <b>corta, reenquadra em 9:16</b> e dá uma nota de potencial viral para cada trecho.</p>
+    <div class="chips">
+      <span class="chip forte">Eklipse</span><span class="chip forte">OpusClip</span><span class="chip">Vizard</span><span class="chip">CapCut</span>
+    </div>
+    <ul class="lista">
+      <li class="vidro"><span class="n">→</span><div><strong>Fique só com os melhores</strong><span>Poste os cortes com nota alta. O resto vira material para compilados semanais.</span></div></li>
+    </ul>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 06 · PASSO 3 -->
+<section class="slide" data-n="6">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>06</b> / 10</span></div>
+  <span class="passo-num">03</span>
+  <div class="miolo">
+    <div class="rotulo">Passo 3 · Legendar e narrar</div>
+    <h2>O gancho vale<br><b class="grad">mais que o clip.</b></h2>
+    <p class="lead">Legenda automática no CapCut. Voz com ElevenLabs. E os ganchos dos primeiros 3 segundos, <b>escritos por IA.</b></p>
+    <div class="prompt vidro">
+      <div class="tag">Prompt para Claude ou ChatGPT</div>
+      <p>"Escreva 10 ganchos de até 8 palavras para um clip de GTA 6 em que <i>[descreva a cena]</i>. Tom de curiosidade, sem exagero, em português do Brasil."</p>
+    </div>
+    <div class="chips">
+      <span class="chip">Segredos do mapa</span><span class="chip">Easter eggs</span><span class="chip">Vice City real × jogo</span><span class="chip">Top 5 da semana</span>
+    </div>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 07 · PASSO 4 -->
+<section class="slide" data-n="7">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>07</b> / 10</span></div>
+  <span class="passo-num">04</span>
+  <div class="miolo">
+    <div class="rotulo">Passo 4 · Postar em escala</div>
+    <h2>1 clip.<br><b class="grad">3 plataformas.</b></h2>
+    <p class="lead">O mesmo corte vai para TikTok, Reels e Shorts. <b>Volume e constância</b> vencem o clip perfeito.</p>
+    <ul class="lista">
+      <li class="vidro"><span class="n">a</span><div><strong>2 a 3 posts por dia</strong><span>Nas primeiras semanas do lançamento, a busca está no pico.</span></div></li>
+      <li class="vidro"><span class="n">b</span><div><strong>Agende tudo de uma vez</strong><span>Metricool ou o agendador nativo de cada rede. 1 hora por semana.</span></div></li>
+      <li class="vidro"><span class="n">c</span><div><strong>Leia os números</strong><span>Retenção nos 3 primeiros segundos diz qual formato repetir.</span></div></li>
+    </ul>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 08 · PASSO 5 -->
+<section class="slide" data-n="8">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>08</b> / 10</span></div>
+  <span class="passo-num">05</span>
+  <div class="miolo">
+    <div class="rotulo">Passo 5 · Monetizar</div>
+    <h2>Quatro jeitos<br>de <b class="grad">receber.</b></h2>
+    <div class="grade">
+      <div class="vidro heroi"><span class="k">Mais rápido</span><strong>Campanhas de clipping</strong><span>Marcas e criadores pagam por cada mil views do seu corte.</span></div>
+      <div class="vidro"><span class="k">YouTube</span><strong>Shorts monetizados</strong><span>Programa de Parcerias: 1 mil inscritos e 10 mi de views em 90 dias.</span></div>
+      <div class="vidro"><span class="k">TikTok</span><strong>Creator Rewards</strong><span>10 mil seguidores e vídeos com mais de 1 minuto.</span></div>
+      <div class="vidro"><span class="k">Extra</span><strong>Afiliados e serviço</strong><span>Link de controle e headset. Ou venda cortes para streamers.</span></div>
+    </div>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 09 · CUIDADOS -->
+<section class="slide" data-n="9">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>09</b> / 10</span></div>
+  <div class="miolo">
+    <div class="rotulo">Antes de começar</div>
+    <h2>O que <b class="grad">derruba</b><br>o seu canal.</h2>
+    <ul class="lista nao">
+      <li class="vidro"><span class="n">×</span><div><strong>Repostar clip dos outros</strong><span>Grave o seu próprio gameplay. Reupload é desmonetizado e gera denúncia.</span></div></li>
+      <li class="vidro"><span class="n">×</span><div><strong>Vídeo cru, sem você</strong><span>Narração, legenda e gancho tornam o conteúdo seu. É isso que as redes pagam.</span></div></li>
+      <li class="vidro"><span class="n">×</span><div><strong>Spoiler sem aviso</strong><span>Final da história na capa queima a audiência. Avise antes.</span></div></li>
+    </ul>
+    <p class="nota"><b>Leia a política de vídeos da Rockstar</b> antes de monetizar. As regras são dela.</p>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span class="seta">arrasta <i></i></span></div>
+</section>
+
+<!-- 10 · CTA -->
+<section class="slide cta" data-n="10">
+  <div class="grao"></div>
+  <div class="topo"><span class="marca-gta js-logo"><img src="ativos/gta6-logo.png" alt="GTA VI"><span class="logo-fallback"><span class="a">GTA</span><span class="b">VI</span></span></span><span class="contador"><b>10</b> / 10</span></div>
+  <div class="miolo">
+    <div class="rotulo">Dia 19</div>
+    <h1>O jogo sai.<br>Seu canal pode <b class="grad">já estar pronto.</b></h1>
+    <div class="comenta vidro">
+      <p>Comenta a palavra e eu te mando a lista completa das ferramentas.</p>
+      <span class="palavra">GTA</span>
+    </div>
+    <p class="salva">Salva este post para usar no lançamento.</p>
+  </div>
+  <div class="rodape"><span class="handle js-handle"></span><span></span></div>
+</section>
+
+<script>
+  /* Troque aqui o @ do perfil */
+  const HANDLE = "@seuperfil";
+  document.querySelectorAll(".js-handle").forEach(el => el.textContent = HANDLE);
+  document.querySelectorAll(".js-logo img").forEach(img => {
+    const falha = () => img.parentElement.classList.add("sem-logo");
+    if (img.complete && img.naturalWidth === 0) falha();
+    img.addEventListener("error", falha);
+  });
+  if (new URLSearchParams(location.search).has("render")) document.body.classList.add("render");
+</script>
+</body>
+</html>
