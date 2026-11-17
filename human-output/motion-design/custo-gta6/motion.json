@@ -535,7 +535,17 @@
     "aprovadoEm": "2026-11-17",
     "revisaoAprovada": 5
   },
-  "versoes": [],
+  "versoes": [
+    {
+      "v": 1,
+      "data": "2026-11-17",
+      "formatos": [
+        "16x9"
+      ],
+      "fps": 60,
+      "nota": "primeira animação"
+    }
+  ],
   "criadoEm": "2026-11-17",
   "cartaz": "Quanto custou GTA VI?"
 }

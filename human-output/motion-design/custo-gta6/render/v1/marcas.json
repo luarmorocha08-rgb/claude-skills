@@ -1,0 +1,847 @@
+{
+ "titulo": "Quanto custou GTA VI",
+ "fps": 60,
+ "bpm": 120,
+ "total": 31.2,
+ "inicio": 0,
+ "cenas": [
+  {
+   "id": "abertura",
+   "titulo": "O gancho",
+   "inicio": 0,
+   "fim": 4
+  },
+  {
+   "id": "gta5",
+   "titulo": "O antes · GTA V",
+   "inicio": 4,
+   "fim": 9.5
+  },
+  {
+   "id": "recorde",
+   "titulo": "O recorde",
+   "inicio": 9,
+   "fim": 12
+  },
+  {
+   "id": "gta6",
+   "titulo": "O agora · GTA VI",
+   "inicio": 11.5,
+   "fim": 18
+  },
+  {
+   "id": "comparacao",
+   "titulo": "A comparação",
+   "inicio": 18,
+   "fim": 24
+  },
+  {
+   "id": "ressalva",
+   "titulo": "A verdade",
+   "inicio": 23.6,
+   "fim": 26.6
+  },
+  {
+   "id": "fecho",
+   "titulo": "A pergunta final",
+   "inicio": 26.2,
+   "fim": 31.2
+  }
+ ],
+ "cortes": [
+  4,
+  18
+ ],
+ "transicoes": [
+  {
+   "de": "abertura",
+   "para": "gta5",
+   "tipo": "avancar-desfocar",
+   "inicio": 3.76,
+   "fim": 4.3,
+   "corte": 4
+  },
+  {
+   "de": "gta5",
+   "para": "recorde",
+   "tipo": "empurrar",
+   "inicio": 9,
+   "fim": 9.5,
+   "corte": null
+  },
+  {
+   "de": "recorde",
+   "para": "gta6",
+   "tipo": "empurrar",
+   "inicio": 11.5,
+   "fim": 12,
+   "corte": null
+  },
+  {
+   "de": "gta6",
+   "para": "comparacao",
+   "tipo": "avancar-desfocar",
+   "inicio": 17.76,
+   "fim": 18.3,
+   "corte": 18
+  },
+  {
+   "de": "comparacao",
+   "para": "ressalva",
+   "tipo": "esmaecer",
+   "inicio": 23.6,
+   "fim": 24,
+   "corte": null
+  },
+  {
+   "de": "ressalva",
+   "para": "fecho",
+   "tipo": "esmaecer",
+   "inicio": 26.2,
+   "fim": 26.6,
+   "corte": null
+  }
+ ],
+ "batidas": [
+  {
+   "cena": "abertura",
+   "tipo": "luz",
+   "t": 0,
+   "texto": "A linha do horizonte nasce como um ponto no centro e corre para as pontas em 600 ms."
+  },
+  {
+   "cena": "abertura",
+   "tipo": "luz",
+   "t": 0.4,
+   "texto": "O céu queima de baixo para cima (preto → roxo → rosa → laranja) e o sol sobe meia altura do mar."
+  },
+  {
+   "cena": "abertura",
+   "tipo": "objeto",
+   "t": 0.75,
+   "texto": "As palmeiras sobem das bordas com paralaxe; a cidade aparece em silhueta no horizonte."
+  },
+  {
+   "cena": "abertura",
+   "tipo": "tipo",
+   "t": 1,
+   "texto": "\"QUANTO CUSTOU\" sai do desfoque palavra a palavra, 45 ms entre elas."
+  },
+  {
+   "cena": "abertura",
+   "tipo": "tipo",
+   "t": 1.5,
+   "texto": "Na batida, \"GTA VI?\" chega da profundidade letra a letra e acende no degradê do pôr do sol."
+  },
+  {
+   "cena": "abertura",
+   "tipo": "luz",
+   "t": 2.8,
+   "texto": "Um brilho atravessa \"GTA VI?\" uma vez; o sol respira."
+  },
+  {
+   "cena": "abertura",
+   "tipo": "transicao",
+   "t": 3.75,
+   "texto": "A câmera mergulha para o horizonte: o título sobe e sai desfocando, o chão vira o palco da próxima."
+  },
+  {
+   "cena": "gta5",
+   "tipo": "tipo",
+   "t": 4,
+   "texto": "\"2013\" vazado e gigante assenta no céu, de 110 % para 100 %, devagar."
+  },
+  {
+   "cena": "gta5",
+   "tipo": "objeto",
+   "t": 4.5,
+   "texto": "A torre rompe a linha do horizonte e sobe maço por maço em 1,5 s, girando; pousa com uma mola curta."
+  },
+  {
+   "cena": "gta5",
+   "tipo": "tipo",
+   "t": 5,
+   "texto": "\"GTA V · 2013\" aparece no topo e o valor conta de US$ 0 a US$ 265 mi, travando na batida 2,0 s."
+  },
+  {
+   "cena": "gta5",
+   "tipo": "tipo",
+   "t": 6.5,
+   "texto": "A nota \"desenvolvimento + marketing\" sobe do desfoque."
+  },
+  {
+   "cena": "gta5",
+   "tipo": "vida",
+   "t": 7,
+   "texto": "Hold: a torre continua girando 2°/s, o sol respira, o mar cintila."
+  },
+  {
+   "cena": "recorde",
+   "tipo": "tipo",
+   "t": 9,
+   "texto": "\"Na época, foi\" sobe do desfoque."
+  },
+  {
+   "cena": "gta5",
+   "tipo": "transicao",
+   "t": 9.2,
+   "texto": "Tilt rápido para cima: a câmera sobe para o céu (corte no eixo vertical)."
+  },
+  {
+   "cena": "recorde",
+   "tipo": "tipo",
+   "t": 9.25,
+   "texto": "A frase entra palavra a palavra, 45 ms entre elas."
+  },
+  {
+   "cena": "recorde",
+   "tipo": "luz",
+   "t": 9.75,
+   "texto": "Um véu macio varre \"mais caro\" e acende o degradê do pôr do sol."
+  },
+  {
+   "cena": "recorde",
+   "tipo": "vida",
+   "t": 10.5,
+   "texto": "Hold: palmeiras balançam um fio, a luz respira."
+  },
+  {
+   "cena": "recorde",
+   "tipo": "luz",
+   "t": 11,
+   "texto": "Um brilho atravessa \"mais caro\" uma vez."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "objeto",
+   "t": 11.5,
+   "texto": "A torre rompe o mar com força e sobe acelerando, girando devagar."
+  },
+  {
+   "cena": "recorde",
+   "tipo": "transicao",
+   "t": 11.75,
+   "texto": "Tilt rápido para baixo, de volta ao mar: a próxima torre já está nascendo."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "camera",
+   "t": 12.5,
+   "texto": "Quando ela fura o topo do quadro, a câmera treme um fio (só o objeto tem peso)."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "tipo",
+   "t": 12.75,
+   "texto": "\"GTA VI\" sobe do desfoque à esquerda."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "tipo",
+   "t": 13.25,
+   "texto": "O valor rola como odômetro (US$ 0 → 2 bi), cada coluna travando da esquerda para a direita; trava na batida 3,0 s."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "tipo",
+   "t": 14.75,
+   "texto": "\"até\" e a nota \"estimativas de US$ 1 a 2 bilhões\" sobem do desfoque."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "luz",
+   "t": 15,
+   "texto": "Um brilho atravessa o valor uma vez."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "vida",
+   "t": 16,
+   "texto": "Hold: a torre segue subindo devagar e girando; o mar cintila."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "luz",
+   "t": 17,
+   "texto": "O topo da torre reflete o sol: uma faixa de luz desce pela fachada."
+  },
+  {
+   "cena": "gta6",
+   "tipo": "transicao",
+   "t": 17.7,
+   "texto": "A câmera recua para o céu aberto: a próxima mostra as duas torres juntas."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "camera",
+   "t": 18,
+   "texto": "A câmera recua revelando a torre de GTA V pequena no horizonte."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "objeto",
+   "t": 18.5,
+   "texto": "Ao lado, a torre de GTA VI sobe até 7,5× a altura da outra em 1,2 s (proporção real: 265 mi × 2 bi)."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "tipo",
+   "t": 19.75,
+   "texto": "\"ATÉ\" sobe do desfoque."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "tipo",
+   "t": 20,
+   "texto": "Na batida, \"7X\" chega da profundidade, gigante, e trava com um empurrão de peso da câmera de 1,2 %."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "tipo",
+   "t": 20.5,
+   "texto": "\"MAIS CARO\" sobe do desfoque."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "vida",
+   "t": 21,
+   "texto": "Hold: as torres giram juntas, o degradê do 7X deriva."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "luz",
+   "t": 22,
+   "texto": "Um brilho atravessa o \"7X\" uma vez."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "vida",
+   "t": 23,
+   "texto": "O sol começa a afundar; a luz das torres esfria."
+  },
+  {
+   "cena": "ressalva",
+   "tipo": "tipo",
+   "t": 23.6,
+   "texto": "\"Detalhe\" sobe do desfoque."
+  },
+  {
+   "cena": "comparacao",
+   "tipo": "transicao",
+   "t": 23.75,
+   "texto": "O sol se põe de vez: a luz cai para a noite da próxima."
+  },
+  {
+   "cena": "ressalva",
+   "tipo": "tipo",
+   "t": 23.85,
+   "texto": "A frase acende letra a letra como neon ligando (um tremor macio de brilho, sem piscar)."
+  },
+  {
+   "cena": "ressalva",
+   "tipo": "tipo",
+   "t": 24.6,
+   "texto": "A nota \"os números são estimativas de mercado\" sobe do desfoque."
+  },
+  {
+   "cena": "ressalva",
+   "tipo": "luz",
+   "t": 25.1,
+   "texto": "Um brilho atravessa \"NUNCA\" uma vez."
+  },
+  {
+   "cena": "ressalva",
+   "tipo": "vida",
+   "t": 25.6,
+   "texto": "Hold: o degradê de \"NUNCA\" deriva; as palmeiras balançam um fio."
+  },
+  {
+   "cena": "fecho",
+   "tipo": "tipo",
+   "t": 26.2,
+   "texto": "\"VAI VALER\" sai do desfoque palavra a palavra."
+  },
+  {
+   "cena": "ressalva",
+   "tipo": "transicao",
+   "t": 26.35,
+   "texto": "O céu volta a queimar: amanhece de novo o pôr do sol do começo."
+  },
+  {
+   "cena": "fecho",
+   "tipo": "tipo",
+   "t": 26.7,
+   "texto": "Na batida, \"CADA CENTAVO?\" chega da profundidade letra a letra no degradê."
+  },
+  {
+   "cena": "fecho",
+   "tipo": "luz",
+   "t": 27.7,
+   "texto": "Um brilho atravessa a pergunta uma vez."
+  },
+  {
+   "cena": "fecho",
+   "tipo": "vida",
+   "t": 28.7,
+   "texto": "Hold: o degradê da pergunta deriva; o sol começa a descer."
+  },
+  {
+   "cena": "fecho",
+   "tipo": "luz",
+   "t": 29.7,
+   "texto": "O sol afunda no mar; o céu escurece de cima para baixo."
+  },
+  {
+   "cena": "fecho",
+   "tipo": "transicao",
+   "t": 30.6,
+   "texto": "O texto sobe e desfoca, a linha do horizonte encolhe até um ponto e apaga: último quadro preto."
+  }
+ ],
+ "linhas": {
+  "16x9": {
+   "fps": 60,
+   "bpm": 120,
+   "total": 31.2,
+   "formato": "16x9",
+   "montagem": "principal",
+   "titulo": "Quanto custou GTA VI",
+   "cenas": [
+    {
+     "id": "abertura",
+     "titulo": "O gancho",
+     "indice": 0,
+     "inicio": 0,
+     "dur": 4,
+     "fim": 4,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "Preto: só a linha do horizonte acendendo no centro",
+       "t": 0.2
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "O céu queimou, o sol nasce no mar, palmeiras subindo; a pergunta chega",
+       "t": 1.2
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "\"QUANTO CUSTOU / GTA VI?\" gigante sobre o pôr do sol",
+       "t": 2.6
+      }
+     ],
+     "tipo": "palavra-gigante",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "entrada": null,
+     "hash": "eded7307057918f6"
+    },
+    {
+     "id": "gta5",
+     "titulo": "O antes · GTA V",
+     "indice": 1,
+     "inicio": 4,
+     "dur": 5.5,
+     "fim": 9.5,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "\"2013\" gigante e vazado no céu; a torre ainda rente ao mar",
+       "t": 0.3
+      },
+      {
+       "id": "meio",
+       "rotulo": "Subindo",
+       "legenda": "A torre na metade, girando; o rótulo GTA V e o número contando",
+       "t": 1.6
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A torre de GTA V com US$ 265 mi no topo",
+       "t": 3.4
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "entrada": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "hash": "a9b7a335af026ea9"
+    },
+    {
+     "id": "recorde",
+     "titulo": "O recorde",
+     "indice": 2,
+     "inicio": 9,
+     "dur": 3,
+     "fim": 12,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "Só céu e palmeiras; a frase ainda desfocada",
+       "t": 0.15
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "\"Na época, foi / O JOGO MAIS CARO JÁ FEITO\"",
+       "t": 1.6
+      }
+     ],
+     "tipo": "frase",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "entrada": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "hash": "bba899c15cedb086"
+    },
+    {
+     "id": "gta6",
+     "titulo": "O agora · GTA VI",
+     "indice": 3,
+     "inicio": 11.5,
+     "dur": 6.5,
+     "fim": 18,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A torre de GTA VI nascendo do mar, à direita",
+       "t": 0.4
+      },
+      {
+       "id": "meio",
+       "rotulo": "Subindo",
+       "legenda": "A torre já furou o topo do quadro; \"GTA VI\" à esquerda",
+       "t": 1.8
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "\"ATÉ US$ 2 BI\" gigante; a torre sem fim à direita; a nota das estimativas",
+       "t": 4.2
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "entrada": {
+      "tipo": "empurrar",
+      "modo": "sobreposta",
+      "dur": 0.5
+     },
+     "hash": "fa69d651cdbfb84f"
+    },
+    {
+     "id": "comparacao",
+     "titulo": "A comparação",
+     "indice": 4,
+     "inicio": 18,
+     "dur": 6,
+     "fim": 24,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A torre de GTA V sozinha, pequena no horizonte",
+       "t": 0.3
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "A torre de GTA VI subiu ao lado, 7,5 vezes maior; \"ATÉ\" chega",
+       "t": 2
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "\"ATÉ 7X MAIS CARO\" à esquerda; as duas torres na proporção real",
+       "t": 3.6
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "esmaecer",
+      "modo": "sobreposta",
+      "dur": 0.4
+     },
+     "entrada": {
+      "tipo": "avancar-desfocar",
+      "modo": "encadeada",
+      "dur": 0.54
+     },
+     "hash": "96394b3e11740ac7"
+    },
+    {
+     "id": "ressalva",
+     "titulo": "A verdade",
+     "indice": 5,
+     "inicio": 23.6,
+     "dur": 3,
+     "fim": 26.6,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "Noite em Vice City; só \"DETALHE\"",
+       "t": 0.2
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "A frase acesa, a nota ainda por vir",
+       "t": 0.8
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "\"A ROCKSTAR NUNCA REVELOU O VALOR\" + estimativas de mercado",
+       "t": 1.6
+      }
+     ],
+     "tipo": "frase",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "esmaecer",
+      "modo": "sobreposta",
+      "dur": 0.4
+     },
+     "entrada": {
+      "tipo": "esmaecer",
+      "modo": "sobreposta",
+      "dur": 0.4
+     },
+     "hash": "52e4203bba0efb50"
+    },
+    {
+     "id": "fecho",
+     "titulo": "A pergunta final",
+     "indice": 6,
+     "inicio": 26.2,
+     "dur": 5,
+     "fim": 31.2,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "O pôr do sol de volta; \"VAI VALER\" chegando",
+       "t": 0.2
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "\"CADA CENTAVO?\" chegando da profundidade, ainda desfocado",
+       "t": 0.75
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "\"VAI VALER / CADA CENTAVO?\" sobre o pôr do sol (depois o sol afunda e tudo apaga num ponto)",
+       "t": 2
+      }
+     ],
+     "tipo": "palavra-gigante",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "esmaecer",
+      "modo": "sobreposta",
+      "dur": 0.4
+     },
+     "hash": "a42993ab165e7129"
+    }
+   ],
+   "transicoes": [
+    {
+     "de": "abertura",
+     "para": "gta5",
+     "tipo": "avancar-desfocar",
+     "modo": "encadeada",
+     "opcoes": {
+      "avanco": 0.07,
+      "desfoque": 0.8,
+      "__dur": 0,
+      "__antes": 0.24,
+      "__depois": 0.3
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 4,
+     "antes": 0.24,
+     "depois": 0.3,
+     "inicio": 3.76,
+     "fim": 4.3,
+     "dur": 0.54
+    },
+    {
+     "de": "gta5",
+     "para": "recorde",
+     "tipo": "empurrar",
+     "modo": "sobreposta",
+     "opcoes": {
+      "direcao": "cima",
+      "__dur": 0.5,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 9,
+     "fim": 9.5,
+     "corte": null,
+     "dur": 0.5
+    },
+    {
+     "de": "recorde",
+     "para": "gta6",
+     "tipo": "empurrar",
+     "modo": "sobreposta",
+     "opcoes": {
+      "direcao": "baixo",
+      "__dur": 0.5,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 11.5,
+     "fim": 12,
+     "corte": null,
+     "dur": 0.5
+    },
+    {
+     "de": "gta6",
+     "para": "comparacao",
+     "tipo": "avancar-desfocar",
+     "modo": "encadeada",
+     "opcoes": {
+      "avanco": 0.07,
+      "desfoque": 0.8,
+      "__dur": 0,
+      "__antes": 0.24,
+      "__depois": 0.3
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 18,
+     "antes": 0.24,
+     "depois": 0.3,
+     "inicio": 17.76,
+     "fim": 18.3,
+     "dur": 0.54
+    },
+    {
+     "de": "comparacao",
+     "para": "ressalva",
+     "tipo": "esmaecer",
+     "modo": "sobreposta",
+     "opcoes": {
+      "cor": "var(--fundo)",
+      "__dur": 0.4,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 23.6,
+     "fim": 24,
+     "corte": null,
+     "dur": 0.3999999999999986
+    },
+    {
+     "de": "ressalva",
+     "para": "fecho",
+     "tipo": "esmaecer",
+     "modo": "sobreposta",
+     "opcoes": {
+      "cor": "var(--fundo)",
+      "__dur": 0.4,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 26.2,
+     "fim": 26.6,
+     "corte": null,
+     "dur": 0.40000000000000213
+    }
+   ],
+   "cortes": [
+    4,
+    18
+   ],
+   "estilo": {
+    "curvaEntrada": [
+     0.16,
+     1,
+     0.3,
+     1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+   }
+  }
+ }
+}

@@ -1,0 +1,258 @@
+{
+ "versao": 1,
+ "data": "2026-11-17",
+ "fps": 60,
+ "qualidade": "final",
+ "montagem": "principal",
+ "formatos": {
+  "16x9": {
+   "arquivo": "custo-gta6-16x9-60fps.mp4",
+   "quadros": 1872,
+   "de": 0,
+   "ate": 31.2,
+   "segundosRender": 188,
+   "renderizados": 1872,
+   "capa": "capa-16x9.png",
+   "fluidez": {
+    "resumo": "20 ponto(s) para olhar: 8 pico, 6 espinho, 6 degrau",
+    "alertas": [
+     {
+      "tipo": "pico",
+      "i": 750,
+      "t": 12.517,
+      "d": 3.52,
+      "viz": 1.03,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 1.017,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "espinho",
+      "i": 750,
+      "t": 12.517,
+      "d": 3.52,
+      "viz": 1.09,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 1.017,
+      "frase": "um quadro destoa dos vizinhos: algo apareceu ou sumiu inteiro num quadro, ou piscou"
+     },
+     {
+      "tipo": "pico",
+      "i": 813,
+      "t": 13.567,
+      "d": 5.39,
+      "viz": 1.23,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.067,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "espinho",
+      "i": 813,
+      "t": 13.567,
+      "d": 5.39,
+      "viz": 1.12,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.067,
+      "frase": "um quadro destoa dos vizinhos: algo apareceu ou sumiu inteiro num quadro, ou piscou"
+     },
+     {
+      "tipo": "pico",
+      "i": 815,
+      "t": 13.6,
+      "d": 4.9,
+      "viz": 1.06,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.1,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "espinho",
+      "i": 819,
+      "t": 13.667,
+      "d": 4.47,
+      "viz": 0.82,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.167,
+      "frase": "um quadro destoa dos vizinhos: algo apareceu ou sumiu inteiro num quadro, ou piscou"
+     },
+     {
+      "tipo": "degrau",
+      "i": 820,
+      "t": 13.683,
+      "d": 0.82,
+      "viz": 4.47,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.183,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "pico",
+      "i": 822,
+      "t": 13.717,
+      "d": 4.31,
+      "viz": 0.93,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.217,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "pico",
+      "i": 823,
+      "t": 13.733,
+      "d": 3.72,
+      "viz": 0.93,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.233,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "degrau",
+      "i": 854,
+      "t": 14.25,
+      "d": 0.54,
+      "viz": 3.83,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.75,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "pico",
+      "i": 855,
+      "t": 14.267,
+      "d": 3.75,
+      "viz": 1.16,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.767,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "espinho",
+      "i": 855,
+      "t": 14.267,
+      "d": 3.75,
+      "viz": 0.54,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.767,
+      "frase": "um quadro destoa dos vizinhos: algo apareceu ou sumiu inteiro num quadro, ou piscou"
+     },
+     {
+      "tipo": "degrau",
+      "i": 856,
+      "t": 14.283,
+      "d": 0.27,
+      "viz": 3.75,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.783,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "pico",
+      "i": 868,
+      "t": 14.483,
+      "d": 6.65,
+      "viz": 0.82,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.983,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "espinho",
+      "i": 868,
+      "t": 14.483,
+      "d": 6.65,
+      "viz": 1.09,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 2.983,
+      "frase": "um quadro destoa dos vizinhos: algo apareceu ou sumiu inteiro num quadro, ou piscou"
+     },
+     {
+      "tipo": "degrau",
+      "i": 869,
+      "t": 14.5,
+      "d": 0.86,
+      "viz": 6.65,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 3,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "pico",
+      "i": 874,
+      "t": 14.583,
+      "d": 8.06,
+      "viz": 0.62,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 3.083,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "espinho",
+      "i": 874,
+      "t": 14.583,
+      "d": 8.06,
+      "viz": 0.47,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 3.083,
+      "frase": "um quadro destoa dos vizinhos: algo apareceu ou sumiu inteiro num quadro, ou piscou"
+     },
+     {
+      "tipo": "degrau",
+      "i": 875,
+      "t": 14.6,
+      "d": 0.33,
+      "viz": 8.06,
+      "cena": "gta6",
+      "tituloCena": "O agora · GTA VI",
+      "tLocal": 3.1,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     },
+     {
+      "tipo": "degrau",
+      "i": 1845,
+      "t": 30.767,
+      "d": 0.36,
+      "viz": 3.1,
+      "cena": "fecho",
+      "tituloCena": "A pergunta final",
+      "tLocal": 4.567,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     }
+    ]
+   },
+   "diretor": {
+    "metricas": {
+     "energia": {
+      "media": 1.8,
+      "mediana": 0.68,
+      "quaseParados": 3
+     },
+     "paradoAosOlhos": 0,
+     "cortesPorSegundo": 0.19,
+     "duracao": 31.2
+    },
+    "notas": []
+   }
+  }
+ },
+ "erros": [],
+ "segundos": 278
+}

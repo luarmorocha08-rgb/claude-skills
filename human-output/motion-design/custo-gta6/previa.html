@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23151619'/%3E%3Cpath d='M11 9l12 7-12 7z' fill='%23f4f4f2'/%3E%3C/svg%3E">
+<title>Quanto custou GTA VI · v1</title>
+<style>
+:root {
+  --pg-fundo: #f4f4f2;
+  --pg-papel: #ffffff;
+  --pg-tinta: #151619;
+  --pg-suave: #676a72;
+  --pg-fraca: #9a9ca3;
+  --pg-fio: #e2e2df;
+  --pg-fio-forte: #cfcfcb;
+  --pg-raio: 14px;
+  --pg-sombra: 0 1px 2px rgba(20, 21, 25, 0.06), 0 8px 28px rgba(20, 21, 25, 0.08);
+  --pg-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --pg-mono: ui-monospace, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+  --pg-tipo: #4b55a8;
+  --pg-camera: #1f7a73;
+  --pg-transicao: #9a5b13;
+  --pg-luz: #8a7414;
+  --pg-objeto: #a3404f;
+  --pg-vida: #3f7a3a;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--pg-fundo);
+  color: var(--pg-tinta);
+  font: 15px/1.55 var(--pg-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, p, figure, ol, ul { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+h1, h2, h3, h4 { font-weight: 400; }
+a { color: inherit; }
+img, video { display: block; max-width: 100%; }
+main { max-width: 1320px; margin: 0 auto; padding: 0 16px 72px; }
+@media (min-width: 720px) { main { padding: 0 40px 96px; } }
+.sobre { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pg-suave); }
+.num { font-variant-numeric: tabular-nums; }
+.pilula {
+  display: inline-flex; align-items: center; gap: 6px;
+  height: 26px; padding: 0 11px; border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--pg-fio-forte);
+  font-size: 12px; color: var(--pg-tinta); white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.etiqueta {
+  display: inline-flex; align-items: center; height: 22px; padding: 0 9px; border-radius: 999px;
+  background: var(--pg-papel); box-shadow: inset 0 0 0 1px var(--pg-fio);
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pg-suave); white-space: nowrap;
+}
+.botao {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 40px; padding: 0 18px; border-radius: 999px; border: 0;
+  background: var(--pg-tinta); color: #fff; text-decoration: none; cursor: pointer;
+  font: 500 13px/1 var(--pg-sans); letter-spacing: 0.01em; white-space: nowrap;
+  transition: transform 140ms cubic-bezier(0.23, 1, 0.32, 1), background-color 140ms;
+}
+.botao:hover { background: #2a2c31; }
+.botao:active { transform: scale(0.97); }
+.botao small { font-weight: 400; opacity: 0.66; }
+.botao.contorno { background: transparent; color: var(--pg-tinta); box-shadow: inset 0 0 0 1px var(--pg-fio-forte); }
+.botao.contorno:hover { background: rgba(20, 21, 25, 0.05); }
+.quadro {
+  position: relative; overflow: hidden; border-radius: 10px; background: #0d0d0e;
+  box-shadow: var(--pg-sombra);
+}
+.quadro img, .quadro video { width: 100%; height: 100%; object-fit: cover; }
+
+.entrega { padding-top: 48px; }
+.cab { display: grid; gap: 14px; padding-bottom: 32px; }
+.cab h1 { font-size: clamp(40px, 6.4vw, 96px); line-height: 0.95; letter-spacing: -0.045em; text-wrap: balance; max-width: 16ch; }
+.cab .meta { color: var(--pg-suave); font-size: 15px; }
+.cab .nota { font-size: 15px; max-width: 60ch; }
+.acoes { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.videos { display: grid; gap: 24px; align-items: start; }
+.videos.dois { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 980px) { .videos.dois { grid-template-columns: minmax(0, 2.6fr) minmax(0, 1fr); } }
+.videos.um.f9x16 { max-width: 460px; }
+.video .tela { overflow: hidden; border-radius: 14px; background: #0c0c0d; box-shadow: var(--pg-sombra); }
+.video .tela.f16x9 { aspect-ratio: 16 / 9; }
+.video .tela.f9x16 { aspect-ratio: 9 / 16; max-height: 80vh; margin: 0 auto; }
+.video video { width: 100%; height: 100%; object-fit: contain; background: #0c0c0d; }
+.video figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-top: 12px; font-size: 13.5px; color: var(--pg-suave); }
+.video figcaption b { font-weight: 500; color: var(--pg-tinta); margin-right: 6px; }
+.baixar { display: flex; flex-wrap: wrap; gap: 6px; }
+.baixar .botao { height: 34px; padding: 0 14px; font-size: 12.5px; }
+.sec { padding-top: 52px; }
+.sec > h2 { margin-bottom: 18px; }
+.cenas ol { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px 14px; }
+.cenas button { display: block; width: 100%; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.cenas button:hover .mini { box-shadow: 0 0 0 2px var(--pg-tinta), var(--pg-sombra); }
+.cenas p { display: flex; justify-content: space-between; gap: 8px; margin-top: 8px; font-size: 13px; color: var(--pg-suave); }
+.cenas p b { font-weight: 400; color: var(--pg-tinta); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.so-cena { display: inline-block; margin-top: 4px; font-size: 12px; color: var(--pg-suave); }
+.mini { overflow: hidden; border-radius: 8px; background: #0c0c0d; box-shadow: var(--pg-sombra); transition: box-shadow 160ms; }
+.mini.f16x9 { aspect-ratio: 16 / 9; }
+.mini.f9x16 { aspect-ratio: 9 / 16; }
+.mini img { width: 100%; height: 100%; object-fit: cover; }
+.sb-cena { display: grid; gap: 14px; padding: 22px 0; border-top: 1px solid var(--pg-fio); }
+@media (min-width: 980px) { .sb-cena { grid-template-columns: 260px minmax(0, 1fr); column-gap: 32px; } .sb-cena .sb-batidas { grid-column: 2; } }
+.sb-cena header { display: grid; gap: 4px; align-content: start; }
+.sb-cena header .num { font-size: 13px; color: var(--pg-suave); }
+.sb-cena h3 { font-size: 22px; letter-spacing: -0.02em; }
+.sb-cena header p { color: var(--pg-suave); font-size: 14px; text-wrap: pretty; }
+.sb-quadros { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.sb-quadros.f9x16 { grid-template-columns: repeat(auto-fill, minmax(130px, 160px)); }
+.sb-quadros figcaption { margin-top: 6px; font-size: 12.5px; color: var(--pg-suave); text-wrap: pretty; }
+.sb-batidas { display: grid; gap: 6px; font-size: 13.5px; }
+.sb-batidas .num { display: inline-block; min-width: 52px; color: var(--pg-suave); }
+.sb-batidas em { font-style: normal; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--pg-fraca); margin-right: 4px; }
+.versoes li { display: grid; grid-template-columns: 48px 96px 1fr auto; gap: 12px; padding: 10px 0; border-top: 1px solid var(--pg-fio); font-size: 14px; align-items: baseline; }
+.versoes .links a { color: var(--pg-tinta); }
+@media (max-width: 640px) { .versoes li { grid-template-columns: 40px 1fr; } .versoes li > span:nth-child(3), .versoes .links { grid-column: 1 / -1; } }
+.mudar { margin-top: 56px; padding: 28px; border-radius: 18px; background: var(--pg-papel); box-shadow: inset 0 0 0 1px var(--pg-fio); }
+.mudar h2 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.03em; }
+.mudar p { margin-top: 6px; color: var(--pg-suave); }
+.mudar ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 18px; }
+.mudar li { padding: 12px 14px; border-radius: 12px; background: var(--pg-fundo); font-size: 14px; }
+</style>
+</head>
+<body>
+<main class="entrega">
+  <header class="cab">
+    <p class="sobre">Motion · v1 · 17/11/2026</p>
+    <h1>Quanto custou GTA VI</h1>
+    <p class="meta num">31,2 s · 60 qps · 16:9 · 7 cenas</p>
+    
+    <div class="acoes">
+      <a class="botao" href="render/v1/custo-gta6-v1.zip" download>Baixar tudo <small>.zip · 24,2 MB</small></a>
+      <a class="botao contorno" href="storyboard/index.html" target="_blank" rel="noopener">Storyboard</a>
+    </div>
+  </header>
+  <section class="videos um f16x9"><figure class="video f16x9">
+    <div class="tela f16x9"><video id="video-16x9" src="render/v1/custo-gta6-16x9-60fps.mp4" poster="render/v1/capa-16x9.png" controls muted loop playsinline preload="metadata"></video></div>
+    <figcaption>
+      <div><b>16:9</b> <span class="num">1920×1080 · 60 qps · 23,2 MB</span></div>
+      <div class="baixar">
+        <a class="botao" href="render/v1/custo-gta6-16x9-60fps.mp4" download>MP4 <small>16:9</small></a>
+        <a class="botao contorno" href="render/v1/capa-16x9.png" download>Capa <small>PNG</small></a>
+        
+      </div>
+    </figcaption>
+  </figure></section>
+  <section class="sec cenas"><h2 class="sobre">Cenas</h2><ol><li><button type="button" data-t="0" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/01-abertura-fim.png" alt="" loading="eager"></div><p><b>01 · O gancho</b><span class="num">00:00,0</span></p></button></li><li><button type="button" data-t="4" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/02-gta5-fim.png" alt="" loading="eager"></div><p><b>02 · O antes · GTA V</b><span class="num">00:04,0</span></p></button></li><li><button type="button" data-t="9" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/03-recorde-fim.png" alt="" loading="eager"></div><p><b>03 · O recorde</b><span class="num">00:09,0</span></p></button></li><li><button type="button" data-t="11.5" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/04-gta6-fim.png" alt="" loading="eager"></div><p><b>04 · O agora · GTA VI</b><span class="num">00:11,5</span></p></button></li><li><button type="button" data-t="18" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/05-comparacao-fim.png" alt="" loading="eager"></div><p><b>05 · A comparação</b><span class="num">00:18,0</span></p></button></li><li><button type="button" data-t="23.6" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/06-ressalva-fim.png" alt="" loading="eager"></div><p><b>06 · A verdade</b><span class="num">00:23,6</span></p></button></li><li><button type="button" data-t="26.2" title="Ver a partir daqui"><div class="mini f16x9"><img src="storyboard/quadros/16x9/07-fecho-fim.png" alt="" loading="eager"></div><p><b>07 · A pergunta final</b><span class="num">00:26,2</span></p></button></li></ol></section>
+  <section class="sec"><h2 class="sobre">Storyboard</h2><article class="sb-cena"><header><span class="num">01</span><h3>O gancho</h3><p>O horizonte acende do preto, o céu de Vice City queima de baixo para cima e a pergunta sobe gigante sobre o pôr do sol.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/01-abertura-inicio.png" alt="" loading="eager"></div><figcaption>Início · Preto: só a linha do horizonte acendendo no centro</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/01-abertura-meio.png" alt="" loading="eager"></div><figcaption>Passo 2 · O céu queimou, o sol nasce no mar, palmeiras subindo; a pergunta chega</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/01-abertura-fim.png" alt="" loading="eager"></div><figcaption>Fim · &quot;QUANTO CUSTOU / GTA VI?&quot; gigante sobre o pôr do sol</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Luz</em> A linha do horizonte nasce como um ponto no centro e corre para as pontas em 600 ms.</li><li><span class="num">0,4 s</span> <em>Luz</em> O céu queima de baixo para cima (preto → roxo → rosa → laranja) e o sol sobe meia altura do mar.</li><li><span class="num">0,75 s</span> <em>Objeto</em> As palmeiras sobem das bordas com paralaxe; a cidade aparece em silhueta no horizonte.</li><li><span class="num">1,0 s</span> <em>Tipografia</em> &quot;QUANTO CUSTOU&quot; sai do desfoque palavra a palavra, 45 ms entre elas.</li><li><span class="num">1,5 s</span> <em>Tipografia</em> Na batida, &quot;GTA VI?&quot; chega da profundidade letra a letra e acende no degradê do pôr do sol.</li><li><span class="num">2,8 s</span> <em>Luz</em> Um brilho atravessa &quot;GTA VI?&quot; uma vez; o sol respira.</li><li><span class="num">3,75 s</span> <em>Transição</em> A câmera mergulha para o horizonte: o título sobe e sai desfocando, o chão vira o palco da próxima.</li></ol></article><article class="sb-cena"><header><span class="num">02</span><h3>O antes · GTA V</h3><p>Em 2013, a torre de dinheiro de GTA V sobe da linha do mar, maço por maço, girando, e o valor viaja no topo dela.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/02-gta5-inicio.png" alt="" loading="eager"></div><figcaption>Início · &quot;2013&quot; gigante e vazado no céu; a torre ainda rente ao mar</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/02-gta5-meio.png" alt="" loading="eager"></div><figcaption>Subindo · A torre na metade, girando; o rótulo GTA V e o número contando</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/02-gta5-fim.png" alt="" loading="eager"></div><figcaption>Fim · A torre de GTA V com US$ 265 mi no topo</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Tipografia</em> &quot;2013&quot; vazado e gigante assenta no céu, de 110 % para 100 %, devagar.</li><li><span class="num">0,5 s</span> <em>Objeto</em> A torre rompe a linha do horizonte e sobe maço por maço em 1,5 s, girando; pousa com uma mola curta.</li><li><span class="num">1,0 s</span> <em>Tipografia</em> &quot;GTA V · 2013&quot; aparece no topo e o valor conta de US$ 0 a US$ 265 mi, travando na batida 2,0 s.</li><li><span class="num">2,5 s</span> <em>Tipografia</em> A nota &quot;desenvolvimento + marketing&quot; sobe do desfoque.</li><li><span class="num">3,0 s</span> <em>Vida no hold</em> Hold: a torre continua girando 2°/s, o sol respira, o mar cintila.</li><li><span class="num">5,2 s</span> <em>Transição</em> Tilt rápido para cima: a câmera sobe para o céu (corte no eixo vertical).</li></ol></article><article class="sb-cena"><header><span class="num">03</span><h3>O recorde</h3><p>A câmera chega ao céu e a frase do recorde chega palavra a palavra, com &quot;mais caro&quot; acendendo no degradê.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/03-recorde-inicio.png" alt="" loading="eager"></div><figcaption>Início · Só céu e palmeiras; a frase ainda desfocada</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/03-recorde-fim.png" alt="" loading="eager"></div><figcaption>Fim · &quot;Na época, foi / O JOGO MAIS CARO JÁ FEITO&quot;</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Tipografia</em> &quot;Na época, foi&quot; sobe do desfoque.</li><li><span class="num">0,25 s</span> <em>Tipografia</em> A frase entra palavra a palavra, 45 ms entre elas.</li><li><span class="num">0,75 s</span> <em>Luz</em> Um véu macio varre &quot;mais caro&quot; e acende o degradê do pôr do sol.</li><li><span class="num">1,5 s</span> <em>Vida no hold</em> Hold: palmeiras balançam um fio, a luz respira.</li><li><span class="num">2,0 s</span> <em>Luz</em> Um brilho atravessa &quot;mais caro&quot; uma vez.</li><li><span class="num">2,75 s</span> <em>Transição</em> Tilt rápido para baixo, de volta ao mar: a próxima torre já está nascendo.</li></ol></article><article class="sb-cena"><header><span class="num">04</span><h3>O agora · GTA VI</h3><p>A torre de GTA VI rompe a linha do mar e não para de subir: fura o topo do quadro, e o número rola como odômetro até travar.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/04-gta6-inicio.png" alt="" loading="eager"></div><figcaption>Início · A torre de GTA VI nascendo do mar, à direita</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/04-gta6-meio.png" alt="" loading="eager"></div><figcaption>Subindo · A torre já furou o topo do quadro; &quot;GTA VI&quot; à esquerda</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/04-gta6-fim.png" alt="" loading="eager"></div><figcaption>Fim · &quot;ATÉ US$ 2 BI&quot; gigante; a torre sem fim à direita; a nota das estimativas</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Objeto</em> A torre rompe o mar com força e sobe acelerando, girando devagar.</li><li><span class="num">1,0 s</span> <em>Câmera</em> Quando ela fura o topo do quadro, a câmera treme um fio (só o objeto tem peso).</li><li><span class="num">1,25 s</span> <em>Tipografia</em> &quot;GTA VI&quot; sobe do desfoque à esquerda.</li><li><span class="num">1,75 s</span> <em>Tipografia</em> O valor rola como odômetro (US$ 0 → 2 bi), cada coluna travando da esquerda para a direita; trava na batida 3,0 s.</li><li><span class="num">3,25 s</span> <em>Tipografia</em> &quot;até&quot; e a nota &quot;estimativas de US$ 1 a 2 bilhões&quot; sobem do desfoque.</li><li><span class="num">3,5 s</span> <em>Luz</em> Um brilho atravessa o valor uma vez.</li><li><span class="num">4,5 s</span> <em>Vida no hold</em> Hold: a torre segue subindo devagar e girando; o mar cintila.</li><li><span class="num">5,5 s</span> <em>Luz</em> O topo da torre reflete o sol: uma faixa de luz desce pela fachada.</li><li><span class="num">6,2 s</span> <em>Transição</em> A câmera recua para o céu aberto: a próxima mostra as duas torres juntas.</li></ol></article><article class="sb-cena"><header><span class="num">05</span><h3>A comparação</h3><p>A câmera recua e as duas torres aparecem lado a lado na proporção real (265 milhões contra até 2 bilhões): a pequena some ao pé da gigante, e o &quot;7x&quot; crava.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/05-comparacao-inicio.png" alt="" loading="eager"></div><figcaption>Início · A torre de GTA V sozinha, pequena no horizonte</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/05-comparacao-meio.png" alt="" loading="eager"></div><figcaption>Passo 2 · A torre de GTA VI subiu ao lado, 7,5 vezes maior; &quot;ATÉ&quot; chega</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/05-comparacao-fim.png" alt="" loading="eager"></div><figcaption>Fim · &quot;ATÉ 7X MAIS CARO&quot; à esquerda; as duas torres na proporção real</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Câmera</em> A câmera recua revelando a torre de GTA V pequena no horizonte.</li><li><span class="num">0,5 s</span> <em>Objeto</em> Ao lado, a torre de GTA VI sobe até 7,5× a altura da outra em 1,2 s (proporção real: 265 mi × 2 bi).</li><li><span class="num">1,75 s</span> <em>Tipografia</em> &quot;ATÉ&quot; sobe do desfoque.</li><li><span class="num">2,0 s</span> <em>Tipografia</em> Na batida, &quot;7X&quot; chega da profundidade, gigante, e trava com um empurrão de peso da câmera de 1,2 %.</li><li><span class="num">2,5 s</span> <em>Tipografia</em> &quot;MAIS CARO&quot; sobe do desfoque.</li><li><span class="num">3,0 s</span> <em>Vida no hold</em> Hold: as torres giram juntas, o degradê do 7X deriva.</li><li><span class="num">4,0 s</span> <em>Luz</em> Um brilho atravessa o &quot;7X&quot; uma vez.</li><li><span class="num">5,0 s</span> <em>Vida no hold</em> O sol começa a afundar; a luz das torres esfria.</li><li><span class="num">5,75 s</span> <em>Transição</em> O sol se põe de vez: a luz cai para a noite da próxima.</li></ol></article><article class="sb-cena"><header><span class="num">06</span><h3>A verdade</h3><p>O pôr do sol vira noite e a frase da ressalva acende como um letreiro que liga.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/06-ressalva-inicio.png" alt="" loading="eager"></div><figcaption>Início · Noite em Vice City; só &quot;DETALHE&quot;</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/06-ressalva-meio.png" alt="" loading="eager"></div><figcaption>Passo 2 · A frase acesa, a nota ainda por vir</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/06-ressalva-fim.png" alt="" loading="eager"></div><figcaption>Fim · &quot;A ROCKSTAR NUNCA REVELOU O VALOR&quot; + estimativas de mercado</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Tipografia</em> &quot;Detalhe&quot; sobe do desfoque.</li><li><span class="num">0,25 s</span> <em>Tipografia</em> A frase acende letra a letra como neon ligando (um tremor macio de brilho, sem piscar).</li><li><span class="num">1,0 s</span> <em>Tipografia</em> A nota &quot;os números são estimativas de mercado&quot; sobe do desfoque.</li><li><span class="num">1,5 s</span> <em>Luz</em> Um brilho atravessa &quot;NUNCA&quot; uma vez.</li><li><span class="num">2,0 s</span> <em>Vida no hold</em> Hold: o degradê de &quot;NUNCA&quot; deriva; as palmeiras balançam um fio.</li><li><span class="num">2,75 s</span> <em>Transição</em> O céu volta a queimar: amanhece de novo o pôr do sol do começo.</li></ol></article><article class="sb-cena"><header><span class="num">07</span><h3>A pergunta final</h3><p>De volta ao pôr do sol da abertura (a rima): a pergunta sobe gigante, o sol afunda no mar, o horizonte encolhe até um ponto e apaga.</p></header><div class="sb-quadros f16x9"><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/07-fecho-inicio.png" alt="" loading="eager"></div><figcaption>Início · O pôr do sol de volta; &quot;VAI VALER&quot; chegando</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/07-fecho-meio.png" alt="" loading="eager"></div><figcaption>Passo 2 · &quot;CADA CENTAVO?&quot; chegando da profundidade, ainda desfocado</figcaption></figure><figure><div class="mini f16x9"><img src="storyboard/quadros/16x9/07-fecho-fim.png" alt="" loading="eager"></div><figcaption>Fim · &quot;VAI VALER / CADA CENTAVO?&quot; sobre o pôr do sol (depois o sol afunda e tudo apaga num ponto)</figcaption></figure></div><ol class="sb-batidas"><li><span class="num">0,0 s</span> <em>Tipografia</em> &quot;VAI VALER&quot; sai do desfoque palavra a palavra.</li><li><span class="num">0,5 s</span> <em>Tipografia</em> Na batida, &quot;CADA CENTAVO?&quot; chega da profundidade letra a letra no degradê.</li><li><span class="num">1,5 s</span> <em>Luz</em> Um brilho atravessa a pergunta uma vez.</li><li><span class="num">2,5 s</span> <em>Vida no hold</em> Hold: o degradê da pergunta deriva; o sol começa a descer.</li><li><span class="num">3,5 s</span> <em>Luz</em> O sol afunda no mar; o céu escurece de cima para baixo.</li><li><span class="num">4,4 s</span> <em>Transição</em> O texto sobe e desfoca, a linha do horizonte encolhe até um ponto e apaga: último quadro preto.</li></ol></article></section>
+  
+  <section class="mudar">
+    <h2>Quer mudar alguma coisa?</h2>
+    <p>É só dizer na conversa, do jeito que falaria com quem animou. Por exemplo:</p>
+    <ul>
+      <li>“Na cena 2, a entrada do texto mais lenta”</li>
+      <li>“O mergulho mais longo, com mais embalo”</li>
+      <li>“Segura mais um segundinho no fim, com a marca”</li>
+      <li>“Troca a frase da cena 1 por …”</li>
+    </ul>
+  </section>
+</main>
+<script>
+const principal = document.getElementById('video-16x9');
+document.querySelectorAll('.cenas button[data-t]').forEach((b) => b.addEventListener('click', () => {
+  if (!principal) return;
+  principal.currentTime = parseFloat(b.dataset.t) + 0.001;
+  principal.play().catch(() => {});
+  principal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}));
+const vistos = new IntersectionObserver((es) => es.forEach((e) => (e.isIntersecting ? e.target.play().catch(() => {}) : e.target.pause())), { threshold: 0.35 });
+document.querySelectorAll('.videos video').forEach((v) => vistos.observe(v));
+</script>
+</body>
+</html>
