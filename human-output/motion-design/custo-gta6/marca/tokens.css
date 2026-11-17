@@ -1,0 +1,43 @@
+/* Vice City ao pôr do sol — leitura da estética de GTA VI (sem o logotipo oficial):
+   noite roxa, céu que queima de rosa para laranja na linha do mar, palmeiras em silhueta,
+   um único destaque: o degradê do pôr do sol. Título condensado e pesado (Anton), em caixa alta. */
+@font-face { font-family: "Anton"; src: url("fontes/Anton.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fontes/Inter-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+
+:root {
+  --fundo: #12071f;
+  --texto: #fff3ea;
+  --texto-suave: #d6b4d9;
+  --destaque: #ff6a4d;
+  --destaque-grad: linear-gradient(100deg, #ff2f92 0%, #ff5a5f 38%, #ff8a3d 70%, #ffc663 100%);
+  --luz-1: #b8246f;
+  --luz-2: #3a1466;
+  --luz-3: #ff7a3d;
+  --brilho: #ffffff;
+  --linha: color-mix(in srgb, var(--texto) 16%, transparent);
+
+  /* céu de Vice City */
+  --ceu-alto: #12071f;
+  --ceu-meio: #4a1462;
+  --ceu-rosa: #c92a78;
+  --ceu-laranja: #ff7b3f;
+  --ceu-ouro: #ffc46a;
+  --mar: #1a0a2e;
+  --silhueta: #0b0414;
+
+  /* a torre de dinheiro */
+  --torre-frente: #ff4f7e;
+  --torre-lado: #9b1e64;
+  --torre-topo: #ffc46a;
+
+  --fonte-titulo: "Anton", ui-sans-serif, system-ui, sans-serif;
+  --fonte-texto: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --titulo-peso: 400;
+  --titulo-tracking: 0.005em;
+  --titulo-entrelinha: 0.96;
+
+  --raio: 2cqmin;
+  --mockup-moldura: #0c0d0f;
+  --mockup-raio: 3.4cqmin;
+  --mockup-sombra: #000000;
+}

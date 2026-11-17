@@ -1,0 +1,10 @@
+.cena-gta6 .vice { --hz: 80%; }
+.cena-gta6 .palco3d { perspective-origin: 68% 90%; }
+.cena-gta6 .t6 { --w: 22cqmin; --d: 22cqmin; --h: 140cqmin; --ry: -26deg; left: 70%; bottom: 20%; }
+.cena-gta6 .t6 .torre-rotulo { display: none; }
+.cena-gta6 .texto { position: absolute; left: 9cqw; top: 44%; translate: 0 -55%; display: flex; flex-direction: column; align-items: flex-start; }
+.cena-gta6 .etiqueta { margin: 0 0 2cqmin; font-size: 2.8cqmin; }
+.cena-gta6 .apoio-n { margin: 0; font-family: var(--fonte-titulo); font-size: 8cqmin; text-transform: uppercase; color: var(--texto); line-height: 1; }
+.cena-gta6 .valor { font-size: 26cqmin; line-height: 0.92; white-space: nowrap; }
+.cena-gta6 .nota { margin: 2.4cqmin 0 0; font-family: var(--fonte-texto); font-weight: 700; font-size: 2.2cqmin; letter-spacing: 0.2em; text-transform: uppercase; color: var(--texto); padding-left: 0.2em; }
+.cena-gta6 .palmas-esq { left: -26cqw; }

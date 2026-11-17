@@ -1,0 +1,109 @@
+/* _comum.css — Vice City ao pôr do sol + a torre 3D de dinheiro. O horizonte fica em --hz (da altura). */
+.vice { position: absolute; inset: 0; --hz: 68%; }
+.vice .ceu {
+  background: linear-gradient(180deg,
+    var(--ceu-alto) 0%,
+    color-mix(in srgb, var(--ceu-alto) 55%, var(--ceu-meio)) 22%,
+    var(--ceu-meio) 42%,
+    color-mix(in srgb, var(--ceu-meio) 40%, var(--ceu-rosa)) 54%,
+    var(--ceu-rosa) 61%,
+    var(--ceu-laranja) 66%,
+    var(--ceu-ouro) 68.5%,
+    var(--ceu-laranja) 70%,
+    var(--mar) 78%,
+    var(--silhueta) 100%);
+}
+/* o sol: luz sem borda, metade abaixo da linha do mar */
+.vice .sol-brilho {
+  position: absolute; left: 50%; top: var(--hz); width: 120cqw; height: 80cqh;
+  translate: -50% -50%;
+  background: radial-gradient(closest-side,
+    color-mix(in srgb, var(--ceu-ouro) 55%, transparent) 0%,
+    color-mix(in srgb, var(--ceu-laranja) 32%, transparent) 22%,
+    color-mix(in srgb, var(--ceu-rosa) 16%, transparent) 46%,
+    color-mix(in srgb, var(--ceu-rosa) 5%, transparent) 70%,
+    transparent 100%);
+}
+.vice .sol {
+  position: absolute; left: 50%; top: var(--hz); width: 30cqmin; height: 30cqmin;
+  translate: -50% -50%; border-radius: 50%;
+  background: radial-gradient(closest-side, #fff6d6 0%, var(--ceu-ouro) 45%, color-mix(in srgb, var(--ceu-laranja) 80%, transparent) 78%, color-mix(in srgb, var(--ceu-laranja) 0%, transparent) 100%);
+  filter: blur(0.25cqmin);
+  -webkit-mask: linear-gradient(180deg, #000 50%, transparent 50.5%);
+  mask: linear-gradient(180deg, #000 50%, transparent 50.5%);
+}
+.vice .skyline { position: absolute; left: -6%; right: -6%; bottom: calc(100% - var(--hz)); }
+.vice .skyline svg { display: block; width: 100%; height: 100%; }
+.vice .skyline-longe { height: 9cqh; opacity: 0.55; }
+.vice .skyline-longe path { fill: color-mix(in srgb, var(--ceu-meio) 70%, var(--silhueta)); }
+.vice .skyline-perto { height: 6.5cqh; left: 8%; right: 52%; }
+.vice .skyline-perto path { fill: var(--silhueta); }
+.vice .mar { position: absolute; left: -6%; right: -6%; top: var(--hz); bottom: -6%; overflow: hidden;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--ceu-laranja) 45%, var(--mar)) 0%, var(--mar) 30%, var(--silhueta) 100%); }
+.vice .reflexo { position: absolute; left: 50%; top: 0; width: 22cqmin; height: 70%; translate: -50% 0;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--ceu-ouro) 75%, transparent), color-mix(in srgb, var(--ceu-laranja) 30%, transparent) 40%, transparent);
+  filter: blur(1.6cqmin); }
+.vice .ondas { position: absolute; inset: 0;
+  background: repeating-linear-gradient(180deg, transparent 0 0.9cqh, color-mix(in srgb, var(--silhueta) 55%, transparent) 0.9cqh 1.25cqh);
+  -webkit-mask: linear-gradient(180deg, transparent, #000 12%); mask: linear-gradient(180deg, transparent, #000 12%); }
+/* o fio condutor: a linha de luz do horizonte */
+.vice .horizonte-luz { position: absolute; left: 0; right: 0; top: var(--hz); height: 0.32cqmin; translate: 0 -50%;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--ceu-ouro) 70%, transparent) 25%, #fff6dc 50%, color-mix(in srgb, var(--ceu-ouro) 70%, transparent) 75%, transparent);
+  filter: blur(0.08cqmin); transform-origin: 50% 50%; }
+.vice .palmas { position: absolute; bottom: -4cqh; height: 92cqh; width: 40cqw; display: flex; align-items: flex-end; }
+.vice .palmas-esq { left: -12cqw; }
+.vice .palmas-dir { right: -12cqw; flex-direction: row-reverse; }
+.vice .palma-svg { height: 100%; width: auto; flex: none; overflow: visible; }
+.vice .palma-svg + .palma-svg { height: 72%; margin-left: -12cqw; margin-right: -12cqw; }
+.vice .palma-svg path { fill: var(--silhueta); }
+.vice .palma-svg path.nervura { fill: none; stroke: var(--silhueta); stroke-width: 7; stroke-linecap: round; }
+.vice .palma-svg path.foliolo { fill: none; stroke: var(--silhueta); stroke-width: 5; stroke-linecap: round; }
+.vice .palma-svg path.aneis { fill: none; stroke: color-mix(in srgb, var(--ceu-rosa) 25%, transparent); stroke-width: 1.4; }
+
+/* ─── a torre 3D ─── */
+.palco3d { position: absolute; inset: 0; perspective: 190cqmin; perspective-origin: 50% 40%; transform-style: preserve-3d; }
+.torre {
+  --w: 18cqmin; --d: 18cqmin; --h: 40cqmin; --ry: -32deg; --rx: 0deg;
+  position: absolute; left: 50%; bottom: calc(100% - 68%);
+  width: var(--w); height: var(--h); margin-left: calc(var(--w) / -2);
+  transform-style: preserve-3d; transform-origin: 50% 100%;
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+}
+.torre .face { position: absolute; backface-visibility: hidden; }
+.torre .f-frente, .torre .f-tras { left: 0; top: 0; width: var(--w); height: var(--h); }
+.torre .f-frente { transform: translateZ(calc(var(--d) / 2)); }
+.torre .f-tras { transform: rotateY(180deg) translateZ(calc(var(--d) / 2)); }
+.torre .f-dir, .torre .f-esq { top: 0; height: var(--h); width: var(--d); left: calc(50% - var(--d) / 2); }
+.torre .f-dir { transform: rotateY(90deg) translateZ(calc(var(--w) / 2)); }
+.torre .f-esq { transform: rotateY(-90deg) translateZ(calc(var(--w) / 2)); }
+.torre .f-topo { left: 0; width: var(--w); height: var(--d); top: calc(var(--d) / -2); transform: rotateX(90deg); }
+/* maços de notas empilhados: faixas horizontais, o papel com a cinta no meio */
+.torre .f-frente, .torre .f-tras {
+  background:
+    linear-gradient(90deg, transparent 44%, color-mix(in srgb, var(--ceu-ouro) 85%, transparent) 44% 56%, transparent 56%),
+    repeating-linear-gradient(180deg, color-mix(in srgb, #fff 22%, transparent) 0 0.18cqmin, transparent 0.18cqmin 1.1cqmin, color-mix(in srgb, var(--silhueta) 35%, transparent) 1.1cqmin 1.3cqmin),
+    linear-gradient(180deg, var(--torre-frente), color-mix(in srgb, var(--torre-frente) 60%, var(--ceu-meio)));
+}
+.torre .f-dir, .torre .f-esq {
+  background:
+    repeating-linear-gradient(180deg, color-mix(in srgb, #fff 12%, transparent) 0 0.18cqmin, transparent 0.18cqmin 1.1cqmin, color-mix(in srgb, var(--silhueta) 45%, transparent) 1.1cqmin 1.3cqmin),
+    linear-gradient(180deg, var(--torre-lado), color-mix(in srgb, var(--torre-lado) 55%, var(--silhueta)));
+}
+.torre .f-topo { background: linear-gradient(135deg, #fff3cf, var(--torre-topo) 60%, var(--ceu-laranja)); }
+/* rótulo que viaja no topo, de frente para a câmera */
+.torre .torre-rotulo {
+  position: absolute; left: 50%; bottom: calc(100% + 4cqmin); width: 80cqmin; margin-left: -40cqmin;
+  display: flex; flex-direction: column; align-items: center; gap: 0.6cqmin; text-align: center;
+  transform: translateZ(calc(var(--d) / 2)) rotateY(calc(var(--ry) * -1)); transform-style: flat;
+}
+.torre .t-nome { font-family: var(--fonte-texto); font-weight: 700; font-size: 2.6cqmin; letter-spacing: 0.32em; color: var(--texto); text-transform: uppercase; padding-left: 0.32em; }
+.torre .t-valor { font-family: var(--fonte-titulo); font-size: 9cqmin; line-height: 1; letter-spacing: 0.01em; }
+.torre .t-nota { font-family: var(--fonte-texto); font-weight: 700; font-size: 1.7cqmin; letter-spacing: 0.22em; color: var(--texto-suave); text-transform: uppercase; padding-left: 0.22em; }
+/* sombra/brilho no chão, sob a torre */
+.torre::after { content: ''; position: absolute; left: -60%; right: -60%; bottom: -3cqmin; height: 6cqmin;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--ceu-ouro) 40%, transparent), transparent);
+  transform: rotateX(90deg); }
+
+/* tipografia comum do filme */
+.etiqueta { font-family: var(--fonte-texto); font-weight: 700; letter-spacing: 0.34em; text-transform: uppercase; color: var(--texto); padding-left: 0.34em; }
+.titulo { text-transform: uppercase; }

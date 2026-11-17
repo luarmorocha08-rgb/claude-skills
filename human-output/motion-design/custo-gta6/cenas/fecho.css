@@ -1,0 +1,3 @@
+.cena-fecho .bloco { bottom: 40%; justify-content: flex-end; gap: 0.6cqmin; }
+.cena-fecho .l1 { font-size: 13cqmin; line-height: 1; margin: 0; }
+.cena-fecho .l2 { font-size: 21cqmin; line-height: 0.92; white-space: nowrap; filter: drop-shadow(0 1cqmin 4cqmin color-mix(in srgb, var(--silhueta) 60%, transparent)); }

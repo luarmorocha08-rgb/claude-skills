@@ -1,0 +1,4 @@
+.cena-gta5 .vice { --hz: 74%; }
+.cena-gta5 .t5 { --w: 16cqmin; --d: 16cqmin; --h: 36cqmin; --ry: -32deg; bottom: 26%; }
+.cena-gta5 .ano { position: absolute; left: 50%; top: 44%; translate: -50% -50%; font-size: 52cqmin; line-height: 1;
+  color: transparent; -webkit-text-stroke: 0.25cqmin color-mix(in srgb, var(--texto) 22%, transparent); letter-spacing: 0.04em; }

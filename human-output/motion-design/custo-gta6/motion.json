@@ -1,0 +1,540 @@
+{
+  "versao": 1,
+  "titulo": "Quanto custou GTA VI",
+  "slug": "custo-gta6",
+  "fps": 60,
+  "bpm": 120,
+  "formatoBase": "16x9",
+  "formatos": [
+    "16x9"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Ritmo",
+      "texto": "120 BPM: uma batida = 0,5 s. As torres sobem e os números travam na batida, para casar com a narração."
+    },
+    {
+      "titulo": "Mundo",
+      "texto": "Vice City ao pôr do sol em todas as cenas: céu roxo que queima em rosa e laranja na linha do mar, palmeiras e cidade em silhueta. A luz conversa de uma cena para a outra."
+    },
+    {
+      "titulo": "Fio condutor",
+      "texto": "A linha de luz do horizonte: acende o filme, vira o chão de onde as torres de dinheiro sobem e engole o sol no fim."
+    },
+    {
+      "titulo": "3D",
+      "texto": "Torres de maços de notas em 3D de verdade (faces, topo, perspectiva), girando devagar; a câmera inclina, sobe e recua em volta delas."
+    },
+    {
+      "titulo": "Texto",
+      "texto": "Condensado e pesado, caixa alta. Do desfoque para o foco, subindo de pertinho, letra a letra. Tipografia nunca quica; mola só nas torres."
+    },
+    {
+      "titulo": "Hold",
+      "texto": "Legível por pelo menos 1 s e vivo: o sol respira, o mar cintila, as palmeiras balançam um fio, a torre segue girando."
+    },
+    {
+      "titulo": "Saída",
+      "texto": "200 a 300 ms, acelerando; cortes no mesmo eixo, a câmera nunca para."
+    }
+  ],
+  "referencias": [],
+  "cenas": [
+    {
+      "id": "abertura",
+      "tipo": "palavra-gigante",
+      "titulo": "O gancho",
+      "dur": 4,
+      "ideia": "O horizonte acende do preto, o céu de Vice City queima de baixo para cima e a pergunta sobe gigante sobre o pôr do sol.",
+      "camera": "Nasce baixa, rente ao mar, e sobe devagar (tilt) enquanto o céu acende; push-in vivo de 3 % no hold.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Preto: só a linha do horizonte acendendo no centro",
+          "t": 0.2
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "O céu queimou, o sol nasce no mar, palmeiras subindo; a pergunta chega",
+          "t": 1.2
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"QUANTO CUSTOU / GTA VI?\" gigante sobre o pôr do sol",
+          "t": 2.6
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "luz",
+          "texto": "A linha do horizonte nasce como um ponto no centro e corre para as pontas em 600 ms."
+        },
+        {
+          "t": 0.4,
+          "tipo": "luz",
+          "texto": "O céu queima de baixo para cima (preto → roxo → rosa → laranja) e o sol sobe meia altura do mar."
+        },
+        {
+          "t": 0.75,
+          "tipo": "objeto",
+          "texto": "As palmeiras sobem das bordas com paralaxe; a cidade aparece em silhueta no horizonte."
+        },
+        {
+          "t": 1,
+          "tipo": "tipo",
+          "texto": "\"QUANTO CUSTOU\" sai do desfoque palavra a palavra, 45 ms entre elas."
+        },
+        {
+          "t": 1.5,
+          "tipo": "tipo",
+          "texto": "Na batida, \"GTA VI?\" chega da profundidade letra a letra e acende no degradê do pôr do sol."
+        },
+        {
+          "t": 2.8,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa \"GTA VI?\" uma vez; o sol respira."
+        },
+        {
+          "t": 3.75,
+          "tipo": "transicao",
+          "texto": "A câmera mergulha para o horizonte: o título sobe e sai desfocando, o chão vira o palco da próxima."
+        }
+      ],
+      "saida": {
+        "tipo": "avancar-desfocar"
+      }
+    },
+    {
+      "id": "gta5",
+      "tipo": "montagem",
+      "titulo": "O antes · GTA V",
+      "dur": 5.5,
+      "ideia": "Em 2013, a torre de dinheiro de GTA V sobe da linha do mar, maço por maço, girando, e o valor viaja no topo dela.",
+      "camera": "Órbita lenta em volta da torre (ela gira de −70° a −32°), com push-in de 4 %.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "\"2013\" gigante e vazado no céu; a torre ainda rente ao mar",
+          "t": 0.3
+        },
+        {
+          "id": "meio",
+          "rotulo": "Subindo",
+          "legenda": "A torre na metade, girando; o rótulo GTA V e o número contando",
+          "t": 1.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A torre de GTA V com US$ 265 mi no topo",
+          "t": 3.4
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "\"2013\" vazado e gigante assenta no céu, de 110 % para 100 %, devagar."
+        },
+        {
+          "t": 0.5,
+          "tipo": "objeto",
+          "texto": "A torre rompe a linha do horizonte e sobe maço por maço em 1,5 s, girando; pousa com uma mola curta."
+        },
+        {
+          "t": 1,
+          "tipo": "tipo",
+          "texto": "\"GTA V · 2013\" aparece no topo e o valor conta de US$ 0 a US$ 265 mi, travando na batida 2,0 s."
+        },
+        {
+          "t": 2.5,
+          "tipo": "tipo",
+          "texto": "A nota \"desenvolvimento + marketing\" sobe do desfoque."
+        },
+        {
+          "t": 3,
+          "tipo": "vida",
+          "texto": "Hold: a torre continua girando 2°/s, o sol respira, o mar cintila."
+        },
+        {
+          "t": 5.2,
+          "tipo": "transicao",
+          "texto": "Tilt rápido para cima: a câmera sobe para o céu (corte no eixo vertical)."
+        }
+      ],
+      "saida": {
+        "tipo": "empurrar",
+        "direcao": "cima"
+      }
+    },
+    {
+      "id": "recorde",
+      "tipo": "frase",
+      "titulo": "O recorde",
+      "dur": 3,
+      "ideia": "A câmera chega ao céu e a frase do recorde chega palavra a palavra, com \"mais caro\" acendendo no degradê.",
+      "camera": "Herda o tilt da cena anterior e assenta; push-in vivo de 3 %.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Só céu e palmeiras; a frase ainda desfocada",
+          "t": 0.15
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"Na época, foi / O JOGO MAIS CARO JÁ FEITO\"",
+          "t": 1.6
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "\"Na época, foi\" sobe do desfoque."
+        },
+        {
+          "t": 0.25,
+          "tipo": "tipo",
+          "texto": "A frase entra palavra a palavra, 45 ms entre elas."
+        },
+        {
+          "t": 0.75,
+          "tipo": "luz",
+          "texto": "Um véu macio varre \"mais caro\" e acende o degradê do pôr do sol."
+        },
+        {
+          "t": 1.5,
+          "tipo": "vida",
+          "texto": "Hold: palmeiras balançam um fio, a luz respira."
+        },
+        {
+          "t": 2,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa \"mais caro\" uma vez."
+        },
+        {
+          "t": 2.75,
+          "tipo": "transicao",
+          "texto": "Tilt rápido para baixo, de volta ao mar: a próxima torre já está nascendo."
+        }
+      ],
+      "saida": {
+        "tipo": "empurrar",
+        "direcao": "baixo"
+      }
+    },
+    {
+      "id": "gta6",
+      "tipo": "montagem",
+      "titulo": "O agora · GTA VI",
+      "dur": 6.5,
+      "ideia": "A torre de GTA VI rompe a linha do mar e não para de subir: fura o topo do quadro, e o número rola como odômetro até travar.",
+      "camera": "Contra-plongée: a câmera rente ao mar olha para cima e treme um fio quando a torre fura o quadro.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A torre de GTA VI nascendo do mar, à direita",
+          "t": 0.4
+        },
+        {
+          "id": "meio",
+          "rotulo": "Subindo",
+          "legenda": "A torre já furou o topo do quadro; \"GTA VI\" à esquerda",
+          "t": 1.8
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"ATÉ US$ 2 BI\" gigante; a torre sem fim à direita; a nota das estimativas",
+          "t": 4.2
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "objeto",
+          "texto": "A torre rompe o mar com força e sobe acelerando, girando devagar."
+        },
+        {
+          "t": 1,
+          "tipo": "camera",
+          "texto": "Quando ela fura o topo do quadro, a câmera treme um fio (só o objeto tem peso)."
+        },
+        {
+          "t": 1.25,
+          "tipo": "tipo",
+          "texto": "\"GTA VI\" sobe do desfoque à esquerda."
+        },
+        {
+          "t": 1.75,
+          "tipo": "tipo",
+          "texto": "O valor rola como odômetro (US$ 0 → 2 bi), cada coluna travando da esquerda para a direita; trava na batida 3,0 s."
+        },
+        {
+          "t": 3.25,
+          "tipo": "tipo",
+          "texto": "\"até\" e a nota \"estimativas de US$ 1 a 2 bilhões\" sobem do desfoque."
+        },
+        {
+          "t": 3.5,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa o valor uma vez."
+        },
+        {
+          "t": 4.5,
+          "tipo": "vida",
+          "texto": "Hold: a torre segue subindo devagar e girando; o mar cintila."
+        },
+        {
+          "t": 5.5,
+          "tipo": "luz",
+          "texto": "O topo da torre reflete o sol: uma faixa de luz desce pela fachada."
+        },
+        {
+          "t": 6.2,
+          "tipo": "transicao",
+          "texto": "A câmera recua para o céu aberto: a próxima mostra as duas torres juntas."
+        }
+      ],
+      "saida": {
+        "tipo": "avancar-desfocar"
+      }
+    },
+    {
+      "id": "comparacao",
+      "tipo": "montagem",
+      "titulo": "A comparação",
+      "dur": 6,
+      "ideia": "A câmera recua e as duas torres aparecem lado a lado na proporção real (265 milhões contra até 2 bilhões): a pequena some ao pé da gigante, e o \"7x\" crava.",
+      "camera": "Recuo longo (dolly out) de 1,25× até 1,0, depois push-in vivo de 2 %.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A torre de GTA V sozinha, pequena no horizonte",
+          "t": 0.3
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "A torre de GTA VI subiu ao lado, 7,5 vezes maior; \"ATÉ\" chega",
+          "t": 2
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"ATÉ 7X MAIS CARO\" à esquerda; as duas torres na proporção real",
+          "t": 3.6
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "camera",
+          "texto": "A câmera recua revelando a torre de GTA V pequena no horizonte."
+        },
+        {
+          "t": 0.5,
+          "tipo": "objeto",
+          "texto": "Ao lado, a torre de GTA VI sobe até 7,5× a altura da outra em 1,2 s (proporção real: 265 mi × 2 bi)."
+        },
+        {
+          "t": 1.75,
+          "tipo": "tipo",
+          "texto": "\"ATÉ\" sobe do desfoque."
+        },
+        {
+          "t": 2,
+          "tipo": "tipo",
+          "texto": "Na batida, \"7X\" chega da profundidade, gigante, e trava com um empurrão de peso da câmera de 1,2 %."
+        },
+        {
+          "t": 2.5,
+          "tipo": "tipo",
+          "texto": "\"MAIS CARO\" sobe do desfoque."
+        },
+        {
+          "t": 3,
+          "tipo": "vida",
+          "texto": "Hold: as torres giram juntas, o degradê do 7X deriva."
+        },
+        {
+          "t": 4,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa o \"7X\" uma vez."
+        },
+        {
+          "t": 5,
+          "tipo": "vida",
+          "texto": "O sol começa a afundar; a luz das torres esfria."
+        },
+        {
+          "t": 5.75,
+          "tipo": "transicao",
+          "texto": "O sol se põe de vez: a luz cai para a noite da próxima."
+        }
+      ],
+      "saida": {
+        "tipo": "esmaecer"
+      }
+    },
+    {
+      "id": "ressalva",
+      "tipo": "frase",
+      "titulo": "A verdade",
+      "dur": 3,
+      "ideia": "O pôr do sol vira noite e a frase da ressalva acende como um letreiro que liga.",
+      "camera": "Push-in vivo de 3 %, sem pressa.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Noite em Vice City; só \"DETALHE\"",
+          "t": 0.2
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "A frase acesa, a nota ainda por vir",
+          "t": 0.8
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"A ROCKSTAR NUNCA REVELOU O VALOR\" + estimativas de mercado",
+          "t": 1.6
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "\"Detalhe\" sobe do desfoque."
+        },
+        {
+          "t": 0.25,
+          "tipo": "tipo",
+          "texto": "A frase acende letra a letra como neon ligando (um tremor macio de brilho, sem piscar)."
+        },
+        {
+          "t": 1,
+          "tipo": "tipo",
+          "texto": "A nota \"os números são estimativas de mercado\" sobe do desfoque."
+        },
+        {
+          "t": 1.5,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa \"NUNCA\" uma vez."
+        },
+        {
+          "t": 2,
+          "tipo": "vida",
+          "texto": "Hold: o degradê de \"NUNCA\" deriva; as palmeiras balançam um fio."
+        },
+        {
+          "t": 2.75,
+          "tipo": "transicao",
+          "texto": "O céu volta a queimar: amanhece de novo o pôr do sol do começo."
+        }
+      ],
+      "saida": {
+        "tipo": "esmaecer"
+      }
+    },
+    {
+      "id": "fecho",
+      "tipo": "palavra-gigante",
+      "titulo": "A pergunta final",
+      "dur": 5,
+      "ideia": "De volta ao pôr do sol da abertura (a rima): a pergunta sobe gigante, o sol afunda no mar, o horizonte encolhe até um ponto e apaga.",
+      "camera": "Push-in contínuo de 4 %; no fim desce rente ao mar acompanhando o sol.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "O pôr do sol de volta; \"VAI VALER\" chegando",
+          "t": 0.2
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "\"CADA CENTAVO?\" chegando da profundidade, ainda desfocado",
+          "t": 0.75
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"VAI VALER / CADA CENTAVO?\" sobre o pôr do sol (depois o sol afunda e tudo apaga num ponto)",
+          "t": 2
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "\"VAI VALER\" sai do desfoque palavra a palavra."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "Na batida, \"CADA CENTAVO?\" chega da profundidade letra a letra no degradê."
+        },
+        {
+          "t": 1.5,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa a pergunta uma vez."
+        },
+        {
+          "t": 2.5,
+          "tipo": "vida",
+          "texto": "Hold: o degradê da pergunta deriva; o sol começa a descer."
+        },
+        {
+          "t": 3.5,
+          "tipo": "luz",
+          "texto": "O sol afunda no mar; o céu escurece de cima para baixo."
+        },
+        {
+          "t": 4.4,
+          "tipo": "transicao",
+          "texto": "O texto sobe e desfoca, a linha do horizonte encolhe até um ponto e apaga: último quadro preto."
+        }
+      ]
+    }
+  ],
+  "capa": {
+    "cena": "comparacao",
+    "quadro": "fim"
+  },
+  "storyboard": {
+    "revisao": 5,
+    "aprovadoEm": null
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-17",
+  "cartaz": "Quanto custou GTA VI?"
+}

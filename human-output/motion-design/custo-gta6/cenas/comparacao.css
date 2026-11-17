@@ -1,0 +1,15 @@
+.cena-comparacao .vice { --hz: 86%; }
+.cena-comparacao .palco3d { perspective-origin: 62% 60%; }
+.cena-comparacao .torre { --ry: -30deg; bottom: 14%; }
+.cena-comparacao .c5 { --w: 9cqmin; --d: 9cqmin; --h: 9cqmin; left: 56%; }
+.cena-comparacao .c5 .torre-rotulo { filter: drop-shadow(0 0 1.2cqmin var(--silhueta)) drop-shadow(0 0 0.4cqmin var(--silhueta)); }
+.cena-comparacao .c5 .t-valor { background: none; -webkit-text-fill-color: var(--texto); color: var(--texto); }
+.cena-comparacao .c6 { --w: 13cqmin; --d: 13cqmin; --h: 67.5cqmin; left: 76%; }
+.cena-comparacao .torre-rotulo { bottom: calc(100% + 2.4cqmin); }
+.cena-comparacao .t-nome { font-size: 2.2cqmin; }
+.cena-comparacao .t-valor { font-size: 6cqmin; }
+.cena-comparacao .texto { position: absolute; left: 8cqw; top: 42%; translate: 0 -50%; display: flex; flex-direction: column; align-items: flex-start; }
+.cena-comparacao .ate { font-size: 9cqmin; line-height: 1; margin: 0; }
+.cena-comparacao .vezes { font-size: 40cqmin; line-height: 0.86; margin-top: 1.5cqmin; }
+.cena-comparacao .mais { font-size: 11cqmin; line-height: 1; margin: 0; }
+.cena-comparacao .palmas-esq { left: -26cqw; }
