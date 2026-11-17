@@ -1,0 +1,279 @@
+{
+  "versao": 1,
+  "titulo": "Quanto tempo pra cruzar o mapa",
+  "slug": "quanto-tempo-pra-cruzar-o-mapa",
+  "fps": 60,
+  "bpm": 120,
+  "formatoBase": "9x16",
+  "formatos": [
+    "9x16"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Mundo",
+      "texto": "A identidade do filme do custo de GTA VI: Vice City ao pôr do sol, noite roxa que queima em rosa e laranja, Anton em caixa alta, um único destaque (o degradê do pôr do sol)."
+    },
+    {
+      "titulo": "Da referência",
+      "texto": "O princípio: o mapa inteiro de cima, a câmera recuando sem parar, uma rota de luz por vez atravessando a ilha e o contador correndo junto até travar. Layout, mapa e textos são novos."
+    },
+    {
+      "titulo": "Fio condutor",
+      "texto": "A luz: a linha do horizonte abre o filme, vira as três rotas de luz que cruzam a ilha e volta a ser o horizonte onde o sol se põe."
+    },
+    {
+      "titulo": "Ritmo",
+      "texto": "120 BPM; a pé é longa (3 s), de carro mais curta (2 s), de avião um risco rápido (0,8 s): o próprio tempo da rota conta a diferença."
+    },
+    {
+      "titulo": "Texto",
+      "texto": "Do desfoque para o foco, subindo de pertinho; nunca quica. Contadores travam com um brilho, sem pulo."
+    }
+  ],
+  "referencias": [
+    {
+      "nome": "dbfd2ed6-v26044gc0000dadbthfog65qre0b784g",
+      "arquivo": "/root/.claude/uploads/2aa7a1bb-3586-5ec1-817f-6d68a6d04bfb/dbfd2ed6-v26044gc0000dadbthfog65qre0b784g.MP4",
+      "leitura": "Mapa visto de cima com recuo contínuo de câmera, rotas desenhadas uma a uma com contador de minutos que trava; painel de tempos à esquerda."
+    }
+  ],
+  "cenas": [
+    {
+      "id": "abertura",
+      "tipo": "palavra-gigante",
+      "titulo": "O gancho",
+      "dur": 3,
+      "ideia": "O horizonte acende, o céu de Vice City queima e a pergunta desce linha a linha; \"O MAPA?\" chega pela lente no degradê.",
+      "camera": "Nasce baixa e sobe (tilt) com push-in vivo.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Preto: só a linha do horizonte acendendo",
+          "t": 0.4
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "O céu queimou, palmeiras sobem; \"QUANTO TEMPO PRA CRUZAR\"",
+          "t": 1.25
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"QUANTO TEMPO / PRA CRUZAR / O MAPA?\" sobre o pôr do sol",
+          "t": 2.6
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "luz",
+          "texto": "A linha do horizonte corre do centro para as pontas."
+        },
+        {
+          "t": 0.15,
+          "tipo": "luz",
+          "texto": "O céu queima de baixo para cima; o sol nasce no mar."
+        },
+        {
+          "t": 0.55,
+          "tipo": "objeto",
+          "texto": "Palmeiras e cidade sobem em silhueta."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "\"QUANTO TEMPO\" sai do desfoque."
+        },
+        {
+          "t": 0.75,
+          "tipo": "tipo",
+          "texto": "\"PRA CRUZAR\"."
+        },
+        {
+          "t": 0.9,
+          "tipo": "tipo",
+          "texto": "\"O MAPA?\" pela lente, no degradê."
+        },
+        {
+          "t": 2.1,
+          "tipo": "luz",
+          "texto": "Um brilho atravessa \"O MAPA?\" uma vez; o degradê deriva."
+        }
+      ],
+      "saida": {
+        "tipo": "avancar-desfocar",
+        "texto": "A câmera avança e desfoca: mergulhamos para ver a ilha de cima."
+      }
+    },
+    {
+      "id": "mapa",
+      "tipo": "palavra-gigante",
+      "titulo": "A travessia",
+      "dur": 9.5,
+      "ideia": "A câmera recua sobre a ilha à noite enquanto três linhas de luz cruzam o mapa, uma de cada vez, e cada contador corre junto e trava.",
+      "camera": "Recuo contínuo de 30 % (drone subindo), passando por 1,0 no quadro aprovado; nuvens perto da lente em paralaxe.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A ilha de perto, saindo do desfoque; a pergunta entra no alto",
+          "t": 0.7
+        },
+        {
+          "id": "pe",
+          "rotulo": "A pé",
+          "legenda": "A linha rosa sobe a ilha pelo meio; contador correndo",
+          "t": 3.2
+        },
+        {
+          "id": "carro",
+          "rotulo": "De carro",
+          "legenda": "178 travou; a linha laranja vai pela costa",
+          "t": 6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "As três rotas e 178 · 35 · 7 MIN",
+          "t": 8.8
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "camera",
+          "texto": "A ilha sai do desfoque; a câmera começa a recuar."
+        },
+        {
+          "t": 0.3,
+          "tipo": "tipo",
+          "texto": "\"QUANTO TEMPO PRA / CRUZAR O MAPA?\" no alto, à esquerda."
+        },
+        {
+          "t": 1,
+          "tipo": "tipo",
+          "texto": "As três linhas entram apagadas."
+        },
+        {
+          "t": 1.5,
+          "tipo": "luz",
+          "texto": "A pé: a linha rosa se desenha em 3 s; 0 → 178 MIN e trava com brilho."
+        },
+        {
+          "t": 4.9,
+          "tipo": "luz",
+          "texto": "De carro: a linha laranja pela costa em 2 s; 0 → 35."
+        },
+        {
+          "t": 7.2,
+          "tipo": "luz",
+          "texto": "De avião: um risco dourado reto em 0,8 s; 0 → 7."
+        },
+        {
+          "t": 2.5,
+          "tipo": "luz",
+          "texto": "Cada cidade acende quando uma linha passa por ela."
+        },
+        {
+          "t": 4.5,
+          "tipo": "luz",
+          "texto": "178 trava com um brilho; o ponto de luz chega ao norte."
+        }
+      ],
+      "saida": {
+        "tipo": "lamina-de-luz",
+        "texto": "Uma lâmina de luz dourada leva de volta ao pôr do sol."
+      }
+    },
+    {
+      "id": "fecho",
+      "tipo": "marca-em-etapas",
+      "titulo": "A conta",
+      "dur": 3.5,
+      "ideia": "De volta ao pôr do sol: \"A PÉ, É QUASE 3 HORAS\" sobe gigante, o avião lembra os 7 minutos, o sol afunda e o horizonte apaga.",
+      "camera": "Push-in lento; desce um fio quando o sol se põe.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "\"A PÉ, É QUASE\" sai do desfoque",
+          "t": 0.45
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "\"3 HORAS\" chega pela lente, ainda grande e desfocado",
+          "t": 0.62
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "\"QUASE 3 HORAS\" + \"DE AVIÃO: 7 MINUTOS\"",
+          "t": 2.2
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0,
+          "tipo": "tipo",
+          "texto": "\"A PÉ, É QUASE\"."
+        },
+        {
+          "t": 0.5,
+          "tipo": "tipo",
+          "texto": "\"3 HORAS\" pela lente, no degradê."
+        },
+        {
+          "t": 1,
+          "tipo": "tipo",
+          "texto": "\"DE AVIÃO: 7 MINUTOS\"."
+        },
+        {
+          "t": 2.2,
+          "tipo": "luz",
+          "texto": "O sol afunda no mar."
+        },
+        {
+          "t": 3.05,
+          "tipo": "transicao",
+          "texto": "Tudo sai; o horizonte encolhe até um ponto e apaga."
+        },
+        {
+          "t": 1.5,
+          "tipo": "vida",
+          "texto": "O sol respira e o mar cintila; um brilho passa por \"3 HORAS\" (2,0 s)."
+        }
+      ]
+    }
+  ],
+  "capa": {
+    "cena": "mapa",
+    "quadro": "fim"
+  },
+  "storyboard": {
+    "revisao": 2,
+    "aprovadoEm": "2026-11-17",
+    "revisaoAprovada": 2
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-17",
+  "cartaz": "Quanto tempo pra cruzar o mapa?"
+}

@@ -1,0 +1,57 @@
+/* mapa — Leonida-like vista de cima, à noite; HUD em cima e as três linhas à esquerda. */
+.cena-mapa .fundo-mar {
+  background:
+    radial-gradient(60% 45% at 88% 92%, color-mix(in srgb, var(--ceu-laranja) 42%, transparent), transparent 70%),
+    radial-gradient(70% 50% at 10% 8%, color-mix(in srgb, var(--ceu-meio) 70%, transparent), transparent 75%),
+    linear-gradient(180deg, #170830 0%, var(--mar) 45%, #24093a 100%);
+}
+.cena-mapa .ondas-cima { position: absolute; inset: -6%; opacity: 0.35;
+  background: repeating-linear-gradient(172deg, transparent 0 1.6cqh, color-mix(in srgb, var(--ceu-rosa) 14%, transparent) 1.6cqh 1.72cqh); }
+.cena-mapa .mapa-svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.cena-mapa .raso path { fill: none; stroke: color-mix(in srgb, var(--ceu-rosa) 55%, var(--ceu-laranja)); stroke-width: 80; stroke-linejoin: round; opacity: 0.42; filter: blur(22px); }
+.cena-mapa .praia path { fill: none; stroke: color-mix(in srgb, var(--ceu-ouro) 80%, var(--ceu-laranja)); stroke-width: 7; stroke-linejoin: round; opacity: 0.85; filter: blur(1.5px); }
+.cena-mapa .terra { fill: url(#g-terra); }
+.cena-mapa .mangue { fill: #4a1d5e; opacity: 0.55; filter: blur(30px); }
+.cena-mapa .brilho-cidade { mix-blend-mode: screen; }
+.cena-mapa .ruas { fill: none; stroke: color-mix(in srgb, var(--ceu-ouro) 22%, transparent); stroke-width: 2; }
+.cena-mapa .estradas { fill: none; stroke: color-mix(in srgb, var(--texto-suave) 26%, transparent); stroke-width: 3; }
+.cena-mapa .luz-quente { fill: var(--ceu-ouro); }
+.cena-mapa .luz-fria { fill: #ffe1f2; opacity: 0.75; }
+.cena-mapa .lago { fill: #1b0a31; stroke: color-mix(in srgb, var(--ceu-rosa) 50%, transparent); stroke-width: 6; filter: blur(2px); }
+.cena-mapa .rota, .cena-mapa .rota-brilho { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+.cena-mapa .rota { stroke-width: 10; }
+.cena-mapa .rota-brilho { stroke-width: 34; opacity: 0.5; filter: blur(12px); }
+.cena-mapa .r-pe { stroke: var(--rota-pe); }
+.cena-mapa .r-carro { stroke: var(--rota-carro); }
+.cena-mapa .r-aviao { stroke: var(--rota-aviao); }
+.cena-mapa .rota.r-aviao { stroke-width: 7; }
+/* a cabeça de cada rota: um ponto de luz sem borda */
+.cena-mapa .cabeca { position: absolute; left: 0; top: 0; width: 14cqw; height: 14cqw; margin: -7cqw 0 0 -7cqw; opacity: 0; mix-blend-mode: plus-lighter;
+  background: radial-gradient(closest-side, #fff 0%, color-mix(in srgb, var(--c) 85%, transparent) 14%, color-mix(in srgb, var(--c) 30%, transparent) 40%, transparent 100%); }
+.cena-mapa .nuvem { position: absolute; border-radius: 50%; filter: blur(3.2cqw); opacity: 0.5;
+  background: radial-gradient(closest-side, color-mix(in srgb, #ffe3ef 70%, transparent), color-mix(in srgb, var(--ceu-rosa) 20%, transparent) 60%, transparent); }
+.cena-mapa .n1 { left: -12cqw; top: 8cqh; width: 48cqw; height: 16cqw; }
+.cena-mapa .n2 { right: -16cqw; top: 46cqh; width: 52cqw; height: 18cqw; opacity: 0.4; }
+.cena-mapa .n3 { left: 2cqw; bottom: -2cqh; width: 60cqw; height: 18cqw; opacity: 0.35; }
+.cena-mapa .veu-hud { background:
+  linear-gradient(180deg, color-mix(in srgb, var(--silhueta) 78%, transparent) 0%, color-mix(in srgb, var(--silhueta) 40%, transparent) 22%, transparent 34%),
+  linear-gradient(90deg, color-mix(in srgb, var(--silhueta) 70%, transparent) 0%, transparent 52%); }
+.cena-mapa .hud { position: absolute; left: 7cqw; top: 11cqh; right: 7cqw; display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+.cena-mapa .e1 { font-size: 2.5cqmin; color: var(--texto-suave); margin: 0 0 2cqmin; padding-left: 0; }
+.cena-mapa .q1, .cena-mapa .q2 { font-size: 11.5cqmin; line-height: 0.98; text-transform: uppercase; }
+.cena-mapa .q2 { white-space: nowrap; filter: drop-shadow(0 0.6cqmin 2.4cqmin color-mix(in srgb, var(--silhueta) 70%, transparent)); }
+.cena-mapa .linhas { position: absolute; left: 7cqw; top: 58cqh; display: flex; flex-direction: column; gap: 3.4cqmin; }
+.cena-mapa .linha { display: flex; align-items: center; gap: 4cqmin; }
+.cena-mapa .glifo { width: 11cqmin; height: 11cqmin; flex: none; }
+.cena-mapa .glifo .g { fill: var(--c); stroke: var(--c); }
+.cena-mapa .glifo .traco { fill: none; stroke-width: 5.5; stroke-linecap: round; stroke-linejoin: round; }
+.cena-mapa .txt { display: flex; flex-direction: column; gap: 0.4cqmin; }
+.cena-mapa .rot { font-family: var(--fonte-texto); font-weight: 700; font-size: 2.4cqmin; letter-spacing: 0.3em; text-transform: uppercase; color: var(--c); }
+.cena-mapa .num { font-family: var(--fonte-titulo); font-size: 12cqmin; line-height: 0.95; color: var(--texto); white-space: nowrap; }
+.cena-mapa .num .u { font-size: 5cqmin; margin-left: 1.2cqmin; color: var(--texto-suave); }
+.cena-mapa .l-pe { --c: var(--rota-pe); }
+.cena-mapa .l-carro { --c: var(--rota-carro); }
+.cena-mapa .l-aviao { --c: var(--rota-aviao); }
+.cena-mapa .cabeca.c-pe { --c: var(--rota-pe); }
+.cena-mapa .cabeca.c-carro { --c: var(--rota-carro); }
+.cena-mapa .cabeca.c-aviao { --c: var(--rota-aviao); }

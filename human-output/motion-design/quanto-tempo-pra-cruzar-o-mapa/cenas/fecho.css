@@ -1,0 +1,6 @@
+.cena-fecho .bloco { top: 17cqh; bottom: auto; justify-content: flex-start; gap: 0; }
+.cena-fecho .e1 { font-size: 2.8cqmin; margin-bottom: 3cqmin; }
+.cena-fecho .l1 { font-size: 15cqmin; line-height: 0.96; }
+.cena-fecho .l2 { font-size: 30cqmin; line-height: 0.9; white-space: nowrap; filter: drop-shadow(0 1cqmin 4cqmin color-mix(in srgb, var(--silhueta) 60%, transparent)); }
+.cena-fecho .apoio { font-family: var(--fonte-texto); font-weight: 700; font-size: 3cqmin; letter-spacing: 0.26em; text-transform: uppercase; color: var(--texto); margin-top: 4cqmin; padding-left: 0.26em; }
+.cena-fecho .apoio b { color: var(--rota-aviao); font-weight: 700; }
