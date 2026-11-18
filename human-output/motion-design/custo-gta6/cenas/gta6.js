@@ -34,7 +34,7 @@ Motion.cena('gta6', {
     Vice.vida(t, el.V, api);
     // a torre: rompe o mar acelerando, fura o topo e segue subindo devagar
     const sobe = ease.inOutCubic(prog(t, 0, 1.6));
-    const h = 4 + 136 * sobe + 3 * Math.max(0, t - 1.6);
+    const h = 4 + (api.vertical ? 216 : 136) * sobe + 3 * Math.max(0, t - 1.6);
     const ry = lerp(-44, -26, ease.forte(prog(t, 0, 2.4))) + 1.5 * (t - api.ref);
     api.set(el.torre, { vars: { '--h': `${h.toFixed(3)}cqmin`, '--ry': `${ry.toFixed(3)}deg` } });
     // texto

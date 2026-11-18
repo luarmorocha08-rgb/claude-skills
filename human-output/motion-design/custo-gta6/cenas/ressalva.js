@@ -3,11 +3,11 @@
    cada letra nasce quente e esfria, sem piscar.
    Batidas: 0 etiqueta · b(0,5) frase · b(2) nota · b(3) brilho em "nunca" · saída esmaecer. */
 Motion.cena('ressalva', {
-  render: () => `
+  render: (c) => `
     ${Vice.cenario({ classe: 'noite', sol: false })}
     <div class="pilha bloco">
       <p class="etiqueta">Detalhe</p>
-      <h2 class="titulo frase">A Rockstar <span class="destaque">nunca</span><br>revelou o valor</h2>
+      <h2 class="titulo frase">${c.porFormato({ '16x9': 'A Rockstar <span class="destaque">nunca</span><br>revelou o valor', '9x16': 'A Rockstar<br><span class="destaque">nunca</span> revelou<br>o valor' })}</h2>
       <p class="nota">os números são estimativas de mercado</p>
     </div>`,
   poses: {

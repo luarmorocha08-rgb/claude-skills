@@ -54,6 +54,6 @@ Motion.cena('abertura', {
     tipo.derivaDestaque(t, el.gta, { inicio: 2.0 });
     // câmera: nasce baixa, rente ao mar, e sobe; depois push-in vivo
     const tilt = ease.forte(prog(t, 0, 2.2));
-    el.cam.pose({ zoom: api.viva(t) * lerp(1.06, 1, tilt), y: lerp(7, 0, tilt) });
+    el.cam.pose({ zoom: api.viva(t) * lerp(1.06, 1, tilt), y: lerp(7, 0, tilt) * api.k });
   },
 });

@@ -3,3 +3,6 @@
 .cena-ressalva .etiqueta { margin: 0; font-size: 2.8cqmin; }
 .cena-ressalva .frase { font-size: 15cqmin; line-height: 0.95; }
 .cena-ressalva .nota { margin: 0; font-family: var(--fonte-texto); font-weight: 700; font-size: 2.2cqmin; letter-spacing: 0.2em; text-transform: uppercase; color: var(--texto-suave); padding-left: 0.2em; }
+[data-formato="9x16"] .cena-ressalva .bloco { bottom: 10%; gap: 4cqmin; }
+[data-formato="9x16"] .cena-ressalva .frase { font-size: 19cqmin; }
+[data-formato="9x16"] .cena-ressalva .nota { font-size: 3cqmin; max-width: 80cqw; letter-spacing: 0.12em; line-height: 1.5; }

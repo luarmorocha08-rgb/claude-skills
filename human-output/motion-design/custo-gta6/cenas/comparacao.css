@@ -13,3 +13,14 @@
 .cena-comparacao .vezes { font-size: 40cqmin; line-height: 0.86; margin-top: 1.5cqmin; }
 .cena-comparacao .mais { font-size: 11cqmin; line-height: 1; margin: 0; }
 .cena-comparacao .palmas-esq { left: -26cqw; }
+[data-formato="9x16"] .cena-comparacao .vice { --hz: 80%; }
+[data-formato="9x16"] .cena-comparacao .torre { bottom: 20%; }
+[data-formato="9x16"] .cena-comparacao .c5 { --w: 14cqmin; --d: 14cqmin; --h: 6.4cqmin; left: 32%; }
+[data-formato="9x16"] .cena-comparacao .c6 { --w: 20cqmin; --d: 20cqmin; --h: 48cqmin; left: 72%; }
+[data-formato="9x16"] .cena-comparacao .t-nome { font-size: 3.6cqmin; }
+[data-formato="9x16"] .cena-comparacao .t-valor { font-size: 9cqmin; }
+[data-formato="9x16"] .cena-comparacao .texto { left: 50%; top: 11%; translate: -50% 0; align-items: center; }
+[data-formato="9x16"] .cena-comparacao .ate { font-size: 11cqmin; }
+[data-formato="9x16"] .cena-comparacao .vezes { font-size: 32cqmin; }
+[data-formato="9x16"] .cena-comparacao .mais { font-size: 14cqmin; white-space: nowrap; }
+[data-formato="9x16"] .cena-comparacao .palmas-esq { left: -36cqw; }

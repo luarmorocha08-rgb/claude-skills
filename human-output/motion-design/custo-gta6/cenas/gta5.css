@@ -2,3 +2,10 @@
 .cena-gta5 .t5 { --w: 16cqmin; --d: 16cqmin; --h: 36cqmin; --ry: -32deg; bottom: 26%; }
 .cena-gta5 .ano { position: absolute; left: 50%; top: 44%; translate: -50% -50%; font-size: 52cqmin; line-height: 1;
   color: transparent; -webkit-text-stroke: 0.25cqmin color-mix(in srgb, var(--texto) 22%, transparent); letter-spacing: 0.04em; }
+[data-formato="9x16"] .cena-gta5 .vice { --hz: 72%; }
+[data-formato="9x16"] .cena-gta5 .t5 { --w: 26cqmin; --d: 26cqmin; --h: 64cqmin; bottom: 28%; }
+[data-formato="9x16"] .cena-gta5 .ano { top: 30%; font-size: 44cqmin; }
+[data-formato="9x16"] .cena-gta5 .t-nome { font-size: 4.4cqmin; }
+[data-formato="9x16"] .cena-gta5 .t-valor { font-size: 15cqmin; }
+[data-formato="9x16"] .cena-gta5 .t-nota { font-size: 3cqmin; }
+[data-formato="9x16"] .cena-gta5 .torre-rotulo { bottom: calc(100% + 6cqmin); }

@@ -6,7 +6,8 @@
   "bpm": 120,
   "formatoBase": "16x9",
   "formatos": [
-    "16x9"
+    "16x9",
+    "9x16"
   ],
   "movimento": {
     "curvaEntrada": [
@@ -531,7 +532,7 @@
     "quadro": "fim"
   },
   "storyboard": {
-    "revisao": 5,
+    "revisao": 11,
     "aprovadoEm": "2026-11-17",
     "revisaoAprovada": 5
   },

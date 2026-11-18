@@ -107,3 +107,14 @@
 /* tipografia comum do filme */
 .etiqueta { font-family: var(--fonte-texto); font-weight: 700; letter-spacing: 0.34em; text-transform: uppercase; color: var(--texto); padding-left: 0.34em; }
 .titulo { text-transform: uppercase; }
+
+/* ─── 9:16 ─── */
+[data-formato="9x16"] .vice .palmas { height: 52cqh; width: 60cqw; bottom: -2cqh; }
+[data-formato="9x16"] .vice .palmas-esq { left: -30cqw; }
+[data-formato="9x16"] .vice .palmas-dir { right: -30cqw; }
+[data-formato="9x16"] .vice .palma-svg + .palma-svg { margin-left: -20cqw; margin-right: -20cqw; }
+[data-formato="9x16"] .vice .skyline-longe { height: 5cqh; }
+[data-formato="9x16"] .vice .skyline-perto { height: 3.6cqh; left: -10%; right: 40%; }
+[data-formato="9x16"] .vice .sol { width: 46cqmin; height: 46cqmin; }
+[data-formato="9x16"] .vice .reflexo { width: 30cqmin; }
+[data-formato="9x16"] .etiqueta { font-size: 4cqmin; }

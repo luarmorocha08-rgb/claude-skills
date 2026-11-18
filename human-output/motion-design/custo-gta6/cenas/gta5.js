@@ -32,7 +32,7 @@ Motion.cena('gta5', {
     const a = ease.forte(prog(t, ini, 1.6));
     api.set(el.$('.ano'), { s: lerp(1.12, 1, a) * (1 + 0.004 * (t - api.ref)), o: suave(prog(t, ini, ini + 0.4)) });
     // a torre rompe o mar e sobe, com uma mola curta de objeto
-    const h = 36 * api.spring(t - b(1), { freq: 0.9, damp: 5.6 });
+    const h = (api.vertical ? 64 : 36) * api.spring(t - b(1), { freq: 0.9, damp: 5.6 });
     const ry = lerp(-70, -32, ease.forte(prog(t, 0.2, 2.6))) + 2 * (t - api.ref);
     api.set(el.torre, { vars: { '--h': `${Math.max(0.3, h).toFixed(3)}cqmin`, '--ry': `${ry.toFixed(3)}deg` } });
     // o rótulo nasce no topo; o valor conta e trava na batida

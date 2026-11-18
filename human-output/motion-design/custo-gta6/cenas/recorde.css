@@ -2,3 +2,6 @@
 .cena-recorde .bloco { gap: 3cqmin; }
 .cena-recorde .etiqueta { margin: 0; font-size: 2.8cqmin; }
 .cena-recorde .frase { font-size: 17cqmin; line-height: 0.95; }
+[data-formato="9x16"] .cena-recorde .vice { --hz: 96%; }
+[data-formato="9x16"] .cena-recorde .bloco { bottom: 8%; }
+[data-formato="9x16"] .cena-recorde .frase { font-size: 23cqmin; line-height: 0.95; }

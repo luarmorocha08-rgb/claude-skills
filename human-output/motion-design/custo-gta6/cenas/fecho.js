@@ -4,11 +4,11 @@
    Batidas: 0 "vai valer" · b(1) "cada centavo?" pela lente · b(3) brilho · b(7) o sol afunda ·
    4,4 tudo sai e o horizonte vira um ponto · último quadro: o fundo. */
 Motion.cena('fecho', {
-  render: () => `
+  render: (c) => `
     ${Vice.cenario()}
     <div class="pilha bloco">
       <p class="titulo l1">Vai valer</p>
-      <h2 class="titulo l2"><span class="destaque">cada centavo?</span></h2>
+      <h2 class="titulo l2"><span class="destaque">${c.porFormato({ '16x9': 'cada centavo?', '9x16': 'cada<br>centavo?' })}</span></h2>
     </div>`,
   poses: {
     inicio: (el, api) => { api.set(el.$('.l2'), { o: 0 }); api.set(el.$('.l1'), { o: 0.4, blur: 0.6 }); },
@@ -26,9 +26,10 @@ Motion.cena('fecho', {
     // o sol afunda no mar e o céu escurece
     const pz = ease.inOutSine(prog(t, b(7), 4.6));
     Vice.vida(t, V, api, { sol: 1 - pz });
-    const d = 15 * pz;
-    const corte = 50 - (d / 30) * 100;
-    api.set(V.sol, { y: d * 0.5625, style: { webkitMaskImage: `linear-gradient(180deg, #000 ${corte}%, transparent ${corte + 0.5}%)`, maskImage: `linear-gradient(180deg, #000 ${corte}%, transparent ${corte + 0.5}%)` } });
+    const S = api.vertical ? 46 : 30;
+    const d = 15 * pz * (S / 30);
+    const corte = 50 - (d / S) * 100;
+    api.set(V.sol, { y: d * 0.5625 * api.k, style: { webkitMaskImage: `linear-gradient(180deg, #000 ${corte}%, transparent ${corte + 0.5}%)`, maskImage: `linear-gradient(180deg, #000 ${corte}%, transparent ${corte + 0.5}%)` } });
     // o mundo apaga; a linha do horizonte encolhe até um ponto e some por último
     const apaga = ease.inCubic(prog(t, 4.2, 4.85));
     api.set([V.ceu, V.mar, ...V.sky, ...V.palmas], { o: 1 - apaga, bright: 1 - 0.45 * pz });

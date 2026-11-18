@@ -8,3 +8,11 @@
 .cena-gta6 .valor { font-size: 26cqmin; line-height: 0.92; white-space: nowrap; }
 .cena-gta6 .nota { margin: 2.4cqmin 0 0; font-family: var(--fonte-texto); font-weight: 700; font-size: 2.2cqmin; letter-spacing: 0.2em; text-transform: uppercase; color: var(--texto); padding-left: 0.2em; }
 .cena-gta6 .palmas-esq { left: -26cqw; }
+[data-formato="9x16"] .cena-gta6 .vice { --hz: 82%; }
+[data-formato="9x16"] .cena-gta6 .palco3d { perspective-origin: 80% 90%; }
+[data-formato="9x16"] .cena-gta6 .t6 { --w: 30cqmin; --d: 30cqmin; left: 84%; bottom: 18%; --h: 220cqmin; }
+[data-formato="9x16"] .cena-gta6 .texto { left: 6cqw; top: 30%; translate: 0 -50%; }
+[data-formato="9x16"] .cena-gta6 .apoio-n { font-size: 10cqmin; }
+[data-formato="9x16"] .cena-gta6 .valor { font-size: 17cqmin; }
+[data-formato="9x16"] .cena-gta6 .nota { font-size: 2.8cqmin; max-width: 80cqw; letter-spacing: 0.12em; }
+[data-formato="9x16"] .cena-gta6 .palmas-esq { left: -36cqw; }
