@@ -1,0 +1,54 @@
+{
+ "versao": 2,
+ "data": "2026-11-18",
+ "fps": 60,
+ "qualidade": "final",
+ "montagem": "principal",
+ "formatos": {
+  "9x16": {
+   "arquivo": "quanto-tempo-pra-cruzar-o-mapa-9x16-60fps.mp4",
+   "quadros": 933,
+   "de": 0,
+   "ate": 15.55,
+   "segundosRender": 44,
+   "renderizados": 219,
+   "capa": "capa-9x16.png",
+   "fluidez": {
+    "resumo": "1 ponto(s) para olhar: 1 degrau",
+    "alertas": [
+     {
+      "tipo": "degrau",
+      "i": 923,
+      "t": 15.4,
+      "d": 0.66,
+      "viz": 3.49,
+      "cena": "fecho",
+      "tituloCena": "A conta",
+      "tLocal": 3.35,
+      "frase": "movimento forte que para seco: falta pouso (velocidade e desaceleração chegando juntas a zero)"
+     }
+    ]
+   },
+   "diretor": {
+    "metricas": {
+     "energia": {
+      "media": 1.1,
+      "mediana": 0.83,
+      "quaseParados": 1
+     },
+     "paradoAosOlhos": 0,
+     "cortesPorSegundo": 0.13,
+     "referencia": {
+      "nome": "dbfd2ed6-v26044gc0000dadbthfog65qre0b784g",
+      "mediana": 0.2,
+      "quaseParados": 53
+     },
+     "duracao": 15.6
+    },
+    "notas": []
+   }
+  }
+ },
+ "erros": [],
+ "segundos": 106
+}
