@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"DM Sans";src:url(assets/dm-sans-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:"DM Sans";src:url(assets/dm-sans-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:"DM Sans";src:url(assets/dm-sans-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:"DM Mono";src:url(assets/dm-mono-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:"Newsreader";src:url(assets/newsreader-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:"Newsreader";src:url(assets/newsreader-latin-400-italic.woff2);font-weight:400;font-style:italic}
+@font-face{font-family:"Newsreader";src:url(assets/newsreader-latin-500-italic.woff2);font-weight:500;font-style:italic}
+:root{
+  --fundo:#0c0f16; --fundo2:#10141d; --card:#161a24; --card2:#1c2130;
+  --borda:rgba(255,255,255,.09); --texto:#f4efe6; --suave:#8f95a3; --apagado:#5b6170;
+  --ouro:#eaa83c; --ouro-claro:#f6c76f; --ouro-escuro:#8a5a17; --brasa:#3a2810;
+  --alerta:#e5534b;
+  --serif:"Newsreader",Georgia,serif; --sans:"DM Sans",system-ui,sans-serif; --mono:"DM Mono",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;background:var(--fundo);overflow:hidden}
+#palco{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--fundo);color:var(--texto);font-family:var(--sans)}
+.abs{position:absolute}
+/* fundo */
+#luz{left:-300px;top:200px;width:1680px;height:1400px;background:radial-gradient(closest-side,rgba(234,168,60,.20),rgba(234,168,60,.10) 35%,rgba(234,168,60,.035) 65%,rgba(234,168,60,0) 100%);will-change:transform}
+#grade{inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:90px 90px;-webkit-mask-image:radial-gradient(ellipse 60% 40% at 50% 42%,#000 0%,rgba(0,0,0,.4) 50%,transparent 100%)}
+#brasas{inset:0}
+.brasa{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--ouro);box-shadow:0 0 10px 2px rgba(234,168,60,.5)}
+#numeral{right:-40px;top:250px;font:italic 400 760px/0.8 var(--serif);color:var(--ouro);opacity:0;letter-spacing:-.04em;white-space:nowrap}
+/* topo */
+#topo{left:56px;right:56px;top:84px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.selo{display:flex;align-items:center;gap:18px;font:400 30px var(--mono);color:#b9bdc7}
+.selo b{width:62px;height:62px;border-radius:50%;border:2px solid var(--ouro);display:grid;place-items:center;font:400 26px var(--serif);color:var(--ouro);font-weight:400}
+#pilula{position:relative;height:58px;min-width:200px}
+.pil{position:absolute;right:0;top:0;height:58px;padding:0 26px;border:2px solid var(--ouro);border-radius:30px;font:400 24px var(--mono);letter-spacing:.2em;color:var(--ouro);display:flex;align-items:center;white-space:nowrap;background:rgba(12,15,22,.6)}
+#sub{left:56px;right:56px;top:196px;display:flex;justify-content:space-between;font:400 22px var(--mono);letter-spacing:.14em;color:var(--suave);text-transform:uppercase}
+#sub i{font-style:normal;color:var(--texto)}
+#regua{left:56px;right:56px;top:238px;height:2px;background:linear-gradient(90deg,rgba(255,255,255,.18),rgba(255,255,255,.06))}
+#regua2{left:56px;top:238px;height:2px;background:var(--ouro);width:0}
+/* cenas */
+.cena{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0}
+.tit{position:absolute;left:70px;right:70px;font:400 92px/1.0 var(--serif);letter-spacing:-.02em;color:var(--texto)}
+.tit em{font-style:italic;color:var(--ouro);font-weight:500}
+.w{display:inline-block;white-space:pre}
+.mono{font-family:var(--mono)}
+.rot{font:400 24px var(--mono);letter-spacing:.2em;color:var(--suave);text-transform:uppercase}
+.card{position:absolute;background:linear-gradient(180deg,var(--card2),var(--card));border:1.5px solid var(--borda);border-radius:26px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.chip{position:absolute;display:flex;align-items:center;gap:14px;height:78px;padding:0 30px;border-radius:18px;background:var(--card2);border:1.5px solid var(--borda);font:500 34px var(--sans);color:var(--texto);white-space:nowrap}
+.chip.ouro{background:linear-gradient(180deg,#f2b552,#e09a2c);color:#1a1206;border-color:transparent;box-shadow:0 0 50px rgba(234,168,60,.35)}
+.estrela{color:var(--ouro)}
+/* legenda */
+#legenda{left:70px;right:70px;top:1226px;height:230px}
+.lin{position:absolute;left:0;font:700 66px/1 var(--sans);letter-spacing:-.01em;white-space:nowrap}
+.lw{display:inline-block;position:relative;margin-right:16px;white-space:pre}
+.lw .cx{position:absolute;left:-8px;right:-8px;top:-6px;bottom:-10px;background:var(--ouro);border-radius:8px;transform-origin:left center;z-index:0}
+.lw span{position:relative;z-index:1}
+/* linha do tempo */
+#tempo{left:70px;right:70px;top:1500px;height:120px}
+#trilho{position:absolute;left:0;right:0;top:40px;height:3px;background:rgba(255,255,255,.14)}
+#trilhoOuro{position:absolute;left:0;top:40px;height:3px;background:var(--ouro);width:0}
+.marco{position:absolute;top:22px;width:40px;height:40px;margin-left:-20px;display:grid;place-items:center}
+.marco i{width:14px;height:14px;border-radius:50%;background:#3a3f4c;display:block}
+.marco u{position:absolute;top:56px;font:400 20px var(--mono);letter-spacing:.12em;color:var(--apagado);text-decoration:none;white-space:nowrap}
+#ponto{position:absolute;top:22px;width:40px;height:40px;margin-left:-20px;border-radius:50%;background:var(--texto);box-shadow:0 0 0 6px rgba(234,168,60,.25),0 0 30px rgba(234,168,60,.5)}
+#fonte{left:70px;top:1640px;font:400 19px var(--mono);letter-spacing:.06em;color:var(--apagado)}
+</style></head><body>
+<div id="palco">
+  <div id="luz" class="abs"></div>
+  <div id="grade" class="abs"></div>
+  <div id="numeral" class="abs"></div>
+  <div id="brasas" class="abs"></div>
+
+  <!-- CENA 1: gancho -->
+  <div class="cena" id="c1">
+    <img id="c1logo" class="abs" src="assets/gta6-logo.png" style="left:240px;top:330px;width:600px">
+    <div class="card" id="c1card" style="left:110px;top:770px;width:860px;height:330px">
+      <div class="rot abs" style="left:40px;top:34px">quem edita o clip</div>
+      <div class="abs" id="c1r1" style="left:40px;top:96px;right:40px;height:90px;display:flex;align-items:center;justify-content:space-between;font:500 44px var(--sans)">
+        <span>Você</span><span class="mono" style="font-size:28px;color:var(--suave)">3h editando</span>
+        <div id="c1risco" class="abs" style="left:-6px;top:44px;height:5px;width:0;background:var(--ouro);border-radius:3px"></div>
+      </div>
+      <div class="abs" id="c1r2" style="left:28px;top:200px;right:28px;height:100px;border-radius:18px;background:linear-gradient(180deg,#f2b552,#e09a2c);display:flex;align-items:center;justify-content:space-between;padding:0 24px 0 18px;font:700 46px var(--sans);color:#1a1206;box-shadow:0 0 60px rgba(234,168,60,.35)">
+        <span>✦ IA</span><span class="mono" style="font-size:28px;font-weight:400">automático</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CENA 2: por que agora -->
+  <div class="cena" id="c2">
+    <div class="rot abs" id="c2rot" style="left:0;right:0;top:330px;text-align:center">1º trailer · YouTube · 24 horas</div>
+    <div class="abs" id="c2num" style="left:0;right:0;top:390px;text-align:center;font:400 300px/1 var(--serif);letter-spacing:-.04em;white-space:nowrap">+<span id="c2n">90</span> <em style="font-style:italic;color:var(--ouro);font-weight:500">mi</em></div>
+    <div class="abs" id="c2views" style="left:0;right:0;top:700px;text-align:center;font:500 40px var(--sans);color:var(--suave)">de views</div>
+    <!-- fase B -->
+    <div class="card" id="c2data" style="left:110px;top:330px;width:860px;height:150px;display:flex;align-items:center;gap:34px;padding:0 40px">
+      <div style="font:400 92px/1 var(--serif);color:var(--ouro)">19<span style="font-size:44px;font-style:italic"> nov</span></div>
+      <div><div style="font:700 44px var(--sans)">sai amanhã</div><div class="mono" style="font-size:26px;color:var(--suave);margin-top:6px">PS5 · Xbox Series</div></div>
+    </div>
+    <div class="card" id="c2busca" style="left:110px;top:540px;width:860px;height:110px;border-radius:55px;display:flex;align-items:center;gap:24px;padding:0 44px;font:400 38px var(--sans);color:var(--suave)">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#eaa83c" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <span id="c2q" style="color:var(--texto)">gta 6</span><span id="c2cur" style="width:3px;height:44px;background:var(--ouro);margin-left:-18px"></span>
+    </div>
+    <div class="chip" id="c2s1" style="left:110px;top:700px">segredos do mapa</div>
+    <div class="chip" id="c2s2" style="left:110px;top:800px">easter eggs</div>
+    <div class="chip" id="c2s3" style="left:110px;top:900px">momentos absurdos</div>
+    <div class="chip" id="c2s4" style="left:110px;top:1000px">Vice City real × jogo</div>
+    <!-- fase C -->
+    <div class="abs" id="c2barras" style="left:70px;right:70px;top:380px;height:700px">
+      <div class="rot" style="position:absolute;left:0;top:0">oferta × procura</div>
+      <div class="abs" style="left:0;top:80px;font:500 40px var(--sans)">Quem procura</div>
+      <div class="abs" style="left:0;top:150px;width:940px;height:120px;border-radius:16px;background:rgba(255,255,255,.05)"></div>
+      <div class="abs" id="c2b1" style="left:0;top:150px;height:120px;width:940px;border-radius:16px;background:linear-gradient(90deg,#b97a22,#eaa83c 70%,#f6c76f);box-shadow:0 0 60px rgba(234,168,60,.3)"></div>
+      <div class="abs mono" id="c2b1t" style="right:30px;top:190px;font-size:30px;color:#1a1206">milhões</div>
+      <div class="abs" style="left:0;top:360px;font:500 40px var(--sans)">Quem entrega</div>
+      <div class="abs" style="left:0;top:430px;width:940px;height:120px;border-radius:16px;background:rgba(255,255,255,.05)"></div>
+      <div class="abs" id="c2b2" style="left:0;top:430px;height:120px;width:70px;border-radius:16px;background:#3a3f4c"></div>
+      <div class="abs mono" id="c2b2t" style="left:100px;top:470px;font-size:30px;color:var(--suave)">poucos · espaço aberto</div>
+    </div>
+  </div>
+
+  <!-- CENA 3: passo 1 -->
+  <div class="cena" id="c3">
+    <div class="tit" id="c3tit" style="top:320px">Grave sessões <em>longas.</em></div>
+    <div class="card" id="c3card" style="left:70px;top:520px;width:940px;height:560px">
+      <div class="abs" style="left:40px;top:38px;display:flex;align-items:center;gap:16px;font:400 28px var(--mono);letter-spacing:.12em">
+        <i id="c3rec" style="width:20px;height:20px;border-radius:50%;background:var(--alerta);display:block"></i>REC
+      </div>
+      <div class="abs mono" id="c3tempo" style="right:40px;top:30px;font-size:44px;letter-spacing:.04em">00:00:00</div>
+      <div class="abs" id="c3barras" style="left:40px;right:40px;top:150px;height:300px"></div>
+      <div class="abs rot" id="c3leg" style="left:40px;top:478px">gameplay bruto · 1080p 60 fps</div>
+      <div class="chip ouro" id="c3ia" style="right:36px;top:458px;height:66px;font-size:30px;padding:0 24px">✦ IA achou os picos</div>
+    </div>
+  </div>
+
+  <!-- CENA 4: passo 2 -->
+  <div class="cena" id="c4">
+    <div class="tit" id="c4tit" style="top:320px">1 hora de jogo, <em>dezenas de clips.</em></div>
+    <div class="chip" id="c4t1" style="left:70px;top:530px">✦ OpusClip</div>
+    <div class="chip" id="c4t2" style="left:380px;top:530px">✦ Eklipse</div>
+    <div class="card" id="c4up" style="left:70px;top:660px;width:940px;height:150px">
+      <div class="abs" style="left:36px;top:30px;font:500 36px var(--sans)">gameplay_1h.mp4</div>
+      <div class="abs mono" id="c4pct" style="right:36px;top:34px;font-size:30px;color:var(--suave)">0%</div>
+      <div class="abs" style="left:36px;right:36px;top:98px;height:14px;border-radius:7px;background:rgba(255,255,255,.08)"></div>
+      <div class="abs" id="c4bar" style="left:36px;top:98px;height:14px;border-radius:7px;background:var(--ouro);width:0"></div>
+    </div>
+    <div class="abs" id="c4grade" style="left:70px;top:660px;width:940px;height:480px"></div>
+  </div>
+
+  <!-- CENA 5: passo 3 -->
+  <div class="cena" id="c5">
+    <div class="tit" id="c5tit" style="top:320px">O gancho vale mais <em>que o clipe.</em></div>
+    <div class="abs" id="c5cel" style="left:90px;top:530px;width:330px;height:590px;border-radius:44px;border:10px solid #232838;background:linear-gradient(160deg,#3b2a4f,#1d2a44 45%,#0f1a2a);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.5)">
+      <img src="assets/gta6-logo.png" class="abs" style="left:45px;top:190px;width:220px;opacity:.55">
+      <div class="abs" id="c5gancho" style="left:14px;right:14px;top:22px;height:120px;border:3px solid var(--ouro);border-radius:16px;background:rgba(12,15,22,.55)">
+        <div class="abs mono" style="left:12px;top:10px;font-size:18px;color:var(--ouro);letter-spacing:.12em">0–3 s · GANCHO</div>
+        <div class="abs" style="left:12px;right:12px;top:42px;font:700 25px/1.15 var(--sans)">Ninguém percebeu isso no mapa</div>
+      </div>
+      <div class="abs" id="c5onda" style="left:30px;right:30px;top:370px;height:60px;display:flex;align-items:center;gap:5px"></div>
+      <div class="abs" id="c5leg" style="left:22px;right:22px;top:470px;height:60px;border-radius:10px;background:rgba(0,0,0,.6);display:grid;place-items:center;font:700 24px var(--sans)">legenda automática</div>
+    </div>
+    <div class="abs" id="c5lista" style="left:470px;top:560px;width:540px">
+      <div class="c5i" style="height:150px;border-bottom:1.5px solid var(--borda);position:relative"><div class="rot">legenda</div><div style="font:500 46px var(--sans);margin-top:16px">CapCut</div><b class="ok abs" style="right:0;top:48px">✓</b></div>
+      <div class="c5i" style="height:150px;border-bottom:1.5px solid var(--borda);position:relative;margin-top:24px"><div class="rot">voz</div><div style="font:500 46px var(--sans);margin-top:16px">ElevenLabs</div><b class="ok abs" style="right:0;top:48px">✓</b></div>
+      <div class="c5i" style="height:150px;position:relative;margin-top:24px"><div class="rot" style="color:var(--ouro)">3 primeiros segundos</div><div style="font:500 46px var(--sans);margin-top:16px">escritos por IA</div><b class="ok abs" style="right:0;top:48px">✓</b></div>
+    </div>
+  </div>
+
+  <!-- CENA 6: passo 4 -->
+  <div class="cena" id="c6">
+    <div class="tit" id="c6tit" style="top:320px">1 clip. <em>3 plataformas.</em></div>
+    <div class="abs" id="c6cols" style="left:0;top:470px;width:1080px;height:420px"></div>
+    <div class="card" id="c6sem" style="left:70px;top:900px;width:940px;height:230px">
+      <div class="rot abs" style="left:36px;top:26px">posts por dia · primeiras semanas</div>
+      <div class="abs" id="c6dias" style="left:36px;right:36px;top:76px;height:130px"></div>
+    </div>
+  </div>
+
+  <!-- CENA 7: passo 5 -->
+  <div class="cena" id="c7">
+    <div class="tit" id="c7tit" style="top:320px">Quatro jeitos <em>de receber.</em></div>
+    <div class="abs" id="c7rank" style="left:0;top:520px;width:1080px;height:620px"></div>
+  </div>
+
+  <!-- CENA 8: alerta -->
+  <div class="cena" id="c8">
+    <div class="tit" id="c8tit" style="top:320px">Só um <em>cuidado.</em></div>
+    <div class="card" id="c8a" style="left:70px;top:510px;width:940px;height:250px">
+      <div class="abs" style="left:30px;top:30px;width:110px;height:190px;border-radius:14px;background:linear-gradient(160deg,#4a3a3a,#2a2230)"></div>
+      <div class="abs rot" style="left:176px;top:50px;color:var(--alerta)">✕ nunca</div>
+      <div class="abs" style="left:176px;top:96px;font:500 46px/1.1 var(--sans);width:520px">Repostar clip dos outros</div>
+      <div class="abs" id="c8selo" style="right:36px;top:70px;padding:14px 22px;border:5px solid var(--alerta);border-radius:12px;font:700 30px var(--mono);letter-spacing:.08em;color:var(--alerta);background:rgba(229,83,75,.08)">DESMONETIZADO</div>
+    </div>
+    <div class="card" id="c8b" style="left:70px;top:800px;width:940px;height:250px;border-color:rgba(234,168,60,.55);box-shadow:0 0 70px rgba(234,168,60,.18),0 30px 60px rgba(0,0,0,.45)">
+      <div class="abs" style="left:30px;top:30px;width:110px;height:190px;border-radius:14px;background:linear-gradient(160deg,#3b2a4f,#1d2a44)"></div>
+      <div class="abs rot" style="left:176px;top:50px;color:var(--ouro)">✓ faça assim</div>
+      <div class="abs" style="left:176px;top:96px;font:500 46px/1.1 var(--sans);width:700px">Seu gameplay, <span style="color:var(--ouro)">sua voz</span></div>
+    </div>
+  </div>
+
+  <!-- CENA 9: fecho -->
+  <div class="cena" id="c9">
+    <img id="c9logo" class="abs" src="assets/gta6-logo.png" style="left:410px;top:300px;width:260px">
+    <div class="tit" id="c9l1" style="top:520px;text-align:center;font-size:80px;color:#c9ccd4">O jogo sai <em>amanhã.</em></div>
+    <div class="tit" id="c9l2" style="top:640px;text-align:center;font-size:118px;line-height:.98">Seu canal pode <em>já estar pronto.</em></div>
+    <div class="card" id="c9cta" style="left:110px;top:930px;width:860px;height:190px;display:flex;align-items:center;gap:30px;padding:0 40px">
+      <div style="font:500 40px/1.15 var(--sans);flex:1">Comenta a palavra<div class="mono" style="font-size:24px;color:var(--suave);margin-top:10px">e eu te mando as ferramentas</div></div>
+      <div id="c9gta" style="padding:16px 34px;border-radius:16px;background:linear-gradient(180deg,#f2b552,#e09a2c);color:#1a1206;font:italic 500 78px/1 var(--serif);box-shadow:0 0 60px rgba(234,168,60,.4)">GTA</div>
+    </div>
+  </div>
+
+  <!-- camadas fixas -->
+  <div id="topo" class="abs">
+    <div class="selo"><b>RR</b>@ramosraul.ia</div>
+    <div id="pilula"></div>
+  </div>
+  <div id="sub" class="abs"><span>Clips de GTA 6 com IA</span><span id="subd"></span></div>
+  <div id="regua" class="abs"></div><div id="regua2" class="abs"></div>
+  <div id="legenda" class="abs"></div>
+  <div id="tempo" class="abs"><div id="trilho"></div><div id="trilhoOuro"></div><div id="ponto"></div></div>
+  <div id="fonte" class="abs">método completo no carrossel · @ramosraul.ia</div>
+</div>
+<script src="anim.js"></script>
+</body></html>
