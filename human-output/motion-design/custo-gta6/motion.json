@@ -545,6 +545,15 @@
       ],
       "fps": 60,
       "nota": "primeira animação"
+    },
+    {
+      "v": 2,
+      "data": "2026-11-18",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "versão em pé para TikTok"
     }
   ],
   "criadoEm": "2026-11-17",

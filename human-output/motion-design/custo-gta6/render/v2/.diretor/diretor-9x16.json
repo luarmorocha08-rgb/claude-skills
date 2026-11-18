@@ -1,0 +1,23 @@
+{
+ "metricas": {
+  "energia": {
+   "media": 2.16,
+   "mediana": 1.03,
+   "quaseParados": 1
+  },
+  "paradoAosOlhos": 0,
+  "cortesPorSegundo": 0.19,
+  "duracao": 31.2
+ },
+ "notas": [
+  {
+   "gravidade": "alta",
+   "tipo": "borda",
+   "cena": "recorde",
+   "t": 9.6,
+   "tLocal": 0.6,
+   "frase": "de 9,6 a 11,4 s aparece uma linha reta embaixo, colada na borda do quadro: alguma camada de plano cheio (foto, véu, degradê) não tem sobra e a câmera viva mostrou a borda dela. Use a classe \"plano\" (sangra 6 %).",
+   "ate": 11.4
+  }
+ ]
+}
