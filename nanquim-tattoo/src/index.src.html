@@ -1062,6 +1062,14 @@ const AR = (() => {
     o.fillText('NANQUIM · tattoo studio', out.width-out.width/28, out.height-out.width/28);
     out.toBlob(b=>{ if(!b) return; const u=URL.createObjectURL(b); $('#shotImg').src=u; $('#shotDl').href=u; $('#shotModal').classList.add('show'); AR._blob=b; },'image/png');
   });
+  // Baixar: dentro do claude.ai usa o salvamento seguro da plataforma; fora, link normal
+  let dlNS=null; try{ window.claude && window.claude.use && window.claude.use('downloads').then(n=>{dlNS=n;}).catch(()=>{}); }catch(e){}
+  $('#shotDl').addEventListener('click',async e=>{
+    if(!dlNS || !AR._blob) return;
+    e.preventDefault();
+    try{ await dlNS.save({filename:'minha-tattoo-nanquim.png', data:AR._blob}); }
+    catch(err){ if(err && err.code!=='declined') toast('Pressione e segure a imagem para salvar'); }
+  });
   $('#shotClose').addEventListener('click',()=>$('#shotModal').classList.remove('show'));
   $('#shotShare').addEventListener('click',async()=>{
     try{ const f=new File([AR._blob],'minha-tattoo.png',{type:'image/png'}); if(navigator.canShare&&navigator.canShare({files:[f]})){ await navigator.share({files:[f],title:'Minha tattoo — NANQUIM'}); } else toast('Pressione e segure a imagem para salvar'); }
@@ -1130,7 +1138,8 @@ function runIntro(){
     const finish=()=>{ if(done) return; done=true; intro.classList.add('out'); document.body.classList.remove('locked'); document.documentElement.classList.add('ready'); document.body.classList.add('ready');
       setTimeout(()=>intro.classList.add('gone'),1400); resolve(); };
     $('#introSkip').addEventListener('click',finish);
-    if(REDUCED || sessionStorage.getItem('nq-intro')){ try{}catch(e){} finish(); return; }
+    let seen=false; try{ seen=!!sessionStorage.getItem('nq-intro'); }catch(e){}
+    if(REDUCED || seen){ finish(); return; }
     try{ sessionStorage.setItem('nq-intro','1'); }catch(e){}
     let len=1400; try{ len=Math.ceil(stroke.getComputedTextLength?stroke.getComputedTextLength()*2.6:1400); }catch(e){}
     stroke.style.strokeDasharray=len; stroke.style.strokeDashoffset=len;
