@@ -17,7 +17,7 @@ O vídeo de 74 s é da própria pessoa (@ramosraul.ia): a identidade é dela, in
 ## Decisões
 - 9:16, 48 s, 120 BPM, 60 qps.
 - Números das telas (189 ms, 240 fatias…) são ilustrativos de interface de exemplo.
-- Handle: @ramosraul.ia (confirmado). Palavra-chave `CLAUDE` ainda provisória.
+- Handle: @ramosraul.ia (confirmado). Palavra-chave: Wi‑Fi (confirmada). Narração recebida em midia/narracao.m4a (41 s).
 - A pessoa vai narrar as falas: os tempos das cenas serão ajustados à narração antes de animar.
 
 ## Mantenha

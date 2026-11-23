@@ -469,7 +469,7 @@
         {
           "id": "meio",
           "rotulo": "Passo 2",
-          "legenda": "\"CLAUDE\" digitado na caixa",
+          "legenda": "\"Wi‑Fi\" digitado na caixa",
           "t": 2.6
         },
         {
@@ -494,7 +494,7 @@
         {
           "t": 1,
           "tipo": "objeto",
-          "texto": "A caixa de comentário sobe e a palavra CLAUDE se digita, letra a letra."
+          "texto": "A caixa de comentário sobe e a palavra Wi‑Fi se digita, letra a letra."
         },
         {
           "t": 2.9,
@@ -517,7 +517,7 @@
     "quadro": "fim"
   },
   "storyboard": {
-    "revisao": 6,
+    "revisao": 7,
     "aprovadoEm": null
   },
   "versoes": [],

@@ -1,54 +1,5 @@
 [
  {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "gancho",
-  "formato": "9x16",
-  "frase": "\"gancho\" no 9:16: \"05\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "wifi",
-  "formato": "9x16",
-  "frase": "\"wifi\" no 9:16: \"01\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "wifi",
-  "formato": "9x16",
-  "frase": "\"wifi\" no 9:16: \"Troque pra 5 GHz\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "exame",
-  "formato": "9x16",
-  "frase": "\"exame\" no 9:16: \"02\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "tv",
-  "formato": "9x16",
-  "frase": "\"tv\" no 9:16: \"03\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "buraco",
-  "formato": "9x16",
-  "frase": "\"buraco\" no 9:16: \"04\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
-  "gravidade": "alta",
-  "tipo": "contraste",
-  "cena": "diagrama",
-  "formato": "9x16",
-  "frase": "\"diagrama\" no 9:16: \"05\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
- },
- {
   "gravidade": "media",
   "tipo": "contraste",
   "cena": "convite",

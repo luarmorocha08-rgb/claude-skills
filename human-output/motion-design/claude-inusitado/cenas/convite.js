@@ -2,7 +2,7 @@
    Ideia: a pergunta entra, a palavra-chave se digita na caixa de comentário, o comentário é enviado e
    o guia chega na DM; no fim tudo escurece e fica só o ícone e o @. */
 {
-const PALAVRA = 'CLAUDE';
+const PALAVRA = 'Wi‑Fi';
 Motion.cena('convite', {
   render: () => `
     ${Moldura.html(6)}
