@@ -62,17 +62,17 @@ Motion.cena('wifi', {
     Pecas.surgir(api, el.cont, t, 0.45, { dy: 2 });
     Pecas.surgir(api, el.dial, t, 0.55, { dy: 2 });
     api.tipo.digitar(t, el.digita, { inicio: 1.05, cps: 30 });
-    const TL = [2.3, 2.75, 3.2, 3.65];
+    const TL = [2.75, 3.15, 3.55, 3.95];
     el.linhas.forEach((l, i) => {
       const k = spring(t - TL[i], { freq: 1.9, damp: 9 });
       api.set(l, { o: suave(prog(t, TL[i], TL[i] + 0.15)), y: -2.5 * (1 - k) });
     });
     // latência: sobe com os resultados, despenca depois do carimbo
-    const STAMP = 4.5;
-    const sobe = ease.outCubic(prog(t, 2.3, 3.3)), desce = ease.forte(prog(t, STAMP + 0.15, STAMP + 0.75));
+    const STAMP = 7.1;
+    const sobe = ease.outCubic(prog(t, 2.75, 3.95)), desce = ease.forte(prog(t, STAMP + 0.15, STAMP + 0.75));
     const lat = Math.round(lerp(lerp(40, 189, sobe), 12, desce));
     el.n.textContent = String(lat);
-    const ruim = t >= 2.3 && desce < 0.5, ok = desce >= 0.5;
+    const ruim = t >= 2.75 && desce < 0.5, ok = desce >= 0.5;
     el.cont.classList.toggle('ruim', ruim);
     el.cont.classList.toggle('ok', ok);
     api.set(el.val, { s: 1 + 0.07 * api.pulsoSemQuique(t - (STAMP + 0.45), 0.1), origem: '0% 80%' });
@@ -80,7 +80,7 @@ Motion.cena('wifi', {
     const kv = spring(t - (STAMP + 0.1), { freq: 1.4, damp: 5.5 });
     const A = lerp(lerp(-10, -62, sobe), 62, t > STAMP + 0.1 ? kv : 0) + 2.5 * Math.sin(t * 9.1) * (1 - 0.7 * desce);
     api.set(el.agulha, { r: A - 62 });
-    api.set(el.ok, { o: suave(prog(t, 4.15, 4.35)), x: -1.5 * (1 - ease.forte(prog(t, 4.15, 4.6))) });
+    api.set(el.ok, { o: suave(prog(t, 5.3, 5.5)), x: -1.5 * (1 - ease.forte(prog(t, 5.3, 5.75))) });
     // carimbo: chega grande e bate, com tremor no terminal
     const kc = ease.inCubic(prog(t, STAMP - 0.16, STAMP));
     const quica = t > STAMP ? 0.06 * api.mola(t - STAMP, 1, { freq: 3, amort: 9 }) * 6 : 0;

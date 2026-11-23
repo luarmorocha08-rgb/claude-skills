@@ -1,0 +1,100 @@
+{
+ "versao": 2,
+ "data": "2026-11-23",
+ "fps": 60,
+ "qualidade": "final",
+ "montagem": "principal",
+ "formatos": {
+  "9x16": {
+   "arquivo": "claude-inusitado-9x16-60fps.mp4",
+   "quadros": 2610,
+   "de": 0,
+   "ate": 43.5,
+   "segundosRender": 206,
+   "renderizados": 2005,
+   "capa": "capa-9x16.png",
+   "fluidez": {
+    "resumo": "4 ponto(s) para olhar: 4 pico",
+    "alertas": [
+     {
+      "tipo": "pico",
+      "i": 249,
+      "t": 4.167,
+      "d": 2.48,
+      "viz": 0.75,
+      "cena": "gancho",
+      "tituloCena": "O gancho",
+      "tLocal": 4.167,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "pico",
+      "i": 1137,
+      "t": 18.967,
+      "d": 2.52,
+      "viz": 0.71,
+      "cena": "exame",
+      "tituloCena": "2 · Exame em 3D",
+      "tLocal": 6.267,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "pico",
+      "i": 1881,
+      "t": 31.367,
+      "d": 2.22,
+      "viz": 0.57,
+      "cena": "buraco",
+      "tituloCena": "4 · Buraco na rua",
+      "tLocal": 6.767,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     },
+     {
+      "tipo": "pico",
+      "i": 2235,
+      "t": 37.267,
+      "d": 1.71,
+      "viz": 0.48,
+      "cena": "diagrama",
+      "tituloCena": "5 · Diagrama que se mexe",
+      "tLocal": 5.867,
+      "frase": "salto no meio do movimento: algo muda de repente (curva sem rampa, propriedade que liga sem transição)"
+     }
+    ]
+   },
+   "diretor": {
+    "metricas": {
+     "energia": {
+      "media": 0.39,
+      "mediana": 0.28,
+      "quaseParados": 26
+     },
+     "paradoAosOlhos": 1.5,
+     "cortesPorSegundo": 0.14,
+     "duracao": 43.5
+    },
+    "notas": [
+     {
+      "gravidade": "media",
+      "tipo": "parado-aos-olhos",
+      "cena": "convite",
+      "t": 41.7,
+      "tLocal": 4.4,
+      "frase": "de 41,7 a 43,2 s o quadro quase não muda (menos de 2/255 em 1 s): a câmera viva sozinha não se sente; ponha um gesto visível a cada batida (deriva de camada, paralaxe, luz que passa, um objeto que respira)",
+      "ate": 43.2
+     },
+     {
+      "gravidade": "media",
+      "tipo": "energia",
+      "cena": null,
+      "t": null,
+      "tLocal": null,
+      "frase": "energia de movimento baixa para uma primeira versão (mediana 0,28 por quadro; um motion vivo fica acima de 1): mais eventos na batida, montagem, câmera que mergulha"
+     }
+    ]
+   }
+  }
+ },
+ "erros": [],
+ "segundos": 324
+}

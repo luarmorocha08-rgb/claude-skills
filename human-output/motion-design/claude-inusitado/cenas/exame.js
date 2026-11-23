@@ -62,22 +62,22 @@ Motion.cena('exame', {
     const T0 = 0.75;
     let pousadas = 0;
     el.fatias.forEach((f, i) => {
-      const ti = T0 + i * 0.07;
+      const ti = T0 + i * 0.09;
       const k = ease.forte(prog(t, ti, ti + 0.42));
       if (t >= ti + 0.3) pousadas++;
       f.style.transform = `translate(-50%,-50%) translateY(calc(var(--y) - ${(14 * (1 - k)).toFixed(3)}cqw)) rotateX(90deg)`;
       f.style.opacity = (suave(prog(t, ti, ti + 0.12))).toFixed(3);
     });
     el.n.textContent = String(Math.round((240 * pousadas) / el.fatias.length));
-    api.set(el.val, { s: 1 + 0.03 * suave(prog(t, T0, T0 + 0.2)) * (1 - suave(prog(t, 2.6, 2.9))), origem: '0% 80%' });
+    api.set(el.val, { s: 1 + 0.03 * suave(prog(t, T0, T0 + 0.2)) * (1 - suave(prog(t, 3.1, 3.4))), origem: '0% 80%' });
     // lâmina de luz sobe pelo volume
-    const ks = prog(t, 1.4, 3.2);
+    const ks = prog(t, 4.2, 5.6);
     el.scan.style.transform = `translate(-50%,-50%) translateY(${lerp(0, -48, ease.inOutSine(ks)).toFixed(3)}cqw) rotateX(90deg)`;
     el.scan.style.opacity = (sino(ks, 0.5, 0.28) * (ks > 0 && ks < 1 ? 1 : 0)).toFixed(3);
     // o volume gira sem parar (passa pelo ângulo aprovado no ref)
-    const ry = -28 + 16 * (t - api.ref) + 10 * (1 - ease.forte(prog(t, 0.6, 2.8)));
+    const ry = -28 + 16 * (t - api.ref) + 10 * (1 - ease.forte(prog(t, 0.6, 3.4)));
     el.giro.style.transform = `rotateX(-12deg) rotateY(${ry.toFixed(3)}deg)`;
-    Pecas.surgir(api, el.$('.x-nota'), t, 3.0, { dy: 1 });
+    Pecas.surgir(api, el.$('.x-nota'), t, 4.9, { dy: 1 });
   },
 });
 }

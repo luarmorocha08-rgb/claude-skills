@@ -49,19 +49,19 @@ Motion.cena('convite', {
     Pecas.conteudo(t, el, api, { sair: false });
     Pecas.surgir(api, el.$('.c-rot'), t, 0.5, { dy: 1.5 });
     Pecas.surgir(api, el.$('.c-caixa'), t, 0.6, { dy: 5, s0: 0.95, mola: true });
-    api.tipo.digitar(t, el.palavra, { inicio: 0.95, cps: 9 });
+    api.tipo.digitar(t, el.palavra, { inicio: 2.0, cps: 9 });
     // enviar: a seta pulsa, a mensagem chega com mola, o selo pula
-    api.set(el.seta, { s: 1 + 0.25 * api.pulsoSemQuique(t - 1.75, 0.1), bright: 1 + 0.6 * api.pulsoSemQuique(t - 1.75, 0.1) });
-    Pecas.surgir(api, el.dm, t, 1.95, { dy: -6, s0: 0.92, mola: true });
-    const ks = spring(t - 2.3, { freq: 2, damp: 6 });
-    api.set(el.selo, { s: t < 2.3 ? 0 : ks, o: t < 2.3 ? 0 : 1 });
+    api.set(el.seta, { s: 1 + 0.25 * api.pulsoSemQuique(t - 2.7, 0.1), bright: 1 + 0.6 * api.pulsoSemQuique(t - 2.7, 0.1) });
+    Pecas.surgir(api, el.dm, t, 2.85, { dy: -6, s0: 0.92, mola: true });
+    const ks = spring(t - 3.2, { freq: 2, damp: 6 });
+    api.set(el.selo, { s: t < 3.2 ? 0 : ks, o: t < 3.2 ? 0 : 1 });
     // fecho: tudo escurece e fica o ícone e o @
-    const kf = ease.inOutSine(prog(t, 3.5, 4.3));
+    const kf = ease.inOutSine(prog(t, 3.75, 4.55));
     const sai = ease.inExpo(prog(t, api.dur - 0.3, api.dur));
     api.set(el.conteudo, { o: 1 - 0.9 * kf, blur: 0.8 * kf, s: 1 + 0.01 * (t - api.ref) - 0.02 * kf, subpixel: true });
     api.set(el.moldura, { o: 1 - 0.7 * kf });
-    const ke = ease.forte(prog(t, 3.8, 4.6));
-    api.set(el.fim, { o: suave(prog(t, 3.8, 4.15)) * (1 - sai), y: 3 * (1 - ke), blur: 0.6 * (1 - ke), s: 1 + 0.008 * (t - 4.6) });
+    const ke = ease.forte(prog(t, 4.0, 4.8));
+    api.set(el.fim, { o: suave(prog(t, 4.0, 4.35)) * (1 - sai), y: 3 * (1 - ke), blur: 0.6 * (1 - ke), s: 1 + 0.008 * (t - 4.8) });
   },
 });
 }

@@ -65,8 +65,8 @@ Motion.cena('tv', {
     Pecas.surgir(api, el.$('.t-tv'), t, 0.65, { dy: 5, s0: 0.93, mola: true });
     Pecas.surgir(api, el.$('.t-pe'), t, 0.65, { dy: 5, s0: 0.93, mola: true });
     // anúncios: acendem com a TV e despencam um a um, em accelerando
-    const TF = [1.4, 1.62, 1.82, 2.0, 2.16, 2.3];
-    api.set(el.ads, { o: suave(prog(t, 0.75, 0.95)) * (t < 3 ? 1 : 0) });
+    const TF = [2.0, 2.2, 2.38, 2.54, 2.68, 2.8];
+    api.set(el.ads, { o: suave(prog(t, 0.75, 0.95)) * (t < 3.4 ? 1 : 0) });
     el.adsL.forEach((a, i) => {
       const tau = Math.max(0, t - TF[i]);
       const lado = (i % 3) - 1;
@@ -74,16 +74,16 @@ Motion.cena('tv', {
     });
     Pecas.contar(api, el.n, t, TF, [6, 5, 4, 3, 2, 1, 0], { pulso: el.val });
     // os seus apps e a casa
-    Pecas.surgir(api, el.casa, t, 2.45, { dy: 2 });
-    api.set(el.dir, { o: suave(prog(t, 2.5, 2.7)) });
+    Pecas.surgir(api, el.casa, t, 3.0, { dy: 2 });
+    api.set(el.dir, { o: suave(prog(t, 3.0, 3.2)) });
     el.apps.forEach((ap, i) => {
-      const ti = 2.6 + i * 0.07;
+      const ti = 3.1 + i * 0.07;
       const k = spring(t - ti, { freq: 1.7, damp: 7 });
       api.set(ap, { o: suave(prog(t, ti, ti + 0.12)), s: lerp(0.6, 1, k), y: 1.5 * (1 - Math.min(1, k)) });
     });
-    api.set(el.$('.t-cont-assist'), { o: suave(prog(t, 2.95, 3.15)), y: 1.2 * (1 - ease.forte(prog(t, 2.95, 3.5))) });
-    api.set(el.barra, { sx: Math.max(0.0001, ease.forte(prog(t, 3.1, 3.9))), origem: '0 50%' });
-    const TC = [3.2, 3.5, 3.8];
+    api.set(el.$('.t-cont-assist'), { o: suave(prog(t, 3.4, 3.6)), y: 1.2 * (1 - ease.forte(prog(t, 3.4, 3.9))) });
+    api.set(el.barra, { sx: Math.max(0.0001, ease.forte(prog(t, 3.5, 4.3))), origem: '0 50%' });
+    const TC = [4.2, 4.4, 4.6];
     el.chaves.forEach((c, i) => {
       api.set(c, { vars: { '--on': ease.forte(prog(t, TC[i], TC[i] + 0.25)).toFixed(3) } });
     });

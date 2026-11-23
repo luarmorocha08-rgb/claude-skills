@@ -145,13 +145,13 @@
           "id": "meio",
           "rotulo": "Passo 2",
           "legenda": "Linhas empilhadas, latência em 189 ms vermelha",
-          "t": 3.8
+          "t": 4.2
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "Carimbo batido, latência em 12 ms",
-          "t": 6,
+          "t": 7.9,
           "aprovado": true
         }
       ],
@@ -172,12 +172,12 @@
           "texto": "O terminal de vidro sobe; o pedido se digita na primeira linha."
         },
         {
-          "t": 2.3,
+          "t": 2.75,
           "tipo": "objeto",
           "texto": "Quatro linhas de resultado caem uma por batida, cada uma com um estalo; a latência conta de 40 até 189 ms e fica vermelha."
         },
         {
-          "t": 4.5,
+          "t": 7.1,
           "tipo": "objeto",
           "texto": "O carimbo \"troque pra 5 GHz\" bate girado, com tremor curto; a latência despenca para 12 ms e fica verde; a última linha confirma."
         },
@@ -196,7 +196,7 @@
       "tipo": "montagem",
       "papel": "passo 2",
       "titulo": "2 · Exame em 3D",
-      "dur": 6.8,
+      "dur": 6.3,
       "ideia": "As fatias da tomografia caem uma sobre a outra e empilham um volume 3D que começa a girar, enquanto uma linha de varredura dourada sobe por ele.",
       "camera": "Push-in de 1 %; o volume gira devagar e nunca para.",
       "quadros": [
@@ -204,19 +204,19 @@
           "id": "inicio",
           "rotulo": "Início",
           "legenda": "Título; as primeiras fatias caindo",
-          "t": 1.2
+          "t": 1.4
         },
         {
           "id": "meio",
           "rotulo": "Passo 2",
           "legenda": "Metade das fatias empilhadas, a varredura subindo",
-          "t": 2
+          "t": 2.4
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "O volume inteiro girando, contador em 240 fatias",
-          "t": 4.6,
+          "t": 5,
           "aprovado": true
         }
       ],
@@ -237,17 +237,17 @@
           "texto": "As fatias caem de cima, uma a cada 45 ms, e empilham o volume de baixo para cima; o contador conta até 240."
         },
         {
-          "t": 1.4,
+          "t": 4.2,
           "tipo": "luz",
           "texto": "Uma lâmina de luz dourada sobe pelo volume e acende cada fatia quando passa."
         },
         {
-          "t": 3,
+          "t": 4.9,
           "tipo": "objeto",
           "texto": "O volume termina e começa a girar sobre o eixo; a nota \"só pra ver · quem interpreta é o médico\" entra embaixo."
         },
         {
-          "t": 6.54,
+          "t": 6.04,
           "tipo": "transicao",
           "texto": "Saída do conteúdo em 260 ms; corte."
         }
@@ -261,7 +261,7 @@
       "tipo": "montagem",
       "papel": "passo 3",
       "titulo": "3 · Tela da TV",
-      "dur": 6.5,
+      "dur": 5.6,
       "ideia": "A TV liga cheia de anúncio; os anúncios despencam um a um para fora da tela, o contador desce 6 → 0, e no lugar caem os seus apps e os botões da casa, que acendem.",
       "camera": "Push-in de 1 %.",
       "quadros": [
@@ -275,13 +275,13 @@
           "id": "meio",
           "rotulo": "Passo 2",
           "legenda": "Os anúncios caindo, contador em 2",
-          "t": 1.95
+          "t": 2.5
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "Tela limpa: apps e casa inteligente",
-          "t": 4.6,
+          "t": 4.9,
           "aprovado": true
         }
       ],
@@ -302,17 +302,17 @@
           "texto": "A TV de vidro acende com 6 blocos de anúncio."
         },
         {
-          "t": 1.4,
+          "t": 2,
           "tipo": "objeto",
           "texto": "Os anúncios despencam um a um com gravidade (accelerando de 200 → 120 ms); o contador desce até 0."
         },
         {
-          "t": 2.45,
+          "t": 3,
           "tipo": "objeto",
           "texto": "Entram os apps (mola curta, um a cada 70 ms) e os botões da sala, cozinha e quarto acendem um por batida."
         },
         {
-          "t": 6.24,
+          "t": 5.34,
           "tipo": "transicao",
           "texto": "Saída do conteúdo em 260 ms; corte."
         }
@@ -326,7 +326,7 @@
       "tipo": "montagem",
       "papel": "passo 4",
       "titulo": "4 · Buraco na rua",
-      "dur": 5.4,
+      "dur": 6.8,
       "ideia": "Três fotos do buraco chegam como polaroides e são sugadas para o chão; a rua se ergue em 3D, as faixas correm em direção à câmera e o buraco acende como zona de risco.",
       "camera": "Push-in de 1 %; a rua desliza em direção à câmera sem parar.",
       "quadros": [
@@ -334,19 +334,19 @@
           "id": "inicio",
           "rotulo": "Início",
           "legenda": "As três fotos chegando",
-          "t": 1
+          "t": 2.4
         },
         {
           "id": "meio",
           "rotulo": "Passo 2",
           "legenda": "A rua 3D se erguendo",
-          "t": 1.7
+          "t": 3.6
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "A cena 3D com a zona de risco acesa",
-          "t": 3.9,
+          "t": 5.6,
           "aprovado": true
         }
       ],
@@ -362,22 +362,22 @@
           "texto": "O título sai do desfoque; \"cena 3D\" em itálico dourado."
         },
         {
-          "t": 0.5,
+          "t": 1.6,
           "tipo": "objeto",
           "texto": "Três polaroides caem girando, uma por meia batida, com mola curta; o contador de fotos sobe até 3."
         },
         {
-          "t": 1.15,
+          "t": 3,
           "tipo": "objeto",
           "texto": "As fotos encolhem para o canto e a rua se ergue de chapada para 3D em 700 ms; as faixas começam a correr."
         },
         {
-          "t": 2.2,
+          "t": 4.2,
           "tipo": "luz",
           "texto": "O buraco acende em vermelho por baixo, sem borda; a etiqueta \"zona de risco\" desce presa a um fio."
         },
         {
-          "t": 5.14,
+          "t": 6.54,
           "tipo": "transicao",
           "texto": "Saída do conteúdo em 260 ms; corte."
         }
@@ -470,13 +470,13 @@
           "id": "meio",
           "rotulo": "Passo 2",
           "legenda": "\"Wi‑Fi\" digitado na caixa",
-          "t": 1.6
+          "t": 2.6
         },
         {
           "id": "fim",
           "rotulo": "Fim",
           "legenda": "O guia chegou na DM",
-          "t": 2.9,
+          "t": 3.4,
           "aprovado": true
         }
       ],
@@ -492,17 +492,17 @@
           "texto": "\"Quer os 5 prompts prontos?\" sai do desfoque; \"prompts\" em itálico dourado."
         },
         {
-          "t": 0.6,
+          "t": 2,
           "tipo": "objeto",
           "texto": "A caixa de comentário sobe com mola e a palavra Wi‑Fi se digita, letra a letra."
         },
         {
-          "t": 1.75,
+          "t": 2.7,
           "tipo": "objeto",
           "texto": "Enviar: a seta pulsa, a mensagem com o guia chega com mola e o selo \"1\" pula."
         },
         {
-          "t": 3.5,
+          "t": 3.75,
           "tipo": "transicao",
           "texto": "Fecho: o conteúdo escurece em 800 ms; no centro acendem o ícone do Instagram e @ramosraul.ia, e seguram até o fim."
         }
@@ -529,6 +529,15 @@
       ],
       "fps": 60,
       "nota": "Primeira versão"
+    },
+    {
+      "v": 2,
+      "data": "2026-11-23",
+      "formatos": [
+        "9x16"
+      ],
+      "fps": 60,
+      "nota": "cortes e momentos sincronizados com a narração transcrita"
     }
   ],
   "criadoEm": "2026-11-23",
