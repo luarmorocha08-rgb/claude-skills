@@ -1,0 +1,31 @@
+{
+ "metricas": {
+  "energia": {
+   "media": 0.39,
+   "mediana": 0.28,
+   "quaseParados": 24
+  },
+  "paradoAosOlhos": 1.8,
+  "cortesPorSegundo": 0.14,
+  "duracao": 43.5
+ },
+ "notas": [
+  {
+   "gravidade": "media",
+   "tipo": "parado-aos-olhos",
+   "cena": "convite",
+   "t": 41.4,
+   "tLocal": 4.1,
+   "frase": "de 41,4 a 43,2 s o quadro quase não muda (menos de 2/255 em 1 s): a câmera viva sozinha não se sente; ponha um gesto visível a cada batida (deriva de camada, paralaxe, luz que passa, um objeto que respira)",
+   "ate": 43.2
+  },
+  {
+   "gravidade": "media",
+   "tipo": "energia",
+   "cena": null,
+   "t": null,
+   "tLocal": null,
+   "frase": "energia de movimento baixa para uma primeira versão (mediana 0,28 por quadro; um motion vivo fica acima de 1): mais eventos na batida, montagem, câmera que mergulha"
+  }
+ ]
+}

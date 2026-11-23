@@ -63,6 +63,45 @@ Motion.cena('diagrama', {
     api.tipo.semViuva(el.$('.frase'));
     el.palavras = api.tipo.dividir(el.$('.frase'), { por: 'palavra' });
     el.conteudo = el.$('.conteudo');
+    // ordem do traço: base, régua, trilho, coluna, braço, bloco, haste, relógio
+    const svg = el.$('.d-svg');
+    el.grupos = [...svg.children].map((g) => ({ g, linhas: g.matches('path') ? [g] : [...g.querySelectorAll('polygon, path, circle.mostrador')] }));
+    el.grupos.forEach(({ linhas }) => linhas.forEach((l) => l.setAttribute('pathLength', '1')));
+    el.carro = el.$('.carro');
+    el.ponteiro = el.$('.ponteiro');
+    el.n = el.$('.n');
+    el.val = el.$('.d-cont .cont-val');
+  },
+  quadro(t, el, api) {
+    const { prog, ease, suave } = api;
+    Moldura.quadro(t, el, api);
+    Pecas.conteudo(t, el, api);
+    Pecas.surgir(api, el.$('.d-cont'), t, 0.4, { dy: 2 });
+    Pecas.surgir(api, el.$('.d-chip'), t, 0.5, { dy: 2 });
+    Pecas.surgir(api, el.$('.d-painel'), t, 0.6, { dy: 5, s0: 0.96 });
+    // cada peça se traça em linha dourada e depois ganha o preenchimento
+    const T0 = 0.85, PASSO = 0.24;
+    el.grupos.forEach(({ g, linhas }, i) => {
+      const ti = T0 + i * PASSO;
+      const k = ease.inOutSine(prog(t, ti, ti + 0.42));
+      const fill = suave(prog(t, ti + 0.3, ti + 0.55));
+      linhas.forEach((l) => {
+        l.style.strokeDasharray = '1';
+        l.style.strokeDashoffset = (1 - k).toFixed(4);
+        l.style.fillOpacity = fill.toFixed(3);
+      });
+      g.style.opacity = t >= ti ? '1' : '0';
+      g.querySelectorAll('.marca, .ponteiro, .eixo').forEach((m) => (m.style.opacity = fill.toFixed(3)));
+    });
+    const TT = [1, 2, 4, 5, 7].map((i) => T0 + i * PASSO + 0.3);
+    Pecas.contar(api, el.n, t, TT, [0, 1, 2, 3, 4, 5], { pulso: el.val });
+    // o mecanismo funciona: o bloco desliza e o ponteiro acompanha com atraso de mola
+    const env = suave(prog(t, 2.9, 3.4));
+    const u = (tt) => 1.5 * Math.sin((2 * Math.PI * (tt - api.ref)) / 2.4);
+    const C = 0.866, S = 0.5, U = 50;
+    const uu = u(t) * env;
+    el.carro.setAttribute('transform', `translate(${(uu * C * U).toFixed(2)},${(uu * S * U).toFixed(2)})`);
+    el.ponteiro.setAttribute('transform', `rotate(${(-48 * u(t - 0.09) * env).toFixed(2)})`);
   },
 });
 }

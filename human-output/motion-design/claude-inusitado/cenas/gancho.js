@@ -36,6 +36,21 @@ Motion.cena('gancho', {
     el.n = el.$('.n');
     el.cont = el.$('.g-cont');
     el.prompt = api.tipo.dividir(el.$('.g-prompt'), { por: 'palavra' });
+    el.val = el.$('.g-cont .cont-val');
+  },
+  quadro(t, el, api) {
+    const { prog, suave } = api;
+    Moldura.quadro(t, el, api, { intro: true });
+    Pecas.conteudo(t, el, api, { ini: 0.2 });
+    Pecas.surgir(api, el.cont, t, 0.55, { dy: 2 });
+    Pecas.surgir(api, el.card, t, 0.75, { dy: 7, s0: 0.94, mola: true });
+    api.tipo.focar(t, el.prompt, { inicio: 1.0 });
+    const T = [1.5, 1.9, 2.3, 2.7, 3.1];
+    el.chips.forEach((c, i) => {
+      const on = suave(prog(t, T[i], T[i] + 0.18));
+      api.set(c, { vars: { '--on': on.toFixed(3) }, s: 1 + 0.045 * api.pulsoSemQuique(t - T[i], 0.09) });
+    });
+    Pecas.contar(api, el.n, t, T, [0, 1, 2, 3, 4, 5], { pulso: el.val });
   },
 });
 }

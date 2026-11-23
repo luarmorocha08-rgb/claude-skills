@@ -1,0 +1,846 @@
+{
+ "titulo": "Jeitos inusitados de usar o Claude",
+ "fps": 60,
+ "bpm": 120,
+ "total": 43.5,
+ "inicio": 0,
+ "cenas": [
+  {
+   "id": "gancho",
+   "titulo": "O gancho",
+   "inicio": 0,
+   "fim": 4.2
+  },
+  {
+   "id": "wifi",
+   "titulo": "1 · Wi‑Fi lento",
+   "inicio": 4.2,
+   "fim": 12.7
+  },
+  {
+   "id": "exame",
+   "titulo": "2 · Exame em 3D",
+   "inicio": 12.7,
+   "fim": 19.5
+  },
+  {
+   "id": "tv",
+   "titulo": "3 · Tela da TV",
+   "inicio": 19.5,
+   "fim": 26
+  },
+  {
+   "id": "buraco",
+   "titulo": "4 · Buraco na rua",
+   "inicio": 26,
+   "fim": 31.4
+  },
+  {
+   "id": "diagrama",
+   "titulo": "5 · Diagrama que se mexe",
+   "inicio": 31.4,
+   "fim": 37.3
+  },
+  {
+   "id": "convite",
+   "titulo": "O convite",
+   "inicio": 37.3,
+   "fim": 43.5
+  }
+ ],
+ "cortes": [
+  4.2,
+  12.7,
+  19.5,
+  26,
+  31.4,
+  37.3
+ ],
+ "transicoes": [
+  {
+   "de": "gancho",
+   "para": "wifi",
+   "tipo": "corte",
+   "inicio": 4.2,
+   "fim": 4.2,
+   "corte": 4.2
+  },
+  {
+   "de": "wifi",
+   "para": "exame",
+   "tipo": "corte",
+   "inicio": 12.7,
+   "fim": 12.7,
+   "corte": 12.7
+  },
+  {
+   "de": "exame",
+   "para": "tv",
+   "tipo": "corte",
+   "inicio": 19.5,
+   "fim": 19.5,
+   "corte": 19.5
+  },
+  {
+   "de": "tv",
+   "para": "buraco",
+   "tipo": "corte",
+   "inicio": 26,
+   "fim": 26,
+   "corte": 26
+  },
+  {
+   "de": "buraco",
+   "para": "diagrama",
+   "tipo": "corte",
+   "inicio": 31.4,
+   "fim": 31.4,
+   "corte": 31.4
+  },
+  {
+   "de": "diagrama",
+   "para": "convite",
+   "tipo": "corte",
+   "inicio": 37.3,
+   "fim": 37.3,
+   "corte": 37.3
+  },
+  {
+   "de": "convite",
+   "para": null,
+   "tipo": "esmaecer",
+   "inicio": 43.1,
+   "fim": 43.5,
+   "corte": null
+  }
+ ],
+ "batidas": [
+  {
+   "cena": "gancho",
+   "tipo": "tipo",
+   "t": 0.05,
+   "texto": "A moldura nasce de cima para baixo: selo, @, pílula, régua, trilha, cada peça 70 ms depois da outra, do desfoque para o foco."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "tipo",
+   "t": 0.2,
+   "texto": "A frase sai do desfoque palavra a palavra, 45 ms entre elas; \"inusitado\" em itálico dourado."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "objeto",
+   "t": 0.75,
+   "texto": "O card de conversa sobe 6 % com mola curta e a pergunta se escreve nele."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "objeto",
+   "t": 1.5,
+   "texto": "Um jeito acende a cada 0,4 s (1,5 · 1,9 · 2,3 · 2,7 · 3,1): o chip ganha borda dourada e o contador pula 1 → 5 com um empurrão pequeno."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "vida",
+   "t": 3.2,
+   "texto": "Hold: a poeira sobe, a luz respira, o último chip brilha uma vez."
+  },
+  {
+   "cena": "gancho",
+   "tipo": "transicao",
+   "t": 3.94,
+   "texto": "O conteúdo desfoca e acelera para fora em 260 ms; corte seco; a moldura fica."
+  },
+  {
+   "cena": "wifi",
+   "tipo": "transicao",
+   "t": 4.3,
+   "texto": "Na trilha, o cursor de luz anda até 01 e acende; a pílula troca para \"Passo 1 · Wi‑Fi\"."
+  },
+  {
+   "cena": "wifi",
+   "tipo": "tipo",
+   "t": 4.3,
+   "texto": "O título sai do desfoque palavra a palavra; \"Wi‑Fi lento\" em itálico dourado."
+  },
+  {
+   "cena": "wifi",
+   "tipo": "objeto",
+   "t": 4.9,
+   "texto": "O terminal de vidro sobe; o pedido se digita na primeira linha."
+  },
+  {
+   "cena": "wifi",
+   "tipo": "objeto",
+   "t": 6.5,
+   "texto": "Quatro linhas de resultado caem uma por batida, cada uma com um estalo; a latência conta de 40 até 189 ms e fica vermelha."
+  },
+  {
+   "cena": "wifi",
+   "tipo": "objeto",
+   "t": 8.7,
+   "texto": "O carimbo \"troque pra 5 GHz\" bate girado, com tremor curto; a latência despenca para 12 ms e fica verde; a última linha confirma."
+  },
+  {
+   "cena": "wifi",
+   "tipo": "transicao",
+   "t": 12.44,
+   "texto": "Saída do conteúdo em 260 ms; corte."
+  },
+  {
+   "cena": "exame",
+   "tipo": "transicao",
+   "t": 12.8,
+   "texto": "O cursor anda até 02; a pílula troca; o número fantasma vira 02."
+  },
+  {
+   "cena": "exame",
+   "tipo": "tipo",
+   "t": 12.8,
+   "texto": "O título sai do desfoque; \"modelo 3D\" em itálico dourado."
+  },
+  {
+   "cena": "exame",
+   "tipo": "objeto",
+   "t": 13.45,
+   "texto": "As fatias caem de cima, uma a cada 45 ms, e empilham o volume de baixo para cima; o contador conta até 240."
+  },
+  {
+   "cena": "exame",
+   "tipo": "luz",
+   "t": 14.1,
+   "texto": "Uma lâmina de luz dourada sobe pelo volume e acende cada fatia quando passa."
+  },
+  {
+   "cena": "exame",
+   "tipo": "objeto",
+   "t": 15.7,
+   "texto": "O volume termina e começa a girar sobre o eixo; a nota \"só pra ver · quem interpreta é o médico\" entra embaixo."
+  },
+  {
+   "cena": "exame",
+   "tipo": "transicao",
+   "t": 19.24,
+   "texto": "Saída do conteúdo em 260 ms; corte."
+  },
+  {
+   "cena": "tv",
+   "tipo": "transicao",
+   "t": 19.6,
+   "texto": "O cursor anda até 03; a pílula troca."
+  },
+  {
+   "cena": "tv",
+   "tipo": "tipo",
+   "t": 19.6,
+   "texto": "O título sai do desfoque; \"sem anúncio\" em itálico dourado."
+  },
+  {
+   "cena": "tv",
+   "tipo": "objeto",
+   "t": 20.15,
+   "texto": "A TV de vidro acende com 6 blocos de anúncio."
+  },
+  {
+   "cena": "tv",
+   "tipo": "objeto",
+   "t": 20.9,
+   "texto": "Os anúncios despencam um a um com gravidade (accelerando de 200 → 120 ms); o contador desce até 0."
+  },
+  {
+   "cena": "tv",
+   "tipo": "objeto",
+   "t": 21.95,
+   "texto": "Entram os apps (mola curta, um a cada 70 ms) e os botões da sala, cozinha e quarto acendem um por batida."
+  },
+  {
+   "cena": "tv",
+   "tipo": "transicao",
+   "t": 25.74,
+   "texto": "Saída do conteúdo em 260 ms; corte."
+  },
+  {
+   "cena": "buraco",
+   "tipo": "transicao",
+   "t": 26.1,
+   "texto": "O cursor anda até 04; a pílula troca."
+  },
+  {
+   "cena": "buraco",
+   "tipo": "tipo",
+   "t": 26.1,
+   "texto": "O título sai do desfoque; \"cena 3D\" em itálico dourado."
+  },
+  {
+   "cena": "buraco",
+   "tipo": "objeto",
+   "t": 26.5,
+   "texto": "Três polaroides caem girando, uma por meia batida, com mola curta; o contador de fotos sobe até 3."
+  },
+  {
+   "cena": "buraco",
+   "tipo": "objeto",
+   "t": 27.15,
+   "texto": "As fotos encolhem para o canto e a rua se ergue de chapada para 3D em 700 ms; as faixas começam a correr."
+  },
+  {
+   "cena": "buraco",
+   "tipo": "luz",
+   "t": 28.2,
+   "texto": "O buraco acende em vermelho por baixo, sem borda; a etiqueta \"zona de risco\" desce presa a um fio."
+  },
+  {
+   "cena": "buraco",
+   "tipo": "transicao",
+   "t": 31.14,
+   "texto": "Saída do conteúdo em 260 ms; corte."
+  },
+  {
+   "cena": "diagrama",
+   "tipo": "transicao",
+   "t": 31.5,
+   "texto": "O cursor anda até 05; a pílula troca."
+  },
+  {
+   "cena": "diagrama",
+   "tipo": "tipo",
+   "t": 31.5,
+   "texto": "O título sai do desfoque; \"se mexem\" em itálico dourado."
+  },
+  {
+   "cena": "diagrama",
+   "tipo": "objeto",
+   "t": 32.25,
+   "texto": "A base, o trilho, a régua, a coluna e o relógio se traçam um a um (uma peça por meia batida); o contador conta 1 → 5."
+  },
+  {
+   "cena": "diagrama",
+   "tipo": "objeto",
+   "t": 34.3,
+   "texto": "O bloco começa a deslizar no trilho e o ponteiro do relógio acompanha, com um pequeno atraso de mola."
+  },
+  {
+   "cena": "diagrama",
+   "tipo": "vida",
+   "t": 35,
+   "texto": "Hold: o mecanismo segue funcionando em loop suave, nada para."
+  },
+  {
+   "cena": "diagrama",
+   "tipo": "transicao",
+   "t": 37.04,
+   "texto": "Saída do conteúdo em 260 ms; corte."
+  },
+  {
+   "cena": "convite",
+   "tipo": "transicao",
+   "t": 37.4,
+   "texto": "A trilha inteira fica dourada, do 05 até a ponta; a pílula vira \"Bônus · Prompts\"."
+  },
+  {
+   "cena": "convite",
+   "tipo": "tipo",
+   "t": 37.4,
+   "texto": "\"Quer os 5 prompts prontos?\" sai do desfoque; \"prompts\" em itálico dourado."
+  },
+  {
+   "cena": "convite",
+   "tipo": "objeto",
+   "t": 37.9,
+   "texto": "A caixa de comentário sobe com mola e a palavra Wi‑Fi se digita, letra a letra."
+  },
+  {
+   "cena": "convite",
+   "tipo": "objeto",
+   "t": 39.05,
+   "texto": "Enviar: a seta pulsa, a mensagem com o guia chega com mola e o selo \"1\" pula."
+  },
+  {
+   "cena": "convite",
+   "tipo": "transicao",
+   "t": 40.8,
+   "texto": "Fecho: o conteúdo escurece em 800 ms; no centro acendem o ícone do Instagram e @ramosraul.ia, e seguram até o fim."
+  }
+ ],
+ "linhas": {
+  "9x16": {
+   "fps": 60,
+   "bpm": 120,
+   "total": 43.5,
+   "formato": "9x16",
+   "montagem": "principal",
+   "titulo": "Jeitos inusitados de usar o Claude",
+   "cenas": [
+    {
+     "id": "gancho",
+     "titulo": "O gancho",
+     "indice": 0,
+     "inicio": 0,
+     "dur": 4.2,
+     "fim": 4.2,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A moldura montada, a frase entrando; o card ainda vazio",
+       "t": 0.9
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Card no lugar, 2 dos 5 jeitos acesos",
+       "t": 2
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "Os 5 jeitos acesos, contador em 5/5",
+       "t": 3.5,
+       "aprovado": true
+      }
+     ],
+     "tipo": "frase",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": null,
+     "hash": "9835515e53a1f752"
+    },
+    {
+     "id": "wifi",
+     "titulo": "1 · Wi‑Fi lento",
+     "indice": 1,
+     "inicio": 4.2,
+     "dur": 8.5,
+     "fim": 12.7,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "Título e terminal vazio; cursor anda para o passo 01",
+       "t": 1
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Linhas empilhadas, latência em 189 ms vermelha",
+       "t": 3.8
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "Carimbo batido, latência em 12 ms",
+       "t": 6,
+       "aprovado": true
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "ca73ba1c6516387e"
+    },
+    {
+     "id": "exame",
+     "titulo": "2 · Exame em 3D",
+     "indice": 2,
+     "inicio": 12.7,
+     "dur": 6.8,
+     "fim": 19.5,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "Título; as primeiras fatias caindo",
+       "t": 1.2
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Metade das fatias empilhadas, a varredura subindo",
+       "t": 2
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "O volume inteiro girando, contador em 240 fatias",
+       "t": 4.6,
+       "aprovado": true
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "b818e9eb690614c6"
+    },
+    {
+     "id": "tv",
+     "titulo": "3 · Tela da TV",
+     "indice": 3,
+     "inicio": 19.5,
+     "dur": 6.5,
+     "fim": 26,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "TV cheia de blocos de anúncio",
+       "t": 1.2
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "Os anúncios caindo, contador em 2",
+       "t": 1.95
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "Tela limpa: apps e casa inteligente",
+       "t": 4.6,
+       "aprovado": true
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "8320d9c5ca696a30"
+    },
+    {
+     "id": "buraco",
+     "titulo": "4 · Buraco na rua",
+     "indice": 4,
+     "inicio": 26,
+     "dur": 5.4,
+     "fim": 31.4,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "As três fotos chegando",
+       "t": 1
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "A rua 3D se erguendo",
+       "t": 1.7
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "A cena 3D com a zona de risco acesa",
+       "t": 3.9,
+       "aprovado": true
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "faba737be4854f65"
+    },
+    {
+     "id": "diagrama",
+     "titulo": "5 · Diagrama que se mexe",
+     "indice": 5,
+     "inicio": 31.4,
+     "dur": 5.9,
+     "fim": 37.3,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "As primeiras linhas se traçando",
+       "t": 1.3
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "O desenho completo, ainda parado",
+       "t": 2.9
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "O bloco deslizando e o ponteiro marcando",
+       "t": 4.2,
+       "aprovado": true
+      }
+     ],
+     "tipo": "montagem",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "af8f36fddad1a0d4"
+    },
+    {
+     "id": "convite",
+     "titulo": "O convite",
+     "indice": 6,
+     "inicio": 37.3,
+     "dur": 6.2,
+     "fim": 43.5,
+     "variante": null,
+     "fundoPuro": false,
+     "quadros": [
+      {
+       "id": "inicio",
+       "rotulo": "Início",
+       "legenda": "A pergunta entrando, caixa de comentário vazia",
+       "t": 1
+      },
+      {
+       "id": "meio",
+       "rotulo": "Passo 2",
+       "legenda": "\"Wi‑Fi\" digitado na caixa",
+       "t": 1.6
+      },
+      {
+       "id": "fim",
+       "rotulo": "Fim",
+       "legenda": "O guia chegou na DM",
+       "t": 2.9,
+       "aprovado": true
+      }
+     ],
+     "tipo": "frase",
+     "permitirParado": [],
+     "cortesInternos": [],
+     "saida": {
+      "tipo": "esmaecer",
+      "modo": "sobreposta",
+      "dur": 0.4
+     },
+     "entrada": {
+      "tipo": "corte",
+      "modo": "encadeada",
+      "dur": 0
+     },
+     "hash": "a95744c1ba4dcd6f"
+    }
+   ],
+   "transicoes": [
+    {
+     "de": "gancho",
+     "para": "wifi",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 4.2,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 4.2,
+     "fim": 4.2,
+     "dur": 0
+    },
+    {
+     "de": "wifi",
+     "para": "exame",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 12.7,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 12.7,
+     "fim": 12.7,
+     "dur": 0
+    },
+    {
+     "de": "exame",
+     "para": "tv",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 19.5,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 19.5,
+     "fim": 19.5,
+     "dur": 0
+    },
+    {
+     "de": "tv",
+     "para": "buraco",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 26,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 26,
+     "fim": 26,
+     "dur": 0
+    },
+    {
+     "de": "buraco",
+     "para": "diagrama",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 31.4,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 31.4,
+     "fim": 31.4,
+     "dur": 0
+    },
+    {
+     "de": "diagrama",
+     "para": "convite",
+     "tipo": "corte",
+     "modo": "encadeada",
+     "opcoes": {
+      "__dur": 0,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "corte": 37.3,
+     "antes": 0,
+     "depois": 0,
+     "inicio": 37.3,
+     "fim": 37.3,
+     "dur": 0
+    },
+    {
+     "de": "convite",
+     "para": null,
+     "tipo": "esmaecer",
+     "modo": "sobreposta",
+     "opcoes": {
+      "cor": "var(--fundo)",
+      "__dur": 0.4,
+      "__antes": 0,
+      "__depois": 0
+     },
+     "texto": null,
+     "textoEntrada": null,
+     "inicio": 43.1,
+     "fim": 43.5,
+     "corte": null,
+     "dur": 0.3999999999999986
+    }
+   ],
+   "cortes": [
+    4.2,
+    12.7,
+    19.5,
+    26,
+    31.4,
+    37.3
+   ],
+   "estilo": {
+    "curvaEntrada": [
+     0.16,
+     1,
+     0.3,
+     1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+   }
+  }
+ }
+}

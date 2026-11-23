@@ -152,11 +152,27 @@
       return `<div class="contador ${classe}"><span class="cont-rot">${rotulo}</span><span class="cont-val">${valor}</span></div>`;
     },
     /** entrada de um título serifado palavra a palavra + câmera e saída do conteúdo */
-    conteudo(t, el, api, { ini = 0 } = {}) {
+    conteudo(t, el, api, { ini = api.inicioEntrada(0.04), sair = true } = {}) {
       const { prog, ease } = api;
       api.tipo.focar(t, el.palavras, { inicio: ini });
-      const sai = ease.inExpo(prog(t, api.dur - 0.26, api.dur));
+      const sai = sair ? ease.inExpo(prog(t, api.dur - 0.26, api.dur)) : 0;
       api.set(el.conteudo, { s: (1 + 0.01 * (t - api.ref)) * (1 + 0.025 * sai), o: 1 - sai, blur: 0.9 * sai, subpixel: true });
+    },
+    /** objeto que entra: sobe de perto, do desfoque; mola só em objeto */
+    surgir(api, node, t, t0, { dy = 4, s0 = 0.96, mola = false, dur = 0.6, mais = {} } = {}) {
+      if (!node) return 0;
+      const { prog, ease, suave, lerp } = api;
+      const k = mola ? api.spring(t - t0, { freq: 1.5, damp: 7.5 }) : ease.forte(prog(t, t0, t0 + dur));
+      const kb = ease.forte(prog(t, t0, t0 + dur));
+      api.set(node, Object.assign({ o: suave(prog(t, t0, t0 + 0.22)), y: dy * (1 - k), s: lerp(s0, 1, k), blur: 0.5 * (1 - kb) }, mais, { y: dy * (1 - k) + (mais.y || 0) }));
+      return k;
+    },
+    /** contador que pula quando o valor muda (eventos em tempos fixos) */
+    contar(api, node, t, tempos, valores, { pulso = node } = {}) {
+      let v = valores[0], ultimo = -99;
+      tempos.forEach((ti, i) => { if (t >= ti) { v = valores[i + 1]; ultimo = ti; } });
+      node.textContent = String(v);
+      if (pulso) api.set(pulso, { s: 1 + 0.08 * api.pulsoSemQuique(t - ultimo, 0.08), origem: '0% 80%' });
     },
   };
 })();
