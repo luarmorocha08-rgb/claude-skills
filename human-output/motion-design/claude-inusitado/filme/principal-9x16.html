@@ -513,7 +513,7 @@ body.m-com-player {
 .mold-selo {
   width: 6.4cqw; height: 6.4cqw; border-radius: 50%; display: grid; place-items: center;
   border: 0.22cqw solid color-mix(in srgb, var(--destaque) 70%, transparent); color: var(--destaque);
-  font-size: 3.2cqw; font-family: var(--fonte-titulo);
+  font-size: 2.4cqw; font-family: var(--fonte-titulo); letter-spacing: 0.02em;
 }
 .mold-handle { font-size: 3cqw; color: var(--texto); letter-spacing: 0.02em; }
 .mold-pilula {
@@ -4112,7 +4112,7 @@ window.MOTION_CATALOGO={"corte":{"modo":"encadeada","antes":0,"depois":0,"opcoes
    cena o cursor anda até o próximo passo e o número fantasma troca. A poeira usa o tempo global,
    então continua sem pulo através dos cortes. */
 (function () {
-  const HANDLE = '@seuperfil';
+  const HANDLE = '@ramosraul.ia';
   const SERIE = '5 jeitos inusitados de usar o Claude';
   const PILULA = ['Intro', 'Passo 1 · Wi‑Fi', 'Passo 2 · Exame', 'Passo 3 · TV', 'Passo 4 · Rua', 'Passo 5 · Diagrama', 'Bônus · Prompts'];
   const PASSO = ['Intro', 'Passo 1/5', 'Passo 2/5', 'Passo 3/5', 'Passo 4/5', 'Passo 5/5', 'Bônus'];
@@ -4155,7 +4155,7 @@ window.MOTION_CATALOGO={"corte":{"modo":"encadeada","antes":0,"depois":0,"opcoes
         <div class="mold-poeira">${poeira}</div>
         ${FANTASMA[passo] ? `<div class="mold-fantasma">${FANTASMA[passo]}</div>` : ''}
         <div class="mold-topo">
-          <span class="mold-selo">✳</span><span class="mold-handle">${HANDLE}</span>
+          <span class="mold-selo">RR</span><span class="mold-handle">${HANDLE}</span>
           <span class="mold-pilula"><span class="pil pil-a">${pilA}</span><span class="pil pil-b">${pil}</span></span>
         </div>
         <div class="mold-linha2"><span>${SERIE}</span><span class="mold-passo">${PASSO[passo]}</span></div>

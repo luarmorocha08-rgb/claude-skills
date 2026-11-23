@@ -12,12 +12,13 @@
 | Carimbo no clímax, corte direto do hold para o próximo passo | Pílula de passo, régua dourada, número fantasma gigante, trilha de progresso com cursor de luz |
 
 Criação nova: os objetos de cada passo (terminal, volume de fatias, TV, rua 3D, mecanismo), a copy (vem do roteiro).
-Nada de @, logo, personagem ou texto dos criadores das referências.
+O vídeo de 74 s é da própria pessoa (@ramosraul.ia): a identidade é dela, inclusive o selo RR. Do vídeo de 48 s (de outro criador) não entra @, robô, nem texto.
 
 ## Decisões
 - 9:16, 48 s, 120 BPM, 60 qps.
 - Números das telas (189 ms, 240 fatias…) são ilustrativos de interface de exemplo.
-- Handle `@seuperfil` e palavra-chave `CLAUDE` são provisórios até a pessoa confirmar.
+- Handle: @ramosraul.ia (confirmado). Palavra-chave `CLAUDE` ainda provisória.
+- A pessoa vai narrar as falas: os tempos das cenas serão ajustados à narração antes de animar.
 
 ## Mantenha
-(vazio)
+- @ramosraul.ia em todas as telas; selo RR.

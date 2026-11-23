@@ -4,7 +4,7 @@
    cena o cursor anda até o próximo passo e o número fantasma troca. A poeira usa o tempo global,
    então continua sem pulo através dos cortes. */
 (function () {
-  const HANDLE = '@seuperfil';
+  const HANDLE = '@ramosraul.ia';
   const SERIE = '5 jeitos inusitados de usar o Claude';
   const PILULA = ['Intro', 'Passo 1 · Wi‑Fi', 'Passo 2 · Exame', 'Passo 3 · TV', 'Passo 4 · Rua', 'Passo 5 · Diagrama', 'Bônus · Prompts'];
   const PASSO = ['Intro', 'Passo 1/5', 'Passo 2/5', 'Passo 3/5', 'Passo 4/5', 'Passo 5/5', 'Bônus'];
@@ -47,7 +47,7 @@
         <div class="mold-poeira">${poeira}</div>
         ${FANTASMA[passo] ? `<div class="mold-fantasma">${FANTASMA[passo]}</div>` : ''}
         <div class="mold-topo">
-          <span class="mold-selo">✳</span><span class="mold-handle">${HANDLE}</span>
+          <span class="mold-selo">RR</span><span class="mold-handle">${HANDLE}</span>
           <span class="mold-pilula"><span class="pil pil-a">${pilA}</span><span class="pil pil-b">${pil}</span></span>
         </div>
         <div class="mold-linha2"><span>${SERIE}</span><span class="mold-passo">${PASSO[passo]}</span></div>

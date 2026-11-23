@@ -24,7 +24,7 @@
 .mold-selo {
   width: 6.4cqw; height: 6.4cqw; border-radius: 50%; display: grid; place-items: center;
   border: 0.22cqw solid color-mix(in srgb, var(--destaque) 70%, transparent); color: var(--destaque);
-  font-size: 3.2cqw; font-family: var(--fonte-titulo);
+  font-size: 2.4cqw; font-family: var(--fonte-titulo); letter-spacing: 0.02em;
 }
 .mold-handle { font-size: 3cqw; color: var(--texto); letter-spacing: 0.02em; }
 .mold-pilula {
