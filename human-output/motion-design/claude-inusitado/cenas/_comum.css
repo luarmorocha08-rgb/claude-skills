@@ -1,0 +1,82 @@
+/* _comum.css — a moldura (identidade do vídeo longo) e as peças repetidas. */
+.m-conteudo { background: var(--fundo); }
+.mold, .mold * { box-sizing: border-box; }
+.mold { position: absolute; inset: 0; pointer-events: none; font-family: var(--fonte-mono); color: var(--texto-suave); }
+.mold-luz {
+  position: absolute; left: -30cqw; right: -30cqw; top: 20cqh; height: 90cqh;
+  background:
+    radial-gradient(ellipse 50% 34% at 50% 58%, color-mix(in srgb, var(--luz-1) 34%, transparent) 0%, color-mix(in srgb, var(--luz-2) 40%, transparent) 45%, transparent 75%),
+    radial-gradient(ellipse 60% 40% at 30% 20%, color-mix(in srgb, var(--luz-3) 45%, transparent) 0%, transparent 70%);
+}
+.mold-poeira i {
+  position: absolute; left: 0; top: 0; width: 0.55cqw; height: 0.55cqw; border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, var(--destaque-2) 0%, color-mix(in srgb, var(--destaque) 40%, transparent) 45%, transparent 72%);
+}
+.mold-fantasma {
+  position: absolute; right: -6cqw; top: 10cqh; font-family: var(--fonte-titulo); font-style: italic; font-weight: 400;
+  font-size: 62cqw; line-height: 0.8; letter-spacing: -0.04em;
+  color: transparent; -webkit-text-stroke: 0.22cqw color-mix(in srgb, var(--destaque) 16%, transparent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--destaque) 9%, transparent), transparent 85%);
+  -webkit-background-clip: text; background-clip: text;
+}
+.mold-topo { position: absolute; left: 6cqw; right: 6cqw; top: 5.2cqh; height: 7cqw; display: flex; align-items: center; gap: 2.2cqw; }
+.mold-selo {
+  width: 6.4cqw; height: 6.4cqw; border-radius: 50%; display: grid; place-items: center;
+  border: 0.22cqw solid color-mix(in srgb, var(--destaque) 70%, transparent); color: var(--destaque);
+  font-size: 3.2cqw; font-family: var(--fonte-titulo);
+}
+.mold-handle { font-size: 3cqw; color: var(--texto); letter-spacing: 0.02em; }
+.mold-pilula {
+  margin-left: auto; display: inline-grid; align-items: center; height: 6.2cqw; padding: 0 3.2cqw; border-radius: 99cqw;
+  border: 0.22cqw solid color-mix(in srgb, var(--destaque) 75%, transparent);
+  color: var(--destaque); font-size: 2.2cqw; letter-spacing: 0.32em; text-transform: uppercase; white-space: nowrap;
+}
+.mold-pilula .pil { grid-area: 1 / 1; justify-self: center; }
+.mold-linha2 {
+  position: absolute; left: 6cqw; right: 6cqw; top: 10.6cqh; display: flex; justify-content: space-between;
+  font-size: 2.05cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave);
+}
+.mold-passo { color: var(--texto); }
+.mold-regua { position: absolute; left: 6cqw; right: 6cqw; top: 12.6cqh; height: 0.18cqw; background: var(--linha); }
+.mold-regua-ouro { position: absolute; inset: 0; background: linear-gradient(90deg, var(--destaque), color-mix(in srgb, var(--destaque) 30%, transparent)); transform-origin: 0 50%; }
+.mold-trilha { position: absolute; left: 0; right: 0; top: 80cqh; height: 6cqh; }
+.mold-trilho, .mold-trilho-ouro { position: absolute; left: 10cqw; width: 80cqw; top: 0; height: 0.3cqw; transform: translateY(-50%); background: var(--linha); }
+.mold-trilho-ouro { background: linear-gradient(90deg, color-mix(in srgb, var(--destaque) 55%, transparent), var(--destaque)); transform-origin: 0 50%; }
+.mold-dot {
+  --aceso: 0; position: absolute; top: 0; width: 1.5cqw; height: 1.5cqw; border-radius: 50%; transform: translate(-50%, -50%);
+  background: color-mix(in srgb, var(--destaque) calc(var(--aceso) * 100%), var(--texto-apagado));
+}
+.mold-rot {
+  --atual: 0; --feito: 0; position: absolute; top: 2.6cqh; transform: translateX(-50%); white-space: nowrap;
+  font-size: 2.1cqw; letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--texto) calc(var(--atual) * 100%), color-mix(in srgb, var(--destaque) calc(var(--feito) * 80%), var(--texto-apagado)));
+}
+.mold-rot b { font-weight: 400; color: inherit; opacity: 0.8; }
+.mold-cursor {
+  --cbrilho: 0.6; position: absolute; left: 0; top: 0; width: 4.2cqw; height: 4.2cqw; border-radius: 50%; transform: translate(-50%, -50%);
+  background: radial-gradient(circle, var(--brilho) 0%, var(--brilho) 34%, color-mix(in srgb, var(--destaque-2) 60%, transparent) 46%, transparent 72%);
+  filter: drop-shadow(0 0 calc(var(--cbrilho) * 3cqw) color-mix(in srgb, var(--destaque) 80%, transparent));
+}
+.mold-rodape { position: absolute; left: 0; right: 0; text-align: center; top: 87cqh; font-size: 1.9cqw; letter-spacing: 0.12em; color: var(--texto-suave); }
+
+/* conteúdo: camada que recebe a câmera */
+.conteudo { position: absolute; inset: 0; transform-origin: 50% 50%; }
+.titulo-serif {
+  position: absolute; left: 6cqw; right: 6cqw; top: 15.2cqh; margin: 0;
+  font-family: var(--fonte-titulo); font-weight: 400; font-size: 9.6cqw; line-height: 1.03; letter-spacing: -0.02em; color: var(--texto);
+}
+.titulo-serif em, .titulo-serif .destaque { font-style: italic; color: var(--destaque); }
+.vidro {
+  position: absolute; border-radius: var(--raio);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--vidro-2) 92%, transparent), color-mix(in srgb, var(--vidro) 94%, transparent));
+  box-shadow: inset 0 0 0 0.2cqw var(--vidro-borda), 0 3cqw 8cqw color-mix(in srgb, #000 55%, transparent);
+}
+.contador {
+  position: absolute; display: flex; flex-direction: column; gap: 0.6cqw; padding: 2cqw 3.2cqw; min-width: 27cqw; border-radius: 1.8cqw;
+  background: color-mix(in srgb, var(--vidro) 92%, transparent); box-shadow: inset 0 0 0 0.2cqw var(--vidro-borda);
+}
+.cont-rot { font-family: var(--fonte-mono); font-size: 1.9cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave); }
+.cont-val { font-family: var(--fonte-titulo); font-style: italic; font-size: 8.5cqw; line-height: 0.95; color: var(--destaque); font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--fonte-mono); }
+.mold-pilula .pil-a { opacity: 0; }

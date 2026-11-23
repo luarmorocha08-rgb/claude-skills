@@ -1,0 +1,18 @@
+.cena-exame .x-cont { left: 6cqw; top: 29cqh; }
+.cena-exame .x-arq { right: 6cqw; top: 29.6cqh; padding: 2.4cqw 3.4cqw; display: flex; flex-direction: column; gap: 0.8cqw; }
+.cena-exame .x-arq-rot { font-size: 1.9cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave); }
+.cena-exame .x-arq-nome { font-family: var(--fonte-texto); font-size: 3.6cqw; color: var(--texto); }
+.cena-exame .x-palco { position: absolute; left: 50%; top: 56cqh; width: 0; height: 0; perspective: 140cqw; }
+.cena-exame .x-giro { position: absolute; left: 0; top: 24cqw; transform-style: preserve-3d; transform: rotateX(-12deg) rotateY(-28deg); }
+.cena-exame .x-fatia {
+  position: absolute; left: 0; top: 0; border-radius: 50% 50% 46% 46% / 58% 58% 42% 42%;
+  background:
+    radial-gradient(ellipse at 50% 50%, color-mix(in srgb, var(--fundo) 70%, transparent) 0%, color-mix(in srgb, var(--fundo) 40%, transparent) 54%, color-mix(in srgb, var(--destaque-2) 85%, transparent) 70%, color-mix(in srgb, var(--destaque) 40%, transparent) 78%, transparent 82%);
+  box-shadow: 0 0 3cqw color-mix(in srgb, var(--destaque) 18%, transparent);
+}
+.cena-exame .x-scan {
+  position: absolute; left: 0; top: 0; width: 62cqw; height: 70cqw; border-radius: 50%;
+  background: radial-gradient(ellipse, color-mix(in srgb, var(--brilho) 30%, transparent) 0%, color-mix(in srgb, var(--destaque) 18%, transparent) 40%, transparent 70%);
+  opacity: 0;
+}
+.cena-exame .x-nota { position: absolute; left: 0; right: 0; top: 75.4cqh; text-align: center; font-size: 2.2cqw; letter-spacing: 0.16em; color: var(--texto-suave); }

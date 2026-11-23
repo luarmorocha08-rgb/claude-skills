@@ -1,0 +1,20 @@
+.cena-gancho .g-cont { left: 6cqw; top: 33.5cqh; }
+.cena-gancho .g-card { left: 6cqw; right: 6cqw; top: 42.5cqh; padding: 4.4cqw 4.8cqw 5cqw; }
+.cena-gancho .g-topo { display: flex; align-items: center; gap: 2cqw; }
+.cena-gancho .g-selo { color: var(--destaque); font-family: var(--fonte-titulo); font-size: 5cqw; line-height: 1; }
+.cena-gancho .g-nome { font-family: var(--fonte-titulo); font-style: italic; font-size: 5.2cqw; color: var(--texto); }
+.cena-gancho .g-mono { margin-left: auto; font-size: 2cqw; letter-spacing: 0.28em; text-transform: uppercase; color: var(--texto-suave); }
+.cena-gancho .g-prompt { margin: 3.6cqw 0 4cqw; font-family: var(--fonte-texto); font-size: 4.2cqw; line-height: 1.25; color: var(--texto); }
+.cena-gancho .g-prompt i { font-family: var(--fonte-titulo); color: var(--destaque); font-size: 1.1em; }
+.cena-gancho .g-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2cqw; }
+/* --on: 0 apagado → 1 aceso (o quadro final é tudo aceso) */
+.cena-gancho .g-chip {
+  --on: 1;
+  display: flex; align-items: center; gap: 2cqw; padding: 2.6cqw 3cqw; border-radius: 1.6cqw;
+  font-family: var(--fonte-texto); font-size: 3.4cqw;
+  color: color-mix(in srgb, var(--texto) calc(var(--on) * 100%), var(--texto-apagado));
+  background: color-mix(in srgb, color-mix(in srgb, var(--destaque) 9%, var(--vidro)) calc(var(--on) * 100%), color-mix(in srgb, var(--fundo) 60%, transparent));
+  box-shadow: inset 0 0 0 0.22cqw color-mix(in srgb, color-mix(in srgb, var(--destaque) 55%, transparent) calc(var(--on) * 100%), var(--linha));
+}
+.cena-gancho .g-chip:last-child { grid-column: 1 / -1; }
+.cena-gancho .g-chip b { font-family: var(--fonte-mono); font-weight: 400; font-size: 2.2cqw; color: color-mix(in srgb, var(--destaque) calc(var(--on) * 100%), var(--texto-apagado)); }

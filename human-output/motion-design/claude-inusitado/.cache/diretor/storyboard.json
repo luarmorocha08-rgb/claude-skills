@@ -1,0 +1,16 @@
+[
+ {
+  "gravidade": "alta",
+  "tipo": "contraste",
+  "cena": "buraco",
+  "formato": "9x16",
+  "frase": "\"buraco\" no 9:16: \"04\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
+ },
+ {
+  "gravidade": "alta",
+  "tipo": "contraste",
+  "cena": "diagrama",
+  "formato": "9x16",
+  "frase": "\"diagrama\" no 9:16: \"05\" tem pouco contraste com o que está por baixo (razão 1,1, a pior parte 1,1; texto de cartela pede 3 ou mais): mude a frase para o espaço vazio, escureça o véu daquele lado ou mude o enquadramento da foto"
+ }
+]

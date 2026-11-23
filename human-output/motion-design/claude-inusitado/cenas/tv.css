@@ -1,0 +1,42 @@
+.cena-tv .t-cont { left: 6cqw; top: 29cqh; }
+.cena-tv .t-clima { right: 6cqw; top: 29.6cqh; padding: 2.4cqw 3.6cqw; display: flex; flex-direction: column; gap: 0.6cqw; align-items: flex-end; }
+.cena-tv .t-clima-rot { font-size: 1.9cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave); }
+.cena-tv .t-clima-val { font-family: var(--fonte-titulo); font-size: 6.4cqw; line-height: 1; color: var(--texto); }
+.cena-tv .t-tv {
+  position: absolute; left: 4cqw; right: 4cqw; top: 41cqh; aspect-ratio: 16 / 9; border-radius: 2cqw; padding: 1.4cqw;
+  background: linear-gradient(180deg, #0a0a12, #05050a);
+  box-shadow: inset 0 0 0 0.25cqw color-mix(in srgb, var(--texto) 10%, transparent), 0 4cqw 10cqw color-mix(in srgb, #000 70%, transparent), 0 0 14cqw color-mix(in srgb, var(--luz-1) 16%, transparent);
+}
+.cena-tv .t-pe { position: absolute; left: 36cqw; right: 36cqw; top: calc(41cqh + 52.3cqw); height: 1.2cqw; border-radius: 1cqw; background: color-mix(in srgb, var(--texto) 14%, transparent); }
+.cena-tv .t-tela {
+  position: relative; width: 100%; height: 100%; border-radius: 1.2cqw; overflow: hidden; padding: 3cqw;
+  display: grid; grid-template-columns: 30% 1fr; gap: 3cqw;
+  background: radial-gradient(ellipse 80% 90% at 70% 10%, color-mix(in srgb, var(--luz-3) 70%, transparent), transparent 70%), linear-gradient(160deg, #15172a, #0b0b16);
+}
+.cena-tv .t-rot { display: block; font-size: 1.6cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave); margin-bottom: 1.8cqw; }
+.cena-tv .t-casa { display: flex; flex-direction: column; gap: 1.6cqw; padding: 2.2cqw; border-radius: 1.4cqw; background: color-mix(in srgb, #000 30%, transparent); }
+.cena-tv .t-luz { display: flex; align-items: center; justify-content: space-between; font-family: var(--fonte-texto); font-size: 2.5cqw; color: var(--texto); }
+.cena-tv .t-chave { --on: 1; position: relative; width: 6cqw; height: 3.3cqw; border-radius: 3cqw; background: color-mix(in srgb, var(--destaque) calc(var(--on) * 100%), var(--texto-apagado)); }
+.cena-tv .t-chave b { position: absolute; top: 0.4cqw; left: calc(0.4cqw + var(--on) * 2.7cqw); width: 2.5cqw; height: 2.5cqw; border-radius: 50%; background: var(--texto); }
+.cena-tv .t-apps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6cqw; }
+.cena-tv .t-app {
+  aspect-ratio: 1; border-radius: 1.4cqw; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6cqw;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--destaque) 26%, var(--vidro-2)), var(--vidro));
+  box-shadow: inset 0 0 0 0.18cqw var(--vidro-borda);
+}
+.cena-tv .t-app:nth-child(2) { background: linear-gradient(160deg, color-mix(in srgb, var(--luz-3) 90%, #6a5cff), var(--vidro)); }
+.cena-tv .t-app:nth-child(3) { background: linear-gradient(160deg, color-mix(in srgb, var(--alerta) 40%, var(--vidro-2)), var(--vidro)); }
+.cena-tv .t-app:nth-child(4) { background: linear-gradient(160deg, color-mix(in srgb, var(--ok) 30%, var(--vidro-2)), var(--vidro)); }
+.cena-tv .t-gl { font-size: 4cqw; color: var(--texto); line-height: 1; }
+.cena-tv .t-nome { font-family: var(--fonte-texto); font-size: 1.7cqw; color: var(--texto-suave); }
+.cena-tv .t-cont-assist { margin-top: 2cqw; padding: 2cqw 2.4cqw; border-radius: 1.4cqw; background: color-mix(in srgb, #000 30%, transparent); }
+.cena-tv .t-ca-t { font-family: var(--fonte-texto); font-size: 2.3cqw; color: var(--texto); }
+.cena-tv .t-barra { display: block; margin-top: 1.4cqw; height: 0.6cqw; border-radius: 1cqw; background: var(--linha); }
+.cena-tv .t-barra b { display: block; height: 100%; width: 62%; border-radius: inherit; background: var(--destaque); }
+.cena-tv .t-ads { position: absolute; inset: 3cqw; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: 1.6cqw; opacity: 0; }
+.cena-tv .t-ad {
+  border-radius: 1.2cqw; display: grid; place-items: center;
+  background: repeating-linear-gradient(135deg, #262033 0 1.4cqw, #1d1828 1.4cqw 2.8cqw);
+  box-shadow: inset 0 0 0 0.2cqw color-mix(in srgb, var(--alerta) 40%, transparent);
+}
+.cena-tv .t-ad span { font-family: var(--fonte-mono); font-size: 2cqw; letter-spacing: 0.28em; text-transform: uppercase; color: color-mix(in srgb, var(--alerta) 85%, var(--texto)); }

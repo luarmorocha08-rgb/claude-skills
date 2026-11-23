@@ -1,0 +1,526 @@
+{
+  "versao": 1,
+  "titulo": "Jeitos inusitados de usar o Claude",
+  "slug": "claude-inusitado",
+  "fps": 60,
+  "bpm": 120,
+  "formatoBase": "9x16",
+  "formatos": [
+    "9x16"
+  ],
+  "movimento": {
+    "curvaEntrada": [
+      0.16,
+      1,
+      0.3,
+      1
+    ],
+    "cascataLetra": 0.026,
+    "cascataPalavra": 0.045,
+    "entrada": 0.6,
+    "opacidade": 0.18,
+    "subida": 0.18,
+    "desfoque": 0.14,
+    "saida": 0.25,
+    "camera": 0.012
+  },
+  "linguagem": [
+    {
+      "titulo": "Estrutura",
+      "texto": "A do vídeo de 48 s: um palco fixo onde cada passo monta um objeto que conta a história (card que acende, terminal que empilha, contador que sobe) e corta direto para o próximo passo."
+    },
+    {
+      "titulo": "Identidade",
+      "texto": "A do vídeo de 74 s: azul-noite quase preto, luz âmbar sem borda, poeira dourada, serifa editorial com itálico dourado, rótulos em mono espaçado, cards de vidro."
+    },
+    {
+      "titulo": "Fio condutor",
+      "texto": "A linha de progresso dourada embaixo: a cada corte o cursor anda até o próximo passo, a pílula troca e o número fantasma gigante muda. A moldura nunca se mexe no corte; só o conteúdo troca."
+    },
+    {
+      "titulo": "Ritmo",
+      "texto": "120 BPM: um acontecimento por batida (0,5 s). Peças entram em accelerando e travam na batida."
+    },
+    {
+      "titulo": "Texto",
+      "texto": "Do desfoque para o foco, palavra a palavra, 45 ms entre elas, subindo de pertinho. Nunca quica. Mola só nos objetos (cards, carimbo, peças)."
+    },
+    {
+      "titulo": "Hold e saída",
+      "texto": "Pelo menos 1 s legível e vivo (a poeira sobe, a luz respira, a câmera empurra 1 %). Saída de 260 ms: o conteúdo desfoca e acelera, a moldura fica."
+    }
+  ],
+  "referencias": [
+    {
+      "nome": "motion48",
+      "leitura": "O movimento: palco fixo, título no alto, contador à esquerda, um objeto que se monta por batidas, carimbo no clímax, corte direto para o próximo passo, convite com caixa de comentário e fecho que escurece."
+    },
+    {
+      "nome": "identidade74",
+      "leitura": "O visual: azul-noite, luz âmbar, serifa com itálico dourado, mono espaçado, pílula de passo, número fantasma, trilha de progresso com cursor de luz."
+    }
+  ],
+  "cenas": [
+    {
+      "id": "gancho",
+      "tipo": "frase",
+      "papel": "gancho",
+      "titulo": "O gancho",
+      "dur": 5.5,
+      "ideia": "A moldura nasce peça por peça, a pergunta entra e um card de conversa acende os 5 jeitos, um por batida, enquanto o contador sobe até 5/5.",
+      "camera": "Push-in de 1 % no conteúdo; a moldura fica parada.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A moldura montada, a frase entrando; o card ainda vazio",
+          "t": 0.9
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Card no lugar, 2 dos 5 jeitos acesos",
+          "t": 2.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "Os 5 jeitos acesos, contador em 5/5",
+          "t": 4.4,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.05,
+          "tipo": "tipo",
+          "texto": "A moldura nasce de cima para baixo: selo, @, pílula, régua, trilha, cada peça 70 ms depois da outra, do desfoque para o foco."
+        },
+        {
+          "t": 0.3,
+          "tipo": "tipo",
+          "texto": "A frase sai do desfoque palavra a palavra, 45 ms entre elas; \"inusitado\" em itálico dourado."
+        },
+        {
+          "t": 1,
+          "tipo": "objeto",
+          "texto": "O card de conversa sobe 6 % com mola curta e a pergunta se escreve nele."
+        },
+        {
+          "t": 2,
+          "tipo": "objeto",
+          "texto": "Um jeito acende por batida (2,0 · 2,5 · 3,0 · 3,5 · 4,0): o chip ganha borda dourada e o contador pula 1 → 5 com um empurrão pequeno."
+        },
+        {
+          "t": 4.4,
+          "tipo": "vida",
+          "texto": "Hold: a poeira sobe, a luz respira, o último chip brilha uma vez."
+        },
+        {
+          "t": 5.24,
+          "tipo": "transicao",
+          "texto": "O conteúdo desfoca e acelera para fora em 260 ms; corte seco; a moldura fica."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "wifi",
+      "tipo": "montagem",
+      "papel": "passo 1",
+      "titulo": "1 · Wi‑Fi lento",
+      "dur": 7,
+      "ideia": "O Claude roda o diagnóstico: as linhas do terminal caem uma a uma como fichas, a latência sobe até 189 ms em vermelho, o carimbo bate \"troque pra 5 GHz\" e o número despenca para 12 ms.",
+      "camera": "Push-in de 1 %; tremor curto quando o carimbo bate.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Título e terminal vazio; cursor anda para o passo 01",
+          "t": 0.7
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Linhas empilhadas, latência em 189 ms vermelha",
+          "t": 3.4
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "Carimbo batido, latência em 12 ms",
+          "t": 5.6,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "transicao",
+          "texto": "Na trilha, o cursor de luz anda até 01 e acende; a pílula troca para \"Passo 1 · Wi‑Fi\"."
+        },
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "O título sai do desfoque palavra a palavra; \"Wi‑Fi lento\" em itálico dourado."
+        },
+        {
+          "t": 0.8,
+          "tipo": "objeto",
+          "texto": "O terminal de vidro sobe; o pedido se digita na primeira linha."
+        },
+        {
+          "t": 1.5,
+          "tipo": "objeto",
+          "texto": "Quatro linhas de resultado caem uma por batida, cada uma com um estalo; a latência conta de 40 até 189 ms e fica vermelha."
+        },
+        {
+          "t": 4,
+          "tipo": "objeto",
+          "texto": "O carimbo \"troque pra 5 GHz\" bate girado, com tremor curto; a latência despenca para 12 ms e fica verde; a última linha confirma."
+        },
+        {
+          "t": 6.74,
+          "tipo": "transicao",
+          "texto": "Saída do conteúdo em 260 ms; corte."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "exame",
+      "tipo": "montagem",
+      "papel": "passo 2",
+      "titulo": "2 · Exame em 3D",
+      "dur": 7,
+      "ideia": "As fatias da tomografia caem uma sobre a outra e empilham um volume 3D que começa a girar, enquanto uma linha de varredura dourada sobe por ele.",
+      "camera": "Push-in de 1 %; o volume gira devagar e nunca para.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "Título; as primeiras fatias caindo",
+          "t": 0.9
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Metade das fatias empilhadas, a varredura subindo",
+          "t": 2.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O volume inteiro girando, contador em 240 fatias",
+          "t": 5.4,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "transicao",
+          "texto": "O cursor anda até 02; a pílula troca; o número fantasma vira 02."
+        },
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "O título sai do desfoque; \"modelo 3D\" em itálico dourado."
+        },
+        {
+          "t": 0.8,
+          "tipo": "objeto",
+          "texto": "As fatias caem de cima, uma a cada 45 ms, e empilham o volume de baixo para cima; o contador conta até 240."
+        },
+        {
+          "t": 2,
+          "tipo": "luz",
+          "texto": "Uma lâmina de luz dourada sobe pelo volume e acende cada fatia quando passa."
+        },
+        {
+          "t": 3.5,
+          "tipo": "objeto",
+          "texto": "O volume termina e começa a girar sobre o eixo; a nota \"só pra ver · quem interpreta é o médico\" entra embaixo."
+        },
+        {
+          "t": 6.74,
+          "tipo": "transicao",
+          "texto": "Saída do conteúdo em 260 ms; corte."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "tv",
+      "tipo": "montagem",
+      "papel": "passo 3",
+      "titulo": "3 · Tela da TV",
+      "dur": 6.5,
+      "ideia": "A TV liga cheia de anúncio; os anúncios despencam um a um para fora da tela, o contador desce 6 → 0, e no lugar caem os seus apps e os botões da casa, que acendem.",
+      "camera": "Push-in de 1 %.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "TV cheia de blocos de anúncio",
+          "t": 1.2
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "Os anúncios caindo, contador em 2",
+          "t": 2.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "Tela limpa: apps e casa inteligente",
+          "t": 5,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "transicao",
+          "texto": "O cursor anda até 03; a pílula troca."
+        },
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "O título sai do desfoque; \"sem anúncio\" em itálico dourado."
+        },
+        {
+          "t": 0.6,
+          "tipo": "objeto",
+          "texto": "A TV de vidro acende com 6 blocos de anúncio."
+        },
+        {
+          "t": 1.5,
+          "tipo": "objeto",
+          "texto": "Os anúncios despencam um a um com gravidade (accelerando de 200 → 120 ms); o contador desce até 0."
+        },
+        {
+          "t": 3,
+          "tipo": "objeto",
+          "texto": "Entram os apps (mola curta, um a cada 70 ms) e os botões da sala, cozinha e quarto acendem um por batida."
+        },
+        {
+          "t": 6.24,
+          "tipo": "transicao",
+          "texto": "Saída do conteúdo em 260 ms; corte."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "buraco",
+      "tipo": "montagem",
+      "papel": "passo 4",
+      "titulo": "4 · Buraco na rua",
+      "dur": 6.5,
+      "ideia": "Três fotos do buraco chegam como polaroides e são sugadas para o chão; a rua se ergue em 3D, as faixas correm em direção à câmera e o buraco acende como zona de risco.",
+      "camera": "Push-in de 1 %; a rua desliza em direção à câmera sem parar.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "As três fotos chegando",
+          "t": 1
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "A rua 3D se erguendo",
+          "t": 2.4
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "A cena 3D com a zona de risco acesa",
+          "t": 4.8,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "transicao",
+          "texto": "O cursor anda até 04; a pílula troca."
+        },
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "O título sai do desfoque; \"cena 3D\" em itálico dourado."
+        },
+        {
+          "t": 0.6,
+          "tipo": "objeto",
+          "texto": "Três polaroides caem girando, uma por meia batida, com mola curta; o contador de fotos sobe até 3."
+        },
+        {
+          "t": 1.8,
+          "tipo": "objeto",
+          "texto": "As fotos encolhem para o canto e a rua se ergue de chapada para 3D em 700 ms; as faixas começam a correr."
+        },
+        {
+          "t": 3,
+          "tipo": "luz",
+          "texto": "O buraco acende em vermelho por baixo, sem borda; a etiqueta \"zona de risco\" desce presa a um fio."
+        },
+        {
+          "t": 6.24,
+          "tipo": "transicao",
+          "texto": "Saída do conteúdo em 260 ms; corte."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "diagrama",
+      "tipo": "montagem",
+      "papel": "passo 5",
+      "titulo": "5 · Diagrama que se mexe",
+      "dur": 6.5,
+      "ideia": "O desenho técnico se traça sozinho em linha dourada e, quando a última linha fecha, as peças começam a funcionar: o bloco desliza no trilho e o ponteiro do relógio acompanha.",
+      "camera": "Push-in de 1 %.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "As primeiras linhas se traçando",
+          "t": 1
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "O desenho completo, ainda parado",
+          "t": 2.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O bloco deslizando e o ponteiro marcando",
+          "t": 4.8,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "transicao",
+          "texto": "O cursor anda até 05; a pílula troca."
+        },
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "O título sai do desfoque; \"se mexem\" em itálico dourado."
+        },
+        {
+          "t": 0.6,
+          "tipo": "objeto",
+          "texto": "A base, o trilho, a régua, a coluna e o relógio se traçam um a um (uma peça por meia batida); o contador conta 1 → 5."
+        },
+        {
+          "t": 2.5,
+          "tipo": "objeto",
+          "texto": "O bloco começa a deslizar no trilho e o ponteiro do relógio acompanha, com um pequeno atraso de mola."
+        },
+        {
+          "t": 4.5,
+          "tipo": "vida",
+          "texto": "Hold: o mecanismo segue funcionando em loop suave, nada para."
+        },
+        {
+          "t": 6.24,
+          "tipo": "transicao",
+          "texto": "Saída do conteúdo em 260 ms; corte."
+        }
+      ],
+      "saida": {
+        "tipo": "corte"
+      }
+    },
+    {
+      "id": "convite",
+      "tipo": "frase",
+      "papel": "convite",
+      "titulo": "O convite",
+      "dur": 9,
+      "ideia": "A pergunta entra, a palavra-chave se digita na caixa de comentário, o comentário é enviado e o guia chega na DM; no fim, tudo escurece e fica só o @.",
+      "camera": "Push-in de 1 %; no fecho a câmera para de empurrar e tudo assenta.",
+      "quadros": [
+        {
+          "id": "inicio",
+          "rotulo": "Início",
+          "legenda": "A pergunta entrando, caixa de comentário vazia",
+          "t": 0.9
+        },
+        {
+          "id": "meio",
+          "rotulo": "Passo 2",
+          "legenda": "\"CLAUDE\" digitado na caixa",
+          "t": 2.6
+        },
+        {
+          "id": "fim",
+          "rotulo": "Fim",
+          "legenda": "O guia chegou na DM",
+          "t": 4.6,
+          "aprovado": true
+        }
+      ],
+      "batidas": [
+        {
+          "t": 0.1,
+          "tipo": "transicao",
+          "texto": "A trilha inteira fica dourada, do 05 até a ponta; a pílula vira \"Bônus · Prompts\"."
+        },
+        {
+          "t": 0.15,
+          "tipo": "tipo",
+          "texto": "\"Quer os 5 prompts prontos?\" sai do desfoque; \"prompts\" em itálico dourado."
+        },
+        {
+          "t": 1,
+          "tipo": "objeto",
+          "texto": "A caixa de comentário sobe e a palavra CLAUDE se digita, letra a letra."
+        },
+        {
+          "t": 2.9,
+          "tipo": "objeto",
+          "texto": "Enviar: o comentário dispara para cima e a mensagem com o guia chega com mola; o selo \"1\" pula."
+        },
+        {
+          "t": 6.5,
+          "tipo": "transicao",
+          "texto": "Fecho: o conteúdo escurece em 900 ms e no centro acendem o ícone do Instagram e o @; segura até o fim."
+        }
+      ],
+      "saida": {
+        "tipo": "esmaecer"
+      }
+    }
+  ],
+  "capa": {
+    "cena": "gancho",
+    "quadro": "fim"
+  },
+  "storyboard": {
+    "revisao": 5,
+    "aprovadoEm": null
+  },
+  "versoes": [],
+  "criadoEm": "2026-11-23",
+  "cartaz": "Tem gente usando o Claude de um jeito inusitado"
+}

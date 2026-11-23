@@ -1,0 +1,18 @@
+.cena-diagrama .d-cont { left: 6cqw; top: 29cqh; }
+.cena-diagrama .d-chip { right: 6cqw; top: 29.6cqh; padding: 2.4cqw 3.4cqw; display: flex; flex-direction: column; gap: 0.8cqw; }
+.cena-diagrama .d-chip-rot { font-size: 1.9cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave); }
+.cena-diagrama .d-chip-val { font-family: var(--fonte-titulo); font-style: italic; font-size: 5cqw; line-height: 1; color: var(--destaque); }
+.cena-diagrama .d-painel { left: 5cqw; right: 5cqw; top: 41.5cqh; height: 34cqh; display: grid; place-items: center; }
+.cena-diagrama .d-svg { width: 84cqw; height: 31cqh; overflow: visible; }
+.cena-diagrama .d-rot { position: absolute; left: 3.4cqw; top: 2.6cqw; font-size: 1.9cqw; letter-spacing: 0.3em; text-transform: uppercase; color: var(--texto-suave); }
+.cena-diagrama .face { stroke: var(--destaque-2); stroke-width: 1.6; stroke-linejoin: round; }
+.cena-diagrama .face.topo { fill: color-mix(in srgb, var(--destaque) 16%, var(--vidro)); }
+.cena-diagrama .face.frente { fill: color-mix(in srgb, var(--destaque) 8%, var(--vidro)); }
+.cena-diagrama .face.lado { fill: color-mix(in srgb, var(--destaque) 4%, var(--fundo)); }
+.cena-diagrama .bloco .face.topo { fill: color-mix(in srgb, var(--destaque) 45%, var(--vidro)); }
+.cena-diagrama .bloco .face.frente { fill: color-mix(in srgb, var(--destaque) 28%, var(--vidro)); }
+.cena-diagrama .tique { stroke: color-mix(in srgb, var(--destaque-2) 70%, transparent); stroke-width: 1.2; fill: none; }
+.cena-diagrama .mostrador { fill: color-mix(in srgb, var(--texto) 92%, var(--destaque)); stroke: var(--destaque-2); stroke-width: 2.5; }
+.cena-diagrama .marca { stroke: var(--fundo); stroke-width: 1.6; }
+.cena-diagrama .ponteiro { stroke: var(--alerta); stroke-width: 3; stroke-linecap: round; }
+.cena-diagrama .eixo { fill: var(--fundo); }
